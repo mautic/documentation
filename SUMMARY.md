@@ -12,7 +12,7 @@
 * [Forms](forms/README.md)
    * [Manage Forms](forms/manage_forms.md)
 * [Assets](assets/README.md)
-   * [Manage Assets](assets/manage_assets)
+   * [Manage Assets](assets/manage_assets.md)
 * [Campaigns](campaigns/README)
 * [Emails](emails/README)
 * [Reports](reports/README)
