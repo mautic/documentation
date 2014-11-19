@@ -18,7 +18,7 @@
 * [Reports](reports/README)
 * [Points](points/README.md)
 * [Use Cases](use_cases/README.md)
-   * [Sales](use_cases/sales)
+   * [Sales](use_cases/sales.md)
    * [Education](use_cases/education)
    * [Community](use_cases/community)
    * [eCommerce](use_cases/ecommerce)
