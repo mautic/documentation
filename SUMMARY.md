@@ -16,7 +16,7 @@
 * [Campaigns](campaigns/README)
 * [Emails](emails/README.md)
    * [Manage Emails](emails/manage_emails.md)
-* [Reports](reports/README)
+* [Reports](reports/README.md)
 * [Points](points/README.md)
 * [Use Cases](use_cases/README.md)
    * [Sales](use_cases/sales.md)
