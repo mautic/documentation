@@ -4,6 +4,7 @@
 * [Leads](leads/README.md)
    * [Manage Leads](leads/managing_leads.md)
        * [Lead Overview](leads/lead_overview.md)
+       * [Lead Monitoring](leads/lead_monitoring.md)
    * [Manage Lists](leads/manage_lists.md)
    * [Manage Fields](leads/manage_fields.md)
 * [Pages](pages/README.md)
