@@ -21,7 +21,7 @@
 * [Use Cases](use_cases/README.md)
    * [Sales](use_cases/sales.md)
    * [Education](use_cases/education.md)
-   * [Community](use_cases/community)
+   * [Community](use_cases/community.md)
    * [eCommerce](use_cases/ecommerce)
    * [Political](use_cases/political)
 
