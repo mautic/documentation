@@ -15,6 +15,8 @@
 * [Assets](assets/README.md)
    * [Manage Assets](assets/manage_assets.md)
 * [Campaigns](campaigns/README.md)
+   * [Manage Campaigns](campaigns/manage_campaigns.md)
+   * [Campaign Builder](campaigns/campaign_builder.md)
 * [Emails](emails/README.md)
    * [Manage Emails](emails/manage_emails.md)
 * [Reports](reports/README.md)
@@ -23,6 +25,6 @@
    * [Sales](use_cases/sales.md)
    * [Education](use_cases/education.md)
    * [Community](use_cases/community.md)
-   * [eCommerce](use_cases/ecommerce)
-   * [Political](use_cases/political)
+   * [eCommerce](use_cases/ecommerce.md)
+   * [Political](use_cases/political.md)
 
