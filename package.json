@@ -1,0 +1,12 @@
+{
+    "name": "Mautic Documentation",
+    "version": "1.0.0",
+    "description": "",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mautic/documentation.git"
+    },
+    "author": "Mautic Docs Team<docs@mautic.org>",
+    "dependencies": {
+    }
+}
