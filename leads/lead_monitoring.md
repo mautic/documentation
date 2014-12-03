@@ -13,11 +13,11 @@ http://yourdomain.com/p/mtracking.gif
 
 Mautic makes this even easier by providing key integrations to many existing content management systems. You can download and use any of the following plugins to automatically add that tracking pixel to your website.
 
-* [Joomla!](http://mautic.org/plugins/joomla)
-* [Drupal](http://mautic.org/plugins/drupal)
-* [WordPress](http://mautic.org/plugins/wordpress)
-* [Typo3](http://mautic.org/plugins/typo3)
-* [Concrete5](http://mautic.org/plugins/concrete5)
+* [Joomla!](http://mautic.org/integration/joomla)
+* [Drupal](http://mautic.org/integration/drupal)
+* [WordPress](http://mautic.org/integration/wordpress)
+* [Typo3](http://mautic.org/integration/typo3)
+* [Concrete5](http://mautic.org/integration/concrete5)
 
 These are just a few of the integrations already created by the Mautic community. More will be added in the future and developers are encouraged to submit their own integrations.
 
