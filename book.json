@@ -1,6 +1,4 @@
 {
-    "plugins": ["richquotes"],
-    },
     "links": {
         "home": null,
         "about": "https://www.mautic.org/about",
