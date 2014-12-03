@@ -7,7 +7,4 @@
         "url": "https://github.com/mautic/documentation.git"
     },
     "author": "Mautic Docs Team<docs@mautic.org>",
-    "dependencies": {
-        "gitbook-plugin-autocover": "0.0.5"
-    }
 }
