@@ -3,11 +3,9 @@
     },
     "links": {
         "home": null,
-
         "about": "https://www.mautic.org/about",
         "issues": null,
         "edit": null,
-
         "sharing": {
             "google": null,
             "facebook": null,
