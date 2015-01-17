@@ -14,7 +14,7 @@ Clearly these actions can be expanded upon as needed. This is the essence of poi
 
 ### Point Triggers
 
-Point triggers are resulting events which are fired based on the achieved point total of a lead. In simple terms, when a lead reaches a minimum number of points, the point trigger is fired an an action is performed.
+Point triggers are resulting events which are fired based on the achieved point total of a lead. In simple terms, when a lead reaches a minimum number of points, the point trigger is fired and an action is performed.
 
 When creating a point trigger you have the option to apply the trigger to all existing and applicable leads as well as new leads.
 
