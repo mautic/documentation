@@ -3,10 +3,10 @@ The act of monitoring the traffic and activity of leads can sometimes be somewha
 
 ### Website Monitoring
 
-Monitoring all traffic on a website can be done by merely adding a single tracking pixel to the website.
+Monitoring all traffic on a website can be done by simply adding a single tracking pixel to the website.
 
 ```
-http://yourdomain.com/p/mtracking.gif
+http://yourdomain.com/mtracking.gif
 
 ```
 #### Available Plugins
