@@ -4,27 +4,26 @@ Leads are the central factor of a marketing automation platform. These are all t
 
 ### Lead Types
 
-There are two many types of leads. The first type of lead is the anonymous lead. These are visitors to your site who have not yet been identified by a form or other interaction. These leads are tracked by Mautic but typically remain hidden so as not to clutter your lead list.
-
-The second type of lead is a standard lead. These are leads which have provided additional information via a form or some other source. As a result, these leads typically have a name, email, and other identifying fields.
+There are two main types of leads that you may be interested in tracking with Mautic. 
 
 #### Anonymous Leads
+Anonymous leads are visitors to your site who have not yet been identified by a form or other interaction. These leads are tracked by Mautic but typically remain hidden so as not to clutter your lead list.  You can view anonymous leads by using the 'list view' within the leads section.
 
-As mentioned anonymous leads are those leads which have not yet completed a form or other identifying feature and thus you do not have completed information to accompany the lead. You can view these leads by entering the following in the lead search box.
+Anonymous leads are worth tracking, because these could be future customers.  By tracking them before they have any interaction, you can retain a log of when they visited your site, which allows you to get a picture of their activity prior to engaging with you.
 
-##### Search Text
+To filter your leads by anonymous leads you can type the following into the lead search box:
 
 ```
 is:anonymous
 ```
-
 ##### Screenshot
 ![](http://drop.dbh.li/image/3F3X0843100h/Image%202014-11-17%20at%2010.05.43%20AM.png)
 
 The resulting list will be those IP addresses which have not yet provided additional details.
 
-
 #### Standard Leads
+
+The second type of lead is a standard lead. These are leads which have provided additional information via a form or some other source, or that you know more information about due to the fact that you've had interactions with them before. As a result, these leads typically have a name, email, and other identifying information which can be associated with the lead.
 
 The standard lead is the preferred lead within Mautic. These are leads which may have started as an anonymous lead but have at some point provided additional information such as name, email address, social network handle, or other identifying characteristics. These leads are ones which can then be nurtured through the Mautic marketing automation platform.
 
