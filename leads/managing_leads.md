@@ -38,3 +38,9 @@ Upload your CSV file, and ensure that you match the delimiter, enclosure and esc
 
 When you click on 'Upload' you will have the opportunity to match the fields found in the CSV file to the fields that you have in Mautic, which will allow the data to be correctly imported.
 
+## Editing leads
+To edit a lead, click on the name of the lead (or the IP address if the visitor is anonymous) to open the lead screen.
+
+From this screen, you can view the recent events and any notes that have been made against the lead.
+
+To edit the lead, click on the 'edit' button on the top-right menu.
