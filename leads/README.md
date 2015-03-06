@@ -4,7 +4,7 @@ Leads are the central factor of a marketing automation platform. These are all t
 
 ### Lead Types
 
-There are two many types of leads. The first type of lead is the anonymous lead. These are visitors to your site who have not yet been identified by a form or other interaction. These leads are tracked by Mautic but typically remain hidden so as not to clutter your lead list.
+There are two types of leads. The first type of lead is the anonymous lead. These are visitors to your site who have not yet been identified by a form or other interaction. These leads are tracked by Mautic but typically remain hidden so as not to clutter your lead list.
 
 The second type of lead is a standard lead. These are leads which have provided additional information via a form or some other source. As a result, these leads typically have a name, email, and other identifying fields.
 
