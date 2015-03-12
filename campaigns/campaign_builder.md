@@ -24,6 +24,19 @@ Decisions are taken in response to an action and as such a decision has two outc
 
 These two options are demonstrated by the green and red decision points on the decision.  Each path can then be handled by your campaign. This process is typically referred to as a **decision tree**.
 
+__It is important to note that a lead must already be part of the campaign in order for it to recognize the decision executed. Therefore, campaigns should never start with a decision unless you are manually managing the leads assigned to it and the decision is expected to be executed at a later time.__ 
+
+#### Non-Action Decision Points ####
+Actions based on a lead's non-action (the red decision point) must be triggered by the system. To do so, create a cron job that executes the following command at the desired interval:
+
+```
+php /path/to/mautic mautic:campaigns:trigger --env=prod
+```
+
+That command will find and execute scheduled events and/or non-action events that have passed the specified time frame. 
+
+If you want to execute the command at different intervals for specific campaigns, you can pass the `--campaign-id=ID` argument to the command.
+
 #### Example
 
 To provide a simple example of a decision tree consider an email where the decision is to open an email. There are two outcomes, if the lead chooses to open the email then the green decision point leads to the next action to be taken in the campaign workflow. If, however, the lead does not open the email then you may desire a different action to be taken (e.g. a delay of 30 days then a second email sent).
