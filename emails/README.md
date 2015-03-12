@@ -31,7 +31,7 @@ Some hosts may have limits on the number of emails that can sent during a specif
 
 You have access to any number of lead fields to be used in your form emails. These can be easily placed within your emails and will be automatically replaced with the appropriate text once the email is sent.
 
-### Opened Email Tracking ###
+### Tracking Opened Emails ###
 
 Each email sent through Mautic is tagged with a tracking pixel image. This allows Mautic to track when a lead opens the email and execute actions accordingly. Note that this technology is limited to the lead's email client supporting HTML and auto-loading of images. If the email client does not load the image, there is no way for Mautic to know if the email was opened.
 
