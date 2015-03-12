@@ -3,12 +3,34 @@ The act of monitoring the traffic and activity of leads can sometimes be somewha
 
 ### Website Monitoring
 
-Monitoring all traffic on a website can be done by simply adding a single tracking pixel to the website.
+Monitoring all traffic on a website can be done by adding a single tracking pixel to the website.
 
 ```
 http://yourdomain.com/mtracking.gif
+```
+
+To get the most out of the tracking pixel, it is recommended that you pass information of the current web page through the image URL.  Mautic currently supports url, referrer, language, and title.  You can also pass information specific to your lead by setting Mautic lead field(s) to be publicly updatable. Note that values appended to the tracking pixel should be url encoded (%20 for spaces, %40 for @, etc).
+
+An example tracking pixel may look like:
 
 ```
+<img src='http://yourdomain.com/mtracking.gif?url=http%3a%2f%2fyourdomain.com%2fyour-product-page&title=Some%20Cool%20Product&email=user%40theirdomain.com" style="display: none; " />
+```
+
+If you are using a CMS, the easiest way is to let one of our plugins do this for you (see below). Or if your site is based off PHP, you could do something like:
+
+```
+$d = urlencode(base64_encode(serialize(array(
+    'url'   => 'http://yourdomain.com/your-product-page', 
+    'title' => 'Some Cool Product',
+    'email' => 'user@theirdomain.com'
+))));
+
+$src = 'http://yourdomain.com/mtracking.gif?d=' . $d; 
+echo '<img src="' . $src . '" style="display: none;" />';
+```
+
+
 #### Available Plugins
 
 Mautic makes this even easier by providing key integrations to many existing content management systems. You can download and use any of the following plugins to automatically add that tracking pixel to your website.

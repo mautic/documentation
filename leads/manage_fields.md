@@ -4,7 +4,12 @@ The manage fields page will let you view all existing lead fields as well as any
 
 ![](http://drop.dbh.li/image/190V1w2j2P1Z/Image%202014-11-16%20at%209.34.35%20PM.png)
 
-You will notice the group column which will show you where the specific field will be shown on the lead profile. Also, the last column which demonstrates which fields are protected (shown with a lock). These fields are unable to be removed as they are used by the core installation. The second icon demonstrates those fields which can be used in search results.
+You will notice the group column which will show you where the specific field will be shown on the lead profile. In the last column, you may see several icons which signify various properties of the field:
+
+1. Lock icon - These fields are unable to be removed as they are used by the core installation. 
+2. List icon - These fields can be used as filters of smart lists.
+3. Asterisks icon - These fields are required when filling in the lead form
+4. Globe icon - These fields are publicly updatable through the tracking pixel URL query (see [Lead Monitoring]](http://docs.mautic.org/leads/lead_monitoring.html) for more details).
 
 ### Published Fields
 
