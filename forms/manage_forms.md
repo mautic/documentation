@@ -18,6 +18,10 @@ Form actions are items to be handled on the submission of the form. You can defi
 
 ![](http://drop.dbh.li/image/3o2r2g2s2D1C/Image%202014-11-17%20at%204.23.16%20PM.png)
 
+#### Creating and Updating Leads with Forms ####
+
+To have your form create or update leads (in order to update, there must be a matching email), add the Create/Update Lead submit action. Map the fields from the form to your lead fields. **Note, it is important that this action be ordered first so that the lead's details are available for subsequent actions.** Think of it as the lead has to be created or updated before it can be added to lists, pushed to integrations, etc.
+
 ### Form Injection
 
 There are three ways you can use the form. You can copy the entire output or you can have the form injected dynamically using the provided javascript. These are two options for directly including the form on a page, you can alternatively embed the form directly in a Mautic landing page if you choose.
