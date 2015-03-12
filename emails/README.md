@@ -35,17 +35,6 @@ You have access to any number of lead fields to be used in your form emails. The
 
 Each email sent through Mautic is tagged with a tracking pixel image. This allows Mautic to track when a lead opens the email and execute actions accordingly. Note that this technology is limited to the lead's email client supporting HTML and auto-loading of images. If the email client does not load the image, there is no way for Mautic to know if the email was opened.
 
-### Unsubscribing and Double Opt-In ###
+### Unsubscribing ###
 
-Mautic has a built in means of allowing a lead to unsubscribe from email communication. If using the builder, simply drag and drop the Unsubscribe Text or Unsubscribe URL tokens into your email. Or insert {unsubscribe_text} or {unsubscribe_url} into your custom HTML. The unsubscribe text token will insert a sentence with a link instructing the lead to click to unsubscribe. The unsubscribe URL token will simply insert the URL into your custom written instructions. 
-
-Mautic currently does not have a built in way of handing double opt-ins (although it is planned). It can be achieved through the use of lead lists, a custom lead field, a landing page and a campaign. To configure such a scenario, consider the following:
-
-1. Create a lead list without filters for leads pending double opt in. 
-2. Create a boolean custom lead field for the double opt-in notation and set the default value to 0.
-3. Create a landing page that will serve as the "confirmation page" for the double opt-in.
-4. Create a confirmation email and insert the token for the confirmation landing page (if using the builder, drag and drop the specific page into the email or if using custom HTML, insert {pagelink=ID} where ID is the id of your landing page). The token will be replaced with the URL of the landing page.
-5. Create a campaign to automate the double opt-in dripflow and assign it the lead list from step 1. In the Campaign Builder, start by adding a "Send email" action and select the confirmation email to be sent. Connect that into a "Visits a page" decision. You may be tempted to use the "Opens email" decision, but for this scenario, it's not the opening of an email that matters rather the lead taking the extra step to click the link to confirm. So use the "Visits a page" instead and select your confirmation landing page in the the "Limit to Pages" dropdown. Add a "Update lead" action, enter a 1 for the double opt in field, save then connect it to the green decision point of the "Visits a page" decision. Finally, add and connect a "Modify lead's lists" action to the same decision point to remove the lead from the pending confirmation lead list.
-6. When you create additional lead lists, use the double opt-in field as a filter to exclude leads who have not gone through the double opt in process. Use 1 as the filter value.
-
-An example flow may be something like this. A lead subscribes to your newsletter through a Mautic form. The form's submit actions creates the lead and adds them to the "Pending Confirmation" list. The lead is automatically added to the "Double Opt-In" campaign which will send the confirmation email. When the lead clicks on the link to visit the "Thank You for Subscribing" landing page, the double opt in field will be updated and the lead removed from the "Pending Confirmation" lead list. You can now filter leads based on who has opted in and who has not.
+Mautic has a built in means of allowing a lead to unsubscribe from email communication. If using the builder, simply drag and drop the Unsubscribe Text or Unsubscribe URL tokens into your email. Or insert {unsubscribe_text} or {unsubscribe_url} into your custom HTML. The unsubscribe text token will insert a sentence with a link instructing the lead to click to unsubscribe. The unsubscribe URL token will simply insert the URL into your custom written instructions.
