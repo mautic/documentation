@@ -21,15 +21,13 @@ If you are using a CMS, the easiest way is to let one of our plugins do this for
 
 ```
 $d = urlencode(base64_encode(serialize(array(
-    'url'   => 'http://yourdomain.com/your-product-page', 
-    'title' => 'Some Cool Product',
-    'email' => 'user@theirdomain.com'
+    'url'   => $_SERVER['REQUEST_URI'], 
+    'title' => $pageTitle,         // Use your website's means of retrieving the title or manually insert it
+    'email' => $loggedInUsersEmail // Use your website's means of user management to retrieve the email
 ))));
 
-$src = 'http://yourdomain.com/mtracking.gif?d=' . $d; 
-echo '<img src="' . $src . '" style="display: none;" />';
+echo '<img src="http://yourdomain.com/mtracking.gif?d=' . $d . '" style="display: none;" />';
 ```
-
 
 #### Available Plugins
 
