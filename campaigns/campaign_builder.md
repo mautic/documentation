@@ -30,7 +30,7 @@ __It is important to note that a lead must already be part of the campaign in or
 Actions based on a lead's non-action (the red decision point) must be triggered by the system. To do so, create a cron job that executes the following command at the desired interval:
 
 ```
-php /path/to/mautic mautic:campaigns:trigger --env=prod
+php /path/to/mautic/app/console mautic:campaigns:trigger --env=prod
 ```
 
 That command will find and execute scheduled events and/or non-action events that have passed the specified time frame. 
