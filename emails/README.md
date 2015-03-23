@@ -21,7 +21,7 @@ This is the default means of delivery. Mautic sends the email as soon as it is i
 This is recommended if you plan to send a significant number of emails. Mautic will store the email in the configured spool directory until the command to process the queue is executed. Set up a cron job at the desired interval to run the command:
 
 ```
-php /path/to/mautic mautic:email:process --env=prod
+php /path/to/mautic/app/console mautic:email:process --env=prod
 ```
 
 Some hosts may have limits on the number of emails that can sent during a specified timeframe and/or limit the execution time of a script. If that's the case for you, or if you just want to moderate batch processing, you can configure batch numbers and time limits in Mautic's Configuration. 
