@@ -25,7 +25,7 @@ Once you have created your list any applicable lead will be automatically added 
 To keep the smart lists current, create a cron job that executes the following command at the desired interval:
 
 ```
-php /path/to/mautic mautic:leadlists:update --env=prod
+php /path/to/mautic/app/console mautic:leadlists:update --env=prod
 ```
 
 Through the execution of that command, leads that match the filters will be added and leads that no longer match will be removed. Any leads that were manually added will remain part of the list regardless of filters.
