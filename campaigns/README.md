@@ -1,6 +1,6 @@
 # Campaigns
 
-Campaigns are central to creating an automated workflow to assist with your marketing efforts. Campaigns consist of various external points of contact which will engage your leads. These engagements can be created to occur on predefined time intervals or in response to speific lead actions.
+Campaigns are central to creating an automated workflow to assist with your marketing efforts. Campaigns consist of various external points of contact which will engage your leads. These engagements can be created to occur on predefined time intervals or in response to specific lead actions.
 
 ### Time Driven Campaigns
 
@@ -20,4 +20,4 @@ Email actions have been mentioned specifically as a particular use case, however
 
 ### Campaign Automation
 
-One of the main benefits of this campaign workflow process is the ability to predefine these workflows and have them respond automatically to your leads and timelines. This automation minimizes the amount of time required for manual lead activity and improves reliablity of lead nurturing through consistent contact.
+One of the main benefits of this campaign workflow process is the ability to predefine these workflows and have them respond automatically to your leads and timelines. This automation minimizes the amount of time required for manual lead activity and improves reliability of lead nurturing through consistent contact.
