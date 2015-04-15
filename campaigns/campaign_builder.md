@@ -26,13 +26,13 @@ These two options are demonstrated by the green and red decision points on the d
 
 __It is important to note that a lead must already be part of the campaign in order for it to recognize the decision executed. Therefore, campaigns should never start with a decision unless you are manually managing the leads assigned to it and the decision is expected to be executed at a later time.__ 
 
-#### Lead-initiated Decision Path
+#### Lead-initiated Decision Path (Green Points)
 
 Actions attached to the green point of a decision are considered lead-initiated points.
 
 The lead-initiated decision path is taken as a result of a leads direct action such as opening an email or submitting a form. Connected actions will be executed (or scheduled if a delay is set) at the time the lead took the action. 
 
-#### Non-action Initiated Decision Path (red)
+#### Non-action Initiated Decision Path (Red Points)
 
 Actions attached to the red point of a decision are considered non-action points. This path is taken as a result of a lead NOT taking some direct action.
 
