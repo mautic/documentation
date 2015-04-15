@@ -38,6 +38,10 @@ Actions attached to the red point of a decision are considered non-action points
 
 Use an action's delay settings to define at what point should the campaign send the lead down this path.
 
+#### Example
+
+To provide a simple example of a decision tree consider an email where the decision is to open an email. There are two outcomes, if the lead chooses to open the email then the green decision point leads to the next action to be taken in the campaign workflow. If, however, the lead does not open the email then you may desire a different action to be taken (e.g. a delay of 30 days then a second email sent).
+
 ### Executing Campaign Actions
 
 Executing starting actions for leads newly added to the campaign, scheduled actions and the actions on the "non-action" decision paths, must be triggered by the system. To do so, create a cron job that executes the following command at the desired interval:
@@ -47,7 +51,3 @@ php /path/to/mautic/app/console mautic:campaigns:trigger --env=prod
 ```
 
 If you want to execute the command at different intervals for specific campaigns, you can pass the `--campaign-id=ID` argument to the command.
-
-#### Example
-
-To provide a simple example of a decision tree consider an email where the decision is to open an email. There are two outcomes, if the lead chooses to open the email then the green decision point leads to the next action to be taken in the campaign workflow. If, however, the lead does not open the email then you may desire a different action to be taken (e.g. a delay of 30 days then a second email sent).
