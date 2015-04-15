@@ -18,13 +18,12 @@ Creating campaigns is an easy process which involves picking a name, creating a 
 The basics of campaign creation are handled easily by the initial screen but the finer details of building a campaign occur within the campaign builder. This might be considered advanced campaign creation but every campaign does need to use the campaign builder.
 
 
-#### Triggering Campaign Events ####
-Actions based on a lead's non-action (the red decision point) must be triggered by the system. To do so, create a cron job that executes the following command at the desired interval:
+### Executing Campaign Actions
+
+Executing starting actions for leads newly added to the campaign, scheduled actions and the actions on the "non-action" decision paths, must be triggered by the system. To do so, create a cron job that executes the following command at the desired interval:
 
 ```
 php /path/to/mautic/app/console mautic:campaigns:trigger --env=prod
 ```
-
-That command will find and execute scheduled events and/or non-action events that have passed the specified time frame. 
 
 If you want to execute the command at different intervals for specific campaigns, you can pass the `--campaign-id=ID` argument to the command.
