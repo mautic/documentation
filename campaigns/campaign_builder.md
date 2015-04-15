@@ -38,7 +38,7 @@ Actions attached to the red point of a decision are considered non-action points
 
 Use an action's delay settings to define at what point should the campaign send the lead down this path.
 
-To trigger this events, see [Executing Campaign Actions](#executing-campaign-actions).
+To trigger this events, see [Executing Campaign Actions](https://www.mautic.org/docs/campaigns/manage_campaigns.html#executing-campaign-actions).
 #### Example
 
 To provide a simple example of a decision tree consider an email where the decision is to open an email. There are two outcomes, if the lead chooses to open the email then the green decision point leads to the next action to be taken in the campaign workflow. If, however, the lead does not open the email then you may desire a different action to be taken (e.g. a delay of 30 days then a second email sent).
