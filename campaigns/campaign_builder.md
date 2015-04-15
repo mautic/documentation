@@ -26,14 +26,25 @@ These two options are demonstrated by the green and red decision points on the d
 
 __It is important to note that a lead must already be part of the campaign in order for it to recognize the decision executed. Therefore, campaigns should never start with a decision unless you are manually managing the leads assigned to it and the decision is expected to be executed at a later time.__ 
 
-#### Non-Action Decision Points ####
-Actions based on a lead's non-action (the red decision point) must be triggered by the system. To do so, create a cron job that executes the following command at the desired interval:
+#### Lead-initiated Decision Path
+
+Actions attached to the green point of a decision are considered lead-initiated points.
+
+The lead-initiated decision path is taken as a result of a leads direct action such as opening an email or submitting a form. Connected actions will be executed (or scheduled if a delay is set) at the time the lead took the action. 
+
+#### Non-action Initiated Decision Path (red)
+
+Actions attached to the red point of a decision are considered non-action points. This path is taken as a result of a lead NOT taking some direct action.
+
+Use an action's delay settings to define at what point should the campaign send the lead down this path.
+
+### Executing Campaign Actions
+
+Executing starting actions for leads newly added to the campaign, scheduled actions and the actions on the "non-action" decision paths, must be triggered by the system. To do so, create a cron job that executes the following command at the desired interval:
 
 ```
 php /path/to/mautic/app/console mautic:campaigns:trigger --env=prod
 ```
-
-That command will find and execute scheduled events and/or non-action events that have passed the specified time frame. 
 
 If you want to execute the command at different intervals for specific campaigns, you can pass the `--campaign-id=ID` argument to the command.
 
