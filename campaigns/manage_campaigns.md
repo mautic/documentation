@@ -27,3 +27,11 @@ php /path/to/mautic/app/console mautic:campaigns:trigger --env=prod
 ```
 
 If you want to execute the command at different intervals for specific campaigns, you can pass the `--campaign-id=ID` argument to the command.
+
+### Building Campaign Leads
+
+Batch adding/removing leads for campaigns is done by using the following command:
+
+```
+php /path/to/mautic/app/console mautic:campaigns:update --env=prod
+```
