@@ -26,4 +26,4 @@
    * [Education](use_cases/education.md)
    * [Community](use_cases/community.md)
    * [Political](use_cases/political.md)
-* [Required Cron Jobs](setup/cronjobs.md)
+* [Required Cron Jobs](setup/README.md)
