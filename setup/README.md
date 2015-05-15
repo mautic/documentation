@@ -29,7 +29,7 @@ You can also limit the number of leads to process per script execution using `--
 **To execute campaigns events:**
 
 ```
-php /path/to/mautic/app/console mautic:campaigns:update --env=prod
+php /path/to/mautic/app/console mautic:campaigns:trigger --env=prod
 ```
 
 By default, the script will process events in batches of 100. If this is too many for your server's resources, use the option `--batch-limit=X` replacing X with the a number of events to process each batch.
