@@ -27,3 +27,7 @@
    * [Community](use_cases/community.md)
    * [Political](use_cases/political.md)
 * [Required Cron Jobs](setup/README.md)
+* [Themes](themes/README.md)
+    * [Manage themes] (themes/manage_themes.md)
+    * [Customise themes] (themes/customise_themes.md)
+    * [Theme structure] (themes/theme_structure.md)
