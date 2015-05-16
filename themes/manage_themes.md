@@ -8,4 +8,7 @@ From the configuration screen, the available themes will be listed in a dropdown
 
 ![Assign default theme](/themes/media/themes-defaulttheme.png "Assign a default theme")
 
+To assign a theme to a specific resource - such as a landing page - select the theme from the dropdown, and save the resource.
+
+![Assign theme to resource](/themes/media/themes-assignthemelandingpage.png "Assign theme to a landing page")
 
