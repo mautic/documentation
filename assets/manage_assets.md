@@ -78,6 +78,6 @@ An asset can be edited by clicking on the 'edit' button while viewing the asset,
 
 An asset can be deleted by clicking on the 'delete' button while viewing the asset, or by selecting the arrow next to the checkbox for the asset, and selecting 'delete'.  A confirmation screen will be displayed, prompting confirmation that the asset should be deleted.
 
-Once an asset has been deleted, it cannot be retrieved, and statistics relating to that asset will no longer be available.  It is recommended where possible to unpublish assets which are no longer in use.
+Once an asset has been deleted, it cannot be retrieved, and statistics relating to the number of downloads for that asset will no longer be available.  Lead points that may have been accumulated as a result of accessing the resource will remain. It is recommended where possible to unpublish assets which are no longer in use - in future there may be an archive feature.
 
 
