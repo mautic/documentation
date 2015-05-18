@@ -10,7 +10,7 @@ Themes are located inside individual folders - one per theme - within the direct
 
 Mautic themes generally follow a similar structure, as can be seen in the themes which ship with a basic installation.
 
-![Theme file structure](/themes/media/themes-filetructure.png "Theme File Structure")
+![Theme file structure](/themes/media/themes-filestructure.png "Theme File Structure")
 
 Within the theme folder there are subfolders which contain the CSS files, PHP files, and in some cases, image files.  There is also a config.php file which contains the base settings for the theme.
 
