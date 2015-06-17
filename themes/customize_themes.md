@@ -1,10 +1,10 @@
-# Customising themes
+# Customizing themes
 
-It is possible to customise themes, or even to create your own from scratch, with Mautic.  To do this you need to have access to a file transfer system such as FTP or SSH.
+It is possible to customize themes, or even to create your own from scratch, with Mautic.  To do this you need to have access to a file transfer system such as FTP or SSH.
 
-## Customising an existing theme
+## Customizing an existing theme
 
-To customise an existing theme, it is recommended to make a copy of the entire theme folder, and rename it.  Following renaming the folder, edit the following files to amend the theme paths and name:
+To customize an existing theme, it is recommended to make a copy of the entire theme folder, and rename it.  Following renaming the folder, edit the following files to amend the theme paths and name:
 
 * theme.css - rename to match your theme name
 * config.php - amend theme name
