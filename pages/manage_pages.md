@@ -16,7 +16,7 @@ Notice when viewing the page details you can select the Details tab located just
 
 ### Translations and Variants
 
-As mentioned previously when viewing the page details you can also view the various translations and page variants which have been created. These variations are also useful when peforming A/B testing.
+As mentioned previously when viewing the page details you can also view the various translations and page variants which have been created. These variations are also useful when performing A/B testing.
 
 ![](http://drop.dbh.li/image/3i272q2g133l/Image%202014-11-16%20at%2010.13.10%20PM.png)
 
