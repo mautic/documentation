@@ -42,8 +42,8 @@ If the system is configured to queue emails, a cron job is required to process t
 
 ```
 php /path/to/mautic/app/console mautic:email:process
+```
 
 ## Note ##
 
 For releases prior to 1.1.3, it is required to append ` --env=prod` to the cron job command to ensure commands execute correctly.
-```
