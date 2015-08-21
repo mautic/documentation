@@ -14,7 +14,7 @@ To get the most out of the tracking pixel, it is recommended that you pass infor
 An example tracking pixel may look like:
 
 ```
-<img src='http://yourdomain.com/mtracking.gif?url=http%3a%2f%2fyourdomain.com%2fyour-product-page&title=Some%20Cool%20Product&email=user%40theirdomain.com" style="display: none; " />
+<img src="http://yourdomain.com/mtracking.gif?url=http%3a%2f%2fyourdomain.com%2fyour-product-page&title=Some%20Cool%20Product&email=user%40theirdomain.com" style="display: none;"  alt="mautic is open source marketing automation" />
 ```
 
 If you are using a CMS, the easiest way is to let one of our plugins do this for you (see below). Or if your site is based off PHP, you could do something like:
