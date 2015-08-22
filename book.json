@@ -1,5 +1,6 @@
 {
 	"gitbook": ">=2.0.0",
 	"title": "Mautic Documentation",
-	"description": "Marketing automation documentation for Mautic, free marketing software."
+	"description": "Marketing automation documentation for Mautic, free marketing software.",
+	"plugins": ["customheader"]
 }
