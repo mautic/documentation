@@ -29,5 +29,5 @@
 * [Required Cron Jobs](setup/README.md)
 * [Themes](themes/README.md)
     * [Manage Themes](themes/manage_themes.md)
-    * [Customise Themes](themes/customise_themes.md)
+    * [Customize Themes](themes/customize_themes.md)
     * [Theme Structure](themes/theme_structure.md)
