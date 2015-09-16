@@ -17,16 +17,36 @@ An example tracking pixel may look like:
 <img src="http://yourdomain.com/mtracking.gif?url=http%3a%2f%2fyourdomain.com%2fyour-product-page&title=Some%20Cool%20Product&email=user%40theirdomain.com" style="display: none;"  alt="mautic is open source marketing automation" />
 ```
 
-If you are using a CMS, the easiest way is to let one of our plugins do this for you (see below). Or if your site is based off PHP, you could do something like:
+If you are using a CMS, the easiest way is to let one of our plugins do this for you (see below).
+
+Here are a couple code snippets that may help as well:
+
+PHP
 
 ```
 $d = urlencode(base64_encode(serialize(array(
-    'url'   => $_SERVER['REQUEST_URI'], 
-    'title' => $pageTitle,         // Use your website's means of retrieving the title or manually insert it
+    'page_url'   => $_SERVER['REQUEST_URI'], 
+    'page_title' => $pageTitle,    // Use your website's means of retrieving the title or manually insert it
     'email' => $loggedInUsersEmail // Use your website's means of user management to retrieve the email
 ))));
 
 echo '<img src="http://yourdomain.com/mtracking.gif?d=' . $d . '" style="display: none;" />';
+```
+
+Javascript
+
+```
+<script>
+var mauticUrl = 'http://your-mautic.com';    
+var src = mauticUrl + '/mtracking.gif?page_url=' + encodeURIComponent(window.location.href) + '&page_title=' + encodeURIComponent(document.title);    
+var img = document.createElement('img');    
+img.style.width  = '1px';    
+img.style.height  = '1px';    
+img.style.display = 'none';    
+img.src = src;    
+var body = document.getElementsByTagName('body')[0];    
+body.appendChild(img);
+</script>
 ```
 
 #### Available Plugins
