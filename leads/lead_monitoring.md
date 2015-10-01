@@ -9,12 +9,12 @@ Monitoring all traffic on a website can be done by adding a single tracking pixe
 http://yourdomain.com/mtracking.gif
 ```
 
-To get the most out of the tracking pixel, it is recommended that you pass information of the current web page through the image URL.  Mautic currently supports url, referrer, language, and title.  You can also pass information specific to your lead by setting Mautic lead field(s) to be publicly updatable. Note that values appended to the tracking pixel should be url encoded (%20 for spaces, %40 for @, etc).
+To get the most out of the tracking pixel, it is recommended that you pass information of the current web page through the image URL.  Mautic currently supports `page_url`, `referrer`, `language`, and `page_title` (note that the use of `url` and `title` are deprecated due to conflicts with lead fields).  You can also pass information specific to your lead by setting Mautic lead field(s) to be publicly updatable. Note that values appended to the tracking pixel should be url encoded (%20 for spaces, %40 for @, etc).
 
 An example tracking pixel may look like:
 
 ```
-<img src="http://yourdomain.com/mtracking.gif?url=http%3a%2f%2fyourdomain.com%2fyour-product-page&title=Some%20Cool%20Product&email=user%40theirdomain.com" style="display: none;"  alt="mautic is open source marketing automation" />
+<img src="http://yourdomain.com/mtracking.gif?page_url=http%3a%2f%2fyourdomain.com%2fyour-product-page&page_title=Some%20Cool%20Product&email=user%40theirdomain.com" style="display: none;"  alt="mautic is open source marketing automation" />
 ```
 
 If you are using a CMS, the easiest way is to let one of our plugins do this for you (see below).
