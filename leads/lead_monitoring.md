@@ -65,9 +65,9 @@ These are just a few of the integrations already created by the Mautic community
 
 ### Mobile Monitoring
 
-The essence of monitoring what happens in an App is similar to what happens on a website. Mautic contains the building blocks needed for native (or pseudo-native) and HTML5-wrapper based Apps, regardless of platform.
+The essence of monitoring what happens in an App is similar to monitoring what happens on a website. Mautic contains the building blocks needed for native (or pseudo-native) and HTML5-wrapper based Apps, regardless of platform.
 
-In short, we use named screen views (e.g. main_screen) in the App as our page_url filed in the tracker, and the lead's email as the unique identifier, like this:
+In short, we use named screen views (e.g. main_screen) in the App as our page_url field in the tracker, and the lead's email as the unique identifier, like this:
 
 ```
 http://yourdomain.com/mtracking.gif?page_url=main_screen&email=my3mail@domain.com
@@ -81,20 +81,20 @@ First, setup a form, which will be the access point of your campaign (e.g. a new
 http://your_mautic/form/submit/formId?<form_id>
 ```
 
-You can get the ID from the mautic URL as you edit the forms, and the fields by looking at the HTML of the 'Manual Copy' of the HTML in the forrms editing page
+You can get the ID from the mautic URL as you edit the forms, and the fields by looking at the HTML of the 'Manual Copy' of the HTML in the forms editing page.
 
 
-Second, define in your campaigns the screens you want to use as triggers (e.g. 'cart_screen' etc.). The beauty of mautic is that it is not looking for 'http://' at the beginning (thank goodness!)
+Second, define in your campaigns the screens you want to use as triggers (e.g. 'cart_screen' etc.). The beauty of mautic is that it is not looking for 'http://' at the beginning of the URL, rather a typical string would do (thank goodness!)
 
 #### In your App
 
-A best-in-class approach is to have a class that handles all your tracking needs. For example, this would POST to the form with ID 3.
+A best-in-class approach is to have a class that handles all your tracking needs. For example, this method call would POST to the form with ID 3.
 
 ```
 mautic.addLead("myemail@somehwere.com",3)
 ```
 
-This could just make an HTTP request to the tracker
+This call would make an HTTP request to the tracker
 
 ```
 mautic.track("cart_screen", "myemail@somewhere.com")
