@@ -63,6 +63,46 @@ These are just a few of the integrations already created by the Mautic community
 
 **Note:** It is important to note that you are not limited by these plugins and you can place the tracking pixel directly on any HTML page for website tracking.
 
+### Mobile Monitoring
+
+The essence of monitoring what happens in an App is similar to what happens on a website. Mautic contains the building blocks needed for native (or pseudo-native) and HTML5-wrapper based Apps, regardless of platform.
+
+In short, we use named screen views (e.g. main_screen) in the App as our page_url filed in the tracker, and the lead's email as the unique identifier, like this:
+
+```
+http://yourdomain.com/mtracking.gif?page_url=main_screen&email=my3mail@domain.com
+```
+
+#### Steps in Mautic
+
+First, setup a form, which will be the access point of your campaign (e.g. a new lead email). Make this form as simple as you can, as you will be POST-ing to it from your App. The typical form URL is 
+
+```
+http://your_mautic/form/submit/formId?<form_id>
+```
+
+You can get the ID from the mautic URL as you edit the forms, and the fields by looking at the HTML of the 'Manual Copy' of the HTML in the forrms editing page
+
+
+Second, define in your campaigns the screens you want to use as triggers (e.g. 'cart_screen' etc.). The beauty of mautic is that it is not looking for 'http://' at the beginning (thank goodness!)
+
+#### In your App
+
+A best-in-class approach is to have a class that handles all your tracking needs. For example, this would POST to the form with ID 3.
+
+```
+mautic.addLead("myemail@somehwere.com",3)
+```
+
+This could just make an HTTP request to the tracker
+
+```
+mautic.track("cart_screen", "myemail@somewhere.com")
+```
+
+
+
+
 ### Other Online Monitoring
 
 There are several other ways to monitor lead activity and attach points to those activities. Website monitoring is only one way to track leads. Other lead monitoring activities can consist of forum posts, chat room messages, mailing list discussion posts, GitHub/Bitbucket messages, code submissions, social media posts, and a myriad of other options.
