@@ -94,12 +94,16 @@ A best-in-class approach is to have a class that handles all your tracking needs
 mautic.addLead("myemail@somehwere.com",3)
 ```
 
-This call would make an HTTP request to the tracker
+This call would make an HTTP request to the tracker:
 
 ```
 mautic.track("cart_screen", "myemail@somewhere.com")
 ```
 
+Which is nothing more than an HTTP request to this GET-formatted URL:
+```
+http://yourdomain.com/mtracking.gif?page_url=cart_screen&email=myemail@somewhere.com
+```
 
 
 
