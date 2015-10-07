@@ -78,7 +78,7 @@ http://yourdomain.com/mtracking.gif?page_url=main_screen&email=my3mail@domain.co
 First, setup a form, which will be the access point of your campaign (e.g. a new lead email). Make this form as simple as you can, as you will be POST-ing to it from your App. The typical form URL is 
 
 ```
-http://your_mautic/form/submit/formId?<form_id>
+http://your_mautic/form/submit?formId=<form_id>
 ```
 
 You can get the ID from the mautic URL as you edit the forms, and the fields by looking at the HTML of the 'Manual Copy' of the HTML in the forms editing page.
