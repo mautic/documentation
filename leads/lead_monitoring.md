@@ -78,7 +78,7 @@ First, setup a form, which will be the access point of your campaign (e.g. a new
 http://your_mautic/form/submit?formId=<form_id>
 ```
 
-You can get the ID from the mautic URL as you view / edit the form in the Mautic interface (or in the database tables, last column), and you can get the form fields by looking at the HTML of the 'Manual Copy' of the HTML in the forms editing page.
+You can get the ID from the mautic URL as you view / edit the form in the Mautic interface (or in the forms tables, last column), and you can get the form fields by looking at the HTML of the 'Manual Copy' of the HTML in the forms editing page.
 
 
 Second, define in your campaigns the screens you want to use as triggers (e.g. 'cart_screen' etc.). Mautic is not looking for a real URL in the form 'http://<url>' for page_url, any typical string would do. Like this:
