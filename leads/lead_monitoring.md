@@ -88,13 +88,13 @@ Second, define in your campaigns the screens you want to use as triggers (e.g. '
 
 #### In your App
 
-A best-in-class approach is to have a class that handles all your tracking needs. For example, this method call would POST to the form with ID 3.
+A best-in-class approach is to have a class (say 'mautic') that handles all your tracking needs. For example, this sample method call (in JavaScript / ECMAScript-type language, use similar call in your mobile App language of choice) would POST to the form with ID 3.
 
 ```
 mautic.addLead("myemail@somehwere.com",3)
 ```
 
-This call would make an HTTP request to the tracker:
+This sample call would make an HTTP request to the tracker:
 
 ```
 mautic.track("cart_screen", "myemail@somewhere.com")
