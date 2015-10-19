@@ -75,13 +75,13 @@ http://yourdomain.com/mtracking.gif?page_url=main_screen&email=my3mail@domain.co
 
 #### Steps in Mautic
 
-First, setup a form, which will be the access point of your campaign (e.g. a new lead email). Make this form as simple as you can, as you will be POST-ing to it from your App. The typical form URL is 
+First, setup a form, which will be the access point of your campaign (e.g. a new lead email). Make this form as simple as you can, as you will be POST-ing to it from your App. The typical form URL you will POST to is 
 
 ```
 http://your_mautic/form/submit?formId=<form_id>
 ```
 
-You can get the ID from the mautic URL as you edit the forms, and the fields by looking at the HTML of the 'Manual Copy' of the HTML in the forms editing page.
+You can get the ID from the mautic URL as you view / edit the forms in the Mautic interface (or in the tables, last column), and you can get the fields by looking at the HTML of the 'Manual Copy' of the HTML in the forms editing page.
 
 
 Second, define in your campaigns the screens you want to use as triggers (e.g. 'cart_screen' etc.). The beauty of mautic is that it is not looking for 'http://' at the beginning of the URL, rather a typical string would do (thank goodness!)
