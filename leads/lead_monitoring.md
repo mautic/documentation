@@ -67,7 +67,7 @@ These are just a few of the integrations already created by the Mautic community
 
 The essence of monitoring what happens in an App is similar to monitoring what happens on a website. Mautic contains the building blocks needed for native (or pseudo-native) and HTML5-wrapper based Apps, regardless of platform.
 
-In short, we use named screen views (e.g. main_screen) in the App as our page_url field in the tracker, and the lead's email as the unique identifier, like this:
+In short, use named screen views (e.g. main_screen) in your App as your page_url field in the tracker, and the lead's email as the unique identifier, like this:
 
 ```
 http://yourdomain.com/mtracking.gif?page_url=main_screen&email=my3mail@domain.com
