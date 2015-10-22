@@ -72,7 +72,9 @@ In short, use named screen views (e.g. main_screen) in your App as your page_url
 
 #### Steps in Mautic
 
-First, setup a form, which will be the access point of your campaign (e.g. a new lead email). Make this form as simple as you can, as you will be POST-ing to it from your App. The typical form URL you will POST to is 
+1. Make the email field publicly editable, this means that a call to the tracking GIF with the variable email will get properly recognized by Mautic.
+
+2. Setup a form, which will be the access point of your campaign (e.g. a new lead email). Make this form as simple as you can, as you will be POST-ing to it from your App. The typical form URL you will POST to is 
 
 ```
 http://your_mautic/form/submit?formId=<form_id>
@@ -81,7 +83,7 @@ http://your_mautic/form/submit?formId=<form_id>
 You can get the ID from the mautic URL as you view / edit the form in the Mautic interface (or in the forms tables, last column), and you can get the form fields by looking at the HTML of the 'Manual Copy' of the HTML in the forms editing page.
 
 
-Second, define in your campaigns the screens you want to use as triggers (e.g. 'cart_screen' etc.). Mautic is not looking for a real URL in the form 'http://<url>' for page_url, any typical string would do. Like this:
+3. Define in your campaigns the screens you want to use as triggers (e.g. 'cart_screen' etc.). Mautic is not looking for a real URL in the form 'http://<url>' for page_url, any typical string would do. Like this:
 
 ```
 http://yourdomain.com/mtracking.gif?page_url=cart_screen&email=myemail@somewhere.com
@@ -101,13 +103,13 @@ And then, to track individual user activity in the App, this sample call would m
 mautic.track("cart_screen", "myemail@somewhere.com")
 ```
 
-Which is nothing more than an HTTP request to this GET-formatted URL, as shown in previous section:
+Which is nothing more than an HTTP request to this GET-formatted URL (as also shown in previous section):
 
 ```
 http://yourdomain.com/mtracking.gif?page_url=cart_screen&email=myemail@somewhere.com
 ```
 
-
+Important: Make sure in your App, that the above HTTP request (if possible, re-use the cookie from the mautic.addLead POST request prior) is using a cookie AND that you keep this cookie from one request to the next. This how Mautic (and other tracking software) knows that it's really the same user. If you can't do this, you may run in the (unlikely but possible) case where you have multiple leads from the same IP address and Mautic will merge them all into a single lead.
 
 ### Other Online Monitoring
 
