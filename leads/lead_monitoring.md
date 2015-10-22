@@ -63,6 +63,54 @@ These are just a few of the integrations already created by the Mautic community
 
 **Note:** It is important to note that you are not limited by these plugins and you can place the tracking pixel directly on any HTML page for website tracking.
 
+### Mobile Monitoring
+
+The essence of monitoring what happens in an App is similar to monitoring what happens on a website. Mautic contains the building blocks needed for native (or pseudo-native) and HTML5-wrapper based Apps, regardless of platform.
+
+In short, use named screen views (e.g. main_screen) in your App as your page_url field in the tracker, and the lead's email as the unique identifier, see next section for detailed instructions.
+
+
+#### Steps in Mautic
+
+1. Make the email field publicly editable, this means that a call to the tracking GIF with the variable email will get properly recognized by Mautic.
+
+2. Setup a form, which will be the access point of your campaign (e.g. a new lead email). Make this form as simple as you can, as you will be POST-ing to it from your App. The typical form URL you will POST to is 
+
+```
+http://your_mautic/form/submit?formId=<form_id>
+```
+
+You can get the ID from the mautic URL as you view / edit the form in the Mautic interface (or in the forms tables, last column), and you can get the form fields by looking at the HTML of the 'Manual Copy' of the HTML in the forms editing page.
+
+
+3. Define in your campaigns the screens you want to use as triggers (e.g. 'cart_screen' etc.). Mautic is not looking for a real URL in the form 'http://<url>' for page_url, any typical string would do. Like this:
+
+```
+http://yourdomain.com/mtracking.gif?page_url=cart_screen&email=myemail@somewhere.com
+```
+
+#### In your App
+
+A best-in-class approach is to have a class (say 'mautic') that handles all your tracking needs. For example, this sample method call would POST to the form with ID 3 - see previous section (note: for conciseness and ubiquity, these sample lines are written in JavaScript / ECMAScript-type language, use similar call in your mobile App language of choice).
+
+```
+mautic.addLead("myemail@somehwere.com",3)
+```
+
+And then, to track individual user activity in the App, this sample call would make an HTTP request to the tracker:
+
+```
+mautic.track("cart_screen", "myemail@somewhere.com")
+```
+
+Which is nothing more than an HTTP request to this GET-formatted URL (as also shown in previous section):
+
+```
+http://yourdomain.com/mtracking.gif?page_url=cart_screen&email=myemail@somewhere.com
+```
+
+Important: Make sure in your App, that the above HTTP request is using a cookie (if possible, re-use the cookie from the mautic.addLead POST request prior) AND that you reuse this cookie from one request to the next. This how Mautic (and other tracking software) knows that it's really the same user. If you can't do this, you may run in the (unlikely but possible) case where you have multiple leads from the same IP address and Mautic will merge them all into a single lead as it can't tell who is who without a cookie.
+
 ### Other Online Monitoring
 
 There are several other ways to monitor lead activity and attach points to those activities. Website monitoring is only one way to track leads. Other lead monitoring activities can consist of forum posts, chat room messages, mailing list discussion posts, GitHub/Bitbucket messages, code submissions, social media posts, and a myriad of other options.
