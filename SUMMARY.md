@@ -10,6 +10,7 @@
 * [Pages](pages/README.md)
    * [Manage Pages](pages/manage_pages.md)
    * [Manage Categories](pages/manage_categories.md)
+   * [Troubleshooting](pages/troubleshooting.md)
 * [Forms](forms/README.md)
    * [Manage Forms](forms/manage_forms.md)
 * [Assets](assets/README.md)
