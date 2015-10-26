@@ -19,6 +19,7 @@
    * [Campaign Builder](campaigns/campaign_builder.md)
 * [Emails](emails/README.md)
    * [Manage Emails](emails/manage_emails.md)
+   * [Troubleshooting](emails/troubleshooting.md)
 * [Reports](reports/README.md)
 * [Points](points/README.md)
 * [Use Cases](use_cases/README.md)
