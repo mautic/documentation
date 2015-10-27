@@ -3,7 +3,7 @@ The act of monitoring the traffic and activity of leads can sometimes be somewha
 
 ### Website Monitoring
 
-Monitoring all traffic on a website can be done by adding a single tracking pixel to the website.  It is important to note that traffic will not be monitored from logged-in Mautic users.  To check that the pixel is working, use an incognito or private browsing window.  Traffic will not be monitored until the session times out or the user logs out of Mautic.
+Monitoring all traffic on a website can be done by adding a single tracking pixel to the website.  It is important to note that traffic will not be monitored from logged-in Mautic users.  To check that the pixel is working, use an incognito or private browsing window or simply log-out of Mautic prior to testing.
 
 ```
 http://yourdomain.com/mtracking.gif
