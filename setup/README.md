@@ -38,10 +38,20 @@ You can also limit the number of leads to process per script execution using `--
 
 ## Optional ##
 
-If the system is configured to queue emails, a cron job is required to process them.
+### Process Email Queue ###
+
+If the system is configured to queue emails to the filesystem, a cron job is required to process them.
 
 ```
 php /path/to/mautic/app/console mautic:email:process
+```
+
+### Fetch and Process Monitored Email ###
+ 
+If using the [Bounce Management](/emails/bounce_management.html),  
+ 
+```
+php /path/to/mautic/app/console mautic:fetch:email
 ```
 
 ## Note ##

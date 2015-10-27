@@ -1,6 +1,6 @@
 # Campaign Builder
 
-The Mautic campaign builder gives you a blank canvas upon which to build your campaign workflow. The overall interface is clean and simple with easy to use actions and decisions. These actions and decisions can be either clicked or dragged and dropped onto the campaign builder canvas.
+The Mautic campaign builder gives you a blank canvas upon which to build your campaign workflow. The overall interface is clean and simple with easy to use actions and decisions. These actions, decisions, or conditions can be either clicked or dragged and dropped onto the campaign builder canvas.
 
 ### Actions
 
@@ -39,6 +39,12 @@ Actions attached to the red point of a decision are considered non-action points
 Use an action's delay settings to define at what point should the campaign send the lead down this path.
 
 To trigger this events, see [Executing Campaign Actions](https://www.mautic.org/docs/campaigns/manage_campaigns.html#executing-campaign-actions).
+
 #### Example
 
 To provide a simple example of a decision tree consider an email where the decision is to open an email. There are two outcomes, if the lead chooses to open the email then the green decision point leads to the next action to be taken in the campaign workflow. If, however, the lead does not open the email then you may desire a different action to be taken (e.g. a delay of 30 days then a second email sent).
+
+
+### Conditions
+
+Conditions can be used to execute different actions based on a lead's data.  For example, a condition can be configured to execute an action if a lead has an email or do something else if they do not.
