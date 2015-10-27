@@ -54,6 +54,14 @@ If using the [Bounce Management](/emails/bounce_management.html),
 php /path/to/mautic/app/console mautic:fetch:email
 ```
 
+### Webhooks
+
+If Mautic is configured to send webhooks in batches, use the following command to send the payloads:
+
+```
+php /path/to/mautic/app/console mautic:webhooks:process
+```
+
 ## Note ##
 
 For releases prior to 1.1.3, it is required to append ` --env=prod` to the cron job command to ensure commands execute correctly.
