@@ -48,7 +48,7 @@ php /path/to/mautic/app/console mautic:email:process
 
 ### Fetch and Process Monitored Email ###
  
-If using the [Bounce Management](/emails/bounce_management.html),  
+If using the [Bounce Management](./../emails/bounce_management.html),  
  
 ```
 php /path/to/mautic/app/console mautic:fetch:email
