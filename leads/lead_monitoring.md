@@ -25,7 +25,7 @@ PHP
 
 ```
 $d = urlencode(base64_encode(serialize(array(
-    'page_url'   => $_SERVER['REQUEST_URI'], 
+    'page_url'   => $_SERVER['REQUEST_URI'],
     'page_title' => $pageTitle,    // Use your website's means of retrieving the title or manually insert it
     'email' => $loggedInUsersEmail // Use your website's means of user management to retrieve the email
 ))));
@@ -37,14 +37,14 @@ Javascript
 
 ```
 <script>
-var mauticUrl = 'http://your-mautic.com';    
-var src = mauticUrl + '/mtracking.gif?page_url=' + encodeURIComponent(window.location.href) + '&page_title=' + encodeURIComponent(document.title);    
-var img = document.createElement('img');    
-img.style.width  = '1px';    
-img.style.height  = '1px';    
-img.style.display = 'none';    
-img.src = src;    
-var body = document.getElementsByTagName('body')[0];    
+var mauticUrl = 'http://your-mautic.com';
+var src = mauticUrl + '/mtracking.gif?page_url=' + encodeURIComponent(window.location.href) + '&page_title=' + encodeURIComponent(document.title);
+var img = document.createElement('img');
+img.style.width  = '1px';
+img.style.height  = '1px';
+img.style.display = 'none';
+img.src = src;
+var body = document.getElementsByTagName('body')[0];
 body.appendChild(img);
 </script>
 ```
@@ -74,7 +74,7 @@ In short, use named screen views (e.g. main_screen) in your App as your page_url
 
 1. Make the email field publicly editable, this means that a call to the tracking GIF with the variable email will get properly recognized by Mautic.
 
-2. Setup a form, which will be the access point of your campaign (e.g. a new lead email). Make this form as simple as you can, as you will be POST-ing to it from your App. The typical form URL you will POST to is 
+2. Setup a form, which will be the access point of your campaign (e.g. a new lead email). Make this form as simple as you can, as you will be POST-ing to it from your App. The typical form URL you will POST to is
 
 ```
 http://your_mautic/form/submit?formId=<form_id>
@@ -114,3 +114,7 @@ Important: Make sure in your App, that the above HTTP request is using a cookie 
 ### Other Online Monitoring
 
 There are several other ways to monitor lead activity and attach points to those activities. Website monitoring is only one way to track leads. Other lead monitoring activities can consist of forum posts, chat room messages, mailing list discussion posts, GitHub/Bitbucket messages, code submissions, social media posts, and a myriad of other options.
+
+### Troubleshooting
+
+If the tracking doesn't work, take a look at [Page troubleshooting](pages/troubleshooting.html) or [Email troubleshooting](emails/troubleshooting.html)
