@@ -20,7 +20,7 @@
    * [Campaign Builder](campaigns/campaign_builder.md)
 * [Emails](emails/README.md)
    * [Manage Emails](emails/manage_emails.md)
-   * [Bounce Management](emails/email_bounce_management.md)
+   * [Bounce Management](emails/bounce_management.md)
    * [Troubleshooting](emails/troubleshooting.md)
 * [Reports](reports/README.md)
 * [Points](points/README.md)
