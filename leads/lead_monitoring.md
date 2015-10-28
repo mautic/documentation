@@ -9,17 +9,58 @@ Monitoring all traffic on a website can be done by adding a single tracking pixe
 http://yourdomain.com/mtracking.gif
 ```
 
-To get the most out of the tracking pixel, it is recommended that you pass information of the current web page through the image URL.  Mautic currently supports `page_url`, `referrer`, `language`, and `page_title` (note that the use of `url` and `title` are deprecated due to conflicts with lead fields).  You can also pass information specific to your lead by setting Mautic lead field(s) to be publicly updatable. Note that values appended to the tracking pixel should be url encoded (%20 for spaces, %40 for @, etc).
+### Tracking Pixel Query
 
-An example tracking pixel may look like:
+To get the most out of the tracking pixel, it is recommended that you pass information of the web request through the image URL.  
 
-```
-<img src="http://yourdomain.com/mtracking.gif?page_url=http%3a%2f%2fyourdomain.com%2fyour-product-page&page_title=Some%20Cool%20Product&email=user%40theirdomain.com" style="display: none;"  alt="mautic is open source marketing automation" />
-```
+#### Page Information
 
-If you are using a CMS, the easiest way is to let one of our plugins do this for you (see below).
+Mautic currently supports `page_url`, `referrer`, `language`, and `page_title` (note that the use of `url` and `title` are deprecated due to conflicts with lead fields).
+
+#### UTM Codes 
+
+Support for UTM codes in the lead time-line was introduced in version 1.2.1. `utm_medium`, `utm_source`, and `utm_campaign` are used to generate the content of the time-line entry.
+
+`utm_medium` values are mapped to the following Font Awesome classes in the lead time-line:
+ 
+<table>
+<thead>
+<tr>
+    <th>Values</th>
+    <th>Class</th>
+</tr>
+</thead>
+<tbody>
+   <tr><td>social, socialmedia</td><td>fa-share-alt if utm_source is not available otherwise utm_source will be used as the class. For example, if utm_source is Twitter, fa-twitter will be used.</td></tr>
+   <tr><td>email, newsletter</td><td>fa-envelope-o</td></tr>
+   <tr><td>banner, ad</td><td>fa-bullseye</td></tr>
+   <tr><td>cpc</td><td>fa-money</td></tr>
+   <tr><td>location</td><td>fa-map-marker</td></tr>
+   <tr><td>device</td><td>fa-tablet if utm_source is not available otherwise utm_source will be used as teh class. For example, if utm_source is Mobile,fa-mobile will be used.</td></tr>   
+</tbody>
+</table>
+
+#### Lead Fields
+
+You can also pass information specific to your lead by setting Mautic lead field(s) to be publicly updatable. Note that values appended to the tracking pixel should be url encoded (%20 for spaces, %40 for @, etc).
+
+#### Tags
+
+The lead's tags can be changed by using the `tags` query parameter. Multiple tags can be separated by comma. To remove a tag, prefix it with a dash (minus sign).  
+
+For example, `mtracking.gif?tags=ProductA,-ProductB` would add the ProductA tag to the lead and remove ProductB.
+
+### Embedding the Pixel
+
+If you are using a CMS, the easiest way is to let one of our plugins do this for you (see below). Note that the plugins may not support all lead fields, utm codes or lead tags.
 
 Here are a couple code snippets that may help as well:
+
+HTML
+
+```
+<img src="http://yourdomain.com/mtracking.gif?page_url=http%3a%2f%2fyourdomain.com%2fyour-product-page&page_title=Some%20Cool%20Product&email=user%40theirdomain.com&tags=ProductA,-ProductB" style="display: none;"  alt="mautic is open source marketing automation" />
+```
 
 PHP
 
