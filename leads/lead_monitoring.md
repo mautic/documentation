@@ -33,12 +33,12 @@ Support for UTM codes in the lead time-line was introduced in version 1.2.1. `ut
 </tr>
 </thead>
 <tbody>
-   <tr><td>social, socialmedia</td><td>fa-share-alt if `utm_source` is not available otherwise `utm_source` will be used as the class. For example, if `utm_source` is Twitter, fa-twitter will be used.</td></tr>
+   <tr><td>social, socialmedia</td><td>fa-share-alt if <code>utm_source</code> is not available otherwise <code>utm_source</code> will be used as the class. For example, if <code>utm_source</code> is Twitter, fa-twitter will be used.</td></tr>
    <tr><td>email, newsletter</td><td>fa-envelope-o</td></tr>
    <tr><td>banner, ad</td><td>fa-bullseye</td></tr>
    <tr><td>cpc</td><td>fa-money</td></tr>
    <tr><td>location</td><td>fa-map-marker</td></tr>
-   <tr><td>device</td><td>fa-tablet if `utm_source` is not available otherwise `utm_source` will be used as the class. For example, if `utm_source` is Mobile,fa-mobile will be used.</td></tr>   
+   <tr><td>device</td><td>fa-tablet if <code>utm_source</code> is not available otherwise <code>utm_source</code> will be used as the class. For example, if <code>utm_source</code> is Mobile, fa-mobile will be used.</td></tr>   
 </tbody>
 </table>
 
