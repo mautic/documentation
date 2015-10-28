@@ -21,7 +21,9 @@ Mautic currently supports `page_url`, `referrer`, `language`, and `page_title` (
 
 Support for UTM codes in the lead time-line was introduced in version 1.2.1. `utm_medium`, `utm_source`, and `utm_campaign` are used to generate the content of the time-line entry.
 
-`utm_medium` values are mapped to the following Font Awesome classes in the lead time-line:
+`utm_campaign` will be used as  the time-line entry's title.
+
+`utm_medium` values are mapped to the following Font Awesome classes:
  
 <table>
 <thead>
@@ -31,12 +33,12 @@ Support for UTM codes in the lead time-line was introduced in version 1.2.1. `ut
 </tr>
 </thead>
 <tbody>
-   <tr><td>social, socialmedia</td><td>fa-share-alt if utm_source is not available otherwise utm_source will be used as the class. For example, if utm_source is Twitter, fa-twitter will be used.</td></tr>
+   <tr><td>social, socialmedia</td><td>fa-share-alt if `utm_source` is not available otherwise `utm_source` will be used as the class. For example, if `utm_source` is Twitter, fa-twitter will be used.</td></tr>
    <tr><td>email, newsletter</td><td>fa-envelope-o</td></tr>
    <tr><td>banner, ad</td><td>fa-bullseye</td></tr>
    <tr><td>cpc</td><td>fa-money</td></tr>
    <tr><td>location</td><td>fa-map-marker</td></tr>
-   <tr><td>device</td><td>fa-tablet if utm_source is not available otherwise utm_source will be used as teh class. For example, if utm_source is Mobile,fa-mobile will be used.</td></tr>   
+   <tr><td>device</td><td>fa-tablet if `utm_source` is not available otherwise `utm_source` will be used as the class. For example, if `utm_source` is Mobile,fa-mobile will be used.</td></tr>   
 </tbody>
 </table>
 
