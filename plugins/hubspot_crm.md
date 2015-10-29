@@ -14,7 +14,11 @@ Open the Hubspot Plugin configuration and paste the API key into the *Hubspot AP
 
 ![Hubspot CRM Plugin configuration](/plugins/media/plugins-hubspot-crm-configuration.png "Hubspot CRM Plugin configuration")
 
-In the Features tab is just *Push leads to this integration* checkbox and it is checked by default, so we are done here. Save it.
+In the Features tab is just *Push leads to this integration* checkbox and it is checked by default. At the *Lead Field Mapping* tab is the list of available Hubspot CRM Contact Fields. You have to select the Mautic Lead Field equivalent so each field will get the right value. You don't have to map every field. Map only those you want to push into the Hubspot CRM.
+
+![Hubspot CRM Plugin Lead Fiedl Mapping](/plugins/media/plugins-hubspot-crm-mapping.png "Hubspot CRM Plugin Lead Fiedl Mapping")
+
+Save the plugin configuration.
 
 ## Test the plugin
 
@@ -28,4 +32,14 @@ Use any of those triggers to test the plugin and see if the lead appears in the 
 
 ![Push to Hubspot CRM form action](/plugins/media/plugins-push-to-hubspot-crm-form-action.png "Push to Hubspot CRM form action")
 
-After you have your form with some fields and the Push to Hubspot CRM action, go to the form public URL at http://[yourmautic]/form/[formID], fill in some sample lead information and submit it. Then check the Hubspot CRM if the new contact has been created.
+After you have your form with some fields (for example an email and a first name field) and the Push to Hubspot CRM action, go to the form public URL at http://[yourmautic]/form/[formID], fill in some sample lead information and submit it. Then check the Hubspot CRM if the new contact has been created.
+
+## Troubleshooting
+
+If the contact hasn't been created, make sure that the email address you'd tested it with is valid. Hubspot will create a new contact only when its email address is valid.
+
+If the first name value hasn't been transferred, make sure you mapped the form field value to the lead field value in the form field configuration.
+
+## Credit
+
+This plugin had been developed by [@gpassarelli](https://github.com/gpassarelli).
