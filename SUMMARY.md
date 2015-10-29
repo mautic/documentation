@@ -24,6 +24,8 @@
    * [Troubleshooting](emails/troubleshooting.md)
 * [Reports](reports/README.md)
 * [Points](points/README.md)
+* [Plugins](plugins/README.md)
+   * [Hubspot CRM](plugins/hubspot_crm.md)
 * [Use Cases](use_cases/README.md)
    * [Sales](use_cases/sales.md)
    * [Education](use_cases/education.md)
