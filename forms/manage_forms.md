@@ -59,4 +59,4 @@ In the rendered email sent to a lead, the URL may be converted into something li
 ```
 http://my-mautic.com/my-landing-page?ct=A_REALLY_LONG_STRING&email=leademail%40gmail.com
 ```
-So, what happened is ``{pagelink=1}`` was converted into the landing page URL and had `?ct=A_REALLY_LONG_STRING` appended. The really long string is encoded information about the lead which includes the lead ID. Each ``{leadfield=FIELDALIAS}`` was replaced with the lead's data. When the lead clicks the link, they will be taken to the landing page with the embedded form, and the form's 'email' input will be pre-populated with the value passed through the URL.
+So, what happened is `{pagelink=1}` was converted into the landing page URL and had `?ct=A_REALLY_LONG_STRING` appended. The really long string is encoded information about the lead which includes the lead ID. Each `{leadfield=FIELDALIAS}` was replaced with the lead's data. When the lead clicks the link, they will be taken to the landing page with the embedded form, and the form's 'email' input will be pre-populated with the value passed through the URL.
