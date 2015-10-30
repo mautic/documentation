@@ -14,9 +14,9 @@ Open the Hubspot Plugin configuration and paste the API key into the *Hubspot AP
 
 ![Hubspot CRM Plugin configuration](/plugins/media/plugins-hubspot-crm-configuration.png "Hubspot CRM Plugin configuration")
 
-In the Features tab is just *Push leads to this integration* checkbox and it is checked by default. At the *Lead Field Mapping* tab is the list of available Hubspot CRM Contact Fields. You have to select the Mautic Lead Field equivalent so each field will get the right value. You don't have to map every field. Map only those you want to push into the Hubspot CRM.
+In the Features tab is just *Push leads to this integration* checkbox and it is checked by default.
 
-![Hubspot CRM Plugin Lead Fiedl Mapping](/plugins/media/plugins-hubspot-crm-mapping.png "Hubspot CRM Plugin Lead Fiedl Mapping")
+Configure the [field mapping](/plugins/field_mapping.html).
 
 Save the plugin configuration.
 

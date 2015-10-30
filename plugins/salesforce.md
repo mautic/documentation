@@ -16,10 +16,21 @@ Go to: *Setup* (tom right corner) / Build (bottom left corner) - Create / Apps /
 
 Create a new app like this:
 ![Salesforce CRM Create an App form](/plugins/media/plugins-salesforce-create-app-form.png "Salesforce CRM Create an App form")
+Make sure the Selcected OAuth Scopes are *Access and manage your fata (api)* and *Perform requests on your behalf at any time (refresh_token, offline_access)*.
 
 Copy the Consumer Key and Secret.
 
 ![Salesforce CRM Create an App keys](/plugins/media/plugins-salesforce-create-app-keys.png "Salesforce CRM Create an App keys")
 
-Insert the keys to the Mautic Salesforce plugin
+## Configure the Mautic Salesforce plugin
+
+Insert the keys to the Mautic Salesforce plugin and authorize it.
 ![Salesforce CRM Authorize](/plugins/media/plugins-salesforce-authorize.png "Salesforce CRM Authorize")
+
+Configure the [field mapping](/plugins/field_mapping.html).
+
+## Troubleshooting
+
+### Error: `The REST API is not enabled for this Organization.`
+
+This means the API is not turned on in your Salesforce account. [Read more](https://help.salesforce.com/apex/HTViewHelpDoc?id=admin_userperms.htm&language=en)
