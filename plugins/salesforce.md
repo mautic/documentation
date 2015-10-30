@@ -29,6 +29,10 @@ Insert the keys to the Mautic Salesforce plugin and authorize it.
 
 Configure the [field mapping](/plugins/field_mapping.html).
 
+## Test the plugin
+
+Follow [these steps]([field mapping](/plugins/integration_test.html) to test the ingegration.
+
 ## Troubleshooting
 
 ### Error: `The REST API is not enabled for this Organization.`

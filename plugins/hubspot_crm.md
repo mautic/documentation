@@ -22,17 +22,7 @@ Save the plugin configuration.
 
 ## Test the plugin
 
-Let's test the plugin to ensure that the it is configured properly. A lead can be pushed to integration via these places:
-
-- The Campaign Builder has the *Push lead to integration* action which can be used in the Campaign dripflow.
-- The Standalone Form has the *Push lead to integration* action which can be used after a standalone form is submitted.
-- The Point Trigger has the *Push lead to integration* action which can be triggered when a lead achieves some point limit.
-
-Use any of those triggers to test the plugin and see if the lead appears in the Hubspot CRM. Here is how the Standalone Form action can be configured:
-
-![Push to Hubspot CRM form action](/plugins/media/plugins-push-to-hubspot-crm-form-action.png "Push to Hubspot CRM form action")
-
-After you have your form with some fields (for example an email and a first name field) and the Push to Hubspot CRM action, go to the form public URL at http://[yourmautic]/form/[formID], fill in some sample lead information and submit it. Then check the Hubspot CRM if the new contact has been created.
+Follow [these steps]([field mapping](/plugins/integration_test.html) to test the ingegration.
 
 ## Troubleshooting
 
