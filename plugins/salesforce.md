@@ -31,7 +31,7 @@ Configure the [field mapping](/plugins/field_mapping.html).
 
 ## Test the plugin
 
-Follow [these steps]([field mapping](/plugins/integration_test.html) to test the ingegration.
+Follow [these steps]([field mapping](/plugins/integration_test.html) to test the integration.
 
 ## Troubleshooting
 

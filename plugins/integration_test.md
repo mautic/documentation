@@ -11,3 +11,7 @@ Use any of those triggers to test the plugin and see if the lead appears in the 
 ![Push to Hubspot CRM form action](/plugins/media/plugins-push-to-hubspot-crm-form-action.png "Push to Hubspot CRM form action")
 
 After you have your form with some fields (for example an email and a first name field) and the Push to an integration (e.g. Hubspot CRM) action, go to the form public URL at http://[yourmautic]/form/[formID], fill in some sample lead information and submit it. Then check the integration if the new lead has been created.
+
+## Troubleshooting
+
+If the first name value hasn't been transferred, make sure you mapped the form field value to the lead field value in the form field configuration.

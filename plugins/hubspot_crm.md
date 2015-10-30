@@ -22,13 +22,11 @@ Save the plugin configuration.
 
 ## Test the plugin
 
-Follow [these steps]([field mapping](/plugins/integration_test.html) to test the ingegration.
+Follow [these steps]([field mapping](/plugins/integration_test.html) to test the integration.
 
 ## Troubleshooting
 
 If the contact hasn't been created, make sure that the email address you'd tested it with is valid. Hubspot will create a new contact only when its email address is valid.
-
-If the first name value hasn't been transferred, make sure you mapped the form field value to the lead field value in the form field configuration.
 
 ## Credit
 

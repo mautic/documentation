@@ -26,6 +26,8 @@
 * [Points](points/README.md)
 * [Plugins](plugins/README.md)
    * [Hubspot CRM](plugins/hubspot_crm.md)
+   * [Salesforce CRM](plugins/salesforce_crm.md)
+   * [Zoho CRM](plugins/zoho_crm.md)
 * [Use Cases](use_cases/README.md)
    * [Sales](use_cases/sales.md)
    * [Education](use_cases/education.md)
