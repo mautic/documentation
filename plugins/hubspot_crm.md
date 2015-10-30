@@ -2,7 +2,7 @@
 
 This plugin can push a lead to Hubspot CRM when a lead makes some action. In case you don't see this plugin in your Mautic instance, make sure you run the latest version. This plugin had been added to Mautic 1.2.3.
 
-If you don't have the Hubspot CRM yet, [create it](http://www.hubspot.com/crm).
+If you don't have the Hubspot CRM account yet, [create it](http://www.hubspot.com/crm).
 
 ## Hubspot API key
 
