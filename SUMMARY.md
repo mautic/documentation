@@ -34,3 +34,4 @@
     * [Manage Themes](themes/manage_themes.md)
     * [Customize Themes](themes/customize_themes.md)
     * [Theme Structure](themes/theme_structure.md)
+* [Translations](translations/README.md)
