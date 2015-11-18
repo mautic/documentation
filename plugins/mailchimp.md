@@ -1,6 +1,6 @@
 # Mailchimp integration
 
-Mautic can send leads to Mailchimp upon some lead's action or when it gain some point limit. Mailchimp can be also used as an email sending system. This option is not part of the plugin though so it will not be covered on this page.
+Mautic can send leads to Mailchimp upon some lead's action or when it gain some point limit.
 
 ## Authorize the plugin
 
