@@ -12,16 +12,14 @@ Navigate to the *Features* tab in the plugin configuration modal box. You should
 
 > The Lead Field Mapping tab will appear after selecting a list and will update after changing the selected list.
 
-Select the lead list then. If you don't have the lead list created yet, go to *Lads* / *Manage Lists* and create one.
-
 ![Mailchimp Plugin configuration](/plugins/media/plugins-mailcimp-configure.png "Mailchimp Plugin configuration")
+
+Select the lead list then. If you don't have a lead list in Mailchimp created yet, go to *Mailchimp dashboard* / *Lists* / *Create List* and create one. Then save the plugin configuration and open it again. The *Lead Field Mapping* tab should appear now. Configure the [field mapping](/plugins/field_mapping.html).
 
 Other configuration options are:
 - **Push leads to this integration** - This option is checked by default. If you uncheck it, the plugin will not push leads to Mailchimp any more.
 - **Enable double opt in** - If Mailchimp should send a confirmation email to the leads added by this plugin. The leads will have to confirm that they really want to be added to the list.
 - **Send welcome email** - Whether Mailchimp should sent the welcome email.
-
-Configure the [field mapping](/plugins/field_mapping.html).
 
 ## Test the plugin
 
