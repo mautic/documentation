@@ -2,9 +2,9 @@
 
 This plugin can push a lead to Zoho CRM when a lead makes some action.
 
-If you don't have the Hubspot CRM account yet, [create it](https://www.zoho.com/crm/).
+If you don't have the Zoho CRM account yet, [create it](https://www.zoho.com/crm/).
 
-## Configure the Hubspot CRM plugin
+## Configure the Zoho CRM plugin
 
 Insert the email and password you created the Zoho account with into the Mautic Zoho integration plugin and authorize it. Set the *Publish* switch to *Yes*. Save.
 
