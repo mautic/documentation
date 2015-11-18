@@ -10,6 +10,9 @@ Insert the email and password you created the Zoho account with into the Mautic 
 
 ![Zoho CRM Plugin configuration](/plugins/media/plugins-zoho-authorization.png "Zoho CRM Plugin configuration")
 
+If Zoho Two Factor Authentication is enabled, an Application Specific Password will need to be generated and used.
+(https://www.zoho.com/mail/help/adminconsole/two-factor-authentication.html#alink5)
+
 In the Features tab is just *Push leads to this integration* checkbox and it is checked by default.
 
 Configure the [field mapping](/plugins/field_mapping.html).
