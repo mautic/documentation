@@ -28,6 +28,7 @@
    * [Hubspot CRM](plugins/hubspot_crm.md)
    * [Salesforce CRM](plugins/salesforce_crm.md)
    * [Zoho CRM](plugins/zoho_crm.md)
+   * [vTiger CRM](plugins/vtiger_crm.md)
    * [Mailchimp](plugins/mailchimp.md)
 * [Use Cases](use_cases/README.md)
    * [Sales](use_cases/sales.md)
