@@ -2,9 +2,24 @@
 
 Mautic can send leads to Mailchimp upon some lead's action or when it gain some point limit.
 
-## Authorize the plugin
+**Version notes**
+- For Mautic 1.2.2 and older, an Mailchimp app has to be created and the authentication is made via oAuth2. Client key and secret credentians are needed for authentication. Also SSL (https) connection is required.
+- For Mautic 1.2.3 and later, the authentication has been changed to the API key. This documentation covers this option. This plugin is backward compatible. If the client ID is filled, the plugin will use oAuth2. If the client ID is empty, the plugin will let you insert the API key.
 
-Authorize the Mautic - Mailchimp plugin with the credentials you use to log in to the Mailchimp account. Username and password.
+## Authorize
+
+### Get Mailchimp API key
+
+1. Create a Mailchimp account if you don't have one already.
+2. Go to *Account* / *Extras* / *API Keys* and create a new one.
+3. Copy the created API Key.
+
+![Mailchimp - create a API Key](/plugins/media/plugins-mailchimp-create-api-key.png "Mailchimp - create a API Key")
+![Mailchimp - copy the API Key](/plugins/media/plugins-mailchimp-copy-api-key.png "Mailchimp - copy the API Key")
+
+### Authorize Mautic - Mailchimp plugin
+
+Fill in the **username** you use to log in to Mailchimp and the **API key**. Save the plugin. 
 
 ## Configure the plugin
 
