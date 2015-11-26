@@ -12,4 +12,6 @@ Before an email is sent, Mautic replaces all links in the email with links back 
 
 If the email click doesn't get tracked, make sure that:
 1. Your Mautic server is on public URL. This tracking doesn't work on localhost.
-2. Check if the link in the email has been replaced by the Mautic's tracking link. If not, report it to https://github.com/mautic/mautic/issues with all the details (Mautic version, PHP version, what the link URL is before send, what it is after send and so on).
+2. The link tracking doesn't work for test emails, so make sure the email was send to an existing lead. Not by the *Send Example* link.
+3. You've opened the link in a incognito browser. More about it in the [Pages troubleshooting](/pages/troubleshooting.html).
+4. Check if the link in the email has been replaced by the Mautic's tracking link. If not, report it to [GitHub](https://github.com/mautic/mautic/issues) with all the details (Mautic version, PHP version, what the link URL is before send, what it is after send and so on).
