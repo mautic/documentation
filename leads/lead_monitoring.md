@@ -68,7 +68,7 @@ PHP
 
 ```
 $d = urlencode(base64_encode(serialize(array(
-    'page_url'   => $_SERVER['REQUEST_URI'],
+    'page_url'   => 'http://' . $_SERVER[HTTP_HOST] . $_SERVER['REQUEST_URI'],
     'page_title' => $pageTitle,    // Use your website's means of retrieving the title or manually insert it
     'email' => $loggedInUsersEmail // Use your website's means of user management to retrieve the email
 ))));
