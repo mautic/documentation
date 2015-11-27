@@ -31,3 +31,25 @@ This is not required, but if you'll want to be able to select the leads with bou
 5. Wait for the `app/console mautic:list:update` command to be automatically triggered by a cron job or execute it manually.
 
 All leads with bounced emails should appear in this list.
+
+## Mandrill Webhook
+
+Mautic supports a few of Mandrill's webhooks for bounces.  
+
+1) Login to your Mandrill account and go to Settings -> Webhooks
+
+![Webhooks](/emails/media/mandrill_webhook_1.png "Mandrill webhooks")
+ 
+2) Click Add a Webhook
+ 
+![Add Webhook](/emails/media/mandrill_webhook_2.png "Add webhook")
+
+3) Mautic 1.2.2 supports the following webhooks: Message is Bounced, Message is Soft-Bounced, Message is Rejected.  As of 1.2.3, Message is Marked as Spam and Message Recipient Unsubscribes will be supported.
+
+4) Fill in the Post To Url as `http://your-mautic.com/mailer/mandrill/callback` then click Create Webhook. 
+
+5) Click Custom Metadata and create two new metadata fields: `hashId` and `leadId`
+
+![Add metadata](/emails/media/mandrill_webhook_5.png "Add metadata")
+
+![Add metadata](/emails/media/mandrill_webhook_4.png "Add metadata")
