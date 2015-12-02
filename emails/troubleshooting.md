@@ -18,4 +18,4 @@ If the email click doesn't get tracked, make sure that:
 
 ## Unsubscribe link doesn't work
 
-The unsubscribe link doesn't work in the test emails. That is because the test emails are sent to a Mautic user. Not to a Mautic lead. Mautic user cannot be unsubscribed and therefor the unsubscribe link looks like this: `http://yourmautic.com/|URL|`. When you send the email to a lead, the link will work correctly.
+The unsubscribe link doesn't work in the test emails. That is because the test emails are sent to a Mautic user. Not to a Mautic lead. Mautic user cannot be unsubscribed and therefore the unsubscribe link looks like this: `http://yourmautic.com/|URL|`. When you send the email to a lead, the link will work correctly.
