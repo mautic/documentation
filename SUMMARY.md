@@ -26,6 +26,7 @@
 * [Points](points/README.md)
 * [Plugins](plugins/README.md)
    * [Hubspot CRM](plugins/hubspot_crm.md)
+   * [iContact](plugins/icontact.md)
    * [Salesforce CRM](plugins/salesforce_crm.md)
    * [Zoho CRM](plugins/zoho_crm.md)
    * [vTiger CRM](plugins/vtiger_crm.md)
