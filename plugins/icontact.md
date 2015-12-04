@@ -15,8 +15,8 @@ When you have your app created, you should be able to see this screen:
 Fill it the right credentials to Mautic - iContact integration:
 
 - App ID = the Application ID you've created
-- App username - the username / email you log into your iContact account. (Not the App name)
-- App password - The password you've chosed when approving the app.
+- App username = the username / email you log into your iContact account. (Not the App name)
+- App password = The password you've chosed when approving the app.
 
 ![iContact - authoriztion](/plugins/media/plugins-icontact-authorization.png "iContact - authoriztion")
 
