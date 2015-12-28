@@ -27,7 +27,7 @@ Navigate to the *Features* tab in the plugin configuration modal box. You should
 
 > The Lead Field Mapping tab will appear after selecting a list and will update after changing the selected list.
 
-![MailChimp Plugin configuration](plugins/media/plugins-mailchimp-configure.png "MailChimp Plugin configuration")
+![MailChimp Plugin configuration](/plugins/media/plugins-mailchimp-configure.png "MailChimp Plugin configuration")
 
 Select the lead list then. If you don't have a lead list in MailChimp created yet, go to *MailChimp dashboard* / *Lists* / *Create List* and create one. Then save the plugin configuration and open it again. The *Lead Field Mapping* tab should appear now. Configure the [field mapping](./../plugins/field_mapping.html).
 
