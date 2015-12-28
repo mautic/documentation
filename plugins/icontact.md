@@ -29,4 +29,4 @@ Other configuration options are:
 
 ## Test the plugin
 
-Follow [these steps](/plugins/integration_test.html) to test the integration.
+Follow [these steps](./../plugins/integration_test.html) to test the integration.

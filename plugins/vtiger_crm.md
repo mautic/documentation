@@ -20,10 +20,10 @@ If you want to use the plugin, you have to publish it. Set the *Publish* switch 
 
 In the Features tab is just *Push leads to this integration* checkbox and it is checked by default.
 
-Configure the [field mapping](/plugins/field_mapping.html).
+Configure the [field mapping](./../plugins/field_mapping.html).
 
 Save the plugin configuration.
 
 ## Test the plugin
 
-Follow [these steps](/plugins/integration_test.html) to test the integration.
+Follow [these steps](./../plugins/integration_test.html) to test the integration.

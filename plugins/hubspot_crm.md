@@ -16,13 +16,13 @@ Open the Hubspot Plugin configuration and paste the API key into the *Hubspot AP
 
 In the Features tab is just *Push leads to this integration* checkbox and it is checked by default.
 
-Configure the [field mapping](/plugins/field_mapping.html).
+Configure the [field mapping](./../plugins/field_mapping.html).
 
 Save the plugin configuration.
 
 ## Test the plugin
 
-Follow [these steps](/plugins/integration_test.html) to test the integration.
+Follow [these steps](./../plugins/integration_test.html) to test the integration.
 
 ## Troubleshooting
 

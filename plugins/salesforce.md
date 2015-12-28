@@ -27,11 +27,11 @@ Copy the Consumer Key and Secret.
 Insert the keys to the Mautic Salesforce plugin and authorize it.
 ![Salesforce CRM Authorize](/plugins/media/plugins-salesforce-authorize.png "Salesforce CRM Authorize")
 
-Configure the [field mapping](/plugins/field_mapping.html).
+Configure the [field mapping](./../plugins/field_mapping.html).
 
 ## Test the plugin
 
-Follow [these steps](/plugins/integration_test.html) to test the integration.
+Follow [these steps](./../plugins/integration_test.html) to test the integration.
 
 ## Troubleshooting
 
