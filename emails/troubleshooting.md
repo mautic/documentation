@@ -12,10 +12,10 @@ Before an email is sent, Mautic replaces all links in the email with links back 
 
 If the email click doesn't get tracked, make sure that:
 1. Your Mautic server is on a public URL. Tracking doesn't work on a localhost.
-2. The link tracking doesn't work for test emails, so make sure the email was send to an existing lead. Not by the *Send Example* link.
+2. Link tracking doesn't work for test emails, so make sure the email was sent to an existing lead and not by the *Send Example* link.
 3. You've opened the link in a incognito browser. More about it in the [Pages troubleshooting](/pages/troubleshooting.html).
 4. Check if the link in the email has been replaced by the Mautic's tracking link. If not, report it to https://github.com/mautic/mautic/issues with all the details (Mautic version, PHP version, what the link URL is before sending, what it is after sending and so on).
 
 ## Unsubscribe link doesn't work
 
-The unsubscribe link doesn't work in the test emails. That is because the test emails are sent to a Mautic user. Not to a Mautic lead. Mautic user cannot be unsubscribed and therefore the unsubscribe link looks like this: `http://yourmautic.com/|URL|`. When you send the email to a lead, the link will work correctly.
+The unsubscribe link doesn't work in test emails. That is because the test emails are sent to a Mautic user and not to a Mautic lead. Mautic users cannot be unsubscribed and therefore the unsubscribe link looks like this: `http://yourmautic.com/|URL|`. However, the link will work correctly when you send the email to a lead.
