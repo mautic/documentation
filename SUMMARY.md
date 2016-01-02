@@ -1,6 +1,7 @@
 # Summary
 
-* [Getting Started](README.md)
+* [Introduction](README.md)
+* [Getting Started](setup/getting_started.md)
 * [Leads](leads/README.md)
    * [Manage Leads](leads/managing_leads.md)
        * [Lead Overview](leads/lead_overview.md)
@@ -38,7 +39,7 @@
    * [Education](use_cases/education.md)
    * [Community](use_cases/community.md)
    * [Political](use_cases/political.md)
-* [Cron Jobs](setup/README.md)
+* [Cron Jobs](setup/cron_jobs.md)
 * [Themes](themes/README.md)
     * [Manage Themes](themes/manage_themes.md)
     * [Customize Themes](themes/customize_themes.md)
