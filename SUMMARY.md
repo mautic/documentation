@@ -38,7 +38,7 @@
    * [Education](use_cases/education.md)
    * [Community](use_cases/community.md)
    * [Political](use_cases/political.md)
-* [Required Cron Jobs](setup/README.md)
+* [Cron Jobs](setup/README.md)
 * [Themes](themes/README.md)
     * [Manage Themes](themes/manage_themes.md)
     * [Customize Themes](themes/customize_themes.md)
