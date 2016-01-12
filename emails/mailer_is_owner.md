@@ -24,6 +24,8 @@ Signature is also a new feature in the Mautic 1.3.0. There are 2 places where to
 
 The signature can be placed into an email text by the `{signature}` token.
 
+There is one exception where the lead owner's signature won't be used. When a user send an email directly from a lead detail, the currently logged in user's signature will be used. Doesn't matter if the lead has another owner assigned or if doesn't have owner at all.
+
 ## FAQ
 
 ### Does it work for all emails?
