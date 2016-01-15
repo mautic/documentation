@@ -22,15 +22,13 @@ Although some git knowledge is required to clone, modify, commit and push change
 #### Edit documents in a browser
 
 1. [Fork](https://github.com/mautic/documentation#fork-destination-box) this repository under your account so you'd have permission to edit.
-2. Select a file to edit. The file structure is explained bellow. Now, let's edit the *README.md* file to show the principles. Click on it.
+2. Select a file to edit. The file structure is explained below. Now, let's edit the *README.md* file to show the principles. Click on it.
 3. The content of *README.md* should be visible and the *Edit* buton (the pencil icon) above as well. Hit it.
 4. The content is written in [Markdown markup](https://daringfireball.net/projects/markdown/). Very simple text based formating.
-5. Make a change to the file. For example add to the end `This is my first contribution`. Boom!
+5. Make a change to the file. For example add to the end `This is my first contribution`.
 6. When you made a change, scroll down and notice the form called *Commit changes*. This is important. To save a change, you have to describe what you've changed and why. Write for example `A new line added for testing purposes`. Do not save yet!
 7. Because the GitHub web interface does not provide all features of git, we won't have an easy way to revert our change back to the original state. We'd have to create another commit where we'd delete the added line. That would make a mess in the commit history. So instead, we create a new branch. There is a checkbox for it "Create a new branch...". The branch has to have a name. `{yourusername}-patch-1` will be prefilled. Let's change it to `{yourusername}-testing`. Click the *Propose file change* now.
 8. Ok, so the change exists in your repository now. To propose the change to the official repository, you have to send a pull request (PR). You've been redirected to do just that. Here you describe your proposed change and click (please don't send the testing PRs) the *Create pull request* button.
-
-`This is my first contribution`. Boom!
 
 If you want to clean after the testing, go to the *Branches* section and delete the testing branch.
 
@@ -38,7 +36,7 @@ If you want to clean after the testing, go to the *Branches* section and delete 
 
 We've worked with the *README.md* file in the previous section. This file is shown in the home page of a GitHub repository and you are reading its content right now. It doesn't have anything to do with the Mautic documentation.
 
-The *SUMMARY.md* file defines the menu of the documentation. If you'll add a new page to the documentation, you'll have to also add a new line there defining the title and the link to the file. It's pretty strate forward when you'll see the current menu items.
+The *SUMMARY.md* file defines the menu of the documentation. If you'll add a new page to the documentation, you'll have to also add a new line there defining the title and the link to the file. It's pretty straightforward when you'll see the current menu items.
 
 The folders are here to group the topics together. Open for example the *asset* folder. You'll see it has its own *README.md* file. It is the main content when you click on the Asset menu item. The *manage_assets.md* file is a subitem. The *media* subfolder contains all the images used in the *md* files.
 
