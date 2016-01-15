@@ -22,7 +22,7 @@ Although some git knowledge is required to clone, modify, commit and push change
 #### Edit documents in a browser
 
 1. [Fork](https://github.com/mautic/documentation#fork-destination-box) this repository under your account so you'd have permission to edit.
-2. Select a file to edit. The file structure is explained bellow. Now, let's edit the *README.md* file to show the principles. Click on it.
+2. Select a file to edit. The file structure is explained below. Now, let's edit the *README.md* file to show the principles. Click on it.
 3. The content of *README.md* should be visible and the *Edit* buton (the pencil icon) above as well. Hit it.
 4. The content is written in [Markdown markup](https://daringfireball.net/projects/markdown/). Very simple text based formating.
 5. Make a change to the file. For example add to the end `This is my first contribution`.
@@ -36,7 +36,7 @@ If you want to clean after the testing, go to the *Branches* section and delete 
 
 We've worked with the *README.md* file in the previous section. This file is shown in the home page of a GitHub repository and you are reading its content right now. It doesn't have anything to do with the Mautic documentation.
 
-The *SUMMARY.md* file defines the menu of the documentation. If you'll add a new page to the documentation, you'll have to also add a new line there defining the title and the link to the file. It's pretty strate forward when you'll see the current menu items.
+The *SUMMARY.md* file defines the menu of the documentation. If you'll add a new page to the documentation, you'll have to also add a new line there defining the title and the link to the file. It's pretty straightforward when you'll see the current menu items.
 
 The folders are here to group the topics together. Open for example the *asset* folder. You'll see it has its own *README.md* file. It is the main content when you click on the Asset menu item. The *manage_assets.md* file is a subitem. The *media* subfolder contains all the images used in the *md* files.
 
