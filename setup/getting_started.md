@@ -22,7 +22,7 @@ Once you've installed Mautic you will need to create a few standard cron jobs to
 
 `php /path/to/mautic/app/console mautic:campaigns:trigger`
 
-Review [Cron Jobs](./setup) for more information on these and other optional cron jobs.
+Review [Cron Jobs](./../setup/cron_jobs.html) for more information on these and other optional cron jobs.
 
 ## Step 3: Download the IP lookup service database
 
@@ -36,4 +36,4 @@ After installation and setup of the cron jobs you're ready to begin tracking lea
 
 `<img src="http://yourdomain.com/path/to/mautic/mtracking.gif" />`
 
-Checkout [Lead Monitoring](./leads/lead_monitoring.html) for more details on the tracking pixel.
+Checkout [Lead Monitoring](./../leads/lead_monitoring.html) for more details on the tracking pixel.
