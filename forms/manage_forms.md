@@ -28,7 +28,7 @@ There are three ways you can use the form. You can copy the entire output or you
 
 ![](http://drop.dbh.li/image/2M1q3T2T0Z0u/Image%202014-11-17%20at%204.20.56%20PM.png)
 
-**It is recommended to do not copy the injection code twice, it risks to create trouble on the submit form action.**
+**It is recommended to do not paste the injection code twice, it risks to create troubles on the submit form action when mandatory fields are submitted empty.**
 
 ### Form results
 
