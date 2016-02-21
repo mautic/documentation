@@ -57,7 +57,7 @@ This will link to `plugins/integration_test.html` on the documentation website c
 
 #### Images
 
-As noted above, the images can be placed in the media subfolders. The images probablyy isn't possible to upload via the GitHub web interface, but you can upload them to any public URL and link them from there.
+As noted above, the images can be placed in the media subfolders. The images probably isn't possible to upload via the GitHub web interface, but you can upload them to any public URL and link them from there.
 
 ```
 ![alternative text here](http://example.com/images/apple.png "Tooltip text here")
