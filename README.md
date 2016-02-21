@@ -1,22 +1,22 @@
-# Mautic ドキュメンテーション
+# Mautic Documentation
 
-### イントロダクション
-本文書はオープソースのマーケティング自動化システムである[Mautic のドキュメンテーション](https://www.mautic.org/docs/index.html)を担うものです。コードはオープソースであり誰でも入手が可能です。この文書もまたオープンソースです｡本情報に改善が必要であると考える方々の支援をお待ちしています。｡
+### Introduction
+This book serves as the [documentation for Mautic](https://www.mautic.org/docs/index.html), the open source marketing automation system. Just as the code is open source and available for everyone, so is the documentation. Everyone is welcome to help make this information better and improve as needed.
 
-### PDF 版をダウンロード
-[このリンクをクリックして](https://mautic.org/docs/mautic_docs.pdf) PDF 版をダウンロードしてください｡
+### Download as PDF
 
-### ドキュメンテーションの編集について
-このレポジトリは [Gitbook](https://www.gitbook.com/) 向けのソースコードで [www.mautic.org/docs](https://www.mautic.org/docs/index.html) 上で公開されます。ソースコードは GitHub 上で共有されており，Mautic のコードをプログラマが編集するのと同じように誰でも編集が可能となっています。
+[Click here](https://mautic.org/docs/mautic_docs.pdf) to download these docs as a PDF.
 
-#### 本文書の管理に Git を使う理由
+### How to contribute to the docs
 
-- *バージョン*. 誰でも過去の版へアクセスができ，どのようなテキストだったか確認ができるため。
-- *原著者*. 各ファイルだけでなく一行一行に著者がいるため。.
-- *コミュニティへのアシスト*. 同一文書内の誰かの文章を削除をしてしまう恐れが無いため。
+This repository is the source code for [Gitbook](https://www.gitbook.com/) published at [www.mautic.org/docs](https://www.mautic.org/docs/index.html). The source code is shared here on GitHub so anyone could contribute to the documentation the same way the programmers do with the actual Mautic code. 
 
-クローン,変更，コミット，そして変更内容をプッシュするには Git に関するいくばくかの知識が必要です。GitHub のウェブインターフェイス上でファイルを直接変更しないようにする方法があります。
-するにはいくつかのGitの知識が、クローン修正し、コミットして変更をプッシュするために必要とされていますが、それを回避し、GitHubのWebインターフェイスで直接ファイルを編集する方法方法があります。あなたはgitのを知っている場合、あなたが好きなワークフローを使用しています。ない場合は、以下のガイドは、どのように簡単に貢献する方法を紹介します。
+#### Why is git used for the documentation
+
+- *versions*. Anyone can go back an look how the text looked like.
+- *authorship*. Not only every file, but every line has its author.
+- *community contributions*. No need to worry about deleting someone else's work while working on the same document.
+
 Although some git knowledge is required to clone, modify, commit and push changes, there is a way how to avoid that and edit the files directly in the GitHub web interface. If you know git, use the workflow you like. If not, following guide will show you how to contribute easily.
 
 #### Edit documents in a browser
