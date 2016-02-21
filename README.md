@@ -15,7 +15,7 @@
 - *原著者*. 各ファイルだけでなく一行一行に著者がいるため。.
 - *コミュニティへのアシスト*. 同一文書内の誰かの文章を削除をしてしまう恐れが無いため。
 
-クローン,変更，コミット，そして変更内容をプッシュするには Git に関するいくばくかの知識が必要です。GitHub のウェブインターフェイス上でファイルを直接変更しないようにする方法があります。すでに Git を使っている場合は好みのワークフローを使ってください｡まだ Git を使っていない場合は以下のガイドが Git を使った参加方法を
+クローン,変更，コミット，そして変更内容をプッシュするには Git に関するいくばくかの知識が必要です。GitHub のウェブインターフェイス上でファイルを直接変更しないようにする方法があります。
 するにはいくつかのGitの知識が、クローン修正し、コミットして変更をプッシュするために必要とされていますが、それを回避し、GitHubのWebインターフェイスで直接ファイルを編集する方法方法があります。あなたはgitのを知っている場合、あなたが好きなワークフローを使用しています。ない場合は、以下のガイドは、どのように簡単に貢献する方法を紹介します。
 Although some git knowledge is required to clone, modify, commit and push changes, there is a way how to avoid that and edit the files directly in the GitHub web interface. If you know git, use the workflow you like. If not, following guide will show you how to contribute easily.
 
