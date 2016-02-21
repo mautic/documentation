@@ -12,18 +12,20 @@
 #### 本文書の管理に Git を使う理由
 
 - *バージョン*. 誰でも過去の版へアクセスができ，どのようなテキストだったか確認ができるため。
-- *原著者*. 著者は各ファイルだけでなく一行一行に存在するため。.
+- *原著者*. 各ファイルだけでなく一行一行に著者がいるため。.
 - *コミュニティへのアシスト*. 同一文書内の誰かの文章を削除をしてしまう恐れが無いため。
 
-クローン,変更，コミット，そして変更内容をプッシュするには Git に関するいくばくかの知識が必要です。GitHub のウェブインターフェイス上でファイルを直接変更しないようにする方法があります。すでに Git を使っている場合は好みのワークフローを使ってください｡まだ Git を使っていない場合は以下のガイドで Git を使って簡単に編集作業へ参加する方法を紹介します。
+クローン,変更，コミット，そして変更内容をプッシュするには Git に関するいくばくかの知識が必要です。GitHub のウェブインターフェイス上でファイルを直接変更しないようにする方法があります。すでに Git を使っている場合は好みのワークフローを使ってください｡まだ Git を使っていない場合は以下のガイドが Git を使った参加方法を
+するにはいくつかのGitの知識が、クローン修正し、コミットして変更をプッシュするために必要とされていますが、それを回避し、GitHubのWebインターフェイスで直接ファイルを編集する方法方法があります。あなたはgitのを知っている場合、あなたが好きなワークフローを使用しています。ない場合は、以下のガイドは、どのように簡単に貢献する方法を紹介します。
+Although some git knowledge is required to clone, modify, commit and push changes, there is a way how to avoid that and edit the files directly in the GitHub web interface. If you know git, use the workflow you like. If not, following guide will show you how to contribute easily.
 
-#### ブラウザ上でドキュメントを編集するEdit documents in a browser
+#### Edit documents in a browser
 
-1. あなたのアカウントにあるこのレポジトリには編集権限がまだありませんので最初に[フォーク](https://github.com/mautic/documentation#fork-destination-box) してください。
-2. 編集するフィアルを選択します。そうするとファイル構造が下の方に表示されます｡ファイルの中身がどのようになっているかを確認するためにまず *README.md* ファイルをクリックして編集してみましょう。
-3. *README.md* の中身と鉛筆アイコンの *Edit* ボタンが上の方に表示されます。それもクリックしましょう。
-4. コンテンツは [Markdown markup](https://daringfireball.net/projects/markdown/) で書かれています｡. とても簡単なテキストベースのフォーマットです｡
-5. ファイルに変更を加えてください｡たとえば末尾に`これが最初の貢献`と加えるのもいいでしょう｡
+1. [Fork](https://github.com/mautic/documentation#fork-destination-box) this repository under your account so you'd have permission to edit.
+2. Select a file to edit. The file structure is explained below. Now, let's edit the *README.md* file to show the principles. Click on it.
+3. The content of *README.md* should be visible and the *Edit* buton (the pencil icon) above as well. Hit it.
+4. The content is written in [Markdown markup](https://daringfireball.net/projects/markdown/). Very simple text based formating.
+5. Make a change to the file. For example add to the end `This is my first contribution`.
 6. When you made a change, scroll down and notice the form called *Commit changes*. This is important. To save a change, you have to describe what you've changed and why. Write for example `A new line added for testing purposes`. Do not save yet!
 7. Because the GitHub web interface does not provide all features of git, we won't have an easy way to revert our change back to the original state. We'd have to create another commit where we'd delete the added line. That would make a mess in the commit history. So instead, we create a new branch. There is a checkbox for it "Create a new branch...". The branch has to have a name. `{yourusername}-patch-1` will be prefilled. Let's change it to `{yourusername}-testing`. Click the *Propose file change* now.
 8. Ok, so the change exists in your repository now. To propose the change to the official repository, you have to send a pull request (PR). You've been redirected to do just that. Here you describe your proposed change and click (please don't send the testing PRs) the *Create pull request* button.
