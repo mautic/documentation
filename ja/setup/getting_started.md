@@ -1,4 +1,4 @@
-# Getting Started
+# 初めに
 
 Awesome! You've downloaded a marketing automation tool. That's a great first step, but now you wonder where to go from here. Follow this very simple guide to get started using your shiny new toy!
 
