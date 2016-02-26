@@ -1,7 +1,6 @@
 # Cron Job #
 
-Mautic がメンテナンスタスクを制御するために [cron jobs](https://ja.wikipedia.org/wiki/Crontab) が必須となっています。ほとんどのウェブサーバでは cron を追加する方法を SSH， cPanel や他の変更画面で提供しています。ご利用のウェブサーバのマニュアルやサポートへ当たってください。
-to handle some maintenance tasks. Most web hosts provide a means to add cron jobs either through SSH, cPanel, or another custom panel. Please consult your host's documentation/support if you are unsure on how to setup cron jobs.
+Mautic がメンテナンスタスクを制御するために [cron jobs](https://ja.wikipedia.org/wiki/Crontab) が必須となっています。ほとんどのウェブサーバでは cron を追加する方法を SSH， cPanel や他の変更画面で提供しています。cron job のセットアップについて不明な場合はご利用のウェブサーバのマニュアルやサポートへご相談ください。
 
 How frequently you run the cron jobs is up to you. Many shared hosts prefer that you run scripts every 15 or 30 minutes and may even override the scheduled times to meet these restrictions. Consult your host's documentation if they have such a restriction. 
 
