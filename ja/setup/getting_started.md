@@ -24,9 +24,11 @@ Mautic をインストールするとタスクを処理するために基本的�
 
 詳しくは [Cron Jobs](./setup) を確認してfor more information on these and other optional cron jobs.
 
-## Step 3: Download the IP lookup service database
+## ステップ 3: IP Lookup サービスのデータベースをダウンロードする
 
-By default, Mautic installs set to use MaxMind's free GeoLite2 IP lookup database. Due to the licensing of the database, it cannot be included with Mautic's installation package and thus must be downloaded. Click on the cogwheel in the upper right hand of Mautic to view the Admin menu then click Configuration. On the System Settings tab, find the IP lookup service option and click the "Fetch IP Lookup Data Store."
+標準では Mautic は MaxMind の フリーの GeoLite2 IP lookup database を使うよう設定します。データベースのライセンスにより Mautic のインストールパッケージに含めることができません。したがって別途ダウンロードが必要となってきます。管理メニューを開くには Mautic の右上にある歯車のアイコンをクリックし，設定をクリックします。システム設定タブに IP Lookup サービスオプションがあり，"IP Lookup データベースを取り込む" をクリックしてください。
+
+サポートされている好みの IP Lookup サービスを選択することも可能です。
 
 You could also choose another supported IP lookup service if you prefer.
 
