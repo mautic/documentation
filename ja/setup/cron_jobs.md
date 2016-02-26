@@ -9,7 +9,7 @@ cron job を実行する頻度はあなた次第です。共有サーバであ�
 ## 必須 ##
 
 ### リードリスト ###
-**スマートリストを最新状態にする:**
+**スマートリストを最新状態に保ちます:**
 
 ```
 php /path/to/mautic/app/console mautic:leadlists:update
@@ -17,11 +17,10 @@ php /path/to/mautic/app/console mautic:leadlists:update
 
 デフォルトではリードを300件一括処理します。サーバリソースをあまりに消費するようであれば　`--batch-limit=X` オプションを使って一度に処理させるリードの数を減らしてください。Xの部分は一度に処理させるリードの数に置き換えてください。
 
-スクリプト毎に
-You can also limit the number of leads to process per script execution using `--max-leads` to further limit resources used.
+`--max-leads`オプションを使って実行するスクリプト毎に処理するリードの数を制限し，消費するサーバリソースを節約できます。
 
-### Campaigns ###
-**To keep campaigns updated with applicable leads:**
+### キャンペーン ###
+**適用するリードとともにキャンペーンを最新の状態に保ちます:**
 
 ```
 php /path/to/mautic/app/console mautic:campaigns:update
