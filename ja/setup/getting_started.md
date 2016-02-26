@@ -28,14 +28,12 @@ Mautic をインストールするとタスクを処理するために基本的�
 
 標準では Mautic は MaxMind の フリーの GeoLite2 IP lookup database を使うよう設定します。データベースのライセンスにより Mautic のインストールパッケージに含めることができません。したがって別途ダウンロードが必要となってきます。管理メニューを開くには Mautic の右上にある歯車のアイコンをクリックし，設定をクリックします。システム設定タブに IP Lookup サービスオプションがあり，"IP Lookup データベースを取り込む" をクリックしてください。
 
-サポートされている好みの IP Lookup サービスを選択することも可能です。
+サポートされている好みの IP Lookup サービスを選択することもできます。
 
-You could also choose another supported IP lookup service if you prefer.
+## ステップ 4: トラッキングピクセルをインストールする
 
-## Step 4: Install the Tracking Pixel
-
-After installation and setup of the cron jobs you're ready to begin tracking leads. You will need to add a single tracking pixel to the websites for each site you wish to track via Mautic. This is a very simple process and you can add this tracking pixel to your website template file, or install a Mautic integration for the more common CMS platforms. Here is an example of the tracking pixel:
+cron job のインストールとセットアップが終わると，リードを追跡する準備が整います。リードを Mautic でトラッキングさせるにはトラッキングピクセルを各サイトに埋め込む必要があります。とても簡単なプロセスですし，テンプレートファイルや他の CMS プラットフォームへ Mautic インテグレーションをインストールすることもできます。サンプルのトラッキングピクセルはこのようになります: 
 
 `<img src="http://yourdomain.com/path/to/mautic/mtracking.gif" />`
 
-Checkout [Lead Monitoring](./leads/lead_monitoring.html) for more details on the tracking pixel.
+トラッキングピクセルについての詳しい内容は  [リード監視](./leads/lead_monitoring.html) をご確認ください。
