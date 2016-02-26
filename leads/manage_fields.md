@@ -23,4 +23,4 @@ You can create additional custom fields and define the data type you want that f
 
 ![](http://drop.dbh.li/image/1k3U1p3J3Y2u/Image%202014-11-16%20at%209.43.52%20PM.png)
 
-The `boolean format` only admits `0` and `1` values. The `Boolean Labels` you have the opportunity to setup in the **field setting tab** does not allow a different `value` in the leadfield.
+The `boolean format` only admits `0` and `1` values when you import leads via a csv file. The `Boolean Labels` you have the opportunity to setup in the **field setting tab** does not allow a different `value` in the leadfield.
