@@ -8,17 +8,17 @@
 
 ## ステップ 2: Cron Jobを追加する
 
-Once you've installed Mautic you will need to create a few standard cron jobs to have your software process various tasks. These cron jobs can be created through a cPanel or added through command line. If you are unfamiliar or uncomfortable with this step then we'd recommend asking in the forums or in the live Slack chat. Here is a list of the cron jobs you'll need to create.
+Mautic をインストールするとタスクを処理するために基本的な cron job を作る必要があります。これらの cron job は cPanel やコマンドラインから作成・追加できます。この手の作業にあまりなじみがない，得意ではない場合はフォーラムや Slack で是非相談してみてください。作成が必要な cron job を以下に列挙します。
 
-**Updating Lead Lists**
+**リードリストの更新**
 
 `php /path/to/mautic/app/console mautic:leadlists:update`
 
-**Update Campaigns**
+**キャンペーンの更新**
 
 `php /path/to/mautic/app/console mautic:campaigns:update`
 
-**Execute Campaign Actions**
+**キャンペーンアクションの実行**
 
 `php /path/to/mautic/app/console mautic:campaigns:trigger`
 
