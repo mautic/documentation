@@ -1,34 +1,34 @@
-# Cron Jobs #
+# Cron Job #
 
-Mautic requires a few [cron jobs](https://en.wikipedia.org/wiki/Cron) to handle some maintenance tasks. Most web hosts provide a means to add cron jobs either through SSH, cPanel, or another custom panel. Please consult your host's documentation/support if you are unsure on how to setup cron jobs.
+Mautic がメンテナンスタスクを制御するために [cron jobs](https://ja.wikipedia.org/wiki/Crontab) が必須となっています。ほとんどのウェブサーバでは cron を追加する方法を SSH， cPanel や他の変更画面で提供しています。cron job のセットアップについて不明な場合はご利用のウェブサーバのマニュアルやサポートへご相談ください。
 
-How frequently you run the cron jobs is up to you. Many shared hosts prefer that you run scripts every 15 or 30 minutes and may even override the scheduled times to meet these restrictions. Consult your host's documentation if they have such a restriction. 
+cron job を実行する頻度はあなた次第です。共有サーバであれば15から30分程度ごとに実行するのが好ましいでしょう。共有サーバの制限により設定した時間が上書きされる場合があります。
 
-**It is recommended that you stagger the following required jobs so as to not run the exact same minute.**
+**以下の cron job  の実行時間が重ならないように設定することをおすすめします。**
 
-## Required ##
+## 必須 ##
 
-### Lead Lists ###
-**To keep the smart lists current:**
+### リードリスト ###
+**スマートリストを最新状態に保ちます:**
 
 ```
 php /path/to/mautic/app/console mautic:leadlists:update
 ```
 
-By default, the script will process leads in batches of 300. If this is too many for your server's resources, use the option `--batch-limit=X` replacing X with the a number of leads to process each batch.
+デフォルトではリードを300件一括処理します。サーバリソースをあまりに消費するようであれば　`--batch-limit=X` オプションを使って一度に処理させるリードの数を減らしてください。Xの部分は一度に処理させるリードの数に置き換えてください。
 
-You can also limit the number of leads to process per script execution using `--max-leads` to further limit resources used.
+`--max-leads`オプションを使って実行するスクリプト毎に処理するリードの数を制限し，消費するサーバリソースを節約できます。
 
-### Campaigns ###
-**To keep campaigns updated with applicable leads:**
+### キャンペーン ###
+**適用するリードとともにキャンペーンを最新の状態に保ちます:**
 
 ```
 php /path/to/mautic/app/console mautic:campaigns:update
 ```
 
-By default, the script will process leads in batches of 300. If this is too many for your server's resources, use the option `--batch-limit=X` replacing X with the a number of leads to process each batch.
+スクリプトがバッチ処理するリードの数は300とデフォルトで設定されています。利用中のサーバリソースに対してこの数が多いようであれば `--batch-limit=X` オプションを使い，Xへ処理させるリードの数に置き換えて調整してください。
 
-You can also limit the number of leads to process per script execution using `--max-leads` to further limit resources used.
+スクリプト毎に実行させるリードの数を `--max-leads` オプションで制限し，サーバリソースの消費を押させることもできます。
 
 **To execute campaigns events:**
 
@@ -36,54 +36,55 @@ You can also limit the number of leads to process per script execution using `--
 php /path/to/mautic/app/console mautic:campaigns:trigger
 ```
 
-By default, the script will process events in batches of 100. If this is too many for your server's resources, use the option `--batch-limit=X` replacing X with the a number of events to process each batch.
+スクリプトがバッチ処理するイベントの数は100とデフォルトで設定されている。利用中のサーバリソースに対してこの数が多いようであれば `--batch-limit=X` オプションを使い，Xへ処理させるイベントの数に置き換えて調整してください。
 
-You can also limit the number of leads to process per script execution using `--max-events` to further limit resources used.
+スクリプト毎に実行させるリードの数を `--max-events` オプションで制限し，サーバリソースの消費を押させることもできます。
 
-## Optional ##
+## オプション ##
 
-### Process Email Queue ###
+### メールキューの処理###
 
-If the system is configured to queue emails to the filesystem, a cron job is required to process them.
+ファイルシステムへメールキューを書き出しているように設定されているようであれば，処理させるには cron job が必須です。
 
 ```
 php /path/to/mautic/app/console mautic:email:process
 ```
 
-### Fetch and Process Monitored Email ###
+### 監視中のメールを取得・処理させる ###
  
-If using the [Bounce Management](./../emails/bounce_management.html),  
+[Bounce Management](./../emails/bounce_management.html) を使っている場合,  
  
 ```
 php /path/to/mautic/app/console mautic:fetch:email
 ```
 
-### Webhooks
+### Webフック
 
-If Mautic is configured to send webhooks in batches, use the following command to send the payloads:
+バッチ処理にウェブフックを送るよう Mautic を設定している場合，次のコマンドを使ってペイロードを送信させます。
 
 ```
 php /path/to/mautic/app/console mautic:webhooks:process
 ```
 
-### Update MaxMind GeoLite2 IP Database
+### MaxMind GeoLite2 IP データベースを最新に保つ
  
-Mautic uses [MaxMind's](http://www.maxmind.com) GeoLite2 IP database by default. The database is licensed under the (Creative Commons Attribution-ShareAlike 3.0 Unported License)[http://creativecommons.org/licenses/by-sa/3.0/] and thus cannot be packaged with Mautic. The database can be downloaded manually through Mautic's Configuration or the following script can be used as a cron job to automatically download updates. (MaxMind updates their database the first Tuesday of the month).
+ Mautic は [MaxMind's](http://www.maxmind.com) GeoLite2 IP データベースを標準で使用しています。データベースは (クリエイティブコモンズ 表示--継承 3.0 非移植)[http://creativecommons.org/licenses/by-sa/3.0/deed.ja] でライセンスされており， Mautic のパッケージに同梱できません。データベースは Mautic の設定中に手動でダウンロードするか，自動で更新をダウンロードさせるために cron job で使用できる次のスクリプトを実行するかのいずれかとなっています (MaxMind のデータベース更新は毎月第一火曜日です)。
+ 
  
 ```
 php /path/to/mautic/app/console mautic:iplookup:download
 ```
 
-## Note ##
+## 注意 ##
 
-For releases prior to 1.1.3, it is required to append ` --env=prod` to the cron job command to ensure commands execute correctly.
+1.1.3 以前のリリースの場合 cron job コマンドを確実に実行させるために，コマンドへ `--env=prod` の追加が必須となっています。
 
-## Tips & Troubleshooting ##
 
-If your environment provides a command-line specific build of php, often called `php-cli`, you may want to use that instead of `php` as it will have a cleaner output.  On BlueHost and probably some other PHP hosts, the `php` command might be setup to discard the command-line parameters to `console`, in which case you must use `php-cli` to make the cron jobs work.
+## ティップスとトラブルシュート ##
 
-To assist in troubleshooting cron issues, you can pipe the output of each cron job to a specific file by adding something like `>/path/to/somefile.log 2>&1` at the end of the cron job. Then you can look at the contents of the file to see what was printed. If an error is occurring when running run the cron job, you will see it there, otherwise the file will be empty or have some stats. The modification time of the file informs you of the last time the cron job ran. You can thus use this to figure out whether or not the cron job is running successfully and on schedule.
+ご利用のサーバで一般的に `php-cli` といわれるコマンドライン版 PHP が提供されているようであれば，`php` よりもよりクリーンな出力を求めるために `php-cli` を使いたくなるかもしれません。BlueHost や PHP を使える他のサーバでは `php` コマンドはコマンドラインパラメータを `コンソール` として破棄してしまっているかもしれません。この場合は cron job を動作させるよう `php-cli` を使用しなくてはなりません。
 
-If you have SSH access, try to run the command directly to see if any errors are generated. If there is nothing printed from either in a SSH session or in the cron output from above, check the server's logs. If you see similar errors to `'Warning: Invalid argument supplied for foreach()' in /vendor/symfony/console/Symfony/Component/Console/Input/ArgvInput.php:287`, you either need to use `php-cli` instead of `php` or try using `php -d register_argc_argv=On`.
-` 
+cron job に関連する諸問題において問題解決の一助となるのが，出力をパイプすることです。たとえば`>path/to/somefile.log 2>&1` のように各 cron job の末尾に追加し特定のファイルへ書き出すことです。これによりファイルの中に何が出力されているかを確認することができます。cron job の実行中にエラーが起こっているようであればその内容をファイル読むことで確認できます。エラーがない場合はファイルの中身は空白か他のステータスが残っているはずです。ファイルの最終更新時刻は最後に cron job が実行された時間です。これにより，cron job がスケジュール通りに正しく実行されたのかそうでないかを推測することができます。
 
+ SSH アクセスが可能であれば，なにかしらエラーが起こっていないかを直接確認するコマンドを試してみてください。 SSH セッションのもの以外がなかったり，cron の出力が上で説明した通りだったりする場合，サーバのログを確認してみてください。次とよく似たエラーを確認ことができます: `'Warning: Invalid argument supplied for foreach()' in /vendor/symfony/console/Symfony/Component/Console/Input/ArgvInput.php:287` この場合は `php` ではなく `php-cli` か `php -d register_argc_argv=On` を使う必要があります。
+ 
