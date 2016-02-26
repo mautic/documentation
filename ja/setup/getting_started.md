@@ -22,7 +22,7 @@ Mautic をインストールするとタスクを処理するために基本的�
 
 `php /path/to/mautic/app/console mautic:campaigns:trigger`
 
-詳しくは [Cron Jobs](./setup) を確認してfor more information on these and other optional cron jobs.
+この機能について詳しく知りたい場合や他の cron job 似ついて知りたい場合は [Cron Jobs](./setup) をご確認ください。
 
 ## ステップ 3: IP Lookup サービスのデータベースをダウンロードする
 
