@@ -15,8 +15,9 @@ cron job を実行する頻度はあなた次第です。共有サーバであ�
 php /path/to/mautic/app/console mautic:leadlists:update
 ```
 
-By default, the script will process leads in batches of 300. If this is too many for your server's resources, use the option `--batch-limit=X` replacing X with the a number of leads to process each batch.
+デフォルトではリードを300件一括処理します。サーバリソースをあまりに消費するようであれば　`--batch-limit=X` オプションを使って一度に処理させるリードの数を減らしてください。Xの部分は一度に処理させるリードの数に置き換えてください。
 
+スクリプト毎に
 You can also limit the number of leads to process per script execution using `--max-leads` to further limit resources used.
 
 ### Campaigns ###
