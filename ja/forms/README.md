@@ -1,3 +1,3 @@
-# Forms
+# フォーム
 
-Forms are a special part of the marketing automation system. A form is used to collect user information often in exchange for providing access to a download, an event registration, or an email newsletter. Forms allow you to collect lead data and add additional information to their profile.
+フォームはマーケティング自動化システムの特別なパーツです。フォームはダウンロードへのアクセス、イベントの登録、メールでのニュースレターを通じてユーザーの情報収集に使われます。フォームによりリードのデータを集めたり、自分のプロフィールに情報を追加することができます。
