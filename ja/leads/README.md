@@ -28,6 +28,8 @@ is:anonymous
 
 2つ目のタイプのリードはスタンダードリードです。このリードはフォームや他のソース，または彼らへ接触をしたことで知った事実などから追加の情報を付与されたリードです。結果として名前やメールアドレス，その他関連したリード等から特定ができる情報が付与されたリードです。
 
+スタンダードリードは
+
 The standard lead is the preferred lead within Mautic. These are leads which may have started as an anonymous lead but have at some point provided additional information such as name, email address, social network handle, or other identifying characteristics. These leads are ones which can then be nurtured through the Mautic marketing automation platform.
 
 The following information in the Manage Leads section will provide more information about what can be managed with these standard leads.
