@@ -68,9 +68,8 @@ php /path/to/mautic/app/console mautic:webhooks:process
 
 ### MaxMind GeoLite2 IP データベースを最新に保つ
  
- Mautic は [MaxMind's](http://www.maxmind.com) GeoLite2 IP データベースを標準で使用しています。データベースは (クリエイティブコモンズ 表示--継承 3.0 非移植 ライセンス)[http://creativecommons.org/licenses/by-sa/3.0/deed.ja] でライセンスされてて
+ Mautic は [MaxMind's](http://www.maxmind.com) GeoLite2 IP データベースを標準で使用しています。データベースは (クリエイティブコモンズ 表示--継承 3.0 非移植)[http://creativecommons.org/licenses/by-sa/3.0/deed.ja] でライセンスされており， Mautic のパッケージに同梱できません。データベースは Mautic の設定中に手動でダウンロードするか，自動で更新をダウンロードさせるために cron job で使用できる次のスクリプトを実行するかのいずれかとなっています (MaxMind のデータベース更新は毎月第一火曜日です)。
  
- The database is licensed under the (Creative Commons Attribution-ShareAlike 3.0 Unported License)[http://creativecommons.org/licenses/by-sa/3.0/] and thus cannot be packaged with Mautic. The database can be downloaded manually through Mautic's Configuration or the following script can be used as a cron job to automatically download updates. (MaxMind updates their database the first Tuesday of the month).
  
 ```
 php /path/to/mautic/app/console mautic:iplookup:download
