@@ -84,7 +84,7 @@ php /path/to/mautic/app/console mautic:iplookup:download
 
 ご利用のサーバで一般的に `php-cli` といわれるコマンドライン版 PHP が提供されているようであれば，`php` よりもよりクリーンな出力を求めるために `php-cli` を使いたくなるかもしれません。BlueHost や PHP を使える他のサーバでは `php` コマンドはコマンドラインパラメータを `コンソール` として破棄してしまっているかもしれません。この場合は cron job を動作させるよう `php-cli` を使用しなくてはなりません。
 
-cron job に関連する諸問題において問題解決の一助となるのが，出力をパイプすることです。たとえば`>path/to/somefile.log 2>&1` のように各 cron job の末尾に追加し特定のファイルへ書き出すことです。ファイルの
+cron job に関連する諸問題において問題解決の一助となるのが，出力をパイプすることです。たとえば`>path/to/somefile.log 2>&1` のように各 cron job の末尾に追加し特定のファイルへ書き出すことです。これによりファイルの中に何が出力されているかを確認することができます。cron job の実行中にエラーが起こっているようであればその内容をファイル読むことで確認できます。
 
 Then you can look at the contents of the file to see what was printed. If an error is occurring when running run the cron job, you will see it there, otherwise the file will be empty or have some stats. The modification time of the file informs you of the last time the cron job ran. You can thus use this to figure out whether or not the cron job is running successfully and on schedule.
 
