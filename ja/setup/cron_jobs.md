@@ -86,6 +86,8 @@ php /path/to/mautic/app/console mautic:iplookup:download
 
 cron job に関連する諸問題において問題解決の一助となるのが，出力をパイプすることです。たとえば`>path/to/somefile.log 2>&1` のように各 cron job の末尾に追加し特定のファイルへ書き出すことです。これによりファイルの中に何が出力されているかを確認することができます。cron job の実行中にエラーが起こっているようであればその内容をファイル読むことで確認できます。エラーがない場合はファイルの中身は空白か他のステータスが残っているはずです。ファイルの最終更新時刻は最後に cron job が実行された時間です。これにより，cron job がスケジュール通りに正しく実行されたのかそうでないかを推測することができます。
 
-If you have SSH access, try to run the command directly to see if any errors are generated. If there is nothing printed from either in a SSH session or in the cron output from above, check the server's logs. If you see similar errors to `'Warning: Invalid argument supplied for foreach()' in /vendor/symfony/console/Symfony/Component/Console/Input/ArgvInput.php:287`, you either need to use `php-cli` instead of `php` or try using `php -d register_argc_argv=On`.
+ SSH アクセスが可能であれば，なにかしらエラーが起こっていないかを直接確認するコマンドを試してみてください。 SSH セッションのもの以外がなかったり，cron の出力が上で説明した通りだったりする場合，サーバのログを確認してみてください。次とよく似たエラーを確認ことができます: `'Warning: Invalid argument supplied for foreach()' in /vendor/symfony/console/Symfony/Component/Console/Input/ArgvInput.php:287`
+
+ If you see similar errors to `'Warning: Invalid argument supplied for foreach()' in /vendor/symfony/console/Symfony/Component/Console/Input/ArgvInput.php:287`, you either need to use `php-cli` instead of `php` or try using `php -d register_argc_argv=On`.
 ` 
 
