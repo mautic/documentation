@@ -58,15 +58,15 @@ php /path/to/mautic/app/console mautic:email:process
 php /path/to/mautic/app/console mautic:fetch:email
 ```
 
-### Webhooks
+### Webフック
 
-If Mautic is configured to send webhooks in batches, use the following command to send the payloads:
+バッチ処理にウェブフックを送るよう Mautic を設定している場合，次のコマンドを使ってペイロードを送信させます。
 
 ```
 php /path/to/mautic/app/console mautic:webhooks:process
 ```
 
-### Update MaxMind GeoLite2 IP Database
+### MaxMind GeoLite2 IP データベースを最新に保つ
  
 Mautic uses [MaxMind's](http://www.maxmind.com) GeoLite2 IP database by default. The database is licensed under the (Creative Commons Attribution-ShareAlike 3.0 Unported License)[http://creativecommons.org/licenses/by-sa/3.0/] and thus cannot be packaged with Mautic. The database can be downloaded manually through Mautic's Configuration or the following script can be used as a cron job to automatically download updates. (MaxMind updates their database the first Tuesday of the month).
  
