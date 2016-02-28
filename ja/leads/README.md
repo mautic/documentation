@@ -22,10 +22,9 @@ is:anonymous
 ##### スクリーンショット
 ![](http://drop.dbh.li/image/3F3X0843100h/Image%202014-11-17%20at%2010.05.43%20AM.png)
 
-結果のリストはアクセス元の IP アドレスで
-The resulting list will be those IP addresses which have not yet provided additional details.
+結果はアクセス元の IP アドレスでまとめられていて，詳細な情報はまだ付与されていません。
 
-#### Standard Leads
+#### スタンダードリード
 
 The second type of lead is a standard lead. These are leads which have provided additional information via a form or some other source, or that you know more information about due to the fact that you've had interactions with them before. As a result, these leads typically have a name, email, and other identifying information which can be associated with the lead.
 
