@@ -14,14 +14,12 @@
 
 匿名リードは将来顧客になりえるリードであるため，追跡する価値はあるものです。彼らから何らかの接触がある以前よりサイトの訪問についてのログを取得しておけばあなたとの関わる前に彼らの活動状況を把握できるでしょう。
 
-Anonymous leads are worth tracking, because these could be future customers.  By tracking them before they have any interaction, you can retain a log of when they visited your site, which allows you to get a picture of their activity prior to engaging with you.
-
-##### Search Text
+##### 検索テキスト
 
 ```
 is:anonymous
 ```
-##### Screenshot
+##### スクリーンショット
 ![](http://drop.dbh.li/image/3F3X0843100h/Image%202014-11-17%20at%2010.05.43%20AM.png)
 
 The resulting list will be those IP addresses which have not yet provided additional details.
