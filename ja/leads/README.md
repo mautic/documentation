@@ -2,7 +2,9 @@
 
 リードはマーケティングオートーメ—ションプラットフォームの中心的な要素です。リードは，誰がサイトを訪問したのかやどのような方法であなたと接触したのかなどとは独立した要素です。
 
-### Lead Types
+### リードのタイプ
+
+2タイプのリードがあります。1つ目は匿名リードです。フォームや他の接触などでまだ特定されていないビジターです。
 
 There are two types of leads. The first type of lead is the anonymous lead. These are visitors to your site who have not yet been identified by a form or other interaction. These leads are tracked by Mautic but typically remain hidden so as not to clutter your lead list.
 
