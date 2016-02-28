@@ -26,9 +26,9 @@ php /path/to/mautic/app/console mautic:leadlists:update
 php /path/to/mautic/app/console mautic:campaigns:update
 ```
 
-By default, the script will process leads in batches of 300. If this is too many for your server's resources, use the option `--batch-limit=X` replacing X with the a number of leads to process each batch.
+スクリプトがバッチ処理するリードの数は300とデフォルトで設定されています。利用中のサーバリソースに対してこの数が多いようであれば `--batch-limit=X` オプションを使い，Xへ処理させるリードの数に置き換えて調整してください。
 
-You can also limit the number of leads to process per script execution using `--max-leads` to further limit resources used.
+スクリプト毎に実行させるリードの数を `--max-leads` オプションで制限し，サーバリソースの消費を押させることもできます。
 
 **To execute campaigns events:**
 
