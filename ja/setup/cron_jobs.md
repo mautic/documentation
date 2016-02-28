@@ -36,23 +36,23 @@ You can also limit the number of leads to process per script execution using `--
 php /path/to/mautic/app/console mautic:campaigns:trigger
 ```
 
-By default, the script will process events in batches of 100. If this is too many for your server's resources, use the option `--batch-limit=X` replacing X with the a number of events to process each batch.
+スクリプトがバッチ処理するイベントの数は100とデフォルトで設定されている。利用中のサーバリソースに対してこの数が多いようであれば `--batch-limit=X` オプションを使い，Xへ処理させるイベントの数に置き換えて調整してください。
 
-You can also limit the number of leads to process per script execution using `--max-events` to further limit resources used.
+スクリプト毎に実行させるリードの数を `--max-events` オプションで制限し，サーバリソースの消費を押させることもできます。
 
-## Optional ##
+## オプション ##
 
-### Process Email Queue ###
+### メールキューの処理###
 
-If the system is configured to queue emails to the filesystem, a cron job is required to process them.
+ファイルシステムへメールキューを書き出しているように設定されているようであれば，処理させるには cron job が必須です。
 
 ```
 php /path/to/mautic/app/console mautic:email:process
 ```
 
-### Fetch and Process Monitored Email ###
+### 監視中のメールを取得・処理させる ###
  
-If using the [Bounce Management](./../emails/bounce_management.html),  
+[Bounce Management](./../emails/bounce_management.html) を使っている場合,  
  
 ```
 php /path/to/mautic/app/console mautic:fetch:email
