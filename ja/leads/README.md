@@ -10,8 +10,7 @@
 
 
 #### 匿名リード
-匿名リードはサイトへの訪問者ですが，フォームや他の接触などでまだ特定されていないリードです。Mautic で追跡されますが，リードリストにノイズを混ぜないように通常は隠されています。
-You can view anonymous leads by using the 'list view' within the leads section.
+匿名リードはサイトへの訪問者ですが，フォームや他の接触などでまだ特定されていないリードです。Mautic で追跡されますが，リードリストにノイズを混ぜないように通常は隠されています。リードセクション内の 'リストビュー' を使うことで匿名リードを確認できます。
 
 Anonymous leads are worth tracking, because these could be future customers.  By tracking them before they have any interaction, you can retain a log of when they visited your site, which allows you to get a picture of their activity prior to engaging with you.
 
