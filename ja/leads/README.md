@@ -1,7 +1,6 @@
 # リード
 
-リードはマーケティングオートーメ—ションプラットフォームの中心的な要素です。誰がサイトを訪問したのか，何らかの方法であなたと接触したのかなどとは独立しています。
-Leads are the central factor of a marketing automation platform. These are all the individuals who have visited your websites or interacted with you in some way.
+リードはマーケティングオートーメ—ションプラットフォームの中心的な要素です。リードは，誰がサイトを訪問したのかやどのような方法であなたと接触したのかなどとは独立した要素です。
 
 ### Lead Types
 
