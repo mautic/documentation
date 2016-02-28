@@ -84,9 +84,9 @@ php /path/to/mautic/app/console mautic:iplookup:download
 
 ご利用のサーバで一般的に `php-cli` といわれるコマンドライン版 PHP が提供されているようであれば，`php` よりもよりクリーンな出力を求めるために `php-cli` を使いたくなるかもしれません。BlueHost や PHP を使える他のサーバでは `php` コマンドはコマンドラインパラメータを `コンソール` として破棄してしまっているかもしれません。この場合は cron job を動作させるよう `php-cli` を使用しなくてはなりません。
 
-If your environment provides a command-line specific build of php, often called `php-cli`, you may want to use that instead of `php` as it will have a cleaner output.  On BlueHost and probably some other PHP hosts, the `php` command might be setup to discard the command-line parameters to `console`, in which case you must use `php-cli` to make the cron jobs work.
+cron job に関連する諸問題において問題解決の一助となるのが，出力をパイプすることです。たとえば`>path/to/somefile.log 2>&1` のように各 cron job の末尾に追加し特定のファイルへ書き出すことです。ファイルの
 
-To assist in troubleshooting cron issues, you can pipe the output of each cron job to a specific file by adding something like `>/path/to/somefile.log 2>&1` at the end of the cron job. Then you can look at the contents of the file to see what was printed. If an error is occurring when running run the cron job, you will see it there, otherwise the file will be empty or have some stats. The modification time of the file informs you of the last time the cron job ran. You can thus use this to figure out whether or not the cron job is running successfully and on schedule.
+Then you can look at the contents of the file to see what was printed. If an error is occurring when running run the cron job, you will see it there, otherwise the file will be empty or have some stats. The modification time of the file informs you of the last time the cron job ran. You can thus use this to figure out whether or not the cron job is running successfully and on schedule.
 
 If you have SSH access, try to run the command directly to see if any errors are generated. If there is nothing printed from either in a SSH session or in the cron output from above, check the server's logs. If you see similar errors to `'Warning: Invalid argument supplied for foreach()' in /vendor/symfony/console/Symfony/Component/Console/Input/ArgvInput.php:287`, you either need to use `php-cli` instead of `php` or try using `php -d register_argc_argv=On`.
 ` 
