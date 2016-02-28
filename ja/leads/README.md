@@ -30,6 +30,6 @@ is:anonymous
 
 スタンダードリードは Mautic で推奨するリードです。これらのリードは最初のうちは匿名リードですが，名前やメールアドレス，ソーシャルネットワークのハンドルネームや特定可能なキャラクターを付与されたある時点でスタンダードリードへと変貌します。これらのリードは Mautic マーケティングオートメーションプラットフォーム上で育成されていくものです。
 
-リードの管理セクションにある次の情報はスタンダードリードで何が管理できるのか
+リードの管理セクションにある次の情報はスタンダードリードで何が管理できるのかという情報を
 
 The following information in the Manage Leads section will provide more information about what can be managed with these standard leads.
