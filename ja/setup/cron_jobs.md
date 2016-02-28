@@ -84,7 +84,7 @@ php /path/to/mautic/app/console mautic:iplookup:download
 
 ご利用のサーバで一般的に `php-cli` といわれるコマンドライン版 PHP が提供されているようであれば，`php` よりもよりクリーンな出力を求めるために `php-cli` を使いたくなるかもしれません。BlueHost や PHP を使える他のサーバでは `php` コマンドはコマンドラインパラメータを `コンソール` として破棄してしまっているかもしれません。この場合は cron job を動作させるよう `php-cli` を使用しなくてはなりません。
 
-cron job に関連する諸問題において問題解決の一助となるのが，出力をパイプすることです。たとえば`>path/to/somefile.log 2>&1` のように各 cron job の末尾に追加し特定のファイルへ書き出すことです。これによりファイルの中に何が出力されているかを確認することができます。cron job の実行中にエラーが起こっているようであればその内容をファイル読むことで確認できます。エラーがない場合はファイルの中身は空白か他のステータスが残っているはずです。ファイルの最終更新時刻は最後に cron job が実行された時間です。
+cron job に関連する諸問題において問題解決の一助となるのが，出力をパイプすることです。たとえば`>path/to/somefile.log 2>&1` のように各 cron job の末尾に追加し特定のファイルへ書き出すことです。これによりファイルの中に何が出力されているかを確認することができます。cron job の実行中にエラーが起こっているようであればその内容をファイル読むことで確認できます。エラーがない場合はファイルの中身は空白か他のステータスが残っているはずです。ファイルの最終更新時刻は最後に cron job が実行された時間です。これにより，cron job がスケジュール通りに正しく実行されたのかそうでないかを推測することができます。
 The modification time of the file informs you of the last time the cron job ran. You can thus use this to figure out whether or not the cron job is running successfully and on schedule.
 
 If you have SSH access, try to run the command directly to see if any errors are generated. If there is nothing printed from either in a SSH session or in the cron output from above, check the server's logs. If you see similar errors to `'Warning: Invalid argument supplied for foreach()' in /vendor/symfony/console/Symfony/Component/Console/Input/ArgvInput.php:287`, you either need to use `php-cli` instead of `php` or try using `php -d register_argc_argv=On`.
