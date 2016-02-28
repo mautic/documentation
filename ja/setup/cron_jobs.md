@@ -80,7 +80,7 @@ php /path/to/mautic/app/console mautic:iplookup:download
 1.1.3 以前のリリースの場合 cron job コマンドを確実に実行させるために，コマンドへ `--env=prod` の追加が必須となっています。
 
 
-## Tips & Troubleshooting ##
+## ティップスとトラブルシュート ##
 
 If your environment provides a command-line specific build of php, often called `php-cli`, you may want to use that instead of `php` as it will have a cleaner output.  On BlueHost and probably some other PHP hosts, the `php` command might be setup to discard the command-line parameters to `console`, in which case you must use `php-cli` to make the cron jobs work.
 
