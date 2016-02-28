@@ -4,13 +4,13 @@
 
 ### リードのタイプ
 
-2タイプのリードがあります。1つ目は匿名リードです。フォームや他の接触などでまだ特定されていないビジターです。
+2タイプのリードがあります。1つ目は匿名リードです。フォームや他の接触などでまだ特定されていないサイトへの訪問者です。 Mautic で追跡されますが，往々においてリードリストにノイズを混ぜないように隠されています。
 
-There are two types of leads. The first type of lead is the anonymous lead. These are visitors to your site who have not yet been identified by a form or other interaction. These leads are tracked by Mautic but typically remain hidden so as not to clutter your lead list.
+2つ目のリードのタイプはスタンダードリードです。フォームや他のソースなどで追加の情報を付与されたリードです。つまりは名前，メールアドレスなどリードを特定できるフィールドを持っています。
 
-The second type of lead is a standard lead. These are leads which have provided additional information via a form or some other source. As a result, these leads typically have a name, email, and other identifying fields.
 
-#### Anonymous Leads
+#### 匿名リード
+匿名リードは
 Anonymous leads are visitors to your site who have not yet been identified by a form or other interaction. These leads are tracked by Mautic but typically remain hidden so as not to clutter your lead list.  You can view anonymous leads by using the 'list view' within the leads section.
 
 Anonymous leads are worth tracking, because these could be future customers.  By tracking them before they have any interaction, you can retain a log of when they visited your site, which allows you to get a picture of their activity prior to engaging with you.
