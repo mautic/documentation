@@ -28,8 +28,8 @@ is:anonymous
 
 2つ目のタイプのリードはスタンダードリードです。このリードはフォームや他のソース，または彼らへ接触をしたことで知った事実などから追加の情報を付与されたリードです。結果として名前やメールアドレス，その他関連したリード等から特定ができる情報が付与されたリードです。
 
-スタンダードリードは Mautic で推奨するリードです。これらのリードは最初のうちは匿名リードですが，名前やメールアドレス，ソーシャルネットワークのハンドルネームや特定可能なキャラクターを付与されたある時点でスタンダードリードへと変貌します。これらのリードは Mautic マーケティングオートメーションプラットフォーム
+スタンダードリードは Mautic で推奨するリードです。これらのリードは最初のうちは匿名リードですが，名前やメールアドレス，ソーシャルネットワークのハンドルネームや特定可能なキャラクターを付与されたある時点でスタンダードリードへと変貌します。これらのリードは Mautic マーケティングオートメーションプラットフォーム上で育成されていくものです。
 
-These leads are ones which can then be nurtured through the Mautic marketing automation platform.
+リードの管理セクションにある次の情報はスタンダードリードで何が管理できるのか
 
 The following information in the Manage Leads section will provide more information about what can be managed with these standard leads.
