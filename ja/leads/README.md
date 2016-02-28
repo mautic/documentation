@@ -22,6 +22,7 @@ is:anonymous
 ##### スクリーンショット
 ![](http://drop.dbh.li/image/3F3X0843100h/Image%202014-11-17%20at%2010.05.43%20AM.png)
 
+結果のリストはアクセス元の IP アドレスで
 The resulting list will be those IP addresses which have not yet provided additional details.
 
 #### Standard Leads
