@@ -77,7 +77,7 @@ php /path/to/mautic/app/console mautic:iplookup:download
 
 ## 注意 ##
 
-1.1.3 以前のリリースの場合 cron job コマンドを確実に実行させるために `--env=prod` の追加が必須となっています。
+1.1.3 以前のリリースの場合 cron job コマンドを確実に実行させるために，コマンドへ `--env=prod` の追加が必須となっています。
 
 
 ## Tips & Troubleshooting ##
