@@ -75,9 +75,10 @@ php /path/to/mautic/app/console mautic:webhooks:process
 php /path/to/mautic/app/console mautic:iplookup:download
 ```
 
-## Note ##
+## 注意 ##
 
-For releases prior to 1.1.3, it is required to append ` --env=prod` to the cron job command to ensure commands execute correctly.
+1.1.3 以前のリリースの場合 cron job コマンドを確実に実行させるために `--env=prod` の追加が必須となっています。
+
 
 ## Tips & Troubleshooting ##
 
