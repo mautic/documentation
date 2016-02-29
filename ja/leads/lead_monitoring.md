@@ -13,7 +13,7 @@ http://yourdomain.com/mtracking.gif
 
 #### ページ情報
 Mautic は `page_url`，`referrer`，`lnaguage`と`page_tititle`をサポートしています(`url`と`title`の同時使用はリードフィールド上でコンフリクトを起こすためおすすめしません)。
-Mautic currently supports `page_url`, `referrer`, `language`, and `page_title` (note that the use of `url` and `title` are deprecated due to conflicts with lead fields).
+
 
 #### UTM Codes 
 
