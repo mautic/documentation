@@ -4,12 +4,11 @@
 
 ## リードリスト
 
-リードリストは
-The lead list is the default tabular view of all the leads in the system - by default the 'list view' is enabled, but you can also choose to switch to the 'grid view' which uses avatars to depict the leads visually using 'cards'. Clicking the appropriate button on the top right will allow you to switch between the two views.
+リードリストはシステム内のリードを一覧できる標準のタブラーです。デフォルトでは'リストビュー'が有効になっています。もちろん，'カード'を使ってアバターを描画してリードをよりビジュアルにする'グリッドビュー'へも変更できます。画面右上にあるボタンをクリックすることで2つのビューを切り替えられます。
 
-Hint: If you prefer using keyboard shortcuts you can enter "t" on your keyboard to dynamically switch to table view and "c" to switch to the card view.
+ヒント: キーボードのショートカットでの操作がお好きなら "t" を押すことで動的にテーブルビューへ変更することができますし， "c" を押すことでカードビューへ変更することができます。
 
-## Searching for leads
+## リードを検索する
 
 The lead list can be searched using the box at the top of the list, and can be ordered using the table headings by clicking on the heading you wish to sort the list by.
 
