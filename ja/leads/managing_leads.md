@@ -23,11 +23,12 @@ Mautic へリードをもっと早く手動で追加したい場合，ノーマ�
 
 リードの新規追加フォームから詳細情報を埋めて追加することもできますが，即座にシステムへリードを追加したい場合はこの方法が手っ取り早いでしょう。
 
-## Adding leads normally
+## リードを普通に追加する
+
 
 If you have leads to import and you have time to add all the information, click on the dropdown arrow to the right of 'Quick Add Lead' and select 'New'.  This opens the new lead screen, where you can enter all the information you have about the lead.  Use the tabs at the top to add custom fields and social network profiles.
 
-## Importing leads
+## リードをインポートする
 
 Mautic offers the ability to import leads from other sources via CSV file - this is a great way to get up and running quickly if you need to import a lot of leads at once.
 
@@ -39,7 +40,8 @@ Upload your CSV file, and ensure that you match the delimiter, enclosure and esc
 
 When you click on 'Upload' you will have the opportunity to match the fields found in the CSV file to the fields that you have in Mautic, which will allow the data to be correctly imported.
 
-## Editing leads
+## リードを編集する
+
 To edit a lead, click on the name of the lead (or the IP address if the visitor is anonymous) to open the lead screen.
 
 From this screen, you can view the recent events and any notes that have been made against the lead.
