@@ -29,9 +29,11 @@ Mautic へリードをもっと早く手動で追加したい場合，ノーマ�
 
 ## リードをインポートする
 
-Mautic offers the ability to import leads from other sources via CSV file - this is a great way to get up and running quickly if you need to import a lot of leads at once.
+Mautic は他のソースからCSVファイルでリードをインポートする機能を提供しています。数多くのリードを一括でインポートする必要があり，すぐに Mautic を稼働させたい場合には大変すばらしい機能です。
 
-To use the import facility, make sure that you first have all the fields set up under 'Manage fields' which correspond to the information you are importing - you don't want to lose any data if at all possible.
+インポート機能を使うには，まず最初に'フィールドの管理'にあるすべてのフィールドに設定を行ってください。あらゆるデータを失いたくないのであれば，この設定はインポート仕様としている各情報と一致させてください。
+
+
 
 Once you have created all the lead fields, click on the dropdown arrow to the right of the Quick Add Lead button, and select 'Import'.
 
