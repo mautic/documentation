@@ -33,13 +33,11 @@ Mautic は他のソースからCSVファイルでリードをインポートす�
 
 インポート機能を使うには，まず最初に'フィールドの管理'にあるすべてのフィールドに設定を行ってください。あらゆるデータを失いたくないのであれば，この設定はインポート仕様としている各情報と一致させてください。
 
+すべてのリードフィールドを作成したあと，クィック追加ボタンの右側にあるドロップダウンの矢印をクリックし'インポート'を選択します。
 
+CSV ファイルをアップロードしてください。その際はインポートツールがデータを正しく読み込み処理できるよう，区切り文字や囲い/括り，エスケープ文字に注意してください。
 
-Once you have created all the lead fields, click on the dropdown arrow to the right of the Quick Add Lead button, and select 'Import'.
-
-Upload your CSV file, and ensure that you match the delimiter, enclosure and escape characters so that the importer can understand the data.
-
-When you click on 'Upload' you will have the opportunity to match the fields found in the CSV file to the fields that you have in Mautic, which will allow the data to be correctly imported.
+'アップロードボタン'をクリックすると CSV ファイルにあるフィールドが Mautic のフィールドへ正しくインポートされるかを確認する機会があります。
 
 ## リードを編集する
 
