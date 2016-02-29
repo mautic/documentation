@@ -2,8 +2,7 @@
 リード似ついての活動状況やトラフィックをモニターする行為は多少テクニカルで苛々するときがあります。 Mautic はこのモニタリングをシンプルにそして簡単に設定できます。
 
 ### ウェブサイト監視
-
-Monitoring all traffic on a website can be done by adding a single tracking pixel to the website.  It is important to note that traffic will not be monitored from logged-in Mautic users.  To check that the pixel is working, use an incognito or private browsing window or simply log-out of Mautic prior to testing.
+ウェブサイトへのトラフィックすべてをモニタリングするにはトラッキングピクセルを追加するだけ十分です。 Mautic へログイン済みのユーザについてのトラフィックはモニタリングできないため，トラフィックの記録をとるという事は重要な事です。トラッキングピクセルが動作しているかどうかは incognito や プレイべーとブラウジングウィンドウ，または Mautic からログアウトして確認してみてください。
 
 ```
 http://yourdomain.com/mtracking.gif
