@@ -8,9 +8,8 @@
 http://yourdomain.com/mtracking.gif
 ```
 
-### Tracking Pixel Query
-
-To get the most out of the tracking pixel, it is recommended that you pass information of the web request through the image URL.  
+### ピクセルクェリをトラッキングする
+トラッキングピクセルを最大限に活用するには画像の URL を介してウェブリクエストの情報を渡す事をおすすめします。
 
 #### Page Information
 
