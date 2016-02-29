@@ -14,8 +14,8 @@
 
 ![](http://drop.dbh.li/image/1m2J3u1d3z1T/Image%202014-11-17%20at%2010.29.08%20AM.png)
 
-検索ボックスは
-The search box allows many different search types and follows the same search process and variables as found in all other search layouts. You can learn more about the powerful search options available on the search documentation page.
+検索ボックスは，多くの異なる検索タイプを可能にし，他のすべての検索レイアウトで見つかったものと同じ検索プロセスと変数に続きます。利用可能な強力な検索オプションについての詳細を検索に関するドキュメントページ上で学ぶことができます。
+
 
 ## Adding leads quickly
 
