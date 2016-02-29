@@ -11,7 +11,7 @@ http://yourdomain.com/mtracking.gif
 ### ピクセルクェリをトラッキングする
 トラッキングピクセルを最大限に活用するには画像の URL を介してウェブリクエストの情報を渡す事をおすすめします。
 
-#### Page Information
+#### ページ情報
 
 Mautic currently supports `page_url`, `referrer`, `language`, and `page_title` (note that the use of `url` and `title` are deprecated due to conflicts with lead fields).
 
