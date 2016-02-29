@@ -1,9 +1,7 @@
 # リードの監視
-リード似ついての活動状況やトラフィックをモニターする行為は多少テクニカルで苛々するときがあります。 Mautic はこのモニタリングを
+リード似ついての活動状況やトラフィックをモニターする行為は多少テクニカルで苛々するときがあります。 Mautic はこのモニタリングをシンプルにそして簡単に設定できます。
 
-The act of monitoring the traffic and activity of leads can sometimes be somewhat technical and frustrating to understand. Mautic makes this monitoring simple and easy to configure.
-
-### Website Monitoring
+### ウェブサイト監視
 
 Monitoring all traffic on a website can be done by adding a single tracking pixel to the website.  It is important to note that traffic will not be monitored from logged-in Mautic users.  To check that the pixel is working, use an incognito or private browsing window or simply log-out of Mautic prior to testing.
 
