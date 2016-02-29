@@ -41,8 +41,8 @@ CSV ファイルをアップロードしてください。その際はインポ�
 
 ## リードを編集する
 
-To edit a lead, click on the name of the lead (or the IP address if the visitor is anonymous) to open the lead screen.
+リードを編集するにはリードの名前(匿名リードの場合は IP アドレス)をクリックしてリードの画面を開いてください。
 
-From this screen, you can view the recent events and any notes that have been made against the lead.
+この画面ではリードへ対して行われた直近のイベントやメモなどを確認する事ができます。
 
-To edit the lead, click on the 'edit' button on the top-right menu.
+リードを編集するには画面右上の'編集'ボタンをクリックしてください。
