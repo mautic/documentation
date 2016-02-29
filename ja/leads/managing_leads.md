@@ -21,7 +21,7 @@
 
 Mautic へリードをもっと早く手動で追加したい場合，ノーマルなワークフローとしてシステムには備わっていません。ノーマルなワークフローはたとえば問い合わせフォームへ入力されたものやインポートされたものを指します。このような場合はリードのクィック追加ボタンを使うことでシステムへリードを追加できます。
 
-You can of course also add them through the New Lead form and add much more detail but for quick entry this is the easiest and fastest way to get the lead into the system.
+リードの新規追加フォームから詳細情報を埋めて追加することもできますが，即座にシステムへリードを追加したい場合はこの方法が手っ取り早いでしょう。
 
 ## Adding leads normally
 
