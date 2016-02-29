@@ -10,10 +10,11 @@
 
 ## リードを検索する
 
-The lead list can be searched using the box at the top of the list, and can be ordered using the table headings by clicking on the heading you wish to sort the list by.
+リードリストはリストの上部にある検索ボックスで検索が可能です。またリストの並び順はリストの見出しをクリックすることで変更もできます。
 
 ![](http://drop.dbh.li/image/1m2J3u1d3z1T/Image%202014-11-17%20at%2010.29.08%20AM.png)
 
+検索ボックスは
 The search box allows many different search types and follows the same search process and variables as found in all other search layouts. You can learn more about the powerful search options available on the search documentation page.
 
 ## Adding leads quickly
