@@ -19,6 +19,7 @@
 
 ## リードを素早く追加する
 
+Mautic へリードをもっと早く手動で追加したいと場合，ノーマルなワークフロー
 If you have leads you would like to quickly add to Mautic manually, and they are not in the system as part of the normal workflow (for example by completing an enquiry form or having been imported) you can use the Quick Add Lead button to add them to the system.
 
 You can of course also add them through the New Lead form and add much more detail but for quick entry this is the easiest and fastest way to get the lead into the system.
