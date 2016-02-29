@@ -17,7 +17,7 @@
 検索ボックスは，多くの異なる検索タイプを可能にし，他のすべての検索レイアウトで見つかったものと同じ検索プロセスと変数に続きます。利用可能な強力な検索オプションについての詳細を検索に関するドキュメントページ上で学ぶことができます。
 
 
-## Adding leads quickly
+## リードを素早く追加する
 
 If you have leads you would like to quickly add to Mautic manually, and they are not in the system as part of the normal workflow (for example by completing an enquiry form or having been imported) you can use the Quick Add Lead button to add them to the system.
 
