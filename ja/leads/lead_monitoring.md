@@ -15,7 +15,7 @@ http://yourdomain.com/mtracking.gif
 Mautic は `page_url`，`referrer`，`lnaguage`と`page_tititle`をサポートしています(`url`と`title`の同時使用はリードフィールド上でコンフリクトを起こすためおすすめしません)。
 
 
-#### UTM Codes 
+#### UTM コード
 
 Support for UTM codes in the lead time-line was introduced in version 1.2.1. `utm_medium`, `utm_source`, and `utm_campaign` are used to generate the content of the time-line entry.
 
