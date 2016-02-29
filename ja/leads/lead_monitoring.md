@@ -1,4 +1,6 @@
-# Lead Monitoring
+# リードの監視
+リード似ついての活動状況やトラフィックをモニターする行為は多少テクニカルで苛々するときがあります。 Mautic はこのモニタリングを
+
 The act of monitoring the traffic and activity of leads can sometimes be somewhat technical and frustrating to understand. Mautic makes this monitoring simple and easy to configure.
 
 ### Website Monitoring
