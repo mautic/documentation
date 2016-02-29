@@ -1,9 +1,10 @@
-# Manage Leads
+# リードを管理する
 
-The manage leads page is the main interface through which you can view and interact with your leads - both anonymous leads and those with additional information available.
+リードの管理ページはリードの一覧を確認や交流などを行うメインのインターフェイスです。匿名リードやその追加情報も確認できます。
 
-## Lead Lists
+## リードリスト
 
+リードリストは
 The lead list is the default tabular view of all the leads in the system - by default the 'list view' is enabled, but you can also choose to switch to the 'grid view' which uses avatars to depict the leads visually using 'cards'. Clicking the appropriate button on the top right will allow you to switch between the two views.
 
 Hint: If you prefer using keyboard shortcuts you can enter "t" on your keyboard to dynamically switch to table view and "c" to switch to the card view.
