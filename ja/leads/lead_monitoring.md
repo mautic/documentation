@@ -48,11 +48,10 @@ Mautic のリードフィールドを誰にでも更新可能な状態にする�
 
 たとえば`mtracking.gif?tags=ProductA,-ProductB` というタグはリードに対してプロダクトAを追加し，プロダクトBを削除することになります。
 
-### Embedding the Pixel
+### ピクセルの埋め込み
+なにかしらの CMS を使っているのであれば我々のプラグインを使ってピクセルを埋め込むのが一番簡単です(以下参照)。プラグインはすべてのリードのフィールド，UTM コードやリードタグをサポートしているわけでは無い点にご注意ください。
 
-If you are using a CMS, the easiest way is to let one of our plugins do this for you (see below). Note that the plugins may not support all lead fields, utm codes or lead tags.
-
-Here are a couple code snippets that may help as well:
+以下に示すコードコードスニペットが役に立つと思います:
 
 HTML
 
