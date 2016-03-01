@@ -88,7 +88,7 @@ body.appendChild(img);
 ```
 
 #### 提供中のプラグイン
-Mauticは，多くの既存の CMS へキー統合を提供することにより，リードのモニタリングがさらに簡単になります。ウェブサイトへトラッキングピクセルを自動的に追加するには，次のプラグインのいずれかをダウンロードし使用してください。
+Mauticは，多くの既存の CMS へキーインテグレーションを提供することにより，リードのモニタリングがさらに簡単になります。ウェブサイトへトラッキングピクセルを自動的に追加するには，次のプラグインのいずれかをダウンロードし使用してください。
 
 * [Joomla!](http://mautic.org/integration/joomla)
 * [Drupal](http://mautic.org/integration/drupal)
@@ -96,7 +96,7 @@ Mauticは，多くの既存の CMS へキー統合を提供することにより
 * [Typo3](http://mautic.org/integration/typo3)
 * [Concrete5](http://mautic.org/integration/concrete5)
 
-These are just a few of the integrations already created by the Mautic community. More will be added in the future and developers are encouraged to submit their own integrations.
+Mautic コミュニティで作成されたほんの一部です。将来にはもっと追加されるでしょうし，デベロッパに自身のインテグレーションを登録するよう働き掛けています。
 
 **Note:** It is important to note that you are not limited by these plugins and you can place the tracking pixel directly on any HTML page for website tracking.
 
