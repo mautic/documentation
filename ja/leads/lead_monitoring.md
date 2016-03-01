@@ -17,6 +17,7 @@ Mautic は `page_url`，`referrer`，`lnaguage`と`page_tititle`をサポート�
 
 #### UTM コード
 
+バージョン1.2.1からリードタイムライン上で UTM コードのサポートが開始されました。`utm_medium`，`utm_source`，そして`utm_campaign`は
 Support for UTM codes in the lead time-line was introduced in version 1.2.1. `utm_medium`, `utm_source`, and `utm_campaign` are used to generate the content of the time-line entry.
 
 `utm_campaign` will be used as  the time-line entry's title.
