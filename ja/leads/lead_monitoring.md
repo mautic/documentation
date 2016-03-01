@@ -40,7 +40,7 @@ Mautic は `page_url`，`referrer`，`lnaguage`と`page_tititle`をサポート�
 </tbody>
 </table>
 
-#### Lead Fields
+#### リードフィールド
 
 You can also pass information specific to your lead by setting Mautic lead field(s) to be publicly updatable. Note that values appended to the tracking pixel should be url encoded (%20 for spaces, %40 for @, etc).
 
