@@ -101,8 +101,7 @@ Mautic コミュニティで作成されたほんの一部です。将来には�
 **注意:** ウェブページのトラッキングのためにプラグインを使ったりトラッキングピクセルをHTMLページに直接埋め込んだりする事でなんら制限を受ける事はありません。
 
 ### モバイルモニタリング
-アプリ上での出来事をモニタリングすることとウェブサイトでの出来事をモニタリングすることは本質的によく似ています。 Mautic はネイティブ(準ネイティブ)や HTML5 ラッパーベースのアプリ
-Mautic contains the building blocks needed for native (or pseudo-native) and HTML5-wrapper based Apps, regardless of platform.
+アプリ上での出来事をモニタリングすることとウェブサイトでの出来事をモニタリングすることは本質的によく似ています。 Mautic はプラットフォームに関係なくネイティブ(もしくは擬似ネイティブ)なアプリと HTML5 ラッパーベースのアプリのために必要なビルディングブロックが含まれています。
 
 In short, use named screen views (e.g. main_screen) in your App as your page_url field in the tracker, and the lead's email as the unique identifier, see next section for detailed instructions.
 
