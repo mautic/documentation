@@ -44,10 +44,9 @@ Mautic は `page_url`，`referrer`，`lnaguage`と`page_tititle`をサポート�
 Mautic のリードフィールドを誰にでも更新可能な状態にする事でリードに対し特定の情報を流す事ができます。トラッキングピクセルの URL に含まれる値はエンコードされていなくてはなりません(スペースは%20へ，@は%40など)。
 
 #### タグ
+リードのタグはクエリーパラメータの`tags`を使うことで変更ができます。コンマを使って複数のタグを区切れます。タグを削除するにはタグの前にハイフン(マイナス記号)を付けてください。
 
-The lead's tags can be changed by using the `tags` query parameter. Multiple tags can be separated by comma. To remove a tag, prefix it with a dash (minus sign).  
-
-For example, `mtracking.gif?tags=ProductA,-ProductB` would add the ProductA tag to the lead and remove ProductB.
+たとえば`mtracking.gif?tags=ProductA,-ProductB` というタグはリードに対してプロダクトAを追加し，プロダクトBを削除することになります。
 
 ### Embedding the Pixel
 
