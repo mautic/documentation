@@ -98,10 +98,10 @@ Mauticは，多くの既存の CMS へキーインテグレーションを提供
 
 Mautic コミュニティで作成されたほんの一部です。将来にはもっと追加されるでしょうし，デベロッパに自身のインテグレーションを登録するよう働き掛けています。
 
-**注意:** webページのトラッキングのためにプラグインを使ったりトラッキングピクセルをHTMLページに直接埋め込んだりする事でなんら制限を受ける事はありません。
+**注意:** ウェブページのトラッキングのためにプラグインを使ったりトラッキングピクセルをHTMLページに直接埋め込んだりする事でなんら制限を受ける事はありません。
 
 ### モバイルモニタリング
-
+App 上で何が起こるのかという事はモニタリングの本質でありウェブサイトで何が起こるのかをモニタリングすることとよく似ています。
 The essence of monitoring what happens in an App is similar to monitoring what happens on a website. Mautic contains the building blocks needed for native (or pseudo-native) and HTML5-wrapper based Apps, regardless of platform.
 
 In short, use named screen views (e.g. main_screen) in your App as your page_url field in the tracker, and the lead's email as the unique identifier, see next section for detailed instructions.
