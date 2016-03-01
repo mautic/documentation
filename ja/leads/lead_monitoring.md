@@ -26,17 +26,17 @@ Mautic は `page_url`，`referrer`，`lnaguage`と`page_tititle`をサポート�
 <table>
 <thead>
 <tr>
-    <th>Values</th>
-    <th>Class</th>
+    <th>値</th>
+    <th>クラス</th>
 </tr>
 </thead>
 <tbody>
-   <tr><td>social, socialmedia</td><td>fa-share-alt if <code>utm_source</code> is not available otherwise <code>utm_source</code> will be used as the class. For example, if <code>utm_source</code> is Twitter, fa-twitter will be used.</td></tr>
-   <tr><td>email, newsletter</td><td>fa-envelope-o</td></tr>
-   <tr><td>banner, ad</td><td>fa-bullseye</td></tr>
-   <tr><td>cpc</td><td>fa-money</td></tr>
-   <tr><td>location</td><td>fa-map-marker</td></tr>
-   <tr><td>device</td><td>fa-tablet if <code>utm_source</code> is not available otherwise <code>utm_source</code> will be used as the class. For example, if <code>utm_source</code> is Mobile, fa-mobile will be used.</td></tr>   
+   <tr><td>ソーシャル，ソーシャルメディア</td><td>fa-share-alt if <code>utm_source</code> is not available otherwise <code>utm_source</code> will be used as the class. For example, if <code>utm_source</code> is Twitter, fa-twitter will be used.</td></tr>
+   <tr><td>Eメール，ニュースレター</td><td>fa-envelope-o</td></tr>
+   <tr><td>バナー，広告</td><td>fa-bullseye</td></tr>
+   <tr><td>CPC</td><td>fa-money</td></tr>
+   <tr><td>ロケーション</td><td>fa-map-marker</td></tr>
+   <tr><td>デバイス</td><td>fa-tablet if <code>utm_source</code> is not available otherwise <code>utm_source</code> will be used as the class. For example, if <code>utm_source</code> is Mobile, fa-mobile will be used.</td></tr>   
 </tbody>
 </table>
 
