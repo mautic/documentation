@@ -87,9 +87,8 @@ body.appendChild(img);
 </script>
 ```
 
-#### Available Plugins
-
-Mautic makes this even easier by providing key integrations to many existing content management systems. You can download and use any of the following plugins to automatically add that tracking pixel to your website.
+#### 提供中のプラグイン
+Mauticは，多くの既存の CMS へキー統合を提供することにより，リードのモニタリングがさらに簡単になります。ウェブサイトへトラッキングピクセルを自動的に追加するには，次のプラグインのいずれかをダウンロードし使用してください。
 
 * [Joomla!](http://mautic.org/integration/joomla)
 * [Drupal](http://mautic.org/integration/drupal)
