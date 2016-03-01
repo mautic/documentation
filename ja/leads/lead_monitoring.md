@@ -108,9 +108,10 @@ Mautic コミュニティで作成されたほんの一部です。将来には�
 
 ####  Mautic でのステップ
 
-1. メールフィールドを誰でも編集可能してください。これはトラッキング Gif 画像を可変なメールアドレスから呼び出すためで， Mautic から正しく認識させる事になります。
+1. メールフィールドを誰でも編集可能な状態にしてください。こうすることでトラッキング Gif 画像をさまざまなメールアドレスから呼び出すことができ，Mautic がトラッキング Gif 画像を正しく認識させる事になります。
 
-2. Setup a form, which will be the access point of your campaign (e.g. a new lead email). Make this form as simple as you can, as you will be POST-ing to it from your App. The typical form URL you will POST to is
+2. フォームをセットアップしてください。このフォームはキャンペーンへアクセスするポイントになります(例: 新規リードのメールアドレス)。
+3. Setup a form, which will be the access point of your campaign (e.g. a new lead email). Make this form as simple as you can, as you will be POST-ing to it from your App. The typical form URL you will POST to is
 
 ```
 http://your_mautic/form/submit?formId=<form_id>
