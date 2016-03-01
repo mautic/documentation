@@ -98,7 +98,7 @@ Mauticは，多くの既存の CMS へキーインテグレーションを提供
 
 Mautic コミュニティで作成されたほんの一部です。将来にはもっと追加されるでしょうし，デベロッパに自身のインテグレーションを登録するよう働き掛けています。
 
-**注意:** It is important to note that you are not limited by these plugins and you can place the tracking pixel directly on any HTML page for website tracking.
+**注意:** webページのトラッキングのためにプラグインを使ったりトラッキングピクセルをHTMLページに直接埋め込んだりする事でなんら制限を受ける事はありません。
 
 ### Mobile Monitoring
 
