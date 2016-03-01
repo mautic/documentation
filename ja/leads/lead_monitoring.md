@@ -100,7 +100,7 @@ Mautic コミュニティで作成されたほんの一部です。将来には�
 
 **注意:** webページのトラッキングのためにプラグインを使ったりトラッキングピクセルをHTMLページに直接埋め込んだりする事でなんら制限を受ける事はありません。
 
-### Mobile Monitoring
+### モバイルモニタリング
 
 The essence of monitoring what happens in an App is similar to monitoring what happens on a website. Mautic contains the building blocks needed for native (or pseudo-native) and HTML5-wrapper based Apps, regardless of platform.
 
