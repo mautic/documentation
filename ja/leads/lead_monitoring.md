@@ -41,10 +41,9 @@ Mautic は `page_url`，`referrer`，`lnaguage`と`page_tititle`をサポート�
 </table>
 
 #### リードフィールド
+Mautic のリードフィールドを誰にでも更新可能な状態にする事でリードに対し特定の情報を流す事ができます。トラッキングピクセルの URL に含まれる値はエンコードされていなくてはなりません(スペースは%20へ，@は%40など)。
 
-You can also pass information specific to your lead by setting Mautic lead field(s) to be publicly updatable. Note that values appended to the tracking pixel should be url encoded (%20 for spaces, %40 for @, etc).
-
-#### Tags
+#### タグ
 
 The lead's tags can be changed by using the `tags` query parameter. Multiple tags can be separated by comma. To remove a tag, prefix it with a dash (minus sign).  
 
