@@ -106,9 +106,9 @@ Mautic コミュニティで作成されたほんの一部です。将来には�
 すなわち，アプリ上で指定されたスクリーンビュー(例: main_screen) を page_url フィールドとしてトラッカー上で使用したり，リードのメールアドレスをユニークな識別子として使ったりする事ができます。詳しくは次のセクションをご参照ください。
 
 
-#### Steps in Mautic
+####  Mautic でのステップ
 
-1. Make the email field publicly editable, this means that a call to the tracking GIF with the variable email will get properly recognized by Mautic.
+1. メールフィールドを誰でも編集可能してください。これはトラッキング Gif 画像を可変なメールアドレスから呼び出すためで， Mautic から正しく認識させる事になります。
 
 2. Setup a form, which will be the access point of your campaign (e.g. a new lead email). Make this form as simple as you can, as you will be POST-ing to it from your App. The typical form URL you will POST to is
 
