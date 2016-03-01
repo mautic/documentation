@@ -103,9 +103,7 @@ Mautic コミュニティで作成されたほんの一部です。将来には�
 ### モバイルモニタリング
 アプリ上での出来事をモニタリングすることとウェブサイトでの出来事をモニタリングすることは本質的によく似ています。 Mautic はプラットフォームに関係なくネイティブ(もしくは擬似ネイティブ)なアプリと HTML5 ラッパーベースのアプリのために必要なビルディングブロックが含まれています。
 
-すなわち，
-
-In short, use named screen views (e.g. main_screen) in your App as your page_url field in the tracker, and the lead's email as the unique identifier, see next section for detailed instructions.
+すなわち，アプリ上で指定されたスクリーンビュー(例: main_screen) を page_url フィールドとしてトラッカー上で使用したり，リードのメールアドレスをユニークな識別子として使ったりする事ができます。詳しくは次のセクションをご参照ください。
 
 
 #### Steps in Mautic
