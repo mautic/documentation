@@ -115,8 +115,7 @@ Mautic コミュニティで作成されたほんの一部です。将来には�
 ```
 http://your_mautic/form/submit?formId=<form_id>
 ```
-
-You can get the ID from the mautic URL as you view / edit the form in the Mautic interface (or in the forms tables, last column), and you can get the form fields by looking at the HTML of the 'Manual Copy' of the HTML in the forms editing page.
+ Mautic のインターフェイス(またはフォームのテーブル，最後のコラム)でフォームを閲覧・編集可能な ID を Mautic の URL より取得できます。また，フォームの編集ページでフォームフィールドを HTML '手動でコピー'する事で取得もできます。
 
 
 3. Define in your campaigns the screens you want to use as triggers (e.g. 'cart_screen' etc.). Mautic is not looking for a real URL in the form 'http://<url>' for page_url, any typical string would do. Like this:
