@@ -118,7 +118,7 @@ http://your_mautic/form/submit?formId=<form_id>
 Mautic のインターフェイス(またはフォームのテーブル，最後のコラム)でフォームを閲覧・編集可能な ID を Mautic の URL より取得できます。また，フォームの編集ページでフォームフィールドを HTML '手動でコピー'する事で取得もできます。
 
 
-3. Define in your campaigns the screens you want to use as triggers (e.g. 'cart_screen' etc.). Mautic is not looking for a real URL in the form 'http://<url>' for page_url, any typical string would do. Like this:
+3. キャンペーンでどの画面ををトリガーとしたいのかを明確に示してください (例:  'cart_screen' など)。 Mautic はフォーム内で 'http://<url>' で始まるような  page_url など他の典型的な文字列のような真の URL を探したりはしません。URL はたとえば次のようなものです: 
 
 ```
 http://yourdomain.com/mtracking.gif?page_url=cart_screen&email=myemail@somewhere.com
