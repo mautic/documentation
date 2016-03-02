@@ -118,14 +118,14 @@ http://your_mautic/form/submit?formId=<form_id>
 Mautic のインターフェイス(またはフォームのテーブル，最後のコラム)でフォームを閲覧・編集可能な ID を Mautic の URL より取得できます。また，フォームの編集ページでフォームフィールドを HTML '手動でコピー'する事で取得もできます。
 
 
-3. キャンペーンでどの画面ををトリガーとしたいのかを明確に示してください (例:  'cart_screen' など)。 Mautic はフォーム内で 'http://<url>' で始まるような  page_urlなど他の典型的な文字列のような真の URL を探したりはしません。URL はたとえば次のようなものです: 
+3. キャンペーンでどの画面ををトリガーとしたいのかを明確に示してください (例:  'cart_screen' など)。 Mautic はフォーム内で 'http://<url>' で始まるような page_url など他の典型的な文字列のような真の URL を探したりはしません。URL はたとえば次のようなものです: 
 
 ```
 http://yourdomain.com/mtracking.gif?page_url=cart_screen&email=myemail@somewhere.com
 ```
 
-#### In your App
-
+#### アプリ上で
+best-in-class アプローチは class(仮に'mautic'しましょう)を持つ事になりトラッキングをしたいものすべてを制御する事ができます。
 A best-in-class approach is to have a class (say 'mautic') that handles all your tracking needs. For example, this sample method call would POST to the form with ID 3 - see previous section (note: for conciseness and ubiquity, these sample lines are written in JavaScript / ECMAScript-type language, use similar call in your mobile App language of choice).
 
 ```
