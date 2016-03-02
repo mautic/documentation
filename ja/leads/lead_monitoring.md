@@ -139,8 +139,8 @@ mautic.track("cart_screen", "myemail@somewhere.com")
 ```
 http://yourdomain.com/mtracking.gif?page_url=cart_screen&email=myemail@somewhere.com
 ```
-重要: アプリ上で次の事を確認してください: HTTP リクエストが cookie を使っているかどうか(可能であれば mautic.addLaead POST リクエストから cookie を優先的に再利用してください)，同時に 次のリクエスト時に cookie の再利用をしているかどうか。
-This how Mautic (and other tracking software) knows that it's really the same user. If you can't do this, you may run in the (unlikely but possible) case where you have multiple leads from the same IP address and Mautic will merge them all into a single lead as it can't tell who is who without a cookie.
+重要: アプリ上で次の事を確認してください: HTTP リクエストが cookie を使っているかどうか(可能であれば mautic.addLaead POST リクエストから cookie を優先的に再利用してください)，同時に 次のリクエスト時に cookie の再利用をしているかどうか。いかにして Mautic (や他のトラッキングソフト) が同一ユーザかを見分ける方法を紹介しました。
+If you can't do this, you may run in the (unlikely but possible) case where you have multiple leads from the same IP address and Mautic will merge them all into a single lead as it can't tell who is who without a cookie.
 
 ### Other Online Monitoring
 
