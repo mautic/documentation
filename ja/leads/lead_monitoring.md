@@ -130,8 +130,7 @@ http://yourdomain.com/mtracking.gif?page_url=cart_screen&email=myemail@somewhere
 ```
 mautic.addLead("myemail@somehwere.com",3)
 ```
-
-And then, to track individual user activity in the App, this sample call would make an HTTP request to the tracker:
+アプリ上で個々のユーザをトラッキングするにはこのサンプルコールでトラッカーへ HTTP リクエストをしてください:
 
 ```
 mautic.track("cart_screen", "myemail@somewhere.com")
