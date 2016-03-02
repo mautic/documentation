@@ -135,8 +135,7 @@ mautic.addLead("myemail@somehwere.com",3)
 ```
 mautic.track("cart_screen", "myemail@somewhere.com")
 ```
-これは単なる HTTP リクエストの GET フォーマットの URL です:
-
+これは単なる HTTP リクエストの GET フォーマットの URL です(前のセクションにもあります):
 ```
 http://yourdomain.com/mtracking.gif?page_url=cart_screen&email=myemail@somewhere.com
 ```
