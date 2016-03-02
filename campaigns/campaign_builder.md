@@ -48,3 +48,15 @@ To provide a simple example of a decision tree consider an email where the decis
 ### Conditions
 
 Conditions can be used to execute different actions based on a lead's data.  For example, a condition can be configured to execute an action if a lead has an email or do something else if they do not.
+
+__The delay you set is ran before checking the condition no matter the delay you add on the connected actions. It will not wait the delay on the connected action to check the status of the condition to qualify the lead into the positive or negatve path of the condition.__
+
+
+#### Positive status Condition Path (Green Points)
+
+Actions attached to the green point of a condition are considered as positive status points.
+The status condition path is taken as a result of a the condition at the end of the delay set (trigger, delay or specific date).
+
+#### Negative status Condition Path (Red Points)
+
+Actions attached to the red point of a condition are considered as negative status points. This path is taken as a result of negative status for the condition at the end of the delay set (trigger, delay or specific date).
