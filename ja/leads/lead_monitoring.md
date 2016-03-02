@@ -125,7 +125,7 @@ http://yourdomain.com/mtracking.gif?page_url=cart_screen&email=myemail@somewhere
 ```
 
 #### アプリ上で
-best-in-class アプローチは class(仮に'mautic'しましょう)を持つ事になりトラッキングをしたいものすべてを制御する事ができます。
+最高のアプローチ方法は class(仮に'mautic'しましょう)を持つ事になりトラッキングをしたいものすべてを制御する事ができます。
 A best-in-class approach is to have a class (say 'mautic') that handles all your tracking needs. For example, this sample method call would POST to the form with ID 3 - see previous section (note: for conciseness and ubiquity, these sample lines are written in JavaScript / ECMAScript-type language, use similar call in your mobile App language of choice).
 
 ```
