@@ -4,8 +4,6 @@
 
 すべてのリストを表示する際，右側のカラムに注意してください。このカラムはリードの各項目に対応しているリード数を表示しています。
 
-When viewing all lead lists you will notice the column on the right which shows the number of leads matching that particular list.
-
 ![](http://drop.dbh.li/image/3v3F2v280n1z/Image%202014-11-16%20at%209.32.16%20PM.png)
 
 ### リストフィルター
