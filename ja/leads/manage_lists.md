@@ -23,13 +23,16 @@ When viewing all lead lists you will notice the column on the right which shows 
 ### スマートリスト
 リストを作成することで任意の適用可能なリードが自動的に cron job の実行により追加されます。これは、スマートリストのがスマートリストたる所以です。
 
-スマートリストを常に最新の状態に保つには，任意の間隔で次のコマンドを実行できるよう cron job を作成ししてください。
+スマートリストを常に最新の状態に保つには，任意の間隔で次のコマンドを実行できるよう cron job を作成してください。
+
 ```
 php /path/to/mautic/app/console mautic:leadlists:update --env=prod
 ```
 
-Through the execution of that command, leads that match the filters will be added and leads that no longer match will be removed. Any leads that were manually added will remain part of the list regardless of filters.
+このコマンドを実行する事でリードはフィルタにマッチするリードがスマートリストへ追加され，フィルダにマッチしなくなったリードはスマートリストから削除されます。手動で追加されたリードについては例外でフィルタリストの一部のままとなります。
 
-### Manual Addition
+### リストへ手動で追加する
 
+さらにスマートリストはリードリストへ手動で追加する事ができます。リードの詳細ビューにある
+スマートリストに加えて，手動でリード詳細ビュー上のトグルを選択する際にリストボタンをクリックして，リストに任意のリードを追加することができます。
 In addition to smart lists you can also manually add any lead to a list by clicking the Lists button then selecting the radio toggle on the lead detail view.
