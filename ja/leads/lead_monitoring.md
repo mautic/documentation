@@ -141,10 +141,9 @@ http://yourdomain.com/mtracking.gif?page_url=cart_screen&email=myemail@somewhere
 ```
 重要: アプリ上で次の事を確認してください: HTTP リクエストが cookie を使っているかどうか(可能であれば mautic.addLaead POST リクエストから cookie を優先的に再利用してください)，同時に 次のリクエスト時に cookie の再利用をしているかどうか。いかにして Mautic (や他のトラッキングソフト) が同一ユーザかを見分ける方法を紹介しました。これができない場合(多くはありませんがありえます)，同じ IP アドレスから複数のリードを Mautic は cookie 無しでは個別のものと判断できないためこれらを一つのリードへマージします。
 
-### Other Online Monitoring
+### 他のオンラインモニタリングツール
+リードの活動状況をモニタリングして活動状況に対してポイントを付与する方法は他にもいくつかあります。ウェブサイトのモニタリングはリードをトラッキングする唯一の方法です。他のリードのモニタリングはフォーラムへの投稿，チャットルームでのめセージ，メーリングリストへの投稿，GitHub/Bitbucket 上のメッセージやコードの投稿，各ソーシャルメディアへの投稿，無数のオプションから構成されています。
 
-There are several other ways to monitor lead activity and attach points to those activities. Website monitoring is only one way to track leads. Other lead monitoring activities can consist of forum posts, chat room messages, mailing list discussion posts, GitHub/Bitbucket messages, code submissions, social media posts, and a myriad of other options.
+### トラブルシューティング
 
-### Troubleshooting
-
-If the tracking doesn't work, take a look at [Page troubleshooting](pages/troubleshooting.html) or [Email troubleshooting](emails/troubleshooting.html)
+トラッキングが上手く動作しない場合は[ページのトラブルシューティングの項目](pages/troubleshooting.html) や [メールのトラブルシューティングの項目](emails/troubleshooting.html)を参照してください。
