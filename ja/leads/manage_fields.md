@@ -1,6 +1,6 @@
 # フィールドを管理
 
-The manage fields page will let you view all existing lead fields as well as any custom lead fields you've created.
+フィールド管理ページは登録されているすべてのリードフィールドを作成したカスタムリードフィールドも同じように確認できます。
 
 ![](http://drop.dbh.li/image/190V1w2j2P1Z/Image%202014-11-16%20at%209.34.35%20PM.png)
 
