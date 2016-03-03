@@ -1,5 +1,6 @@
 # リストを管理する
 
+リストは
 Lists provide ways to easily organize your leads. These lists can be configured from a variety of fields.
 
 When viewing all lead lists you will notice the column on the right which shows the number of leads matching that particular list.
