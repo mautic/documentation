@@ -33,6 +33,4 @@ php /path/to/mautic/app/console mautic:leadlists:update --env=prod
 
 ### リストへ手動で追加する
 
-さらにスマートリストはリードリストへ手動で追加する事ができます。リードの詳細ビューにある
-スマートリストに加えて，手動でリード詳細ビュー上のトグルを選択する際にリストボタンをクリックして，リストに任意のリードを追加することができます。
-In addition to smart lists you can also manually add any lead to a list by clicking the Lists button then selecting the radio toggle on the lead detail view.
+スマートリストに加えて，手動でリードを追加することができます。リードの詳細ビュー上にあるトグルを選択し，リストボタンをクリックして任意に追加ができます。
