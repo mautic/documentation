@@ -17,8 +17,8 @@
 
 ![](http://drop.dbh.li/image/3S1u0k1X463v/Screen%20Recording%202014-11-16%20at%2009.37%20PM.gif)
 
-### New Field
+### 新規フィールド
 
-You can create additional custom fields and define the data type you want that field to hold. In addition to the data type you will also select the group for that particular field. This will define where the field displays on the lead edit and detail view.
+追加のカスタムフィールドを作成したり，フィールドの保持するデータのタイプを定義したりすることができます。さらにフィールド項目のため，データタイプを選択する事ができます。リードの編集や詳細ビューでフィールドに表示させる項目を定義できます。
 
 ![](http://drop.dbh.li/image/1k3U1p3J3Y2u/Image%202014-11-16%20at%209.43.52%20PM.png)
