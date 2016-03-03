@@ -9,9 +9,9 @@
 1. ロックアイコン - コアインストールで使用しているためこれらのフィールドは削除できません。
 2. リストアイコン - これらのフィールドはフィルタやスマートリストで使用します。
 3. アスタリスクアイコン - これらのフィールドはリードフォーム上で入力項目を必須にするためのアイコンです。
-4. グローブアイコン - これらのフィールドはトラッキングピクセルの URL クエリで更新可能な項目です。 (詳しくは[リードのモニタリング](http://docs.mautic.org/leads/lead_monitoring.html)の項目を参照してください。
+4. グローブアイコン - これらのフィールドはトラッキングピクセルの URL クエリで公にアップデート可能な項目です。 (詳しくは[リードのモニタリング](http://docs.mautic.org/leads/lead_monitoring.html)の項目を参照してください。
 
-### Published Fields
+### 公開済みフィールド
 
 The checkmark which shows before each label title is a clickable toggle which will publish and unpublish the field.
 
