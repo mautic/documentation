@@ -13,7 +13,7 @@
 
 ### 公開済みフィールド
 
-The checkmark which shows before each label title is a clickable toggle which will publish and unpublish the field.
+各レーベルタイトルの前にチェックマークがあります。これでフィールドの公開・非公開を切り替える事ができます。
 
 ![](http://drop.dbh.li/image/3S1u0k1X463v/Screen%20Recording%202014-11-16%20at%2009.37%20PM.gif)
 
