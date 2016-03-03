@@ -4,12 +4,12 @@
 
 ![](http://drop.dbh.li/image/190V1w2j2P1Z/Image%202014-11-16%20at%209.34.35%20PM.png)
 
-You will notice the group column which will show you where the specific field will be shown on the lead profile. In the last column, you may see several icons which signify various properties of the field:
+グループカラムで特定のフィールドをリードプロフィール上で表示させる事ができる機能に気付くと思います。最後のカラムでさまざまなプロパティを持つアイコンを見る事になるでしょう:
 
-1. Lock icon - These fields are unable to be removed as they are used by the core installation. 
-2. List icon - These fields can be used as filters of smart lists.
-3. Asterisks icon - These fields are required when filling in the lead form
-4. Globe icon - These fields are publicly updatable through the tracking pixel URL query (see [Lead Monitoring]](http://docs.mautic.org/leads/lead_monitoring.html) for more details).
+1. ロックアイコン - コアインストールで使用しているためこれらのフィールドは削除できません。
+2. リストアイコン - これらのフィールドはフィルタやスマートリストで使用します。
+3. アスタリスクアイコン - これらのフィールドはリードフォーム上で入力項目を必須にするためのアイコンです。
+4. グローブアイコン - これらのフィールドはトラッキングピクセルの URL クエリで更新可能な項目です。 (詳しくは[リードのモニタリング](http://docs.mautic.org/leads/lead_monitoring.html)の項目を参照してください。
 
 ### Published Fields
 
