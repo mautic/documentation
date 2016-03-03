@@ -21,11 +21,9 @@ When viewing all lead lists you will notice the column on the right which shows 
 ![](http://drop.dbh.li/image/3o0a32313h07/Image%202014-11-16%20at%209.26.57%20PM.png)
 
 ### スマートリスト
-ああ
-Once you have created your list any applicable lead will be automatically added through the execution of a cron job. This is the essence of smart lists.
+リストを作成することで任意の適用可能なリードが自動的に cron job の実行により追加されます。これは、スマートリストのがスマートリストたる所以です。
 
-To keep the smart lists current, create a cron job that executes the following command at the desired interval:
-
+スマートリストを常に最新の状態に保つには，任意の間隔で次のコマンドを実行できるよう cron job を作成ししてください。
 ```
 php /path/to/mautic/app/console mautic:leadlists:update --env=prod
 ```
