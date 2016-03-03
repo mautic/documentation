@@ -1,4 +1,4 @@
-# Manage Lists
+# リストを管理する
 
 Lists provide ways to easily organize your leads. These lists can be configured from a variety of fields.
 
