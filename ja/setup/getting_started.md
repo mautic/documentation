@@ -1,39 +1,39 @@
-# Getting Started
+# 初めに
 
-Awesome! You've downloaded a marketing automation tool. That's a great first step, but now you wonder where to go from here. Follow this very simple guide to get started using your shiny new toy!
+素晴らしい！　マーケティング自動化ツールを手にしましたね。これは大きな第一歩です。次はどこで何をすればいいかとお悩みだと思います。とてもシンプルなこのガイドにそって真新しい玩具を遊び倒してください。
 
-## Step 1: Install Mautic
+## ステップ　1: Mautic をインストールする
 
-If you have already downloaded the zip from the download page or have installed Mautic through some other source (Softaculous, Bitnami, Digital Ocean etc...) then you have already completed the first step. If not then you will need to upload the Mautic package (a zip file) to your server; unzip the files; and then navigate to that location in your browser. You will find Mautic has a very easy to follow on-screen installation process.
+すでにZipファイルを各ダウンロードページやから入手されているか，Softaculous，Bitmani，Digital Ocean といった他の媒体からインストールされて最初のステップをクリアされたかもしれません。ダウンロードだけされていてまだインストールされてない場合はサーバへ Mautic のパッケージファイル(zip で圧縮しています)をアップロードする必要があります。次に zip ファイルを展開し，ブラウザで zip ファイルを展開したパスや URL へアクセスしてください。Mautic のインストールプロセスはとても簡単だとおわかりいただけると思います。
 
-## Step 2: Add Cron Jobs
+## ステップ 2: Cron Jobを追加する
 
-Once you've installed Mautic you will need to create a few standard cron jobs to have your software process various tasks. These cron jobs can be created through a cPanel or added through command line. If you are unfamiliar or uncomfortable with this step then we'd recommend asking in the forums or in the live Slack chat. Here is a list of the cron jobs you'll need to create.
+Mautic をインストールするとタスクを処理するために基本的な cron job を作る必要があります。これらの cron job は cPanel やコマンドラインから作成・追加できます。この手の作業にあまりなじみがない，得意ではない場合はフォーラムや Slack で是非相談してみてください。作成が必要な cron job を以下に列挙します。
 
-**Updating Lead Lists**
+**リードリストの更新**
 
 `php /path/to/mautic/app/console mautic:leadlists:update`
 
-**Update Campaigns**
+**キャンペーンの更新**
 
 `php /path/to/mautic/app/console mautic:campaigns:update`
 
-**Execute Campaign Actions**
+**キャンペーンアクションの実行**
 
 `php /path/to/mautic/app/console mautic:campaigns:trigger`
 
-Review [Cron Jobs](./setup) for more information on these and other optional cron jobs.
+この機能について詳しく知りたい場合や他の cron job 似ついて知りたい場合は [Cron Jobs](./setup) をご確認ください。
 
-## Step 3: Download the IP lookup service database
+## ステップ 3: IP Lookup サービスのデータベースをダウンロードする
 
-By default, Mautic installs set to use MaxMind's free GeoLite2 IP lookup database. Due to the licensing of the database, it cannot be included with Mautic's installation package and thus must be downloaded. Click on the cogwheel in the upper right hand of Mautic to view the Admin menu then click Configuration. On the System Settings tab, find the IP lookup service option and click the "Fetch IP Lookup Data Store."
+標準では Mautic は MaxMind の フリーの GeoLite2 IP lookup database を使うよう設定します。データベースのライセンスにより Mautic のインストールパッケージに含めることができません。したがって別途ダウンロードが必要となってきます。管理メニューを開くには Mautic の右上にある歯車のアイコンをクリックし，設定をクリックします。システム設定タブに IP Lookup サービスオプションがあり，"IP Lookup データベースを取り込む" をクリックしてください。
 
-You could also choose another supported IP lookup service if you prefer.
+サポートされている好みの IP Lookup サービスを選択することもできます。
 
-## Step 4: Install the Tracking Pixel
+## ステップ 4: トラッキングピクセルをインストールする
 
-After installation and setup of the cron jobs you're ready to begin tracking leads. You will need to add a single tracking pixel to the websites for each site you wish to track via Mautic. This is a very simple process and you can add this tracking pixel to your website template file, or install a Mautic integration for the more common CMS platforms. Here is an example of the tracking pixel:
+cron job のインストールとセットアップが終わると，リードを追跡する準備が整います。リードを Mautic でトラッキングさせるにはトラッキングピクセルを各サイトに埋め込む必要があります。とても簡単なプロセスですし，テンプレートファイルや他の CMS プラットフォームへ Mautic インテグレーションをインストールすることもできます。サンプルのトラッキングピクセルはこのようになります: 
 
 `<img src="http://yourdomain.com/path/to/mautic/mtracking.gif" />`
 
-Checkout [Lead Monitoring](./leads/lead_monitoring.html) for more details on the tracking pixel.
+トラッキングピクセルについての詳しい内容は  [リード監視](./leads/lead_monitoring.html) をご確認ください。
