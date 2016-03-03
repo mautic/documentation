@@ -1,4 +1,4 @@
-# Manage Fields
+# フィールドを管理
 
 The manage fields page will let you view all existing lead fields as well as any custom lead fields you've created.
 
