@@ -49,7 +49,7 @@ To provide a simple example of a decision tree consider an email where the decis
 
 Conditions can be used to execute different actions based on a lead's data.  For example, a condition can be configured to execute an action if a lead has an email or do something else if they do not.
 
-__The delay you set is ran before checking the condition no matter the delay you add on the connected actions. It will not wait the delay on the connected action to check the status of the condition to qualify the lead into the positive or negatve path of the condition.__
+__The delay you set is ran before checking the condition no matter the delay you add on the connected actions. It will not wait the delay on the connected action to check the status of the condition to qualify the lead into the positive or negative path of the condition.__
 
 
 #### Positive status Condition Path (Green Points)
