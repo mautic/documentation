@@ -1,7 +1,7 @@
 # ページの管理
 
-### Page Details
-
+### ページの詳細
+Mautic 内のページを見た際，
 When viewing a page within Mautic you can find a tremendous amount of information on a single page overview.
 
 ![](http://drop.dbh.li/image/0x1x1p0S1E17/Image%202014-11-16%20at%2010.04.37%20PM.png)
