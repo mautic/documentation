@@ -1,23 +1,23 @@
-# Manage Emails
+# メールの管理
 
-### Email Overview
+### メールの概要
 
-The email overview allows at-a-glance information regarding the success or failure of a particular email. You can quickly see relevant information in regards to opens, bounces, successful click-throughs and other important statistics.
+メールの概要では、特定のメールの成功または失敗に関する情報を一目でわかるように表示することができます。開封、バウンス、クリックスルー成功やその他の重要な統計に関連する情報を簡単に見ることができます。
 
-### Email Creation
+### メールの作成
 
-Email creation can be handled through the graphical email builder with little to no HTML knowledge. Emails are assigned to particular lists and/or campaigns. Below are some key steps to be performed when creating an email.
+メールは、HTMLの知識がほとんどなくてもグラフィカルなメールビルダーを使用して作成することができます。メールは特定のリストおよび/またはキャンペーンに割り当てられています。下記はメールを作成するときに実行されるいくつかの重要なステップです。
 
-### Lead Lists
+### リードリスト
 
-When creating an email you can select the lead lists to which you want to send the email.
+メールを作成するとき、メールを送信したいリードリストを選択することができます。
 
 ![](http://drop.dbh.li/image/0p3P3c2O3P1e/Image%202014-11-18%20at%2011.25.34%20PM.png)
 
-This entry field is a multi-select which allows you to choose several lead lists if necessary.
+この入力フィールドは、必要に応じて複数のリードリストを選択することが可能です。
 
-### Email Builder
+### メールビルダー
 
-The email builder is a graphical user interface to create an HTML email through the use of drag-and-drop tools.
+メールビルダーはドラッグアンドドロップツールでHTML形式のメールを作成するためのグラフィカルユーザーインターフェースです。
 
-The email builder provides quick and convenient access to assets, landing pages, and other extra fields which are considered important or commonly used.
+メールビルダーは重要であると考えられるかよく使用されているアセット、ランディングページ、および他の追加的なフィールドへの迅速かつ便利なアクセスを提供します。
