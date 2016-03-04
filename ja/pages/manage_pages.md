@@ -1,4 +1,4 @@
-# Manage Pages
+# ページの管理
 
 ### Page Details
 
