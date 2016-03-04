@@ -1,40 +1,39 @@
-# Emails
+#メール
 
-Emails can be created to be used within campaigns and other list activities. Emails provide a means for direct interaction with potential customers, clients, and leads.
+メールは、キャンペーンや他のリストアクティビティ内で使用するために作成することができます。メールは、潜在的な顧客、クライアント、そしてリードとの直接的な相互作用のための手段を提供します。
 
-### Email Formats
+### メールフォーマット
 
-Emails can be created in both full HTML as well as basic text format to be delivered as necessary to leads. This is an important part of creating a strong relationship with leads by providing relevant information in the correct format.
+メールは、リードに必要に応じて配信するため、完全なHTMLだけでなく基本的なテキスト形式の両方で作成することができます。これは、正しいフォーマットで関連情報を提供することにより、リードとの強力な関係を作るためには重要な要素となります。
 
-### Email Delivery
+### メール配信
 
-Emails are delivered using the method defined by the system administrator. If you are the system administrator for your company, then you will need to add the email protocol for your company to use. Mautic integrates with any email service provider which offers SMTP mail servers as well as several distinct services such as Mandrill, Sendgrid, and Amazon SES.
+メールはシステム管理者によって定義されたメソッドを使用して配信されます。あなたが会社のシステム管理者である場合は、会社が使用するメールプロトコルを追加する必要があります。Mauticは、Mandrill、Sendgrid、Amazon SESなど、SMTPメールサーバを提供するすべてのメールサービスプロバイダと統合できます。
 
-The system can either send emails immediately or queue them to be processed in batches by a cron job.
+こうしたシステムは、メールをただちに送信したり、cronジョブによってバッチで処理するためにキューに入れることができます。
 
-#### Immediate Delivery ####
+#### 即時送信 ####
 
-This is the default means of delivery. Mautic sends the email as soon as it is instructed to by the triggering action. If you expect a large number of emails to be sent, then utilizing the queue is recommended. Sending email immediately may slow the response time of Mautic if using a remote mail service since as Mautic has to establish a connection with that service before sending the mail. Also attempting to send large batches of emails at once may hit your server's PHP limits or email limits if on a shared host. 
- 
-#### Queued Delivery ####
+これは、デフォルトの配信手段です。それがトリガーアクションによって指示されるよう、Mauticはすぐにメールを送信します。送信するメールの数が多いと予想される場合は、キューの利用をお勧めします。リモートのメールサービスを使用している場合は、メールを送信する前にそのサービスとの接続を確立する必要があるため、すぐにメールを送信しようとするとMauticの応答時間が遅くなる場合があります。共有ホスト上の場合でも、一度にたくさんのメールを送信しようとすると、サーバーのPHPの制限またはメールの制限に達してしまうことがあります。
 
-This is recommended if you plan to send a significant number of emails. Mautic will store the email in the configured spool directory until the command to process the queue is executed. Set up a cron job at the desired interval to run the command:
+#### キュー配信 ####
+
+かなりの数のメールを送信する場合はこちらを推奨します。キューを処理するためのコマンドが実行されるまで、Mauticは設定されたスプールディレクトリにメールを保存します。希望の間隔でコマンドを実行するようにcronジョブを設定してください。
 
 ```
 php /path/to/mautic/app/console mautic:email:process --env=prod
 ```
 
-Some hosts may have limits on the number of emails that can sent during a specified timeframe and/or limit the execution time of a script. If that's the case for you, or if you just want to moderate batch processing, you can configure batch numbers and time limits in Mautic's Configuration. 
+ホストによっては、特定の時間内に送信できるメールの数に制限があったり、スクリプトの実行時間に制限があったりする場合があります。そういった場合やバッチ処理を緩和したい場合は、Mauticの設定でバッチ番号と時間制限を設定することができます。
 
- 
-### Email Fields
+### メールのフィールド
 
-You have access to any number of lead fields to be used in your form emails. These can be easily placed within your emails and will be automatically replaced with the appropriate text once the email is sent.
+フォームメールで使用されるリードフィールドの数はどんなものでもアクセスできます。これらは簡単にメール内に配置することができ、メールが送信されると自動的に適切なテキストに置き換えられます。
 
-### Tracking Opened Emails ###
+### 開いたメールの追跡 ###
 
-Each email sent through Mautic is tagged with a tracking pixel image. This allows Mautic to track when a lead opens the email and execute actions accordingly. Note that this technology is limited to the lead's email client supporting HTML and auto-loading of images. If the email client does not load the image, there is no way for Mautic to know if the email was opened.
+Mauticを介して送信される各メールは、トラッキングピクセルの画像でタグ付けされています。これにより、Mauticはリードがメールを開いたときに追跡し、それに応じてアクションを実行することができます。この技術は、HTMLや画像の自動読み込みをサポートしているリードのメールクライアントに制限されていることに注意してください。メールクライアントが画像をロードしない場合は、メールが開かれたかどうかをMauticが知る方法はありません。
 
-### Unsubscribing ###
+### 購読解除 ###
 
-Mautic has a built in means of allowing a lead to unsubscribe from email communication. If using the builder, simply drag and drop the Unsubscribe Text or Unsubscribe URL tokens into your email. Or insert {unsubscribe_text} or {unsubscribe_url} into your custom HTML. The unsubscribe text token will insert a sentence with a link instructing the lead to click to unsubscribe. The unsubscribe URL token will simply insert the URL into your custom written instructions.
+Mauticにはリードがメール購読を解除することを可能にする手段が組み込まれています。ビルダーを使用している場合は、単にメールに購読解除テキストまたは購読解除URLトークンをドラッグ＆ドロップします。もしくは {unsubscribe_text} または {unsubscribe_url} をカスタムHTMLに挿入します。購読解除テキストトークンは、クリックすると購読を解除するという指示のリンクをもった文章を挿入します。購読解除URLトークンは、カスタムされた指示に単純にURLを挿入します。
