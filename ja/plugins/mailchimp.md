@@ -1,41 +1,41 @@
-# MailChimp integration
+# MailChimpの統合
 
-Mautic can send leads to MailChimp upon some lead's action or when it gain some point limit.
+Mauticは、いくつかのリードのアクション時またはポイントの上限に達したときにリードをMailChimpに送信することができます。
 
-**Version notes**
-- For Mautic 1.2.2 and older, an MailChimp app has to be created and the authentication is made via oAuth2. Client key and secret credentians are needed for authentication. Also SSL (https) connection is required.
-- For Mautic 1.2.3 and later, the authentication has been changed to the API key. This documentation covers this option. This plugin is backward compatible. If the client ID is filled, the plugin will use oAuth2. If the client ID is empty, the plugin will let you insert the API key.
+** バージョンノート **
+- Mautic 1.2.2およびそれ以前の場合は、MailChimpアプリの作成とOAuth2経由での認証が必要でした。認証のため、クライアントの鍵と秘密認証が必要とされます。また、SSL (HTTPS) 接続が必要です。
+- Mautic 1.2.3以降の場合、認証はAPIキーに変更されました。このドキュメントではこのオプションをカバーしています。このプラグインには下位互換性があります。クライアントIDが入力されている場合はこのプラグインはOAuth2を使用します。クライアントIDが空の場合、このプラグインはAPIキーの入力を促します。
 
-## Authorize
+## 承認
 
-### Get MailChimp API key
+## MailChimp APIキーの取得
 
-1. Create a MailChimp account if you don't have one already.
-2. Go to *Account* / *Extras* / *API Keys* and create a new one.
-3. Copy the created API Key.
+1.まだお持ちでない場合はMailChimpアカウントを作成します。
+2.*Account* / *Extras* / *API Keys* を開き、新たに作成します。
+3.作成したAPIキーをコピーします。
 
 ![MailChimp - create a API Key](/plugins/media/plugins-mailchimp-create-api-key.png "MailChimp - create a API Key")
 ![MailChimp - copy the API Key](/plugins/media/plugins-mailchimp-copy-api-key.png "MailChimp - copy the API Key")
 
-### Authorize Mautic - MailChimp plugin
+### Mauticの承認 - MailChimpプラグイン
 
-Fill in the **username** you use to log in to MailChimp and the **API key**. Save the plugin. 
+MailChimpへのログインに使用している **ユーザー名** と **APIキー** を入力してください。プラグインを保存します。
 
-## Configure the plugin
+## プラグインの設定
 
-Navigate to the *Features* tab in the plugin configuration modal box. You should see this note:
+プラグイン設定のモーダルボックスの *特長* タブに移動します。以下のメモを参照してください:
 
-> The Lead Field Mapping tab will appear after selecting a list and will update after changing the selected list.
+> リードフィールドマッピングタブはリストを選択した後に表示され、選択されたリストを変更した後に更新されます。
 
 ![MailChimp Plugin configuration](/plugins/media/plugins-mailchimp-configure.png "MailChimp Plugin configuration")
 
-Select the lead list then. If you don't have a lead list in MailChimp created yet, go to *MailChimp dashboard* / *Lists* / *Create List* and create one. Then save the plugin configuration and open it again. The *Lead Field Mapping* tab should appear now. Configure the [field mapping](./../plugins/field_mapping.html).
+その後、リードリストを選択します。MailChimpにリードリストがまだ無い場合、*MailChimp dashboard* / *Lists* / *Create List* を開き、作成します。その後、プラグインの設定を保存して再度開きます。*リードフィールドマッピング*タブが表示されているはずです。[field mapping](./../plugins/field_mapping.html) を設定します。
 
-Other configuration options are:
-- **Push leads to this integration** - This option is checked by default. If you uncheck it, the plugin will not push leads to MailChimp any more.
-- **Enable double opt in** - If MailChimp should send a confirmation email to the leads added by this plugin. The leads will have to confirm that they really want to be added to the list.
-- **Send welcome email** - Whether MailChimp should sent the welcome email.
+その他の設定オプションは次のとおりです:
+- **この統合にリードをプッシュする** - このオプションはデフォルトでチェックされています。これをオフにすると、このプラグインはリードをMailChimpにプッシュしません。
+- **ダブルオプトインを有効化** - MailChimpがこのプラグインによって追加されたリードへ確認メールを送信するかどうか。リードが自分を本当にリストに追加するかどうかを確認する必要があります。
+- **ウェルカムメールを送る** - MailChimpがウェルカムメールを送信するかどうか。
 
-## Test the plugin
+## プラグインのテスト
 
-Follow [these steps](./../plugins/integration_test.html) to test the integration.
+[これらの手順にしたがい](./../plugins/{0/}integration_test.html) 統合をテストします。

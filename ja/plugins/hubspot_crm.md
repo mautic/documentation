@@ -1,33 +1,33 @@
-# Mautic - Hubspot CRM plugin
+# Mautic - Hubspot CRMプラグイン
 
-This plugin can push a lead to Hubspot CRM when a lead makes some action. In case you don't see this plugin in your Mautic instance, make sure you run the latest version. This plugin had been added to Mautic 1.2.3.
+リードが何らかのアクションを行ったとき、にこのプラグインはリードをHubspot CRMにプッシュすることができます。Mauticにこのプラグインがない場合は、バージョンが最新になっているか確認してください。このプラグインはMautic 1.2.3で追加されました。
 
-If you don't have the Hubspot CRM account yet, [create it](http://www.hubspot.com/crm).
+まだHubspotCRMのアカウントをお持ちでない場合は、[作成してください](http://www.hubspot.com/crm) 。
 
-## Hubspot API key
+## HubspotのAPIキー
 
-Visit [https://app.hubspot.com/hapikeys](https://app.hubspot.com/hapikeys) to generate your Hubspot API key.
+HubspotのAPIキーを生成するには、[https://app.hubspot.com/hapikeys](https://app.hubspot.com/hapikeys) ご覧ください。
 
-## Configure the Hubspot CRM plugin
+## HubspotCRMプラグインの設定
 
-Open the Hubspot Plugin configuration and paste the API key into the *Hubspot API key* input field. Also, if you want to use the plugin, you have to publish it. Set the *Publish* switch to *Yes*.
+Hubspotプラグインの設定を開き、*HubspotAPIキー*入力フィールドにAPIキーを貼り付けます。また、プラグインを使用したい場合はそれを公開する必要があります。*公開スイッチ* を *はい* に設定します。
 
 ![Hubspot CRM Plugin configuration](/plugins/media/plugins-hubspot-crm-configuration.png "Hubspot CRM Plugin configuration")
 
-In the Features tab is just *Push leads to this integration* checkbox and it is checked by default.
+機能タブには *この統合をリードにプッシュ* のチェックボックスだけで、デフォルトではチェックが入っています。
 
-Configure the [field mapping](./../plugins/field_mapping.html).
+[field mapping](./../plugins/field_mapping.html)を設定します。
 
-Save the plugin configuration.
+プラグインの設定を保存します。
 
-## Test the plugin
+## プラグインのテスト
 
-Follow [these steps](./../plugins/integration_test.html) to test the integration.
+[these steps](./../plugins/integration_test.html) にしたがい、統合をテストします。
 
-## Troubleshooting
+## トラブルシューティング
 
-If the contact hasn't been created, make sure that the email address you'd tested it with is valid. Hubspot will create a new contact only when its email address is valid.
+連絡先が作成されていない場合は、テストしようとしているメールアドレスが有効なものであることを確認してください。Hubspotはそのメールアドレスが有効であるときだけ新しい連絡先を作成します。
 
-## Credit
+## クレジット
 
-This plugin had been developed by [@gpassarelli](https://github.com/gpassarelli).
+このプラグインは[@gpassarelli](https://github.com/gpassarelli)によって開発されました。
