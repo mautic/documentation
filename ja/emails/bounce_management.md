@@ -1,54 +1,54 @@
-# Monitored Email
-Since version 1.2.0 Mautic has provided a feature which allows monitoring of IMAP accounts to detect bounced emails and unsubscribe requests.
+# 監視対象メール
+バージョン1.2.0以降、バウンスメールや購読解除リクエストを検出するためにIMAPアカウントを監視することのできる機能をMauticは提供しています。
 
-## Monitored Inbox Settings
-To use the Monitored email feature you must have the PHP IMAP extension enabled (most shared hosts will already have this turned on).  Simply go to the Mautic configuration and fill in the account details for the inbox(es) you wish to monitor.
+## 監視対象の受信トレイの設定
+メール監視機能を使用するには、PHPのIMAP拡張を有効化する必要があります（ほとんどの共有のホストではすでにこれがオンになっています）。Mauticの設定に移動し、監視したい受信ボックス（複数可）のアカウントの詳細を入力するだけです。
 
 ![Monitored inbox settings](/emails/media/asset-monitored-inbox-settings.png "Monitored inbox settings")
 
-It is possible to use a single inbox, or to configure a unique inbox per monitor.
+単一の受信トレイの使用、または監視対象ごとに固有の受信トレイをせってすることができます。
 
-To fetch and process the messages, run the following command:
+メッセージの取得と処理には、次のコマンドを実行します。
 
 ```
 php app/console mautic:fetch:email
 ```
 
-Note that it is best to create an email specifically for this purpose, as Mautic will read each message it finds in the given folder. 
+Mauticは指定されたフォルダに見つかった各メッセージを読み取りますので、この目的のためにメールを特に作成するのが最善であることに注意してください。
 
-If sending mail through Gmail, the Return Path of the email will automatically be rewritten as the Gmail address. It is best to use a sending method other than Gmail, although Mautic can monitor a Gmail account for bounces.
+Gmailでメールを送信する場合、メールのリターンパスは自動的にGmailアドレスに書き換えられます。MauticはバウンスのためにGmailアカウントを監視することができますが、Gmail以外の送信方法を使用することをおすすめします。
 
-If you select an Unsubscribe folder, Mautic will also append the email as part of the "List-Unsubscribe" header. It will then parse messages it finds in that folder and automatically unsubscribe the lead.
+購読解除フォルダを選択した場合、Mauticも「List-Unsubscribe」ヘッダの一部としてメールを追加します。そのフォルダに見つかったメッセージをパースし、そのリードの購読を自動的に解除します。
 
-## Create the list of leads with bounced emails
+## バウンスメールでのリードのリスト作成
 
-This is not required, but if you'll want to be able to select the leads with bounced emails easily for example to delete all bounced leads, create the lead list with bounced emails.
+これは必須ではありませんが、バウンスメールのすべてを削除する場合やバウンスメールの来たリードのリストを作成する場合など、バウンスメールの来たリードを簡単に選択できるようなります。
 
-1. Go to *Leads* / *Manage Lists* / *New*.
-2. Type in the list name. For example *Bounced emails*.
-3. Select the *Filters* tab.
-4. Create new *Bounced Email* equals Yes filter.
-5. Wait for the `app/console mautic:list:update` command to be automatically triggered by a cron job or execute it manually.
+1.*リード* / *リスト管理* / *新規* を開きます
+2.リスト名を入力します。たとえば *バウンスメール* などです
+3.*フィルタ*タブを選択します
+4.新しく*バウンスメール*イコールYesフィルタを作成します
+5. cronジョブにより自動的にトリガーされる `app/console mautic:list:update` コマンドを待つか、もしくは手動で実行します
 
-All leads with bounced emails should appear in this list.
+バウンスメールを持つすべてのリードがこのリストに表示されます。
 
-## Mandrill Webhook
+## Mandrillウェブフック
 
-Mautic supports a few of Mandrill's webhooks for bounces.  
+MauticはバウンスのためのMandrillのウェブフックをいくつかサポートしています。
 
-1) Login to your Mandrill account and go to Settings -> Webhooks
+1) Mandrillのアカウントにログインし、Settings -> Webhooksを開いてください
 
 ![Webhooks](/emails/media/mandrill_webhook_1.png "Mandrill webhooks")
- 
-2) Click Add a Webhook
- 
+
+2) Add a Webhookをクリックします
+
 ![Add Webhook](/emails/media/mandrill_webhook_2.png "Add webhook")
 
-3) Mautic 1.2.2 supports the following webhooks: Message is Bounced, Message is Soft-Bounced, Message is Rejected.  As of 1.2.3, Message is Marked as Spam and Message Recipient Unsubscribes will be supported.
+3) Mautic 1.2.2は次のウェブフックをサポートしています: Message is Bounced, Message is Soft-Bounced, Message is Rejected.  1.2.3では、Message is Marked as Spam と Message Recipient Unsubscribes がサポートされます。
 
-4) Fill in the Post To Url as `http://your-mautic.com/mailer/mandrill/callback` then click Create Webhook. 
+4) `http://your-mautic.com/mailer/mandrill/callback` のように4）のようにPost To Url に入力し、Create Webhookをクリックします
 
-5) Click Custom Metadata and create two new metadata fields: `hashId` and `leadId`
+5) Custom Metadataをクリックして、二つの新しいメタデータフィールド、`hashId` と `leadId` を作成します
 
 ![Add metadata](/emails/media/mandrill_webhook_5.png "Add metadata")
 
