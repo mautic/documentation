@@ -1,7 +1,6 @@
-# Pages
+# ページ
+Mautic のページ機能は的確で魅力的なコンテンツを素早く作成するためのツールです。特定のページ機能を活用してリードへ直接フォームからコメントしたりアセットのダウンロード方法を提供したり，または単にトラッキングのためにページを使用してください
 
-Pages within Mautic are a powerful tool for quickly creating compelling content with a single focus. Use pages for directing leads through a form or providing a way to download an asset, or merely tracking interest in a particular subject.
+### ランディングページの機能
 
-### Features of Landing Pages
-
-There are many great features with Mautic landing pages. These pages allow you to create an A/B testing environment (more on this later), multilingual pages, and templated pages unique to a variety of pre-defined templates.
+Mautic のランディングページには素晴らしい機能が数多くあります。これらのページはA/Bテスト環境(詳細はの後のセクションを参照ください)，他言語ページ，また定義済みのテンプレートやユニークなテンプレートでページを作成する事ができます。
