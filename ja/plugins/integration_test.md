@@ -1,17 +1,17 @@
-## How to test an integration
+## 統合をテストする方法
 
-If you want to test an integration plugin to ensure that it is configured properly, you have 3 options how to do that. A lead can be pushed to integration via these places:
+プラグインが正しく設定されていることを確認するためにプラグインの統合をテストするには3つの方法があります。リードはこれらの場所を経由して統合にプッシュされます。
 
-- The Campaign Builder has the *Push lead to integration* action which can be used in the Campaign dripflow.
-- The Standalone Form has the *Push lead to integration* action which can be used after a standalone form is submitted.
-- The Point Trigger has the *Push lead to integration* action which can be triggered when a lead achieves some point limit.
+- キャンペーンビルダーには、キャンペーンドリップフローで使用することができる*リートを統合にプッシュ*アクションがあります。
+- スタンドアロンフォームには、スタンドアロンのフォームが送信された後に使用することができる*リードを統合にプッシュ*アクションがあります。
+- ポイントトリガには、リードはいくつかのポイントの上限に到達したときにトリガすることができる*リードを統合にプッシュ*アクションがあります。
 
-Use any of those triggers to test the plugin and see if the lead appears in the integration. Here is how the Standalone Form action can be configured:
+プラグインをテストし、リードが統合に現れるかどうかを確認するにはこれらのトリガのいずれかを使用してください。以下はスタンドアロンフォームアクションで設定する方法です。
 
 ![Push to Hubspot CRM form action](/plugins/media/plugins-push-to-hubspot-crm-form-action.png "Push to Hubspot CRM form action")
 
-After you have your form with some fields (for example an email and a first name field) and the Push to an integration (e.g. Hubspot CRM) action, go to the form public URL at http://[yourmautic]/form/[formID], fill in some sample lead information and submit it. Then check the integration if the new lead has been created.
+いくつかのフィールド(例えばメールと名前フィールド)を持ったフォームを作り、統合(例えばHubspot CRM)アクションへのプッシュが用意できたら、 http://[yourmautic]/form/[formID] にあるフォーム公開URLを開き、いくつかのサンプルリード情報を入力し、送信します。そして、新しいリードが作成されているかどうか、統合を確認してください。
 
-## Troubleshooting
+## トラブルシューティング
 
-If the first name value hasn't been transferred, make sure you mapped the form field value to the lead field value in the form field configuration.
+もし名前の値が転送されていない場合は、フォームフィールド設定でフォームフィールドの値がリードフィールドの値にマッピングされていることを確認してみてください。
