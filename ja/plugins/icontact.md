@@ -1,32 +1,32 @@
-# iContact integration
+# iContactとの統合
 
-Mautic can send leads to [iContact](https://www.icontact.com) upon some lead's action or when it gain some point limit.
+Mauticは、いくつかのリードのアクション時またはポイントの上限に達したときにリードを[iContact](https://www.icontact.com) に送信することができます。
 
-## Authorize
+## 承認
 
-In order to connect your iContact account with your Mautic, you'll have to create a iContact app. 
+MauticでiContactアカウントに接続するためには、iContactアプリを作成する必要があります。
 
-Follow the [tutorial](https://www.icontact.com/developerportal/documentation/register-your-app/) how to create your iContact APP.
+iContact APPを作成するには次の[チュートリアル](https://www.icontact.com/developerportal/documentation/register-your-app/)に従ってください。
 
-When you have your app created, you should be able to see this screen:
+アプリを作成したら、この画面を見ることができるはずです:
 
 ![iContact - create a App Key](/plugins/media/plugins-icontact-authorization-details.png "iContact - create a App Key")
 
-Fill it the right credentials to Mautic - iContact integration:
+Mauticへ正確な認証情報を入力してください - iContact 統合:
 
-- App ID = the Application ID you've created
-- App username = the username / email you log into your iContact account. (Not the App name)
-- App password = The password you've chosen when approving the app.
+- App ID = 作成したアップID
+- App username = iContact アカウントのログインのユーザー名/メール（アプリ名ではなく）
+- App password = アップを認証した時に選択したパスワード
 
 ![iContact - authoriztion](/plugins/media/plugins-icontact-authorization.png "iContact - authoriztion")
 
-## Configure the plugin
+## プラグインの設定
 
-Navigate to the *Features* tab in the plugin configuration modal box. Select the iContact lead list where the Mautic leads should be pushed into. There should be one list created by default.
+プラグイン設定のモーダルボックスの *特長* タブに移動します。MauticリードにプッシュされるiContactリードリストを選択します。デフォルトで作成されたリストが一つあるはずです。
 
-Other configuration options are:
-- **Push leads to this integration** - This option is checked by default. If you uncheck it, the plugin will not push leads to Mailchimp any more.
+その他の設定オプションは次のとおりです:
+- **この統合にリードをプッシュする** - このオプションはデフォルトでチェックされています。これをオフにすると、このプラグインはリードをMailchimpにプッシュしません。
 
-## Test the plugin
+## プラグインのテスト
 
-Follow [these steps](./../plugins/integration_test.html) to test the integration.
+[これらの手順にしたがい](./../plugins/integration_test.html) 統合をテストします。
