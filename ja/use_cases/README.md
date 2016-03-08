@@ -1,11 +1,11 @@
-# Use Cases
+# ユースケース
 
-There are many compelling and exciting ways to implement marketing automation. Some of these use cases are more easily understood and regularly implemented while others are more unique.
+マーケティングの自動化を実現するには多くの魅力的で刺激的な方法があります。こうした使用例のいくつかはより理解しやすく、定期的に実装されます。また、よりユニークな物もあります。
 
-### Use Case Purposes
+### ユースケースの目的
 
-In an effort to outline the power of marketing automation and encourage industries in a variety of different vertical markets to take advantage of this software these use cases have been defined and outlined in greater detail.
+このソフトウェアを活用してマーケティング・オートメーションのパワーを概説し、異なる垂直市場の様々な産業を促進する目的で、これらのユースケースは定義され詳細に解説されています。
 
-### Contribute Additional Use Cases
+### ユースケースを追加するための貢献
 
-As with all other aspects of this documentation, pull requests, updates, and modifications are welcomed. Should you know of additional use cases where marketing automation can be implemented please contribute that information so the documentation can be improved for all.
+このドキュメントのすべての他の側面と同様に、プルリクエスト、更新、そして修正を歓迎します。マーケティング・オートメーションが実践されうる他のユースケースをご存知でしたら、その情報をお知らせください。それによりこのドキュメントが全般的に改善されていきます。
