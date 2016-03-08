@@ -1,29 +1,29 @@
-# Mautic - vtiger CRM plugin
+# Mautic - vtiger CRMプラグイン
 
-This plugin can push a lead to the vTiger CRM when a lead makes some action.
+リードが何らかのアクションを行ったときに、このプラグインはvTiger CRMにリードをプッシュすることができます。
 
-If you don't have the vTiger CRM account yet, [create it](https://www.vtiger.com/).
+vTiger CRMのアカウントをまだお持ちでないのなら、[作成して](https://www.vtiger.com/) ください。
 
-## Authenticate the vTiger plugin
+## vTigerプラグインの認証
 
-To authenticate the Mautic plugin to be able to communicate with vTiger CRM you'll need these credentials:
+vTiger CRMと通信することができるようにMauticプラグインを認証するには以下の認証情報が必要になります。
 
-- **vTiger URL** - the base (root) URL starting with http:// or https:// where your vTiger instance run. For example `https://your_vtiger.od2.vtiger.com`.
-- **vTiger username** - The username (email address usually) which you use to log in to your vTiger.
-- **vTiger access key** - The access key published in your vTiger profile. To get it, go to vTiger's *My Preferences*. The *Access Key* hash is in the bottom of the page.
+- **vTiger URL** - http:// もしくは https:// で始まるvTigerインスタンスが稼働しているベース(ルート)URLです。例えば `https://your_vtiger.od2.vtiger.com` です。
+- **vTiger username** - vTigerへのログイン時に使用するユーザー名(通常はメールアドレス)。
+- **vTiger access key** - vTigerプロフィールに公開されているアクセスキー。これを取得するには、*My Preferences*にアクセスしてください。*アクセスキー*ハッシュはそのページの下部にあります。
 
-Fill these 3 credentials to the Mautic plugin and click Authenticate.
+Mauticプラグインにこれ​​らの3個の認証情報を入力し、認証をクリックします。
 
-## Configure the vTiger CRM plugin
+## vTiger CRMプラグインの設定
 
-If you want to use the plugin, you have to publish it. Set the *Publish* switch to *Yes*.
+このプラグインを使用するにはこれを公開する必要があります。*公開スイッチ* を *はい* に設定します。
 
-In the Features tab is just *Push leads to this integration* checkbox and it is checked by default.
+機能タブには *この統合をリードにプッシュ* のチェックボックスだけで、デフォルトではチェックが入っています。
 
-Configure the [field mapping](./../plugins/field_mapping.html).
+[field mapping](./../plugins/field_mapping.html)を設定します。
 
-Save the plugin configuration.
+プラグインの設定を保存します。
 
-## Test the plugin
+## プラグインのテスト
 
-Follow [these steps](./../plugins/integration_test.html) to test the integration.
+[これらの手順にしたがい](./../plugins/integration_test.html) 統合をテストします。
