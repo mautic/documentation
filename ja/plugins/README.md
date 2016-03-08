@@ -1,11 +1,11 @@
-# Plugins
+# プラグイン
 
-Mautic plugins are installable packages which can extend Mautic functionality or connect it with another system. If you are interested in how to create a new Mautic plugin, read more about it in the [developer documentation](https://developer.mautic.org/#plugins).
+Mauticのプラグインは、Mauticの機能を拡張したり、他のシステムと接続することができるようにするインストール可能なパッケージです。新しいMauticプラグインの作成に興味がお有りなら、詳細は [developer documentation](https://developer.mautic.org/#plugins) をお読みください。
 
-You can find the Plugins in the right admin menu.
+管理者メニューでプラグインを見つけることができます。
 
 ![Plugins menu item](/plugins/media/plugins-menu-item.png "Plugins menu item")
 
-## Install plugins
+## プラグインのインストール
 
-If you are on a freshly installed Mautic instance, there is a chance that you don't have the default plugins installed yet. Click on the "Install/Upgrade plugins in the top right corner and all the plugins should appear."
+もしMauticをインストールしたばかりなら、まだデフォルトのプラグインがインストールされていないかもしれません。右上の「プラグインのインストール/アップグレードプラグイン」をクリックするとすべてのプラグインが表示されます。
