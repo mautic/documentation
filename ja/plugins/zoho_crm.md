@@ -1,24 +1,24 @@
-# Mautic - Zoho CRM plugin
+# Mautic - Zoho CRMプラグイン
 
-This plugin can push a lead to Zoho CRM when a lead makes some action.
+リードが何らかのアクションを行ったとき、このプラグインは Zoho CRMにリードをプッシュすることができます。
 
-If you don't have the Zoho CRM account yet, [create it](https://www.zoho.com/crm/).
+vTiger CRMのアカウントをまだお持ちでないのなら、[作成して](https://www.zoho.com/crm/)ください。
 
-## Configure the Zoho CRM plugin
+## Zoho CRMプラグインの設定
 
-Insert the email and password you created the Zoho account with into the Mautic Zoho integration plugin and authorize it. Set the *Publish* switch to *Yes*. Save.
+Zohoのアカウント作成時のメールアドレスとパスワードをMautic Zohoの統合プラグインへ入力し、承認します。*公開スイッチ* を *はい* に設定します。保存します。
 
 ![Zoho CRM Plugin configuration](/plugins/media/plugins-zoho-authorization.png "Zoho CRM Plugin configuration")
 
-If Zoho Two Factor Authentication is enabled, an Application Specific Password will need to be generated and used.
+Zohoの2段階認証が有効になっている場合は、アプリケーション固有のパスワードを生成して使用する必要があります。
 (https://www.zoho.com/mail/help/adminconsole/two-factor-authentication.html#alink5)
 
-In the Features tab is just *Push leads to this integration* checkbox and it is checked by default.
+機能タブには *この統合をリードにプッシュ* のチェックボックスだけで、デフォルトではチェックが入っています。
 
-Configure the [field mapping](./../plugins/field_mapping.html).
+[field mapping](./../plugins/field_mapping.html)を設定します。
 
-Save the plugin configuration.
+プラグインの設定を保存します。
 
-## Test the plugin
+## プラグインのテスト
 
-Follow [these steps](./../plugins/integration_test.html) to test the integration.
+[これらの手順にしたがい](./../plugins/integration_test.html) 統合をテストします。
