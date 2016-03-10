@@ -6,7 +6,7 @@ Assets can be organized in categories, which allows you to easily locate resourc
 
 To create a new category, click on 'New' which can be found in the top right of the screen.
 
-![Create a new asset category](/assets/media/assets-newcategory.png "Create a new category")
+![Create a new asset category](media/assets-newcategory.png "Create a new category")
 
 Name the category something that reflects the 'filing system' structure that will be used, and provide a short description of the category.
 
