@@ -2,12 +2,12 @@
 
 ## ページヒットトラッキングが動作しない
 
-Page hits are being tracked by a tracking pixel. That is simply a 1 pixel GIF image in the source code of the Page source code. When a page is hit by a browser, it tries to load the images in it. The image load request is actually what Mautic needs to track the page hit action.
+ページのヒットは，トラッキングピクセルによって追跡されています。それは，単に，ページのソースコードのソースコードにおける1ピクセル GIF 画像です。ページがブラウザでヒットした場合，それはそれで画像をロードしようとします。画像ロード要求は Mautic がページヒットアクションを追跡するために必要です。
 
-If the tracking doesn't work, check:
-1. The tracing doesn't work for logged in Mautic administrators so the statistics aren't deceived by Mautic administrators looking at the page result while editing a page. So make sure you are logged out of Mautic or use an incognito browser window while testing the tracking.
-2. The tracking pixel isn't part of the page you want to track. Mautic can track only pages which has the tracking pixel in their source code.
-3. The tracking pixel is not configured correctly. You can confirm this by looking at the dev tools of your browser. While looking on the page you wish to track, open the dev tools (press F12), go to the Network tab and reload the page. You'll see all the requests which were made. Filter those requests to images only and find the mtracking.gif image. Does it have status 200? If not, the path to your Mautic instance is probably incorrect.
+トラッキングが機能しない場合は，チェックしてください。
+統計はページを編集中のページの結果を見てMautic管理者にだまされないよう Mautic 管理者ログイン中の1トレースが動作しません。したがって，Mautic からログアウトやトラッキングのテスト中にシークレットブラウザウィンドウを使用していることを確認してください。
+2.トラッキングピクセルは，追跡したいページの一部ではありません。 Mautic は，そのソースコードにトラッキングピクセルを持っているページのみを追跡することができます。
+3.トラッキングピクセルが正しく構成されていません。ブラウザの開発ツールでこれを確認することができます。 開発ツール（F12キーを押して起動できます）を開き，追跡したいページで見ながら，[ネットワーク]タブに移動し，ページをリロードしてください。あなたが行われたすべての要求が表示されます。イメージだけにそれらの要求をフィルタリングし，mtracking.gif イメージを見つけます。それはステータス 200 でしょうか？　200 以外の場合は，Mautic　インスタンスへのパスが正しくない可能性があります。
 
 
 [詳しくはトラッキングピクセルを参照ください](./../leads/lead_monitoring.html)
