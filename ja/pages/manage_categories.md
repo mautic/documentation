@@ -1,7 +1,7 @@
-# Manage Categories
+# カテゴリの管理
 
-As with many other areas of the Mautic platform you can create categories specific to the pages section. This means any categories you create here can be used for any page. 
+Mautic プラットフォームの他の多くのプラットフォームと同じように，ページのセクションに特定のカテゴリを作成することができます。ここで作成した任意のカテゴリはどのページに使用できることを意味します。
 
 ![](http://drop.dbh.li/image/1o0W0C0S2L2R/Image%202014-11-17%20at%208.50.55%20AM.png)
 
-When creating a new category you can select the title, description, alias and color. The color will be helpful to quickly find pages by their appropriate category when viewing things like the calendar or other areas within Mautic.
+新規にカテゴリを作成するときには，タイトル，説明，エイリアスと色を選ぶことができます。Mauticの中でカレンダーまたは他の地域のようなものを見るとき、適切なカテゴリーでページを見つけるために，色は役に立ちます。
