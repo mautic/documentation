@@ -5,7 +5,7 @@
 ### カテゴリの作成
 新しいカテゴリを作成するには画面右上にある [新規作成] をクリックしてください
 
-![新規アセットカテゴリーの作成](media/assets-newcategory.png "Create a new category")
+![新規アセットカテゴリーの作成](/assets/media/assets-newcategory.png "Create a new category")
 
 使用される「ファイリングシステム」の構造を反映するようなカテゴリの名前を付け，カテゴリの短い説明を付け加えてください。
 
@@ -20,8 +20,8 @@
 ### カテゴリの編集
 カテゴリを編集するには，カテゴリ名をクリックするか横にあるチェックボックスにチェックを入れ [編集] をクリックしてください。上のスクリーンショットと同じな画面が表示されてきます。各入力フィールドがすでに埋められている点が違うくらいです。これも上と同じように編集して保存ができます。
 
-### Managing categories
-
+### カテゴリの管理
+カテゴリはカテゴリ名または ID でソートできます。カラムのヘッダを
 Categories can be sorted by title or ID.  Click on the column header to search by the required field - clicking again will reverse the sort order.
 
 ![Sorting categories](/assets/media/assets-managecategories.png "Sorting categories")
