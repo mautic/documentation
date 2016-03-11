@@ -25,7 +25,7 @@
 
 ![Sorting categories](/assets/media/assets-managecategories.png "Sorting categories")
 
-At the bottom of the page, a dropdown allows control over the number of categories displayed per page - if this number is exceeded by the amount of categories, the pagination arrows can be used to move between pages.  To change the number of categories displayed, select the desired number from the dropdown and the page will automatically refresh.
+ページの下部にあるドロップダウンでページごとに表示されるカテゴリの数を制御することができます。この番号はカテゴリの数が一定数を超えている場合，ページネーションの矢印でページ間を移動できます。表示されるカテゴリの数を変更するには，ドロップダウンリストから希望の番号を選択する事でページが自動的に更新されます。
 
 ### Deleting categories
 
