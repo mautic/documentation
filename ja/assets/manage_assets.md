@@ -33,13 +33,13 @@
 
 ![Delete an asset category](/assets/media/assets-deletecategory.png "Delete a new category")
 
-## Assets
+## アセット
 
-Assets are often provided as incentives to complete a form, and may include white papers, infographics, videos, mp3's and so forth.  These are made available within Mautic as a downloadable file which may be instantly downloaded on submission of a form, or provided as a link from which it can be accessed.
+アセットは多くの場合，フォームを完了してもらうためやのインセンティブとして提供され，これにはホワイトペーパー，インフォグラフィック，動画，mp3 等を含める事ができます。アセットはMautic内でダウンロード可能なファイルとして利用可能な状態におかれ，フォームの送信後に簡単にダウンロードできたり，またはあとでアクセス可能なリンクとして提供されます。
 
-To create an asset, first establish any categories that may be needed and ensure that they are published - it is not possible to assign assets to unpublished categories.
+アセットを作成するには，まず必要とされる任意のカテゴリを作成し，公開されていることを確認してください。未公開のカテゴリにアセットを割り当てることはできません。
 
-Navigate to 'Manage Assets', and click 'New' to begin creating an asset.
+アセットの作成を開始するには 'アセットの管理' へ移動し，[新規作成]をクリックします。
 
 ![Create a new asset](/assets/media/assets-newasset.png "Create a new asset")
 
