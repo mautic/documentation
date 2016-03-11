@@ -1,47 +1,47 @@
-# Education
+# 教育
 
-Secondary or higher education schools have tremendous opportunity to implement successful marketing automation for a variety of purposes. One significant use within these universities centers around the matriculation process of students.
+中等もしくはそれ以上の学校は、様々な目的のために成功したマーケティングの自動化を実現するための大きなチャンスを持っています。こうした大学での重要な用途のひとつは、学生の入学プロセスを中心としたものです。
 
-### Overview
+### 概要
 
-University implementations of marketing automation for the purpose of nurturing students through the typical process. This process begins with the casual site visitor and continues through nurturing these visitors until they are better classified as prospective students. Once a prospective student has performed necessary steps (e.g. a campus visit) they are carried through the matriculation process.
+典型的なプロセスを通じて学生の育成を目的としたマーケティング自動化の大学での実装です。このプロセスはカジュアルなサイトビジターから始まり、有望な学生として分類されるまでこうしたビジターを育成するまで続きます。有望な学生が必要なステップを行うと（例えば、キャンパス訪問）、入学プロセスに渡されます。
 
-### Extended Use Case
+### より広範なユースケース
 
-While in some cases this may be the conclusion of the marketing automation workflow there are use cases for additional stages beyond where Mautic can provide additional benefit in tracking, monitoring, and improving student experiences throughout the active student's enrollment and beyond graduation as a former student, alumni.
+いくつかのケースではこれがマーケティングの自動化ワークフローの結論であってもよいですが、Maiticが提供する、アクティブな学生の入学を通した学生体験のトラッキング、モニタリング、そして改善におけるさらなる利点以上の、そして元学生や卒業生として卒業後のさらなるステージのためのユースケースがあります。
 
-### Unique Terminology
+### 専用の用語
 
-**Visitor** - An anonymous lead. This would be a casual visitor.
+** ビジター ** - 匿名のリード。カジュアルな訪問者でしょう。
 
-**Student** - A lead. This is the prospective, current, or graduated student.
+** 学生 ** - リード。これは有望な学生、現在の学生、卒業した学生です。
 
 
-### Workflow
-The workflow for an educational environment is for the most part similar to a typical workflow. However there are a few key differences. First, leads are considered students. Students would continue through the workflow in a similar manner as a lead. As with the terminology these are the details.
+### ワークフロー
+教育環境のためのワークフローは、一般的なワークフローにほとんどの部分で似ています。とはいえ、いくつかの重要な違いがあります。まず、学生はリードとしてみなします。学生はリードと同様にワークフローを通じて継続します。用語と同じように以下が詳細です。
 
-**1. Define Fields**
+** 1. フィールドの定義 **
 
-Students have unique attributes which are helpful for universities to track. The first step of configuring marketing automation for your needs will be to create those fields for the student profile.
+学生は大学が追跡するために役立つユニークな属性を持っています。ニーズにあったマーケティング自動化を設定する最初のステップは、学生のプロファイルのためにこうしたフィールドを作成することです。
 
-**2. Create Lists**
+** 2. リストの作成 **
 
-Student lists are convenient ways to organize students. Whether you choose to organize your students by geographic region, course of study, degree program, or a variety of other options the student lists are a way to keep things grouped and allow for easy targeted interactions.
+学生のリストは学生を整理するための便利な方法です。地域、コース、学位プログラム、その他多種多様なオプションのどれで学生を体系化するにせよ、学生リストはグループ化されたものを保ち、ターゲットとのやり取りを容易にします。
 
-**3. Add Assets**
+** 3. アセットの追加 **
 
-Universities have a variety of resources you may want to offer to your prospective students. Those assets can be course-specific materials, grant applications, or any one of many other resources.
-
-...
-
-*As mentioned skipped steps follow the same logic as in the Sales Use Case*
+大学には有望な学生に提供することができるさまざまなリソースがあります。これらのアセット特定のコースの資料、助成金申請、または他の多くのリソースのどれでもかまいません。
 
 ...
 
-**8. Point Triggers & Actions**
+* 飛ばされているステップはセールスのユースケースと同じ論理に従ってください *
 
-Visitors and potential students earn points for any number of activities performed on the website or other online locations. You can add manual points to a potential student based on offline activities (e.g. a campus visit).
+...
 
-### Conclusion
+** 8. ポイントトリガー＆アクション **
 
-The bottom line is clear. Mautic works incredibly well as a marketing automation platform used in education environments. Tracking potential students, current students and even maintaining lists for graduates to keep track of alumni and send follow-up email messages can all be done with Mautic.
+ビジターおよび潜在的な学生は、ウェブサイトや他のオンラインの場所で実行されたアクティビティのすべての数のポイントを獲得します。オフライン活動（例えば、キャンパス訪問）に基づいて、潜在的な学生へポイントを手動で追加することができます。
+
+### 結論
+
+結論は明らかです。Mauticは、教育環境で使用されるマーケティング自動化プラットフォームとして非常にうまく動作します。潜在的な学生と現在の学生のトラッキング、そしてさらに卒業生をトラッキングし続けるための卒業生のためのリストのメンテナンスとフォローアップのメース送信、こうしたすべてをMauticで行えます。
