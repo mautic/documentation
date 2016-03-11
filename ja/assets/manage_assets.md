@@ -29,8 +29,7 @@
 
 ### カテゴリの削除
 
-矢印横にあるチェックボックスにチェックを入れて削除を選択する事で，カテゴリを削除できます。
-Categories can be deleted by clicking on the arrow beside the checkbox and selecting delete.  If any assets are currently assigned to the category being deleted, they will not be removed, but will instead display as 'Unassigned'.  A warning will be displayed which alerts you to this fact when deleting a category.
+矢印横にあるチェックボックスにチェックを入れて削除を選択する事で，カテゴリを削除できます。アセットの割り当てられているカテゴリが削除されても，アセットは削除されず，'未アサイン' と表示されます。実際にカテゴリを削除する際には警告が表示されます。
 
 ![Delete an asset category](/assets/media/assets-deletecategory.png "Delete a new category")
 
