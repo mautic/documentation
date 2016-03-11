@@ -5,7 +5,7 @@
 ### カテゴリーの作成
 新しいカテゴリーを作成するには画面右上にある '新規作成' をクリックしてください
 
-![Create a new asset category](media/assets-newcategory.png "Create a new category")
+![新規アセットカテゴリーの作成](media/assets-newcategory.png "Create a new category")
 
 Name the category something that reflects the 'filing system' structure that will be used, and provide a short description of the category.
 
