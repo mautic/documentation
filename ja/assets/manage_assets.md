@@ -21,8 +21,7 @@
 カテゴリを編集するには，カテゴリ名をクリックするか横にあるチェックボックスにチェックを入れ [編集] をクリックしてください。上のスクリーンショットと同じな画面が表示されてきます。各入力フィールドがすでに埋められている点が違うくらいです。これも上と同じように編集して保存ができます。
 
 ### カテゴリの管理
-カテゴリはカテゴリ名または ID でソートできます。カラムのヘッダを
-Categories can be sorted by title or ID.  Click on the column header to search by the required field - clicking again will reverse the sort order.
+カテゴリはカテゴリ名または ID でソートできます。カラムのヘッダを必要なフィールドで検索するにはカラムヘッダをクリックしてください。再度クリックすることでソート順を逆にできます。
 
 ![Sorting categories](/assets/media/assets-managecategories.png "Sorting categories")
 
