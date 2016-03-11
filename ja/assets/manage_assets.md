@@ -17,9 +17,8 @@
 
 変更内容を保存し，編集を続行するには [適用] ボタンを押してください。変更を保存しカテゴリ画面へ戻るには [保存して閉じる] をクリックしてください。操作をキャンセルしてカテゴリ画面へ戻るには [キャンセル] を押してください。
 
-### Editing categories
-
-To edit a category, either click on the category name, or click on the arrow beside the checkbox and select 'edit'.  The same screen as above will be displayed, however the fields which have previously been populated will already have content - which can be edited and saved as above.
+### カテゴリの編集
+カテゴリを編集するには，カテゴリ名をクリックするか横にあるチェックボックスにチェックを入れ [編集] をクリックしてください。上のスクリーンショットと同じな画面が表示されてきます。各入力フィールドがすでに埋められている点が違うくらいです。これも上と同じように編集して保存ができます。
 
 ### Managing categories
 
