@@ -27,8 +27,9 @@
 
 ページの下部にあるドロップダウンでページごとに表示されるカテゴリの数を制御することができます。この番号はカテゴリの数が一定数を超えている場合，ページネーションの矢印でページ間を移動できます。表示されるカテゴリの数を変更するには，ドロップダウンリストから希望の番号を選択する事でページが自動的に更新されます。
 
-### Deleting categories
+### カテゴリの削除
 
+矢印横にあるチェックボックスにチェックを入れて削除を選択する事で，カテゴリを削除できます。
 Categories can be deleted by clicking on the arrow beside the checkbox and selecting delete.  If any assets are currently assigned to the category being deleted, they will not be removed, but will instead display as 'Unassigned'.  A warning will be displayed which alerts you to this fact when deleting a category.
 
 ![Delete an asset category](/assets/media/assets-deletecategory.png "Delete a new category")
