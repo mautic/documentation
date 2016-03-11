@@ -1,65 +1,65 @@
-# Sales & Marketing
+# セールス＆マーケティング
 
-The first and most widely recognized example of marketing automation is in the sales and marketing industry. This was the original intended use for a tool such as marketing automation and as such most major organizations are familiar with the concept of marketing automation as it relates to their sales cycle.
+マーケティング・オートメーションが最初にそして最も広く認識されている例としては、営業販売の分野でしょう。これはマーケティング・オートメーションなどのツールを意図して利用されました。そのため、おおくの大きな組織では、自分たちの販売サイクルと関わっているのでマーケティングオートメーションのコンセプトに精通しています。
 
-Below is an example of a typical use case within a sales based field.
+以下は、売上高ベースのフィールド内の一般的な使用例です。
 
-### Terminology
-When working in a sales environment the common terms used are as follows:
+### 用語
+販売業界で作業する場合に使用される一般的な用語は、次のとおりです:
 
-**Assets** - Typically these are white papers, other informational materials, sample product downloads and other resources.
+** アセット ** - 典型的なものではホワイトペーパー、その他の情報資料、サンプル製品のダウンロードおよびその他のリソースです。
 
-**Campaigns** - A set of email and social media activities related to a specific purpose sent on a timeframe or as a result of lead responses.
+** キャンペーン ** - ある一定期間中、またはリードからの応答の結果として送信される特定の目的に関連するメールやソーシャルメディア活動のセット。
 
-**Decision Tree** - A process implemented within a campaign which determines the next step based on a lead's response or decision.
+** 決定木 ** - リードの応答または意思決定に基づいて次のステップを決定し、キャンペーン内で実施されるプロセス。
 
-**Dripflow** - A campaign style which sends predefined messages on a specific timeframe typically over a prolonged period of time.
+** ドリップフロー ** - 典型的には長期間にわたって、特定の時間枠に事前に定義されたメッセージを送信するキャンペーンのスタイル。
 
-**Emails** - These are specific points of contact with leads. Emails are sent to lists as part of campaigns.
+** メール ** - リード線との接触の特定のポイントになります。メールはキャンペーンの一環としてリストに送信されます。
 
-**Forms** - A form placed online to collect additional lead information. Forms are frequently used in conjunction with pages.
+** フォーム ** - リードの追加情報を収集するオンラインのフォームです。フォームはページと一緒に頻繁に使用されています。
 
-**Leads** - Potential customers
+** リード ** - 潜在的な顧客
 
-**Lists** - A group of associated leads based on specific, defined criteria
+**リスト** - 特定の定義した基準に基づいて関連付けられているリードのグループ
 
-**Pages** - Landing pages designed to funnel leads to a specific call to action.
+** ページ ** - リードにアクションを起こさせるようにデザインされたランディングページ。
 
-**Points** - These are the numeric values assigned to any number of activities by which the lead is scored to determine interest levels.
+** ポイント ** - 関心のレベルを決定するためにリードが得点付けされることによる任意の数のアクティビティに割り当てられる数値です。
 
-**Reports** - Reports are overviews and data aggregations of leads, pages, assets, and other parts of the marketing automation tool to assist in improving efficiency.
+** レポート ** - 効率向上の支援のため、リード、ページ、アセット、およびマーケティング自動化ツールの他の部分の概要とデータの集合です。
 
-### Workflow
-Once the terminology has been defined the next important step is creating an ideal workflow. Workflows are perhaps the most unique portion of any use case and as such even among sales organizations these will have vastly different implementations. Below is a somewhat standard sales workflow.
+### ワークフロー
+用語が定義されたあとの次の重要なステップは、理想的なワークフローの作成です。ワークフローは、おそらくあらゆるユースケースの中で最もユニークな部分であり、販売組織の中ですら、それぞれに非常に異なる実装を持つことになります。以下は標準的な販売ワークフローです。
 
-**1. Define Lead Fields**
+** 1. リードフィールドの定義 **
 
-The first step to take in a successful workflow is to correctly identify the fields and information you wish to collect on your leads. Mautic allows you to create as many unique fields as you need to correctly organize and manage your potential customers.
+ワークフローを成功させるために取り入れる最初のステップは、リードから収集するフィールドや情報を正しく識別することです。Mauticは、潜在的な顧客を正しく整理、管理するのに必要な任意のフィールドを好きな数だけ作成することができます。
 
-**2. Create Lead Lists**
+** 2. リードリストの作成 **
 
-The next step involves creating the lead lists. As mentioned above these lists are grouping of leads based on specific characteristics. The purpose of creating these lead lists is to allow Mautic to automatically add leads to these lists when certain actions are taken. Leads can be manually added to lists as well when necessary.
+次のステップはリードリストの作成です。すでに述べているように、これらのリストは特定の特性に基づいたリードのグループ化です。これらのリードのリストを作成する目的は、特定のアクションが取られたときにMauticが自動的にこれらのリストにリードを追加できるようにするためです。同様に、必要に応じてリードは手動でリストに追加することができます。
 
-**3. Add Assets**
+** 3. アセットの追加 **
 
-Adding assets to your Mautic platform will allow you to use those assets as part of forms, pages, and campaigns. These assets can be anything you choose, as mentioned above typically they are PDFs, Slideshows, and other informational materials.
+Mauticプラットフォームにアセットを追加すると、フォーム、ページ、およびキャンペーンのパーツとしてそれらのアセットを使用できるようになります。これらのアセットはなんでもかまいませんが、上述したように普通はPDFファイル、スライドショー、およびその他の情報資料です。
 
-**4. Create Form**
+** 4. フォームの作成 **
 
-Once you've added an asset you can now use that assset as the result of a form submission. Creating a form is the critical stage of your marketing automation platform. Forms allow you to convert anonymous leads into named, potential customers.
+アセットを追加後、フォーム送信の結果としてそのアセットを使用することができます。フォームの作成は、マーケティング自動化プラットフォームの重要な段階です。フォームは匿名のリードを名前の付いた潜在的な顧客に変換することができます。
 
-**5. Setup Landing Pages**
+** 2. ランディングページのセットアップ **
 
-Creating a landing page allows you to setup a specific sales funnel you want the lead to follow. Most often landing pages are created with a single call to action. These call to actions usually consist of a form submission where the lead provides more information in exchange for something. Landing pages can be themed to specific layouts or be uniquely created during the setup process.
+ランディングページを作成すると、リードにフォローさせたい特定のセールスファネルをセットアップできるようになります。ほとんどの場合、ランディングページはアクションへの1回の呼び出しで作成可能です。アクションへのこれらの呼び出しは、通常は何かと引き換えにより多くの情報をリードが提供するフォームの送信で構成されています。ランディングページは、特定のレイアウトのテーマにすることができたり、またはセットアップ中に一意に作成することもできます。
 
-**6. Create Emails**
+** 6. メールの作成 **
 
-Defining emails is another important part of the process. This is a direct method of interaction with the leads. Emails can be created and included as part of the campaign process. Remember that emails are sent to lead lists and can be setup to be sent automatically throughout the life of a campaign.
+メールの設定もまた重要なパーツとなります。これはリードとやり取りするための直接的な方法です。メールはキャンペーンプロセスの一部として作成したり含めたりすることができます。メールはリードリストに送信され、キャンペーンのライフサイクルを通して自動的に送信されるように設定することができることを覚えておいてください。
 
-**7. Create a Campaign**
+** 7. キャンペーンの作成 **
 
-Campaigns are where you bring all the many items you've created together in a marketing effort. Typically campaigns are formed around a particular goalset such as a product launch, new customer outreach or other lead interaction. Campaigns implement decision trees which continue to nurture the lead based on their interactions and responses to emails and other points of contact.
+キャンペーンは、作成したすべての多くのアイテムをマーケティング活動にまとめるところです。一般的には、製品の発売、新規顧客への働きかけや他のリードとの相互作用など、特定のゴールセットのもとにキャンペーンは形成されます。キャンペーンは、相互作用とメールへの反応、コンタクトのその他のポイントをベースとしてリードを育成し続ける決定木として実装されます。
 
-**8. Define Point Triggers and Actions**
+** 8. ポイントトリガーとアクションの定義 **
 
-Points are what determine when a lead has fully matured and is considered a qualified lead to be automatically entered into the CRM in one scenario. You define these point triggers to be fired at specific values and result in the associated action to be performed. Simply put points automatically accumulate and serve to indicate which leads have been nurtured through the sales cycle. One such action can be the automatic transition of the lead to the CRM system as mentioned.
+ポイントは、リードが完全に成熟しており、ひとつのシナリオで自動的にCRMに入力される資格があると考えられるかを決定するものです。ポイントトリガーとして特定の値で作動し、その結果として実行される関連するアクションを設定することができます。ポイントは単純に自動的に蓄積され、販売サイクルを通じて育まれてきたのはどのリードなのかを示すのに役立ちます。前述のように、そうしたアクションはリードを自動的にCRMシステムへ移行させることができます。
