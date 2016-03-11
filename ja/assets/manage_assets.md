@@ -1,9 +1,9 @@
 # アセットの管理
-## カテゴリー
+## カテゴリ
 アセットは，あなたが簡単にリソースを検索することを可能にし，カテゴリとして整理することができます。新しいカテゴリを作成するには、アセットのセクションを参照し，[カテゴリの管理] をクリックします。
 
-### カテゴリーの作成
-新しいカテゴリーを作成するには画面右上にある [新規作成] をクリックしてください
+### カテゴリの作成
+新しいカテゴリを作成するには画面右上にある [新規作成] をクリックしてください
 
 ![新規アセットカテゴリーの作成](media/assets-newcategory.png "Create a new category")
 
@@ -13,16 +13,9 @@
 
 これは、16進法のカラーコードの入力やカラーピッカーで色を選択して個々のカテゴリを色分けすることができます。
 
-カテゴリを公開し、資産を割り当てるため、それを利用できるようにするには、「はい」強調表示されます - カテゴリが未発表のようにカテゴリを設定する「いいえ」をクリックし公開すべきではない場合。
+カテゴリを公開してアセットを割り当て，利用できるようにするには [はい] が強調表示されている用にしてください。カテゴリを公開しないよう設定するには [いいえ] をクリックしてください。
 
-変更内容を保存し、編集を続行するには、を押して「適用」。変更を保存し、カテゴリ画面、押して「保存して閉じる」に戻ります。 、を押して変更をキャンセルし、カテゴリの画面に戻るには、[キャンセル]
-
-
-It is possible to color-code individual categories by either typing in a hex code, or using the picker to select the color.
-
-To publish a category and make it available for assigning assets, 'yes' should be highlighted - if the category should not be published click on 'No' to set the category as unpublished.
-
-To save the changes and continue editing, press 'Apply'.  To save the changes and go back to the categories screen, press 'Save & Close'.  To cancel changes and return to the categories screen, press 'Cancel'
+変更内容を保存し，編集を続行するには [適用] ボタンを押してください。変更を保存しカテゴリ画面へ戻るには [保存して閉じる] をクリックしてください。操作をキャンセルしてカテゴリ画面へ戻るには [キャンセル] を押してください。
 
 ### Editing categories
 
