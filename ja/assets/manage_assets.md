@@ -11,15 +11,12 @@
 
 エイリアスフィールドは手動で指定しない限り，自動的にタイトルフィールドから移入されます。これは理想的な URL パスを作成するために使用され，スペースの代わりにハイフンが含まれている必要があります。
 
-これは、進コードのいずれかで次のように入力して色分け個々のカテゴリに可能である、または色を選択するピッカーを使用して。
+これは、16進法のカラーコードの入力やカラーピッカーで色を選択して個々のカテゴリを色分けすることができます。
 
 カテゴリを公開し、資産を割り当てるため、それを利用できるようにするには、「はい」強調表示されます - カテゴリが未発表のようにカテゴリを設定する「いいえ」をクリックし公開すべきではない場合。
 
 変更内容を保存し、編集を続行するには、を押して「適用」。変更を保存し、カテゴリ画面、押して「保存して閉じる」に戻ります。 、を押して変更をキャンセルし、カテゴリの画面に戻るには、[キャンセル]
 
-Name the category something that reflects the 'filing system' structure that will be used, and provide a short description of the category.
-
-The alias field will be automatically populated from the title field unless manually specified - this is used to create the URL path so it should ideally contain hyphens instead of spaces.
 
 It is possible to color-code individual categories by either typing in a hex code, or using the picker to select the color.
 
