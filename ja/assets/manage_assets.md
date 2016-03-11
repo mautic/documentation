@@ -1,10 +1,9 @@
-# Manage Assets
-## Categories
-Assets can be organized in categories, which allows you to easily locate resources.  To create a new category, browse to the Assets section and click on 'Manage Categories'.
+# アセットの管理
+## カテゴリー
+アセットは，あなたが簡単にリソースを検索することを可能にし，カテゴリとして整理することができます。新しいカテゴリを作成するには、アセットのセクションを参照し，'カテゴリの管理'をクリックします。
 
-### Creating categories
-
-To create a new category, click on 'New' which can be found in the top right of the screen.
+### カテゴリーの作成
+新しいカテゴリーを作成するには画面右上にある '新規作成' をクリックしてください
 
 ![Create a new asset category](media/assets-newcategory.png "Create a new category")
 
