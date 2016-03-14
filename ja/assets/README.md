@@ -1,6 +1,7 @@
-# Assets
+# アセット
 
-Assets are those items which you will provide to your leads typically upon completion of a form. These assets are trackable items which can carry their own point values, history, and tracking statistics.
+アセットはあなたが通常はフォームの完了時にあなたのリードに提供するこれらのアイテムです。アセットは，独自のポイント値、履歴、トラッキング統計情報を持つ事のできる追跡可能なアイテムです。
+
 
 ### Example Assets
 
