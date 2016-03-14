@@ -1,22 +1,21 @@
-# Community
+# コミュニティ
 
-Using marketing automation is a community environment is somewhat different than what you would find in a typical sales setting. However the benefits of marketing automation can be applied to a community and serve as a valuable resource in community management.
+マーケティング自動化をコミュニティ環境で使用するのは、典型的なセールスの設​​定とは多少異なります。とはいえ、マーケティング自動化のメリットはコミュニティにも享受可能ですし、コミュニティ管理における貴重なリソースとしての役割を果たすことができます。
 
-As with the other sections the first thing to do is explore terminology. Many of the key terms will remain the same.
+他のセクションと同じように、最初にすることは専門用語の確認です。多くの主要な用語は他と同じです。
 
-### Terminology
+### 用語
 
-**Lead** -  a community member
+** リード ** - コミュニティメンバー
 
-**Campaign** -  These would be considered engagements.
+** キャンペーン ** - 従事していること
 
-### Workflow
+### ワークフロー
 
-When looking at using marketing automation within the community instead of focusing on funneling leads to a particular outcome (for example sales) the workflow would consist more of to manage the community. Managing a community involves determining the most involved community members, recognizing their efforts, and publicly praising them for the work that they are doing.
+リードを特定の支出(例えばセールス)にファネリングするのではなく、コミュニティ内でのマーケティング自動化をみてみると、ワークフローはそのほとんどがコミュニティを管理するためのものです。コミュニティの管理には、いちばん関わっているコミュニティメンバーの選定、彼らの取り組み、彼らの作業への公での賞賛が含まれます。
 
-It's important to keep in mind when monitoring a community that the most active volunteers are not necessarily the most vocal. Using marketing automation will allow you to find those community members contributing in other ways besides merely vocal participation.
+コミュニティを監視するときに、最も活発なボランティアが必ずしも最も声の大きいメンバーではないということに留意することが重要です。マーケティング自動化を使用すると、単なる声だけの参加者を除外した方法で貢献しているコミュニティのメンバーを見つけることができるようになります。
 
-In a community setting the purpose of marketing automation as previously defined involves locating and wording your volunteers. With this goal in mind you can use Mautic to help you identify those volunteers. This can be done by using the many integrations found within Mautic and applying points to each volunteer.
+コミュニティ設定では、先に定義したマーケティング自動化の目的にはボランティアの配置と報奨が含まれます。この点を念頭に置き、こうしたボランティアを識別するのにMauticを役立てることができます。こうしたことは、Mautic内の多くの統合を使用して、また、各ボランティアにポイントを適用することによって行うことができます。
 
-In this scenario, points are being used to calculate community involvement. These points can be applied for any number of actions or activities taken by your volunteers. Examples of these activities would include things such as forum posts, chat messages, newsletter list messages, or any other metric you choose. Adding points to users weighted by specific use cases and unique to your community will allow you to quickly locate you must active participants.
-
+このシナリオでは、ポイントはコミュニティへの関与を計算するために使用されています。これらのポイントは、ボランティアによって行われたアク​​ションや活動の任意の数に適用することができます。これらの活動の例としては、フォーラムへの投稿、チャットメッセージ、ニュースレターリストのメッセージ、または選択した任意の他のメトリックを含まれています。特定のユースケースやコミュニティ特有のことによって重み付けされたポイントをユーザに付加することにより、自分がどこに参加するべきかを素早く見つけることができます。
