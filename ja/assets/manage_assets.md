@@ -55,9 +55,9 @@
 
 すべての項目が入力したら '保存して閉じる' や '適用' を押してアセットへの変更を反映してください。
 
-### Viewing an asset
+### アセットの閲覧
 
-Once an asset has been uploaded and saved, it can be viewed by clicking on the asset name in the list of assets.
+ひとたびアセットをアップロードし保存するとリストにあるアセット名をクリックする事で表示する事ができます。
 
 ![Viewing an asset](/assets/media/assets-viewasset.png "Viewing an asset")
 
