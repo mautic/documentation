@@ -61,11 +61,11 @@
 
 ![Viewing an asset](/assets/media/assets-viewasset.png "Viewing an asset")
 
-The view asset screen gives information about the number of times the asset has been downloaded, which can be displayed on a chart by hourly, daily, weekly, monthly or yearly downloads.  The graph also shows the number of unique, versus total views - this is an indication of whether the same asset is being downloaded multiple times by some visitors.
+アセットの画面では，ダウンロード数を家訓で来ます。時間毎，日毎，週毎，月毎，年毎のダウンロード数での表示も可能です。グラフはトータルのダウンロード数に対するユニーク数ダウンロード数を表示します。
 
-A download URL allows previewing of the asset - clicking on the link will open the asset in a new window.
+ダウンロード URL はリンクをクリックする事で別ウィンドウでのアセットのプレビューが可能です。
 
-Below the preview link will be displayed recent activity for this resource, with a preview of the resource being available beneath the chart for some formats.
+プレビューリンクの下部にはリソースに関する直近の活動状況が表示されます。リソースのプレビューがあれば併せて表示させます。
 
 ### アセットの編集
 
