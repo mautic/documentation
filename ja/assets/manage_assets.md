@@ -1,83 +1,78 @@
-# Manage Assets
-## Categories
-Assets can be organized in categories, which allows you to easily locate resources.  To create a new category, browse to the Assets section and click on 'Manage Categories'.
+# アセットの管理
+## カテゴリ
+アセットは，あなたが簡単にリソースを検索することを可能にし，カテゴリとして整理することができます。新しいカテゴリを作成するには、アセットのセクションを参照し，[カテゴリの管理] をクリックします。
 
-### Creating categories
+### カテゴリの作成
+新しいカテゴリを作成するには画面右上にある [新規作成] をクリックしてください
 
-To create a new category, click on 'New' which can be found in the top right of the screen.
+![新規アセットカテゴリーの作成](/assets/media/assets-newcategory.png "Create a new category")
 
-![Create a new asset category](/assets/media/assets-newcategory.png "Create a new category")
+使用される「ファイリングシステム」の構造を反映するようなカテゴリの名前を付け，カテゴリの短い説明を付け加えてください。
 
-Name the category something that reflects the 'filing system' structure that will be used, and provide a short description of the category.
+エイリアスフィールドは手動で指定しない限り，自動的にタイトルフィールドから移入されます。これは理想的な URL パスを作成するために使用され，スペースの代わりにハイフンが含まれている必要があります。
 
-The alias field will be automatically populated from the title field unless manually specified - this is used to create the URL path so it should ideally contain hyphens instead of spaces.
+これは、16進法のカラーコードの入力やカラーピッカーで色を選択して個々のカテゴリを色分けすることができます。
 
-It is possible to color-code individual categories by either typing in a hex code, or using the picker to select the color.
+カテゴリを公開してアセットを割り当て，利用できるようにするには [はい] が強調表示されている用にしてください。カテゴリを公開しないよう設定するには [いいえ] をクリックしてください。
 
-To publish a category and make it available for assigning assets, 'yes' should be highlighted - if the category should not be published click on 'No' to set the category as unpublished.
+変更内容を保存し，編集を続行するには [適用] ボタンを押してください。変更を保存しカテゴリ画面へ戻るには [保存して閉じる] をクリックしてください。操作をキャンセルしてカテゴリ画面へ戻るには [キャンセル] を押してください。
 
-To save the changes and continue editing, press 'Apply'.  To save the changes and go back to the categories screen, press 'Save & Close'.  To cancel changes and return to the categories screen, press 'Cancel'
+### カテゴリの編集
+カテゴリを編集するには，カテゴリ名をクリックするか横にあるチェックボックスにチェックを入れ [編集] をクリックしてください。上のスクリーンショットと同じな画面が表示されてきます。各入力フィールドがすでに埋められている点が違うくらいです。これも上と同じように編集して保存ができます。
 
-### Editing categories
-
-To edit a category, either click on the category name, or click on the arrow beside the checkbox and select 'edit'.  The same screen as above will be displayed, however the fields which have previously been populated will already have content - which can be edited and saved as above.
-
-### Managing categories
-
-Categories can be sorted by title or ID.  Click on the column header to search by the required field - clicking again will reverse the sort order.
+### カテゴリの管理
+カテゴリはカテゴリ名または ID でソートできます。カラムのヘッダを必要なフィールドで検索するにはカラムヘッダをクリックしてください。再度クリックすることでソート順を逆にできます。
 
 ![Sorting categories](/assets/media/assets-managecategories.png "Sorting categories")
 
-At the bottom of the page, a dropdown allows control over the number of categories displayed per page - if this number is exceeded by the amount of categories, the pagination arrows can be used to move between pages.  To change the number of categories displayed, select the desired number from the dropdown and the page will automatically refresh.
+ページの下部にあるドロップダウンでページごとに表示されるカテゴリの数を制御することができます。この番号はカテゴリの数が一定数を超えている場合，ページネーションの矢印でページ間を移動できます。表示されるカテゴリの数を変更するには，ドロップダウンリストから希望の番号を選択する事でページが自動的に更新されます。
 
-### Deleting categories
+### カテゴリの削除
 
-Categories can be deleted by clicking on the arrow beside the checkbox and selecting delete.  If any assets are currently assigned to the category being deleted, they will not be removed, but will instead display as 'Unassigned'.  A warning will be displayed which alerts you to this fact when deleting a category.
+矢印横にあるチェックボックスにチェックを入れて削除を選択する事で，カテゴリを削除できます。アセットの割り当てられているカテゴリが削除されても，アセットは削除されず，'未アサイン' と表示されます。実際にカテゴリを削除する際には警告が表示されます。
 
 ![Delete an asset category](/assets/media/assets-deletecategory.png "Delete a new category")
 
-## Assets
+## アセット
 
-Assets are often provided as incentives to complete a form, and may include white papers, infographics, videos, mp3's and so forth.  These are made available within Mautic as a downloadable file which may be instantly downloaded on submission of a form, or provided as a link from which it can be accessed.
+アセットは多くの場合，フォームを完了してもらうためやのインセンティブとして提供され，これにはホワイトペーパー，インフォグラフィック，動画，mp3 等を含める事ができます。アセットはMautic内でダウンロード可能なファイルとして利用可能な状態におかれ，フォームの送信後に簡単にダウンロードできたり，またはあとでアクセス可能なリンクとして提供されます。
 
-To create an asset, first establish any categories that may be needed and ensure that they are published - it is not possible to assign assets to unpublished categories.
+アセットを作成するには，まず必要とされる任意のカテゴリを作成し，公開されていることを確認してください。未公開のカテゴリにアセットを割り当てることはできません。
 
-Navigate to 'Manage Assets', and click 'New' to begin creating an asset.
+アセットの作成を開始するには 'アセットの管理' へ移動し，[新規作成]をクリックします。
 
 ![Create a new asset](/assets/media/assets-newasset.png "Create a new asset")
 
-Assets can be added from local resources on a computer or from a remote location.  Local uploads will be restricted by size due to the settings of your server - any such restriction may be advised as a warning above the file upload area.
+アセットはコンピュータのローカルリソースやリモートから追加できます。ローカルからアップロードする場合，サーバによってアップロードするファイルサイズに上限が設けられている場合があります。制限についてはアップロード時の画面で警告されます。
 
-### Uploading an asset
 
-To upload an asset, either drag the file into the white box, or click in the white box to open a file upload window.  On selection of the file, it will be automatically uploaded and will appear in the white box.  
+### アセットをアップロード
+アセットをアップロードするには，ホワイトボックスへファイルをドラッグ&ドロップする，もしくはホワイトボックスをクリックしてファイルアップロードの画面を表示させてください。ファイル選択画面でファイルを選ぶと自動的にアップロードされホワイトボックスへ表示されます。
 
 ![Assigning an asset to a category](/assets/media/assets-uploadnewassetunpublishedcategory.png "Assigning an asset to a category")
 
-The title of the asset can be set, along with a description and an alias as above with categories.  Assets can only be assigned to published categories, therefore the dropdown list for category selection will not feature unpublished categories.  It is also possible to set the language, whether the asset is published or unpublished, and whether it should become published or unpublished at a specific date or time.
+アセットにタイトルを付ける事ができますし，カテゴリと同様に説明やエイリアスを付ける事もができます。アセットは公開済みのカテゴリに対しアサインできます。したがって，カテゴリセクションのドロップダウンリストには未公開のカテゴリは表示されてきません。公開・未公開を問わず言語を設定する事も可能ですし，また特定に日時に公開・非公開とする事も可能です。
 
-When the details have been completed, click 'Save & Close' or 'Apply' to save changes to the asset.
+すべての項目が入力したら '保存して閉じる' や '適用' を押してアセットへの変更を反映してください。
 
-### Viewing an asset
+### アセットの閲覧
 
-Once an asset has been uploaded and saved, it can be viewed by clicking on the asset name in the list of assets.
+ひとたびアセットをアップロードし保存するとリストにあるアセット名をクリックする事で表示する事ができます。
 
 ![Viewing an asset](/assets/media/assets-viewasset.png "Viewing an asset")
 
-The view asset screen gives information about the number of times the asset has been downloaded, which can be displayed on a chart by hourly, daily, weekly, monthly or yearly downloads.  The graph also shows the number of unique, versus total views - this is an indication of whether the same asset is being downloaded multiple times by some visitors.
+アセットの画面では，ダウンロード数を家訓で来ます。時間毎，日毎，週毎，月毎，年毎のダウンロード数での表示も可能です。グラフはトータルのダウンロード数に対するユニーク数ダウンロード数を表示します。
 
-A download URL allows previewing of the asset - clicking on the link will open the asset in a new window.
+ダウンロード URL はリンクをクリックする事で別ウィンドウでのアセットのプレビューが可能です。
 
-Below the preview link will be displayed recent activity for this resource, with a preview of the resource being available beneath the chart for some formats.
+プレビューリンクの下部にはリソースに関する直近の活動状況が表示されます。リソースのプレビューがあれば併せて表示させます。
 
-### Editing an asset
+### アセットの編集
 
-An asset can be edited by clicking on the 'edit' button while viewing the asset, or by selecting the arrow next to the checkbox for the asset, and selecting 'edit'.  The edit screens are the same as the view screens, however content will be populated in the fields.
+アセットはアセットの閲覧画面にある '編集' ボタンを押下するか，チェックボックスの隣にある矢印を選択し，'編集' をクリックすることで編集することが可能です。アセットの編集画面はアセットの表示画面と同じですが，各入力フィールドがすでに埋められています。
 
-### Deleting an asset
+### アセットの削除
 
-An asset can be deleted by clicking on the 'delete' button while viewing the asset, or by selecting the arrow next to the checkbox for the asset, and selecting 'delete'.  A confirmation screen will be displayed, prompting confirmation that the asset should be deleted.
+アセットは表示している状態で '削除' ボタンをクリックする事で削除ができます。もしくは，チェックボックスの隣にある矢印を選択し，'削除' をクリックすることでアセットを削除することが可能です。確認画面が表示されアセットの削除の確認を求められます。
 
-Once an asset has been deleted, it cannot be retrieved, and statistics relating to the number of downloads for that asset will no longer be available.  Lead points that may have been accumulated as a result of accessing the resource will remain. It is recommended where possible to unpublish assets which are no longer in use - in future there may be an archive feature.
-
-
+ひとたび，アセットが削除されると復旧はできません。またアセットに関連付けられているダウンロード数等の統計も利用できなくなります。リードポイントの蓄積してきたリソースへのアクセスが残るだけです。もし今後使用しないという事であれば，非公開にしておく事をお勧めします。将来的にはアーカイブとして機能させる事ができます。

@@ -1,7 +1,8 @@
-# Assets
+# アセット
 
-Assets are those items which you will provide to your leads typically upon completion of a form. These assets are trackable items which can carry their own point values, history, and tracking statistics.
+アセットは通常フォームの完了時にリードに提供するアイテムです。アセットは，独自のポイント値，履歴，トラッキング統計情報を持つ事のできる追跡可能なアイテムです。
 
-### Example Assets
 
-A few common examples of assets include a white paper provided in regards a particular product or service; a downloadable demo application or other digital product; or any file the lead may be interested in such as video, mp3, presentation, etc.
+### アセットの例
+
+アセットについて特定のプロダクトやサービスに関するホワイトペーパーを含めて一般例を挙げると，ダウンロード可能アプリのデモ，デジタルプロダクト。他には動画や mp3，スライドなどリードの興味を引きそうなものです。　
