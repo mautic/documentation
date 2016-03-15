@@ -1,6 +1,6 @@
 # Translations
 
-Mautic is used by word-wide community and therefore it can be localized to any language. If you cannot find your language yet, take a look to the section about how to translate Mautic.
+Mautic is used by world-wide community and therefore it can be localized to any language. If you cannot find your language yet, take a look to the section about how to translate Mautic.
 
 ## How to select a language in Mautic
 
