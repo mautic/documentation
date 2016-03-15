@@ -73,8 +73,6 @@ Below the preview link will be displayed recent activity for this resource, with
 
 ### アセットの削除
 
-An asset can be deleted by clicking on the 'delete' button while viewing the asset, or by selecting the arrow next to the checkbox for the asset, and selecting 'delete'.  A confirmation screen will be displayed, prompting confirmation that the asset should be deleted.
+アセットは表示している状態で '削除' ボタンをクリックする事で削除ができます。もしくは，チェックボックスの隣にある矢印を選択し，'削除' をクリックすることでアセットを削除することが可能です。確認画面が表示されアセットの削除の確認を求められます。
 
-Once an asset has been deleted, it cannot be retrieved, and statistics relating to the number of downloads for that asset will no longer be available.  Lead points that may have been accumulated as a result of accessing the resource will remain. It is recommended where possible to unpublish assets which are no longer in use - in future there may be an archive feature.
-
-
+ひとたび，アセットが削除されると復旧はできません。またアセットに関連付けられているダウンロード数等の統計も利用できなくなります。リードポイントの蓄積してきたリソースへのアクセスが残るだけです。もし今後使用しないという事であれば，非公開にしておく事をお勧めします。将来的にはアーカイブとして機能させる事ができます。
