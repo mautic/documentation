@@ -1,17 +1,17 @@
-# Customizing themes
+# テーマのカスタマイズ
 
-It is possible to customize themes, or even to create your own from scratch, with Mautic.  To do this you need to have access to a file transfer system such as FTP or SSH.
+Mauticでは、テーマのカスタマイズ、あるいは最初から独自に作成することが可能です。これを行うには、FTPやSSHなどのファイル転送システムへのアクセス権が必要です。
 
-## Customizing an existing theme
+## 既存のテーマのカスタマイズ
 
-To customize an existing theme, it is recommended to make a copy of the entire theme folder, and rename it.  Following renaming the folder, edit the following files to amend the theme paths and name:
+既存のテーマをカスタマイズするには、テーマフォルダ全体のコピーを作成し、その名前を変更することをお勧めします。フォルダの名前を変更した後、テーマのパスと名前を修正するには次のファイルを編集します。
 
-* theme.css - rename to match your theme name
-* config.php - amend theme name
-* base.html.php - amend file path for CSS import to use new folder and CSS filename; amend the default page title from 'Mautic'
+* theme.css - テーマ名と一致するように名前を変更
+* config.php - テーマ名を修正
+* base.html.php - 新しいフォルダやCSSファイル名を使用するようにCSSのインポート用ファイルのパスを修正し、Mauticからデフォルトのページタイトルを修正
 
-Mautic themes are written in HTML and PHP, to make amends to the structure or layout simply edit the files in the new theme and upload them to your instance.  Ensure that your hosting provider does not have caching enabled, as this can sometimes prevent changes to CSS files being replicated instantly.
+MauticのテーマはHTMLとPHPで書かれていて、構造やレイアウトを変更するには単に新しいテーマ内のファイルを編集し、インスタンスにアップロードします。ときどきCSSファイルへの変更がすぐに反映されないようになっていることがありますので、お使いのホスティングプロバイダでキャッシュが有効になっていないことを確認してください。
 
-## Adding new positions
+## 新しいポジションの追加
 
-To add new positions, firstly edit config.php and append a line which includes the new position name.  Secondly, either include the new position in one of the existing arrays in the relevant file within the HTML folder, or create a new array.  This can be simplified by copying an existing code block and pasting it, modifying the names of the divs and the positions being loaded.
+新しいポジションを追加するには、まずconfig.phpファイルを編集して、新しい位置名を含んだ行を追加します。次に、HTMLフォルダ内の関連ファイル内の既存の配列のうちの1つに新しい位置を含めるか、または新しい配列を作成します。これは、既存のコードブロックをコピーして貼り付け、div要素の名称とロードされる位置の名前を変更することによって簡略化することができます。
