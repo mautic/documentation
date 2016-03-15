@@ -1,52 +1,52 @@
-# Translations
+# 翻訳
 
-Mautic is used by word-wide community and therefore it can be localized to any language. If you cannot find your language yet, take a look to the section about how to translate Mautic.
+Mauticは世界中のコミュニティによって使用されていて、どんな言語にもローカライズすることができます。ご自分の言語が見つからない場合は、Mauticを翻訳する方法についてのセクションを見てみましょう。
 
-## How to select a language in Mautic
+## Mauticで言語を選択する方法
 
-Language can be selected on 2 places.
+言語は2箇所で選択することができます。
 
-### 1. Default language
+### 1. デフォルト言語
 
-In the Mautic configuration can be configured the default language. It is pre-set to `English - United States` by default. Every user will see this language if he doesn't configure her language in hers profile.
+Mautic設定でデフォルトの言語を設定することができます。デフォルトでは `English - United States` に予め設定されています。ご自分のプロフィールでご自分の言語を設定していない場合はすべてのユーザーでこの言語で表示されます。
 
-1. Open the right admin menu by clicking on the cog icon in the top right corner.
-2. Select the *Configuration* menu item.
-3. Select the default language.
-4. Save the configuration.
+1. 右上にあるの歯車アイコンをクリックして右の管理メニューを開きます。
+2. *設定*メニュー項目を選択します。
+3.デフォルトの言語を選択します。
+4. 設定を保存します。
 
 ![Select the default language](/translations/media/translations-select-language.png "Select the default language")
 
-### 2. User language
+### 2.ユーザー言語
 
-User can define hers own language and override the default language. This let a multilangual team work on the same Mautic instance.
+ユーザーは自分の言語を設定し、デフォルトの言語設定をオーバーライドすることができます。これにより、同じMauticインスタンス上で複数言語のチームで作業できます。
 
-1. Open the user menu by clicking on the user name in the top right corner.
-2. Click on *Account* menu item.
-3. Select the user language.
-4. Save the user profile.
+1.右上のユーザー名をクリックしてユーザメニューを開きます。
+2.*アカウント*メニュー項目をクリックしてください。
+3.ユーザーの言語を選択します。
+4.ユーザープロファイルを保存します。
 
 ![Select the user language](/translations/media/translations-select-user-language.png "Select the user language")
 
-## How to translate Mautic
+## Mauticの翻訳方法
 
-Mautic can be translated to any language. As Mautic is a community project, it can be translated by any community member to any language. Translations are made in the [Transifex](https://www.transifex.com/mautic/mautic/) web app.
+Mauticはどんな言語にでも翻訳することができます。Mauticはコミュニティプロジェクトなので、コミュニティメンバーならだれでも任意の言語に翻訳することができます。翻訳は [Transifex](https://www.transifex.com/mautic/mautic/) ウェブアプリで行われています。
 
-1. Create an account at [Transifex](https://www.transifex.com/mautic/mautic/) if you don't have one already.
-2. Take a look at the [list of languages](https://www.transifex.com/mautic/mautic/) which were created for the project already.
-3. Create a language if your language is missing or apply for an existing language.
+1.まだお持ちでなければ [Transifex](https://www.transifex.com/mautic/mautic/) でアカウントを作成します。
+2.すでにプロジェクトが作成されていないかどうか[言語リスト](https://www.transifex.com/mautic/mautic/) を見てみましょう。
+3.お使いの言語がなければその言語を作成するか、もしくは既存の言語を適用します。
 
-Take a look at official [Transifex Documentation](http://docs.transifex.com/tutorials/txeditor/) if you have any questions about the translation process.
+翻訳プロセスについての疑問があれば、公式の [Transifex Documentation](http://docs.transifex.com/tutorials/txeditor/) を見てみましょう。
 
-## How to update a language
+## 言語の更新方法
 
-A language is downloaded automatically every time the configuration is saved and the language hasn't been downloaded already. The tricky part is that Mautic won't download a language if it has been already downloaded. So to update a language:
+言語がダウンロードされていなければ、設定が保存されるたびに言語が自動的にダウンロードされます。トリッキーですが、すでにダウンロードされている場合はMauticはその言語をダウンロードしないということです。そのため、言語を更新するには:
 
-1. Open the Mautic file system via SFTP or SSH.
-2. In the Mautic root folder you should see the folder called *translations*. Open it.
-3. In the *translations* folder are the languages stored. Remove the folder of the language you want to update.
-4. Go go Mautic configuration and save it with the language you've deleted.
+1.SFTPやSSHでMauticファイルシステムを開きます。
+2.Mauticルートフォルダに *translasions* というフォルダがあるはずです。それを開きます。
+3.*translations*フォルダに言語が格納されています。更新したい言語のフォルダを削除します。
+4.Mauticの設定画面を開き、削除した言語で保存します。
 
-The language should be downloaded again with the latest translations. The translations are generated from Transifex once a day.
+言語が最新の翻訳で再度ダウンロードされるはずです。翻訳はTransifexから一日一回の割合で生成されています。
 
-If you have any questions about translations, join the community in the [Slack #Translations channel](https://www.mautic.org/slack/).
+翻訳について質問がある場合は [Slack #Translations channel](https://www.mautic.org/slack/) に参加してみてください。
