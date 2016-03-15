@@ -51,12 +51,9 @@
 
 ![Assigning an asset to a category](/assets/media/assets-uploadnewassetunpublishedcategory.png "Assigning an asset to a category")
 
-アセットにタイトルを付ける事ができますし，カテゴリと同様に説明やエイリアスを付ける事もができます。アセットは公開済みのカテゴリに対しアサインできます。したがって，カテゴリセクションのドロップダウンリストには未公開のカテゴリは表示されてきません。
-資産はのみですので、カテゴリを選択するためのドロップダウンリストが公開されていないカテゴリを特徴としませんが、公開されたカテゴリに割り当てることができます。資産が公開または未発表されているかどうか、言語を設定し、それは特定の日付または時刻に公開または未公開のようになる必要があるかどうかをすることも可能です。
+アセットにタイトルを付ける事ができますし，カテゴリと同様に説明やエイリアスを付ける事もができます。アセットは公開済みのカテゴリに対しアサインできます。したがって，カテゴリセクションのドロップダウンリストには未公開のカテゴリは表示されてきません。公開・未公開を問わず言語を設定する事も可能ですし，また特定に日時に公開・非公開とする事も可能です。
 
-Assets can only be assigned to published categories, therefore the dropdown list for category selection will not feature unpublished categories.  It is also possible to set the language, whether the asset is published or unpublished, and whether it should become published or unpublished at a specific date or time.
-
-When the details have been completed, click 'Save & Close' or 'Apply' to save changes to the asset.
+すべての項目が入力したら '保存して閉じる' や '適用' を押してアセットへの変更を反映してください。
 
 ### Viewing an asset
 
