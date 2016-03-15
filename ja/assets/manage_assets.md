@@ -43,7 +43,7 @@
 
 ![Create a new asset](/assets/media/assets-newasset.png "Create a new asset")
 
-アセットはコンピュータのローカルリソースやリモートから追加できます。ローカルからアップロードする場合，
+アセットはコンピュータのローカルリソースやリモートから追加できます。ローカルからアップロードする場合，サーバによってアップロードするファイルサイズに上限が設けられている場合があります。制限についてはアップロード時の画面で警告されます。
 Assets can be added from local resources on a computer or from a remote location.  Local uploads will be restricted by size due to the settings of your server - any such restriction may be advised as a warning above the file upload area.
 
 ### Uploading an asset
