@@ -30,7 +30,7 @@ php /path/to/mautic/app/console mautic:campaigns:update
 
 スクリプト毎に実行させるリードの数を `--max-leads` オプションで制限し，サーバリソースの消費を押させることもできます。
 
-**To execute campaigns events:**
+**キャンペーンイベントの実行:**
 
 ```
 php /path/to/mautic/app/console mautic:campaigns:trigger
@@ -51,9 +51,9 @@ php /path/to/mautic/app/console mautic:email:process
 ```
 
 ### 監視中のメールを取得・処理させる ###
- 
+
 [Bounce Management](./../emails/bounce_management.html) を使っている場合,  
- 
+
 ```
 php /path/to/mautic/app/console mautic:fetch:email
 ```
@@ -67,10 +67,10 @@ php /path/to/mautic/app/console mautic:webhooks:process
 ```
 
 ### MaxMind GeoLite2 IP データベースを最新に保つ
- 
+
  Mautic は [MaxMind's](http://www.maxmind.com) GeoLite2 IP データベースを標準で使用しています。データベースは (クリエイティブコモンズ 表示--継承 3.0 非移植)[http://creativecommons.org/licenses/by-sa/3.0/deed.ja] でライセンスされており， Mautic のパッケージに同梱できません。データベースは Mautic の設定中に手動でダウンロードするか，自動で更新をダウンロードさせるために cron job で使用できる次のスクリプトを実行するかのいずれかとなっています (MaxMind のデータベース更新は毎月第一火曜日です)。
- 
- 
+
+
 ```
 php /path/to/mautic/app/console mautic:iplookup:download
 ```
@@ -87,4 +87,3 @@ php /path/to/mautic/app/console mautic:iplookup:download
 cron job に関連する諸問題において問題解決の一助となるのが，出力をパイプすることです。たとえば`>path/to/somefile.log 2>&1` のように各 cron job の末尾に追加し特定のファイルへ書き出すことです。これによりファイルの中に何が出力されているかを確認することができます。cron job の実行中にエラーが起こっているようであればその内容をファイル読むことで確認できます。エラーがない場合はファイルの中身は空白か他のステータスが残っているはずです。ファイルの最終更新時刻は最後に cron job が実行された時間です。これにより，cron job がスケジュール通りに正しく実行されたのかそうでないかを推測することができます。
 
  SSH アクセスが可能であれば，なにかしらエラーが起こっていないかを直接確認するコマンドを試してみてください。 SSH セッションのもの以外がなかったり，cron の出力が上で説明した通りだったりする場合，サーバのログを確認してみてください。次とよく似たエラーを確認ことができます: `'Warning: Invalid argument supplied for foreach()' in /vendor/symfony/console/Symfony/Component/Console/Input/ArgvInput.php:287` この場合は `php` ではなく `php-cli` か `php -d register_argc_argv=On` を使う必要があります。
- 
