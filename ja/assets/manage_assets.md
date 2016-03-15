@@ -67,11 +67,11 @@ A download URL allows previewing of the asset - clicking on the link will open t
 
 Below the preview link will be displayed recent activity for this resource, with a preview of the resource being available beneath the chart for some formats.
 
-### Editing an asset
+### アセットの編集
 
-An asset can be edited by clicking on the 'edit' button while viewing the asset, or by selecting the arrow next to the checkbox for the asset, and selecting 'edit'.  The edit screens are the same as the view screens, however content will be populated in the fields.
+アセットはアセットの閲覧画面にある '編集' ボタンを押下するか，チェックボックスの隣にある矢印を選択し，'編集' をクリックすることで編集することが可能です。アセットの編集画面はアセットの表示画面と同じですが，各入力フィールドがすでに埋められています。
 
-### Deleting an asset
+### アセットの削除
 
 An asset can be deleted by clicking on the 'delete' button while viewing the asset, or by selecting the arrow next to the checkbox for the asset, and selecting 'delete'.  A confirmation screen will be displayed, prompting confirmation that the asset should be deleted.
 
