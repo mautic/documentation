@@ -1,32 +1,32 @@
-# Theme structure
+# テーマ構造
 
-## Folder structure
+## フォルダ構成
 
-Themes are located inside individual folders - one per theme - within the directory structure of a Mautic installation.  This folder should be accessed using a file transfer system such as FTP or SSH.
+テーマは、Mauticインストールのディレクトリ構造内に、それぞれのテーマごとに個々のフォルダ内に配置されています。このフォルダにはFTPやSSHなどのファイル転送システムを使用してアクセスする必要があります。
 
 ![Theme folder structure](/themes/media/themes-folderstructure.png "Theme Folder Structure")
 
-## File structure
+## ファイルの構造
 
-Mautic themes generally follow a similar structure, as can be seen in the themes which ship with a basic installation.
+基本インストールに同梱されたテーマに見られるように、Mauticテーマは一般的には同様の構造に従っています。
 
 ![Theme file structure](/themes/media/themes-filestructure.png "Theme File Structure")
 
-Within the theme folder there are subfolders which contain the CSS files, PHP files, and in some cases, image files.  There is also a config.php file which contains the base settings for the theme.
+テーマフォルダ内には、CSSファイル、PHPファイル、テーマによっては画像ファイルを含むサブフォルダがあります。また、テーマの基本設定が含まれてconfig.phpファイルもあります。
 
-### Config.php
+### config.php
 
-The configuration file includes an array which specifies the name of the theme, features available (e.g. landing page template, email template, form template etc) and the positions which are available in the landing page and email templates to be used.
+設定ファイルは配列を含んでいて、そこでテーマの名前、利用可能な機能（例えば、ランディングページテンプレート、メールテンプレート、フォームテンプレートなど）、ランディングページとメールで利用可能な位置を指定しています。
 
 ### CSS
-Within the CSS folder are contained any stylesheets which are required by the theme, usually named according to the theme name - for example, mauve.css.
+CSSフォルダ内には、テーマに必要とされるどんなスタイルシートでも含めることができます。通常はテーマ名に従って、例えばmauve.cssなどの名前付けられています。
 
-Styling used in themes can be adjusted and altered, however it is sensible to clone the theme and rename it, making edits in the clone, rather than edit the core files directly.
+テーマで使用されるスタイリングは調整、変更することができますが、直接そのコアファイルを編集するよりも、テーマのクローンを作成して名前を変更し、そのクローンで編集を行う方が賢明です。
 
 ### HTML
-The HTML folder contains the files which control the layout of the different aspects of Mautic.
+HTMLフォルダにはMauticの異なる側面のレイアウトをコントロールするファイルが含まれています。
 
-Generally a theme will include the following files:
+通常、テーマには以下のファイルが含まれます:
 
 * base.html.php
 * email.html.php
@@ -35,20 +35,19 @@ Generally a theme will include the following files:
 * page.html.php
 
 #### base.html.php
-This file contains the basic structural layout for landing pages, including the <head></head> tags, and importing any stylesheets and javascript that may be required.
+このファイルは<head></head>タグを含むランディングページのための基本的な構造レイアウトを含んでいて、必要に応じて任意のスタイルシートとJavaScriptをインポートします。
 
 #### email.html.php
-This file contains the structural layout and inline styling which controls the look and feel of emails.
+このファイルにはメールのルック・アンド・フィールをコントロールする構造レイアウトとインラインスタイリングが含まれています。
 
 #### form.html.php
-This file controls the layout, look and feel of forms which are associated with the theme, including semantic markup.
+このファイルはセマンティックなマークアップを含むテーマに関連付けられているフォームのレイアウトと外観をコントロールします。
 
 #### message.html.php
-This file is used to display messages - such as the post-submission messages on a form.
+このファイルは、フォーム送信のメッセージなど、メッセージの表示に使われます。
 
 #### page.html.php
-This file controls the layout, position and semantic markup for landing pages.
+このファイルは、ランディングページのレイアウト、位置、そしてセマンティックなマークアップをコントロールします。
 
-### Images
-If images are used within a theme, they can be stored in the images folder.  This folder may not be present if images are not being used by a theme.
-
+### 画像
+テーマ内で画像を使用する場合はその画像を画像フォルダに格納することができます。テーマが画像を使用していなければ、このフォルダはなくてもかまいません。
