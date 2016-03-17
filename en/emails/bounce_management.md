@@ -28,7 +28,7 @@ This is not required, but if you'll want to be able to select the leads with bou
 2. Type in the list name. For example *Bounced emails*.
 3. Select the *Filters* tab.
 4. Create new *Bounced Email* equals Yes filter.
-5. Wait for the `app/console mautic:list:update` command to be automatically triggered by a cron job or execute it manually.
+5. Wait for the `app/console mautic:leadlists:update` command to be automatically triggered by a cron job or execute it manually.
 
 All leads with bounced emails should appear in this list.
 

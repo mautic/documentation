@@ -22,3 +22,5 @@ The checkmark which shows before each label title is a clickable toggle which wi
 You can create additional custom fields and define the data type you want that field to hold. In addition to the data type you will also select the group for that particular field. This will define where the field displays on the lead edit and detail view.
 
 ![](http://drop.dbh.li/image/1k3U1p3J3Y2u/Image%202014-11-16%20at%209.43.52%20PM.png)
+
+The `boolean format` only admits `0` and `1` values when you import leads via a csv file. The `Boolean Labels` you have the opportunity to setup in the **field setting tab** does not allow a different `value` in the leadfield.
