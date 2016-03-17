@@ -1,50 +1,50 @@
-# Campaign Builder
+# キャンペーンビルダー
 
-The Mautic campaign builder gives you a blank canvas upon which to build your campaign workflow. The overall interface is clean and simple with easy to use actions and decisions. These actions, decisions, or conditions can be either clicked or dragged and dropped onto the campaign builder canvas.
+Mauticキャンペーンビルダーは、キャンペーンのワークフローを構築するための空白のキャンバスを提供します。全体的なインタフェースは、クリーンでシンプルで、アクションやディシジョンに簡単に使用できます。これらのアクション、ディシジョン、または条件をクリックするか、キャンペーンビルダーのキャンバスにドラッグアンドドロップすることができます。
 
-### Actions
+### アクション
 
-Campaign actions are those items which are initiated by you. These are items which you will control and which affect your leads involved in the campaign. Examples of these actions are adjusting a lead's point totals, moving a lead to a different campaign, modifying the lists a particular lead is a part of, and lastly but perhaps most importantly sending of an email.
+キャンペーンアクションはあなたによって開始される項目です。これらは、あなたがコントロールし、キャンペーンに関連するリードに影響を与えるアイテムです。これらのアクションの例としては、リードのポイント合計を調整したり、リードを別のキャンペーンに移動したり、特定のリードが含まれるリストを修正したりすることがありますが、おそらく最も重要なのはメールの送信でしょう。
 
-When you create a campaign you will select one of these actions to begin the workflow. In most cases this initial step will be an email sent to your lead lists.
+キャンペーンを作成するには、ワークフローを開始するためにこれらのアクションのいずれかを選択します。ほとんどの場合、この最初のステップはリードのリストに送信するメールになります。
 
 ![](http://drop.dbh.li/image/2932301v1X1V/Image%202014-11-21%20at%204.04.12%20PM.png)
 
-You will notice that when you add an email to a campaign you will be able to select a potential *delay* for when the email is delivered.
+キャンペーンにメールを追加すると、メール配信の*遅延*を選択することができるようになることに気づくでしょう。
 
-After you have added an action you will more than likely place a decision on the campaign.
+アクションを追加した後は、たいていはキャンペーンに関するディシジョンを配置します。
 
-### Decisions
+### ディシジョン
 
-Decisions are actions which are initiated by the lead. These decisions can be either directly initiated or implied based on non-action. Samples of these decisions are downloading an asset, opening an email, submitting a form, or visiting a landing page.
+ディシジョンはリードによって開始されるアクションです。これらのディシジョンは、直接開始または非アクションに基づいて暗示することができます。これらのディシジョンのサンプルとしては、アセットのダウンロード、メールの開封、フォームの送信、ランディングページへの訪問があります。
 
-Decisions are taken in response to an action and as such a decision has two outcomes.
+ディシジョンはアクションに応答し、そして一つのディシジョンは2つの結果を持ちます。
 
 ![](http://drop.dbh.li/image/1h3106221l1F/Image%202014-11-21%20at%204.07.35%20PM.png)
 
-These two options are demonstrated by the green and red decision points on the decision.  Each path can then be handled by your campaign. This process is typically referred to as a **decision tree**.
+これら二つのオプションは、ディシジョン上の緑と赤のディシジョンポイントによって明示されています。そして各パスはキャンペーンによって処理することができます。このプロセスは一般的に**ディシジョンツリー**と呼ばれます。
 
-__It is important to note that a lead must already be part of the campaign in order for it to recognize the decision executed. Therefore, campaigns should never start with a decision unless you are manually managing the leads assigned to it and the decision is expected to be executed at a later time.__ 
+__ディシジョンの実行を認識するためには、リードがそのキャンペーンの一部でなければならないことに留意してください。したがって、そのディシジョンに割り当てられたリードを手動で管理しているのではない限り、またそのディシジョンが後で実行される予定ではない限り、そのディシジョンとともにキャンペーンを始めるべきではありません。__
 
-#### Lead-initiated Decision Path (Green Points)
+#### リードによる開始のディシジョンパス（緑のポイント）
 
-Actions attached to the green point of a decision are considered lead-initiated points.
+ディシジョンの緑のポイントにアタッチされているアクションは、リードによる開始点とみなします。
 
-The lead-initiated decision path is taken as a result of a leads direct action such as opening an email or submitting a form. Connected actions will be executed (or scheduled if a delay is set) at the time the lead took the action. 
+リードによる開始ディシジョンのパスは、メールを開いたりフォームを送信したりするような、リードによる直接的なアクションの結果として取られます。接続されたアクションはリードがアクションをとった時に実行されます（もしくは遅延時間が設定されている場合はスケジュールされます）。
 
-#### Non-action Initiated Decision Path (Red Points)
+#### 非アクションによる開始ディシジョンパス（赤のポイント）
 
-Actions attached to the red point of a decision are considered non-action points. This path is taken as a result of a lead NOT taking some direct action.
+ディシジョンの赤い点に接続されているアクションは、非アクションのポイントとみなします。このパスは、リードが直接アクションを取っていない結果としてて受け取られます。
 
-Use an action's delay settings to define at what point should the campaign send the lead down this path.
+アクションの遅延設定を利用して、キャンペーンがリードをこのパスへ送るのはどのポイントなのかを定義します。
 
-To trigger this events, see [Executing Campaign Actions](https://www.mautic.org/docs/campaigns/manage_campaigns.html#executing-campaign-actions).
+このイベントをトリガするには、[キャンペーンのアクションの実行](https://www.mautic.org/docs/campaigns/manage_campaigns.html#executing-campaign-actions)を参照してください。
 
-#### Example
+#### 例
 
-To provide a simple example of a decision tree consider an email where the decision is to open an email. There are two outcomes, if the lead chooses to open the email then the green decision point leads to the next action to be taken in the campaign workflow. If, however, the lead does not open the email then you may desire a different action to be taken (e.g. a delay of 30 days then a second email sent).
+ディシジョンツリーの簡単な例として、メールを開くというディシジョンを見てみましょう。結果2つあり、ひとつはリードがメールを開くことを選択した場合で、そうすると次に緑のディシジョンポイントはキャンペーンのワークフローでの次のアクションにつながります。しかし、もしリードがメールを開かない場合、別のアクション（例えば、30日後に第2のメールを送る）を取ることもできます。
 
 
-### Conditions
+### 条件
 
-Conditions can be used to execute different actions based on a lead's data.  For example, a condition can be configured to execute an action if a lead has an email or do something else if they do not.
+条件は、リードのデータに基づいたさまざまなアクションを実行するために使用することができます。例えば、リードがメールを持っている場合にあるアクションを実行し、もってなければ別のアクションを実行するように設定することができます。
