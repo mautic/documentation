@@ -1,24 +1,24 @@
-# Manage Fields
+# フィールドの管理
 
-The manage fields page will let you view all existing lead fields as well as any custom lead fields you've created.
+フィールド管理のページでは、既存のすべてのリードフィールドだけでなく、カスタムに作成したすべてのリードフィールドを表示されます。
 
 ![](http://drop.dbh.li/image/190V1w2j2P1Z/Image%202014-11-16%20at%209.34.35%20PM.png)
 
-You will notice the group column which will show you where the specific field will be shown on the lead profile. In the last column, you may see several icons which signify various properties of the field:
+リードプロファイルでは、特定のフィールドが表示されるグループ絡むがあります。最後のカラムでは、フィールドの様々な特性を表すいくつかのアイコンが表示されます。
 
-1. Lock icon - These fields are unable to be removed as they are used by the core installation. 
-2. List icon - These fields can be used as filters of smart lists.
-3. Asterisks icon - These fields are required when filling in the lead form
-4. Globe icon - These fields are publicly updatable through the tracking pixel URL query (see [Lead Monitoring]](http://docs.mautic.org/leads/lead_monitoring.html) for more details).
+1.ロックアイコン - これらのフィールドはコアインストールで使用されているので削除できません。
+2.リストアイコン - これらのフィールドはスマートリストのフィルタとして使用することができます。
+3.アスタリスクアイコン - これらのフィールドは、リードフォームの必須の入力です。
+4.地球のアイコン - これらのフィールドは、トラッキングピクセルのURLクエリを通じてパブリックに更新可能です(詳細は [リードのモニター]](http://docs.mautic.org/leads/lead_monitoring.html) をご覧ください)。
 
-### Published Fields
+### 公開されたフィールド
 
-The checkmark which shows before each label title is a clickable toggle which will publish and unpublish the field.
+各ラベルのタイトルの前のチェックマークは、フィールドの公開、非公開を変更可能なトグルです。
 
 ![](http://drop.dbh.li/image/3S1u0k1X463v/Screen%20Recording%202014-11-16%20at%2009.37%20PM.gif)
 
-### New Field
+### 新規フィールド
 
-You can create additional custom fields and define the data type you want that field to hold. In addition to the data type you will also select the group for that particular field. This will define where the field displays on the lead edit and detail view.
+追加のカスタムフィールドを作成し、そのフィールドが保持するデータ型を定義することができます。データ型に加えて、特定のフィールドのグループを選択できます。これは、リードの編集、詳細ビュー上のどこにフィールドが表示されるかを定義します。
 
 ![](http://drop.dbh.li/image/1k3U1p3J3Y2u/Image%202014-11-16%20at%209.43.52%20PM.png)
