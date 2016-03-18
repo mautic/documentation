@@ -1,30 +1,30 @@
-# Lead Monitoring
-The act of monitoring the traffic and activity of leads can sometimes be somewhat technical and frustrating to understand. Mautic makes this monitoring simple and easy to configure.
+# リードのモニター
+リードのトラフィックやアクティビティのモニターは、時には技術的で理解するのにてこずることがあります。Mauticはこのモニタリングを簡単、容易に設定できます。
 
-### Website Monitoring
+### ウェブサイトモニタリング
 
-Monitoring all traffic on a website can be done by adding a single tracking pixel to the website.  It is important to note that traffic will not be monitored from logged-in Mautic users.  To check that the pixel is working, use an incognito or private browsing window or simply log-out of Mautic prior to testing.
+ウェブサイト上のすべてのトラフィックを監視は、ウェブサイトにひとつのトラッキングピクセルを追加することによって行うことができます。ログインしているMauticユーザーからのトラフィックはモニターされませんので、ご注意ください。ピクセルが作動していることを確認するには、ブラウザのシークレットウインドウまたはプライベートウィンドウを使用するか、単にテスト前にMauticからログアウトしてください。
 
 ```
 http://yourdomain.com/mtracking.gif
 ```
 
-### Tracking Pixel Query
+### トラッキングピクセルクエリー
 
-To get the most out of the tracking pixel, it is recommended that you pass information of the web request through the image URL.  
+トラッキングピクセルを最大限に活用するために、画像のURLを通じてウェブリクエストの情報を渡すことをお勧めします。
 
-#### Page Information
+#### ページの情報
 
-Mautic currently supports `page_url`, `referrer`, `language`, and `page_title` (note that the use of `url` and `title` are deprecated due to conflicts with lead fields).
+Mauticはいまのところ `page_url`, `referrer`, `language`, そそて `page_title` ( `url` と `title` はリードフィールドとのコンフリクトのため廃止予定ですのでご注意ください。)をサポートしています。
 
-#### UTM Codes 
+#### UTMコード
 
-Support for UTM codes in the lead time-line was introduced in version 1.2.1. `utm_medium`, `utm_source`, and `utm_campaign` are used to generate the content of the time-line entry.
+リードタイムラインでのUTMコードのサポートはバージョン1.2.1で導入されました。 `utm_medium`、` utm_source`、および `utm_campaign`はタイムラインのエントリの内容を生成するために使用されます。
 
-`utm_campaign` will be used as  the time-line entry's title.
+`utm_campaign`はタイムラインエントリのタイトルとして使用されます。
 
-`utm_medium` values are mapped to the following Font Awesome classes:
- 
+`utm_medium`の値は次のFont Awesome クラスにマップされます。
+
 <table>
 <thead>
 <tr>
@@ -42,21 +42,21 @@ Support for UTM codes in the lead time-line was introduced in version 1.2.1. `ut
 </tbody>
 </table>
 
-#### Lead Fields
+#### リードフィールド
 
-You can also pass information specific to your lead by setting Mautic lead field(s) to be publicly updatable. Note that values appended to the tracking pixel should be url encoded (%20 for spaces, %40 for @, etc).
+また、Mauticのリードがパブリックに更新可能なように設定しておけばリードに特定の情報を渡すことができます。トラッキングピクセルへの値の追加はURLエンコード(%20 がスペース、 %40 が @ など)になりますのでご注意ください。
 
-#### Tags
+#### タグ
 
-The lead's tags can be changed by using the `tags` query parameter. Multiple tags can be separated by comma. To remove a tag, prefix it with a dash (minus sign).  
+リードのタグは `tags`クエリパラメータを使用して変更することができます。複数のタグはカンマで区切ってください。タグを削除するには、ダッシュ（マイナス記号）を前に付けます。
 
-For example, `mtracking.gif?tags=ProductA,-ProductB` would add the ProductA tag to the lead and remove ProductB.
+たとえば、 `mtracking.gif?tags=ProductA,-ProductB` はリードにProductAタグを追加して、ProductBを取り除くことになります。
 
-### Embedding the Pixel
+### ピクセルの埋め込み
 
-If you are using a CMS, the easiest way is to let one of our plugins do this for you (see below). Note that the plugins may not support all lead fields, utm codes or lead tags.
+CMSを使用している場合、最も簡単な方法はプラグインのどれかを利用することです。プラグインは、リードフィールド、UTMコード、もしくはリードタグのすべてサポートしていない可能性があるのでご注意ください。
 
-Here are a couple code snippets that may help as well:
+例としていくつかのコードをご紹介します:
 
 HTML
 
@@ -92,9 +92,9 @@ body.appendChild(img);
 </script>
 ```
 
-#### Available Plugins
+#### 使用可能なプラグイン
 
-Mautic makes this even easier by providing key integrations to many existing content management systems. You can download and use any of the following plugins to automatically add that tracking pixel to your website.
+Mauticでは多くの既存のコンテンツ管理システムにキーの統合を提供することで、これをさらに容易にしています。ダウンロードして次のプラグインのいずれかを使用することにより、ウェブサイトにこのトラッキングピクセルを自動的に追加します。
 
 * [Joomla!](http://mautic.org/integration/joomla)
 * [Drupal](http://mautic.org/integration/drupal)
@@ -102,62 +102,62 @@ Mautic makes this even easier by providing key integrations to many existing con
 * [Typo3](http://mautic.org/integration/typo3)
 * [Concrete5](http://mautic.org/integration/concrete5)
 
-These are just a few of the integrations already created by the Mautic community. More will be added in the future and developers are encouraged to submit their own integrations.
+これらはすでにMauticコミュニティによって作成されている統合のほんの一部です。将来的にはさらに追加されでしょう。また、開発者は自分の統合を提案するようおすすます。
 
-**Note:** It is important to note that you are not limited by these plugins and you can place the tracking pixel directly on any HTML page for website tracking.
+**注:** ウェブサイトのトラッキングはこれらのプラグインによって限定されるものではなく、任意のHTMLページ上で直接トラッキングピクセルを置くことができることに留意してください。
 
-### Mobile Monitoring
+### モバイルモニター
 
-The essence of monitoring what happens in an App is similar to monitoring what happens on a website. Mautic contains the building blocks needed for native (or pseudo-native) and HTML5-wrapper based Apps, regardless of platform.
+アプリで発生していることのモニターは本質的には、ウェブサイト上で発生していることのモニターに似ています。Mauticには、プラットフォームに関係なく、ネイティブな（または擬似ネイティブ）とHTML5ラッパーベースのアプリのために必要なビルディング・ブロックが含まれています。
 
-In short, use named screen views (e.g. main_screen) in your App as your page_url field in the tracker, and the lead's email as the unique identifier, see next section for detailed instructions.
+簡単に言うと、トラッカーのpage_urlフィールドとしてアプリ内の名前付けしたスクリーンビュー(例えば、main_screen)と一意の識別子としてリードのメールアドレスを使います。詳細は次のインストラクションを御覧ください。
 
 
-#### Steps in Mautic
+#### Mauticでのステップ
 
-1. Make the email field publicly editable, this means that a call to the tracking GIF with the variable email will get properly recognized by Mautic.
+1.メールフィールドをパブリックに編集できるようにします。これにより可変のメールをともなったトラッキングGIFへの呼び出しがMauticによって正常に認識されます。
 
-2. Setup a form, which will be the access point of your campaign (e.g. a new lead email). Make this form as simple as you can, as you will be POST-ing to it from your App. The typical form URL you will POST to is
+2.フォームをセットアップします。これがキャンペーンのアクセスポイントになります（例えば新しいリードへのメール）。このフォームはアプリからPOSTするので、出来る限りシンプルにします。 POSTする一般的なフォームのURLは次のようになります
 
 ```
 http://your_mautic/form/submit?formId=<form_id>
 ```
 
-You can get the ID from the mautic URL as you view / edit the form in the Mautic interface (or in the forms tables, last column), and you can get the form fields by looking at the HTML of the 'Manual Copy' of the HTML in the forms editing page.
+Mauticインターフェイス内(もしくはフォームテーブルの最後のカラム)のフォームを閲覧 / 編集することによりMauticのURLからIDを収得することができ、フォーム編集ページ内のHTMLの「手動コピー」のHTMLを見ることによりフォームフィールドを取得することができます。
 
 
-3. Define in your campaigns the screens you want to use as triggers (e.g. 'cart_screen' etc.). Mautic is not looking for a real URL in the form 'http://<url>' for page_url, any typical string would do. Like this:
+3.キャンペーンでトリガーとして使用する画面を設定します（例えば、「cart_screen」など）。Mauticはpage_urlのためには 'http://<url>' 形式の実際のURLは探しません。通常の文字列を探します。例えば:
 
 ```
 http://yourdomain.com/mtracking.gif?page_url=cart_screen&email=myemail@somewhere.com
 ```
 
-#### In your App
+#### アプリ内では
 
-A best-in-class approach is to have a class (say 'mautic') that handles all your tracking needs. For example, this sample method call would POST to the form with ID 3 - see previous section (note: for conciseness and ubiquity, these sample lines are written in JavaScript / ECMAScript-type language, use similar call in your mobile App language of choice).
+一番いいアプローチは、すべてのトラッキングニーズを処理するクラス（例えば 'mautic'）を持たせることです。たとえば、次のサンプルのメソッド呼び出しはID 3でフォームにPOSTします - 前節を御覧ください（注意: 簡潔性と普遍性のため、これらのサンプルはJavaScript / ECMAScriptタイプの言語で書かれています。アプリではお使いの言語で似たような呼び出しを使用してください。
 
 ```
 mautic.addLead("myemail@somehwere.com",3)
 ```
 
-And then, to track individual user activity in the App, this sample call would make an HTTP request to the tracker:
+そして、アプリ内の個々のユーザアクティビティを追跡するため、このサンプルコールではトラッカーへのHTTP要求を行っています:
 
 ```
 mautic.track("cart_screen", "myemail@somewhere.com")
 ```
 
-Which is nothing more than an HTTP request to this GET-formatted URL (as also shown in previous section):
+これは（前のセクションで示したように）GET形式URLへのHTTPリクエスト以外の何ものでもありません。
 
 ```
 http://yourdomain.com/mtracking.gif?page_url=cart_screen&email=myemail@somewhere.com
 ```
 
-Important: Make sure in your App, that the above HTTP request is using a cookie (if possible, re-use the cookie from the mautic.addLead POST request prior) AND that you reuse this cookie from one request to the next. This how Mautic (and other tracking software) knows that it's really the same user. If you can't do this, you may run in the (unlikely but possible) case where you have multiple leads from the same IP address and Mautic will merge them all into a single lead as it can't tell who is who without a cookie.
+重要: 上記のHTTPリクエストがcookie(可能なら、mautic.addLead POSTリクエストからのcookieを再利用)を使用していること、そしてこのcookieを一つのリクエストから次のリクエストまで再利用しているをアプリ内で確認してください。これにより、それが本当に同一のユーザーであることをMautic(と、その他のトラッキングソフトウェアでも)が認識できます。これを行うことができない場合、同じIPアドレスから複数のリードがアクセスしたらMauticはcookieなしでは誰がどのリードなのか判別ができないので単一のリードに統合してしまうことがあります(めったにはないでしょうが、可能性はあります)。
 
-### Other Online Monitoring
+### その他のオンラインモニタリング
 
-There are several other ways to monitor lead activity and attach points to those activities. Website monitoring is only one way to track leads. Other lead monitoring activities can consist of forum posts, chat room messages, mailing list discussion posts, GitHub/Bitbucket messages, code submissions, social media posts, and a myriad of other options.
+リードのアクティビティをモニターし、それらのアクティビティにポイントを付与する方法は他にもいくつかあります。ウェブサイトのモニターはリードを追跡するための一つの方法にすぎません。リードのその他のアクティビティモニターは、フォーラムの投稿、チャットルームでのメッセージ、メーリングリストのディスカッションの投稿、GitHub/Bitbucketでのメッセージ、コードの提案、ソーシャルメディアの投稿、およびその他の無数のオプションで構成することができます。
 
-### Troubleshooting
+### トラブルシューティング
 
-If the tracking doesn't work, take a look at [Page troubleshooting](pages/troubleshooting.html) or [Email troubleshooting](emails/troubleshooting.html)
+トラッキングが機能しない場合は [トラブルシューティングのページ](pages/troubleshooting.html) もしくは [メールのトラブルシューティング](emails/troubleshooting.html)を御覧ください。
