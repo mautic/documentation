@@ -1,46 +1,46 @@
-# Manage Leads
+# リードの管理
 
-The manage leads page is the main interface through which you can view and interact with your leads - both anonymous leads and those with additional information available.
+リード管理ページは、匿名リードと付加情報のあるリードの両方の閲覧とやり取りを行う主なインターフェースとなります。
 
-## Lead Lists
+## リードリスト
 
-The lead list is the default tabular view of all the leads in the system - by default the 'list view' is enabled, but you can also choose to switch to the 'grid view' which uses avatars to depict the leads visually using 'cards'. Clicking the appropriate button on the top right will allow you to switch between the two views.
+リードリストには、システム内のすべてのリードをデフォルトの表形式で表示していあます。デフォルトでは「リストビュー」が有効になっていますが、アバターを使ってリードを視覚的に表示させる「カード」を利用した「グリッドビュー」にも切り替えることができます。右上の該当するボタンをクリックすると、この2つのビューを切り替えることができます。
 
-Hint: If you prefer using keyboard shortcuts you can enter "t" on your keyboard to dynamically switch to table view and "c" to switch to the card view.
+ヒント: キーボードショートカットでは「t」を押すとテーブルビューに、「c」を押すとカードビューに切り替えることができます。
 
-## Searching for leads
+## リードの検索
 
-The lead list can be searched using the box at the top of the list, and can be ordered using the table headings by clicking on the heading you wish to sort the list by.
+リードリストはリストの一番上にあるボックスを使って検索することができます。また、ソートしたい見出しをクリックすることで、表の見出しを使用して並べ替えるこごができます。
 
 ![](http://drop.dbh.li/image/1m2J3u1d3z1T/Image%202014-11-17%20at%2010.29.08%20AM.png)
 
-The search box allows many different search types and follows the same search process and variables as found in all other search layouts. You can learn more about the powerful search options available on the search documentation page.
+検索ボックスは、多くの異なる検索タイプが可能で、他のすべての検索レイアウトと同じような検索処理と変数が使えます。利用可能な強力な検索オプションについては検索ドキュメントページでご覧になれます。
 
-## Adding leads quickly
+## リードを簡単に追加
 
-If you have leads you would like to quickly add to Mautic manually, and they are not in the system as part of the normal workflow (for example by completing an enquiry form or having been imported) you can use the Quick Add Lead button to add them to the system.
+Mauticにすぐに手動で追加したいリードがいる場合、通常のワークフロー(例えば問い合わせフォームやインポートなど)の一部としてシステムの中にいなければ、リードクイック追加ボタンを利用してシステムに追加することができます。
 
-You can of course also add them through the New Lead form and add much more detail but for quick entry this is the easiest and fastest way to get the lead into the system.
+もちろん、新規リードフォームを通じてはるかに詳細に追加することもできますが、素早く追加するにはこれがシステムにリードを取り込む最も簡単かつ最速の方法です。
 
-## Adding leads normally
+## リードの通常の追加
 
-If you have leads to import and you have time to add all the information, click on the dropdown arrow to the right of 'Quick Add Lead' and select 'New'.  This opens the new lead screen, where you can enter all the information you have about the lead.  Use the tabs at the top to add custom fields and social network profiles.
+インポートするリードがすでにあり、すべての情報を追加するための時間もある場合、「リードクイック追加」の右にあるドロップダウン矢印をクリックし、「新規」を選択します。これは新しいリード画面を開き、ここでリードについて持っているすべての情報を入力することができます。カスタムフィールドやソーシャルネットワークプロファイルを追加するには上部にあるタブを使用してください。
 
-## Importing leads
+## リードのインポート
 
-Mautic offers the ability to import leads from other sources via CSV file - this is a great way to get up and running quickly if you need to import a lot of leads at once.
+MauticはCSVファイル経由で他のソースからリードをインポートすることができます。これは一度に多くのリードをインポートする必要がある場合はとても便利な方法です。
 
-To use the import facility, make sure that you first have all the fields set up under 'Manage fields' which correspond to the information you are importing - you don't want to lose any data if at all possible.
+インポート機能を使用するには、データを消失する可能性をなくすため、インポートする情報に相当するフィールドが「フィールド管理」のもとにあることを最初に確認してください。
 
-Once you have created all the lead fields, click on the dropdown arrow to the right of the Quick Add Lead button, and select 'Import'.
+すべてのリードのフィールドを作成したら、リードクイック追加ボタンの右にあるドロップダウン矢印をクリックし、「インポート」を選択します。
 
-Upload your CSV file, and ensure that you match the delimiter, enclosure and escape characters so that the importer can understand the data.
+CSVファイルをアップロードし、区切り文字、エンクロージャーとエスケープ文字が一致しているようにしてください。そうすることによりインポーターはデータを認識できます。
 
-When you click on 'Upload' you will have the opportunity to match the fields found in the CSV file to the fields that you have in Mautic, which will allow the data to be correctly imported.
+[アップロード]をクリックすると、CSVファイルに見つかったフィールドとMauticにあるフィールドが一致するかを確認することができます。これによりデータを正しくインポートすることができます。
 
-## Editing leads
-To edit a lead, click on the name of the lead (or the IP address if the visitor is anonymous) to open the lead screen.
+## リードの編集
+リードを編集するにはそのリードの名前（訪問者が匿名の場合またはIPアドレス）をクリックしてリードスクリーンを開きます。
 
-From this screen, you can view the recent events and any notes that have been made against the lead.
+この画面では、リードに対して行われた最近のイベントとすべての注釈を表示することができます。
 
-To edit the lead, click on the 'edit' button on the top-right menu.
+リードを編集するには右上のメニューにある「編集」ボタンをクリックしてください。
