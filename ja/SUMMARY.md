@@ -22,6 +22,7 @@
 * [Eメール](emails/README.md)
    * [Eメールを管理](emails/manage_emails.md)
    * [バウンスメールのマネージメント](emails/bounce_management.md)
+   * [メーラーオーナー](emails/mailer_is_owner.md)
    * [トラブルシューティング](emails/troubleshooting.md)
 * [レポート](reports/README.md)
 * [ポイント](points/README.md)
