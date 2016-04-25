@@ -160,4 +160,4 @@ There are several other ways to monitor lead activity and attach points to those
 
 ### Troubleshooting
 
-If the tracking doesn't work, take a look at [Page troubleshooting](pages/troubleshooting.html) or [Email troubleshooting](emails/troubleshooting.html)
+If the tracking doesn't work, take a look at [Page troubleshooting](./../pages/troubleshooting.html) or [Email troubleshooting](./../emails/troubleshooting.html)

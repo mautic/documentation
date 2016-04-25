@@ -9,7 +9,7 @@ You will notice the group column which will show you where the specific field wi
 1. Lock icon - These fields are unable to be removed as they are used by the core installation. 
 2. List icon - These fields can be used as filters of smart lists.
 3. Asterisks icon - These fields are required when filling in the lead form
-4. Globe icon - These fields are publicly updatable through the tracking pixel URL query (see [Lead Monitoring]](http://docs.mautic.org/leads/lead_monitoring.html) for more details).
+4. Globe icon - These fields are publicly updatable through the tracking pixel URL query (see [Lead Monitoring](lead_monitoring.html) for more details).
 
 ### Published Fields
 
