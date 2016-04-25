@@ -160,4 +160,4 @@ http://yourdomain.com/mtracking.gif?page_url=cart_screen&email=myemail@somewhere
 
 ### トラブルシューティング
 
-トラッキングが機能しない場合は [トラブルシューティングのページ](pages/troubleshooting.html) もしくは [メールのトラブルシューティング](emails/troubleshooting.html)を御覧ください。
+トラッキングが機能しない場合は [トラブルシューティングのページ](./../pages/troubleshooting.html) もしくは [メールのトラブルシューティング](./../emails/troubleshooting.html)を御覧ください。
