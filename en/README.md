@@ -5,7 +5,7 @@ This book serves as the [documentation for Mautic](https://www.mautic.org/docs/i
 
 ### Download as PDF
 
-[Click here](https://mautic.org/docs/mautic_docs.pdf) to download these docs as a PDF.
+[Click here](https://mautic.org/docs/mautic_docs_en.pdf) to download these docs as a PDF.
 
 ### How to contribute to the docs
 

@@ -4,7 +4,7 @@
 本文書はオープソースのマーケティング自動化システムである[Mautic のドキュメンテーション](https://www.mautic.org/docs/index.html)を担うものです。コードはオープソースであり誰でも入手が可能です。この文書もまたオープンソースです｡本情報に改善が必要であると考える方々の支援をお待ちしています。
 
 ### PDF 版をダウンロード
-[このリンクをクリックして](https://mautic.org/docs/mautic_docs.pdf) PDF 版をダウンロードしてください｡
+[このリンクをクリックして](https://mautic.org/docs/mautic_docs_jp.pdf) PDF 版をダウンロードしてください｡
 
 ### ドキュメンテーションの編集について
 このレポジトリは [Gitbook](https://www.gitbook.com/) 向けのソースコードで [www.mautic.org/docs](https://www.mautic.org/docs/index.html) 上で公開されます。ソースコードは GitHub 上で共有されており，Mautic のコードをプログラマが編集するのと同じように誰でも編集が可能となっています。
