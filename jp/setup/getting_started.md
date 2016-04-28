@@ -36,4 +36,4 @@ cron job のインストールとセットアップが終わると，リード�
 
 `<img src="http://yourdomain.com/path/to/mautic/mtracking.gif" />`
 
-トラッキングピクセルについての詳しい内容は  [リード監視](./../leads/lead_monitoring.html) をご確認ください。
+トラッキングピクセルについての詳しい内容は  [リードの監視](./../leads/lead_monitoring.html) をご確認ください。
