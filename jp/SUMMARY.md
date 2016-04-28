@@ -3,7 +3,7 @@
 * [イントロダクション](README.md)
 * [初めに](setup/getting_started.md)
 * [リード](leads/README.md)
-   * [リードを管理する](leads/managing_leads.md)
+   * [リードの管理](leads/managing_leads.md)
        * [リードの概要](leads/lead_overview.md)
        * [リードの監視](leads/lead_monitoring.md)
    * [リストの管理](leads/manage_lists.md)
