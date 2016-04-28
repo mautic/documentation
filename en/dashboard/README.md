@@ -64,3 +64,13 @@ Stock Mautic installation comes with 3 pre-defined dashboards. The one called *d
 Previewed - It will display the dashboard widgets for preview. It will load in them actual Mautic data. Nothing is saved or changed by the Apply button.
 Applied - It applies the dashobard as your dashboard. Warning: Your current widgets will be deleted by this action! Export the current dashboard if you want to get back to it later.
 Deleted - It will delete the predefined dashboard.
+
+## Widget cache
+
+The WidgetDetailEvent automatically caches the widget detail data for a period of time defined in the configuration. Default cache expiration period is 10 minutes.
+
+## Dashboard Permissions
+
+If a Mautic user doesn't have the see others or see own permissions for a bundle, she/he won't be able to create widgets for said bundle. However, the widget can still be visible at hers/his dashboard. For example if a user creates the widgets and then the admin removes the permission or via import. In that case the widget is there, but with a message that the user doesn't have permission to see the data.
+
+If a Mautic user has permission to see only his/hers own data from a bundle, he/she will see only his/hers own data in the Dashboard widgets. For example only leads which he/she owns, page hits of the pages he/she created and so on.
