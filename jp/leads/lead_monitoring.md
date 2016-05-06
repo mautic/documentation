@@ -3,7 +3,7 @@
 
 ### ウェブサイトモニタリング
 
-ウェブサイト上のすべてのトラフィックを監視は、ウェブサイトにひとつのトラッキングピクセルを追加することによって行うことができます。ログインしているMauticユーザーからのトラフィックはモニターされませんので、ご注意ください。ピクセルが作動していることを確認するには、ブラウザのシークレットウインドウまたはプライベートウィンドウを使用するか、単にテスト前にMauticからログアウトしてください。
+ウェブサイトにひとつのトラッキングピクセルを追加することによってウェブサイト上のすべてのトラフィックを監視することができます。ログインしているMauticユーザーからのトラフィックはモニターされませんので、ご注意ください。ピクセルが作動していることを確認するには、ブラウザのシークレットウインドウまたはプライベートウィンドウを使用するか、単にテスト前にMauticからログアウトしてください。
 
 ```
 http://yourdomain.com/mtracking.gif
@@ -15,7 +15,7 @@ http://yourdomain.com/mtracking.gif
 
 #### ページの情報
 
-Mauticはいまのところ `page_url`, `referrer`, `language`, そそて `page_title` ( `url` と `title` はリードフィールドとのコンフリクトのため廃止予定ですのでご注意ください。)をサポートしています。
+Mauticはいまのところ `page_url`, `referrer`, `language`, そして `page_title`をサポートしています。 ( `url` と `title` はリードフィールドとのコンフリクトのため廃止予定ですのでご注意ください。)
 
 #### UTMコード
 
@@ -28,17 +28,17 @@ Mauticはいまのところ `page_url`, `referrer`, `language`, そそて `page_
 <table>
 <thead>
 <tr>
-    <th>Values</th>
-    <th>Class</th>
+    <th>値</th>
+    <th>クラス</th>
 </tr>
 </thead>
 <tbody>
-   <tr><td>social, socialmedia</td><td>fa-share-alt if <code>utm_source</code> is not available otherwise <code>utm_source</code> will be used as the class. For example, if <code>utm_source</code> is Twitter, fa-twitter will be used.</td></tr>
-   <tr><td>email, newsletter</td><td>fa-envelope-o</td></tr>
-   <tr><td>banner, ad</td><td>fa-bullseye</td></tr>
+   <tr><td>ソーシャル、ソーシャルメディア</td><td>fa-share-alt  <code>utm_source</code> は利用できなければ <code>utm_source</code> がクラスとして利用されます。例えば <code>utm_source</code> がTwitterなら、 fa-twitter が利用されます。</td></tr>
+   <tr><td>メール、ニュースレター</td><td>fa-envelope-o</td></tr>
+   <tr><td>バナー、広告</td><td>fa-bullseye</td></tr>
    <tr><td>cpc</td><td>fa-money</td></tr>
-   <tr><td>location</td><td>fa-map-marker</td></tr>
-   <tr><td>device</td><td>fa-tablet if <code>utm_source</code> is not available otherwise <code>utm_source</code> will be used as the class. For example, if <code>utm_source</code> is Mobile, fa-mobile will be used.</td></tr>   
+   <tr><td>ロケーション</td><td>fa-map-marker</td></tr>
+   <tr><td>デバイス</td><td>fa-tablet <code>utm_source</code> が利用できなければ <code>utm_source</code> がクラスとして利用されます。例えば <code>utm_source</code> がモバイルなら、fa-mobile が利用されます。</td></tr>   
 </tbody>
 </table>
 
@@ -48,13 +48,13 @@ Mauticはいまのところ `page_url`, `referrer`, `language`, そそて `page_
 
 #### タグ
 
-リードのタグは `tags`クエリパラメータを使用して変更することができます。複数のタグはカンマで区切ってください。タグを削除するには、ダッシュ（マイナス記号）を前に付けます。
+リードのタグは `tags` クエリパラメータを使用して変更することができます。複数のタグはカンマで区切ってください。タグを削除するには、ダッシュ（マイナス記号）を前に付けます。
 
 たとえば、 `mtracking.gif?tags=ProductA,-ProductB` はリードにProductAタグを追加して、ProductBを取り除くことになります。
 
 ### ピクセルの埋め込み
 
-CMSを使用している場合、最も簡単な方法はプラグインのどれかを利用することです。プラグインは、リードフィールド、UTMコード、もしくはリードタグのすべてサポートしていない可能性があるのでご注意ください。
+CMSを使用している場合、最も簡単な方法はプラグインのどれかを利用することです。プラグインは、リードフィールド、UTMコード、もしくはリードタグのすべてをサポートしていない可能性もあるのでご注意ください。
 
 例としていくつかのコードをご紹介します:
 
