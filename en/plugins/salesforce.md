@@ -1,6 +1,6 @@
 # Mautic - Salesforce CRM plugin
 
-This plugin can push a lead to Salesforce CRM when a lead makes some action. If you don't have the Salesforce CRM account yet, [create it](http://www.salesforce.com/).
+This plugin can push a contact to Salesforce CRM when a contact makes some action. If you don't have the Salesforce CRM account yet, [create it](http://www.salesforce.com/).
 
 ## Requirements
 

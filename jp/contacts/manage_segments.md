@@ -25,7 +25,7 @@
 スマートリストを最新に保つには、希望する間隔で次のコマンドを実行するcronジョブを作成します:
 
 ```
-php /path/to/mautic/app/console mautic:leadlists:update --env=prod
+php /path/to/mautic/app/console mautic:segments:update --env=prod
 ```
 
 このコマンドの実行により、フィルタに一致するリードが追加され、一致しないリードが削除されます。フィルターに関係なく、手動で追加されたリードはリストにとどまります。

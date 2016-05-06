@@ -2,7 +2,7 @@
 
 This plugin can:
 
-- display the tweets for a lead with valid Twitter handle,
+- display the tweets for a contact with valid Twitter handle,
 - load additional information from the Twitter profile,
 - place a share button to the landing pages.
 
@@ -20,12 +20,12 @@ Don't forget to switch *Published* to *Yes* and save the configuration.
 
 ### Configure the plugin
 
-If your Twitter plugin is authorized correctly, you can configure the *Features* and *Lead Field Mapping* tab in the plugin configuration. The *Features* tab is self-explanatory. The fields like *Tweet text*, *Via*, *Recommended* and *Hashtag* are prepared there for future implementation with Twitter. Read here how to configure the *[Lead Field Mapping](./../plugins/field_mapping.html)*. If you don't have a special field for Twitter handle yet, create it in the Lead Field section.
+If your Twitter plugin is authorized correctly, you can configure the *Features* and *Contact Field Mapping* tab in the plugin configuration. The *Features* tab is self-explanatory. The fields like *Tweet text*, *Via*, *Recommended* and *Hashtag* are prepared there for future implementation with Twitter. Read here how to configure the *[Contact Field Mapping](./../plugins/field_mapping.html)*. If you don't have a special field for Twitter handle yet, create it in the Contact Field section.
 
-The tweets of a lead should appear on the lead's profile as soon as the Twitter handle lead field is filled with an existing Twitter handle.
+The tweets of a contact should appear on the contact's profile as soon as the Twitter handle contact field is filled with an existing Twitter handle.
 
 Use `{sharebuttons}` token in the Mautic Landing Pages in the place where you want to display the share buttons.
 
 ### Twitter API limitations
 
-The original idea was that Mautic will search for additional information about a lead in various social platforms. But since the time the social plugins were written, social platforms restricted the API search to only the username.
+The original idea was that Mautic will search for additional information about a contact in various social platforms. But since the time the social plugins were written, social platforms restricted the API search to only the username.

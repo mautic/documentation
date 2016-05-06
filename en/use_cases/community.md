@@ -6,13 +6,13 @@ As with the other sections the first thing to do is explore terminology. Many of
 
 ### Terminology
 
-**Lead** -  a community member
+**Contact** -  a community member
 
 **Campaign** -  These would be considered engagements.
 
 ### Workflow
 
-When looking at using marketing automation within the community instead of focusing on funneling leads to a particular outcome (for example sales) the workflow would consist more of to manage the community. Managing a community involves determining the most involved community members, recognizing their efforts, and publicly praising them for the work that they are doing.
+When looking at using marketing automation within the community instead of focusing on funneling contacts to a particular outcome (for example sales) the workflow would consist more of to manage the community. Managing a community involves determining the most involved community members, recognizing their efforts, and publicly praising them for the work that they are doing.
 
 It's important to keep in mind when monitoring a community that the most active volunteers are not necessarily the most vocal. Using marketing automation will allow you to find those community members contributing in other ways besides merely vocal participation.
 

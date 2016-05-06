@@ -18,9 +18,9 @@ Form actions are items to be handled on the submission of the form. You can defi
 
 ![](http://drop.dbh.li/image/3o2r2g2s2D1C/Image%202014-11-17%20at%204.23.16%20PM.png)
 
-#### Creating and Updating Leads with Forms ####
+#### Creating and Updating Contacts with Forms ####
 
-To have your form create or update leads (in order to update, there must be a matching email), add the Create/Update Lead submit action. Map the fields from the form to your lead fields. **Note, it is important that this action be ordered first so that the lead's details are available for subsequent actions.** Think of it as the lead has to be created or updated before it can be added to lists, pushed to integrations, etc.
+To have your form create or update contacts (in order to update, there must be a matching email), add the Create/Update Contact submit action. Map the fields from the form to your contact fields. **Note, it is important that this action be ordered first so that the contact's details are available for subsequent actions.** Think of it as the contact has to be created or updated before it can be added to segments, pushed to integrations, etc.
 
 ### Kiosk mode
 
@@ -46,7 +46,7 @@ The form preview provides a popup overview of what the form will look like. Reme
 
 It is possible to pre-populate the value of a form field from the URL query parameters.
 
-The lead field's alias can be obtained from the table when viewing Leads -> Manage Fields. The form field's name is stored as the alias in the database and is auto generated from the field's label; you may have to look at the source of your form to get the exact name (open the form and click the preview button). For example, here is a sample html section taken from a form. The name to use is what's within `mauticform[FIELDNAME]`.
+The contact field's alias can be obtained from the table when viewing Contacts -> Manage Fields. The form field's name is stored as the alias in the database and is auto generated from the field's label; you may have to look at the source of your form to get the exact name (open the form and click the preview button). For example, here is a sample html section taken from a form. The name to use is what's within `mauticform[FIELDNAME]`.
 
 ```
 <div class="mauticform-row mauticform-email mauticform-row-email" id="mauticform_email">
@@ -57,12 +57,12 @@ The lead field's alias can be obtained from the table when viewing Leads -> Mana
 
 #### Pre-populate the values automatically in an email
 
-Embed the tokens {leadfield=FIELDALIAS|true}, one for each lead specific information you want to pre-populate the form with, into the URL, assigning them to the name of your form field.The |true tells Mautic to URL encode the value so that it works in the browser.
+Embed the tokens {leadfield=FIELDALIAS|true}, one for each contact specific information you want to pre-populate the form with, into the URL, assigning them to the name of your form field.The |true tells Mautic to URL encode the value so that it works in the browser.
 ```
 {pagelink=1}&email={leadfield=email|true}
 ```
-In the rendered email sent to a lead, the URL may be converted into something like:
+In the rendered email sent to a contact, the URL may be converted into something like:
 ```
-http://my-mautic.com/my-landing-page?ct=A_REALLY_LONG_STRING&email=leademail%40gmail.com
+http://my-mautic.com/my-landing-page?ct=A_REALLY_LONG_STRING&email=contactemail%40gmail.com
 ```
-So, what happened is `{pagelink=1}` was converted into the landing page URL and had `?ct=A_REALLY_LONG_STRING` appended. The really long string is encoded information about the lead which includes the lead ID. Each `{leadfield=FIELDALIAS}` was replaced with the lead's data. When the lead clicks the link, they will be taken to the landing page with the embedded form, and the form's 'email' input will be pre-populated with the value passed through the URL.
+So, what happened is `{pagelink=1}` was converted into the landing page URL and had `?ct=A_REALLY_LONG_STRING` appended. The really long string is encoded information about the contact which includes the contact ID. Each `{leadfield=FIELDALIAS}` was replaced with the contact's data. When the contact clicks the link, they will be taken to the landing page with the embedded form, and the form's 'email' input will be pre-populated with the value passed through the URL.

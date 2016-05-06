@@ -10,9 +10,9 @@ If you have already downloaded the zip from the download page or have installed 
 
 Once you've installed Mautic you will need to create a few standard cron jobs to have your software process various tasks. These cron jobs can be created through a cPanel or added through command line. If you are unfamiliar or uncomfortable with this step then we'd recommend asking in the forums or in the live Slack chat. Here is a list of the cron jobs you'll need to create.
 
-**Updating Lead Lists**
+**Updating Segments**
 
-`php /path/to/mautic/app/console mautic:leadlists:update`
+`php /path/to/mautic/app/console mautic:segments:update`
 
 **Update Campaigns**
 
@@ -32,8 +32,8 @@ You could also choose another supported IP lookup service if you prefer.
 
 ## Step 4: Install the Tracking Pixel
 
-After installation and setup of the cron jobs you're ready to begin tracking leads. You will need to add a single tracking pixel to the websites for each site you wish to track via Mautic. This is a very simple process and you can add this tracking pixel to your website template file, or install a Mautic integration for the more common CMS platforms. Here is an example of the tracking pixel:
+After installation and setup of the cron jobs you're ready to begin tracking contacts. You will need to add a single tracking pixel to the websites for each site you wish to track via Mautic. This is a very simple process and you can add this tracking pixel to your website template file, or install a Mautic integration for the more common CMS platforms. Here is an example of the tracking pixel:
 
 `<img src="http://yourdomain.com/path/to/mautic/mtracking.gif" />`
 
-Checkout [Lead Monitoring](./../leads/lead_monitoring.html) for more details on the tracking pixel.
+Checkout [Contact Monitoring](./../contacts/contact_monitoring.html) for more details on the tracking pixel.

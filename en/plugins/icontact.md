@@ -1,6 +1,6 @@
 # iContact integration
 
-Mautic can send leads to [iContact](https://www.icontact.com) upon some lead's action or when it gain some point limit.
+Mautic can send contacts to [iContact](https://www.icontact.com) upon some contact's action or when it gain some point limit.
 
 ## Authorize
 
@@ -22,10 +22,10 @@ Fill it the right credentials to Mautic - iContact integration:
 
 ## Configure the plugin
 
-Navigate to the *Features* tab in the plugin configuration modal box. Select the iContact lead list where the Mautic leads should be pushed into. There should be one list created by default.
+Navigate to the *Features* tab in the plugin configuration modal box. Select the iContact segment where the Mautic contacts should be pushed into. There should be one segment created by default.
 
 Other configuration options are:
-- **Push leads to this integration** - This option is checked by default. If you uncheck it, the plugin will not push leads to Mailchimp any more.
+- **Push contacts to this integration** - This option is checked by default. If you uncheck it, the plugin will not push contacts to Mailchimp any more.
 
 ## Test the plugin
 

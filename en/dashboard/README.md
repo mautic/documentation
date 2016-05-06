@@ -30,10 +30,10 @@ Some widgets have additional options:
 **Created contacts in time**
 - Show all contacts: Displays one line with all created contacts.
 - Only identified: Displays one line with only created identified contacts.
-- Only anonymous: Displays one line with only created anonymous contacts.
-- All identified vs anonymous: displays 2 lines with created identified and anonymous contacts.
+- Only anonymous: Displays one line with only created visitors.
+- All identified vs anonymous: displays 2 lines with created identified and visitors.
 - Top segments: Displays up to 6 lines with contacts added to the top 6 segments. If no such segment exist for the selected date range, the chart will not be displayed.
-- Top segments with Identified vs Anonymous: Displays up to 6 lines of the top 3 segments for the selected date range. Each segment will show 2 lines with identifed and anonymous contacts.
+- Top segments with Identified vs Anonymous: Displays up to 6 lines of the top 3 segments for the selected date range. Each segment will show 2 lines with identified and visitors.
 
 **Emails in time**
 - Only sent emails: Displays 1 line with sent emails.
@@ -73,4 +73,4 @@ The WidgetDetailEvent automatically caches the widget detail data for a period o
 
 If a Mautic user doesn't have the see others or see own permissions for a bundle, she/he won't be able to create widgets for said bundle. However, the widget can still be visible at hers/his dashboard. For example if a user creates the widgets and then the admin removes the permission or via import. In that case the widget is there, but with a message that the user doesn't have permission to see the data.
 
-If a Mautic user has permission to see only his/hers own data from a bundle, he/she will see only his/hers own data in the Dashboard widgets. For example only leads which he/she owns, page hits of the pages he/she created and so on.
+If a Mautic user has permission to see only his/hers own data from a bundle, he/she will see only his/hers own data in the Dashboard widgets. For example only contacts which he/she owns, page hits of the pages he/she created and so on.

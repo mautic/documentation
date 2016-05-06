@@ -6,15 +6,15 @@ The email overview allows at-a-glance information regarding the success or failu
 
 ### Email Creation
 
-Email creation can be handled through the graphical email builder with little to no HTML knowledge. Emails are assigned to particular lists and/or campaigns. Below are some key steps to be performed when creating an email.
+Email creation can be handled through the graphical email builder with little to no HTML knowledge. Emails are assigned to particular segments and/or campaigns. Below are some key steps to be performed when creating an email.
 
-### Lead Lists
+### Segments
 
-When creating an email you can select the lead lists to which you want to send the email.
+When creating an email you can select the segments to which you want to send the email.
 
 ![](http://drop.dbh.li/image/0p3P3c2O3P1e/Image%202014-11-18%20at%2011.25.34%20PM.png)
 
-This entry field is a multi-select which allows you to choose several lead lists if necessary.
+This entry field is a multi-select which allows you to choose several segments if necessary.
 
 ### Email Builder
 

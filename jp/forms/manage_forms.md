@@ -59,6 +59,6 @@ URLのクエリーパラメータからのフォームの値を自動入力す�
 ```
 リードに送信されるレンダリングされたメールでは、URLは次のように変換されます:
 ```
-http://my-mautic.com/my-landing-page?ct=A_REALLY_LONG_STRING&email=leademail%40gmail.com
+http://my-mautic.com/my-landing-page?ct=A_REALLY_LONG_STRING&email=contactemail%40gmail.com
 ```
  `{pagelink=1}` 内がランディングページのURLに変換され、`?ct=A_REALLY_LONG_STRING` が付加されます。実際の長い文字列ではリードIDを含んだリードについてのエンコードされた情報になります。リードがそのリンクをクリックすると埋め込まれたフォームとともにランディングページを開き、そのフォームの 'email' 入力がそのURLを通して渡される値として自動的に入力されます。

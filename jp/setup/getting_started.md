@@ -12,7 +12,7 @@ Mautic をインストールするとタスクを処理するために基本的�
 
 **リードリストの更新**
 
-`php /path/to/mautic/app/console mautic:leadlists:update`
+`php /path/to/mautic/app/console mautic:segments:update`
 
 **キャンペーンの更新**
 
@@ -36,4 +36,4 @@ cron job のインストールとセットアップが終わると，リード�
 
 `<img src="http://yourdomain.com/path/to/mautic/mtracking.gif" />`
 
-トラッキングピクセルについての詳しい内容は  [リードの監視](./../leads/lead_monitoring.html) をご確認ください。
+トラッキングピクセルについての詳しい内容は  [リードの監視](./../contacts/contact_monitoring.html) をご確認ください。

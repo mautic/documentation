@@ -29,7 +29,7 @@ MailChimpへのログインに使用している **ユーザー名** と **API�
 
 ![MailChimp Plugin configuration](/plugins/media/plugins-mailchimp-configure.png "MailChimp Plugin configuration")
 
-その後、リードリストを選択します。MailChimpにリードリストがまだ無い場合、*MailChimp dashboard* / *Lists* / *Create List* を開き、作成します。その後、プラグインの設定を保存して再度開きます。*リードフィールドマッピング*タブが表示されているはずです。[field mapping](./../plugins/field_mapping.html) を設定します。
+その後、リードリストを選択します。MailChimpにリードリストがまだ無い場合、*MailChimp dashboard* / *Segments* / *Create List* を開き、作成します。その後、プラグインの設定を保存して再度開きます。*リードフィールドマッピング*タブが表示されているはずです。[field mapping](./../plugins/field_mapping.html) を設定します。
 
 その他の設定オプションは次のとおりです:
 - **この統合にリードをプッシュする** - このオプションはデフォルトでチェックされています。これをオフにすると、このプラグインはリードをMailChimpにプッシュしません。

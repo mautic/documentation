@@ -137,7 +137,7 @@ http://yourdomain.com/mtracking.gif?page_url=cart_screen&email=myemail@somewhere
 一番いいアプローチは、すべてのトラッキングニーズを処理するクラス（例えば 'mautic'）を持たせることです。たとえば、次のサンプルのメソッド呼び出しはID 3でフォームにPOSTします - 前節を御覧ください（注意: 簡潔性と普遍性のため、これらのサンプルはJavaScript / ECMAScriptタイプの言語で書かれています。アプリではお使いの言語で似たような呼び出しを使用してください。
 
 ```
-mautic.addLead("myemail@somehwere.com",3)
+mautic.addContact("myemail@somehwere.com",3)
 ```
 
 そして、アプリ内の個々のユーザアクティビティを追跡するため、このサンプルコールではトラッカーへのHTTP要求を行っています:
@@ -152,7 +152,7 @@ mautic.track("cart_screen", "myemail@somewhere.com")
 http://yourdomain.com/mtracking.gif?page_url=cart_screen&email=myemail@somewhere.com
 ```
 
-重要: 上記のHTTPリクエストがcookie(可能なら、mautic.addLead POSTリクエストからのcookieを再利用)を使用していること、そしてこのcookieを一つのリクエストから次のリクエストまで再利用しているをアプリ内で確認してください。これにより、それが本当に同一のユーザーであることをMautic(と、その他のトラッキングソフトウェアでも)が認識できます。これを行うことができない場合、同じIPアドレスから複数のリードがアクセスしたらMauticはcookieなしでは誰がどのリードなのか判別ができないので単一のリードに統合してしまうことがあります(めったにはないでしょうが、可能性はあります)。
+重要: 上記のHTTPリクエストがcookie(可能なら、mautic.addContact POSTリクエストからのcookieを再利用)を使用していること、そしてこのcookieを一つのリクエストから次のリクエストまで再利用しているをアプリ内で確認してください。これにより、それが本当に同一のユーザーであることをMautic(と、その他のトラッキングソフトウェアでも)が認識できます。これを行うことができない場合、同じIPアドレスから複数のリードがアクセスしたらMauticはcookieなしでは誰がどのリードなのか判別ができないので単一のリードに統合してしまうことがあります(めったにはないでしょうが、可能性はあります)。
 
 ### その他のオンラインモニタリング
 

@@ -1,6 +1,6 @@
 # Manage Assets
 ## Categories
-Assets can be organized in categories, which allows you to easily locate resources.  To create a new category, browse to the Assets section and click on 'Manage Categories'.
+Assets can be organized in categories, which allows you to easily locate resources.  To create a new category, browse to the Categories section in the admin menu.
 
 ### Creating categories
 
@@ -42,7 +42,7 @@ Assets are often provided as incentives to complete a form, and may include whit
 
 To create an asset, first establish any categories that may be needed and ensure that they are published - it is not possible to assign assets to unpublished categories.
 
-Navigate to 'Manage Assets', and click 'New' to begin creating an asset.
+Navigate to 'Components' -> 'Assets', and click 'New' to begin creating an asset.
 
 ![Create a new asset](/assets/media/assets-newasset.png "Create a new asset")
 
@@ -78,6 +78,6 @@ An asset can be edited by clicking on the 'edit' button while viewing the asset,
 
 An asset can be deleted by clicking on the 'delete' button while viewing the asset, or by selecting the arrow next to the checkbox for the asset, and selecting 'delete'.  A confirmation screen will be displayed, prompting confirmation that the asset should be deleted.
 
-Once an asset has been deleted, it cannot be retrieved, and statistics relating to the number of downloads for that asset will no longer be available.  Lead points that may have been accumulated as a result of accessing the resource will remain. It is recommended where possible to unpublish assets which are no longer in use - in future there may be an archive feature.
+Once an asset has been deleted, it cannot be retrieved, and statistics relating to the number of downloads for that asset will no longer be available.  Contact points that may have been accumulated as a result of accessing the resource will remain. It is recommended where possible to unpublish assets which are no longer in use - in future there may be an archive feature.
 
 

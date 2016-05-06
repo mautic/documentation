@@ -1,6 +1,6 @@
 # Mautic - vtiger CRM plugin
 
-This plugin can push a lead to the vTiger CRM when a lead makes some action.
+This plugin can push a contact to the vTiger CRM when a contact makes some action.
 
 If you don't have the vTiger CRM account yet, [create it](https://www.vtiger.com/).
 
@@ -18,7 +18,7 @@ Fill these 3 credentials to the Mautic plugin and click Authenticate.
 
 If you want to use the plugin, you have to publish it. Set the *Publish* switch to *Yes*.
 
-In the Features tab is just *Push leads to this integration* checkbox and it is checked by default.
+In the Features tab is just *Push contacts to this integration* checkbox and it is checked by default.
 
 Configure the [field mapping](./../plugins/field_mapping.html).
 
