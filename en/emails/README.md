@@ -37,4 +37,8 @@ Each email sent through Mautic is tagged with a tracking pixel image. This allow
 
 ### Unsubscribing ###
 
-Mautic has a built in means of allowing a lead to unsubscribe from email communication. If using the builder, simply drag and drop the Unsubscribe Text or Unsubscribe URL tokens into your email. Or insert {unsubscribe_text} or {unsubscribe_url} into your custom HTML. The unsubscribe text token will insert a sentence with a link instructing the lead to click to unsubscribe. The unsubscribe URL token will simply insert the URL into your custom written instructions.
+Mautic has a built in means of allowing a lead to unsubscribe from email communication. If using the builder, simply drag and drop the Unsubscribe Text or Unsubscribe URL tokens into your email. Or insert `{unsubscribe_text}` or `{unsubscribe_url}` into your custom HTML. The unsubscribe text token will insert a sentence with a link instructing the lead to click to unsubscribe. The unsubscribe URL token will simply insert the URL into your custom written instructions.
+
+### Online version ###
+
+Mautic manages also the hosting of an online version of the email sent. To use that feature, simply add the following as URL on text to generate the online version link `{webview_url}`.
