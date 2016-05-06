@@ -17,12 +17,12 @@ You will notice the group column which will show you where the specific field wi
 
 The check mark which shows before each label title is a clickable toggle which will publish and unpublish the field.
 
-![](http://drop.dbh.li/image/3S1u0k1X463v/Screen%20Recording%202014-11-16%20at%2009.37%20PM.gif)
+![](/contacts/media/unpublish-fields.gif)
 
 ### New Field
 
 You can create additional custom fields and define the data type you want that field to hold. In addition to the data type you will also select the group for that particular field. This will define where the field displays on the contact edit and detail view.
 
-![](http://drop.dbh.li/image/1k3U1p3J3Y2u/Image%202014-11-16%20at%209.43.52%20PM.png)
+![](/contacts/media/new-custom-field.jpg)
 
-The `boolean format` only admits `0` and `1` values when you import contacts via a csv file. The `Boolean Labels` you have the opportunity to setup in the **field setting tab** does not allow a different `value` in the leadfield.
+The `boolean format` only admits `0` and `1` values when you import contacts via a csv file. The `Boolean Labels` you have the opportunity to setup in the **field setting tab** does not allow a different `value` in the contact field.
