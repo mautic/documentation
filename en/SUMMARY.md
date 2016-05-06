@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Getting Started](setup/getting_started.md)
+* [Dashboard](dashboard/README.md)
 * [Leads](leads/README.md)
    * [Manage Leads](leads/managing_leads.md)
        * [Lead Overview](leads/lead_overview.md)
