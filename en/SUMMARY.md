@@ -6,7 +6,7 @@
 * [Contacts (formerly leads)](contacts/README.md)
    * [Manage Contacts](contacts/managing_contacts.md)
        * [Contact Overview](contacts/contact_overview.md)
-       * [Contact Monitoring](contacts/contacts_monitoring.md)
+       * [Contact Monitoring](contacts/contact_monitoring.md)
    * [Manage Segments (formerly lists)](contacts/manage_segments.md)
    * [Manage Fields](contacts/manage_fields.md)
 * [Pages](pages/README.md)
