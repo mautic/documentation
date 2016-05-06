@@ -6,7 +6,7 @@ There are two kinds of forms in Mautic.
 
 ![](/forms/media/kinds-of-forms.jpg)
 
-A Campaign Form can push a contact directly into a campaign but all actions are performed in the Campaign Builder.
+A **Campaign Form** can push a contact directly into a campaign but all actions are performed in the Campaign Builder.
 
-A Standalone Form can push a contact into a segment, but not into a campaign directly.  The advantage to this form type is that you can perform actions at the time of submission. An example of this would be sending an email to an administrator with the form values included.
+A **Standalone Form** can push a contact into a segment, but not into a campaign directly.  The advantage to this form type is that you can perform actions at the time of submission. An example of this would be sending an email to an administrator with the form values included.
 
