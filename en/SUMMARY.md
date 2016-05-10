@@ -3,7 +3,6 @@
 * [Introduction](README.md)
 * [Getting Started](setup/getting_started.md)
 * [Dashboard](dashboard/README.md)
-   * Tips & Tricks
 * [Contacts (formerly leads)](contacts/README.md)
    * [Manage Contacts](contacts/managing_contacts.md)
        * [Contact Overview](contacts/contact_overview.md)
@@ -26,6 +25,7 @@
    * [Bounce Management](emails/bounce_management.md)
    * [Mailer is owner](emails/mailer_is_owner.md)
    * [Troubleshooting](emails/troubleshooting.md)
+* Tips & Tricks
 * [Text Messages](sms/README.md)
 * [Reports](reports/README.md)
 * [Points](points/README.md)
