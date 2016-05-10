@@ -25,7 +25,7 @@
    * [Bounce Management](emails/bounce_management.md)
    * [Mailer is owner](emails/mailer_is_owner.md)
    * [Troubleshooting](emails/troubleshooting.md)
-* Tips & Tricks
+* [Tips & Tricks](tips/tips_tricks.md)
 * [Text Messages](sms/README.md)
 * [Reports](reports/README.md)
 * [Points](points/README.md)
