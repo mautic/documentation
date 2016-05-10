@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [Getting Started](setup/getting_started.md)
 * [Dashboard](dashboard/README.md)
+   * Tips & Tricks
 * [Contacts (formerly leads)](contacts/README.md)
    * [Manage Contacts](contacts/managing_contacts.md)
        * [Contact Overview](contacts/contact_overview.md)
@@ -31,7 +32,7 @@
 * [Plugins](plugins/README.md)
    * [Hubspot CRM](plugins/hubspot_crm.md)
    * [iContact](plugins/icontact.md)
-   * [Mailchimp](plugins/mailchimp.md)   
+   * [Mailchimp](plugins/mailchimp.md)
    * [Salesforce CRM](plugins/salesforce.md)
    * [vTiger CRM](plugins/vtiger_crm.md)
    * [Zoho CRM](plugins/zoho_crm.md)
@@ -44,7 +45,8 @@
    * [Political](use_cases/political.md)
 * [Cron Jobs](setup/cron_jobs.md)
 * [Themes](themes/README.md)
-    * [Manage Themes](themes/manage_themes.md)
-    * [Customize Themes](themes/customize_themes.md)
-    * [Theme Structure](themes/theme_structure.md)
+   * [Manage Themes](themes/manage_themes.md)
+   * [Customize Themes](themes/customize_themes.md)
+   * [Theme Structure](themes/theme_structure.md)
 * [Translations](translations/README.md)
+
