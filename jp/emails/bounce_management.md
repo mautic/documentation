@@ -28,7 +28,7 @@ Gmailでメールを送信する場合、メールのリターンパスは自動
 2.リスト名を入力します。たとえば *バウンスメール* などです
 3.*フィルタ*タブを選択します
 4.新しく*バウンスメール*イコールYesフィルタを作成します
-5. cronジョブにより自動的にトリガーされる `app/console mautic:leadlists:update` コマンドを待つか、もしくは手動で実行します
+5. cronジョブにより自動的にトリガーされる `app/console mautic:segments:update` コマンドを待つか、もしくは手動で実行します
 
 バウンスメールを持つすべてのリードがこのリストに表示されます。
 
@@ -48,7 +48,7 @@ MauticはバウンスのためのMandrillのウェブフックをいくつかサ
 
 4) `http://your-mautic.com/mailer/mandrill/callback` のように4）のようにPost To Url に入力し、Create Webhookをクリックします
 
-5) Custom Metadataをクリックして、二つの新しいメタデータフィールド、`hashId` と `leadId` を作成します
+5) Custom Metadataをクリックして、二つの新しいメタデータフィールド、`hashId` と `contactId` を作成します
 
 ![Add metadata](/emails/media/mandrill_webhook_5.png "Add metadata")
 

@@ -1,5 +1,5 @@
-# Lead Monitoring
-The act of monitoring the traffic and activity of leads can sometimes be somewhat technical and frustrating to understand. Mautic makes this monitoring simple and easy to configure.
+# Contact Monitoring
+The act of monitoring the traffic and activity of contacts can sometimes be somewhat technical and frustrating to understand. Mautic makes this monitoring simple and easy to configure.
 
 ### Website Monitoring
 
@@ -15,11 +15,11 @@ To get the most out of the tracking pixel, it is recommended that you pass infor
 
 #### Page Information
 
-Mautic currently supports `page_url`, `referrer`, `language`, and `page_title` (note that the use of `url` and `title` are deprecated due to conflicts with lead fields).
+Mautic currently supports `page_url`, `referrer`, `language`, and `page_title` (note that the use of `url` and `title` are deprecated due to conflicts with contact fields).
 
 #### UTM Codes 
 
-Support for UTM codes in the lead time-line was introduced in version 1.2.1. `utm_medium`, `utm_source`, and `utm_campaign` are used to generate the content of the time-line entry.
+Support for UTM codes in the contact time-line was introduced in version 1.2.1. `utm_medium`, `utm_source`, and `utm_campaign` are used to generate the content of the time-line entry.
 
 `utm_campaign` will be used as  the time-line entry's title.
 
@@ -42,19 +42,19 @@ Support for UTM codes in the lead time-line was introduced in version 1.2.1. `ut
 </tbody>
 </table>
 
-#### Lead Fields
+#### Contact Fields
 
-You can also pass information specific to your lead by setting Mautic lead field(s) to be publicly updatable. Note that values appended to the tracking pixel should be url encoded (%20 for spaces, %40 for @, etc).
+You can also pass information specific to your contact by setting Mautic contact field(s) to be publicly updatable. Note that values appended to the tracking pixel should be url encoded (%20 for spaces, %40 for @, etc).
 
 #### Tags
 
-The lead's tags can be changed by using the `tags` query parameter. Multiple tags can be separated by comma. To remove a tag, prefix it with a dash (minus sign).  
+The contact's tags can be changed by using the `tags` query parameter. Multiple tags can be separated by comma. To remove a tag, prefix it with a dash (minus sign).  
 
-For example, `mtracking.gif?tags=ProductA,-ProductB` would add the ProductA tag to the lead and remove ProductB.
+For example, `mtracking.gif?tags=ProductA,-ProductB` would add the ProductA tag to the contact and remove ProductB.
 
 ### Embedding the Pixel
 
-If you are using a CMS, the easiest way is to let one of our plugins do this for you (see below). Note that the plugins may not support all lead fields, utm codes or lead tags.
+If you are using a CMS, the easiest way is to let one of our plugins do this for you (see below). Note that the plugins may not support all contact fields, utm codes or contact tags.
 
 Here are a couple code snippets that may help as well:
 
@@ -110,14 +110,14 @@ These are just a few of the integrations already created by the Mautic community
 
 The essence of monitoring what happens in an App is similar to monitoring what happens on a website. Mautic contains the building blocks needed for native (or pseudo-native) and HTML5-wrapper based Apps, regardless of platform.
 
-In short, use named screen views (e.g. main_screen) in your App as your page_url field in the tracker, and the lead's email as the unique identifier, see next section for detailed instructions.
+In short, use named screen views (e.g. main_screen) in your App as your page_url field in the tracker, and the contact's email as the unique identifier, see next section for detailed instructions.
 
 
 #### Steps in Mautic
 
 1. Make the email field publicly editable, this means that a call to the tracking GIF with the variable email will get properly recognized by Mautic.
 
-2. Setup a form, which will be the access point of your campaign (e.g. a new lead email). Make this form as simple as you can, as you will be POST-ing to it from your App. The typical form URL you will POST to is
+2. Setup a form, which will be the access point of your campaign (e.g. a new contact email). Make this form as simple as you can, as you will be POST-ing to it from your App. The typical form URL you will POST to is
 
 ```
 http://your_mautic/form/submit?formId=<form_id>
@@ -137,7 +137,7 @@ http://yourdomain.com/mtracking.gif?page_url=cart_screen&email=myemail@somewhere
 A best-in-class approach is to have a class (say 'mautic') that handles all your tracking needs. For example, this sample method call would POST to the form with ID 3 - see previous section (note: for conciseness and ubiquity, these sample lines are written in JavaScript / ECMAScript-type language, use similar call in your mobile App language of choice).
 
 ```
-mautic.addLead("myemail@somehwere.com",3)
+mautic.addContact("myemail@somehwere.com",3)
 ```
 
 And then, to track individual user activity in the App, this sample call would make an HTTP request to the tracker:
@@ -152,11 +152,11 @@ Which is nothing more than an HTTP request to this GET-formatted URL (as also sh
 http://yourdomain.com/mtracking.gif?page_url=cart_screen&email=myemail@somewhere.com
 ```
 
-Important: Make sure in your App, that the above HTTP request is using a cookie (if possible, re-use the cookie from the mautic.addLead POST request prior) AND that you reuse this cookie from one request to the next. This how Mautic (and other tracking software) knows that it's really the same user. If you can't do this, you may run in the (unlikely but possible) case where you have multiple leads from the same IP address and Mautic will merge them all into a single lead as it can't tell who is who without a cookie.
+Important: Make sure in your App, that the above HTTP request is using a cookie (if possible, re-use the cookie from the mautic.addContact POST request prior) AND that you reuse this cookie from one request to the next. This how Mautic (and other tracking software) knows that it's really the same user. If you can't do this, you may run in the (unlikely but possible) case where you have multiple contacts from the same IP address and Mautic will merge them all into a single contact as it can't tell who is who without a cookie.
 
 ### Other Online Monitoring
 
-There are several other ways to monitor lead activity and attach points to those activities. Website monitoring is only one way to track leads. Other lead monitoring activities can consist of forum posts, chat room messages, mailing list discussion posts, GitHub/Bitbucket messages, code submissions, social media posts, and a myriad of other options.
+There are several other ways to monitor contact activity and attach points to those activities. Website monitoring is only one way to track contacts. Other contact monitoring activities can consist of forum posts, chat room messages, mailing list discussion posts, GitHub/Bitbucket messages, code submissions, social media posts, and a myriad of other options.
 
 ### Troubleshooting
 

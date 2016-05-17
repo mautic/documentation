@@ -1,6 +1,6 @@
 # Mautic - Hubspot CRM plugin
 
-This plugin can push a lead to Hubspot CRM when a lead makes some action. In case you don't see this plugin in your Mautic instance, make sure you run the latest version. This plugin had been added to Mautic 1.2.3.
+This plugin can push a contact to Hubspot CRM when a contact makes some action. In case you don't see this plugin in your Mautic instance, make sure you run the latest version. This plugin had been added to Mautic 1.2.3.
 
 If you don't have the Hubspot CRM account yet, [create it](http://www.hubspot.com/crm).
 
@@ -14,7 +14,7 @@ Open the Hubspot Plugin configuration and paste the API key into the *Hubspot AP
 
 ![Hubspot CRM Plugin configuration](/plugins/media/plugins-hubspot-crm-configuration.png "Hubspot CRM Plugin configuration")
 
-In the Features tab is just *Push leads to this integration* checkbox and it is checked by default.
+In the Features tab is just *Push contacts to this integration* checkbox and it is checked by default.
 
 Configure the [field mapping](./../plugins/field_mapping.html).
 
