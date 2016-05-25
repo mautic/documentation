@@ -1,28 +1,27 @@
-# Text Messages
+# テキストメッセージ
 
-This new channel was added in Mautic 1.4.0. It allows Mautic to send SMS from Campaigns.
+Mautic 1.4.0では新しいチャネルが追加されました。これにより、MauticによりキャンペーンからSMSが送信できるようになります。
 
-## Configure Text Messages
+## テキストメッセージの設定
 
-Before you start to send SMS from your Mautic, it needs to be connected to the service which can send them. The first and default implemented service is [Twilio](https://www.twilio.com). In order to configure the Text Messages correctly, follow these steps:
+MauticからSMSを送信する前に、SMSを送信できるサービスと接続する必要があります。最初のそしてデフォルトの実装サービスは[Twilio](https://www.twilio.com)です。このテキストメッセージを正しく設定するには次のステップに従ってください:
 
-1. Create an account at Twilio.com.
-2. Go to *Account Settings*. There you'll see the *API Credentials*.
-3. Open the Mautic Configuration in another browser tab and navigate to: Cog icon > Configuration > Text Message Settings.
-4. Copy the *AccountSID* from Twilio account and paste it to *Text Message Provider Username* field in Mautic.
-5. Unlock and copy the *AuthToken* and paste it to *Text Message Provider Password* field in Mautic.
-6. Go to *Products* > *Phone Numbers* in Twilio, copy the number and paste it to the *Sending Phone Number* field in Mautic.
-7. Select the *Text Message Enabled?* switch to *Yes* and save the Mautic configuration.
+1. Twilio.comのアカウントを作成します。
+2. *アカウント設定*を開きます。ここに*API認証情報*があります
+3. ブラウザの別のタブでMautic設定画面を開き、歯車アイコン > 設定 > テキストメッセージ設定を開きます。
+4. Twilioアカウントから*AccountSID*をコピーして*テキストメッセージプロバイダーユーザー名*にペーストします。
+5. *AuthToken*をアンロックしてコピーし、*テキストメッセージプロバイダーパスワード*にペーストします。
+6. Twilioの*Products* > *Phone Numbers*を開きます。このナンバーをMauticの*送信する電話番号*にペーストします。
+7. *テキストメッセージを有効化しますか?*スイッチを*Yes*にしてMautic設定を保存します。
 
-## Create a new Text Message
+## 新しいテキストメッセージの作成
 
-A Text Message can be created/modified only via Campaign Builder.
+テキストメッセージはキャンペーンビルダー経由でのみ作成/編集が可能です。
 
-1. Go to *Campaigns*.
-2. Edit an existing campaign or create a new one.
-3. Open the Campaign Builder.
-4. Drag the *Send Text Message* action and drop it to the canvas.
-5. Click the *New Text Message* button. The form in a new browser window will appear.
-6. Fill in the *Internal Name*, *Text Message* and if required, change the language. Save it.
+1. *キャンペーン*を開きます。
+2. 既存のキャンペーンを編集するか新たに作成します。
+3. キャンペーンビルダーを開きます。
+4. *テキストメッセージ送信*アクションをドラッグしてキャンバスにドロップします。5. *新規テキストメッセージ*ボタンをクリックします。新しいブラウザウィンドウにフォームが表示されます。
+6. *内部名*、*テキストメッセージ*を入力し、必要に応じて言語を変更して保存します。
 
-The new Text message will be pre-selected so you can save the *Send Text Message* action as well. You can use the action in your Campaign dripflow.
+新しいテキストメッセージがあらかじめ選択されるので、*テキストメッセージ送信*アクションを同様に保存することができます。
