@@ -1,17 +1,17 @@
-# Tips & Tricks
+# 使い方のヒント
 
-### Keyboard Shortcuts
-**Global Shortcuts**
-* shift+d: Load the Dashboard
-* shift+c: Load Contacts
-* shift+right: Activate Right Menu
-* shift+n: Show Notifications
-* shift+s: Global Search
+### キーボードショートカット
+**グローバルショートカット**
+* shift+d: ダッシュボードの読み込み
+* shift+c: コンタクトの読み込み
+* shift+right: 右側メニューの有効化
+* shift+n: 通知の表示
+* shift+s: グローバル検索
 
-**Contact Pages**
-* a: Quick add a New Contact
-* t: Activate Table View (also known as list view)
-* c: Activate Card View (also known as grid view)
+**コンタクトページ**
+* a: 新規コンタクトのクイック追加
+* t: テーブルビューの有効化 (別名リストビュー)
+* c: カードビューの有効化 (別名グリッドメニュー)
 
-**Display All Shortcuts**
-* shift+?: Displays all shortcuts in a modal window.
+**すべてのショートカットの表示**
+* shift+?: モーダルウインドウにすべてのショートカットを表示
