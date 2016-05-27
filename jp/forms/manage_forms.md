@@ -28,6 +28,8 @@
 
 ![](http://drop.dbh.li/image/2M1q3T2T0Z0u/Image%202014-11-17%20at%204.20.56%20PM.png)
 
+** 挿入コードを2回ペーストするのはおすすめしません。必須フィールドが空で送られた時にトラブルになる可能性があるためです。 **
+
 ### フォーム結果
 
 フォーム概要ページ上で右上の結果ボタンをクリックすると、すべてのフォーム送信を表形式で閲覧できます。これらの結果は各カラムのヘッダーで簡単にフィルタリングしたりソートしたりできます。
@@ -57,6 +59,6 @@ URLのクエリーパラメータからのフォームの値を自動入力す�
 ```
 リードに送信されるレンダリングされたメールでは、URLは次のように変換されます:
 ```
-http://my-mautic.com/my-landing-page?ct=A_REALLY_LONG_STRING&email=leademail%40gmail.com
+http://my-mautic.com/my-landing-page?ct=A_REALLY_LONG_STRING&email=contactemail%40gmail.com
 ```
  `{pagelink=1}` 内がランディングページのURLに変換され、`?ct=A_REALLY_LONG_STRING` が付加されます。実際の長い文字列ではリードIDを含んだリードについてのエンコードされた情報になります。リードがそのリンクをクリックすると埋め込まれたフォームとともにランディングページを開き、そのフォームの 'email' 入力がそのURLを通して渡される値として自動的に入力されます。

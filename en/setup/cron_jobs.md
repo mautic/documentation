@@ -8,27 +8,27 @@ How frequently you run the cron jobs is up to you. Many shared hosts prefer that
 
 ## Required ##
 
-### Lead Lists ###
-**To keep the smart lists current:**
+### Segments ###
+**To keep the segments current:**
 
 ```
-php /path/to/mautic/app/console mautic:leadlists:update
+php /path/to/mautic/app/console mautic:segments:update
 ```
 
-By default, the script will process leads in batches of 300. If this is too many for your server's resources, use the option `--batch-limit=X` replacing X with the a number of leads to process each batch.
+By default, the script will process contacts in batches of 300. If this is too many for your server's resources, use the option `--batch-limit=X` replacing X with the a number of contacts to process each batch.
 
-You can also limit the number of leads to process per script execution using `--max-leads` to further limit resources used.
+You can also limit the number of contacts to process per script execution using `--max-contacts` to further limit resources used.
 
 ### Campaigns ###
-**To keep campaigns updated with applicable leads:**
+**To keep campaigns updated with applicable contacts:**
 
 ```
 php /path/to/mautic/app/console mautic:campaigns:update
 ```
 
-By default, the script will process leads in batches of 300. If this is too many for your server's resources, use the option `--batch-limit=X` replacing X with the a number of leads to process each batch.
+By default, the script will process contacts in batches of 300. If this is too many for your server's resources, use the option `--batch-limit=X` replacing X with the a number of contacts to process each batch.
 
-You can also limit the number of leads to process per script execution using `--max-leads` to further limit resources used.
+You can also limit the number of contacts to process per script execution using `--max-contacts` to further limit resources used.
 
 **To execute campaigns events:**
 
@@ -38,7 +38,7 @@ php /path/to/mautic/app/console mautic:campaigns:trigger
 
 By default, the script will process events in batches of 100. If this is too many for your server's resources, use the option `--batch-limit=X` replacing X with the a number of events to process each batch.
 
-You can also limit the number of leads to process per script execution using `--max-events` to further limit resources used.
+You can also limit the number of contacts to process per script execution using `--max-events` to further limit resources used.
 
 ## Optional ##
 

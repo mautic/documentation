@@ -18,19 +18,19 @@ Note that it is best to create an email specifically for this purpose, as Mautic
 
 If sending mail through Gmail, the Return Path of the email will automatically be rewritten as the Gmail address. It is best to use a sending method other than Gmail, although Mautic can monitor a Gmail account for bounces.
 
-If you select an Unsubscribe folder, Mautic will also append the email as part of the "List-Unsubscribe" header. It will then parse messages it finds in that folder and automatically unsubscribe the lead.
+If you select an Unsubscribe folder, Mautic will also append the email as part of the "List-Unsubscribe" header. It will then parse messages it finds in that folder and automatically unsubscribe the contact.
 
-## Create the list of leads with bounced emails
+## Create a segment with bounced emails
 
-This is not required, but if you'll want to be able to select the leads with bounced emails easily for example to delete all bounced leads, create the lead list with bounced emails.
+This is not required, but if you'll want to be able to select the contacts with bounced emails easily for example to delete all bounced contacts, create the segment with bounced emails.
 
-1. Go to *Leads* / *Manage Lists* / *New*.
-2. Type in the list name. For example *Bounced emails*.
+1. Go to *Segments* / *New*.
+2. Type in the segment name. For example *Bounced emails*.
 3. Select the *Filters* tab.
 4. Create new *Bounced Email* equals Yes filter.
-5. Wait for the `app/console mautic:leadlists:update` command to be automatically triggered by a cron job or execute it manually.
+5. Wait for the `app/console mautic:segments:update` command to be automatically triggered by a cron job or execute it manually.
 
-All leads with bounced emails should appear in this list.
+All contacts with bounced emails should appear in this segment.
 
 ## Mandrill Webhook
 
@@ -48,7 +48,7 @@ Mautic supports a few of Mandrill's webhooks for bounces.
 
 4) Fill in the Post To Url as `http://your-mautic.com/mailer/mandrill/callback` then click Create Webhook. 
 
-5) Click Custom Metadata and create two new metadata fields: `hashId` and `leadId`
+5) Click Custom Metadata and create two new metadata fields: `hashId` and `contactId`
 
 ![Add metadata](/emails/media/mandrill_webhook_5.png "Add metadata")
 

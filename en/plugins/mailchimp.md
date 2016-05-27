@@ -1,6 +1,6 @@
 # MailChimp integration
 
-Mautic can send leads to MailChimp upon some lead's action or when it gain some point limit.
+Mautic can send contacts to MailChimp upon some contact's action or when it gain some point limit.
 
 **Version notes**
 - For Mautic 1.2.2 and older, an MailChimp app has to be created and the authentication is made via oAuth2. Client key and secret credentians are needed for authentication. Also SSL (https) connection is required.
@@ -25,15 +25,15 @@ Fill in the **username** you use to log in to MailChimp and the **API key**. Sav
 
 Navigate to the *Features* tab in the plugin configuration modal box. You should see this note:
 
-> The Lead Field Mapping tab will appear after selecting a list and will update after changing the selected list.
+> The Contact Field Mapping tab will appear after selecting a segment and will update after changing the selected segment.
 
 ![MailChimp Plugin configuration](/plugins/media/plugins-mailchimp-configure.png "MailChimp Plugin configuration")
 
-Select the lead list then. If you don't have a lead list in MailChimp created yet, go to *MailChimp dashboard* / *Lists* / *Create List* and create one. Then save the plugin configuration and open it again. The *Lead Field Mapping* tab should appear now. Configure the [field mapping](./../plugins/field_mapping.html).
+Select the segment then. If you don't have a segment in MailChimp created yet, go to *MailChimp dashboard* / *Segments* / *Create List* and create one. Then save the plugin configuration and open it again. The *Contact Field Mapping* tab should appear now. Configure the [field mapping](./../plugins/field_mapping.html).
 
 Other configuration options are:
-- **Push leads to this integration** - This option is checked by default. If you uncheck it, the plugin will not push leads to MailChimp any more.
-- **Enable double opt in** - If MailChimp should send a confirmation email to the leads added by this plugin. The leads will have to confirm that they really want to be added to the list.
+- **Push contacts to this integration** - This option is checked by default. If you uncheck it, the plugin will not push contacts to MailChimp any more.
+- **Enable double opt in** - If MailChimp should send a confirmation email to the contacts added by this plugin. The contacts will have to confirm that they really want to be added to the segment.
 - **Send welcome email** - Whether MailChimp should sent the welcome email.
 
 ## Test the plugin

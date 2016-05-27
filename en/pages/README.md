@@ -1,6 +1,6 @@
 # Pages
 
-Pages within Mautic are a powerful tool for quickly creating compelling content with a single focus. Use pages for directing leads through a form or providing a way to download an asset, or merely tracking interest in a particular subject.
+Pages within Mautic are a powerful tool for quickly creating compelling content with a single focus. Use pages for directing contacts through a form or providing a way to download an asset, or merely tracking interest in a particular subject.
 
 ### Features of Landing Pages
 

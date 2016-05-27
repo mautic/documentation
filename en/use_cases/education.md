@@ -12,21 +12,21 @@ While in some cases this may be the conclusion of the marketing automation workf
 
 ### Unique Terminology
 
-**Visitor** - An anonymous lead. This would be a casual visitor.
+**Visitor** - An anonymous contact. This would be a casual visitor.
 
-**Student** - A lead. This is the prospective, current, or graduated student.
+**Student** - A contact. This is the prospective, current, or graduated student.
 
 
 ### Workflow
-The workflow for an educational environment is for the most part similar to a typical workflow. However there are a few key differences. First, leads are considered students. Students would continue through the workflow in a similar manner as a lead. As with the terminology these are the details.
+The workflow for an educational environment is for the most part similar to a typical workflow. However there are a few key differences. First, contacts are considered students. Students would continue through the workflow in a similar manner as a contact. As with the terminology these are the details.
 
 **1. Define Fields**
 
 Students have unique attributes which are helpful for universities to track. The first step of configuring marketing automation for your needs will be to create those fields for the student profile.
 
-**2. Create Lists**
+**2. Create Segments**
 
-Student lists are convenient ways to organize students. Whether you choose to organize your students by geographic region, course of study, degree program, or a variety of other options the student lists are a way to keep things grouped and allow for easy targeted interactions.
+Student segments are convenient ways to organize students. Whether you choose to organize your students by geographic region, course of study, degree program, or a variety of other options the student segments are a way to keep things grouped and allow for easy targeted interactions.
 
 **3. Add Assets**
 
@@ -44,4 +44,4 @@ Visitors and potential students earn points for any number of activities perform
 
 ### Conclusion
 
-The bottom line is clear. Mautic works incredibly well as a marketing automation platform used in education environments. Tracking potential students, current students and even maintaining lists for graduates to keep track of alumni and send follow-up email messages can all be done with Mautic.
+The bottom line is clear. Mautic works incredibly well as a marketing automation platform used in education environments. Tracking potential students, current students and even maintaining segments for graduates to keep track of alumni and send follow-up email messages can all be done with Mautic.
