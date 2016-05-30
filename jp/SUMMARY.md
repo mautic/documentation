@@ -5,7 +5,7 @@
 * [ダッシュボード](dashboard/README.md)
 * [コンタクト (以前までの「リード」)](contacts/README.md)
    * [コンタクトの管理](contacts/managing_contacts.md)
-       * [コンタクト 野がいよう](contacts/contact_overview.md)
+       * [コンタクトの概要](contacts/contact_overview.md)
        * [コンタクトのモニタリング](contacts/contact_monitoring.md)
    * [セグメントの管理 (以前までの「リスト」)](contacts/manage_segments.md)
    * [フィールドの管理](contacts/manage_fields.md)
@@ -50,4 +50,3 @@
    * [テーマのカスタマイズ](themes/customize_themes.md)
    * [テーマの構成](themes/theme_structure.md)
 * [翻訳](translations/README.md)
-
