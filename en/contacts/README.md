@@ -24,13 +24,13 @@ Visitors are worth tracking, because these could be future customers. By trackin
 is:anonymous
 ```
 ##### Screenshot
-![](http://drop.dbh.li/image/3F3X0843100h/Image%202014-11-17%20at%2010.05.43%20AM.png)
 
+![](/contacts/media/contacts-anonymous.jpg)
 The resulting list will be those IP addresses which have not yet provided additional details.
 
 #### Standard Contacts
 
-The second type of contact is a standard contact. These are contacts which have provided additional information via a form or some other source, or that you know more information about due to the fact that you've had interactions with them before. As a result, these contacts typically have a name, email, and other identifying information which can be associated with the contact.
+The second type of contact is a standard contact. These are contacts that have provided additional information via a form or some other source.  You might also know more information about due to the fact that you've had interactions with them before. As a result, these contacts typically have a name, email, and other identifying information which can be associated with the contact.
 
 The standard contact is the preferred contact within Mautic. These are contacts which may have started as an anonymous contact but have at some point provided additional information such as name, email address, social network handle, or other identifying characteristics. These contacts are ones which can then be nurtured through the Mautic marketing automation platform.
 

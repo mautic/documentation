@@ -6,19 +6,19 @@ Segments provide ways to easily organize your contacts. These segments can be co
 
 When viewing all segments you will notice the column on the right which shows the number of contacts matching that particular segment.
 
-![](http://drop.dbh.li/image/3v3F2v280n1z/Image%202014-11-16%20at%209.32.16%20PM.png)
+![](/contacts/media/contact-segments.jpg)
 
 ### Segment Filters
 
-![List Filter](http://drop.dbh.li/image/3j350h370g0t/Image%202014-11-16%20at%209.13.39%20PM.png)
+![](/contacts/media/segment-filters.jpg)
 
 In addition, these filters can be combined to either be inclusive or exclusive depending on your needs.
 
-![](http://drop.dbh.li/image/2u090o1n252V/Image%202014-11-16%20at%209.16.12%20PM.png)
+![](/contacts/media/multiple-segment-filters.jpg)
 
 Once you have selected the field you can then choose the type of operation to perform. These vary depending on the way you wish to filter your contacts.
 
-![](http://drop.dbh.li/image/3o0a32313h07/Image%202014-11-16%20at%209.26.57%20PM.png)
+![](/contacts/media/segment-filters-dropdown.jpg)
 
 ### Segments
 

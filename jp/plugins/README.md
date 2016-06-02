@@ -4,7 +4,7 @@ Mauticのプラグインは、Mauticの機能を拡張したり、他のシス�
 
 管理者メニューでプラグインを見つけることができます。
 
-![Plugins menu item](/plugins/media/plugins-menu-item.png "Plugins menu item")
+![Plugins are found in the admin menu - click on the gear](/plugins/media/plugins-settings.jpg "Plugins are found on the Admin Menu")
 
 ## プラグインのインストール
 

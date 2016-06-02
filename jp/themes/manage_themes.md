@@ -6,8 +6,8 @@
 
 設定画面に利用可能なテーマがドロップダウンボックスにリストされ、そこで選択することができます。保存すると、テーマが明示的に指定されたいないすべてのリソースに適用されます。
 
-![Assign default theme](/themes/media/themes-defaulttheme.png "Assign a default theme")
+![Configure themes under Administration Settings->System Settings](/themes/media/theme-config.jpg)
 
 例えばランディングページなど、特定のリソースにテーマを割り当てるには、ドロップダウンからテーマを選択してリソースを保存します。
 
-![Assign theme to resource](/themes/media/themes-assignthemelandingpage.png "Assign theme to a landing page")
+![Select a theme for a new page](/themes/media/theme-page-builder.jpg)
