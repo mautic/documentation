@@ -1,17 +1,17 @@
-# Campaign Troubleshooting
+# キャンペーントラブルシューティング
 
-## Page visits are not recognized
+## ページ訪問者が認識されない
 
-There can be a few reasons for this:
+いくつかの理由が考えられます:
 
-1) Make sure that you are not testing teh page visit while logged into Mautic. Mautic ignores user generated activity so use an anonymous session, another browser, or logout of Mautic.
+1) Mauticにログイン中にテストはしていないか確認してください。Mauticはユーザーの生成したアクティビティは無視するので、アノニマスセッションや別のブラウザーを使うか、Mauticからログアウトしてください。
 
-2) Ensure the contact getting tracked is the in the campaign. The easy way to test this is to review the time line of the contact for the page hit.
+2) 追跡しているコンタクトがキャンペーン内に存在するようにしてください。そのコンタクトのページヒットでのタイムラインを見直せが、これを簡単に確認できます。
 
-3) Campaigns are executed sequentially and will not repeat per contact. If the contact has already visited the page while part of the campaign and triggered the Visits a Page decision, subsequent visits will not re-trigger the actions associated with the decision.
+3) キャンペーンは連続して実行され、コンタクトごとには繰り返されません。コンタクトがキャンペーンのページに既に訪問していてページディシジョン訪問をトリガーしていれば、続いて訪問してもそのディシジョンに関連付けられたアクションを再トリガーすることはありません。
 
-4) Ensure that the URL in the campaign action either matches _exactly_ the URL visited or use a wildcard (note that the <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Locator" target="_blank">a URL can include the schema, host/domain, path, query parameters, and/or fragment</a>).
+4) キャンペーンアクション内のURLが訪問したURLに_正確に_マッチするようにするか、もしくはワイルドカードを使用するようにしてください。(<a href="https://ja.wikipedia.org/wiki/Uniform_Resource_Locator" target="_blank">URLにはスキーマ、ホスト/ドメイン、パス、クエリーパラメータ、そして/もしくはフラグメントが含まれることに留意してください)
 
-For example, if you have a URL of `http://domain.com` and the page hit registers as `http://domain.com/index.php?foo=bar`, the campaign decision will not be triggered. However, if you use `http://domain.com*` as the URL, it'll match and thus trigger.
+例えば、`http://example.com`というURLを持っていたとして、ページヒットが`http://example.com/index.php?foo=bar`を登録したとすると、キャンペーンディシジョンはトリガーされません。しかし、`http://example.com*`をURLとして使うとマッチするのでトリガーされます。
 
-Another example is if you want to associate different page hits with specific campaigns. Let's say you have Campaign A and Campaign B. You want to use the same base URL and path for both campaigns but differentiate with a query parameter.  For Campaign A, you can define a Visits a Page decision with `http://domain.com/my-page?utm_campaign=A*` and for Campaign B, `http://domain.com/my-page?utm_campaign=A*`. Now a contact will only trigger the specific campaign desired. If the goal is to trigger both campaigns regardless of the query parameters, use `http://domain.com/my-page*`.
+別の例としては、別のページヒットを特定のキャンペーンに関連付けたい場合があります。仮にキャンペーンAとキャンペーンBがあるとしましょう。両方のキャンペーンで同じベースURLとパス、しかし別のクエリーパラメータを使いたい場合、キャンペーンAでは`http://example.com/my-page?utm_campaign=A*`、キャンペーンBでは`http://example.com/my-page?utm_campaign=B*`、をページディシジョンに設定できます。これでコンタクトは望ましい特定のキャンペーンのみをトリガーできます。もしクエリーパラメータに関係なく両方のキャンペーンをトリガーさせたい場合は、`http://example.com/my-page*`を使います。
