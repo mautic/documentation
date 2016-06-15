@@ -1,13 +1,13 @@
-# Points Troubleshooting
+# ポイントトラブルシューティング
 
-## Page visits are not recognized
+## ページ訪問が認識されない
 
-There can be a few reasons for this:
+いくつかの理由が考えられます:
 
-1) Make sure that you are not testing teh page visit while logged into Mautic. Mautic ignores user generated activity so use an anonymous session, another browser, or logout of Mautic.
+1) Mauticにログインしたままページ訪問のテストをしていないか確認してください。Mauticはユーザーが生成したアクティビティは無視するので、匿名セッションか別のブラウザを利用するか、Mauticからログアウトしてください。
 
-2) At this time, point actions are tracked once per contact. This means that subsequent visits will not re-trigger the action if already triggered once.
+2) この時点では、ポイントアクションは一つのコンタクトにつき一度のトラッキングになります。これはつまり、すでにトリガーされているアクションは連続した訪問では再トリガーされないということです。
 
-3) Ensure that the URL defined either matches _exactly_ the URL visited or use a wildcard (note that the <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Locator" target="_blank">a URL can include the schema, host/domain, path, query parameters, and/or fragment</a>).
+3) URLが訪問したURLに_正確に_マッチするようにするか、もしくはワイルドカードを使用するようにしてください。(<a href="https://ja.wikipedia.org/wiki/Uniform_Resource_Locator" target="_blank">URLにはスキーマ、ホスト/ドメイン、パス、クエリーパラメータ、そして/もしくはフラグメントが含まれることに留意してください)
 
-For example, if you have a URL of `http://domain.com` and the page hit registers as `http://domain.com/index.php?foo=bar`, the action will not be recognized. However, if you use `http://domain.com*` as the URL, it'll match and thus trigger.
+例えば、`http://example.com`というURLを持っていたとして、ページヒットが`http://example.com/index.php?foo=bar`を登録したとすると、そのアクションはトリガーされません。しかし、`http://example.com*`をURLとして使うとマッチするのでトリガーされます。
