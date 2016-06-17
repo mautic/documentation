@@ -24,5 +24,5 @@ Save the plugin configuration.
 Follow [these steps](./../plugins/integration_test.html) to test the integration.
 
 ### Warning concerning language configuration
-You Zoho and Mautic accounts must be **configured in English language**, otherwise the synchronization won't work.
+Your Zoho and Mautic accounts must be **configured in English language**, otherwise the synchronization won't work.
 Zoho changes the alias of each contact fields depending on the language which generates unmatching fields and error on the sync.
