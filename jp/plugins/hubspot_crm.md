@@ -1,6 +1,6 @@
 # Mautic - Hubspot CRMプラグイン
 
-リードが何らかのアクションを行ったとき、にこのプラグインはリードをHubspot CRMにプッシュすることができます。Mauticにこのプラグインがない場合は、バージョンが最新になっているか確認してください。このプラグインはMautic 1.2.3で追加されました。
+コンタクトが何らかのアクションを行ったとき、このプラグインはコンタクトをHubspot CRMにプッシュすることができます。Mauticにこのプラグインがない場合は、バージョンが最新になっているか確認してください。このプラグインはMautic 1.2.3で追加されました。
 
 まだHubspotCRMのアカウントをお持ちでない場合は、[作成してください](http://www.hubspot.com/crm) 。
 
@@ -14,7 +14,7 @@ Hubspotプラグインの設定を開き、*HubspotAPIキー*入力フィール�
 
 ![Hubspot CRM Plugin configuration](/plugins/media/plugins-hubspot-crm-configuration.png "Hubspot CRM Plugin configuration")
 
-機能タブには *この統合をリードにプッシュ* のチェックボックスだけで、デフォルトではチェックが入っています。
+機能タブには *この統合をコンタクトにプッシュ* のチェックボックスだけで、デフォルトではチェックが入っています。
 
 [field mapping](./../plugins/field_mapping.html)を設定します。
 
