@@ -16,7 +16,7 @@ Once you've installed Mautic you will need to create a few standard cron jobs to
 
 **Update Campaigns**
 
-`php /path/to/mautic/app/console mautic:campaigns:update`
+`php /path/to/mautic/app/console mautic:campaigns:rebuild`
 
 **Execute Campaign Actions**
 
