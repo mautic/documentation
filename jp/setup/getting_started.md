@@ -16,7 +16,7 @@ Mautic をインストールするとタスクを処理するために基本的�
 
 **キャンペーンの更新**
 
-`php /path/to/mautic/app/console mautic:campaigns:update`
+`php /path/to/mautic/app/console mautic:campaigns:rebuild`
 
 **キャンペーンアクションの実行**
 

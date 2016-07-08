@@ -23,7 +23,7 @@ php /path/to/mautic/app/console mautic:segments:update
 **適用するコンタクトとともにキャンペーンを最新の状態に保ちます:**
 
 ```
-php /path/to/mautic/app/console mautic:campaigns:update
+php /path/to/mautic/app/console mautic:campaigns:rebuild
 ```
 
 スクリプトがバッチ処理するコンタクトの数は300とデフォルトで設定されています。利用中のサーバリソースに対してこの数が多いようであれば `--batch-limit=X` オプションを使い，Xへ処理させるコンタクトの数に置き換えて調整してください。
@@ -47,7 +47,7 @@ php /path/to/mautic/app/console mautic:campaigns:trigger
 ファイルシステムへメールキューを書き出しているように設定されているようであれば，処理させるには cron job が必須です。
 
 ```
-php /path/to/mautic/app/console mautic:email:process
+php /path/to/mautic/app/console mautic:emails:send
 ```
 
 ### 監視中のメールを取得・処理させる ###
@@ -55,7 +55,7 @@ php /path/to/mautic/app/console mautic:email:process
 [Bounce Management](./../emails/bounce_management.html) を使っている場合,  
 
 ```
-php /path/to/mautic/app/console mautic:fetch:email
+php /path/to/mautic/app/console mautic:email:fetch
 ```
 
 ### Webフック
