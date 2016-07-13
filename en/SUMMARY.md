@@ -15,6 +15,7 @@
    * [Troubleshooting](pages/troubleshooting.md)
 * [Forms](forms/README.md)
    * [Manage Forms](forms/manage_forms.md)
+   * [Progressive Profiling](forms/progressive_profiling.md)
 * [Assets](assets/README.md)
    * [Manage Assets](assets/manage_assets.md)
 * [Campaigns](campaigns/README.md)
