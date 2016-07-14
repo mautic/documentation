@@ -28,6 +28,12 @@ If you want to ask a contact additional questions on the second form load, you c
 
 ## Limits of Progressive Profiling
 
+### The search history limit
+
 The Mautic forms without progressive profiling are as fast as it can be. The HTML of the form is rendered once, stored and this "cached" HTML is used for next form loads. When a progressive profiling configuration is turned on on any of the form fields, the form HTML might be different for each contact. It can even change for each contact after each submission. That's why the caching technique cannot be used anymore and the form load time will be slower for progressive profiling form.
 
 There is limit of 200 submissions from which is Mautic searching for existing form values. This limit was added to prevent possible slow form loads or even hitting the server time or memory limits when a contact have several thousands form submissions. This limit might cause to display/hide the wrong fields.
+
+### The embed type limit
+
+Progressive Profiling forms will not work if you embed your form as static HTML. It will work at form preview, form public page, form embedded via JS, form embedded via iframe.
