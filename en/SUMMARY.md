@@ -29,7 +29,6 @@
     * [Manage Campaigns](campaigns/manage_campaigns.md)
     * [Campaign Builder](campaigns/campaign_builder.md)
     * [Troubleshooting](campaigns/troubleshooting.md)
-* [Tips & Tricks](tips/tipstricks_md.md)
 * [Reports](reports/README.md)
 * [Points](points/README.md)
     * [Troubleshooting](points/troubleshooting.md)
@@ -53,3 +52,5 @@
     * [Customize Themes](themes/customize_themes.md)
     * [Theme Structure](themes/theme_structure.md)
 * [Translations](translations/README.md)
+* [Tips & Tricks](tips/tipstricks_md.md)
+
