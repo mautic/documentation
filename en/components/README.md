@@ -6,3 +6,5 @@ The **Components** menu contains the following items:
 * Landing Pages
 
 These items must be created before you can use them in a campaign.
+
+![](/compoonents/media/components-dropdown.jpg)
