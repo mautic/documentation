@@ -4,3 +4,5 @@ The **Channels** Dropdown contains:
 * Web Notifications
 * Text Messages
 * Social Monitoring
+
+All of these must be created or configured before you can use them in a campaign.
