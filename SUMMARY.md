@@ -1,8 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
-* [Dashboard](dashboard/README.md)
 * [Getting Started](setup/getting_started.md)
+* [Dashboard](dashboard/README.md)
 * [Contacts \(formerly leads\)](contacts/README.md)
     * [Manage Contacts](contacts/managing_contacts.md)
         * [Contact Overview](contacts/contact_overview.md)
@@ -51,4 +51,5 @@
     * [Customize Themes](themes/customize_themes.md)
     * [Theme Structure](themes/theme_structure.md)
 * [Translations](translations/README.md)
+* Overview
 
