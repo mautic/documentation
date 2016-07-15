@@ -2,7 +2,7 @@
 
 Follow these steps to solve your issue as fast as possible.
 
-## My Mautic is acting veird
+## My Mautic is acting weird
 
 Even through the effort of the dev and test teams, it might happen. At first, let's try a few tricks which might fix it fast.
 
@@ -26,7 +26,7 @@ Alright. Let's figure out what the issue really is.
 
 #### Mautic logs
 
-Please, do not create a new issue/post/comment anywhere where you'll post that the error message is:
+Please do not report the following two errors:
 
 > The site is currently offline due to encountering an error. If the problem persists, please contact the system administrator
 
@@ -34,11 +34,11 @@ or
 
 > Uh oh! I think I broke it.
 
-Those are generic error messages which provide absolutely no valuable information about the cause of the error. It is on purpose. The detailed error message isn't displayed in the production environment because if it would, it could tell possible cracker a valuable information about your server which he/she could use to attack it. That's why this generic error message is shown instead and the real error message is logged into the logs and that's why posting it doesn't make any sense.
+Those are generic error messages which provide absolutely no valuable information about the cause of the error. It is on purpose. The detailed error message isn't displayed in the production environment because if it would, it could tell possible crackers a valuable information about your server, Mautic or integration which they could use to attack it. That's why this generic error message is shown instead and the real error message is logged into the logs. Long story short, that's why reporting it doesn't make any sense.
 
 There are different logs in your system which could tell us more. Let's start form the Mautic log.
 
-If your Mautic administration work, go to the Admin menu (click the __cog icon__ in the top right side corner), then __System Info__, then __Log_. You will see the error messages recorded by Mautic today.
+If your Mautic administration work, go to the Admin menu (click the __cog icon__ in the top right side corner), then __System Info__, then __Log__. You will see the error messages recorded by Mautic today.
 
 If your Mautic administration doesn't work, open the logs in via the file system. Go to `[mautic_root]/app/logs` folder. You should see one file for every day called `mautic_prod-YYYY-mm-dd.php`. Open the latest one.
 
@@ -56,7 +56,7 @@ In case the log is too big so a normal editor cannot open it and you have the CL
 
 #### But I don't understand the error message
 
-Take a deep breath and try to actually read the error messages. Some error messages actually have the solution written in them. Look at this one:
+Take a deep breath and try to read the error messages. Some error messages actually have the solution written in them. Look at this one:
 
 ```
 Fatal: Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. - in file Unknown - at line 0 [] []
@@ -66,57 +66,60 @@ You see the advice in it?
 
 > To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini
 
-But you still don't know what it means? Simplest thing in this case is to contact your sysadmin and tell him just that.
+But you still don't know what it means? Simplest thing in this case is to contact your sysadmin and tell them just that.
 
-Or this one:
+#### Let's look at some examples
+
+__Errors:__
 ```
 PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 10924085 bytes) in ...
-
-or
-
+```
+```
 Fatal: Maximum execution time of 120 seconds exceeded - in file ...
 ```
-
+__Solution:__
 This means Mautic needs more memory / time than your server limit is. Again, contact your sysadmin and consult your possibilities.
 
-Or this one:
+__Error:__
 ```
 Fatal: Class 'ZipArchive' not found
 ```
-
+__Solution:__
 It can be ZipArchive, MCrypt or any other PHP module missing. Again, consult you know who to install it.
 
-Or this one:
-
+__Error:__
 ```
 PHP Parse error:  syntax error, unexpected T_OBJECT_OPERATOR in
 ```
-
+__Solution:__
 This usually means your PHP is outdated. Check what [Mautic requirements](https://www.mautic.org/download/requirements/) are.
 
-Or this one:
+__Error:__
 ```
 exception 'RuntimeException' with message 'Unable to create the cache directory ...
 ```
-means that the file permissions aren't right and Mautic cannot write the cache files.
+__Solution:__
+It means that the file permissions aren't right and Mautic cannot write the cache files.
 
-This one:
+__Error:__
 ```
 mautic.WARNING: IP LOOKUP: The file "../app/cache/prod/../ip_data/GeoLite2-City.mmdb
 ```
-means that you just didn't download the IP lookup library. Go to Mautic's Configuration, scroll to the bottom and click the button to download it.
+__Solution:__
+It means that you just didn't download the IP lookup library. Go to Mautic's Configuration, scroll to the bottom and click the button to download it.
 
-This one:
+__Error:__
 ```
 Uncaught PHP Exception Doctrine\DBAL\DBALException: "An exception occurred while executing 'INSERT INTO
 ```
-
+__Solution:__
 This is a SQL error. It might either mean that your database schema is outdated or there is a bug in some part of Mautic. In the first case, the step 2 from this article should fix it. In the second case, look at the error reporting bellow.
 
-But error like
+__Error:__
 ```
 PHP Fatal error: Call to a member function isRendered() on a non-object in ...
 ```
+__Solution:__
 Means usually a bug.
 
 ### How and where to report a bug
