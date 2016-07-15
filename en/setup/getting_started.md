@@ -36,6 +36,6 @@ After installation and setup of the cron jobs you're ready to begin tracking con
 
 ``` <script> (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n; w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t), m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m) })(window,document,'script','http(s)://yourmautic.com/mtc.js','mt'); mt('send', 'pageview'); </script> ``` 
 
-You'll need to change the site in the above script.
+You'll need to change the site URL (replace yourmautic.com with your own URL) in the above script.
 
 Checkout [Contact Monitoring](./../contacts/contact_monitoring.html) for more details.
