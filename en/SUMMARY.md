@@ -53,4 +53,4 @@
     * [Theme Structure](themes/theme_structure.md)
 * [Translations](translations/README.md)
 * [Tips & Tricks](tips/tipstricks_md.md)
-
+   * [General Troubleshooting](tips/troubleshooting.md)
