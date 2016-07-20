@@ -1,8 +1,8 @@
 The **Channels** Dropdown contains:
 
-* Emails
+* [Emails](./../emails/index.html)
 * Web Notifications
-* Text Messages
+* [Text Messages](./../sms/index.html)
 * Social Monitoring
 
 All of these must be created or configured before you can use them in a campaign.
