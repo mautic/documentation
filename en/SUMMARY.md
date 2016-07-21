@@ -13,6 +13,7 @@
    * [Manage Pages](pages/manage_pages.md)
    * [Manage Categories](pages/manage_categories.md)
    * [Troubleshooting](pages/troubleshooting.md)
+   * [Device Granularity](pages/device_granularity.md)
 * [Forms](forms/README.md)
    * [Manage Forms](forms/manage_forms.md)
 * [Assets](assets/README.md)
