@@ -16,7 +16,7 @@ Once you've installed Mautic you will need to create a few standard cron jobs to
 
 **Update Campaigns**
 
-`php /path/to/mautic/app/console mautic:campaigns:update`
+`php /path/to/mautic/app/console mautic:campaigns:rebuild`
 
 **Execute Campaign Actions**
 
@@ -26,14 +26,16 @@ Review [Cron Jobs](./../setup/cron_jobs.html) for more information on these and 
 
 ## Step 3: Download the IP lookup service database
 
-By default, Mautic installs set to use MaxMind's free GeoLite2 IP lookup database. Due to the licensing of the database, it cannot be included with Mautic's installation package and thus must be downloaded. Click on the cogwheel in the upper right hand of Mautic to view the Admin menu then click Configuration. On the System Settings tab, find the IP lookup service option and click the "Fetch IP Lookup Data Store."
+By default, Mautic installs set to use MaxMind's free GeoLite2 IP lookup database. Due to the licensing of the database, it cannot be included with Mautic's installation package and thus must be downloaded. Click on the cogwheel in the upper right hand of Mautic to view the Admin menu then click Configuration. On the System Settings tab, scroll down to find the IP lookup service option and click the "Fetch IP Lookup Data Store."
 
 You could also choose another supported IP lookup service if you prefer.
 
-## Step 4: Install the Tracking Pixel
+## Step 4: Install the Tracking Javascript
 
-After installation and setup of the cron jobs you're ready to begin tracking contacts. You will need to add a single tracking pixel to the websites for each site you wish to track via Mautic. This is a very simple process and you can add this tracking pixel to your website template file, or install a Mautic integration for the more common CMS platforms. Here is an example of the tracking pixel:
+After installation and setup of the cron jobs you're ready to begin tracking contacts. You will need to add a simple javascript to the websites for each site you wish to track via Mautic. This is a very simple process and you can add this tracking script to your website template file, or install a Mautic integration for the more common CMS platforms. Here is an example of the tracking javascript:
 
-`<img src="http://yourdomain.com/path/to/mautic/mtracking.gif" />`
+``` <script> (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n; w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t), m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m) })(window,document,'script','http(s)://yourmautic.com/mtc.js','mt'); mt('send', 'pageview'); </script> ``` 
 
-Checkout [Contact Monitoring](./../contacts/contact_monitoring.html) for more details on the tracking pixel.
+You'll need to change the site URL (replace yourmautic.com with your own URL) in the above script.
+
+Checkout [Contact Monitoring](./../contacts/contact_monitoring.html) for more details.

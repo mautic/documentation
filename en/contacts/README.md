@@ -1,6 +1,6 @@
 # Contacts
 
-In Mautic 1.4.0, leads were renamed to contacts.
+Leads were renamed to contacts in Mautic 1.4.0.
 
 Contacts are the central factor of a marketing automation platform. These are all the individuals who have visited your websites or interacted with you in some way.
 
@@ -12,7 +12,7 @@ The second type of contact is a standard contact. These are contacts which have 
 
 #### Visitors (formerly anonymous leads)
 
-In Mautic 1.4.0, anonymous leads were renamed to visitors.
+Anonymous leads were renamed to visitors in Mautic 1.4.0.
 
 Visitors are potential contacts visiting your site who have not yet been identified by a form or other interaction. They are tracked by Mautic but typically remain hidden so as not to clutter your segment.  You can view visitors by using the 'table view' (use the "t" keyboard shortcut to view contacts in a table or "c" as cards) within the contacts section.
 

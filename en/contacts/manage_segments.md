@@ -1,6 +1,6 @@
 # Manage Segments
 
-In Mautic 1.4, lead lists were renamed to segments.
+Lead lists were renamed to segments in Mautic 1.4.0.
 
 Segments provide ways to easily organize your contacts. These segments can be configured from a variety of fields.
 
