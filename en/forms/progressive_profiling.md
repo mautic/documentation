@@ -37,3 +37,9 @@ There is limit of 200 submissions from which is Mautic searching for existing fo
 ### The embed type limit
 
 Progressive Profiling forms will not work if you embed your form as static HTML. It will work at form preview, form public page, form embedded via JS, form embedded via iframe.
+
+### The kiosk mode limit
+
+Lrogressive Profiling features are turned off if you switch the form to the Kiosk Mode. The form always creates a new contact on each submission in the Kiosk Mode. It doesn't track the device from which the form was submitted.
+
+The Progressive Profiling options under the Behavior tab will still be accessible in the Form Builder so you could easily switch the Kiosk mode off and use the Progressive Profiling features again.
