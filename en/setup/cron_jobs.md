@@ -23,7 +23,7 @@ You can also limit the number of contacts to process per script execution using 
 **To keep campaigns updated with applicable contacts:**
 
 ```
-php /path/to/mautic/app/console mautic:campaigns:update
+php /path/to/mautic/app/console mautic:campaigns:rebuild
 ```
 
 By default, the script will process contacts in batches of 300. If this is too many for your server's resources, use the option `--batch-limit=X` replacing X with the a number of contacts to process each batch.
@@ -47,7 +47,7 @@ You can also limit the number of contacts to process per script execution using 
 If the system is configured to queue emails to the filesystem, a cron job is required to process them.
 
 ```
-php /path/to/mautic/app/console mautic:email:process
+php /path/to/mautic/app/console mautic:emails:send
 ```
 
 ### Fetch and Process Monitored Email ###
@@ -55,7 +55,7 @@ php /path/to/mautic/app/console mautic:email:process
 If using the [Bounce Management](./../emails/bounce_management.html),  
  
 ```
-php /path/to/mautic/app/console mautic:fetch:email
+php /path/to/mautic/app/console mautic:email:fetch
 ```
 
 ### Webhooks
