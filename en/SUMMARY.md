@@ -39,6 +39,7 @@
    * [Zoho CRM](plugins/zoho_crm.md)
    * [Field Mapping](plugins/field_mapping.md)
    * [Integration Testing](plugins/integration_test.md)
+   * [Twitter Social Network](plugins/twitter_socialmedia.md)
 * [Use Cases](use_cases/README.md)
    * [Sales](use_cases/sales.md)
    * [Education](use_cases/education.md)
