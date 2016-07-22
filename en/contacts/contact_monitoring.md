@@ -54,7 +54,7 @@ If you'd like to store any of the values above to a contact detail field, create
 
 ### Tracking Pixel tracking
 
-This method is obsolete since Mautic 1.4 and will be removed in Mautic 2.0.
+This method is secondary since Mautic 1.4.
 
 ```
 http://yourdomain.com/mtracking.gif
