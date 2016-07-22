@@ -3,7 +3,7 @@ The act of monitoring the traffic and activity of contacts can sometimes be some
 
 ## Website Monitoring
 
-Monitoring all traffic on a website can be done by loading a javascript file (since Mautic 1.4) or adding a tracking pixel (until Mautic 2.0) to the website. It is important to note that traffic will not be monitored from logged-in Mautic users. To check that the JS/pixel is working, use an incognito or private browsing window or simply log-out of Mautic prior to testing.
+Monitoring all traffic on a website can be done by loading a javascript file (since Mautic 1.4) or adding a tracking pixel to the website. It is important to note that traffic will not be monitored from logged-in Mautic users. To check that the JS/pixel is working, use an incognito or private browsing window or simply log-out of Mautic prior to testing.
 
 ### Javascript (JS) tracking
 
