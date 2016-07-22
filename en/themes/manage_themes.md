@@ -12,6 +12,10 @@ A new theme can be installed as a zip package. The zip package must have the sam
 
 If you have the theme zip package either created by yourself or downloaded from a theme provider, in the top right corner of the Themes page is the upload form. Click the "Choose File" button to choose the zip file, then click Install. The notice will appear if the installation was successful and if so, the new theme appears in the table of currently installed themes.
 
+### Download an existing theme
+
+If you want to create your own theme, the simplest way to do that is to download and existing theme and modify it. The download option is in the drop down menu next to every theme in the Theme Manager table.
+
 ### Update an old theme
 
 The old theme files will be rewritten by the new one when installing a theme which already exists in your Mautic. Therefore, the theme updates can be also done by the Theme Manager's Install form.
