@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Getting Started](setup/getting_started.md)
+* [What's New](whats-new/README.md)
 * [Dashboard](dashboard/README.md)
 * [Contacts \(formerly leads\)](contacts/README.md)
     * [Manage Contacts](contacts/managing_contacts.md)
