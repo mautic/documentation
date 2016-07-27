@@ -30,6 +30,6 @@ Every part of the template is editable via drag and drop.  Click in a text box t
 
 You can fine tune any aspect of the page via the Content tab and Source Code view.  You can even paste your own HTML inside.
 
-![](/pages/media/landingpage-2.jpg)
+![](/pages/media/landingpage-3.jpg)
 
 You are also able to define a template to use with your page as well as the language of your page. Notice the convenience field where you can define the parent page as well. This allows you to link pages. 
