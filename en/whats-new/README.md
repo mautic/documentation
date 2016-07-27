@@ -25,6 +25,9 @@ Email and page builders have been overhauled to be cleaner and better. This mean
 
 You can now push contact aware content to your web pages through Mautic campaigns.  See [Dynamic Web Content](./../dwc/index.html)
 
+###Bi-directional Salesforce Integration
+This much anticipated feature is now in Mautic!  For an overview [watch this video](https://mautic.wistia.com/medias/4631xkjcw8).
+
 ###Lifecycle stages
 
 You can now track your contacts through various stages and lifecycles. 
@@ -35,3 +38,11 @@ You can now track your contacts through various stages and lifecycles.
 Drag and Drop with new widgets for end-to-end attribution and more.
 [Watch this video for an overview.](https://mautic.wistia.com/medias/qzoqsqko12)
 
+###UTM Tags
+A simple code you can attach to a custom URL to track content and more.  The UTM tags that are currently supported are:
+- utm_campaign
+- utm_content
+- utm_medium
+- utm_source
+- utm_term
+For more information on this [watch this video.](https://mautic.wistia.com/medias/vmqohgece0)
