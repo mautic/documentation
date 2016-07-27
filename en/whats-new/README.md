@@ -19,12 +19,19 @@ This release switches CKEditor in favor of Froala editor which has a more polish
 ###New email and page builders!
 
 Email and page builders have been overhauled to be cleaner and better. This means that custom themes have changed as well.
-Watch this video for more. (https://mautic.wistia.com/medias/vtdlpc365u)
+[Watch this video for more.](https://mautic.wistia.com/medias/vtdlpc365u)
 
 ###Dynamic web content
 
 You can now push contact aware content to your web pages through Mautic campaigns.  See [Dynamic Web Content](./../dwc/index.html)
 
-###
+###Lifecycle stages
 
-##Version 1.4
+You can now track your contacts through various stages and lifecycles. 
+[Watch this video for more.](https://mautic.wistia.com/medias/ourd9qpfhy)
+
+###Updated Dashboard
+
+Drag and Drop with new widgets for end-to-end attribution and more.
+[Watch this video for an overview.](https://mautic.wistia.com/medias/qzoqsqko12)
+
