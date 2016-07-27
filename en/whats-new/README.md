@@ -10,6 +10,21 @@ Mautic 2.0 bround a record number of enhancements to Mautic.  The full release n
 - PostgreSQL support has been dropped
 
 ###Cron Jobs Update
-See [Cron Jobs](./../setup/cron_jobs.html
+See [Cron Jobs](./../setup/cron_jobs.html)
+
+###Froala editor
+
+This release switches CKEditor in favor of Froala editor which has a more polished look and functionality. 
+
+###New email and page builders!
+
+Email and page builders have been overhauled to be cleaner and better. This means that custom themes have changed as well.
+Watch this video for more. (https://mautic.wistia.com/medias/vtdlpc365u)
+
+###Dynamic web content
+
+You can now push contact aware content to your web pages through Mautic campaigns.  See [Dynamic Web Content](./../dwc/index.html)
+
+###
 
 ##Version 1.4
