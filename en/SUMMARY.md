@@ -12,6 +12,7 @@
 * [Components](components/README.md)
     * [Assets](assets/README.md) 
         * [Manage Assets](assets/manage_assets.md) 
+    * [Dynamic Web Content](dwc/README.md)
     * [Forms](forms/README.md) 
         * [Manage Forms](forms/manage_forms.md)  
     * [Pages](pages/README.md)
