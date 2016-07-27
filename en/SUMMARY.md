@@ -26,6 +26,7 @@
         * [Mailer is owner](emails/mailer_is_owner.md) 
         * [Troubleshooting](emails/troubleshooting.md)
     * [Text Messages](sms/README.md) 
+    * [Social Monitoring](social-monitoring/README.md)
 * [Campaigns](campaigns/README.md)
     * [Manage Campaigns](campaigns/manage_campaigns.md)
     * [Campaign Builder](campaigns/campaign_builder.md)
