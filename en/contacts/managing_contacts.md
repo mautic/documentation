@@ -12,7 +12,7 @@ Hint: If you prefer using keyboard shortcuts you can enter "t" on your keyboard 
 
 The segment can be searched using the box at the top of the list, and can be ordered using the table headings by clicking on the heading you wish to sort the list by.
 
-![](http://drop.dbh.li/image/1m2J3u1d3z1T/Image%202014-11-17%20at%2010.29.08%20AM.png)
+![](/contacts/media/contacts-search.jpg)
 
 The search box allows many different search types and follows the same search process and variables as found in all other search layouts. You can learn more about the powerful search options available on the search documentation page.
 

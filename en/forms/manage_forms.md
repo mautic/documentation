@@ -10,13 +10,13 @@ The form overview provides a quick overview of the submissions received over a t
 
 A form can contain as many fields as needed. These fields can be laid out dynamically by the system or handled via HTML if you want more control.
 
-![](http://drop.dbh.li/image/2a1P1b1F3y2w/Image%202014-11-17%20at%204.16.40%20PM.png)
+![](/forms/media/new-form.jpg)
 
 ### Form Actions
 
 Form actions are items to be handled on the submission of the form. You can define multiple actions to be performed on each submission.
 
-![](http://drop.dbh.li/image/3o2r2g2s2D1C/Image%202014-11-17%20at%204.23.16%20PM.png)
+![](/forms/media/form-actions.jpg)
 
 #### Creating and Updating Contacts with Forms ####
 

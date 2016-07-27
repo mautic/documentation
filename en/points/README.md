@@ -8,7 +8,7 @@ Point actions are those times when a contact receives a change in their point to
 
 A partial list can be seen in the screenshot below.
 
-![](http://drop.dbh.li/image/321Y3d113e36/Image%202014-11-18%20at%2011.47.26%20PM.png)
+![](/points/media/new-point-action.jpg)
 
 Clearly these actions can be expanded upon as needed. This is the essence of point actions. The other part of the points system are the triggers. They are defined next.
 
@@ -18,6 +18,6 @@ Point triggers are resulting events which are fired based on the achieved point 
 
 When creating a point trigger you have the option to apply the trigger to all existing and applicable contacts as well as new contacts.
 
-![](http://drop.dbh.li/image/451T2k3I1M3W/Image%202014-11-18%20at%2011.58.32%20PM.png)
+![](/points/media/new-point-trigger-action.jpg)
 
 These point triggers and associated events are also fully customizable.

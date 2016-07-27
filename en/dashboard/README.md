@@ -1,6 +1,6 @@
 # Dashboard
 
-Mautic 1.4.0 brought a customizable dashboard where each user can compose widgets with information she/he wants to track.
+Mautic 1.4.0 brought a customizable dashboard where each user can compose widgets with information she/he wants to track.  Mautic 2.0 brought a number of enhancements to the Dashboard.
 
 ## Date range filter
 

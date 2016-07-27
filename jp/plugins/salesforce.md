@@ -1,6 +1,6 @@
 # Mautic - Salesforce CRMプラグイン
 
-リードが何らかのアクションを行ったとき、このプラグインはSalesforce CRMにリードをプッシュすることができます。Salesforce CRMのアカウントをまだお持ちでないのなら、[作成してください](http://www.salesforce.com/)。
+コンタクトが何らかのアクションを行ったとき、このプラグインはSalesforce CRMにコンタクトをプッシュすることができます。Salesforce CRMのアカウントをまだお持ちでないのなら、[作成してください](http://www.salesforce.com/)。
 
 ## 要件
 

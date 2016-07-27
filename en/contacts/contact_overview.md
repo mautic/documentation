@@ -27,6 +27,7 @@ If the social plugins like Facebook or Twitter are enabled and authorized and th
 If Mautic knows the coordinates of the contact from a geolocation IP lookup service, it will display a forth tab with a map so you can easily see where in the world the contact is located. If Mautic knows more locations for this contact as he/she travels, you'll see all the locations there. If Mautic doesn't know any location, the tab won't show up.
 
 ## Change contact segments
+![](/contacts/media/change-segments.jpg)
 
 Click the drop down box arrow in the top right hand corner of the contact detail. Select *Segments*. A modal box will show up where you'll see all the segments. The green switch means that the contact belong to the segment, the orange switch means the opposite. Click the switch to add/remove the contact to/form the segment.
 
