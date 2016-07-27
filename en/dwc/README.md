@@ -6,4 +6,4 @@ There are several steps involved in setting this up.
 
 ##Setup
 1.  Add the default content.
-
+![](/dwc/media/dwc-default.jpg)
