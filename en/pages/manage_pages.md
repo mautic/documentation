@@ -20,10 +20,16 @@ As mentioned previously when viewing the page details you can also view the vari
 
 ### New/Edit Pages
 
-The page form allows you to create new pages and offers a number of fields for your convenience. You will notice most of them in the following screenshot
+The page form allows you to create new pages and offers a number of fields for your convenience. You will notice most of them in the following screenshot.  In particular you will notice the Page Builder button on the top toolbar. This is where you will launch the page builder to easily create your page layouts.
 
-![](/pages/media/edit-landing-page-1.jpg)
+![](/pages/media/landingpage-1.jpg)
 
-In particular you will notice the Page Builder button on the top toolbar. This is where you will launch the page builder to easily create your page layouts.
+Every part of the template is editable via drag and drop.  Click in a text box to edit.  Click on an image to replace.  Once you're happy, just click "Close Builder" and you'll see a representation of the page.
+
+![](/pages/media/landingpage-2.jpg)
+
+You can fine tune any aspect of the page via the Content tab and Source Code view.  You can even paste your own HTML inside.
+
+![](/pages/media/landingpage-2.jpg)
 
 You are also able to define a template to use with your page as well as the language of your page. Notice the convenience field where you can define the parent page as well. This allows you to link pages. 
