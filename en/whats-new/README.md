@@ -10,7 +10,6 @@ Mautic 2.0 bround a record number of enhancements to Mautic.  The full release n
 - PostgreSQL support has been dropped
 
 ###Cron Jobs Update
-See ../setup/cron_jobs.html
-
+See [Cron Jobs](./../setup/cron_jobs.html
 
 ##Version 1.4
