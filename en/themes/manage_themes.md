@@ -8,7 +8,9 @@ From the configuration screen, the available themes will be listed in a dropdown
 
 ![Configure themes under Administration Settings->System Settings](/themes/media/theme-config.jpg)
 
-To assign a theme to a specific resource - such as a landing page - select the theme from the dropdown, and save the resource.
+Themes are available for emails and landing pages on each one's main editing page
 
-![Select a theme for a new page](/themes/media/theme-page-builder.jpg)
+![Select a theme for a new page](/themes/media/themes2.jpg)
+
+
 
