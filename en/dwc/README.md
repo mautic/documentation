@@ -20,5 +20,9 @@ Once the pull request is processed and Mautic determines if the visitor is a kno
 
 ###Finally, include the dynamic web content shortcode in your web page.  
 ```
-<div class="mautic-slot" data-slot-name="dwc">Text in the html - this shows up if the visitor is not known</div>
+<div class="mautic-slot" data-slot-name="dwc">Text in the html - 
+this shows up if the visitor is not known</div>
 ```
+Note the data-slot-name matches the slot name in the campaign.
+
+Watch a video tutorial:  (https://www.youtube.com/watch?v=eChzJm5yBUk)
