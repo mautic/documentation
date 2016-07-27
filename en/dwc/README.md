@@ -15,7 +15,10 @@ The key to this step is naming the "slot".  This can be anything you want as lon
 ![](/dwc/media/dwc-pull-request.jpg)
 
 ###Add the push request in the campaign.  
-If you want to serve up different information based on certain criteria, you can use a push request.  If the person is known, you can send them one set of content.  If they meet the criteria (in the example below - if they are from Canada), a different set of content can be delivered to the browser.  If they do not meet the criteria, they will receive the content from the pull request.  If they are unknown, they will see the information embedded in the dynamic web content div from the page (see below).
+If you want to serve up different information based on certain criteria, you can use a push request.  
+1.  If the person is known, they receive the content from the pull request.  
+2.  If they meet the criteria (in the example below - if they are from Canada), a different set of content can be delivered to the browser.  
+3.  If they are unknown, they will see the information embedded in the dynamic web content div from the page (see below).
 ![](/dwc/media/dwc-push.jpg)
 
 ###Finally, include the dynamic web content shortcode in your web page.  
