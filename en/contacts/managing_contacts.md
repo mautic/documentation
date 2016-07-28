@@ -44,3 +44,15 @@ To edit a contact, click on the name of the contact (or the IP address if the vi
 From this screen, you can view the recent events and any notes that have been made against the contact.
 
 To edit the contact, click on the 'edit' button on the top-right menu.
+
+## Contact duplicates
+
+When Mautic track contact's actions like page hits or form submissions, it will automatically merge the contacts by unique identifiers which are:
+- IP address
+- Cookie
+- Email
+- _Possibly any contact field you mark as unique identifier_
+
+The list of identifiers above is sorted by priority. If Mautic knows only the IP address, it will merge the contact action with a contact with the same IP address. If the IP address does not exist in the Mautic database yet, it will create a new contact. But if Mautic knows the unique cookie, it will merge the actions to the contact with the same cookie or creates a new one. Similarly, if a contact sends a form with an email address, it will merge the submission with the contact having the same email address. Even if the IP address or the cookie matches another contact.
+
+So Mautic will take care of duplicate contacts from the tracking. But you can still create a duplicate contact by creating a new contact via the Mautic administration. As of Mautic 2.1.0, you will be noticed if you are creating a new contact which has the same unique identifier as some existing contact.
