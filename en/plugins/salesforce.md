@@ -29,7 +29,7 @@ Insert the keys to the Mautic Salesforce plugin and authorize it.
 
 Configure the [field mapping](./../plugins/field_mapping.html).
 
-###Features
+### Features
 Enabled features:
 you can pull leads and/or push leads from and to the integration.
 
@@ -42,7 +42,7 @@ Select the objects you wish to pull or push records from. You can push contacts 
 
 Pulling records will be done from Leads and/or Contacts objects in records.
 
-###Command line script to pull records from Salesforce
+### Command line script to pull records from Salesforce
 To pull records from salesforce you need to use a command from CLI. Use this command:
 
 Used to pull records from the Leads object in Salesforce
@@ -58,7 +58,7 @@ Parameters both commands take:
 
 **--integration**=Salesforce  to use with salesforce integration.  In future this command may be used for other integrations.
 
-##Setin up Mautic's custom object in Salesforce
+## Setin up Mautic's custom object in Salesforce
 To be able to push activities to the salesforce integration you first need to setup a custom object in your salesforce instance. Please setup the object as it is described below.
 
 Custom object name: Mautic__timeline (API  name: Mautic_timeline__c)
