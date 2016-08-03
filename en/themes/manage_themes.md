@@ -18,11 +18,15 @@ If you want to create your own theme, the simplest way to do that is to download
 
 ### Update an old theme
 
-The old theme files will be rewritten by the new one when installing a theme which already exists in your Mautic. Therefore, the theme updates can be also done by the Theme Manager's Install form.
+The old theme files will be overwritten by the new one when installing a theme which already exists in your Mautic. Therefore, the theme updates can be also done by the Theme Manager's Install form.
+
+The pre-installed themes cannot be overwritten because the changes would return again after a Mautic update.
 
 ### Delete a theme
 
 Go to the Theme Manager, check what theme(s) you want to delete and then click the red button above the theme table to delete them.
+
+The pre-installed themes cannot be deleted because they would appear again after a Mautic update.
 
 ## Assigning a default theme
 
