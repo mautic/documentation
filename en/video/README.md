@@ -12,6 +12,20 @@ Gated videos are not an entity within Mautic; they do not have a menu item. Gate
 can be embedded in your landing page content or in your website that has the Mautic
 tracking javascript installed.
 
+jQuery is required for gated video embeds to function. You can use Mautic's jQuery by
+inserting the following tag into your document head on landing pages. 
+
+```
+<script type="text/javascript" src="/app/bundles/CoreBundle/Assets/js/libraries/2.jquery.js"></script>
+```
+
+If you want to use gated video with Vimeo videos, you must also embed the Froogaloop js
+library from Vimeo. That can be embedded from their CDN using the following code.
+
+```
+<script type="text/javascript" src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
+```
+
 Any `<video>` tag found by the javascript that has a `data-form-id` and `data-gate-time`
 attribute will be treated as a gated video by the Mautic javascript. The simplest way to
 embed a gated video is to embed the HTML below on a page where the Mautic tracking
