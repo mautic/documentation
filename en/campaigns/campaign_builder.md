@@ -1,6 +1,16 @@
 # Campaign Builder
 
-The Mautic campaign builder gives you a blank canvas upon which to build your campaign workflow. The overall interface is clean and simple with easy to use actions and decisions. These actions, decisions, or conditions can be either clicked or dragged and dropped onto the campaign builder canvas.
+The Mautic campaign builder gives you a blank canvas upon which to build your campaign workflow. The overall interface is clean and simple with easy to use events. These actions, decisions, or conditions can be added through clicking the "anchors" of events.
+
+### Sources 
+
+The first thing to be selected is where the campaign will pull in contacts from or contact sources. There are currently two options for contact sources: segments and forms. One or both can be added to the campaign.
+ 
+![](/campaigns/media/contact-sources.png)
+
+After selecting one or more sources, the next step will be to add one or more action (most likely), decision and/or condition:
+
+![](/campaigns/media/events.png)
 
 ### Actions
 
@@ -8,9 +18,11 @@ Campaign actions are those items which are initiated by you. These are items whi
 
 When you create a campaign you will select one of these actions to begin the workflow. In most cases this initial step will be an email sent to your segments.
 
-![](/campaigns/media/send-email-delay.jpg)
+![](/campaigns/media/send-email-delay.png)
 
-You will notice that when you add an email to a campaign you will be able to select a potential *delay* for when the email is delivered.
+You will notice that when you add an email to a campaign you will be able to select a potential *delay* for when the email is delivered. If the action is attached to a decision's non-action initiated decision path, the delay becomes how long the contact has to take action before the campaign progresses down the non-action path. 
+
+![](/campaigns/media/send-email-delay-nonaction.png)
 
 After you have added an action you will more than likely place a decision on the campaign.
 
@@ -20,9 +32,9 @@ Decisions are actions which are initiated by the contact. These decisions can be
 
 Decisions are taken in response to an action and as such a decision has two outcomes.
 
-![](http://drop.dbh.li/image/1h3106221l1F/Image%202014-11-21%20at%204.07.35%20PM.png)
+![](/campaigns/media/decision-anchors.gif)
 
-These two options are demonstrated by the green and red decision points on the decision.  Each path can then be handled by your campaign. This process is typically referred to as a **decision tree**.
+These two options are demonstrated by the green and red decision points on the decision. Each path can then be handled by your campaign. This process is typically referred to as a **decision tree**.
 
 __It is important to note that a contact must already be part of the campaign in order for it to recognize the decision executed. Therefore, campaigns should never start with a decision unless you are manually managing the contacts assigned to it and the decision is expected to be executed at a later time.__ 
 

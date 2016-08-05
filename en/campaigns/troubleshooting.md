@@ -4,7 +4,7 @@
 
 There can be a few reasons for this:
 
-1) Make sure that you are not testing teh page visit while logged into Mautic. Mautic ignores user generated activity so use an anonymous session, another browser, or logout of Mautic.
+1) Make sure that you are not testing the page visit while logged into Mautic. Mautic ignores user generated activity so use an anonymous session, another browser, or logout of Mautic.
 
 2) Ensure the contact getting tracked is the in the campaign. The easy way to test this is to review the time line of the contact for the page hit.
 
