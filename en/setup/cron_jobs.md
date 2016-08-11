@@ -2,7 +2,7 @@
 
 Mautic requires a few [cron jobs](https://en.wikipedia.org/wiki/Cron) to handle some maintenance tasks. Most web hosts provide a means to add cron jobs either through SSH, cPanel, or another custom panel. Please consult your host's documentation/support if you are unsure on how to setup cron jobs.
 
-How frequently you run the cron jobs is up to you. Many shared hosts prefer that you run scripts every 15 or 30 minutes and may even override the scheduled times to meet these restrictions. Consult your host's documentation if they have such a restriction. 
+How frequently you run the cron jobs is up to you. Many shared hosts prefer that you run scripts every 15 or 30 minutes and may even override the scheduled times to meet these restrictions. Consult your host's documentation if they have such a restriction.
 
 **It is recommended that you stagger the following required jobs so as to not run the exact same minute.**
 
@@ -51,9 +51,9 @@ php /path/to/mautic/app/console mautic:emails:send
 ```
 
 ### Fetch and Process Monitored Email ###
- 
-If using the [Bounce Management](./../emails/bounce_management.html),  
- 
+
+If using the [Bounce Management](./../emails/bounce_management.html),
+
 ```
 php /path/to/mautic/app/console mautic:email:fetch
 ```
@@ -67,11 +67,21 @@ php /path/to/mautic/app/console mautic:webhooks:process
 ```
 
 ### Update MaxMind GeoLite2 IP Database
- 
+
 Mautic uses [MaxMind's](http://www.maxmind.com) GeoLite2 IP database by default. The database is licensed under the (Creative Commons Attribution-ShareAlike 3.0 Unported License)[http://creativecommons.org/licenses/by-sa/3.0/] and thus cannot be packaged with Mautic. The database can be downloaded manually through Mautic's Configuration or the following script can be used as a cron job to automatically download updates. (MaxMind updates their database the first Tuesday of the month).
- 
+
 ```
 php /path/to/mautic/app/console mautic:iplookup:download
+```
+
+### Cleanup Old Data
+
+Cleanup a Mautic installation by purging old data. Note that not all data is able to be purged. Currently supported are audit log entries, visitors (anonymous contacts), and visitor page hits. Use `--dry-run` to view the number of records to be purged before making any changes.
+
+**This will permanently delete data! Be sure to keep database backups.**
+
+```
+php /path/to/mautic/app/console mautic:maintenance:cleanup --days-old=365 --dry-run
 ```
 
 ## Note ##
@@ -85,5 +95,5 @@ If your environment provides a command-line specific build of php, often called 
 To assist in troubleshooting cron issues, you can pipe the output of each cron job to a specific file by adding something like `>/path/to/somefile.log 2>&1` at the end of the cron job. Then you can look at the contents of the file to see what was printed. If an error is occurring when running run the cron job, you will see it there, otherwise the file will be empty or have some stats. The modification time of the file informs you of the last time the cron job ran. You can thus use this to figure out whether or not the cron job is running successfully and on schedule.
 
 If you have SSH access, try to run the command directly to see if any errors are generated. If there is nothing printed from either in a SSH session or in the cron output from above, check the server's logs. If you see similar errors to `'Warning: Invalid argument supplied for foreach()' in /vendor/symfony/console/Symfony/Component/Console/Input/ArgvInput.php:287`, you either need to use `php-cli` instead of `php` or try using `php -d register_argc_argv=On`.
-` 
+`
 
