@@ -37,7 +37,7 @@ Push leads is done through a form or a campaign.
 
 Pull leads is done through command line and it can be setup as a cronjob.
 
-Feature specifi settings:
+Feature specific settings:
 Select the objects you wish to pull or push records from. You can push contacts to the Leads object in salesforce. you can also push activities (contact's timeline records) to a custom object in salesforce.
 
 Pulling records will be done from Leads and/or Contacts objects in records.
