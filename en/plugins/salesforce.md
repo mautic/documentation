@@ -31,7 +31,7 @@ Configure the [field mapping](./../plugins/field_mapping.html).
 
 ### Features
 Enabled features:
-you can pull leads and/or push leads from and to the integration.
+You can pull leads and/or push leads from and to the integration.
 
 Push leads is done through a form or a campaign.
 
@@ -58,7 +58,7 @@ Parameters both commands take:
 
 **--integration**=Salesforce  to use with salesforce integration.  In future this command may be used for other integrations.
 
-## Setin up Mautic's custom object in Salesforce
+## Setting up Mautic's custom object in Salesforce
 To be able to push activities to the salesforce integration you first need to setup a custom object in your salesforce instance. Please setup the object as it is described below.
 
 Custom object name: Mautic__timeline (API  name: Mautic_timeline__c)
