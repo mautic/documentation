@@ -59,7 +59,7 @@ Parameters both commands take:
 **--integration**=Salesforce  to use with salesforce integration.  In future this command may be used for other integrations.
 
 ## Setting up Mautic's custom object in Salesforce
-To be able to push activities to the salesforce integration you first need to setup a custom object in your salesforce instance. Please setup the object as it is described below.
+To be able to push activities to the salesforce integration you first need to setup a custom object in your salesforce instance. Please setup the object as it is described below.  (Note: these are two underscores with no space between - not rendered well in Github).
 
 Custom object name: Mautic\__timeline (API  name: Mautic_timeline\__c)
 
