@@ -63,12 +63,12 @@ To be able to push activities to the salesforce integration you first need to se
 
 Custom object name: Mautic__timeline (API  name: Mautic_timeline__c)
 API names of fields:
- ActivityDate__c Date/Time
- contact_id__c Lookup(Contact)
- Description__c Long Text Area(131072)
- WhoId__c 	Lookup(Lead)
- MauticLead__c Number(18, 0) (External ID)
- Mautic_url__c URL(255)
+ActivityDate__c  - Date/Time
+contact_id__c - Lookup(Contact)
+Description__c  - Long Text Area(131072)
+WhoId__c - Lookup(Lead)
+MauticLead__c - Number(18, 0) (External ID)
+Mautic_url__c - URL(255)
 
 ## Test the plugin
 
