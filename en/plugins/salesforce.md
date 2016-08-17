@@ -61,14 +61,15 @@ Parameters both commands take:
 ## Setting up Mautic's custom object in Salesforce
 To be able to push activities to the salesforce integration you first need to setup a custom object in your salesforce instance. Please setup the object as it is described below.
 
-Custom object name: Mautic__timeline (API  name: Mautic_timeline__c)
+Custom object name: Mautic\__timeline (API  name: Mautic_timeline\__c)
+
 API names of fields:
-ActivityDate__c  - Date/Time
-contact_id__c - Lookup(Contact)
-Description__c  - Long Text Area(131072)
-WhoId__c - Lookup(Lead)
-MauticLead__c - Number(18, 0) (External ID)
-Mautic_url__c - URL(255)
+- ActivityDate\__c : Date/Time
+- contact_id\__c : Lookup(Contact)
+- Description\__c  : Long Text Area(131072)
+- WhoId\__c : Lookup(Lead)
+- MauticLead\__c : Number(18, 0) (External ID)
+- Mautic_url\__c : URL(255)
 
 ## Test the plugin
 
