@@ -8,7 +8,7 @@ Emails can be created in both full HTML as well as basic text format to be deliv
 
 ### Email Delivery
 
-Emails are delivered using the method defined by the system administrator. If you are the system administrator for your company, then you will need to add the email protocol for your company to use. Mautic integrates with any email service provider which offers SMTP mail servers as well as several distinct services such as Mandrill, Sendgrid, and Amazon SES.
+Emails are delivered using the method defined by the system administrator. If you are the system administrator for your company, then you will need to add the email protocol for your company to use. Mautic integrates with any email service provider which offers SMTP mail servers as well as several distinct services such as [Mandrill](http://mandrill.com/), [Gmail](http://gmail.com) [Sendgrid](https://sendgrid.com), [Mailjet](https://app.mailjet.com/signup?utm_source=mautic), [Postmark](https://postmarkapp.com/), [Sendmail](https://www.sendmail.com/) and [Amazon SES](https://aws.amazon.com/ses/).
 
 The system can either send emails immediately or queue them to be processed in batches by a cron job.
 
