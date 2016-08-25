@@ -162,6 +162,7 @@ Mautic makes this even easier by providing key integrations to many existing con
 * [WordPress](http://mautic.org/integration/wordpress)
 * [Typo3](http://mautic.org/integration/typo3)
 * [Concrete5](http://mautic.org/integration/concrete5)
+* [Grav](https://github.com/mautic/mautic-grav)
 
 These are just a few of the integrations already created by the Mautic community. More will be added in the future and developers are encouraged to submit their own integrations.
 
