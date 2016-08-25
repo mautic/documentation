@@ -4,19 +4,19 @@
 
 ## ステップ　1: Mautic をインストールする
 
-すでにZipファイルを各ダウンロードページやから入手されているか，Softaculous，Bitmani，Digital Ocean といった他の媒体からインストールされて最初のステップをクリアされたかもしれません。ダウンロードだけされていてまだインストールされてない場合はサーバへ Mautic のパッケージファイル(zip で圧縮しています)をアップロードする必要があります。次に zip ファイルを展開し，ブラウザで zip ファイルを展開したパスや URL へアクセスしてください。Mautic のインストールプロセスはとても簡単だとおわかりいただけると思います。
+すでにZipファイルを各ダウンロードページから入手されているか，Softaculous，Bitmani，Digital Ocean といった他の媒体からインストールされて最初のステップをクリアされたかもしれません。ダウンロードだけされていてまだインストールされてない場合はサーバへ Mautic のパッケージファイル(zip で圧縮しています)をアップロードする必要があります。次に zip ファイルを展開し，ブラウザで zip ファイルを展開したパスや URL へアクセスしてください。Mautic のインストールプロセスはとても簡単だとおわかりいただけると思います。
 
 ## ステップ 2: Cron Jobを追加する
 
 Mautic をインストールするとタスクを処理するために基本的な cron job を作る必要があります。これらの cron job は cPanel やコマンドラインから作成・追加できます。この手の作業にあまりなじみがない，得意ではない場合はフォーラムや Slack で是非相談してみてください。作成が必要な cron job を以下に列挙します。
 
-**コンタクトリストの更新**
+**セグメントの更新**
 
 `php /path/to/mautic/app/console mautic:segments:update`
 
 **キャンペーンの更新**
 
-`php /path/to/mautic/app/console mautic:campaigns:update`
+`php /path/to/mautic/app/console mautic:campaigns:rebuild`
 
 **キャンペーンアクションの実行**
 
@@ -30,10 +30,14 @@ Mautic をインストールするとタスクを処理するために基本的�
 
 サポートされている好みの IP Lookup サービスを選択することもできます。
 
-## ステップ 4: トラッキングピクセルをインストールする
+## ステップ 4: トラッキング JavaScript をインストールする
 
-cron job のインストールとセットアップが終わると，コンタクトを追跡する準備が整います。コンタクトを Mautic でトラッキングさせるにはトラッキングピクセルを各サイトに埋め込む必要があります。とても簡単なプロセスですし，テンプレートファイルや他の CMS プラットフォームへ Mautic インテグレーションをインストールすることもできます。サンプルのトラッキングピクセルはこのようになります:
+cron job のインストールとセットアップが終わると，コンタクトを追跡する準備が整います。 Mautic で追跡したい各サイトのWebサイトにシンプルな JavaScript を追加する必要があります。とても簡単なプロセスですし，テンプレートファイルや他の CMS プラットフォームへ Mautic インテグレーションをインストールすることもできます。サンプルのトラッキング JavaScript はこのようになります:
 
-`<img src="http://yourdomain.com/path/to/mautic/mtracking.gif" />`
+```
+<script> (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n; w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t), m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m) })(window,document,'script','http(s)://yourmautic.com/mtc.js','mt'); mt('send', 'pageview'); </script>
+``` 
+
+上記スクリプトのサイトURL (yourmautic.com をあなたのサイトのURLに置換) を変更する必要があります。
 
 トラッキングピクセルについての詳しい内容は  [コンタクトの監視](./../contacts/contact_monitoring.html) をご確認ください。
