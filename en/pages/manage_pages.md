@@ -18,6 +18,12 @@ Notice when viewing the page details you can select the Details tab located just
 
 As mentioned previously when viewing the page details you can also view the various translations and page variants which have been created. These variations are also useful when performing A/B testing.
 
+When creating/editing a landing page, there are the options to configure a language and translation parent. By selecting a translation parent, the current item is then considered to be a translation in the selected language of that parent item. 
+
+If the contact has a preferred locale or browser set in an available translation, and that translation exists, the translated landing page will automatically display for that contact. A contact's preferred locale is automatically gleaned from the browser's settings but can be overridden by editing the contact's preferred locale profile field.
+
+It is also possible to have translations of A/B test variants.
+
 ### New/Edit Pages
 
 The page form allows you to create new pages and offers a number of fields for your convenience. You will notice most of them in the following screenshot.  In particular you will notice the Page Builder button on the top toolbar. This is where you will launch the page builder to easily create your page layouts.

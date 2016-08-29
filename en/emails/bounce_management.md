@@ -53,3 +53,20 @@ Mautic supports a few of Mandrill's webhooks for bounces.
 ![Add metadata](/emails/media/mandrill_webhook_5.png "Add metadata")
 
 ![Add metadata](/emails/media/mandrill_webhook_4.png "Add metadata")
+
+## Sparkpost Webhook
+
+1) Login to your Sparkpost account and go to Account -> Webhooks.
+
+![Webhooks](/emails/media/sparkpost_webhook_1.png "Sparkpost webhooks")
+
+2) Click the New Webhook button top right
+
+![New Webhook](/emails/media/sparkpost_webhook_2.png "New webhook")
+
+3) Fill in the Target URL as `http://your-mautic.com/mailer/sparkpost/callback`
+
+4) Select the following Events
+
+![Events](/emails/media/sparkpost_webhook_3.png "Events")
+
