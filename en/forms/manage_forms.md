@@ -42,6 +42,10 @@ When on the form overview page you can click the Results button located in the t
 
 The form preview provides a popup overview of what the form will look like. Remember that form styling is controlled by the surrounding page or website content and thus will display differently in final layout then in the preview.
 
+### Form Style
+
+It is possible to choose a theme for a form. If you do so and the theme supports this feature, the form will be styled by CSS from that theme.
+
 ### Pre-populate a form field value
 
 It is possible to pre-populate the value of a form field from the URL query parameters.
