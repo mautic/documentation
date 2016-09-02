@@ -8,6 +8,12 @@ The email overview allows at-a-glance information regarding the success or failu
 
 Email creation can be handled through the graphical email builder with little to no HTML knowledge. Emails are assigned to particular segments and/or campaigns. Below are some key steps to be performed when creating an email.
 
+### Translations
+
+When creating the email, an option is given to assign a language and a translation parent. By selecting a translation parent, the current item is then considered to be a translation in the selected language of that parent item. If a contact has a preferred language set, they will receive the translated version in their preferred language if it exists. Otherwise, they will receive the parent in the default language. 
+
+It is also possible to have translations of A/B test variants.
+
 ### Segments
 
 When creating an email you can select the segments to which you want to send the email.
@@ -22,7 +28,7 @@ The email builder is a graphical user interface to create an HTML email through 
 
 The email builder provides quick and convenient access to assets, landing pages, and other extra fields which are considered important or commonly used.
 
-### Base64 encoded images
+### Base64 Encoded Images
 
 Since Mautic 1.4, there is a new option in the Mautic configuration, the Email Settings tab. You can let Mautic encode all images in the email text as base64. It will attach the image inside the email body. It has several implications:
 
@@ -32,6 +38,6 @@ Since Mautic 1.4, there is a new option in the Mautic configuration, the Email S
 - However, some email clients like Gmail will require the approval because of the tracking pixel and won't display the base64 encoded images anyway. See the next paragraph for possible solution.
 - The email body will increase significantly if the email contains many and/or big images. Some email clients like Gmail will "clip" such email and won't display it directly.
 
-### Disable the tracking pixel
+### Disable the Tracking Pixel
 
 As described above, some email clients display the image approval if one of the images is loaded from remote location. Like the tracking pixel. If you care more about this approval than the email open tracking, you can disable the tracking pixel. Then the images should be displayed directly without any approval.

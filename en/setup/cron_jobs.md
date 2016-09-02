@@ -4,7 +4,12 @@ Mautic requires a few [cron jobs](https://en.wikipedia.org/wiki/Cron) to handle 
 
 How frequently you run the cron jobs is up to you. Many shared hosts prefer that you run scripts every 15 or 30 minutes and may even override the scheduled times to meet these restrictions. Consult your host's documentation if they have such a restriction.
 
-**It is recommended that you stagger the following required jobs so as to not run the exact same minute.**
+**It is HIGHLY recommended that you stagger the following required jobs so as to not run the exact same minute.**
+
+For instance:
+- 0,15,30,45 <— segments:update
+- 5,20,35,50 <— camaigns:update
+- 10,25,40,55 <— campaigns:trigger
 
 ## Required ##
 
