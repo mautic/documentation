@@ -63,6 +63,14 @@ If using the [Bounce Management](./../emails/bounce_management.html),
 php /path/to/mautic/app/console mautic:email:fetch
 ```
 
+### Social Monitoring ###
+
+If using the [Social Monitoring](./../social-monitoring.html),
+
+```
+php /path/to/mautic/app/console mautic:social:monitoring
+```
+
 ### Webhooks
 
 If Mautic is configured to send webhooks in batches, use the following command to send the payloads:
@@ -101,4 +109,3 @@ To assist in troubleshooting cron issues, you can pipe the output of each cron j
 
 If you have SSH access, try to run the command directly to see if any errors are generated. If there is nothing printed from either in a SSH session or in the cron output from above, check the server's logs. If you see similar errors to `'Warning: Invalid argument supplied for foreach()' in /vendor/symfony/console/Symfony/Component/Console/Input/ArgvInput.php:287`, you either need to use `php-cli` instead of `php` or try using `php -d register_argc_argv=On`.
 `
-
