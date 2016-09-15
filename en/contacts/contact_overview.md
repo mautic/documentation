@@ -42,3 +42,9 @@ If you have 2 contacts in the Mautic database who is physically one person, you 
 ## Send email to contact
 
 The drop down menu in the top right corner of the contact detail page also lets you send an email directly to the contact. You can fill in *From Name*, *From* (email address), *Subject* and the *Body* message. You can also *Import from an existing template*. If you select some email from this select box, the Subject and the Body textarea will be prefilled from that pre-defined email template. Emails send by this method are not tracked by Mautic.
+
+
+## Mark as do not contact
+
+This feature helps in making a user 'Do not contact' manually. Click the drop down box arrow in the top right  corner of the contact detail page. Select *Do Not Contact*, and the user will be marked as do not contact upon confirmation.
+
