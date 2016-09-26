@@ -63,6 +63,9 @@ Conditions can be used to execute different actions based on a contact's data.  
 
 __The delay you set is ran before checking the condition no matter the delay you add on the connected actions. It will not wait the delay on the connected action to check the status of the condition to qualify the contact into the positive or negative path of the condition.__
 
+Currently there are 2 types of conditions
+1. Conditions based on Contact Field Value.
+2. Conditions based on Form Field Value.
 
 #### Positive status Condition Path (Green Points)
 
