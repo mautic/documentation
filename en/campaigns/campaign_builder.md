@@ -50,7 +50,7 @@ Actions attached to the red point of a decision are considered non-action points
 
 Use an action's delay settings to define at what point should the campaign send the contact down this path.
 
-To trigger this events, see [Executing Campaign Actions](https://www.mautic.org/docs/campaigns/manage_campaigns.html#executing-campaign-actions).
+To trigger this events, see [Executing Campaign Actions](https://mautic.org/docs/en/campaigns/manage_campaigns.html#executing-campaign-actions).
 
 #### Example
 
@@ -63,6 +63,9 @@ Conditions can be used to execute different actions based on a contact's data.  
 
 __The delay you set is ran before checking the condition no matter the delay you add on the connected actions. It will not wait the delay on the connected action to check the status of the condition to qualify the contact into the positive or negative path of the condition.__
 
+Currently there are 2 types of conditions
+1. Conditions based on Contact Field Value.
+2. Conditions based on Form Field Value.
 
 #### Positive status Condition Path (Green Points)
 
