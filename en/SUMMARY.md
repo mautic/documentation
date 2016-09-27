@@ -11,6 +11,7 @@
     * [Manage Segments - formerly Lists](contacts/manage_segments.md)
     * [Manage Fields](contacts/manage_fields.md)
     * [Frequency Rules](contacts/contact_frequecy_rules.md)
+* [Companies](companies/companies.md)    
 * [Components](components/README.md)
     * [Assets](assets/README.md) 
         * [Manage Assets](assets/manage_assets.md) 
