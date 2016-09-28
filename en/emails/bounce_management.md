@@ -56,7 +56,7 @@ Mautic supports a few of Mandrill's webhooks for bounces.
 
 ## Mailjet Webhook configuration
 
-Mautic supports Mailjet's webhooks for bounces, spam and blocked. Before any configuration, you'll need to create an account on [Mailjet](http://www.mailjet.com/?aff=mauticwm).
+Mautic supports Mailjet's webhooks for bounces, spam and blocked. Before any configuration, you'll need to create an account on [Mailjet](http://www.mailjet.com/).
 
 1) Login to your Mailjet account and go to My Account -> Event tracking (triggers)
 
