@@ -39,6 +39,7 @@
 * [Reports](reports/README.md)
 * [Points](points/README.md)
     * [Troubleshooting](points/troubleshooting.md)
+* [Stages](stages/stages.md)
 * [Plugins](plugins/README.md)
    * [Hubspot CRM](plugins/hubspot_crm.md)
    * [iContact](plugins/icontact.md)
