@@ -38,7 +38,7 @@ In addition to the form data, an array of `mautic_form` with details like ID, na
 
 ![](/forms/media/repost.png)
 
-#### Creating and Updating Contacts with Forms ####
+### Creating and Updating Contacts with Forms
 
 To have your form create or update contacts (in order to update, there must be a matching unique identifier). Each form field can be mapped to a custom contact field through the form's Contact Field tab. Some fields result in automatic matching such as email and country. 
 
@@ -46,7 +46,7 @@ As of 2.2.0, for fields that include select lists (select, radio, checkboxes), o
 
 ![](/forms/media/rebuild.png)
 
-### Kiosk mode
+#### Kiosk mode
 
 The kiosk mode is helpful when you know that some form will be submitted from one device by multiple contacts. For example like a kiosk at a conference. When the kiosk mode is turned on, each submission will create new contact. When a kiosk mode is turned off, Mautic will edit the contact which belongs to the current session.
 
