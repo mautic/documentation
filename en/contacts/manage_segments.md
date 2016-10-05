@@ -28,8 +28,8 @@ perform. These vary depending on the way you wish to filter your contacts.
 If you want to divide your segment based on certain criterion, and you wish to
 avoid sending duplicate emails to the (sub)segments, you can view and alter them
 through typing the alias name of the contact segments separated by '+' only. You
-can add n contact segments to have thir common, but you will always recieve the
-result as intersection of the subsets.
+can add n contact segments to have their common, but you will always recieve the
+result as intersection of the subsets. You can then manipulate the contacts to remove it from either one subset or all, hence avoiding dupliacte emails to the same leads in the subsets.
 
 ![](/contacts/media/common-leads-in-segments.jpg)
 
