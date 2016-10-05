@@ -12,12 +12,6 @@ The form overview provides a quick overview of the submissions received over a t
 
 A form can contain as many fields as needed. These fields can be laid out dynamically by the system or handled via HTML if you want more control.
 
-#### Contact Field Mapping
-
-Each form field can be mapped to a custom contact field through the form's Contact Field tab. Some fields result in automatic matching such as email and country. 
-
-As of 2.2.20, for fields that include select lists (select, radio, checkboxes), options can be synced with the contact field itself. No more having to manually keep them in sync! If a custom field's list is updated, simply rebuild the form's HTML. 
-
 ![](/forms/media/rebuild.png)
 
 #### Page Breaks
@@ -48,7 +42,10 @@ In addition to the form data, an array of `mautic_form` with details like ID, na
 
 #### Creating and Updating Contacts with Forms ####
 
-To have your form create or update contacts (in order to update, there must be a matching email), add the Create/Update Contact submit action. Map the fields from the form to your contact fields. **Note, it is important that this action be ordered first so that the contact's details are available for subsequent actions.** Think of it as the contact has to be created or updated before it can be added to segments, pushed to integrations, etc.
+To have your form create or update contacts (in order to update, there must be a matching unique identifier). Each form field can be mapped to a custom contact field through the form's Contact Field tab. Some fields result in automatic matching such as email and country. 
+
+As of 2.2.0, for fields that include select lists (select, radio, checkboxes), options can be synced with the contact field itself. No more having to manually keep them in sync! If a custom field's list is updated, simply rebuild the form's HTML. 
+
 
 ### Kiosk mode
 
