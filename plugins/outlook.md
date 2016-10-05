@@ -6,7 +6,7 @@ This plugin allows for the Outlook Add-In to keep track of emails sent to leads.
 
 - Mautic installed on a publicly accessible URL.
 - Microsoft Outlook 2016.
-- [Mautic Outlook Add-In for Outlook 2016](https://github.com/mautic/mautic/files/402928/Mautic.Outlook.Plugin.Setup.zip)
+- [Mautic Outlook Add-In for Outlook 2016](https://m.mautic.com/asset/24:microsoft-outlook-plugin-102)
 
 ### Configure the plugin
 
