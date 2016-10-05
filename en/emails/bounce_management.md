@@ -70,3 +70,33 @@ Mautic supports a few of Mandrill's webhooks for bounces.
 
 ![Events](/emails/media/sparkpost_webhook_3.png "Events")
 
+## Amazon Webhook
+Mautic supports the bounce and complaint management from Amazon Simple Email Service (Amazon SES).
+
+1) Go to the Amazon Simple Notification Service (SNS) and create a new topic
+
+![Topic](/emails/media/amazon_webhook_1.png "Create topic")
+
+![Topic](/emails/media/amazon_webhook_2.png "Name your topic")
+
+2) Click on the newly created topic to create a subscriber
+
+![Topic](/emails/media/amazon_webhook_3.png "Go to the topic")
+
+![Topic](/emails/media/amazon_webhook_4.png "New subscriber")
+
+3) Enter the url to the Amazon webhook on your Mautic installation
+
+![Topic](/emails/media/amazon_webhook_5.png "Enter url to Mautic")
+
+4) The subscriber will be in the pending state till it is confirmed. AWS will call your Amazon webhook with a SubscriptionConfirmation request including a callback url. To confirm Mautic will send a request back to this callback url to validate the subscription. Therefore make sure your Mautic installation is allowed to connect to the internet, otherwise the subscription will remain in the pending state and won't work. Check the logfile for more information.
+
+![Topic](/emails/media/amazon_webhook_6.png "Confirmation pending")
+
+5) The last step is to configure Amazon SES to deliver bounce and complaint messages using our SNS topic.
+
+![Topic](/emails/media/amazon_webhook_7.png "Configure Amazon SES")
+
+![Topic](/emails/media/amazon_webhook_8.png "Select SNS topic")
+
+
