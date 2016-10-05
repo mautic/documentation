@@ -6,13 +6,11 @@ The new form view lets you create a form and attach any fields you want to colle
 
 The form overview provides a quick overview of the submissions received over a time period to easily analyze how successful a particular form is. The bottom of the form overview outlines the fields and actions included as part of a particular form.
 
-![](/forms/media/new-form.jpg)
-
 ### Form Fields
 
 A form can contain as many fields as needed. These fields can be laid out dynamically by the system or handled via HTML if you want more control.
 
-![](/forms/media/rebuild.png)
+![](/forms/media/new-form.jpg)
 
 #### Page Breaks
 
@@ -46,6 +44,7 @@ To have your form create or update contacts (in order to update, there must be a
 
 As of 2.2.0, for fields that include select lists (select, radio, checkboxes), options can be synced with the contact field itself. No more having to manually keep them in sync! If a custom field's list is updated, simply rebuild the form's HTML. 
 
+![](/forms/media/rebuild.png)
 
 ### Kiosk mode
 
