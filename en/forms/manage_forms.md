@@ -6,17 +6,45 @@ The new form view lets you create a form and attach any fields you want to colle
 
 The form overview provides a quick overview of the submissions received over a time period to easily analyze how successful a particular form is. The bottom of the form overview outlines the fields and actions included as part of a particular form.
 
+![](/forms/media/new-form.jpg)
+
 ### Form Fields
 
 A form can contain as many fields as needed. These fields can be laid out dynamically by the system or handled via HTML if you want more control.
 
-![](/forms/media/new-form.jpg)
+#### Contact Field Mapping
+
+Each form field can be mapped to a custom contact field through the form's Contact Field tab. Some fields result in automatic matching such as email and country. 
+
+As of 2.2.20, for fields that include select lists (select, radio, checkboxes), options can be synced with the contact field itself. No more having to manually keep them in sync! If a custom field's list is updated, simply rebuild the form's HTML. 
+
+![](/forms/media/rebuild.png)
+
+#### Page Breaks
+
+Page breaks is a new feature in 2.2.0 that allows multi-paged forms. Note that the submission does not happen till the final page and the submit button is pressed.
+ 
+Each page break will add a customizable continue/back button that will navigate to the next or previous page. If a page break is added after the submit button, the continue button will be replaced with the submit button itself when the form is generated. 
+
+![](/forms/media/page-break.png)
 
 ### Form Actions
 
-Form actions are items to be handled on the submission of the form. You can define multiple actions to be performed on each submission.
+Form actions are items to be handled on the submission of the form. You can define multiple actions to be performed on each submission. As of 2.2.0, different actions are available based on form type.
 
 ![](/forms/media/form-actions.jpg)
+
+#### Form Re-Post Action
+
+Results form a Mautic form can be re-posted to a 3rd party form using the new "Post results to another form" submit action. 
+
+An email can be configured to send the results if the form fails to forward. 
+ 
+Each form field can be have it's name customized to match that of the recipient form/script. 
+
+In addition to the form data, an array of `mautic_form` with details like ID, name, and the URL the form was submitted to (if available) along with `mautic_contact` with the details of the contact that submitted. 
+
+![](/forms/media/repost.jpg)
 
 #### Creating and Updating Contacts with Forms ####
 
