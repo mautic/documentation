@@ -44,7 +44,7 @@ Each form field can be have it's name customized to match that of the recipient 
 
 In addition to the form data, an array of `mautic_form` with details like ID, name, and the URL the form was submitted to (if available) along with `mautic_contact` with the details of the contact that submitted. 
 
-![](/forms/media/repost.jpg)
+![](/forms/media/repost.png)
 
 #### Creating and Updating Contacts with Forms ####
 
