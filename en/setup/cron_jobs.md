@@ -97,6 +97,14 @@ Cleanup a Mautic installation by purging old data. Note that not all data is abl
 php /path/to/mautic/app/console mautic:maintenance:cleanup --days-old=365 --dry-run
 ```
 
+### Send Scheduled Broadcasts (e.g. segment emails)
+
+Starting with Mautic 2.2.0, it is now possible to use cron to send scheduled broadcasts for channel communications. The current only implementation of this is for segment emails. Instead of requiring a manual send and wait with the browser window open while ajax batches over the send - a command can now be used. The caveat for this is that the emails must be published and must have a published up date - this is to help prevent any unintentional email broadcasts. Just as it was with the manual/ajax process - only contacts who have not already received the specific communication will have the it sent to them.
+
+```
+php /path/to/mautic/app/console mautic:broadcasts:send [--id=ID] [--channel=CHANNEL]
+```
+
 ## Note ##
 
 For releases prior to 1.1.3, it is required to append ` --env=prod` to the cron job command to ensure commands execute correctly.
