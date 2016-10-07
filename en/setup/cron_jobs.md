@@ -97,6 +97,14 @@ Cleanup a Mautic installation by purging old data. Note that not all data is abl
 php /path/to/mautic/app/console mautic:maintenance:cleanup --days-old=365 --dry-run
 ```
 
+### Send Scheduled Broadcasts (e.g. segment emails)
+
+Starting with Mautic 2.2.0, it is now possible to use cron to send scheduled broadcasts for channel communications. The current only implementation of this is for segment emails. Instead of requiring a manual send and wait with the browser window open while ajax batches over the send - a command can now be used. The caveat for this is that the emails must be published and must have a published up date - this is to help prevent any unintentional email broadcasts. Just as it was with the manual/ajax process - only contacts who have not already received the specific communication will have the it sent to them.
+
+```
+php /path/to/mautic/app/console mautic:broadcasts:send [--id=ID] [--channel=CHANNEL]
+```
+
 ## Note ##
 
 For releases prior to 1.1.3, it is required to append ` --env=prod` to the cron job command to ensure commands execute correctly.
@@ -105,7 +113,17 @@ For releases prior to 1.1.3, it is required to append ` --env=prod` to the cron 
 
 If your environment provides a command-line specific build of php, often called `php-cli`, you may want to use that instead of `php` as it will have a cleaner output.  On BlueHost and probably some other PHP hosts, the `php` command might be setup to discard the command-line parameters to `console`, in which case you must use `php-cli` to make the cron jobs work.
 
-To assist in troubleshooting cron issues, you can pipe the output of each cron job to a specific file by adding something like `>/path/to/somefile.log 2>&1` at the end of the cron job. Then you can look at the contents of the file to see what was printed. If an error is occurring when running run the cron job, you will see it there, otherwise the file will be empty or have some stats. The modification time of the file informs you of the last time the cron job ran. You can thus use this to figure out whether or not the cron job is running successfully and on schedule.
+To assist in troubleshooting cron issues, you can pipe the output of each cron job to a specific file by adding something like `>/path/to/somefile.log 2>&1` at the end of the cron job. Then you can look at the contents of the file to see what was printed. If an error is occurring when running run the cron job, you will see it there, otherwise the file will be empty or have some stats. The modification time of the file informs you of the last time the cron job ran. You can thus use this to figure out whether or not the cron job is running successfully and on schedule. In addition it is recommended to enable the non-interactive mode together with the no-ansi mode when you run your commands using cron. This way you ensure, that you have proper timestamps in your log and the output is more readable.
+
+Example output
+````
+$ php app/console mautic:segments:update --no-interaction --no-ansi
+[2016-09-08 06:13:57] Rebuilding contacts for segment 1
+[2016-09-08 06:13:57] 0 total contact(s) to be added in batches of 300
+[2016-09-08 06:13:57] 0 total contact(s) to be removed in batches of 300
+[2016-09-08 06:13:57] 0 contact(s) affected
+````
+
 
 If you have SSH access, try to run the command directly to see if any errors are generated. If there is nothing printed from either in a SSH session or in the cron output from above, check the server's logs. If you see similar errors to `'Warning: Invalid argument supplied for foreach()' in /vendor/symfony/console/Symfony/Component/Console/Input/ArgvInput.php:287`, you either need to use `php-cli` instead of `php` or try using `php -d register_argc_argv=On`.
 `
