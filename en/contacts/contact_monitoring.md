@@ -42,6 +42,7 @@ mt('send', 'pageview', {}, {
         redirect();
     }
 });
+```
 
 #### Local Contact Cookie
 
