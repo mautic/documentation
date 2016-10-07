@@ -6,19 +6,11 @@ The new form view lets you create a form and attach any fields you want to colle
 
 The form overview provides a quick overview of the submissions received over a time period to easily analyze how successful a particular form is. The bottom of the form overview outlines the fields and actions included as part of a particular form.
 
-![](/forms/media/new-form.jpg)
-
 ### Form Fields
 
 A form can contain as many fields as needed. These fields can be laid out dynamically by the system or handled via HTML if you want more control.
 
-#### Contact Field Mapping
-
-Each form field can be mapped to a custom contact field through the form's Contact Field tab. Some fields result in automatic matching such as email and country. 
-
-As of 2.2.20, for fields that include select lists (select, radio, checkboxes), options can be synced with the contact field itself. No more having to manually keep them in sync! If a custom field's list is updated, simply rebuild the form's HTML. 
-
-![](/forms/media/rebuild.png)
+![](/forms/media/new-form.jpg)
 
 #### Page Breaks
 
@@ -44,13 +36,17 @@ Each form field can be have it's name customized to match that of the recipient 
 
 In addition to the form data, an array of `mautic_form` with details like ID, name, and the URL the form was submitted to (if available) along with `mautic_contact` with the details of the contact that submitted. 
 
-![](/forms/media/repost.jpg)
+![](/forms/media/repost.png)
 
-#### Creating and Updating Contacts with Forms ####
+### Creating and Updating Contacts with Forms
 
-To have your form create or update contacts (in order to update, there must be a matching email), add the Create/Update Contact submit action. Map the fields from the form to your contact fields. **Note, it is important that this action be ordered first so that the contact's details are available for subsequent actions.** Think of it as the contact has to be created or updated before it can be added to segments, pushed to integrations, etc.
+To have your form create or update contacts (in order to update, there must be a matching unique identifier). Each form field can be mapped to a custom contact field through the form's Contact Field tab. Some fields result in automatic matching such as email and country. 
 
-### Kiosk mode
+As of 2.2.0, for fields that include select lists (select, radio, checkboxes), options can be synced with the contact field itself. No more having to manually keep them in sync! If a custom field's list is updated, simply rebuild the form's HTML. 
+
+![](/forms/media/rebuild.png)
+
+#### Kiosk mode
 
 The kiosk mode is helpful when you know that some form will be submitted from one device by multiple contacts. For example like a kiosk at a conference. When the kiosk mode is turned on, each submission will create new contact. When a kiosk mode is turned off, Mautic will edit the contact which belongs to the current session.
 

@@ -29,6 +29,20 @@ The advantage of JS tracking is that the tracking request which can take quite l
 - **Page Referrer** is the URL which the contact came from to the current website.
 - **Page URL** the URL of the current website.
 
+#### mt() Events
+
+As of 2.2.0, mt() supports two callbacks, `onload` and `onerror` accepted as the fourth argument. The `onload` method will be executed once the tracking pixel has been loaded. If the pixel fails for whatever reason, `onerror` will be executed. 
+
+```
+mt('send', 'pageview', {}, {
+    onload: function() {
+        redirect();
+    },
+    onerror: function() {
+        redirect();
+    }
+});
+
 #### Local Contact Cookie
 
 As of Mautic 2.2.0, if CORS is configured to allow access from the domain the mtc.js is embedded, a cookie will be placed on the same domain with the name of `mtc_id`. This cookie will have the value of the ID for the currently tracked contact. This provides access to server side software to the contact ID and thus providing the ability to integrate with Mautic's REST API as well.
