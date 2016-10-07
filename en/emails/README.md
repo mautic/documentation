@@ -2,6 +2,22 @@
 
 Emails can be created to be used within campaigns and other list activities. Emails provide a means for direct interaction with potential customers, clients, and contacts.
 
+### Email Types
+
+![](/emails/media/types.png)
+
+There are two types of emails: template and segment (broadcasts). 
+  
+#### Template Emails
+
+Template emails are transactional by default and can be used in campaigns, form submit actions, point triggers, etc. These can be sent to the same contact as many times as needed. These cannot be sent to a contact outside of another Mautic component except when sending an email directly to a contact in which the content is cloned (template emails sent directly to a contact are not associated with the template email itself and thus stats are not tracked against it).
+ 
+#### Segment (Broadcast) Emails
+  
+These are marketing emails by default. Segments are assigned to the email which will determine which contacts receive the communication. Note that each contact can only receive the email once - it's like a mailing list.
+
+Initiating these emails can be done in one of two ways. Prior 2.2.0, sending had to be manually initiated through the UI as an ajax process batched over the contacts. As of 2.2.0, a new cron job is available to do this for you! See [Send Scheduled Broadcasts (e.g. segment emails)](./../setup/cron_jobs.html#send-scheduled-broadcasts-e-g-segment-emails) for more details on this.
+
 ### Email Formats
 
 Emails can be created in both full HTML as well as basic text format to be delivered as necessary to contacts. This is an important part of creating a strong relationship with contacts by providing relevant information in the correct format.
