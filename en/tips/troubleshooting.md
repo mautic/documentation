@@ -8,7 +8,7 @@ Even through the effort of the dev and test teams, it might happen. At first, le
 
 ### 1. Clear the cache
 
-There are several ways how to do that. The easiest is to go to the `/app/logs` folder and delete its content. If you want to do it via CLI command, navigate to the Mautic root folder and run `rm -rf app/cache/*`. The new cache files will generate itself after next Mautic refresh in the browser.
+There are several ways how to do that. The easiest is to go to the `/app/cache` folder and delete its content. If you want to do it via CLI command, navigate to the Mautic root folder and run `rm -rf app/cache/*`. The new cache files will generate itself after next Mautic refresh in the browser.
 
 It might happen that the files won't generate itself. It can be caused by the wrong folder permission and Mautic doesn't have permission to write the new cache files. Contact your sysadmin and ask him to fix it for you.
 
