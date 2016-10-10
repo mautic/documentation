@@ -45,6 +45,12 @@ By default, the script will process events in batches of 100. If this is too man
 
 You can also limit the number of contacts to process per script execution using `--max-events` to further limit resources used.
 
+**To send frequency rules rescheduled marketing campaign messages:**
+Messages that are marked as _Marketing Messages_ (such as emails to be sent as part of a marketing campaign) , will be inserted into a message queue IF frequency rules are setup as either systemwide or per contact. To process this queue and reschedule sending these messages, this cronjob should be added to your list of jobs:
+
+```mautic:messages:send```
+
+**NOTE** that these messages will only be added to the queue if frequency rules are applied either systemwide or per contact.
 ## Optional ##
 
 ### Process Email Queue ###
