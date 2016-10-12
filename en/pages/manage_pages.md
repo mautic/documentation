@@ -40,6 +40,8 @@ You can fine tune any aspect of the page via the Content tab and Source Code vie
 
 You are also able to define a template to use with your page as well as the language of your page. Notice the convenience field where you can define the parent page as well. This allows you to link pages.
 
+The page builder provides quick and convenient access to assets, other landing pages, and forms. All those are accessible via tokens in format `{component=item}`, for example `{form=4}`. A drop-down with options will appear when you type `{` character and you can search for the right token by typing its name. For example if you type `{for`, it will suggest the right token for the a form which has "for" in its name and you can select it via keyboard or by clicking on it.
+
 ### Unpublish a page
 
 The pages can be unpublished and published again with a click of a button or by setting publish/unpublish date in the page configuration. Unpublishing a page means that contacts will see the 404 message (page not found) instead of the page itself.
