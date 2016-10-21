@@ -38,6 +38,8 @@ Upload your CSV file, and ensure that you match the delimiter, enclosure and esc
 
 When you click on 'Upload' you will have the opportunity to match the fields found in the CSV file to the fields that you have in Mautic, which will allow the data to be correctly imported.
 
+Following values will result in TRUE when importing a Boolean value: `1`, `true`, `on` and `yes`. Those values can be also capitalized and still taken as TRUE. Any other value will be saved as FALSE.
+
 ## Editing contacts
 To edit a contact, click on the name of the contact (or the IP address if the visitor is anonymous) to open the contact screen.
 
