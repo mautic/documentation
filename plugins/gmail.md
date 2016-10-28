@@ -1,8 +1,6 @@
 # Gmail Plugin for Mautic
 This plugin allows for the [Mautic Helper Gmail Extension](https://chrome.google.com/webstore/category/extensions) to keep track of emails sent to leads.
 
-The Gmail extension source code can be found at [https://github.com/virlatinus/MauticHelperGmail/](https://github.com/virlatinus/MauticHelperGmail/)
-
 ## URL Parameter Length Issue
 ; Please note that PHP setups with the suhosin patch installed will have a                                   
 ; default limit of 512 characters for get parameters. Although bad practice,                                 
