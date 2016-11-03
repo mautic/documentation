@@ -5,7 +5,7 @@ It allows to automatically personalize emails sent to a user who has an owner (m
 ## Requirements
 
 - Mautic 1.3.0+
-- A none-tokenized mail transport such as Mandrill. This feature won't work with emails sent via API.
+- A non-tokenized mail transport. This feature won't work with emails sent via API (Mandrill, Sparkpost).
 
 ## How to enable the emails sent from contact owner
 

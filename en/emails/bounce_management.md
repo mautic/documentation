@@ -1,6 +1,10 @@
 # Monitored Email
 Since version 1.2.0 Mautic has provided a feature which allows monitoring of IMAP accounts to detect bounced emails and unsubscribe requests.
 
+Note that Mautic makes use of "append" email addresses. The return-path or the list-unsubscribe header will use something like `youremail+bounce_abc123@your-domain.com`. The `bounce` or `unsubscribe` let's Mautic note what type of email it is when it examines the inbox through IMAP. The `abc123` gives Mautic information about the email itself, i.e. what contact it was it sent to, what Mautic email used, etc. 
+
+Some email services overwrite the return-path header with that of the account's email (Gmail, Amazon SES). In these cases, bounce monitoring will not work. SparkPost, Mandrill, and Amazon SES (as of 2.2.0) support webhook callbacks for bounce management. See below for more details. 
+
 ## Monitored Inbox Settings
 To use the Monitored email feature you must have the PHP IMAP extension enabled (most shared hosts will already have this turned on).  Simply go to the Mautic configuration and fill in the account details for the inbox(es) you wish to monitor.
 
@@ -53,3 +57,50 @@ Mautic supports a few of Mandrill's webhooks for bounces.
 ![Add metadata](/emails/media/mandrill_webhook_5.png "Add metadata")
 
 ![Add metadata](/emails/media/mandrill_webhook_4.png "Add metadata")
+
+## Sparkpost Webhook
+
+1) Login to your Sparkpost account and go to Account -> Webhooks.
+
+![Webhooks](/emails/media/sparkpost_webhook_1.png "Sparkpost webhooks")
+
+2) Click the New Webhook button top right
+
+![New Webhook](/emails/media/sparkpost_webhook_2.png "New webhook")
+
+3) Fill in the Target URL as `http://your-mautic.com/mailer/sparkpost/callback`
+
+4) Select the following Events
+
+![Events](/emails/media/sparkpost_webhook_3.png "Events")
+
+## Amazon Webhook
+Mautic supports the bounce and complaint management from Amazon Simple Email Service (Amazon SES).
+
+1) Go to the Amazon Simple Notification Service (SNS) and create a new topic
+
+![Topic](/emails/media/amazon_webhook_1.png "Create topic")
+
+![Topic](/emails/media/amazon_webhook_2.png "Name your topic")
+
+2) Click on the newly created topic to create a subscriber
+
+![Topic](/emails/media/amazon_webhook_3.png "Go to the topic")
+
+![Topic](/emails/media/amazon_webhook_4.png "New subscriber")
+
+3) Enter the url to the Amazon webhook on your Mautic installation
+
+![Topic](/emails/media/amazon_webhook_5.png "Enter url to Mautic")
+
+4) The subscriber will be in the pending state till it is confirmed. AWS will call your Amazon webhook with a SubscriptionConfirmation request including a callback url. To confirm Mautic will send a request back to this callback url to validate the subscription. Therefore make sure your Mautic installation is allowed to connect to the internet, otherwise the subscription will remain in the pending state and won't work. Check the logfile for more information.
+
+![Topic](/emails/media/amazon_webhook_6.png "Confirmation pending")
+
+5) The last step is to configure Amazon SES to deliver bounce and complaint messages using our SNS topic.
+
+![Topic](/emails/media/amazon_webhook_7.png "Configure Amazon SES")
+
+![Topic](/emails/media/amazon_webhook_8.png "Select SNS topic")
+
+

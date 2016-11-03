@@ -12,17 +12,41 @@ A form can contain as many fields as needed. These fields can be laid out dynami
 
 ![](/forms/media/new-form.jpg)
 
+#### Page Breaks
+
+Page breaks is a new feature in 2.2.0 that allows multi-paged forms. Note that the submission does not happen till the final page and the submit button is pressed.
+ 
+Each page break will add a customizable continue/back button that will navigate to the next or previous page. If a page break is added after the submit button, the continue button will be replaced with the submit button itself when the form is generated. 
+
+![](/forms/media/page-break.png)
+
 ### Form Actions
 
-Form actions are items to be handled on the submission of the form. You can define multiple actions to be performed on each submission.
+Form actions are items to be handled on the submission of the form. You can define multiple actions to be performed on each submission. As of 2.2.0, different actions are available based on form type.
 
 ![](/forms/media/form-actions.jpg)
 
-#### Creating and Updating Contacts with Forms ####
+#### Form Re-Post Action
 
-To have your form create or update contacts (in order to update, there must be a matching email), add the Create/Update Contact submit action. Map the fields from the form to your contact fields. **Note, it is important that this action be ordered first so that the contact's details are available for subsequent actions.** Think of it as the contact has to be created or updated before it can be added to segments, pushed to integrations, etc.
+Results form a Mautic form can be re-posted to a 3rd party form using the new "Post results to another form" submit action. 
 
-### Kiosk mode
+An email can be configured to send the results if the form fails to forward. 
+ 
+Each form field can be have it's name customized to match that of the recipient form/script. 
+
+In addition to the form data, an array of `mautic_form` with details like ID, name, and the URL the form was submitted to (if available) along with `mautic_contact` with the details of the contact that submitted. 
+
+![](/forms/media/repost.png)
+
+### Creating and Updating Contacts with Forms
+
+To have your form create or update contacts (in order to update, there must be a matching unique identifier). Each form field can be mapped to a custom contact field through the form's Contact Field tab. Some fields result in automatic matching such as email and country. 
+
+As of 2.2.0, for fields that include select lists (select, radio, checkboxes), options can be synced with the contact field itself. No more having to manually keep them in sync! If a custom field's list is updated, simply rebuild the form's HTML. 
+
+![](/forms/media/rebuild.png)
+
+#### Kiosk mode
 
 The kiosk mode is helpful when you know that some form will be submitted from one device by multiple contacts. For example like a kiosk at a conference. When the kiosk mode is turned on, each submission will create new contact. When a kiosk mode is turned off, Mautic will edit the contact which belongs to the current session.
 
@@ -41,6 +65,10 @@ When on the form overview page you can click the Results button located in the t
 ### Form Preview
 
 The form preview provides a popup overview of what the form will look like. Remember that form styling is controlled by the surrounding page or website content and thus will display differently in final layout then in the preview.
+
+### Form Style
+
+It is possible to choose a theme for a form. If you do so and the theme supports this feature, the form will be styled by CSS from that theme.
 
 ### Pre-populate a form field value
 

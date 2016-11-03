@@ -30,3 +30,7 @@ this shows up if the visitor is not known</div>
 Note the data-slot-name matches the slot name in the campaign.
 
 Watch a video tutorial:  (https://www.youtube.com/watch?v=eChzJm5yBUk)
+
+## Translations
+
+Dynamic web content supports translated content. When creating/editing a dynamic web content item, there are the options to set a language and select a translation parent. By selecting a translation parent, the current item is then considered to be a translation in the selected language of that parent item. 
