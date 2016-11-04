@@ -26,6 +26,7 @@ To create your automatic email built from a RSS feed, you must set up the follow
 
 The email builder will help you to build your RSS feed structure. The use of tokens is massively needed to replicate RSS feed name, RSS feed link, item RSS feed name, item RSS feed date, item RSS feed image, etc.
 You must keep in mind that we introduce 3 types of tokens:
+
 1. `feedfield`: they concern the feed itself.
 2. `looper`: it will help to loop (replicate) the design and content of the feed item to have as much as you set into your email setting.
 3. `itemfield`: they are the content itself of the RSS feed, like a blog post. Those one must be duplicated (included in the loop fields) if you want to have 5 blog articles into your email for instance.
