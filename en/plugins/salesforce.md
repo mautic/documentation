@@ -28,6 +28,8 @@ Insert the keys to the Mautic Salesforce plugin and authorize it.
 ![Salesforce CRM Authorize](/plugins/media/plugins-salesforce-authorize.png "Salesforce CRM Authorize")
 
 Configure the [field mapping](./../plugins/field_mapping.html).
+Formula fields from salesforce will be pulled and can be saved into a Mautic custome field.
+Salesforce lead's Id can be matched with a mautic custom field.
 
 ### Features
 Enabled features:
