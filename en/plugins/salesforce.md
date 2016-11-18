@@ -70,6 +70,7 @@ API names of fields:
 - WhoId\__c : Lookup(Lead)
 - MauticLead\__c : Number(18, 0) (External ID)
 - Mautic_url\__c : URL(255)
+-
 
 ## Test the plugin
 
