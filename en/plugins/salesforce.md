@@ -8,7 +8,7 @@ SSL. Your Mautic instance nas to run on https. Salesforce will not allow you to 
 
 ## Get the Salesforce client credentials
 
-There is an [official documentation](http://feedback.uservoice.com/knowledgebase/articles/235661-get-your-key-and-secret-from-salesforce) about how to get the Key and secret although it doesn't seem to be updated.
+There is an [official documentation](http://feedback.uservoice.com/knowledgebase/articles/235661-get-your-key-and-secret-from-salesforce) about how to get the Key and Secret although it doesn't seem to be updated.
 
 Go to: *Setup* (top right corner) / Build (bottom left corner) - Create / Apps / Connected Apps / New
 
