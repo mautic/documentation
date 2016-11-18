@@ -42,6 +42,8 @@ Select the objects you wish to pull or push records from. You can push contacts 
 
 Pulling records will be done from Leads and/or Contacts objects in records.
 
+Updating of a Contact's Owner can be be enabled by turning on *Update Contact Owner*. This is not enabled by default. In order for a Contact in Mautic to match a User in Salesforce the email addresses in the two system must be identical.
+
 ### Command line script to pull records from Salesforce
 To pull records from salesforce you need to use a command from CLI. Use this command:
 
