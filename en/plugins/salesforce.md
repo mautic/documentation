@@ -40,7 +40,7 @@ Pull leads is done through command line and it can be setup as a cronjob.
 Feature specific settings:
 Select the objects you wish to pull or push records from. You can push contacts to the Leads object in salesforce. you can also push activities (contact's timeline records) to a custom object in salesforce.
 
-Pulling records will be done from Leads and/or Contacts objects in records.
+Pulling records will be done from Leads and/or Contacts objects in records and Accounts from Salesforce will be pulled into Mautic companies.
 
 ### Command line script to pull records from Salesforce
 To pull records from salesforce you need to use a command from CLI. Use this command:
@@ -70,7 +70,9 @@ API names of fields:
 - WhoId\__c : Lookup(Lead)
 - MauticLead\__c : Number(18, 0) (External ID)
 - Mautic_url\__c : URL(255)
--
+- ReferenceId     : Text(255)
+
+
 
 ## Test the plugin
 
