@@ -4,7 +4,7 @@ This plugin can push a contact to Salesforce CRM when a contact makes some actio
 
 ## Requirements
 
-SSH. Your Mautic instance nas to run on https. Salesforce will not allow you to create App with just http callback URL.
+SSL. Your Mautic instance nas to run on https. Salesforce will not allow you to create App with just http callback URL.
 
 ## Get the Salesforce client credentials
 
