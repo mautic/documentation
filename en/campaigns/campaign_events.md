@@ -22,5 +22,6 @@ Decision works with landing page (Limit to Pages field) .
 
 Also works with every page where you're useing Mautic tracking code (URL or Referrer field). You are able to use search expression with **Like** operator for your matches. Both fields use [fmatch](http://php.net/manual/en/function.fnmatch.php).
 
+Note: This decision use OR operator between fields (Limit to Pages, URL, Referrer).
 
 ![](/campaigns/media/vists-a-page.PNG)
