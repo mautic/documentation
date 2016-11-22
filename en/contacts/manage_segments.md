@@ -52,5 +52,4 @@ manually added will remain part of the list regardless of filters.
 ### Manual Addition
 
 In addition to segments you can also manually add any contact to a list by
-clicking the Segments button then selecting the radio toggle on the contact
-detail view.
+clicking the Preferences button at the segments tab, use the dropdown to select a segment and add the contact to it or click on the x next to a segment in the input field to remove the contact.
