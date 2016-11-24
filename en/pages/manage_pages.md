@@ -42,6 +42,10 @@ You are also able to define a template to use with your page as well as the lang
 
 The page builder provides quick and convenient access to assets, other landing pages, and forms. All those are accessible via tokens in format `{component=item}`, for example `{form=4}`. A drop-down with options will appear when you type `{` character and you can search for the right token by typing its name. For example if you type `{for`, it will suggest the right token for the a form which has "for" in its name and you can select it via keyboard or by clicking on it.
 
+#### Code Mode
+
+[Go to the Code Mode docs](./../themes/code_mode.html).
+
 ### Unpublish a page
 
 The pages can be unpublished and published again with a click of a button or by setting publish/unpublish date in the page configuration. Unpublishing a page means that contacts will see the 404 message (page not found) instead of the page itself.
