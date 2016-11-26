@@ -102,13 +102,3 @@ Mautic supports the bounce and complaint management from Amazon Simple Email Ser
 ![Topic](/emails/media/amazon_webhook_7.png "Configure Amazon SES")
 
 ![Topic](/emails/media/amazon_webhook_8.png "Select SNS topic")
-
-## Elastic Email Webhook/Notification
-
-1) Login to your Elastic Email account and go to Settings -> Notification.
-
-2) Fill in the Notification URL as http://your-mautic-url.tld/mailer/elasticemail/callback
-
-3) Check  these actions:  Unsubscribed, Complaints, Bounce/Error
-
-![Webhooks](/emails/media/elasticemail_webhook_1.png "Elastic Email notification")
