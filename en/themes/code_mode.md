@@ -23,3 +23,11 @@ When the Code Mode Builder is opened, you can see the preview on the left, the H
 You can use the tokens in the Code Mode Builder when you type them directly. For example when you type `{contactfield=firstname}` or you can select them from the dropdown. The dropdown will open when you press `CTRL` + `SPACE BAR`. You can type to search for the token you wish to insert.
 
 ![Edit the HTML with Code Mode](/themes/media/code-mode-builder.png)
+
+### Media Manager
+
+There is a button at the top of code area where you can open the Media Manager to upload and/or select an image or other file. If you select a file, the URL of that file will be inserted to the current position of the cursor. Use this to create links and IMG tags.
+
+### Code Formatter
+
+It might happen that your older emails or pages appear as HTML code on one line. Or if you insert an HTML code with odd formatting, use the Format Code button. It will automatically to through the code and format it so it is easier to navigate in it.
