@@ -9,6 +9,8 @@ Monitoring all traffic on a website can be done by loading a javascript file (si
 
 JS tracking method was implemented in Mautic 1.4 and recommended as the primary way of website tracking. To implement it, go to *Mautic configuration* > *Landing Page Settings* to find the JS tracking code build for your Mautic instance and insert it code before ending `<body/>` tag of the website you want to track. Or copy the code below and change the URL to your Mautic instance.
 
+Mautic sets cookies with a lifetime of 2 years. Returning visitors are identified exclusively by the cookies. If no cookie exists yet, Mautic creates a new contact and sets the cookies. Make sure your website url is entered in the CORS settings.
+
 ```
 <script>
     (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
@@ -50,7 +52,7 @@ As of Mautic 2.2.0, if CORS is configured to allow access from the domain the mt
 
 #### Tracking of custom parameters
 
-You can attach custom parameters or overwrite the automaticly generated parameters to the pageview action as you could to the tracking pixel query. To do that, update the last row of the JS code above like this:
+You can attach custom parameters or overwrite the automatically generated parameters to the pageview action as you could to the tracking pixel query. To do that, update the last row of the JS code above like this:
 
 ```
     mt('send', 'pageview', {email: 'my@email.com', firstname: 'John'});
