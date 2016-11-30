@@ -51,3 +51,9 @@ If a contact is identified through a form a company can also be identified/creat
  -Country is selected as a form field (mandatory for company matching/creation).
  -State is selected as a form field (optional for company matching/creation).
  
+ ### Company Scoring
+A companies score can be changed through a campaign action or a form action. When one of these actions is selected, first a contact must be identified, and the companies assigned to that contact will have their score changed.
+
+1. Select contact's _Change company score_ action in either a form or a campaign
+2. Once a form is submitted or a campaign is triggered it will identify companies identified in the campaign or form to change its score.
+ 
