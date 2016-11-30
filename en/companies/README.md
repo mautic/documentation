@@ -1,10 +1,12 @@
 # Companies
 
 Companies are a way to group contacts based on the company(ies) the contact works or has worked for.
-####Mergin Companies
-When viewing a company, you can merge this company into another existing company by using the **_Merge_** button. 
 
-Search for the company you wish to merge into and the fields from the current company that are not populated in the selected company will be copied to the selected company. Contacts that are not in the selected company will also be transfered.
+####Merging Companies
+
+When editing a company, you can merge this company into another existing company by using the **_Merge_** button. 
+
+Search for the company you wish to merge into and the fields from the current company that are not populated in the selected company will be copied to the selected company. Contacts that are not in the selected company will also be transferred.
 
 After the current company has been merged into the selected company, you will be redirected to the selected company and the old company will be deleted from the database.
 
