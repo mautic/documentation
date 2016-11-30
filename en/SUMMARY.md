@@ -11,8 +11,16 @@
     * [Manage Segments](contacts/manage_segments.md)
     * [Manage Fields](contacts/manage_fields.md)
     * [Frequency Rules](contacts/contact_frequency_rules.md)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
         * [Message Queue](contacts/message_queue.md)
     * [Companies](companies/README.md)        
+>>>>>>> mautic/master
+=======
+        * [Message Queue](contacts/message_queue.md)
+    * [Companies](companies/README.md)        
+>>>>>>> mautic/master
 * [Components](components/README.md)
     * [Assets](assets/README.md) 
         * [Manage Assets](assets/manage_assets.md) 

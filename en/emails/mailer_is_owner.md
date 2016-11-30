@@ -5,7 +5,7 @@ It allows to automatically personalize emails sent to a user who has an owner (m
 ## Requirements
 
 - Mautic 1.3.0+
-- A non-tokenized mail transport. This feature won't work with emails sent via API (Mandrill, Sparkpost).
+- A non-tokenized mail transport. This feature won't work with emails sent via API (Mandrill, Sparkpost and Mailjet).
 
 ## How to enable the emails sent from contact owner
 
@@ -32,5 +32,5 @@ There is one exception where the contact owner's signature won't be used. When a
 
 There are exceptions:
 - The email has to be sent to a contact. If Mautic doesn't have a contact assigned with the email, it doesn't know its owner and therefore cannot know what user name, email and signature to choose. This happens when you send the test emails.
-- If you send an email directly from the contact detail, the *from name* and *from email* will be used from the form, not from the user settings. Those values are pre-filled by currently logged in user name and email. 
+- If you send an email directly from the contact detail, the *from name* and *from email* will be used from the form, not from the user settings. Those values are pre-filled by currently logged in user name and email.
 
