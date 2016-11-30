@@ -1,4 +1,4 @@
-# CITRIX PLUGIN MANUAL
+# Citrix Plugins
 
 ## Description:
 Create a plugin that pulls data from Mautic and pushes data to Mautic from GotoMeeeting, GotoWebinar, GotoTraining and GoToAssist) .
