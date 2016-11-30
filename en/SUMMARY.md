@@ -11,6 +11,7 @@
     * [Manage Segments](contacts/manage_segments.md)
     * [Manage Fields](contacts/manage_fields.md)
     * [Frequency Rules](contacts/contact_frequency_rules.md)
+    * [Preference Center](contacts/contact_preference_center.md)
     * [Message Queue](contacts/message_queue.md)
     * [Companies](companies/README.md)        
 * [Components](components/README.md)
