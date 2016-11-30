@@ -12,20 +12,20 @@ There is an [official documentation](http://feedback.uservoice.com/knowledgebase
 
 Go to: *Setup* (top right corner) / Build (bottom left corner) - Create / Apps / Connected Apps / New
 
-![Salesforce CRM Create an App](/plugins/media/plugins-salesforce-create-app.png "Salesforce CRM Create an App")
+![Salesforce CRM Create an App](./../plugins/media/plugins-salesforce-create-app.png "Salesforce CRM Create an App")
 
 Create a new app like this:
-![Salesforce CRM Create an App form](/plugins/media/plugins-salesforce-create-app-form.png "Salesforce CRM Create an App form")
+![Salesforce CRM Create an App form](./../plugins/media/plugins-salesforce-create-app-form.png "Salesforce CRM Create an App form")
 Make sure the Selcected OAuth Scopes are *Access and manage your fata (api)* and *Perform requests on your behalf at any time (refresh_token, offline_access)*.
 
 Copy the Consumer Key and Secret.
 
-![Salesforce CRM Create an App keys](/plugins/media/plugins-salesforce-create-app-keys.png "Salesforce CRM Create an App keys")
+![Salesforce CRM Create an App keys](./../plugins/media/plugins-salesforce-create-app-keys.png "Salesforce CRM Create an App keys")
 
 ## Configure the Mautic Salesforce plugin
 
 Insert the keys to the Mautic Salesforce plugin and authorize it.
-![Salesforce CRM Authorize](/plugins/media/plugins-salesforce-authorize.png "Salesforce CRM Authorize")
+![Salesforce CRM Authorize](./../plugins/media/plugins-salesforce-authorize.png "Salesforce CRM Authorize")
 
 Configure the [field mapping](./../plugins/field_mapping.html).
 
