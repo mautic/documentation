@@ -1,6 +1,8 @@
 # Gmail Plugin for Mautic
 This plugin allows for the [Mautic Helper Chrome Extension](https://chrome.google.com/webstore/category/extensions) to keep track of emails sent to leads from within Gmail.
 
+<<<<<<< HEAD
+=======
 ### Requirements
 
 - Mautic installed on a publicly accessible URL.
@@ -31,6 +33,7 @@ This plugin allows for the [Mautic Helper Chrome Extension](https://chrome.googl
 8. The Mautic plugin will then validate the information using the secret to compare signatures and then attach that email to the contact’s profile as part of their activity history. If the lead or leads don't exist, they are created automatically
 ![image](https://cloud.githubusercontent.com/assets/2924026/18927644/f70f71fa-8579-11e6-91be-6acaba36e7e6.png)
 
+>>>>>>> 1255c342dfbccf3962f1fffeb221f2a4e2abe552
 ## URL Parameter Length Issue
 ; Please note that PHP setups with the suhosin patch installed will have a                                   
 ; default limit of 512 characters for get parameters. Although bad practice,                                 
