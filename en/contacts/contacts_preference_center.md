@@ -1,4 +1,4 @@
-# Manage Contacts Preferences
+# Manage Contact Preferences
 
 When managing a contact you can set the contacts preference of communication. You can access the contact's preference center when viewing a contact's profile. From the dropdown menu click on the preference menu. A new modal window should appear with a tab to set the preferred channels and frequency of contact, as well as the option to pause communication within a given period of time. The second time will give the option to add or remove the contact from global categories used in emails or categories. The third tab will allow to add or remove the contact from segments it belongs to.
 
@@ -10,7 +10,6 @@ In this window you can enable/disable channels of communication, set the frequen
 To set a channel as a do not contact me through this channel, untick the tickbox next to the channel name in the first column. 
 
 When a channel is selected, these will be used to send marketing messages if there is a message set for any of the channels selected. You can also set the frequency of the communication, as in this example the frequency is set to "Send me emails twice a day" but pause them during the "1st of november 2016 to the 30th of november 2016". Email is also set as the preferred channel, so if the same message is set for both email and sms, it will only send the email version of the message to the selected contact.
-
 
 ## Contact Categories
 ![](/contacts/media/categories.png)
