@@ -54,6 +54,7 @@
     * [Troubleshooting](points/troubleshooting.md)
 * [Stages](stages/stages.md)
 * [Plugins](plugins/README.md)
+    * [Citrix Plugins](plugins/citrix.md)
     * [Clearbit](plugins/clearbit.md)
     * [Hubspot CRM](plugins/hubspot_crm.md)
     * [iContact](plugins/icontact.md)
