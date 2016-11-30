@@ -30,7 +30,6 @@
         * [Manage Emails](emails/manage_emails.md) 
         * [Bounce Management](emails/bounce_management.md) 
         * [Mailer is owner](emails/mailer_is_owner.md) 
-        * [Elastic Email](emails/elastic_email.md) 
         * [Troubleshooting](emails/troubleshooting.md)
     * [Web Notifications](notifications/README.md) 
     * [Focus](focus/README.md)

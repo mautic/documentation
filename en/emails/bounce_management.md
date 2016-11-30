@@ -36,7 +36,51 @@ This is not required, but if you'll want to be able to select the contacts with 
 
 All contacts with bounced emails should appear in this segment.
 
-## Mandrill Webhook configuration
+## Elastic Email Webhook
+
+1) Login to your Elastic Email account and go to Settings -> Notification.
+
+2) Fill in the Notification URL as http://your-mautic-url.tld/mailer/elasticemail/callback
+
+3) Check  these actions:  Unsubscribed, Complaints, Bounce/Error
+
+![Webhooks](/emails/media/elasticemail_webhook_1.png "Elastic Email notification")
+
+### Links
+
+[Elastic Email Help & Support](https://elasticemail.com/support)
+[Support via email](http://support.elasticemail.com/)
+
+## Amazon Webhook
+Mautic supports the bounce and complaint management from Amazon Simple Email Service (Amazon SES).
+
+1) Go to the Amazon Simple Notification Service (SNS) and create a new topic
+
+![Topic](/emails/media/amazon_webhook_1.png "Create topic")
+
+![Topic](/emails/media/amazon_webhook_2.png "Name your topic")
+
+2) Click on the newly created topic to create a subscriber
+
+![Topic](/emails/media/amazon_webhook_3.png "Go to the topic")
+
+![Topic](/emails/media/amazon_webhook_4.png "New subscriber")
+
+3) Enter the url to the Amazon webhook on your Mautic installation
+
+![Topic](/emails/media/amazon_webhook_5.png "Enter url to Mautic")
+
+4) The subscriber will be in the pending state till it is confirmed. AWS will call your Amazon webhook with a SubscriptionConfirmation request including a callback url. To confirm Mautic will send a request back to this callback url to validate the subscription. Therefore make sure your Mautic installation is allowed to connect to the internet, otherwise the subscription will remain in the pending state and won't work. Check the logfile for more information.
+
+![Topic](/emails/media/amazon_webhook_6.png "Confirmation pending")
+
+5) The last step is to configure Amazon SES to deliver bounce and complaint messages using our SNS topic.
+
+![Topic](/emails/media/amazon_webhook_7.png "Configure Amazon SES")
+
+![Topic](/emails/media/amazon_webhook_8.png "Select SNS topic")
+
+## Mandrill Webhook
 
 Mautic supports a few of Mandrill's webhooks for bounces.
 
@@ -58,7 +102,7 @@ Mautic supports a few of Mandrill's webhooks for bounces.
 
 ![Add metadata](/emails/media/mandrill_webhook_4.png "Add metadata")
 
-## Mailjet Webhook configuration
+## Mailjet Webhook
 
 Mautic supports Mailjet's webhooks for bounces, spam and blocked. Before any configuration, you'll need to create an account on [Mailjet](http://www.mailjet.com/).
 
@@ -89,32 +133,3 @@ Mautic supports Mailjet's webhooks for bounces, spam and blocked. Before any con
 4) Select the following Events
 
 ![Events](/emails/media/sparkpost_webhook_3.png "Events")
-
-## Amazon Webhook
-Mautic supports the bounce and complaint management from Amazon Simple Email Service (Amazon SES).
-
-1) Go to the Amazon Simple Notification Service (SNS) and create a new topic
-
-![Topic](/emails/media/amazon_webhook_1.png "Create topic")
-
-![Topic](/emails/media/amazon_webhook_2.png "Name your topic")
-
-2) Click on the newly created topic to create a subscriber
-
-![Topic](/emails/media/amazon_webhook_3.png "Go to the topic")
-
-![Topic](/emails/media/amazon_webhook_4.png "New subscriber")
-
-3) Enter the url to the Amazon webhook on your Mautic installation
-
-![Topic](/emails/media/amazon_webhook_5.png "Enter url to Mautic")
-
-4) The subscriber will be in the pending state till it is confirmed. AWS will call your Amazon webhook with a SubscriptionConfirmation request including a callback url. To confirm Mautic will send a request back to this callback url to validate the subscription. Therefore make sure your Mautic installation is allowed to connect to the internet, otherwise the subscription will remain in the pending state and won't work. Check the logfile for more information.
-
-![Topic](/emails/media/amazon_webhook_6.png "Confirmation pending")
-
-5) The last step is to configure Amazon SES to deliver bounce and complaint messages using our SNS topic.
-
-![Topic](/emails/media/amazon_webhook_7.png "Configure Amazon SES")
-
-![Topic](/emails/media/amazon_webhook_8.png "Select SNS topic")
