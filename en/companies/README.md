@@ -2,7 +2,7 @@
 
 Companies are a way to group contacts based on the company(ies) the contact works or has worked for.
 
-####Merging Companies
+### Merging Companies
 
 When editing a company, you can merge this company into another existing company by using the **_Merge_** button. 
 
