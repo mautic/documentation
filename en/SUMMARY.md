@@ -65,6 +65,7 @@
     * [Manage Themes](themes/manage_themes.md)
     * [Customize Themes](themes/customize_themes.md)
     * [Theme Structure](themes/theme_structure.md)
+    * [Code Mode](themes/code_mode.md)
 * [Translations](translations/README.md)
 * [Tips & Tricks](tips/tipstricks_md.md)
    * [General Troubleshooting](tips/troubleshooting.md)

@@ -38,6 +38,10 @@ Email Builder has also special tokens for the Unsubscribe link and the Webview l
 - `{webview_text}` - Creates a link with the webview URL and the text defined in the Mautic configuration.
 - `{webview_url}` - Creates a URL to the webview page which can be used in a link's href attribute.
 
+### Code Mode
+
+[Go to the Code Mode docs](./../themes/code_mode.html).
+
 ### Base64 Encoded Images
 
 Since Mautic 1.4, there is a new option in the Mautic configuration, the Email Settings tab. You can let Mautic encode all images in the email text as base64. It will attach the image inside the email body. It has several implications:
