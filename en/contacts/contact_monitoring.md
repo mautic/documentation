@@ -9,7 +9,7 @@ Monitoring all traffic on a website can be done by loading a javascript file (si
 
 JS tracking method was implemented in Mautic 1.4 and recommended as the primary way of website tracking. To implement it, go to *Mautic configuration* > *Landing Page Settings* to find the JS tracking code build for your Mautic instance and insert it code before ending `<body/>` tag of the website you want to track. Or copy the code below and change the URL to your Mautic instance.
 
-Mautic sets cookies with a lifetime of 2 years. Returning visitors are identified exclusively by the cookies. If no cookie exists yet, Mautic creates a new contact and sets the cookies. Make sure your website url is entered in the CORS settings.
+As of 2.3.0, Mautic sets cookies with a lifetime of 2 years. Returning visitors are identified exclusively by the cookie. If no cookie exists yet, Mautic creates a new contact and sets the cookie. Make sure your website url is entered in the CORS settings. This is the first step in better contact identification. Note that if a browser is set to not accept cookies, this may result in each hit creating a new visitor. If this behavior is concerning, see Fingerprint option below. 
 
 ```
 <script>
