@@ -102,5 +102,3 @@ Mautic supports the bounce and complaint management from Amazon Simple Email Ser
 ![Topic](/emails/media/amazon_webhook_7.png "Configure Amazon SES")
 
 ![Topic](/emails/media/amazon_webhook_8.png "Select SNS topic")
-
-
