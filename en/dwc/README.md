@@ -33,4 +33,14 @@ Watch a video tutorial:  (https://www.youtube.com/watch?v=eChzJm5yBUk)
 
 ## Translations
 
-Dynamic web content supports translated content. When creating/editing a dynamic web content item, there are the options to set a language and select a translation parent. By selecting a translation parent, the current item is then considered to be a translation in the selected language of that parent item. 
+Dynamic web content supports translated content. When creating/editing a dynamic web content item, there are the options to set a language and select a translation parent. By selecting a translation parent, the current item is then considered to be a translation in the selected language of that parent item.
+ 
+## Tokens
+
+Dynamic web content supports these tokens:
+
+- Contact Fields - example {contactfield=firstname}
+- Page Link - example {pagelink=1}
+- Asset Link - example {assetlink=1}
+- Form - example {form=1}
+- Focus Item - example {focus=1}
