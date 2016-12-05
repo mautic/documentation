@@ -1,53 +1,48 @@
-# Manage Emails
+# Gestion des emails
 
-### Email Overview
+### Aperçu d'un email
 
-The email overview allows at-a-glance information regarding the success or failure of a particular email. You can quickly see relevant information in regards to opens, bounces, successful click-throughs and other important statistics.
+L'aperçu d'un email vous permet d'avoir en un coup d'oeil de nombreuses informations à propos du succès ou d'un échec d'un email. Vous pouvez rapidement avoir un regard sur le nombre d'ouvertures, les rebonds, les clics sur les liens ou autres statistiques.+
 
-### Email Creation
+### Création d'un email
 
-Email creation can be handled through the graphical email builder with little to no HTML knowledge. Emails are assigned to particular segments and/or campaigns. Below are some key steps to be performed when creating an email.
+La création d'un email peut se faire de 3 manières différentes ;
+1. grâce au générateur de campagne en ayant sélectionné un thème prédéfini
+2. en important votre code HTML
+3. ou en créant un email au format texte
 
-### Translations
+Les emails sont à utiliser dans vos campagnes, ou directement grâce aux emails de segment en sélectionnant un segment de contacts associé.
 
-When creating the email, an option is given to assign a language and a translation parent. By selecting a translation parent, the current item is then considered to be a translation in the selected language of that parent item. If a contact has a preferred language set, they will receive the translated version in their preferred language if it exists. Otherwise, they will receive the parent in the default language. 
+### Traductions
 
-It is also possible to have translations of A/B test variants.
+Lors de la création de l'email, vous avez la possibilité d'ajouter une langue et une taduction parente. En sélectionnant une traduction parente, cela vous permet d'ahouter une traduction enfante de l'email en cours. Si le contact a une langue de préférence paramétrée, il recevra l'email dans la langue paramétrée si la variante existe. Autrement, les contacts recevront l'email dans la langue par défaut.
 
-### Segments
+Il est également possible de faire des traductions de versions A/B.
 
-When creating an email you can select the segments to which you want to send the email.
+### Emails de segments
+
+Lorsque vous créez un email de segment, vous pouvez directement lors de sa configuration, sélectionner un ou plusieurs segments auxquels vont être adressés l'email.
 
 ![](/emails/media/email-segments.jpg)
 
-This entry field is a multi-select which allows you to choose several segments if necessary.
+Ce type d'email ne peut pas être utilisé dans une campagne. Il est plutôt adapté à vos emails de type newsletter.
 
-### Email Builder
+### Le générateur d'email
 
-The email builder is a graphical user interface to create an HTML email through the use of drag-and-drop tools.
+Le générateur d'emails vous donne accès à une interface graphique qui ne nécessite pas de connaissance en HTML grâce à ses fonctionnalités en glisser-déposer.
 
-The email builder provides quick and convenient access to assets, landing pages, and other extra fields which are considered important or commonly used. All those are accessible via tokens in format `{component=item}`, for example `{contactfield=company}`. A drop-down with options will appear when you type `{` character and you can search for the right token by typing its name. For example if you type `{comp`, it will suggest the right token for the Company Contact Field and you can select it via keyboard or by clicking on it.
+Il vous donne accès rapide aux ressources, pages d'atterrissage, et tout autres champs considérables comme importants. ils sont tous accessible avec des tokens du type `{component=item}`, par exemple `{contactfield=company}`. Une liste déroulante avec les options va apparaitre lorsque vous allez commencer à écrire le caractère `{`.
 
-A token can have a default value for cases when the contact doesn't have the value known. The default value can be specified after `|` character like this: {contactfield=company|Default text}.
+Un token peut avoir une valeur par défaut lorsque le contact n'a pas de valeur renseigné dans le champ. La valeur par défaut peut être spécifiée après le caractère `|` de la manière suivante : {contactfield=company|Default text}.
 
-Tokens can be used also for the Subject line, but there is no drop-down. You'll have to type it yourself or select it in the email body and copy-paste it to the subject field.
+Les tokens peuvent être utilisés dans l'objet des emails.
 
-Email Builder has also special tokens for the Unsubscribe link and the Webview link:
-- `{unsubscribe_text}` - Creates a link with the unsubscribed URL and the text defined in the Mautic configuration.
-- `{unsubscribe_url}` - Creates a URL to the unsubscribed page which can be used in a link's href attribute.
-- `{webview_text}` - Creates a link with the webview URL and the text defined in the Mautic configuration.
-- `{webview_url}` - Creates a URL to the webview page which can be used in a link's href attribute.
+### Encodage des images en Base64
 
-### Base64 Encoded Images
-
-Since Mautic 1.4, there is a new option in the Mautic configuration, the Email Settings tab. You can let Mautic encode all images in the email text as base64. It will attach the image inside the email body. It has several implications:
+Depuis Mautic 1.4, il y a une configuration Mautic dans la zone de paramétage des emails. Vous pouvez demander à Mautic d'encoder toutes les images en base64.
 
 ![](/emails/media/base64-images.jpg)
 
-- The main idea with this option is that most of the email clients will display the images directly without any approvals.
-- However, some email clients like Gmail will require the approval because of the tracking pixel and won't display the base64 encoded images anyway. See the next paragraph for possible solution.
-- The email body will increase significantly if the email contains many and/or big images. Some email clients like Gmail will "clip" such email and won't display it directly.
+### Désactivation du pixel de tracking
 
-### Disable the Tracking Pixel
-
-As described above, some email clients display the image approval if one of the images is loaded from remote location. Like the tracking pixel. If you care more about this approval than the email open tracking, you can disable the tracking pixel. Then the images should be displayed directly without any approval.
+Vous pouvez désactiver l'ajout de pixel de tracking, cela peut parfois aider à l'affichage des autres images qui sont bloquées par certains clients emails lors de l'insertion de pixels de tracking.

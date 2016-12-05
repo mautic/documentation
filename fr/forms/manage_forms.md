@@ -1,80 +1,78 @@
-# Manage Forms
+# Gestion des formulaires
 
-The new form view lets you create a form and attach any fields you want to collect from your users. After you've created the fields you can then define what actions you want to perform after the user submits the information.
+La page de création d'un nouveau formulaire vous permet de créer le formulaire de votre choix avec les champs qui sont adaptés à votre besoin afin de collecter les informations sur vos visiteurs et les convertir en contacts. Après avoir créé les champs nécessaires, vous pouvez définir les actions que vous souhaiterez déclancher à la soumission du formulaire.
 
-### Form Overview
+### Aperçu du formulaire
 
-The form overview provides a quick overview of the submissions received over a time period to easily analyze how successful a particular form is. The bottom of the form overview outlines the fields and actions included as part of a particular form.
+L'aperçu général vous permet d'obtenir des informations rapidement sur l'évolution des soumissions du formulaire dans le temps afin de facilement faire vos analyses. Le bas de la page met en avant les contacts ayant soumis le formulaire et les actions liées au formulaire.+
 
-### Form Fields
+### Champs de formulaire
 
-A form can contain as many fields as needed. These fields can be laid out dynamically by the system or handled via HTML if you want more control.
+Un formulaire peut contenir autant de champs que souhaité. Il existe différents formats qui mettront automatiquement en place un controle du format des données saisies par le visiteur.
 
 ![](/forms/media/new-form.jpg)
 
-#### Page Breaks
+#### Formulaire multi-étape
 
-Page breaks is a new feature in 2.2.0 that allows multi-paged forms. Note that the submission does not happen till the final page and the submit button is pressed.
- 
-Each page break will add a customizable continue/back button that will navigate to the next or previous page. If a page break is added after the submit button, the continue button will be replaced with the submit button itself when the form is generated. 
+Les formulaires multi étape sont disponibles depuis la version 2.2.0. Cela vous permet de créer un formulaire sur plusieurs pages. Les informations seront enregistrées à la soumission de la dernière page.
+
+Chaque page vous donnera l'opportunité d'ajouter un bouton "précédante"/"suivante".
 
 ![](/forms/media/page-break.png)
 
-### Form Actions
+### Actions du formulaire
 
-Form actions are items to be handled on the submission of the form. You can define multiple actions to be performed on each submission. As of 2.2.0, different actions are available based on form type.
+Les actions du formulaire dont les actions déclanchées à la soumission du formulaire. Vous pouvez définir de multiples actions à déclencher pour chaque soumission de formulaire.
 
 ![](/forms/media/form-actions.jpg)
 
-#### Form Re-Post Action
+#### Envoi des informations dans un autre formulaire
 
-Results form a Mautic form can be re-posted to a 3rd party form using the new "Post results to another form" submit action. 
+Les résultats d'un formulaire Mautic peuvent être renvoyés dans une application tierce en utilisant la nouvelle action "Envoyer les résultats dans un autre formulaire".
+Un email peut être envoyé si cela échoue.
 
-An email can be configured to send the results if the form fails to forward. 
- 
-Each form field can be have it's name customized to match that of the recipient form/script. 
-
-In addition to the form data, an array of `mautic_form` with details like ID, name, and the URL the form was submitted to (if available) along with `mautic_contact` with the details of the contact that submitted. 
+En plus de la forme de la donnée, un tableau de `mautic_form` avec les détails comme l'ID, le nom, et l'URL d'où le formulaire a été soumis en plus du `mautic_contact` contenant les informations soumises par le contact dans le formulaire.
 
 ![](/forms/media/repost.png)
 
-### Creating and Updating Contacts with Forms
+### Création et mise à jour des contacts via les formulaires
 
-To have your form create or update contacts (in order to update, there must be a matching unique identifier). Each form field can be mapped to a custom contact field through the form's Contact Field tab. Some fields result in automatic matching such as email and country. 
+Afin que vos formulaires créent ou mettent à jour vos contacts, (pour mettre à jour, l'adresse email doit correspondre à un contact déjà existant), il faudra faitre correspondre le champ du formulaire avec un champ de contact existant dans votre plateforme Automation.
 
-As of 2.2.0, for fields that include select lists (select, radio, checkboxes), options can be synced with the contact field itself. No more having to manually keep them in sync! If a custom field's list is updated, simply rebuild the form's HTML. 
+**Attention, cette action est indispensable si vous souhaitez collecter l'information et déclancher des actions dépendentes des données associées à vos contacts.** En effet, le contacts doit être créé ou mis à jour avant d'être ajouté à un segment, poussé dans votre CRM, qualifié pour une campagne, etc.+
 
 ![](/forms/media/rebuild.png)
 
-#### Kiosk mode
+#### Mode kiosque
 
-The kiosk mode is helpful when you know that some form will be submitted from one device by multiple contacts. For example like a kiosk at a conference. When the kiosk mode is turned on, each submission will create new contact. When a kiosk mode is turned off, Mautic will edit the contact which belongs to the current session.
+Le mode kiosque est utile lorsque vous savez qu'un formulaire va être soumis par plusieurs personnes depuis un même support (ordinateur ou mobile). Par exemple, si vous avez un ipad sur un salon ou lors d'un conférence pour toute votre équipe commerciale, chaque soumission va créer un nouveau contact. Si le mode kiosque n'était pas activé le même contact serait mis à jour chaque soumission.
 
-### Form Injection
+### Intégration du formulaire
 
-There are three ways you can use the form. You can copy the entire output or you can have the form injected dynamically using the provided javascript. These are two options for directly including the form on a page, you can alternatively embed the form directly in a Mautic landing page if you choose.
+Il y a 3 moyens d'intégrer un formulaire sur une page de votre site web. Vous pouvez copier l'intégralité du code généré ou vous pouvez intégrer le code sur votre site de façon dynamique en utilisant le javascript ou l'iframe. Vous pouvez également intégrer votre formulaire sur une page d'atterrissage créée dans Automation.
 
 ![](http://drop.dbh.li/image/2M1q3T2T0Z0u/Image%202014-11-17%20at%204.20.56%20PM.png)
 
-**It is recommended to do not paste the injection code twice, it risks to create troubles on the submit form action when mandatory fields are submitted empty.**
+**Il est recommandé de ne pas coller le code d'intégration du formulaire deux fois sur une même page, cela risque de créer des erreurs à la soumission du formulaire lorsqu'il y a des champs obligatoires.**
 
-### Form results
+### Résultats du formulaire
 
-When on the form overview page you can click the Results button located in the top right to open a tabular view of all form submissions. These results can be easily filtered and sorted by each column heading.
+Sur la page d'aperçu global d'un formulaire vous pouvez cliquer sur le bouton en haut à droit 'Résultats'. Cela vous emmènera sur une page où vous pourrez facilement classer et filtrer les résultats, ainsi que les exporter dans différents formats (xls, html, csv).
 
-### Form Preview
+### Prévisualisation du formulaire
 
-The form preview provides a popup overview of what the form will look like. Remember that form styling is controlled by the surrounding page or website content and thus will display differently in final layout then in the preview.
+La prévisualisation du formulaire vous permettra de constater rapidement à quoi ressemblera votre formulaire une fois intégré. Gardez en tête que la mise en forme du formulaire est controlée par la CSS de votre site web et que le rendu final sera probablement bien différent une fois intégré sur votre site.
 
-### Form Style
+### Style du formulaire
 
-It is possible to choose a theme for a form. If you do so and the theme supports this feature, the form will be styled by CSS from that theme.
+Il est possible de choisir un thème pour un formulaire. Si vous procédez ainsi et que le thème supporte les formulaires, le formulaire apportera son propre style CSS.
+Il est également possible de ne pas choisir de thème et d'appliquer un style CSS directement sur votre site web.
 
-### Pre-populate a form field value
+### Pré-remplir un formulaire avec des valeurs
 
-It is possible to pre-populate the value of a form field from the URL query parameters.
+Il est possible de pré-remplir les valeurs de champ avec des paramètres dans une URL.
 
-The contact field's alias can be obtained from the table when viewing Contacts -> Manage Fields. The form field's name is stored as the alias in the database and is auto generated from the field's label; you may have to look at the source of your form to get the exact name (open the form and click the preview button). For example, here is a sample html section taken from a form. The name to use is what's within `mauticform[FIELDNAME]`.
+Vous pouvez récupérer l'alias du champ du contact dans la table Contacts -> Manage Fields (directement en SQL). Le nom du champ du formulaire y est stocké. Par exemple, voici un échantillon html pour un formulaire. Le nom à utiliser est `mauticform[FIELDNAME]`.
 
 ```
 <div class="mauticform-row mauticform-email mauticform-row-email" id="mauticform_email">
@@ -83,14 +81,9 @@ The contact field's alias can be obtained from the table when viewing Contacts -
 </div>
 ```
 
-#### Pre-populate the values automatically in an email
+#### Pré-remplir les valeurs dans un email
 
-Embed the tokens {leadfield=FIELDALIAS|true}, one for each contact specific information you want to pre-populate the form with, into the URL, assigning them to the name of your form field.The |true tells Mautic to URL encode the value so that it works in the browser.
+Ajoutez les tokens {leadfield=FIELDALIAS|true}, un paramètre pour chaque valeur que vous souhaitez préremplir dans le formulaire depuis un lien issu d'un email. La valeur `|true` explique à Mautic d'encoder la valeur de l'URL.
 ```
 {pagelink=1}&email={leadfield=email|true}
 ```
-In the rendered email sent to a contact, the URL may be converted into something like:
-```
-http://my-mautic.com/my-landing-page?ct=A_REALLY_LONG_STRING&email=contactemail%40gmail.com
-```
-So, what happened is `{pagelink=1}` was converted into the landing page URL and had `?ct=A_REALLY_LONG_STRING` appended. The really long string is encoded information about the contact which includes the contact ID. Each `{leadfield=FIELDALIAS}` was replaced with the contact's data. When the contact clicks the link, they will be taken to the landing page with the embedded form, and the form's 'email' input will be pre-populated with the value passed through the URL.

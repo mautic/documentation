@@ -1,69 +1,66 @@
 # Focus
 
-Focus allows you to engage users on your site through bars, modals, notifications and full page takeovers. These can be initiated at different times and with different actions such as exit intent.
+Focus vous permet d'afficher des barres, modules, notifications et popin en pleine page lors du passage de visiteurs sur votre site.
+Retouver les objets Focus dans le menu Canaux.
 
-Focus Items are listed under the Channels menu.
+## Création d'un objet Focus
 
-## Creating a Focus Item
+Lors de la création d'un objet focus, vous serez invité en renseigner une URL de site web. Cela va vous permettre de visualiser le Focus sur une photo d'écran du site en question. Si la pag du site est un peu lourde, l'image ne fonctionnera peut être pas.
 
-When creating a focus item, you'll see that there is a place to enter a website. This is currently integrated into a service offered by mautic.com to generate a snapshot of the given website to use a preview when building the focus item. If the website is a very complex website - the snapshot may not work. Note that this feature may change in the future. 
- 
 ![](/focus/media/step_1.png)
 
-After entering the website, click the builder button top right. This is where the magic happens.
-
-Notice that you should have a snapshot of the website. If not, you'll have the option to fetch it. Again note that some complex websites may not be snapshot-able.
+Après l'ajout du site, lancez le générateur. C'est là que la magie démarre.
 
 ![](/focus/media/step_2.png)
- 
-On the left you'll see a button to switch between mobile and desktop views. A mobile snapshot is also attempted - it may not match your website exactly due to the snapshot process but it should at least give you the general look. On the right is the builder toolbar.   
+
+Sur la gauche, vous constaterez un bouton pour apercevoir l'affichage en bureau ou mobile. Sur la droite, vous trouverez les éléments du générateur.
 
 ![](/focus/media/step_3.png)
 
 ### Focus/Goal
 
-The firs step to building the focus item is to choose what the focus or goal is. There are three options:
+La première étape est de déterminer quel est l'objectif de l'objet Focus. Il y a 3 options :
 
-1. Collect data - will use a Mautic form in the as the content. Note that it should be a very simply form (or or two inputs) as there is very little room to work with in some of the styles. But this is great for capturing emails for a even or newsletter signup.
-2. Display a notice - information only and is great for announcements and the like.
-3. Emphasize a link - great for landing pages with an event, sale, promotion, etc. It displays a button to click that will direct to the given link.
+1. Récolter des données - cela utilisera un formulaire Mautic comme contenu. Notez que cela devra être un formulaire très simple (un ou deux champs) puisqu'il y a peu d'espace. Mais cela est très bien pour récupérer des adresses emails et des inscriptions aux newsletters.
+2. Afficher une notification - seulement une information, très pratique pour les annonces par exemple.
+3. Mise en évidence d'un lien - très bien pour les pages d'atterrissage pour un événement, un salon, une promotion, etc. Cela affichera un bouton qui redirigera pas une URL.
 
 ![](/focus/media/step_4.png)
 
-Each focus/goal will have slightly different settings but all have a few in common:
-  
-1. Animate? - simply determine if  
-1. When to engage - this determines when the focus is engaged based on visitor interaction. It can be immediate, on scroll, timed, or with an exit attempt. If `Visitor intends to leave` is chosen, an option appears that allows configuration if links within the site should trigger the engagement or not.
-2. How often to engage - should the visitor be engaged every time, once per session, or during a period of time? 
-3. Stop engaging after a conversion - once a user clicks the link or submits the form (not applicable for displaying a notice), enabling this option will no longer engage the visitor.
+Chaque but Focus aura quelques paramétrages spécifiques mais globalement en commun :
 
-### Focus Style
+1. Animé ? - A vous de déterminer
+1. Quand entrer en scène - Cela détermine quand est-ce que Focus s'affiche. Cela peut être immédiat, au scroll, avec un délai, ou lorsque le contact tente de quitter la page. Si `le visiteur d'apprète à partir` est choisi, une option apparait.
+2. A quelle fréquence déclencher - est-ce que cela doit arriver à chaque fois, une fois par session, ou seulement sur un intervalle de temps ?
+3. Arrêter après la conversion - une fois que le visiteur à cliqué sur un lien ou soumis un formulaire, en activant cette fonctionnalité, le visiteur ne sera plus notifié.
+
+### Le sytle de votre objet Focus
 
 ![](/focus/media/step_5.png)
 
-There are four styles supported - 
+Il y a 4 types de mise en forme
 
-1. Bar - display a bar across the top or bottom of the page
-2. Modal - a small modal window that appears centered on the page
-3. Notification - these are like modals but smaller and slide in from the side.
-4. Full page - also like a modal only it takes up the entire view.
+1. Barre - affiche une barre en haut ou bas de page
+2. Module - affiche une petite popin au milieu de la page
+3. Notification - des petites zones qui arrivent par le côté de la page
+4. Page complète - comme le module mais qui prend tout l'affichage de la page
 
-Each style has it's own settings such as position, size, sticky, etc.
+Chacun d'entre eux à ses propres paramètres de mise en forme.
 
-#### Colors
+#### Couleurs
 
 ![](/focus/media/step_6.png)
 
-By default, Mautic will determine the top colors extracted from the snapshot. Four colors are currently supported for primary color, text color, button color, and button text color.
- 
-### Content
+Par défaut, Mautic récupèrera les couleurs principales du screenshot de votre site. Quatre couleurs sont supportées sur un objet Focus.
+
+### Contenu
 
 ![](/focus/media/step_7.png)
 
-Again this will vary based on the selected focus/goal and style is chosen. Some support a headline and a tagline while some suppor tonly a headline due to space constraints. If the goal is to collect data, a list of forms will be availble to choose from. Remember that the form should be simple. 
+Cela dépendra de votre objectif et du format de votre objet Focus. Certains vous donneront de la flexibilité pour des titres, des descriptions, liens, etc.
 
-## Inserting focus into a web site
+## Insérer l'objet Focus sur le site web
 
 ![](/focus/media/step_8.png)
 
-Inserting a focus item into a website is a simply as copying one line of code and inserting into your page's source. After creating the focus item, view it's details page where you can see engagement graphs and other detailed information. On the right, you'll see a  "Focus Installation" box that includes the line of code needed. Click on it, copy, then paste it into your website's source before the closing body tag if possible.
+C'est simple comme bonjour. Une fois enregistré, vous cliquez sur le nom de votre objet, puis vous avez la possibilité d'expoerter un script dans la barre de droite. Vous n'avez plus qu'à la copier et coller sur la page de votre site web !

@@ -1,12 +1,11 @@
-# Forms
+# Formulaires
 
-Forms are a special part of the marketing automation system. A form is used to collect user information often in exchange for providing access to a download, an event registration, or an email newsletter. Forms allow you to collect contact data and add additional information to their profile.
+Les formulaires ont un rôle crucial dans le Marketing Automation. On les utilise pour récuperer des informations sur les contacts. Tout d'abord, respectons une règle d'or sur le web : je donne avant de demander ! La bonne pratique est d'avoir une récompense à offrir à vos visiteurs afin qu'ils soient motivés à vous laisser leur adresse email en échange d'une contrepartie assez interessante : un contenu dit riche. Par exemple ce sont des livres blancs, des simulateurs, des configurateurs, des périodes d'essai...+
 
-There are two kinds of forms in Mautic.
+Vous allez donc pouvoir créer des formulaires directement via la plateforme Mautic et les ajouter sur vos pages d'atterrissage Mautic ou les intégrer directement sur votre site !
 
 ![](/forms/media/kinds-of-forms.jpg)
 
-A **Campaign Form** can push a contact directly into a campaign but all actions are performed in the Campaign Builder.
+Un **Formulaire de campagne** permet de qualifier directement les soumetteurs dans une campagne.
 
-A **Standalone Form** can push a contact into a segment, but not into a campaign directly.  The advantage to this form type is that you can perform actions at the time of submission. An example of this would be sending an email to an administrator with the form values included.
-
+Les **Formulaires autonomes** permettent d'effectuer des actions dès la soumission comme l'ajout à un segment, la notification, etc. mais ne qualifie pas directement les contacts dans les campagnes.
