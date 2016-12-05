@@ -1,17 +1,17 @@
-# Campaign Troubleshooting
+# Troubleshooting des campagnes
 
-## Page visits are not recognized
+## Les visites de page ne sont pas reconnues
 
-There can be a few reasons for this:
+Il peut xister plusieurs raisons pour cela :
 
-1) Make sure that you are not testing the page visit while logged into Mautic. Mautic ignores user generated activity so use an anonymous session, another browser, or logout of Mautic.
+1) Soyez sûrs qu vous n'effectuez pas des tests de visite de pages en étant connecté à votre compte Mautic. Mautic ignore les activités de ses utilisateurs. Utilisez alors la navigation privée, un autre navigateur ou déconnectez vous de Mautic.
 
-2) Ensure the contact getting tracked is the in the campaign. The easy way to test this is to review the time line of the contact for the page hit.
+2) Assurez vous que le contact que vous essayez de tracer est bien rentré dans la campagne. Le moyen le plus simple est d'aller voir dans l'historique d'activité du contact.
 
-3) Campaigns are executed sequentially and will not repeat per contact. If the contact has already visited the page while part of the campaign and triggered the Visits a Page decision, subsequent visits will not re-trigger the actions associated with the decision.
+3) Les campagnes sont exécutées sous formes de taches récurrentes et un contact ne peut être considéré plusieurs fois pour une même action. Si le contact a déjà réuni les conditions d'une décision sur le tracking d'une URL, une décision sur le même critère plus tard ne sera pas automatiquement vérifiée pour la visite déjà considérée.
 
-4) Ensure that the URL in the campaign action either matches _exactly_ the URL visited or use a wildcard (note that the <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Locator" target="_blank">a URL can include the schema, host/domain, path, query parameters, and/or fragment</a>).
+4) Assurez vous que l'URL que vous tracez est _exactement_ l'URL visitée ou utilisez les étoiles `*` pour un portion d'URL.
 
-For example, if you have a URL of `http://example.com` and the page hit registers as `http://example.com/index.php?foo=bar`, the campaign decision will not be triggered. However, if you use `http://example.com*` as the URL, it'll match and thus trigger.
+Par exemple, si vous avez comme URL `http://example.com` et que le tracking enregistre `http://example.com/index.php?foo=bar`, la décision de la campagne ne sera pas exécutée. Cependant, si vous utilisez `http://example.com*` comme URL, cela correspondra et déclanchera l'événement de campagne.
 
-Another example is if you want to associate different page hits with specific campaigns. Let's say you have Campaign A and Campaign B. You want to use the same base URL and path for both campaigns but differentiate with a query parameter.  For Campaign A, you can define a Visits a Page decision with `http://example.com/my-page?utm_campaign=A*` and for Campaign B, `http://example.com/my-page?utm_campaign=A*`. Now a contact will only trigger the specific campaign desired. If the goal is to trigger both campaigns regardless of the query parameters, use `http://example.com/my-page*`.
+Un autre exemple, si vous avez une campagne A et une campagne B. Vous souhaitez utiliser la même base d'URL tout en la différencient avec des paramètres. Pour la campagne A, vous pouvez utiliser la décision de visite d'URL avec `http://example.com/my-page?utm_campaign=A*` et pour la campagne B, `http://example.com/my-page?utm_campaign=B*`. Ainsi, le contact n'aura le déclencheur que sur la campagne à laquelle le critère correspond. Si vous souhaitez que le contact soit concerné pour les deux campagnes, utilisez `http://example.com/my-page*`.

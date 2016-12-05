@@ -1,76 +1,74 @@
-# Dashboard
+# Tableau de bord
 
-Mautic 1.4.0 brought a customizable dashboard where each user can compose widgets with information she/he wants to track.  Mautic 2.0 brought a number of enhancements to the Dashboard.
+Le tableau de bord Mautic est désormais complètement personnalisable par chaque utilisateur via un système de widget.
 
-## Date range filter
+## Intervalle de temps
 
-All the widgets will display data in the selected global date range filter at the top of the widget list. The default date range is set from 30 days ago to today. Line charts will change the time unit automatically depending on the day count selected in the date range filter like this:
+Tous les widgets seront affichés en fonction de l'intervalle de temps sélectionné tout en haut de la liste des widgets affichés. L'intervalle de temps par défaut est de 30 jours depuis aujourd'hui. Les unités des graphiques seront automatiquement changées en fonction du nombre de jours sélectionnés dans l'intervalle de temps :
 
-Date range is equal 1 day: Hours
-Date range is between 1 and 31 days: Days
-Date range is between 32 and 100 days: Weeks
-Date range is between 101 and 1000 days: Months
-Date range is greater than 1001 days: Years
- 
-The only exceptions of widgets which display the same information independent on the date range are *Upcoming emails* and *Recent activity*.
+* Intervalle de 1 jour : Heures
+* Intervalle de 1 à 31 jours : Jours
+* Intervalle de 32 à 100 jours : Semaines
+* Intervalle de 101 à 1000 jours : Mois
+* Intervalle supérieur à 1001 jours : Années
+Quelques exceptions sur certains widgets qui afficheront les mêmes informations sans prendre en compte l'intervalle de temps *Emails à venir* et *Activité récente*.
 
 ## Widgets
 
-*Warning: Do not create too many widgets. It can slow the dashboard page load down. If you have performance issues, decrease the amount of widgets.*
+*Attention : Ne créez pas trop de widget. Cela peut ralentir le chargement de la page du tableau de bord. Si vous avez des problèmes de performance, réduisez le nombre de widgets.*
 
+Vous pouvez ajouter un widget en cliquant sur le bouton "Ajouter un widget". Au clic sur "Ajouter un widget", un formulaire apparaitra afin de pouvoir définir les options suivantes :
 A new widget can be added to your dashboard when you click on the "Add widget" button. In the "Add wigteg" form which appears after each widget will let you define:
 
-- **Name**: Describe what the widget displays. If not filled, Mautic will call it the same as the widget type you select.
-- **Type**: Select what information you want to display from the predefined widget types.
-- **Width**: Select how wide the widget should be. The options are 25%, 50%, 75%, 100%. Default option is 100%. The optimal width for line charts is 100%, for tables 50%, for pie charts 25%.
-- **Height**: Each widget can have different height. 5 heights are predefined. The dashboard will look best if you select a constant height for each widget in one row.
+- **Nom** : Décrivez le nom que vous souhaitez donner au widget. Si ce champ n'est pas rempli, Automation lui donnera le même nom que le type du widget.
+- **Type** : Sélectionnez le type d'information que vous souhaitez afficher.
+- **Largeur** : Sélectionnez la taille de votre widget. Les options sont 25%, 50%, 75% ou 100% de largeur de la page. Par défaut, la valeur sélectionée sera 100%. La valeur optimale pour un graphique est de 100%, les tableaux de 50%, les camemberts 25%.
+- **Hauteur** : Les widgets peuvent avoir 5 tailles prédéfinies.
 
-Some widgets have additional options:
+Certains widgets peuvent avoir des options additionnelles :
 
-**Created contacts in time**
-- Show all contacts: Displays one line with all created contacts.
-- Only identified: Displays one line with only created identified contacts.
-- Only anonymous: Displays one line with only created visitors.
-- All identified vs anonymous: displays 2 lines with created identified and visitors.
-- Top segments: Displays up to 6 lines with contacts added to the top 6 segments. If no such segment exist for the selected date range, the chart will not be displayed.
-- Top segments with Identified vs Anonymous: Displays up to 6 lines of the top 3 segments for the selected date range. Each segment will show 2 lines with identified and visitors.
+**Contacts créés dans le temps**
+- Affiche tous les contacts : Affiche tous les contacts créés sur une courbe d'évolution.
+- Seulement identifés : Affiche une courbe avec les contacts identifiés.
+- Seulement anonymes : Affiche une courbe avec les contacts anonymes.
+- Tous les identifés vs. anonymes : Affiche 2 courbes avec les contacts identifiés et anonymes.
+- Top segments : Affiche jusqu'à 6 courbes avec des contacts ajoutés aux top 6 des segments.
+- Top segments avec les identifiés vs. anonymes : Affiche jusqu'à 6 courbes du top 3 des segments.
 
-**Emails in time**
-- Only sent emails: Displays 1 line with sent emails.
-- Only opened emails: Displays 1 line with opened emails.
-- Only failed emails: Displays 1 line with failed emails.
-- Sent and opened emails: Displays 2 lines with sent and opened emails.
-- Sent, opened and failed emails: Displays 3 lines with sent, opened and failed emails.
+**Emails dans le temps**
+- Emails envoyés seulement : Affiche 1 courbe avec les emails envoyés.
+- Emails ouverts seulement : Affiche 1 courbe avec les emails ouverts.
+- Emails rebonds seulement : Affiche 1 courbe avec les emails rebonds.
+- Emails envoyés et ouverts : Affiche 2 courbes avec les emails envoyés et ouverts.
+- Emails envoyés, ouverts et rebonds : Affiche 3 courbes avec les emails envoyés, ouverts et rebonds.
 
-**Page visits in time**
-- Total visits - Displays 1 line with all visits (page hits).
-- Unique visits - Displays 1 line with unique visits (contacts).
-- Total and unique visits - Displays 2 lines with unique and all visits.
+**Visites de page dans le temps**
+- Toutes les visites - Affiche 1 courbe avec toutes les visites.
+- Visites uniques - Affiche 1 courbe avec les visiteurs uniques (contacts).
+- Total et visites uniques - Affiche 2 courbes avec les visiteurs uniques et tous les visiteurs.
 
-### Widget ordering
+### Classement des Widgets
 
-Each widget can change its location by drag&dropping. The handle is its name.
+Vous pouvez déplacer les widgets en glisser-déposer. Pour procéder, cliquer sur le nom et faites glisser.+
 
-## Dashboard export
+## Export du tableau de bord
 
-Each dashboard as you configure it can be exported to a single file. You can make a backup for another time, send it to a colleague or share it online. It exports only the widget configuration. Not the data in them.
+Chaque tableau de bord configuré peut être exporté dans un fichier. Vous pouvez vous en servir comme sauvegarde, le partager avec vos collègues ou le publier. Il n'exporte que la configuration, pas les données associées.
 
-## Dashboard import
+## Import du tableau de bord
 
-If you export a dashboard, you can then upload it and import it again in the Dashboard Import page.
+Si vous faites des exports, vous pouvez par la suite importer le fichier.
 
-Stock Mautic installation comes with 3 pre-defined dashboards. The one called *default.json* is imported automatically, when your dashboard doesn't contain any widget. The other 2 predefined dashboards are there as an example. You can export and import any other dashboard and then switch between them. Pre-defined dashboards can be:
+Dans l'installation Mautic il y a 3 tableaux de bord pre-definis. Celui nommé *default.json* est celui paramétré par défaut quand votre tableau de bord est vierge. Les deux autres pré-définis sont des exemples. Vous pouvez exporter et importer d'autres modèles et naviguer entre chaques.
 
-Previewed - It will display the dashboard widgets for preview. It will load in them actual Mautic data. Nothing is saved or changed by the Apply button.
-Applied - It applies the dashobard as your dashboard. Warning: Your current widgets will be deleted by this action! Export the current dashboard if you want to get back to it later.
-Deleted - It will delete the predefined dashboard.
+Aperçu - Cela affichera les informations en aperçu. Rien ne sera sauvegarder avant d'appuyer sur le bouton "Appliquer".
+Appliquer - Cela applique le modèle à votre tableau de bord. Attention : vos Widgets en cours seront supprimés ! Exportez la mise en forme actuelle si vous souhaitez la sauvegarder et la réimporter plus tard.
+Supprimer - Cela supprimera le modèle sélectionné.
 
-## Widget cache
+## Cache sur les Widgets
 
-The WidgetDetailEvent automatically caches the widget detail data for a period of time defined in the configuration. Default cache expiration period is 10 minutes.
+Le WidgetDetailEvent enregistre le détail des informations dans le cache pour une période de temps définie dans le panneau de configuration. Le cache par défaut est de 10 minutes.
 
-## Dashboard Permissions
+## Autorisations sur le tableau de bord
 
-If a Mautic user doesn't have the see others or see own permissions for a bundle, she/he won't be able to create widgets for said bundle. However, the widget can still be visible at hers/his dashboard. For example if a user creates the widgets and then the admin removes the permission or via import. In that case the widget is there, but with a message that the user doesn't have permission to see the data.
-
-If a Mautic user has permission to see only his/hers own data from a bundle, he/she will see only his/hers own data in the Dashboard widgets. For example only contacts which he/she owns, page hits of the pages he/she created and so on.
+Si un utilisateur Mautic n'a pas les droits pour voir les informations d'un bundle (contact, segments, etc.), il ne pourra pas créer de Widget qui regroupe les données de ce bundle. En revanche, le Widget restera visible si les droits de l'utilisateurs sont modifiés après la création du Widget.

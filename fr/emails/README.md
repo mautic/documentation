@@ -1,66 +1,65 @@
-# Emails
+# Emails ###
 
-Emails can be created to be used within campaigns and other list activities. Emails provide a means for direct interaction with potential customers, clients, and contacts.
+Les emails peuvent être créés pour être utilisés dans les campagnes ou associés à des segments de contacts. Ils permettent d'avoir une intéraction directe avec vos clients, prospects ou autres interlocuteurs.
 
-### Email Types
+### Formats d'emails ###
 
 ![](/emails/media/types.png)
 
-There are two types of emails: template and segment (broadcasts). 
-  
-#### Template Emails
+Il y a 2 types d'emails.
 
-Template emails are transactional by default and can be used in campaigns, form submit actions, point triggers, etc. These can be sent to the same contact as many times as needed. These cannot be sent to a contact outside of another Mautic component except when sending an email directly to a contact in which the content is cloned (template emails sent directly to a contact are not associated with the template email itself and thus stats are not tracked against it).
- 
-#### Segment (Broadcast) Emails
-  
-These are marketing emails by default. Segments are assigned to the email which will determine which contacts receive the communication. Note that each contact can only receive the email once - it's like a mailing list.
+#### Emails de template ###
 
-Initiating these emails can be done in one of two ways. Prior 2.2.0, sending had to be manually initiated through the UI as an ajax process batched over the contacts. As of 2.2.0, a new cron job is available to do this for you! See [Send Scheduled Broadcasts (e.g. segment emails)](./../setup/cron_jobs.html#send-scheduled-broadcasts-e-g-segment-emails) for more details on this.
+Les emails de template emails peuvent être utilisés dans les campagnes, les actions de formulaire, les déclencheurs de points, etc. Ceux-ci peuvent être envoyés plusieurs fois à un même contact (à travers différentes actions).
 
-### Email Formats
+#### Emails de segment (de masse) ###
 
-Emails can be created in both full HTML as well as basic text format to be delivered as necessary to contacts. This is an important part of creating a strong relationship with contacts by providing relevant information in the correct format.
+Ces emails sont typiquement les emails de newsletter marketing. Vous devrez choisir un (ou des) segments qui seront la cible de cet email, ce qui vous donnera le montant de personnes en attente de l'envoi de l'email. Notez que chaque contact ne peut recevoir l'email qu'une fois - c'est comme une liste de mailing.
 
-### Email Delivery
+Vous deviez initialement envoyer ces emails manuellement depuis l'interface. Depuis la version 2.2.0, un nouveau CRON est disponible pour lancer ces emails automatiquement aux dates paramétrées ! Voir [Envoyer des emails de masse automatiquement (ex. emails de sgment)](./../setup/cron_jobs.html#send-scheduled-broadcasts-e-g-segment-emails) pour plus de détail sur cela.
 
-Emails are delivered using the method defined by the system administrator. If you are the system administrator for your company, then you will need to add the email protocol for your company to use. Mautic integrates with any email service provider which offers SMTP mail servers as well as several distinct services such as Mandrill, Sendgrid, and Amazon SES.
+### Format des emails ###
 
-The system can either send emails immediately or queue them to be processed in batches by a cron job.
+Les emails peuvent ête créés en HTML importé ou en format texte basique pour être envoyé à vos contacts. Vous pouvez également importer et créer vos propres thèmes. C'est un point essentiel pour construire les chaines relationnelles avec vos contacts.
 
-#### Immediate Delivery ####
+### Dévlivrabilité des emails ###
 
-This is the default means of delivery. Mautic sends the email as soon as it is instructed to by the triggering action. If you expect a large number of emails to be sent, then utilizing the queue is recommended. Sending email immediately may slow the response time of Mautic if using a remote mail service since as Mautic has to establish a connection with that service before sending the mail. Also attempting to send large batches of emails at once may hit your server's PHP limits or email limits if on a shared host. 
- 
-#### Queued Delivery ####
+Les emails sont délivrés en utilisant la méthode définie dans le panneau de configuration. Si vous êtes l'administrateur système pour votre entreprise, vous devrez alors configurer le protocole email. Mautic s'intègre avec de tous les serveurs SMTP tout comme de nombreux routeurs email comme Mailjet, Mandrill, Sendgrid, et Amazon SES.
 
-This is recommended if you plan to send a significant number of emails. Mautic will store the email in the configured spool directory until the command to process the queue is executed. Set up a cron job at the desired interval to run the command:
+Le système peut envoyer les emails immédiatement ou les traiter sous forme de queue pour les enovyer en masse avec un CRON.
+
+#### Envoi immédiat ###
+
+C'est l'envoi par défaut. Mautic envoi l'email dès qu'il est disponible. Si vous pensez envoyer un grand nombre d'emails, nous vous recommandons d'utiliser le système de queue. Envoyer les emails immédiatement risque de ralentir le temps de réponse de votre interface Mautic si vous utilisez un service d'envoi d'email externe à Mautic. Egalement, envoyer en grand nombre d'emails en une fois risque d'augmenter significativement le besoin en ressources de votre serveur PHP.
+
+#### Envoi en queue ###
+
+Cela est recommandé si vous souhaitez envoyer beaucoup d'emails. Mautic va enregistrer et stocket les emails dans une liste jusqu'à ce que la commande d'envoi ci après soit envoyée (pour les utilisateurs de Mautic Open Source). Vous pouvez choisir l'intervalle de temps entre chaque envoi :
 
 ```
 php /path/to/mautic/app/console mautic:email:process --env=prod
 ```
 
-Some hosts may have limits on the number of emails that can sent during a specified timeframe and/or limit the execution time of a script. If that's the case for you, or if you just want to moderate batch processing, you can configure batch numbers and time limits in Mautic's Configuration. 
+Certains routeurs ont des limites d'envoi d'email par période. Si c'est le cas pour vous, ou si vous souhaitez modérer le volume d'envoi, vous pouvez paramétré les volumes et délais dans le panneau de configuration Mautic.
 
- 
-### Email Fields
+### Variables de contact dans les emails ###
 
-You have access to any number of contact fields to be used in your form emails. These can be easily placed within your emails and will be automatically replaced with the appropriate text once the email is sent.
+Vous avez la possibilité d'ajouter n'importe quel champ de contact dans le contenu de vos emails. Cela sera automatiquement remplacé lors de l'envoi de l'email par la bonne valeur du contact.
+Pour procéder, ajoutez dans votre email la variable sous le format `{leadfield=alias}`. Par exemple pour le prénom, il faudra mettre `{leadfield=firstname}`, pour le titre `{leadfield=title}`.
 
-### Tracking Opened Emails ###
+### Tracking d'ouverture des emails ###
 
-Each email sent through Mautic is tagged with a tracking pixel image. This allows Mautic to track when a contact opens the email and execute actions accordingly. Note that this technology is limited to the contact's email client supporting HTML and auto-loading of images. If the email client does not load the image, there is no way for Mautic to know if the email was opened.
+Chaque email envoyé par Mautic sera complété d'un pixel de tracking unique. Cela permet à Mautic de voir quand un prospect ouvre un email et donc pourra probablement via l'éditeur de campagne, déclancher des actions spécifiques pour ce type de comportement. Notez que cette technologie ne fonctionne que pour les clients email supportant le HTML et le chargement des images.
 
+### Tracking des liens des emails ###
 
-### Tracking trackable links in emails ###
+Les clics sur chaque lien dans un email sont tracés et leur décompte est affiché en bas de chaque page d'aperçu d'un email.
 
-Clicks of each link in a email are tracked and whose clicks count can be found at the bottom of email detail page under Click Counts tab.
+### Désinscription ###
 
+Mautic gère directement et automatiquement les désinscriptions. Si vous utilisez le générateur d'email, vous n'aurez qu'à glisser-déposer le text de désinscription ou l'URL de désinscription dans l'email. Ou alors, de la même manière qu'un champ variable, ajouter le texte `{unsubscribe_text}` ou `{unsubscribe_url}` directement dans votre email.
+Les contacts désinscrits seront automatiquement exclus des listes d'envoi. Vous n'avez rien à faire de plus.
 
-### Unsubscribing ###
+### Version en ligne ###
 
-Mautic has a built in means of allowing a contact to unsubscribe from email communication. If using the builder, simply drag and drop the Unsubscribe Text or Unsubscribe URL tokens into your email. Or insert `{unsubscribe_text}` or `{unsubscribe_url}` into your custom HTML. The unsubscribe text token will insert a sentence with a link instructing the contact to click to unsubscribe. The unsubscribe URL token will simply insert the URL into your custom written instructions.
-
-### Online version ###
-
-Mautic manages also the hosting of an online version of the email sent. To use that feature, simply add the following as URL on text to generate the online version link `{webview_url}`.
+Mautic gère également l'hébergement d'une version en ligne de l'email en cas de mauvaise visualisation de l'email dans le client email du contact. Pour cela, ajouter l'URL suivante comme lien sur votre texte de version en ligne, `{webview_url}`.

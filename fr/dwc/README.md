@@ -1,36 +1,36 @@
-# Dynamic Web Content
+# Contenu dynamique web
 
-Mautic 2.0 introduced the ability to embed content on a web page dynamically for both anonymous visitors and known contacts.
+Mautic 2.0 a introduit la possibilité de d'intégrer du contenu dynamique sur les pages web pour les contacts anonymes et identifiés.
 
-There are several steps involved in setting this up.
+Voici les différentes étapes à suivre pour le paramétrage.
 
-##Setup
-###Add the default content.
+## Paramétrage
+### Ajouter le contenu par défaut
 ![](/dwc/media/dwc-default.jpg)
 
-###Add alternative content if desired.
-You can set up as many items as you need.  The default will be delivered via the "Request Dynamic Content" decision in a campaign.  If you want to push something different based on a set of criteria, you create those here and deliver them via a "Push Dynamic Content" action.
+### Ajouter un contenu alternatif souhaité
+Vous pouvez paramétrer autant d'objets que souhaités. La valeur par défaut sera distribuée par la décision "Request Dynamic Content" dans une campagne. Si vous souhaitez afficher un contenu différent en fonction d'un critère, vous créez cela dans l'action "Pousser du contenu dynamique".
 
-###Add the dynamic content pull request in a campaign.  
-The key to this step is naming the "slot".  This can be anything you want as long as it's unique across your dynamica content campaigns.  The pull request is processed and determines if the person on the landing page is a known contact.
+### Ajouter la demande de contenu dynamique
+La clé de cet étape est de nommer le "slot". Cela peut être n'importe quoi mais doit être constent entre les campagnes.
 ![](/dwc/media/dwc-pull-request.jpg)
 
-###Add the push request in the campaign.  
-If you want to serve up different information based on certain criteria, you can use a push request.  
-1.  If the person is known, they receive the content from the pull request.  
-2.  If they meet the criteria (in the example below - if they are from Canada), a different set of content can be delivered to the browser.  
-3.  If they are unknown, they will see the information embedded in the dynamic web content div from the page (see below).
+### Ajouter l'affichage du contenu dynamique
+Si vous souhaitez distribuer du contenu en fonction de certains critères.  
+1. Si le contact est connu, ils recoivent le contenu de la notification.
+2. S'il rempli le critère (dans l'exemple ci dessous - s'il est du Canada), un contenu différent peut être affiché dans le navigateur.  
+3. S'il est inconnu, il vera l'information inégrée dans le contenu web dynamique de la page (voir ci dessous).
 ![](/dwc/media/dwc-push.jpg)
 
-###Finally, include the dynamic web content shortcode in your web page.  
+### Finalement, inclure la varible de contenu dynamique dans votre page web
 ```
-<div class="mautic-slot" data-slot-name="dwc">Text in the html - 
-this shows up if the visitor is not known</div>
+<div class="mautic-slot" data-slot-name="dwc">Texte dans le html -
+cela s'affiche si le contact est inconnu</div>
 ```
-Note the data-slot-name matches the slot name in the campaign.
+Notez que le data-slot-name correspond au "slot" dans la campagne.
 
-Watch a video tutorial:  (https://www.youtube.com/watch?v=eChzJm5yBUk)
+Regardez la vidéo tuto : (https://www.youtube.com/watch?v=eChzJm5yBUk)
 
-## Translations
+## Traductions
 
-Dynamic web content supports translated content. When creating/editing a dynamic web content item, there are the options to set a language and select a translation parent. By selecting a translation parent, the current item is then considered to be a translation in the selected language of that parent item. 
+Le contenu web dynamique support des contenus traduits. Lorsque vous créez/modifiez un objet contenu web dynamique, vous avez une option pour ajouter une taduction et choisir l'objet parent.

@@ -1,10 +1,10 @@
-The **Components** menu contains the following items:
+Le sous menu des **composants** contient les éléments suivants
 
-* Assets
-* Dynamic Web Content
-* Forms
-* Landing Pages
+* Ressources
+* Contenu dynamique web
+* Formulaires
+* Pages d'atterrissage
 
-These items must be created before you can use them in a campaign.
+Ces objets doivent être créés avant de les utiliser dans les campagnes.
 
 ![](/components/media/components-dropdown.jpg)

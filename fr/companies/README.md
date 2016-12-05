@@ -1,45 +1,43 @@
-# Companies
+# Société
 
-Companies are a way to group contacts based on the company(ies) the contact works or has worked for.
+Les sociétés sont un moyen de regrouper les contacts en se basant sur la société pour laquelle ils ont travaillé.
 
-### Company Custom Fields
+### Champs personnalisés de société
 
-With Mautic's installation a set of custom fields is provided for companies, but you can customize these fields to your needs.
+Avec Mautic, vous avez un certain nombre de champs par défaut pour les sociétés. Vous pouvez également en configurer des personnalisés.
 
-1. Go to custom fields and create any company field you need.
-2. Go to the right select box to assign this field to 'Company'.
+1. Allez dans le menu configuration (en haut à droite) > Champs personnalisés > Créez les champs dont vous avez besoin.
+2. Dans la barre latérale à droite, assignez ce champ à 'Société'.
 
-### Company Segments
+### Segments de société
 
-You can create a segment based on a company record, simply select any company field to filter with and the matching criteria for it, and contacts that match any company filtered will be added to the segment. 
- 
-### Identifying Companies
+Vous pouvez créer des segments basés sur des champs de société, sélectionnez simplement n'importe quel champ de société pour votre filtre de segment. Ainsi, tous les contacts qui répondent aux critères du segment y seront ajoutés.
 
-Companies are identified strictly through a matching criteria based on Company Name, City, Country (and/or State). If city of country are not delivered as identifying fields to identify a contact, a company will not be matched or created.  
+### Identification des sociétés
 
-### Campaign Company Actions
+Les sociétés sont identifiables avec leur Nom (Company Name), Ville (City), et Country (Pays).
 
-A contact can be added to a new company based on a campaign action
+### Actions de campagne sur les sociétés
 
-#### Create/Manage Companies
-To create or manage companies, go to the companies menu identified by the building icon. In this area you can create, edit or delete companies.
+Un contact peut être ajouté à une société grâce aux actions de campagne.
 
-#### Assigning Companies to Contacts
-There are different ways to assign a company to a contact, all explained next:
+#### Créer/Gérer les sociétés
+Pour créer ou gérer les sociétés, allez dans le menu dédié sur la gauche de votre interface. Dans cet espace, vous pouvez créer, modifier ou supprimer des sociétés.
 
-##### Contact's profile
-You can assign a contact to companies in the contact's profile page when creating or editing an existing one. The latest company assigned will be treated as the primary company for the contact.
+#### Assigner des contacts à une société
+Il y a différentes manières d'assigner une société à un contact :
 
-##### Contacts list view
-You can batch assign companies to selected contacts in the contact's list view.
+##### Profil du contact
+Vous pouvez assigner un contact à une société depuis son profil lorsque vous créez ou modifiez le contact. La dernière société assignée sera la primaire.
 
-##### Through a campaign
-You can assign a company to a identified contacts through a campaign by selecting the 'Assign contact to company' action.
+##### Depuis la liste des contacts
+Vous pouvez assigner en masse une société à des contacts depuis la liste des contacts.
 
-##### When identifying a contact through a form
-If a contact is identified through a form a company can also be identified/created if:
- -Company name is selected as a form field (mandatory for company matching/creation).
- -City is selected as a form field (mandatory for company matching/creation).
- -Country is selected as a form field (mandatory for company matching/creation).
- -State is selected as a form field (optional for company matching/creation).
- 
+##### Depuis une campagne
+Vous pouvez assigner une société à un contact identifié avec l'action de campagne 'Assigner le contact à un société'.
+
+##### Lors de l'identification d'un contact par un formulaire
+Lorsqu'un contact s'identifie à la soumission d'un formulaire, une société peut également être assignée ou créé :
+ -Le champ `Company name` fait parti des champs du formulaire (obligatoire).
+ -Le champ `Country` fait parti des champs du formulaire (obligatoire).
+ -Le champ `City` fait parti des champs du formulaire (obligatoire).

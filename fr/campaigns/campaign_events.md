@@ -1,17 +1,15 @@
-## Campaign Events
+## Evénements de campagne
 
-Below are notes on some of the specific campaigns events. 
+### Actions de campagne
 
-### Campaign Actions
-
-#### Send Email - Marketing vs Transactional
+#### Envoi d'email - Marketing vs Transactionnel
 
 ![](/campaigns/media/send-email-delay.png)
 
-In the send email action, there is an option to select Transaction or Marketing. A transactional email is one that can be sent to the contact multiple times. A marketing email is one that only be sent to the contact once across multiple sources (e.g. another campaign). If the contact has already received this email from another source or the current campaign, the email will not be sent again and the contact simply progresses on through the campaign. 
+Dans l'action d'envoi d'email, il existe maintenant une option pour selectionner Transactionnel ou Marketing. Un email transactionnel peut être envoyé plusieurs fois à un contact. Un email marketing ne pourra être envoyé qu'une seule fois à travers tous les types d'événements (ex : une autre campagne). Si le contact a déjà reçu cet email depuis une autre source ou depuis la même campagne, l'envoi de l'email sera ignoré et le contact continuera sa route dans la campagne.
 
-### Campaign Decisions
+### Décisions de campagne
 
-#### Opens Email
+#### Email ouvert
 
-The opens email decision can only be attached to a send email action. Whatever email is sent through the action is the email used by the decision. 
+La décision d'ouverture d'email peut être attaché uniquement à une action d'email.

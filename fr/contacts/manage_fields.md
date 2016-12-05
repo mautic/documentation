@@ -1,26 +1,24 @@
-# Custom Fields
+# Gestion des champs
 
-You can manage custom fields through the admin menu (click the cogwheel upper right hand side of Mautic). 
-
-The fields page will let you view all existing contact fields as well as any custom contact fields you've created.
+La page de gestion des champs vous permettra de voir tous les champs existants ainsi que tous les champs personnalisés que vous aurez créés.
 
 ![](/contacts/media/custom-fields.jpg)
 
-You will notice the group column which will show you where the specific field will be shown on the contact profile. In the last column, you may see several icons which signify various properties of the field:
+Vous pourrez constater qu'il existe une colonne 'Groupe' qui vous permet de savoir dans quel onglet du contact vous trouverez le champ. Dans la dernière colonne, you pourrez constater plusieurs icons vous indiquant les propriétés du champ, à savoir :
 
-1. Lock icon - These fields are unable to be removed as they are used by the core installation. 
-2. List icon - These fields can be used as filters of segments.
-3. Asterisks icon - These fields are required when filling in the contact form
-4. Globe icon - These fields are publicly updatable through the tracking pixel URL query (see [Contact Monitoring](contact_monitoring.html) for more details).
+1. Cadenas - Ces champs sont ne peuvent pas être supprimés car ils sont utilisés dans le coeur de l'application.
+2. Liste - Ces champs peuvent être utilisés par les filtres des segments dynamiques.
+3. Etoile - Ces champs sont obligatoires à la création d'un nouveau contact et donc à la soumission d'un formulaire.
+4. Globe - Ces champs peuvent être mis à jour via le pixel de tracking (voir [Monitoring des contacts](contact_monitoring.html) pour plus de détails).
 
-### Published Fields
+### Champs activés
 
-The check mark which shows before each label title is a clickable toggle which will publish and unpublish the field.
+L'indicateur affiché avant chaque nom de champ est cliquable afin d'activer ou de désactiver le champ.
 
 ![](/contacts/media/unpublish-fields.gif)
 
-### New Field
+### Nouveau champ
 
-You can create additional custom fields and define the data type you want that field to hold. In addition to the data type you will also select the group for that particular field. This will define where the field displays on the contact edit and detail view.
+Vous pouvez créer des additionnels et définir le type de données à y stocker. En plus du type de données, vous pouvez également choisir dans quel groupe de champs, le champ sera ajouté.
 
 ![](/contacts/media/new-custom-field.jpg)

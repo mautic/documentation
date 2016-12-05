@@ -1,22 +1,22 @@
-# Email Troubleshooting
+# Troubleshooting des emails
 
-## Open email tracking doesn't get tracked
+## L'ouverture d'un email n'est pas tracée
 
-Emails are being tracked by a tracking pixel. This is simply a 1 pixel GIF image in the source code of email messages sent by Mautic. When an email is opened by an email client like Outlook, Thunderbird or GMail, the client tries to load the images in it. The image load request is what Mautic uses to track the email open action.
+L'ouverture des emails est tracée par le pixel de tracking. lorsqu'un email est ouvert par un client email comme Outlook, Thunderbird ou GMail, le client essaye de charger l'image.
 
-Some email clients have auto loading images disabled, and users have to click on a "Load Images" button to load images inside an email message. If the images aren't loaded for this reason or another, Mautic doesn't know about the open action. Therefore, email open tracking is not 100% accurate.
+Certains clients email désactivent le chargement automatique des images, et les utilisateurs doivent cliquer sur un bouton du type "Charger les images" afin de les charger dans le message. Si les images ne sont pas chargées (peu importe la raison), Mautic ne pourra pas détecter que le courriel a été ouvert.
 
-## Email link clicks are not getting tracked
+## Le tracking des clics dans un email ne fonctionne pas
 
-Before an email is sent, Mautic replaces all links in the email with links back to Mautic including a unique key. If the contact clicks on such a link, the contact is redirected to Mautic. Mautic tracks the click action and redirects the contact to the original location. It's fast so the contact doesn't notice the additional redirect.
+Avant l'envoi d'un email, Mautic remplace tous les liens avec une clé unique pour chaque destinataire. Si le prospect clique sur un lien, il sera redirigé vers Mautic. Mautic enregistre l'action de clic et redirige vers la page originale. C'est assez rapide pour que l'utilisateur ne s'en rende pas compte.
+Si le clic n'est pas enregistré, vérifiez :
 
-If the email click doesn't get tracked, make sure that:
-1. Your Mautic server is on a public URL. Tracking doesn't work on a localhost.
-2. Make sure the email was sent to an existing contact via a campaign or a segment email. Emails send by the *Send Example* link, *direct email* (from the contact detail) or *form submission preview* won't replace links with trackables.
-3. Make sure the URL in the `href` attribute is absolute and valid. It should start with http:// or https://.
-4. You've opened the link in a incognito browser. More about it in the [Pages troubleshooting](./../pages/troubleshooting.html).
-5. Check if the link in the email has been replaced by the Mautic's tracking link. If not, report it to https://github.com/mautic/mautic/issues with all the details (Mautic version, PHP version, what the link URL is before sending, what it is after sending and so on).
+1. Votre serveur Mautic est sur une URL publique. Le tracking ne fonctionne pas en hébergement local.
+2. Vérifiez que l'email a été envoyé par une campagne ou un email de segment sur un contact existant. Les emails envoyés par l'action *Envoyer un test*, et *Email direct* (depuis la page du contact) ou depuis *aperçu de l'email dans les actions de formulaires* ne remplacent pas les liens par des liens tracés.
+3. Vérifiez le http ou https de l'attribut `href` est valide. Cela doit commencer par http:// or https://.
+4. Que vous n'avez pas ouvert la page du lien dans un navigateur en mode Incognito. Lire plus à propos des [Troubleshooting des pages](./../pages/troubleshooting.html).
+5. Vérifiez si le lien dans l'email a été remplacé par un lien de tracking Mautic. Si ce n'est pas le cas, rapportez le sur https://github.com/mautic/mautic/issues avec un maximum de détails (Mautic version, PHP version, quel est l'URL avant envoi, l'URL après envoi).
 
-## Unsubscribe link doesn't work
+## Le lien de désinscription ne fonctionne pas
 
-The unsubscribe link doesn't work in test emails. That is because the test emails are sent to a Mautic user and not to a Mautic contact. Mautic users cannot be unsubscribed and therefore the unsubscribe link looks like this: `http://yourmautic.com/|URL|`. However, the link will work correctly when you send the email to a contact.
+Le lien de désinscription ne fonctionne pas lors des emails de test.

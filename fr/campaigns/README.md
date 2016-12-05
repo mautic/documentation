@@ -1,23 +1,23 @@
-# Campaigns
+# Campagnes
 
-Campaigns are central to creating an automated workflow to assist with your marketing efforts. Campaigns consist of various external points of contact which will engage your contacts. These engagements can be created to occur on predefined time intervals or in response to specific contact actions.
+Les campagnes sont le coeur de la mécanique du marketing automation. Les campagnes consistent à regrouper l'ensemble des points de contact avec vos contacts. Ces intéractions peuvent être planifiées à certaines dates ou en fonction d'actions spécifiques des contacts.
 
-### Time Driven Campaigns
+### Campagnes basées sur le temps
 
-The concept of time driven campaigns implies a form of campaign which centers around specific timed events. These events are most usually in the form of emails. These email events can be defined to be triggered after a delay of a predefined number of days or on a specific date in the future.
+Le concept des campagnes basées sur le temps implique un type de paramétrage de la campagne centré autour des événements à des dates précises. Ces événements sont généralements des courriels. Ces courriels peuvent être déclanchés après un délai spécifique ou à une date précise dans le futur.
 
-### Contact Driven Campaigns
+### Campagnes basées sur les contacts
 
-A second type of campaign is the contact driven campaign. These are campaigns which trigger events based on interactions from the contact. These can occur as a result of the contact landing on a certain page, opening an email, spending a specified amount of time on a website, or any number of other activities. The response to these actions would be an email sent either immediately or at some point in the future.
+Ces campagnes sont plutôt basées sur des actions spécifiques du contact ou de ses intéractions. Cela peut être basé sur de la segmentation comportementale (visite d'une page spécifique, ouverture d'un courriel, etc.). La réponse à ces actions déterminées peut être l'envoi d'un courriel ou autre action, immédiatement ou dans le futur.
 
-### Mixed Campaigns
+### Campagnes mixtes
 
-Obviously you are not limited to creating either one kind of campaign or another separately. Mautic allows you to create campaigns which consist of both time driven items as well as contact driven actions. This powerful mixed campaign means actions will be driven by both specific dates or after specific timeframes as well as actions taken by a contact directly (as mentioned above).
+Vous n'êtes pas limité à créer un type de campagne ou un autre de façon séparée. Mautic vous permet de créer des campagnes basées sur n'importe quel type d'événement qu'il soit basé sur le contact ou sur le temps.
 
-### Campaign Actions
+### Les actions des campagnes
 
-Email actions have been mentioned specifically as a particular use case, however there are many other responses the system can take. Other actions can include automatic assignment to a new segment, assigning a new point value, or an integration into a CRM or other system.
+Les courriels ont été évoqués précédemment dans diverses cas. Cependant, il existe de nombreuses autres possibilités d'intéractions proposées par Mautic. Vous pouvez assignez le contact à une nouvelle liste de contacts, lui ajouter des points, lui envoyer un SMS, le synchroniser à votre CRM, etc.+
 
-### Campaign Automation
+### Automatisation des campagnes
 
-One of the main benefits of this campaign workflow process is the ability to predefine these workflows and have them respond automatically to your contacts and timelines. This automation minimizes the amount of time required for manual contact activity and improves reliability of contact nurturing through consistent contact.
+Le plus grand bénéfice de ces mécaniques de campagnes est la capacité de définir en avance la relation que l'on souhaite établir avec nos prospects. Cette automatisation réduit le temps nécessaire pour traiter les prospects manuellement et augmente la fiabilité et la pertinence de la relation.

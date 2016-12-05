@@ -1,77 +1,77 @@
-# Campaign Builder
+# Générateur de campagne
 
-The Mautic campaign builder gives you a blank canvas upon which to build your campaign workflow. The overall interface is clean and simple with easy to use events. These actions, decisions, or conditions can be added through clicking the "anchors" of events.
+Le générateur de campagne Mautic vous ouvre zone de travail blanche sur laquelle vous pourrez mettre en place votre scenario. L'interface simple et épurée vous aidera à déposer vos actions et décisions.
 
-### Sources 
 
-The first thing to be selected is where the campaign will pull in contacts from or contact sources. There are currently two options for contact sources: segments and forms. One or both can be added to the campaign.
- 
+### Sources
+
+La première chose à faire, est de sélectionner d'où viennent les contacts qui vont être ajoutés à la campagne. Il y a deux options : les segments et les formulaires de campagne.
+
 ![](/campaigns/media/contact-sources.png)
 
-After selecting one or more sources, the next step will be to add one or more action (most likely), decision and/or condition:
+Une fois la source choisie, l'étape suivant est d'ajouter les actions de campagne, les decisions et/ou les décisions :
 
 ![](/campaigns/media/events.png)
 
 ### Actions
 
-Campaign actions are those items which are initiated by you. These are items which you will control and which affect your contacts involved in the campaign. Examples of these actions are adjusting a contact's point totals, moving a contact to a different campaign, modifying the segments a particular contact is a part of, and lastly but perhaps most importantly sending of an email.
+Les actions de campagne sont les objets que vous allez ajouter à votre campagne. Ceux-ci s'appliqueront aux contacts qualifiés à votre campagne. Les actions peuvent être les suivantes ; ajuster les points des contacts, changer les campagnes dans lesquelles le contact est présent, modifier les listes dans lesquelles le contact appartient, envoyer un email, changer une valeur du contact, envoyer un SMS, etc.
 
-When you create a campaign you will select one of these actions to begin the workflow. In most cases this initial step will be an email sent to your segments.
+Lors de la création d'une campagne, vous choisirez une de ces actions pour démarrer votre scénario. Dans la majorité des cas, votre campagne démarrera par l'envoi d'un courriel à l'une de vos listes.
 
 ![](/campaigns/media/send-email-delay.png)
 
-You will notice that when you add an email to a campaign you will be able to select a potential *delay* for when the email is delivered. If the action is attached to a decision's non-action initiated decision path, the delay becomes how long the contact has to take action before the campaign progresses down the non-action path. 
+Vous noterez que lorsque vous ajouter l'envoi d'un courriel à votre campagne, vous pourrez choisir un *délai* pour l'envoi du courriel.
 
 ![](/campaigns/media/send-email-delay-nonaction.png)
 
-After you have added an action you will more than likely place a decision on the campaign.
+Après avoir ajouté une action à votre campagne, vous y lierez probablement une décision.
 
-### Decisions
+### Décisions
 
-Decisions are actions which are initiated by the contact. These decisions can be either directly initiated or implied based on non-action. Samples of these decisions are downloading an asset, opening an email, submitting a form, or visiting a landing page.
+Les décisions représentent les actions initiées par les contacts. Ces décisions peuvent être initiée par le contact ou basé sur sa non-action. Les décisions sont liées au téléchargement d'une ressource, l'ouverture d'un courriel, la soumission d'un formulaire, la visite d'une page du site web ou d'un page de destination.+
 
-Decisions are taken in response to an action and as such a decision has two outcomes.
+La décision est la réponse à une action donnant lieu à deux issues.+
 
 ![](/campaigns/media/decision-anchors.gif)
 
-These two options are demonstrated by the green and red decision points on the decision. Each path can then be handled by your campaign. This process is typically referred to as a **decision tree**.
+Ces deux issues sont représentées par les points rouge et vert sur l'objet décision. Vous pouvez utiliser chacune de ces deux issues. Ce processus correspond à un **arbre de décision**.
 
-__It is important to note that a contact must already be part of the campaign in order for it to recognize the decision executed. Therefore, campaigns should never start with a decision unless you are manually managing the contacts assigned to it and the decision is expected to be executed at a later time.__ 
+__Il est important de comprendre qu'un contact doit déjà faire partir de la campagne afin de pouvoir prendre part à un décision. De plus, une campagne ne peut jamais démarrer par une décision.__
 
-#### Contact-initiated Decision Path (Green Points)
+#### Décision initiée par l'action du contact (point vert)
 
-Actions attached to the green point of a decision are considered contact-initiated points.
+Les actions attachées au point vert sont considerées comment étant à l'iniative du contact.
 
-The contact-initiated decision path is taken as a result of a contacts direct action such as opening an email or submitting a form. Connected actions will be executed (or scheduled if a delay is set) at the time the contact took the action. 
+Cela prend part d'un résultat du comportement d'un contact comme l'ouverture d'un courriel ou la soumission d'un formulaire. Les actions de campagne connectées seront executées (ou prévues si un délai est paramétré) au moment où le contact aura le comportement attendu par la décision.
 
-#### Non-action Initiated Decision Path (Red Points)
+#### Décision initiée par la non-action du contact (point rouge)
 
-Actions attached to the red point of a decision are considered non-action points. This path is taken as a result of a contact NOT taking some direct action.
+Les actions attachées au point rouge sont considerées comme la conséquence d'une non-action de la part du contact.
 
-Use an action's delay settings to define at what point should the campaign send the contact down this path.
+Utilisez le délai d'une action de campagne, pour définir à partir de combien de temps de non-action le contact doit être qualifié dans la branche négative de la décision.
 
-To trigger this events, see [Executing Campaign Actions](https://mautic.org/docs/en/campaigns/manage_campaigns.html#executing-campaign-actions).
+Pour déclencher cet événement, voir [Exécution des événements de campagne](https://mautic.org/docs/en/campaigns/manage_campaigns.html#executing-campaign-actions).
 
-#### Example
+#### Exemple
 
-To provide a simple example of a decision tree consider an email where the decision is to open an email. There are two outcomes, if the contact chooses to open the email then the green decision point contacts to the next action to be taken in the campaign workflow. If, however, the contact does not open the email then you may desire a different action to be taken (e.g. a delay of 30 days then a second email sent).
+Pour vous donner un exemple simple d'un arbre de décision, imaginez un courriel envoyé à une liste où la décision liée est l'ouverture du courriel. Il y a deux issues, si le contact ouvre le courriel le contact rentrera dans la branche verte de la décision pour rejoindre la prochaine action de campagne selon votre scénario. En revanche, si le contact n'ouvre pas l'email et que vous désirez mettre en place une action différente comme un courriel de relance au bout de 30 jours si le courriel reste non-ouvert, liez-y l'envoi d'un courriel pour seconde action de campagne avec un délai paramétré de 30 jours.
 
 
 ### Conditions
 
-Conditions can be used to execute different actions based on a contact's data.  For example, a condition can be configured to execute an action if a contact has an email or do something else if they do not.
+Les conditions permettent de mettre en place différentes actions de campagne en fonction de la donnée associée au contact. par exemple, une condition peut être ajoutée pour exécuter une action de campagne différente si le contact a une adresse email ou pas (on peut imaginer envoyer plutôt un SMS).
 
-__The delay you set is ran before checking the condition no matter the delay you add on the connected actions. It will not wait the delay on the connected action to check the status of the condition to qualify the contact into the positive or negative path of the condition.__
+__Le délai que vous pouvez ajouter sur une condition est attendu avant de vérifier la condition, peu importe le délai paramétré sur l'action suivante attachée à la condition. Le délai paramétré sur l'action de campagne attachée ne sera pas attendu pour vérifier le statut de la condition.__
 
-Currently there are 2 types of conditions
-1. Conditions based on Contact Field Value.
-2. Conditions based on Form Field Value.
+Actuellement, il y a 2 types de conditions
+1. Conditions sur la valeur d'un Champ de contact.
+2. Conditions sur la valeur d'un Champ de formulaire.
 
-#### Positive status Condition Path (Green Points)
+#### Condition positive (point vert)
 
-Actions attached to the green point of a condition are considered as positive status points.
-The status condition path is taken as a result of a the condition at the end of the delay set (trigger, delay or specific date).
+Les actions de campagne attachées au point vert de la condition sont considérés comme la réponse positive à la condition.
 
-#### Negative status Condition Path (Red Points)
+#### Condition négative (point rouge)
 
-Actions attached to the red point of a condition are considered as negative status points. This path is taken as a result of negative status for the condition at the end of the delay set (trigger, delay or specific date).
+Les actions de campagne attachées au point rouge de la condition sont considérés comme la réponse négative à la condition.

@@ -94,3 +94,7 @@ In the rendered email sent to a contact, the URL may be converted into something
 http://my-mautic.com/my-landing-page?ct=A_REALLY_LONG_STRING&email=contactemail%40gmail.com
 ```
 So, what happened is `{pagelink=1}` was converted into the landing page URL and had `?ct=A_REALLY_LONG_STRING` appended. The really long string is encoded information about the contact which includes the contact ID. Each `{leadfield=FIELDALIAS}` was replaced with the contact's data. When the contact clicks the link, they will be taken to the landing page with the embedded form, and the form's 'email' input will be pre-populated with the value passed through the URL.
+
+#### Remove Contact from Do Not Contact (undo unsubscribe)
+
+Mautic 2.3 added new action **Remove Contact from Do Not Contact**. If contact unsubscribe your email makreting, you can't sent another emails.  Use action **Remove Contact from Do Not Contact** in your forms and contact will receive email again.

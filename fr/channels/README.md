@@ -1,11 +1,10 @@
-The **Channels** Dropdown contains:
+Le sous menu des **Canaux** contient :
 
 * [Emails](./../emails/index.html)
-* Web Notifications
-* [Text Messages](./../sms/index.html)
-* Social Monitoring
+* Notifications web
+* [SMS](./../sms/index.html)
+* [Monitoring Social](./../social-monitoring/README.md)
 
-All of these must be created or configured before you can use them in a campaign.
-
+Tous ces éléments peuvent être créés et configurés avant de les utiliser dans les campagnes.
 
 ![](/channels/media/channels-dropdown.jpg)

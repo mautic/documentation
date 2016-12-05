@@ -1,85 +1,67 @@
-# Manage Assets
-## Categories
-Assets can be organized in categories, which allows you to easily locate resources.  To create a new category, browse to the Categories section in the admin menu.
+# Gestion des ressources
+## Catégories
+Les ressources peuvent être organisées grâce aux catégories. Pour créer une nouvelle catégorie, éditez votre ressource et cliquez sur le bouton de gestion des catégories.
 
 ![](/assets/media/settings-categories.jpg)
 
-### Creating categories
+### Créer des catégories
 
-To create a new category, click on 'New' which can be found in the top right of the screen.
+Pour créer une nouvelle catégorie, cliquez sur 'Nouveau' qui peut être trouvé en haut à droite de l'écran.
 
 ![](/assets/media/add-new-category.jpg)
 
-Name the category something that reflects the 'filing system' structure that will be used, and provide a short description of the category.
+### Modifier les catégories
 
-The alias field will be automatically populated from the title field unless manually specified.  This creates the URL path so it should contain hyphens instead of spaces.
+Pour modifier une catégorie, cliquez sur le nom de la catégorie ou cliquez sur la flèche à côté de la case à cocher et sélectionnez 'modifier'.
 
-It is possible to color-code individual categories by either typing in a hex code, or using the picker to select the color.
+### Gérer les catégories
 
-To publish a category and make it available for assigning assets, 'yes' should be highlighted - if the category should not be published click on 'No' to set the category as unpublished.
-
-To save the changes and continue editing, press 'Apply'.  To save the changes and go back to the categories screen, press 'Save & Close'.  To cancel changes and return to the categories screen, press 'Cancel'
-
-### Editing categories
-
-To edit a category, either click on the category name, or click on the arrow beside the checkbox and select 'edit'.  The same screen as above will be displayed, however the fields which have previously been populated will already have content - which can be edited and saved as above.
-
-### Managing categories
-
-Categories can be sorted by title or ID.  Click on the column header to search by the required field - clicking again will reverse the sort order.
+Les catégories peuvent être ordonnées par titre ou ID. Cliquez sur l'en-tête de la colonne du champ de votre choix - cliquez à nouveau pour inverser l'ordonnancement.
 
 ![](/assets/media/sorting-categories.jpg)
 
-At the bottom of the page, a dropdown allows control over the number of categories displayed per page - if this number is exceeded by the amount of categories, the pagination arrows can be used to move between pages.  To change the number of categories displayed, select the desired number from the dropdown and the page will automatically refresh.
+### Supprimer des catégories
 
-### Deleting categories
-
-Categories can be deleted by clicking on the arrow beside the checkbox and selecting delete.  If any assets are currently assigned to the category being deleted, they will not be removed, but will instead display as 'Unassigned'.  A warning will be displayed which alerts you to this fact when deleting a category.
+Pour supprimer une catégorie, cliquez sur le nom de la catégorie ou cliquez sur la flèche à côté de la case à cocher et sélectionnez 'supprimer'. Si des ressources sont assignées à cette catégorie, elles ne seront pas supprimées mais modifiées sans catégorie.
 
 ![](/assets/media/delete-categories.jpg)
 
-## Assets
+## Ressources
 
-Assets are often provided as incentives to complete a form, and may include white papers, infographics, videos, mp3's and so forth.  These are made available within Mautic as a downloadable file which may be instantly downloaded on submission of a form, or provided as a link from which it can be accessed.
+Les ressources servent souvent comme récompense à la soumission d'un formulaire. Une ressource peut avoir de multiple formats comme un livre blanc, une infographie, une vidéo, etc. Mautic vous permet de rendre ces ressources instantanément téléchargeables à la soumission d'un formulaire, ou en envoyant à votre prospect un lien de téléchargement.
 
-Before creating an asset, first establish and publish any categories that may be needed.  It is not possible to assign assets to unpublished categories.
-
-Navigate to 'Components' -> 'Assets', and click 'New' to begin creating an asset.
+Pour créer une ressource, allez dans le menu 'Ressources' et cliquez sur 'Nouveau' pour commencer la création d'une ressource.
 
 ![](/assets/media/new-asset.jpg)
 
-Assets can be added from local resources on a computer or from a remote location.  Local uploads will be restricted by size due to the settings of your server - any such restriction may be advised as a warning above the file upload area.
+Les ressources peuvent être importées depuis un document hébergé en local sur votre ordinateur ou depuis une ressource distante. L'hébergement directement sur la plateforme (via l'import local) vous permettra de charger des documents avec une taille limitée à 6Mo.
 
-### Uploading an asset
+### Import d'une ressource
 
-To upload an asset, either drag the file into the white box, or click in the white box to open a file upload window.  On selection of the file, it will be automatically uploaded and will appear in the white box.  
+Pour importer une ressource, vous pouvez glisser-déposer le document dans le cadre prévu à cet effet, ou cliquer sur le cadre blanc afin d'ouvrir une page d'import. A la sélection de votre ressource, le chargement démarrera automatiquement.
 
 ![](/assets/media/assign-asset-to-category.jpg)
 
-The title of the asset can be set, along with a description and an alias as above with categories.  Assets can only be assigned to published categories, therefore the dropdown list for category selection will not feature unpublished categories.  It is also possible to set the language, whether the asset is published or unpublished, and whether it should become published or unpublished at a specific date or time.
+Le titre du document peut être paramétré, vous pouvez également y ajouter une description, ainsi qu'un alias et une catégorie. Il est également possible de paramétrer une langue, de choisir si la ressource est publiée ou dépubliée ou alors si son statut de publication doit être modifié à une date définie.
 
-When the details have been completed, click 'Save & Close' or 'Apply' to save changes to the asset.
+Quand ces détails sont complétés, cliquez sur 'Sauvegarder et fermer' ou sur 'Valider' pour sauvegarder vos changements.
 
-### Viewing an asset
+### Voir une ressource
 
-Once an asset has been uploaded and saved, it can be viewed by clicking on the asset name in the list of assets.
+Une fois que la ressource a été importée et sauvegardée, elle peut être affichée en cliquant sur le nom de la ressource dans la liste des ressources.
 
 ![](/assets/media/asset-stats.jpg)
 
-The view asset screen gives information about the number of times the asset has been downloaded, which can be displayed on a chart by hourly, daily, weekly, monthly or yearly downloads.  The graph also shows the number of unique, versus total views - this is an indication of whether the same asset is being downloaded multiple times by some visitors.
+L'aperçu général de la ressource vous donnera des statistiques sur son nombre de téléchargement grâce à un graphique qui peut être affiché par heure, jour, semaine, mois ou année. Ce graphique vous mettra également en évidence la différence entre les téléchargements uniques et totaux.
 
-A download URL allows previewing of the asset - clicking on the link will open the asset in a new window.
+Une URL de téléchargement vous permet de prévisualiser la ressource. En cliquant dessus, une nouvelle fenêtre (ou onglet) s'ouvrira dans votre navigateur. Utilisez cette URL pour partager vos ressources dans vos emails ou autorépondeurs afin de s'assurer de tracer l'intégralité des visiteurs de vos ressources.
 
-Below the preview link will be displayed recent activity for this resource, with a preview of the resource being available beneath the chart for some formats.
+### Modifier une ressource
 
-### Editing an asset
+Une ressource peut être modifiée en cliquant sur le bouton 'modifier'.
 
-An asset can be edited by clicking on the 'edit' button while viewing the asset, or by selecting the arrow next to the checkbox for the asset, and selecting 'edit'.  The edit screens are the same as the view screens, however content will be populated in the fields.
+### Supprimer une ressource
 
-### Deleting an asset
+Une ressource peut être supprimée en cliquant sur le bouton 'supprimer'. Une demande de confirmation vous sera affichée.
 
-An asset can be deleted by clicking on the 'delete' button while viewing the asset, or by selecting the arrow next to the checkbox for the asset, and selecting 'delete'.  A confirmation screen will be displayed, prompting confirmation that the asset should be deleted.
-
-Once an asset has been deleted, it cannot be retrieved, and statistics relating to the number of downloads for that asset will no longer be available.  Contact points that may have been accumulated as a result of accessing the resource will remain. It is recommended where possible to un-publish assets which are no longer in use - in future there may be an archive feature.
-
-
+Une fois qu'une ressource a été supprimée, elle ne pourra être récupérée. Les statistiques liées au nombre de téléchargements ne seront plus disponibles. Les points ajoutés à des prospects en fonction d'un comportement sur la ressource supprimée resteront actifs. Il est recommandé de dépublier les ressources qui ne sont plus utilisées plutôt que de les supprimer.

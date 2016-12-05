@@ -1,27 +1,22 @@
-Manage Segments
-===============
+# Gestion des segments
 
-Lead lists were renamed to segments in Mautic 1.4.0.
+Les listes de prospects ont été renommées en segment lors de la version de Mautic 1.4.0.
 
-Segments provide ways to easily organize your contacts. These segments can be
-configured from a variety of fields.
+Les segments permettent d'organiser vos contacts le plus simplement possible. Ces segments peuvent être soit figées (sans variables) soit dynamiques en y ajoutant toute association de filtres.
 
-When viewing all segments you will notice the column on the right which shows
-the number of contacts matching that particular segment.
+Quand vous verrez la liste des segments, vous pourrez constater que la colonne de droite vous indique le nombre de contacts qui remplissent chacune de vos listes.
 
 ![](/contacts/media/contact-segments.jpg)
 
-### Segment Filters
+### Filtres de segment
 
 ![](/contacts/media/segment-filters.jpg)
 
-In addition, these filters can be combined to either be inclusive or exclusive
-depending on your needs.
+Ces filtres peuvent être combinés de façon inclusive ou exclusive en fonction de vos besoins.
 
 ![](/contacts/media/multiple-segment-filters.jpg)
 
-Once you have selected the field you can then choose the type of operation to
-perform. These vary depending on the way you wish to filter your contacts.
+Une fois le champ sélectionné, vous pourrez choisir le type d'opération à appliquer. Cela dépendra de votre besoin et de la manière dont vous souhaiterez filtrer vos contacts.
 
 ![](/contacts/media/segment-filters-dropdown.jpg)
 
@@ -35,22 +30,17 @@ result as intersection of the subsets. You can then manipulate the contacts to r
 
 ### Segments
 
-Once you have created your segment, any applicable contact will be automatically
-added through the execution of a cron job. This is the essence of segments.
+Une fois paramétrés, les critères de segmentation seront appliqués et n'importe quel contact correspondant aux critères sera automatiquement ajouté à au segment lors du CRONs (tache planifiée automatiquement). De la sorte, vos contacts se qualifient de segment en segment, sans avoir à faire la moindre action !
 
-To keep the segments current, create a cron job that executes the following
-command at the desired interval:
+Les contacts répondant aux critères des filtres seront automatiqument ajoutés au segment via un CRON (tache planifiée). Si le contact ne répond plus aux critères, il sera automatiquement exclu du segment.
+
+Pour déclencher le CRON, paramétrer la commande suivante (pour les utilisateurs de Mautic Open Source):
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 php /path/to/mautic/app/console mautic:segments:update --env=prod
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Through the execution of that command, contacts that match the filters will be
-added and contacts that no longer match will be removed. Any contacts that were
-manually added will remain part of the list regardless of filters.
+### Ajout manuel de contact à un segment
 
-### Manual Addition
-
-In addition to segments you can also manually add any contact to a list by
-clicking the Segments button then selecting the radio toggle on the contact
-detail view.
+En plus de la gestion dynamique des segments, vous pouvez également ajouter vos contacts manuellement en cliquant sur le bouton 'Segments' en haut à droite sur la fiche d'un contact.
+Un contact ajouté manuellement à un segment y restera même s'il ne répond pas aux critères de filtres.

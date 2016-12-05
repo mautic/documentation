@@ -1,44 +1,43 @@
-# Contact Overview
+# Aperçu des contacts
 
-Each contact has a detail page where you can see what Mautic knows about him/her.
+## Graphique sur l'engagement et points
 
-## Engagements/Points chart
-
-The Engagements line chart display how active the contact was in the past 6 months. Engagement is any action the contact made. E.g. page hit, form submission, email open and so on. The chart displays also the points which the contact received.
+Le graphique d'engagement montre l'activité du contact sur les 6 derniers mois. L'engagement représente n'importe quelle action faite par le contact comme un clic, la soumission d'un formulaire, l'ouverture d'un email, etc. Ce graphique affiche également les points reçus par le contact.
 
 ## Avatar
 
-Mautic will try to download the contact's avatar image based on his/her email address from the [Gravatar](https://en.gravatar.com/) service. But it can be loaded also from some social networks.
+Mautic essayera de d'afficher l'avatar du contact basé sur son adresse email depuis [Gravatar](https://en.gravatar.com/). Il peut également être affiché depuis d'autres réseaux sociaux.
 
-## History
+## Historique
 
-The main tab displays the contact's action history sorted from the latest to the oldest. Each action will display as many details as there is about it. For example a form submission will display what values the contact submitted, the email send action will inform you whether the email was opened and when and so on. You can filter what actions you want to include or exclude from the timeline if you are searching for a specific one.
+L'onglet principal présente l'historique des actions du contact organisé des actions les plus récentes aux plus anciennes. Chaque action présente tout ce qu'il y a à dire à son propos. Par exemple, pour une soumission de formulaire, seront affichées les valeurs soumises, l'action d'envoi d'un email vous informera si le courriel a été ouvert, sur quel support, etc. Vous pouvez filtrer les actions de votre souhait à inclure ou exclure de votre fil d'activité si vous êtes à la recherche d'une information spécifique.
 
 ## Notes
 
-Mautic can be used as a basic CRM. You or your teammates can write a notes to a specific contact. A note can be marked with a specific purpose: General, Email, Call, Meeting. It's also possible to define a date of a meeting or a call. If you do so, the note will also appear in the Mautic calendar.
+Mautic peut être utilisé comme CRM basique. Vous ou vos collaborateurs peuvent écrire des notes associées à un contact. Les notes peuvent être associées à une activité spécifique : Géneral, Courriel, Appel, Rendez-vous. Il est également possible de définir la date d'un RDV ou d'un appel. Si vous procédez ainsi, ces données apparaitront dans le calendrier.
 
 ## Social
 
-If the social plugins like Facebook or Twitter are enabled and authorized and the contact provided you username for a social network, Mautic can display his/hers feed for the social network in the Social tab. Most of the social networks limited their API since the feature was developed so search by email is not working.
+Si les plugins sociaux comme Facebook ou Twitter sont activés et que vos contacts vous ont transmis leur identifiant pour le réseau social, Mautic peut afficher leur activité sociale. La plus part des réseaux sociaux ont limité leur API ce qui ne permet pas de lier les contacts par leur adresse email.
 
-## Map
+## Carte
 
-If Mautic knows the coordinates of the contact from a geolocation IP lookup service, it will display a forth tab with a map so you can easily see where in the world the contact is located. If Mautic knows more locations for this contact as he/she travels, you'll see all the locations there. If Mautic doesn't know any location, the tab won't show up.
+Si Mautic connait les coordonnées du contact depuis un service de géolocation IP, sera affiché un quatrième onglet avec une carte vous montrant la localisation du contact. Si Mautic à noté des points de connexion différents lors des déplacements et voyages du contact par exemple, cela sera également affiché. Si un contact n'a pas d'information de localisation, l'onglet ne sera pas affiché.+
 
-## Change contact segments
+## Changer les segments du contact
 ![](/contacts/media/change-segments.jpg)
 
-Click the drop down box arrow in the top right hand corner of the contact detail. Select *Segments*. A modal box will show up where you'll see all the segments. The green switch means that the contact belong to the segment, the orange switch means the opposite. Click the switch to add/remove the contact to/form the segment.
+En cliquant sur la liste déroulante en haut à droite de la page du contact, vous pouvez selectionner *Segments*. Une boite s'affichera avec tous les segments où vous pourrez qualifier et disqualifier le contact.
 
-## Change contact campaigns
+## Changer les campagnes du contact
 
-Click the drop down box arrow in the top right hand corner of the contact detail. Select *Campaigns*. A modal box will show up where you'll see all the campaigns. The green switch means that the contact belong to the campaign, the orange switch means the opposite. Click the switch to add/remove the contact to/form the campaign.
+En cliquant sur la liste déroulante en haut à droite de la page du contact, vous pouvez selectionner *Campagnes*. Une boite s'affichera avec toutes les campagnes où vous pourrez qualifier et disqualifier le contact d'une ou plusieurs campagnes en un clic.+
 
-## Merge two contacts
 
-If you have 2 contacts in the Mautic database who is physically one person, you can merge them with the Merge feature. Click the drop down box arrow in the top right hand corner of the contact detail, select the *Merge* item, a modal box will show up. Search for the contact you want to merge into the current contact. The select box will update as you search. Select the right contact and hit the *Merge* button.
+## Fusionner deux contacts
 
-## Send email to contact
+Si vous avez 2 contacts dans votre base de données Mautic qui n'est qu'une seule et même personne, vous pouvez les fusionner avec la fonction de *Fusion*. Cliquez sur la liste déroulante en haut à droite de la page du contact, vous pouvez selectionner *Fusionner*.
 
-The drop down menu in the top right corner of the contact detail page also lets you send an email directly to the contact. You can fill in *From Name*, *From* (email address), *Subject* and the *Body* message. You can also *Import from an existing template*. If you select some email from this select box, the Subject and the Body textarea will be prefilled from that pre-defined email template. Emails send by this method are not tracked by Mautic.
+## Envoyer un email au contact
+
+En cliquant sur la liste déroulante en haut à droite de la page du contact, vous pouvez envoyer un email à un contact en un clic. Vous pourrez renseigner le *nom de l'expéditeur*, l'*adresse email d'envoi*, le *sujet* et le *corps du message*. Vous pouvez également importer un thème existant. Par cette méthode, vos simples emails seront également traqués par Mautic.

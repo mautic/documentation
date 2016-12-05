@@ -1,9 +1,9 @@
-# Monitored Email
-Since version 1.2.0 Mautic has provided a feature which allows monitoring of IMAP accounts to detect bounced emails and unsubscribe requests.
+# Monitoring des emails
+Depuis la version 1.2.0 de Mautic, vous avez la possibilité de remonter les informations IMAP pour détécter les rebons (bounced) et les requêtes de désinscription (unsubscribe).
 
 Note that Mautic makes use of "append" email addresses. The return-path or the list-unsubscribe header will use something like `youremail+bounce_abc123@your-domain.com`. The `bounce` or `unsubscribe` let's Mautic note what type of email it is when it examines the inbox through IMAP. The `abc123` gives Mautic information about the email itself, i.e. what contact it was it sent to, what Mautic email used, etc. 
 
-Some email services overwrite the return-path header with that of the account's email (Gmail, Amazon SES). In these cases, bounce monitoring will not work. SparkPost, Mandrill, and Amazon SES (as of 2.2.0) support webhook callbacks for bounce management. See below for more details. 
+Some email services overwrite the return-path header with that of the account's email (Gmail, Amazon SES). In these cases, bounce monitoring will not work. SparkPost, Mandrill, and Amazon SES (as of 2.2.0) support webhook callbacks for bounce management. See below for more details.
 
 ## Monitored Inbox Settings
 To use the Monitored email feature you must have the PHP IMAP extension enabled (most shared hosts will already have this turned on).  Simply go to the Mautic configuration and fill in the account details for the inbox(es) you wish to monitor.
@@ -18,7 +18,7 @@ To fetch and process the messages, run the following command:
 php app/console mautic:fetch:email
 ```
 
-Note that it is best to create an email specifically for this purpose, as Mautic will read each message it finds in the given folder. 
+Note that it is best to create an email specifically for this purpose, as Mautic will read each message it finds in the given folder.
 
 If sending mail through Gmail, the Return Path of the email will automatically be rewritten as the Gmail address. It is best to use a sending method other than Gmail, although Mautic can monitor a Gmail account for bounces.
 
@@ -43,14 +43,14 @@ Mautic supports a few of Mandrill's webhooks for bounces.
 1) Login to your Mandrill account and go to Settings -> Webhooks
 
 ![Webhooks](/emails/media/mandrill_webhook_1.png "Mandrill webhooks")
- 
+
 2) Click Add a Webhook
- 
+
 ![Add Webhook](/emails/media/mandrill_webhook_2.png "Add webhook")
 
 3) Mautic 1.2.2 supports the following webhooks: Message is Bounced, Message is Soft-Bounced, Message is Rejected.  As of 1.2.3, Message is Marked as Spam and Message Recipient Unsubscribes will be supported.
 
-4) Fill in the Post To Url as `http://your-mautic.com/mailer/mandrill/callback` then click Create Webhook. 
+4) Fill in the Post To Url as `http://your-mautic.com/mailer/mandrill/callback` then click Create Webhook.
 
 5) Click Custom Metadata and create two new metadata fields: `hashId` and `contactId`
 
@@ -102,5 +102,3 @@ Mautic supports the bounce and complaint management from Amazon Simple Email Ser
 ![Topic](/emails/media/amazon_webhook_7.png "Configure Amazon SES")
 
 ![Topic](/emails/media/amazon_webhook_8.png "Select SNS topic")
-
-

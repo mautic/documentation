@@ -1,9 +1,7 @@
-# Contact Frequency Rules
-Frequency rules are a set of rules used to define the number of times a contact should be contacted by any means in Mautic. At this stage Email and SMS have been implemented, but other forms of contact should also be applied as necessary. Such as social media mentions or messages sent in the future.
+# Règles de fréquence de contact
+Les règles de fréquence sont un ensemble de paramètres pour définir le nombre de fois qu'un contact doit être adressé par n'importe quel support via Mautic. Pour le moment, vous pouvez gérer cela pour les emails et les SMS.
 
-## How to set frequency rules
+## Comment paramétrer les règles de fréquence ?
 
-- Frequency rules can be set globally from the configuration panel on both the email and sms settings.
-
-- Frequency rules can also be applied on a contact's detail page, from the dropdown menu on the upper right hand side. In this area you can select the channels where you want the rules to apply. Setting the rule here will override the general settings.
-
+- Les règles de fréquence peuvent être attribuées dans le panneau de configuration dans les paramètres des emails et des SMS.
+- Ces règles peuvent également être paramétrées individuellement sur une page de contact, depuis le menu déroulant en haut à droite. Ces règles prennent le dessus sur les règles générales.

@@ -1,38 +1,35 @@
 # Contacts
 
-Leads were renamed to contacts in Mautic 1.4.0.
+Les prospects ont été renommés en contacts lors de Mautic 1.4.0.
 
-Contacts are the central factor of a marketing automation platform. These are all the individuals who have visited your websites or interacted with you in some way.
+Les contacts sont le point central d'une plateforme de marketing automation. Ce sont toutes les personnes qui ont visité votre site Web ou interagi avec vous en quelque sorte.
 
-### Contact Types
+### Types de contacts
 
-There are two types of contacts:
-* **Visitors** (formerly anonymous leads) — visitors to your site who have not yet been identified by a form or other interaction.
-  * These contacts are tracked by Mautic but typically remain hidden so as not to clutter your segment.
-* **Standard contacts** — contacts which have identified themselves via a form or some other source. As a result, these contacts typically have a name, email, and other identifying fields.
+Il existe deux types de contacts :
+* **Visiteurs** (ou contacts anonymes) — ce sont les visiteurs de votre site qui ne sont pas encore identifiés par un formulaire ou une autre interaction.
+  * Ces contacts sont tracés par Mautic dès leur première visite mais restent masqués.
+* **Contacts standards** — ces contacts se sont identifiés par un formulaire ou une autre action. Comme résultat, ces contacts ont généralement un nom, email, etc.
 
-#### Visitors (formerly anonymous leads)
+#### Visiteurs (contacts anonymes)
 
-Anonymous leads were renamed to visitors in Mautic 1.4.0.
+Les contacts anonymes sont des visiteurs de votre site qui n'ont pas encore été identifiés par une forme ou une autre d'interaction. Ces contacts sont suivis par Mautic, mais généralement restent cachés pour ne pas encombrer votre liste de contacts. Vous pouvez afficher les contacts anonymes en utilisant l'affichage des anonymes dans la liste des contacts.
 
-You can view visitors by using the 'table view' (use the "t" keyboard shortcut to view contacts in a table or "c" as cards) within the contacts section.
+Les contacts anonymes sont suivis, car ils sont vos futurs clients. En les suivant tout au long de leur comportement et avant même qu'ils engagent une action sur votre site (soumission de formulaire par exemple), vous enregistrez un fil d'activité de ce comportement. Cela vous permettra d'en apprendre beaucoup sur leur profil par la suite.
 
-Visitors are worth tracking, because these could be future customers. By tracking them before they have any interaction, you can retain a log of when they visited your site, which allows you to get a picture of their activity prior to engaging with you.
-
-##### Search Text
+##### Texte de recherche
 
 ```
 is:anonymous
 ```
-##### Screenshot
 
 ![](/contacts/media/contacts-anonymous.jpg)
-The resulting list will be those IP addresses which have not yet provided identifying information.
+La liste résultante sera les adresses IP qui ne sont pas encore fourni d'information supplémentaires.
 
-#### Standard Contacts
+#### Contacts standards
 
-The second type of contact is a standard contact. These contacts have identified themselves via a form or other source — you may also have more information about them from previous interactions. As a result, these contacts typically have a name, email, and other identifying information which can be associated with the contact.
+Le deuxième type de contacts sont les contacts standard. Ce sont des contacts qui ont fourni des informations supplémentaires par le biais d'un formulaire ou d'une autre source, ou que ces informations sont connues car vous avez eu des interactions avec eux avant. Par conséquent, ces contacts ont typiquement un nom, e-mail, et d'autres informations d'identification pouvant être associées à une personne.
 
-The standard contact is the preferred contact within Mautic. These are contacts which may have started as a visitor, but at some point provided additional information such as a name, email address, social network handle, or other identifying characteristics. You can nurture these contacts through the Mautic marketing automation platform.
+Le contact standard est celui que nous préférons dans Mautic. Ce sont des contacts qui peuvent avoir commencé comme contact anonyme mais qui ont à un moment donné des informations supplémentaires telles que le nom, l'adresse e-mail, un identifiant de réseau social, ou d'autres caractéristiques d'identification. Ces contacts sont ceux qui peuvent ensuite être nourris par la plateforme de marketing automation.
 
-The [Manage Contacts](https://www.mautic.org/docs/en/contacts/managing_contacts.html) section provides more information on what you can manage with standard contacts.
+Les informations suivantes dans la section [Gestion des contacts](https://www.mautic.org/docs/en/contacts/managing_contacts.html) fournira plus d'informations sur ce qui peut être géré avec ces contacts standard.

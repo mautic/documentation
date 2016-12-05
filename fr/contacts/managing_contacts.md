@@ -1,61 +1,57 @@
-# Manage Contacts
+# Gestion des contacts
 
-The manage contacts page is the main interface through which you can view and interact with your contacts - both visitors and standard contacts.
+La page "Contacts" est l'interface principale à travers lequel vous pouvez voir et d'interagir avec vos contacts - les deux type de contacts anonymes et ceux avec des informations supplémentaires y sont disponibles.
 
-## Segments
+## Liste des contacts
 
-The segment is the default tabular view of all the contacts in the system - by default the **list view** is enabled, but you can also choose to switch to the **card view** (also known as **grid view**) which uses avatars to depict the contacts visually using cards. Clicking the appropriate button on the top right will allow you to switch between the two views.
+La liste de contacts est la vue tabulaire par défaut de tous les contacts dans le système - par défaut, la "Vue de liste" est activée, mais vous pouvez aussi choisir de passer à la "vue en grille" qui utilise des avatars pour représenter les prospects visuellement en utilisant des "cartes". Le clic sur le bouton approprié en haut à droite vous permettra de basculer entre les deux vues.
 
-Hint: If you prefer using keyboard shortcuts you can enter "t" on your keyboard to dynamically switch to table view and "c" to switch to the card view.
+Astuce: Si vous préférez utiliser des raccourcis clavier, vous pouvez entrer "t" sur votre clavier pour changer de façon dynamique à la vue de table et "c" pour passer à la vue de la carte.
 
-## Searching for contacts
+## Recherche de contacts
 
-The segment can be searched using the box at the top of the list, and can be ordered using the table headings by clicking on the heading you wish to sort the list by.
+Les contacts peuvent être recherchés en utilisant le champs en haut de la liste, et peut être ordonnée en utilisant les titres des tableaux en cliquant sur la rubrique que vous souhaitez trier.
 
 ![](/contacts/media/contacts-search.jpg)
 
-The search box allows many different search types and follows the same search process and variables as found in all other search layouts. You can learn more about the powerful search options available on the search documentation page.
+Le moteur de recherche permet à de nombreux types de recherche différentes et suit le même processus de recherche et les variables que l'on trouve dans tous les autres modèles de recherche. Vous pouvez en apprendre davantage sur les options puissantes de recherche disponibles sur la page de documentation de recherche.
 
-## Adding contacts quickly
+## Ajouter un contact rapidement
 
-If you have contacts you would like to quickly add to Mautic manually, and they are not in the system as part of the normal workflow (for example by completing an inquiry form or having been imported) you can use the Quick Add Contact button to add them to the system.
+Si vous avez des contacts que vous souhaitez ajouter rapidement à la main dans Mautic, et qu'ils ne sont pas dans le système dans le cadre du processus normal (par exemple en remplissant un formulaire de demande de renseignements ou ayant été importée), vous pouvez utiliser le bouton "Ajout rapide d'un contact" afin de les ajouter au système.
 
-You can of course also add them through the New Contact form and add much more detail but for quick entry this is the easiest and fastest way to get the contact into the system.
+Vous pouvez bien sûr ajouter un contact en cliquant sur le bouton "Nouveau" ce qui ouvre le formulaire d'ajout de contact et vous permet d'ajouter beaucoup plus de détails, mais pour une saisie rapide ceci est le moyen le plus simple et le plus rapide pour obtenir le contact dans le système.
 
-## Adding contacts normally
+## Ajouter un contact normalement
 
-If you have contacts to import and you have time to add all the information, click on the dropdown arrow to the right of 'Quick Add Contact' and select 'New'.  This opens the new contact screen, where you can enter all the information you have about the contact.  Use the tabs at the top to add custom fields and social network profiles.
+Si vous avez des contacts à importer et vous avez le temps d'ajouter toutes les informations, cliquez sur la flèche déroulante à droite du bouton "Ajout rapide de contact" et sélectionnez "Nouveau". Cela ouvre le nouvel écran d'ajout de contact, où vous pouvez entrer toutes les informations que vous avez en tête. Utilisez les onglets en haut pour ajouter des champs personnalisés et des profils de réseaux sociaux.
 
-## Importing contacts
+## Importer des contacts
 
-Mautic offers the ability to import contacts from other sources via CSV file - this is a great way to get up and running quickly if you need to import a lot of contacts at once.
+Mautic vous donne la possiblité d'importer vos contacts depuis un fichier au format CSV. C'est une bonne opportunité pour démarrer rapidement en important vos contacts en masse, même s'ils sont nombreux.
 
-To use the import facility, make sure that you first have all the fields set up under 'Manage fields' which correspond to the information you are importing - you don't want to lose any data if at all possible.
+Pour vous assurer d'importer vos contacts dans les meilleurs conditions, soyez sûr d'avoir créé en amont tous les champs personnalisés dont vous avez besoin dans le menu 'Gestion des champs' afin de faire correspondre les champs que vous allez importer avec ceux disponibles dans la structure de la base de données Mautic. Cela vous évitera de perdre des informations précieuses pour votre segmentation.
 
-Once you have created all the contact fields, click on the dropdown arrow to the right of the Quick Add Contact button, and select 'Import'.
+Une fois que vous avez créé tous les champs de contacts nécessaires à votre import, appuyez sur le bouton en haut à droite 'Importation'.
 
-Upload your CSV file, and ensure that you match the delimiter, enclosure and escape characters so that the importer can understand the data.
+Séléctionnez votre fichier au format CSV, vérifiez que les séparateurs (format internationnal avec une virgule, format européen par défaut avec le point virgule), pièces jointes et caractères d'échappement correspondent bien aux paramètres de votre fichier CSV afin que l'outil d'import interprète correctement la donnée.
+Lors du clic sur 'Chargement' vous pourrez alors faire correspondre les champs de votre fichier CSV avec les champs paramétrés dans Mautic.
 
-When you click on 'Upload' you will have the opportunity to match the fields found in the CSV file to the fields that you have in Mautic, which will allow the data to be correctly imported.
+Pour l'import sur les champs de type booléen, les valeurs suivantes sont considérées comme positives : `1`, `true`, `on` et `yes`. Elles peuvent également être écrite en capitales. Toute autre valeur sera considérée comme négative.
 
-Following values will result in TRUE when importing a Boolean value: `1`, `true`, `on` and `yes`. Those values can be also capitalized and still taken as TRUE. Any other value will be saved as FALSE.
+## Modification d'un contact
 
-## Editing contacts
-To edit a contact, click on the name of the contact (or the IP address if the visitor is anonymous) to open the contact screen.
+Pour modifier un contact, cliquez sur son nom (où sur l'adresse IP si le visiteur est anonyme) pour ouvrir la page du contact.
+Depuis cette page, vous pouvez voir l'activité récente du contact, et les notes qui lui sont attachées.
 
-From this screen, you can view the recent events and any notes that have been made against the contact.
+Pour modifier le contact, cliquez sur le bouton 'Modifier' en haut à droite de la page du contact.
 
-To edit the contact, click on the 'edit' button on the top-right menu.
+## Contacts en doublon
 
-## Contact duplicates
-
-When Mautic tracks contact's actions like page hits or form submissions, it will automatically merge the contacts by unique identifiers which are:
-- IP address
-- Email _(or any other contact field you mark as unique identifier)_
+Quand Mautic traque les actions d'un contact, il fusionnera automatiquement les contacts qui ont un identifiant unique en commun :
+- Email _(ou n'importe quel champ du contact qui est paramétré en clé unique)_
 - Cookie
 
-If Mautic knows only the IP address, it will merge the contact action (page hit, form submission etc.) with a contact with the same IP address. If the IP address does not exist in the Mautic database yet, it will create a new contact. But if Mautic knows the unique cookie, it will merge the actions to the contact with the same cookie or creates a new one.
+Si un contact soumet un formulaire avec une adresse email, cela fusionnera le contact avec celui existant avec la même adresse email. Même si le cookie correspond à un autre contact.
 
-If a contact sends a form with an email address, it will merge the submission with the contact having the same email address. Even if the IP address or the cookie matches another contact.
-
-So Mautic will take care of duplicate contacts created by the event tracking. But you can still create a duplicate contact via the Mautic administration. As of Mautic 2.1.0, you will be notified if there is already a contact with the same unique identifier.
+Mautic fait attention automatiquement aux contacts créés par le tracking afin de ne pas faire de doublons. Vous pouvez toujours volontairement créer un doublon depuis l'interface de création de contact. Depuis Mautic 2.1.0, vous serez notifié lorsque vous essayerez de crér un contact qui a déjà un ID unique existant.
