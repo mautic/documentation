@@ -1,3 +1,3 @@
-# Themes
+# Thèmes
 
-Themes control the look and feel of the Mautic landing pages, emails, forms and message screens.  A basic Mautic installation will come pre-packaged with a number of themes which can be used 'as-is' or adapted to suit specific projects.  It is also possible to create a theme for Mautic from scratch.
+Les thèmes contrôlent le rendu final des pages de destinations, emails et formulaires Mautic. Au déploiement de votre compte Mautic, vous bénéficierez de quelques thèmes par défaut à utiliser comme ils le sont. Il est également possible de créer des thèmes sur mesure.
