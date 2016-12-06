@@ -38,8 +38,8 @@ Il y a une limite de 200 soumissions dans lesquelles Mautic recherche des valeur
 
 Les formulaires progressive profiling ne fonctionneront pas si vous utilisez l'intégration HTML statique (pour les raisons expliquées ci dessus). Cela fonctionne en aperçu, insertion en Javascript et iframe.
 
-### The kiosk mode limit
+### Les limites du mode kiosque
 
-Lrogressive Profiling features are turned off if you switch the form to the Kiosk Mode. The form always creates a new contact on each submission in the Kiosk Mode. It doesn't track the device from which the form was submitted.
+Les fonctionnalités de progressive profiling sont désactivées si vous activez le mode kiosque. Le fomulaire créant à chaque fois un nouveau contact, cela désactive le tacking par cookie et ne peut donc être utilisé pour le progressive profiling.
 
-The Progressive Profiling options under the Behavior tab will still be accessible in the Form Builder so you could easily switch the Kiosk mode off and use the Progressive Profiling features again.
+Les fonctionnalités de progressive profiling dans l'onglet __Comportement__ son toujours accessibles lorsque le mode kiosque est actif. Cela vous permet de le paramétrer quand même et de pouvoir activer/désactiver le mode kiosque facilement.
