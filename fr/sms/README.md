@@ -1,28 +1,28 @@
-# Text Messages
+# SMS
 
-This new channel was added in Mautic 1.4.0. It allows Mautic to send SMS from Campaigns.
+Cela permet à votre compte Mautic depuis la version 1.4.0 d'envoyer des SMS depuis les campagnes.
 
-## Configure Text Messages
+## Configurer les SMS
 
-Before you start to send SMS from your Mautic, it needs to be connected to the service which can send them. The first and default implemented service is [Twilio](https://www.twilio.com). In order to configure the Text Messages correctly, follow these steps:
+Avant de pouvoir envoyer des SMS depuis votre compte Mautic, il est nécessaire de connecter au routeur qui enverra les SMS [Twilio](https://twilio.com). Afin de connecter le SMS correctement, suivez les étapes suivantes :
 
-1. Create an account at Twilio.com.
-2. Go to *Account Settings*. There you'll see the *API Credentials*.
-3. Open the Mautic Configuration in another browser tab and navigate to: Cog icon > Configuration > Text Message Settings.
-4. Copy the *AccountSID* from Twilio account and paste it to *Text Message Provider Username* field in Mautic.
-5. Unlock and copy the *AuthToken* and paste it to *Text Message Provider Password* field in Mautic.
-6. Go to *Products* > *Phone Numbers* in Twilio, copy the number and paste it to the *Sending Phone Number* field in Mautic.
-7. Select the *Text Message Enabled?* switch to *Yes* and save the Mautic configuration.
+1. Créez un compte sur Twilio.com.
+2. Allez dans *Account Settings*. Vous y trouverez les *API Credentials*.
+3. Ouvrez la configuration Mautic dans une autre page : Configuration > Paramètre SMS.
+4. Copiez le *AccountSID* (celui ci doit être celui du compte, pas du numéro de téléphone) depuis votre compte Twilio et collez le dans le champ *Identifiant du routeur SMS* de Mautic.
+5. Débloquez et copiez le *AuthToken* afin de le coller dans le champ Mautic *Mot de passe du routeur SMS*.
+6. Allez dans *Products* > *Phone Numbers* dans Twilio, copiez le numéro et collez le dans le champ de Mautic *Numéro de téléphone d'envoi*. Attention, il doit être au format +33600000000.
+7. Passez le champ *SMS activé ?* à *Oui* et sauvegardez le panneau de configuration Mautic.
 
-## Create a new Text Message
+## Créez un SMS
 
-A Text Message can be created/modified only via Campaign Builder.
+Un SMS peut être créé/modifier seulement depuis l'éditeur de campagne.
 
-1. Go to *Campaigns*.
-2. Edit an existing campaign or create a new one.
-3. Open the Campaign Builder.
-4. Drag the *Send Text Message* action and drop it to the canvas.
-5. Click the *New Text Message* button. The form in a new browser window will appear.
-6. Fill in the *Internal Name*, *Text Message* and if required, change the language. Save it.
+1. Allez dans *Campagnes*.
+2. Editez une campagne existante ou créez une nouvelle.
+3. Ouvrez l'éditeur de campagne.
+4. Faites glisser l'action *Envoyer un SMS*.
+5. Cliquez sur le bouton *Nouveau SMS*. Un formulaire dans une nouvelle fenêtre va s'afficher.
+6. Remplissez *Nom interne*, *SMS* et si besoin, changez la langue. Sauvegardez.
 
-The new Text message will be pre-selected so you can save the *Send Text Message* action as well. You can use the action in your Campaign dripflow.
+Le nouveau SMS sera automatiquement pré-sélectionné. Vous n'avez plus qu'à utiliser l'action dans votre scénario de campagne !
