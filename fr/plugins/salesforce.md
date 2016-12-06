@@ -1,82 +1,70 @@
 # Mautic - Salesforce CRM plugin
 
-This plugin can push a contact to Salesforce CRM when a contact makes some action. If you don't have the Salesforce CRM account yet, [create it](http://www.salesforce.com/).
+Ce plugin peut pousser les contacts présents dans Mautic vers Salesforce CRM lorsqu'ils réalisent des actions choisies. Si vous n'avez pas de compte Salesforce CRM, [créez en un ici](http://www.salesforce.com/).
 
-## Requirements
+## Pré-requis
 
-SSL. Your Mautic instance nas to run on https. Salesforce will not allow you to create App with just http callback URL.
+SSL. Votre instance Mautic doit être en https. Autrement, Salesforce n'autorisera pas la synchronisation des données su un callback en http.
 
-## Get the Salesforce client credentials
+## Obtenir l'authorisation de connexion Salesforce
 
-There is an [official documentation](http://feedback.uservoice.com/knowledgebase/articles/235661-get-your-key-and-secret-from-salesforce) about how to get the Key and Secret although it doesn't seem to be updated.
+Il y a une [documentation officielle] (http://feedback.uservoice.com/knowledgebase/articles/235661-get-your-key-and-secret-from-salesforce) expliquant comment obtenir les clés de sécurité et d'identification, en revanche, elle ne semble pas vraiment à jour.
+1. Allez dans **Setup** (en haut à droite) > Build (en bas à gauche) - Create > Apps > Connected Apps > New ![Salesforce CRM Create an App](/plugins/media/plugins-salesforce-create-app.png "Salesforce CRM Create an App")
+2. Créez une nouvelle application de la manière suivante : ![Salesforce CRM Create an App form](/plugins/media/plugins-salesforce-create-app-form.png "Salesforce CRM Create an App form")
+3. Soyez sûrs que l'authorisation sélectionnée (OAuth Scopes) sont *Access and manage your data* (api) et *Perform requests on your behalf at any time (refresh_token, offline_access)*.
+4. Copiez la clé "Consumer Key" et la clé secrète. ![Salesforce CRM Create an App keys](/plugins/media/plugins-salesforce-create-app-keys.png "Salesforce CRM Create an App keys")
 
-Go to: *Setup* (top right corner) / Build (bottom left corner) - Create / Apps / Connected Apps / New
+## Configurez le plugin Salesforce dans Mautic
 
-![Salesforce CRM Create an App](/plugins/media/plugins-salesforce-create-app.png "Salesforce CRM Create an App")
-
-Create a new app like this:
-![Salesforce CRM Create an App form](/plugins/media/plugins-salesforce-create-app-form.png "Salesforce CRM Create an App form")
-Make sure the Selcected OAuth Scopes are *Access and manage your fata (api)* and *Perform requests on your behalf at any time (refresh_token, offline_access)*.
-
-Copy the Consumer Key and Secret.
-
-![Salesforce CRM Create an App keys](/plugins/media/plugins-salesforce-create-app-keys.png "Salesforce CRM Create an App keys")
-
-## Configure the Mautic Salesforce plugin
-
-Insert the keys to the Mautic Salesforce plugin and authorize it.
+Insérez les clés obtenues dans le plugin Salesforce dans votre compte Mautic et obtenez l'authorisation.
 ![Salesforce CRM Authorize](/plugins/media/plugins-salesforce-authorize.png "Salesforce CRM Authorize")
 
-Configure the [field mapping](./../plugins/field_mapping.html).
+Configurez le [mapping des champs](./../plugins/field_mapping.html).
 
-### Features
-Enabled features:
-You can pull leads and/or push leads from and to the integration.
+### Fonctionnalités
+* Cela vous donne la possibilité de récupérer les contacts existants dans votre compte Salesforce ainsi qu'envoyer les contacts depuis votre compte Mautic vers votre compte Salesforce.
+* L'envoi de contact se fait depuis une action (de campagne, formulaire ou un déclancheur de points).
+* La récupération de contact se fait à la connexion et ensuite grace à des taches planifiées CRON (pour les utilisateurs de Mautic Open Source).
+* Sélectionnez les objets que vous souhaitez pousser ou récupérer. Vous pouvez pousser vos contacts vers l'objet Leads dans Salesforce. vous pouvez également pousser des activités (fil d'activités du contact) dans un objet personnalisé dans Salesforce.
+* La récupération d'informations sera faite depuis l'object Salesforce Leads et/ou Contacts.
 
-Push leads is done through a form or a campaign.
+### Lignes de commande pour récupére les contacts depuis Salesforce
+Pour récupérer les contacts depuis Salesforce vous devez mettre en place une commande depuis CLI (pour les utilisateurs de Mautic Open Source). Paramétrez la commande suivante :
 
-Pull leads is done through command line and it can be setup as a cronjob.
+Utilisé pour récupérer les contacts depuis l'objet **Leads** dans Salesforce
 
-Feature specific settings:
-Select the objects you wish to pull or push records from. You can push contacts to the Leads object in salesforce. you can also push activities (contact's timeline records) to a custom object in salesforce.
+`php app/console mautic:integration:fetchleads`
 
-Pulling records will be done from Leads and/or Contacts objects in records.
+Utilisé pour poussez les activités dans un objet personnalisé Salesforce
+`mautic:integration:pushleadactivity`
 
-### Command line script to pull records from Salesforce
-To pull records from salesforce you need to use a command from CLI. Use this command:
+Chaque commande peut prendre en charge les paramètres :
 
-Used to pull records from the Leads object in Salesforce
+* **--time-interval** qui permet de paramétrer le délai entre chaque récupération de données. Vous pouvez paraméter avec les valeurs : "10 days", "1 day", "10 minutes", "1 minute". Avec un maximum de délai de "29 days".
+* **--integration=Salesforce**
 
-- php app/console mautic:integration:fetchleads
+## Paramétrer des objets personnalisés de Mautic dans Salesforce
 
-Used to push activities to the Salesforce custom object described below
- - mautic:integration:pushleadactivity
+Pour être capable de pousser des activités dans l'intégration Salesforce, il vous faut d'abord personnaliser un objet personnalisé dans votre compte Salesforce. Suivez les instructions ci après.
 
-Parameters both commands take:
+Nom de l'objet personnalisé : Mautic__timeline (nom API : Mautic_timeline__c)
 
-**--time-interval** This parameter is used to setup the amount of time we want to pull records from. Possible entries: "10 days", "1 day", "10 minutes", "1 minute".  Maximun time interval "29 days".
+nom des champs API :
+* ActivityDate__c : Date\/Time
+* contact_id__c : Lookup(Contact)
+* Description__c : Long Text Area(131072)
+* WhoId__c : Lookup(Lead)
+* MauticLead__c : Number(18, 0) (External ID)
+* Mautic_url__c : URL(255)
 
-**--integration**=Salesforce  to use with salesforce integration.  In future this command may be used for other integrations.
+## Pour tester le plugin
 
-## Setting up Mautic's custom object in Salesforce
-To be able to push activities to the salesforce integration you first need to setup a custom object in your salesforce instance. Please setup the object as it is described below.  (Note: these are two underscores with no space between - not rendered well in Github).
-
-Custom object name: Mautic\__timeline (API  name: Mautic_timeline\__c)
-
-API names of fields:
-- ActivityDate\__c : Date/Time
-- contact_id\__c : Lookup(Contact)
-- Description\__c  : Long Text Area(131072)
-- WhoId\__c : Lookup(Lead)
-- MauticLead\__c : Number(18, 0) (External ID)
-- Mautic_url\__c : URL(255)
-
-## Test the plugin
-
-Follow [these steps](./../plugins/integration_test.html) to test the integration.
+Suivre [ces étapes](./../plugins/integration_test.html) pour tester l'intégration.
 
 ## Troubleshooting
 
-### Error: `The REST API is not enabled for this Organization.`
+### Problématiques et erreurs
 
-This means the API is not turned on in your Salesforce account. [Read more](https://help.salesforce.com/apex/HTViewHelpDoc?id=admin_userperms.htm&language=en)
+`Erreur : The REST API is not enabled for this Organization.``
+
+Cela signifie que l'API n'est pas activée dans votre compte Salesforce, [voir plus](https://help.salesforce.com/apex/HTViewHelpDoc?id=admin_userperms.htm&language=en)
