@@ -1,23 +1,19 @@
 # Points
 
-Points provide a way for contacts to be properly weighted. These points have both triggers and actions. Each term will be properly defined and a thorough understanding of how points function will ensure that your overall marketing automation process is successful.
+Les points permettent de donner de la valeur à certains prospects. Ces points peuvent déclencher des actions.
 
-### Point Actions
+### Gestion des actions
 
-Point actions are those times when a contact receives a change in their point total. These actions can be either positive or negative point changes and are based on a particular action as you determine.
+L'ajout de point en fonction d'actions permet de changer la somme totale des points d'un prospect. Ces actions peuvent avoir un impact positif ou négatif sur les points du prospect.
 
-A partial list can be seen in the screenshot below.
+Sur la capture d'écran ci-dessous, vous pouvez constater une liste des actions auxquelles vous pouvez attribuer des points.
 
 ![](/points/media/new-point-action.jpg)
 
-Clearly these actions can be expanded upon as needed. This is the essence of point actions. The other part of the points system are the triggers. They are defined next.
+### Gestion de déclencheurs
 
-### Point Triggers
+Les déclencheurs sont des événements liés lorsqu'un prospect atteint un nombre de points.
 
-Point triggers are resulting events which are fired based on the achieved point total of a contact. In simple terms, when a contact reaches a minimum number of points, the point trigger is fired and an action is performed.
-
-When creating a point trigger you have the option to apply the trigger to all existing and applicable contacts as well as new contacts.
+Lorsque vous mettez en place un déclencheur, vous avez la possibilité d'appliquer la règle à tous les prospects ou uniquement les futurs prospects qui répondront à ce critère.
 
 ![](/points/media/new-point-trigger-action.jpg)
-
-These point triggers and associated events are also fully customizable.

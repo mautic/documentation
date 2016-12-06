@@ -1,13 +1,9 @@
-# Points Troubleshooting
+# Troubleshooting des points
 
-## Page visits are not recognized
+## La visite des pages n'est pas reconnue
 
-There can be a few reasons for this:
+Il peut y avoir plusieurs raisons :
 
-1) Make sure that you are not testing teh page visit while logged into Mautic. Mautic ignores user generated activity so use an anonymous session, another browser, or logout of Mautic.
-
-2) At this time, point actions are tracked once per contact. This means that subsequent visits will not re-trigger the action if already triggered once.
-
-3) Ensure that the URL defined either matches _exactly_ the URL visited or use a wildcard (note that the <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Locator" target="_blank">a URL can include the schema, host/domain, path, query parameters, and/or fragment</a>).
-
-For example, if you have a URL of `http://domain.com` and the page hit registers as `http://domain.com/index.php?foo=bar`, the action will not be recognized. However, if you use `http://domain.com*` as the URL, it'll match and thus trigger.
+1. Soyez sûrs qu vous n'effectuez pas des tests de visite de pages en étant connecté à votre compte Mautic. Mautic ignore les activités de ses utilisateurs. Utilisez alors la navigation privée, un autre navigateur ou déconnectez vous de Mautic.
+2. Les actions de points sont effectuées une seule et unique fois par contact.
+3. Assurez vous que l'URL que vous tracez est _exactement_ l'URL visitée ou utilisez les étoiles `*` pour un portion d'URL.
