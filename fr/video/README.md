@@ -1,33 +1,19 @@
-# Gated Video
+# Video avec formulaire #
 
-This new inbound channel was added in Mautic 2.1. It allows Mautic users to embed gated
-videos in their websites, landing pages, and anywhere else the mautic tracking javascript
-is installed. In Mautic, a gated video is one that plays for a set amount of time then
-pauses the video in order to show a form that, when submitted, will capture the lead
-information then continue to play the video from where it was paused.
+Ce nouveau canal d'acquisition a été introduit dans Mautic en version 2.1. Cela permet aux utilisateurs Mautic d'intégrer des vidéos dynamiques sur leurs sites web, pages d'atterrissage et n'importe où le script de tracking Mautic est installé. Dans Mautic, les vidéos dynamiques sont des vidéos qui se lisent un temps souhaité, puis se mettent en pause en affichant un formulaire pour voir la suite. Le contact est ainsi capturé et la vidéo continue à se lire depuis là où elle avait été mise en pause.
 
-## Using Gated Video
+## Utiliser les fomulaires dynamiques ##
 
-Gated videos are not an entity within Mautic; they do not have a menu item. Gated videos
-can be embedded in your landing page content or in your website that has the Mautic
-tracking javascript installed.
+Ce ne sont pas des objets à part entière et ces vidéos n'ont donc pas de menu spécifique. Les vidéos dynamiques peuvent être intégrées dans vos pages d'atterrissage comme contenu ou sur les pages de votre site où le script de tracking Mautic est installé.
 
-jQuery and Vimeo's Froogaloop javascript libraries are required for this feature to
-function. They will be automatically inserted into your landing page if videos are
-detected.
+Les libraries jQuery et Vimeo's Froogaloop sont nécessaires pour cette fonctionnalité. Elles seront automatiquement insérées dans vos pages d'atterrissage si une vidéo est détectée.
 
-Any `<video>` tag found by the javascript that has a `data-form-id` and `data-gate-time`
-attribute will be treated as a gated video by the Mautic javascript. The simplest way to
-embed a gated video is to embed the HTML below on a page where the Mautic tracking
-javascript is installed.
-
-Keep in mind that you should replace the form id with a valid form id from your Mautic
-installation and that gate time should be set to the desired time (in seconds) when you
-would like to pause the video after it has started to play. The `type` attribute on the
-`<source>` tag can be one of `video/youtube`, `video/vimeo`, or `video/mp4`. When using
-`video/youtube` or `video/vimeo`, you can use the URL found in your browser address bar
-as the URL to place in the `src` attribute. When using `video/mp4`, you must use the full
-URL to the actual mp4 file location in order to use the gated video feature.
+N'importe quel tag `<video>` trouvé par le javascript qui possède les attibuts `data-form-id` et `data-gate-time` sera traité comme une vidéo dynamique par le javascript de Mautic. La façon la plus simple d'utiliser les vidéos dynamiques Mautic et d'intégrer le code HTML ci dessous sur une page où le script de tracking Mautic est installé.
+1. Gardez à l'esprit qu'il faudra remplacer l'ID du formulaire dans l'exemple par un ID de formulaire existant sur votre plateforme
+2. Qu'il faudra que le temps de déclenchement de l'affichage du formulaire (__data-gate-time__) soit remplacé par le temps souhaité
+3. L'attribut `type` dans la `<source>` peut contenir les valeurs suivantes : `video/youtube`, `video/vimeo`, ou `video/mp4`.
+  * Quand vous utilisez `video/youtube` ou `video/vimeo`, vous devez modifier l'URL par celle qu vous récupérez dans votre navigateur lorsque vous visionnez la vidéo, et l'insérr dans l'attribut `src`.
+  * Si vous utilisez le format `video/mp4`, utilisez l'URL complète vers la source où est hébergée la vidéo.
 
 ```html
 <video width="640" height="360" data-form-id="1" data-gate-time="15">
@@ -35,24 +21,15 @@ URL to the actual mp4 file location in order to use the gated video feature.
 </video>
 ```
 
-If the form you've chosen to display has the *Successful Submit Action* set to *Display
-Message* and you've entered text into the *Redirect URL/Message* text box on the form
-edit screen, that message will be displayed for 3 seconds.
+Si le formulaire choisi affiche le *Message de succès à la soumission* paramétré dans *Message à afficher* lors de la configuration de votre formulaire, c'est que cela a fonctionné et le message s'affichera pendant 3 secondes.
 
-To use a gated video on your landing page, simply click into a textarea in your template
-builder, and you will see the Froala editor pop up. In the top row, next to the *Insert
-Image* icon, is the *Insert Gated Video* icon. Click that, and you can then use the modal
-that opens to insert gated videos into your landing page.
+Pour intégrer une vidéo dynamique dans votre page d'atterrissage, cliquez dans une zone de texte dans le générateur de page, dans l'éditeur Froala. Sur la ligne du haut, cliquez sur *Insérer une vidéo* à cpoté du bouton d'*insertion d'une image*.
 
 ![](/video/media/gated-video-icon.png)
 
-## CMS Plugins
+## Plugin CMS
 
-The gated video feature of Mautic is simplified by using one of our CMS plugins. We have
-CMS plugins for WordPress, Joomla, Drupal, Grav, and Concrete5. When using the CMS plugin
-to embed video content, be sure that you have installed the latest version of the plugin
-for your CMS of choice. Once installed, you can use the syntax below to embed gated videos
-into your content.
+L'utilisation de la fonctionnalité de vidéo dynamique Mautic est simplifiée si vous utilisez un plugin CMS Mautic. Nous avons un plugin pour WordPress, Joomla, Drupal, Grav, et Concrete5. Vérifier que vous avez bien la dernière version du plugin sur votre CMS.
 
 #### WordPress, Grav
 ```
