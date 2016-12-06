@@ -18,7 +18,7 @@
     * [Assets](assets/README.md)
         * [Manage Assets](assets/manage_assets.md)
     * [Dynamic Web Content](dwc/README.md)
-    * [Forms](forms/README.md) 
+    * [Forms](forms/README.md)
         * [Manage Forms](forms/manage_forms.md)
         * [Progressive Profiling](forms/progressive_profiling.md)  
         * [Gated Video](video/README.md)  
@@ -33,11 +33,7 @@
         * [Bounce Management](emails/bounce_management.md)
         * [Mailer is owner](emails/mailer_is_owner.md)
         * [Troubleshooting](emails/troubleshooting.md)
-<<<<<<< HEAD
     * [Web Notifications](notifications/README.md)
-=======
-    * [Web Notifications](notifications/README.md) 
->>>>>>> mautic/master
     * [Focus](focus/README.md)
     * [Text Messages](sms/README.md)
     * [Social Monitoring](social-monitoring/README.md)
