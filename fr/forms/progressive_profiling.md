@@ -1,42 +1,42 @@
 # Progressive Profiling
 
-This feature was added in Mautic 2.1.0.
+Cette fonctionnalité a été ajoutée à Mautic en version 2.1.0.
 
 Progressive profiling makes your forms smarter by asking for the most important information and don't have yet at the time. This way your contacts won't feel overwhelmed by long forms and saves time by answering questions Mautic already knows the answer to. Progressive Profiling lets you improve the form conversion rate.
 
 ## Configuration
 
-There are 2 possible ways how you can configure a form field to display only when needed. The configuration is in the __Behavior__ tab in the field configuration form. The Behavior (Progressive Profiling) can be configured for all field types except the _email_ and the _button_ field. Email must be always visible because it is identifier of a contact and Mautic's tracking is not yet 100% accurate. The button field must be always visible because otherwise the form couldn't be submitted.
+Il y a deux manières pour configurer un champ qui doit s'affiche seulement quand vous le souhaitez. Cette configuration se fait dans l'onglet __Comportement__ lors du paramétrage du champ d'un formulaire. Le comportement (Progressive Profiling) peut être configuré pou tous les types de champs sauf pour le champ _email_ et le _button_. L'email doit être toujours présent car il sert de clé unique et le tracking de Mautic ne garanti pas un suivi parfait à 100%. Et le bouton toujours visible sous peine de ne pouvoir soumettre le formulaire, cela va de soit !
 
-It's recommended to use the email field in each form.
+Nous vous recommandons d'utiliser le champ email sur tous vos formulaires.
 
-### 1. Display field only if the value is not known yet
+### 1. Afficher le champ seulement si la valeur n'est pas encore connue
 
-Mautic will search for value on 2 places before the form is rendered for the current contact:
+Mautic va chercher à 2 endroits avant de générer le formulaire pour le visiteur courant :
 
-#### 1.1 Former form submissions
+#### 1.1 Soumissions de formulaire précédentes
 
-Mautic will search for the field value in the former form submissions of the current lead. If a value is found, the field might be hidden if configured so. There are limitations of the search history. Read about them below.
+Mautic va d'abord chercher dans l'historique des soumissions de formulaire du contact, et s'il trouve un résultat pour le champ, il le masquera. Il y a une limitation sur l'historique cherché, voir ci après.
 
-#### 1.2 Contact profile values
+#### 1.2 Valeur du profil du contact
 
-If the form field is linked with a contact field, Mautic will check if there is a value in the contact's profile and hides the field if configured so.
+Si le formulaire est lié à un champ du contact, Mautic va vérifier si une valeur est présente dans le champ du contact utilisé. Si c'est le cas et que vous l'avez configuré, le champ de formulaire sera masqué.
 
-### 2. Display field only after X submissions.
+### 2. Afficher le champ après X soumissions
 
-If you want to ask a contact additional questions on the second form load, you can specify so for each lead. It works nicely with hiding fields which you already know the answer to. For the first submission, the contact can be asked to fill in the First and the Last name. When he comes the second time, the First and the Last name fields will be hidden and instead she'll be asked to fill in her Company and Phone.
+Si vous souhaitez demander au contact des informations additionnelles seulement à sa deuxième soumission, vous pouvez le paramétrer. Par exemple, pour une première soumission de formulaire, vous pouvez demander le nom et le prénom, puis à la seconde soumission masquer ces champs pour afficher les suivants comme le nom de l'entreprise et le téléphone.
 
-## Limits of Progressive Profiling
+## Les limites du Progressive Profiling
 
-### The search history limit
+### Limite dans la recherche de l'historique
 
-The Mautic forms without progressive profiling are as fast as it can be. The HTML of the form is rendered once, stored and this "cached" HTML is used for next form loads. When a progressive profiling configuration is turned on on any of the form fields, the form HTML might be different for each contact. It can even change for each contact after each submission. That's why the caching technique cannot be used anymore and the form load time will be slower for progressive profiling form.
+Les formulaires Mautic sans progressive profiling sont rapides. Le HTML du formulaire est généré qu'une fois, stocké dans le "cache" HTML et utilisé pour les prochains affichages. Quand le progressive profiling est activé sur tous les champs d'un formulaire, le HTML du formulaire sera différent pour chaque contact. Cela peut même changer pour un même contact entre deux soumissions. Ainsi, le système de cache standard utilisé sur la majorité des pages web ne peut être utilisé ici et cela prendra un peu plus de temps à être généré.
 
-There is limit of 200 submissions from which is Mautic searching for existing form values. This limit was added to prevent possible slow form loads or even hitting the server time or memory limits when a contact have several thousands form submissions. This limit might cause to display/hide the wrong fields.
+Il y a une limite de 200 soumissions dans lesquelles Mautic recherche des valeurs existantes. Cette limite a été ajoutée afin d'éviter que des formulaire mettent beaucoup trop de temps à charger quand un contact a des centaines de soumissions au compteur. Cette limite pourra parfois rendre visible des champs que vous auriez espérés masqués.
 
-### The embed type limit
+### L'intégration du formulaire
 
-Progressive Profiling forms will not work if you embed your form as static HTML. It will work at form preview, form public page, form embedded via JS, form embedded via iframe.
+Les formulaires progressive profiling ne fonctionneront pas si vous utilisez l'intégration HTML statique (pour les raisons expliquées ci dessus). Cela fonctionne en aperçu, insertion en Javascript et iframe.
 
 ### The kiosk mode limit
 
