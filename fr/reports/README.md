@@ -1,27 +1,27 @@
-# Reports
+# Rapports
 
-Highly customizable reports can be generated through Mautic's Report menu.
+De nombreux rapports personnalisés peuvent être paramétrés depuis le menu **Rapport** de Mautic.
 
-## Data Sources
+## Source des données
 
-Choose the data source appropriate to the report you want. Each data source has a different set of available columns, filters and graphs.
- 
+Choisissez la source des données pour votre rapport en fonction de votre besoin. Chaque source a des colonnes de données différentes, des filtres adaptés et des graphiques qui permettront de mieux exploiter les données.
+
 ![](/reports/media/data-source.png)
 
 ## Configuration
 
-Each report can be customize to include the columns of choice. Filter data based on set criteria and/or set a specific order for the data.
- 
+Chaque rapport peut être personnalisé pour inclure les colonnes de données de votre choix. Filtrez la donnée en fonction de critères et ordonnez la donnée comme cela vous correspond au mieux.
+
 ![](/reports/media/config.png)
 
-## Graphs
+## Graphiques
 
-Some reports have graphs available. Select the graph desired from the left list - it will move to the right and will be part of the report.
+Certains rapports permettent de créer des graphiques. Selectionnez les graphiques souhaités dans l'onglet correspondant.
 
 ![](/reports/media/graphs.png)
 
-## Dashboard Widget
+## Widget et tableau de bord
 
-Each graph of each report is made available as a widget on the dashboard allowing complete customization of the dashboard. 
- 
+Chaque graphique de chaque rapport peut être affiché sous forme de widget sur votre tableau de bord afin d'y afficher les informations qui sont importantes pour vous.
+
 ![](/reports/media/widget.png)
