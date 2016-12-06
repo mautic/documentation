@@ -1,31 +1,28 @@
 # Mautic - Twitter plugin
 
-This plugin can:
+Ce plugin permet :
+* D'afficher le profil public et de faire correspondre les champs des contacts
+* Afficher l'activité publique
+* Afficher un bouton de partage depuis les pages d'atterrissage
 
-- display the tweets for a contact with valid Twitter handle,
-- load additional information from the Twitter profile,
-- place a share button to the landing pages.
+### Pré-requis
 
-### Requirements
+Twitter doit approuver l'application Webmecanik Automation afin de récupérer les informations des utilisateurs Twitter.
 
-- Mautic installed on a publicly accessible URL. This plugin won't work on a localhost because callbacks from Twitter to Mautic are necessary.
+### Autorisation du plugin
 
-### Authorize the plugin
+Afin de les obtenir, vous devez réaliser les étapes suivantes :
+1. Avoir un compte Twitter
+2. Créer une [application Twitter ici](https://apps.twitter.com)
+3. Cliquer sur le bouton *Create New App*.
+4. Remplir les informations demandées, Une des informations importantes est l'URL de rappel (callback) qui est affichée dans le plugin Twitter de votre compte Mautic.
 
-A Twitter application has to be created for authorization. To create/manage one, go to [apps.twitter.com](https://apps.twitter.com/). While creating your Twitter app, you'll have to insert a *Callback URL*. This callback URL is written in the Twitter plugin configuration.
+Une fois l'application Twitter créée, vous obtiendrez une *clé d'authentification* (clé API) ainsi que votre *Consumer Secret* (API Secret).
 
-When your Twitter app is created, copy the *API Key* to the *Client Key* field in Mautic's Twitter configuration and *API Secret* to *Client Secret* field. Click the *Authorize* button. 
+### Configuration du plugin
 
-Don't forget to switch *Published* to *Yes* and save the configuration.
+Si l'autorisation est faite correctement, vous pouvez configurer les *Fonctionnalités* et l'onglet de *Mapping des champs de contact* dans la configuration du plugin.
 
-### Configure the plugin
+Les tweets des contacts vont remonter dans la fiche de chaque contact dès que l'ID Twitter du contact est renseigné.
 
-If your Twitter plugin is authorized correctly, you can configure the *Features* and *Contact Field Mapping* tab in the plugin configuration. The *Features* tab is self-explanatory. The fields like *Tweet text*, *Via*, *Recommended* and *Hashtag* are prepared there for future implementation with Twitter. Read here how to configure the *[Contact Field Mapping](./../plugins/field_mapping.html)*. If you don't have a special field for Twitter handle yet, create it in the Contact Field section.
-
-The tweets of a contact should appear on the contact's profile as soon as the Twitter handle contact field is filled with an existing Twitter handle.
-
-Use `{sharebuttons}` token in the Mautic Landing Pages in the place where you want to display the share buttons.
-
-### Twitter API limitations
-
-The original idea was that Mautic will search for additional information about a contact in various social platforms. But since the time the social plugins were written, social platforms restricted the API search to only the username.
+Utilisez le token `{sharebuttons}` lorsque vous créez des pages d'atterrissage Mautic pour afficher un bouton de partage.
