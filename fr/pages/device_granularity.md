@@ -1,19 +1,24 @@
-# Mautic - Device Granularity
+# Granularité des supports
 
-Mautic records devices used to visit pages and open emails.
+Mautic enregistre les supports utilisés par vos visiteurs sur les pages d'atterrissage et les emails
 
-## Requirements
+## Pré-requis
 
-To detect devices Mautic uses (https://github.com/piwik/device-detector). Please be sure you have this library installed in your Mautic instance.
+Pour détécter le support utilisé par le visiteur, Mautic utilise (https://github.com/piwik/device-detector). Soyez sûrs d'installer cette library dans votre instance Mautic (pour les utilisateurs de Mautic Open Source).
 
-## Test this feature
-####For Mautic pages and emails
-Every page and email created with mautic should detect the device used to view a page or open an email. Emails need to be sent from a public instance of mautic in order to test open actions, or you can copy the tracking pixel URL and paste it in an incognito window of your browser to test in a local server.
-####For Non-Mautic pages and emails
-Any page or email that has Mautic's tracking pixel should detect the device used to view a page or open an email.
+## Test de la fonctionnalité
 
-##How to use this feature
-- You should see devices used to view pages in the contact's timeline
-- Life cycle chart displays a graph of devices used by contacts in a particular segment
-- Email details display a pie chart of devices used to open an email next to the statistics graph
-- Reports of devices used per contact is now part of the reports bundle
+#### Pour les emails et pages Mautic
+
+Chaque page d'atterrissage et email issus de Mautic doivent être tracés. A l'ouverture d'un email, les informations doivent être enregistrées sur le contact.
+
+#### Pour les emails et pages qui ne sont pas issues de Mautic
+
+A partir du moment où vous intégrez le pixel de tracking Mautic, le tracking du support utilisé par le navogateur sera effectué.
+
+## Comment utiliser la fonctionnalité
+
+- Dans le fil d'actulité du contact sera enregistré le support utilisé par le contact lors de ses visites de page ou l'ouverture de ses emails
+- Les graphiques de cycle d'achat peuvent afficher les supports utilisés en fonction des segments
+- La page de détail d'un email affiche en plus de ses statistiques un camembert sur les supports utilisés pour les ouvreurs de l'email en question
+- Dans le menu rapport, vous avez maintenant la possibilité de créer de nouveaux graphiques en fonction du support utilisé par le contact

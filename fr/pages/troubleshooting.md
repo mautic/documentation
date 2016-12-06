@@ -1,13 +1,12 @@
-# Page Troubleshooting
+# Troubleshooting des pages d'atterrissage
 
-## Page hit tracking doesn't work
+## Le tracking des visites ne fonctionne pas
 
-Page hits are being tracked by a tracking pixel. That is simply a 1 pixel GIF image in the source code of the Page source code. When a page is hit by a browser, it tries to load the images in it. The image load request is actually what Mautic needs to track the page hit action.
+Le tracking des visites sur la page fonctionne grâce au pixel de tracking. C'est simplement une image de 1 pixel au format .gif dans le code source de la page. Quand la page est chargée par un navigateur, elle charge le pixel avec elle. Le chargement de l'image permet à Mautic de tracer qui est en train de la visiter.
+Si le tracking ne fonctionne pas, vérifiez les points suivants :
 
-If the tracking doesn't work, check:
-1. The tracking doesn't work for logged in Mautic administrators. This way statistics aren't skewed by Mautic administrators looking at the page result while editing a page. So make sure you are logged out of Mautic or use an incognito browser window while testing the tracking.
-2. The tracking pixel isn't part of the page you want to track. Mautic can track only pages which has the tracking pixel in their source code.
-3. The tracking pixel is not configured correctly. You can confirm this by looking at the dev tools of your browser. While looking on the page you wish to track, open the dev tools (press F12), go to the Network tab and reload the page. You'll see all the requests which were made. Filter those requests to images only and find the mtracking.gif image. Does it have status 200? If not, the path to your Mautic instance is probably incorrect.
+1. Le tracking n'est pas pris en compte lorsque vous êtes en même temps connecté à votre plateforme Mautic afin de ne pas altérer les statistiques. Soyez donc sûr d'être déconnecté de votre compte Mautic ou utilisez alors un navigateur en mode incognito lors de vos tests.
+2. Le pixel de tracking n'est pas dans votre page. Mautic ne peut tracer que les pages qui contiennent ce pixel de tracking dans le code source.
+3. Le pixel de tracking est configuré incorrectement. Vous pouvez confirmer cela grâce aux outils de développement de votre navigateur. En chargeant la page que vous souhaitez traquer, ouvrez la console (pressez sur F12), allez sur l'onglet Network et rafraichissez votre page. Vous constaterez toutes les requêtes effectuées par votre page. Filtrez les requêtes pour ne garder que les images et trouver celle qui se nomme mtracking.gif. A-t-elle le statut 200 ? Si ce n'est pas le cas, le lien de l'image vers votre compte Mautic est probablement incorrect.
 
-
-[Info about the Tracking Pixel](./../contacts/contact_monitoring.html)
+[Plus d'infos sur le pixel de tracking](./../contacts/contact_monitoring.html)

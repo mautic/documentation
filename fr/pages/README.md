@@ -1,7 +1,7 @@
-# Landing Pages
+# Pages d'atterrissage
 
-Pages within Mautic are a powerful tool for quickly creating compelling content with a single focus. Use pages for directing contacts through a form or providing a way to download an asset, or merely tracking interest in a particular subject.
+Les pages d'atterrissage Mautic sont un outil puissant pour créer rapidement une page attractive en y concentrant un sujet précis. Utilisez les pages d'atterrissage pour y envoyer vos visiteurs afin de leur faire soumettre un formulaire, télécharger un document ou déterminer leur centre d'intérêt.
 
-### Features of Landing Pages
+### Fonctionnalités des pages d'atterrissage
 
-There are many great features with Mautic landing pages. These pages allow you to create an A/B testing environment (more on this later), multilingual pages, and templated pages unique to a variety of pre-defined templates.
+Il y a de nombreuses fonctionnalités avec les pages d'atterrissage Mautic. Ces pages vous permettent de mettre en place de l'A/B testing, gérer du multilingue à travers des templates prédéfinis ou customisés à vos couleurs.

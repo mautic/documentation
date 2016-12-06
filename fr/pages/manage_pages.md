@@ -1,53 +1,52 @@
-# Manage Pages
+# Gestion des pages d'atterrissage
 
-### Page Details
+### Details des pages
 
-When viewing a page within Mautic you can find a tremendous amount of information on a single page overview.
+Quand vous visitez une page dans Mautic, vous pouvez consulter de nombreuses et riches informations en un coup d'oeil.
 
 ![](/pages/media/landing-page-overview.jpg)
 
-You can see the page description at the top below the page title. Quickly see charts with the page views, new vs. returning visitors, and the average time on page. These charts are updated in real-time based on traffic.
+Vous pouvez voir le titre de la page ainsi que sa description. En un coup d'oeil sur les graphiques, constatez le nombre d'impressions, le nombre de nouveaux visiteurs contre le nombre de visiteurs connus ainsi que le temps moyen passé sur la page par les visiteurs. Ces graphiques sont mis à jour en temps réel.
 
-On the right you will find a link which you can use to preview the page and a list of recent activities that are related to the page.
+Sur la droite, vous pouvez accéder à l'URL d'hébergement de la page, ainsi qu'à une URL de prévisualisation (utile lorsque votre page n'est pas encore publiée).
 
-Notice when viewing the page details you can select the Details tab located just below the description to expand the area and see more specific details.
+Notez que vous pouvez cliquer sur le bouton détails afin d'étendre une zone avec plus de détails.
 
 ![](/pages/media/page-details.gif)
 
-### Translations and Variants
+### Variantes et traductions
 
-As mentioned previously when viewing the page details you can also view the various translations and page variants which have been created. These variations are also useful when performing A/B testing.
+Comme mentionné plus tôt, vous pouvez également voir les informations sur les pages traduites dans d'autres langues et les variantes qui servent à l'A\/B testing.
 
-When creating/editing a landing page, there are the options to configure a language and translation parent. By selecting a translation parent, the current item is then considered to be a translation in the selected language of that parent item. 
+Lors de la création de la page d'atterrissage, vous avez la possibilité d'ajouter une langue et une taduction parente. En sélectionnant une traduction parente, cela vous permet d'ahouter une traduction enfante de la page en cours. Si le contact a une langue de préférence paramétrée dans son navigateur ou en local, la page d'atterrissage s'affichera dans la langue paramétrée si la variante existe. Autrement, les contacts verront la page dans la langue par défaut.
 
-If the contact has a preferred locale or browser set in an available translation, and that translation exists, the translated landing page will automatically display for that contact. A contact's preferred locale is automatically gleaned from the browser's settings but can be overridden by editing the contact's preferred locale profile field.
+Il est également possible de faire des traductions de versions A/B.
 
-It is also possible to have translations of A/B test variants.
+### Nouvelle page et édition de page
 
-### New/Edit Pages
-
-The page form allows you to create new pages and offers a number of fields for your convenience. You will notice most of them in the following screenshot.  In particular you will notice the Page Builder button on the top toolbar. This is where you will launch the page builder to easily create your page layouts.
+Lors de la création (ou la modification), vous accèderez à différents champs de paramétrage. Vous pouvez choisir des thèmes ou créer les votres pour pouvoir éditer cela sans développeur depuis le générateur de page.
 
 ![](/pages/media/landingpage-1.jpg)
 
-Every part of the template is editable via drag and drop.  Click in a text box to edit.  Click on an image to replace.  Once you're happy, just click "Close Builder" and you'll see a representation of the page.
+Chaque partie d'un thème est éditable en drag and drop.
+- Cliquez sur une boite de texte pour l'éditer
+- Cliquez sur une image pour la remplacer
+Une fois que vous êtes content, cliquez sur "fermer le générateur" et vous verrez un aperçu de la page.
 
 ![](/pages/media/landingpage-2.jpg)
 
-You can fine tune any aspect of the page via the Content tab and Source Code view.  You can even paste your own HTML inside.
+Vous pouvez toujours modifier encore plus en détail votre page avec l'onglet contenu ou en éditant directement le code source. Vous pouvez également importer votre propre HTML.
 
 ![](/pages/media/landingpage-3.jpg)
 
-You are also able to define a template to use with your page as well as the language of your page. Notice the convenience field where you can define the parent page as well. This allows you to link pages.
+Le générateur vous permet d'ajouter facilement des liens vers vos ressources, les autres pages d'atterrissage, et l'insertion des formulaires. Vous pouvez les insérer en utilisant les tokens habituels `{component=item}`, par exemple `{form=4}`. Une liste déroulante des valeurs possibles apparaitra lorsque vous commencerez à écrire `{`.
 
-The page builder provides quick and convenient access to assets, other landing pages, and forms. All those are accessible via tokens in format `{component=item}`, for example `{form=4}`. A drop-down with options will appear when you type `{` character and you can search for the right token by typing its name. For example if you type `{for`, it will suggest the right token for the a form which has "for" in its name and you can select it via keyboard or by clicking on it.
+### Dépublication d'une page
 
-### Unpublish a page
+Les pages peuvent être dépubliées et republiées plus tard en cliquant sur le boutton __publié/dépublié__ ou en configurant une date automatique de dépublication. Si votre page d'atterrissage est dépubliée et que vous souhaitez y accéder, vous arriverez sur une page 404.
 
-The pages can be unpublished and published again with a click of a button or by setting publish/unpublish date in the page configuration. Unpublishing a page means that contacts will see the 404 message (page not found) instead of the page itself.
+#### Redirection pour les pages dépubliées
 
-#### Redirect when a page is unpublished
+Mautic vous permet de configurer une redirection 301 (permanente) ou 302 (temporaire). La redirection fonctionnera seulement si la page d'atterrissage est dépubliée.
 
-Mautic allows you to configure a 301 (permanent) or a 302 (temporary) redirect. The redirects will work if the page is unpublished.
-
-Note: When you are logged in as a Mautic administrator, you will always see the page content even though it is unpublished. But if you log out of Mautic or open the page in an incognito window to emulate access of a normal contact, you will be able to see the 404 message or the redirect if configured any.
+Note : Si vous êtes connecté à votre compte Mautic, vous verez le contenu de la page d'atterrissage même si elle est désactivée.
