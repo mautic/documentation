@@ -1,19 +1,19 @@
-# Stages
+# Stages #
 
-### Stages Overview
+### Aperçu des stages ###
 
-Stages is a way to define the lifecycle of a contact. Creates stages based on your marketing stages, and move your contacts from stage to stage.
+Les stages sont un moyen de définir le cycle de vie (d'achat) du contact. Créez des stages en fonction de vos cycles de qualification marketing, et faites avancer les contacts de stage en stage.
 
-### Creating/Managing a Stage
+### Création/Gestion d'un stage ###
 
-To create a new stage, go to the stages menu identified by a tachometer. Click on the new button and fill in with you relevant data. 
+Afin de créer un nouveau stage, allez dans le menu stages. Cliquez sur le bouton nouveau (en haut à droite) et remplissez les informations demandées.
 
-Notice Mautic uses 'weight' for stages, this is a way to balance your contact's stages.  When moving contacts from stage to stage, this will make sure a contact doesn't go back to previous stages.
+A noter, Mautic utilise un 'poids', une pondération pour les stages, c'est ce qui va permettre de faire avancer les contacts à travers les stages. Quand un contact passe d'un stage à l'autre, cela assurera également que le contact ne retourne pas dans un stage passé (en fonction de la pondération).
 
-### Moving Contact's from stage to stage
+### Changez le stage d'un contact ###
 
-Use a campaign to move your contacts from stage to stage. When creating your campaign choose a _Move Contact to Stage_ action. So if a contact has been sent an email, or has opened an email, you can select to change the contac't stage based on any campaign criteria.
+Utilisez les campagnes pour déplacer vos contacts d'un stage à un autre. Vous y touverez une nouvelle action _Changer le stage du contact_. Ainsi, vous pourrez modifier le stage du contact en fonction de n'importe quelle action (comportemental) et n'importe quel critère (champ de la BDD).
 
-###Contact's Lifecycle
+### Cycle de vie d'un contact ###
 
-Create a lifecycle widget in your dashboard based on segments to also view on what stages contacts are in.
+Vous pouvez par la suite créer un widget sur votre tableau de bord, reprenant les informations liées aux stages et cela basé sur un segment (créez un segment avec tous vos contacts, ou sélectionnez un segment spécifique pour votre analyse).
