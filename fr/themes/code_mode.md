@@ -1,33 +1,29 @@
 # Code Mode
 
-Code Mode is an option available in the Email and Page edit form. It will allow you to create/insert/edit your content in HTML code. It's helpful for situations where you don't want to use a Mautic theme and you want to use HTML theme copied from 3rd party theme builder or if you enjoy editing HTML code so much.
+Le **mode code** est une option disponible dans l'éditeur de page d'atterrissage et d'email. Cela vous permet de créer/insérer/modifier un contenu en code HTML. Cela peut être utile lorsque vous ne souhaitez pas utiliser l'éditeur Mautic ou les thèmes en collant du code issu d'un outil tierce ou si vous aimez vraiment beaucoup tout faire à la main !
 
-Code Mode was introduced in Mautic 2.3.0 and replaced the full page Froala (WYSIWYG) editor which manipulated the HTML code in some cases. Code Mode will not modify any of the code you paste in. The other option to edit a page/email content is to use the Builder. It uses Froala editor only to edit the text/image content, not the full page, so it won't modify the page layout.
+Code Mode a été introduit en version de Mautic 2.3.0 en remplacant la page d'édition de Froala (WYSIWYG) qui interprétait légèrement le code HTML importé. Avec le mode code, le code importé n'est pas du tout modifié et enregistré tel quel.
 
-## Select the Code Mode
+## Sélectionner le Code Mode
 
-The Code Mode can be selected in the theme select after you create/edit the page/email. To open the Code Mode Builder after you select the Code Mode theme option, click the Builder button.
+Le Code Mode peut être sélectionné dans les thèmes lorsque vous créez un nouvel email. Une fois ce mode sélectionné, lancez le générateur d'email et vous pourrez tout faire de là.
 
 ### Limitations
 
-If you use a Mautic theme to create the page/email and you want to edit the HTML code of it in the Code Mode Buidler, you can do so, but you cannot switch back to the theme again. You will always have to edit the content in the Code Mode Builder. Selecting a theme will always refresh the content to the default theme HTML and so you'll lose your modifications.
+Si vous utilisez un thème Mautic et que vous souhaitez modifier le code HTML dans le générateur Code Mode, vous pouvez le faire, mais vous ne pourrez plus plus revenir sur l'édition du thème par la suite. Vous serez condamné à continuer à l'éditeur en mode code. Si vous sélectionnez un thème, cela va écraser le contenu déjà existant.
 
-![Select the Code Mode](/themes/media/code-mode-select.png)
+![Sélectionner le Code Mode](/themes/media/code-mode-select.png)
 
-## Edit the HTML content in the Code Mode Builder
+## Modifiation du contenu HTML dans le générateur Code Mode
 
-When the Code Mode Builder is opened, you can see the preview on the left, the HTML code editor on the right. The preview will automatically refresh every 10 seconds if some change has been made to the code.
+Une fois le générateur de code ouvert, vous verez la prévisualisation sur la gauche, et le code HTML sur la droite. La prévisualisation est mise à jour toutes les 10 secondes.
 
-### Mautic Tokens
+### Les tokens Mautic
 
-You can use the tokens in the Code Mode Builder when you type them directly. For example when you type `{contactfield=firstname}` or you can select them from the dropdown. The dropdown will open when you press `CTRL` + `SPACE BAR`. You can type to search for the token you wish to insert.
+Vous avez la possibilité d'utiliser les tokens dans le Code Mode en les écrivant directement. Par exemple, `{contactfield=firstname}`.
 
 ![Edit the HTML with Code Mode](/themes/media/code-mode-builder.png)
 
-### Media Manager
+### Gestion des medias
 
-There is a button at the top of code area where you can open the Media Manager to upload and/or select an image or other file. If you select a file, the URL of that file will be inserted to the current position of the cursor. Use this to create links and IMG tags.
-
-### Code Formatter
-
-It might happen that your older emails or pages appear as HTML code on one line. Or if you insert an HTML code with odd formatting, use the Format Code button. It will automatically to through the code and format it so it is easier to navigate in it.
+Il y a un bouton en haut de la zone de code pour ouvrir le gestionnaire des medias pour importer et/ou sélectionner une image ou d'autres fichiers. Si vous sélectionnez un fichier, l'URL du fichier sera insérée à l'endroit où se trouvait le curseur.
