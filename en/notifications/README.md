@@ -8,7 +8,7 @@ For more informations see [One Signal documentation](https//documentation.onesig
 
 ##### 1. Create [One Signal](https://onesignal.com/) account and app
 
-##### 2. Setup app  Website Push Platforms in you app
+##### 2. Setup app Website Push Platforms in you app
 
 ![](/notifications/notification-setup1.PNG)
 
@@ -22,7 +22,7 @@ Apple Safari (macOS) configuration example
 
 ##### 3. Setup Mautic
 
-Enable Web Notification and copy  keys from OneSignal to your Mautic > Setings > Configuration - Web Notification Settings tab
+Enable Web Notification and copy keys from OneSignal to your Mautic > Settings > Configuration - Web Notification Settings tab
 
 ![](/notifications/notification-setup4.PNG)
 
@@ -30,7 +30,7 @@ Enable Web Notification and copy  keys from OneSignal to your Mautic > Setings >
 
 ##### 4. Test
 
-All visitors with supported browser will be ask receive notificion on all you Mautic landing pages.  Create campaign and use Push Website notification action.
+All visitors with supported browser will be ask receive notification on all you Mautic landing pages. Create campaign and use Push Website notification action.
 
 #### Welcome Notifications
 
