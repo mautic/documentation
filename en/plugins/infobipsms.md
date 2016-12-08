@@ -4,7 +4,7 @@ This Plugin allows to Send Mobile Text Messages using InfoBip API.
 ### Requirements
 
 - Mautic installed on a publicly accessible URL.
-- Gmail account (for email tracking).
+- InfoBip account.
 
 ### Configure the plugin
 1. Put the InfoBipSmsBundle Folder in the mautic plugin's folder.
