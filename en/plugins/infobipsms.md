@@ -1,4 +1,4 @@
-# Gmail Plugin for Mautic
+# InfoBip Plugin for Mautic
 This Plugin allows to Send Mobile Text Messages using InfoBip API.
 
 ### Requirements
