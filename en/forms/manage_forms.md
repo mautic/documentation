@@ -10,7 +10,7 @@ The form overview provides a quick overview of the submissions received over a t
 
 A form can contain as many fields as needed. These fields can be laid out dynamically by the system or handled via HTML if you want more control.
 
-![](/forms/media/new-form.jpg)
+![](/forms/media/new-form.png)
 
 #### Page Breaks
 
