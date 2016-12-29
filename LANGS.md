@@ -1,10 +1,10 @@
 * [English](en)
+* [Français](fr)
 * [日本語](jp)
 
 <!--
 * [Deutsch](de)
 * [Español](es)
-* [Français](fr)
 * [Português](pt-br)
 * [Italiano](it)
 * [العربية](ar)

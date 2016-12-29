@@ -7,10 +7,10 @@ How frequently you run the cron jobs is up to you. Many shared hosts prefer that
 **It is HIGHLY recommended that you stagger the following required jobs so as to not run the exact same minute.**
 
 For instance:
-- 0,15,30,45 <— segments:update
-- 5,20,35,50 <— camaigns:update
-- 10,25,40,55 <— campaigns:trigger
-
+- 0,15,30,45 <— mautic:segments:update
+- 5,20,35,50 <— mautic:campaigns:update
+- 10,25,40,55 <— mautic:campaigns:trigger
+ 
 ## Required ##
 
 ### Segments ###

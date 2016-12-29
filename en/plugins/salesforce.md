@@ -12,22 +12,24 @@ There is an [official documentation](http://feedback.uservoice.com/knowledgebase
 
 Go to: *Setup* (top right corner) / Build (bottom left corner) - Create / Apps / Connected Apps / New
 
-![Salesforce CRM Create an App](/plugins/media/plugins-salesforce-create-app.png "Salesforce CRM Create an App")
+![Salesforce CRM Create an App](./../plugins/media/plugins-salesforce-create-app.png "Salesforce CRM Create an App")
 
 Create a new app like this:
-![Salesforce CRM Create an App form](/plugins/media/plugins-salesforce-create-app-form.png "Salesforce CRM Create an App form")
+![Salesforce CRM Create an App form](./../plugins/media/plugins-salesforce-create-app-form.png "Salesforce CRM Create an App form")
 Make sure the Selcected OAuth Scopes are *Access and manage your fata (api)* and *Perform requests on your behalf at any time (refresh_token, offline_access)*.
 
 Copy the Consumer Key and Secret.
 
-![Salesforce CRM Create an App keys](/plugins/media/plugins-salesforce-create-app-keys.png "Salesforce CRM Create an App keys")
+![Salesforce CRM Create an App keys](./../plugins/media/plugins-salesforce-create-app-keys.png "Salesforce CRM Create an App keys")
 
 ## Configure the Mautic Salesforce plugin
 
 Insert the keys to the Mautic Salesforce plugin and authorize it.
-![Salesforce CRM Authorize](/plugins/media/plugins-salesforce-authorize.png "Salesforce CRM Authorize")
+![Salesforce CRM Authorize](./../plugins/media/plugins-salesforce-authorize.png "Salesforce CRM Authorize")
 
 Configure the [field mapping](./../plugins/field_mapping.html).
+Formula fields from salesforce will be pulled and can be saved into a Mautic custome field.
+Salesforce lead's Id can be matched with a mautic custom field.
 
 ### Features
 Enabled features:
@@ -40,7 +42,9 @@ Pull leads is done through command line and it can be setup as a cronjob.
 Feature specific settings:
 Select the objects you wish to pull or push records from. You can push contacts to the Leads object in salesforce. you can also push activities (contact's timeline records) to a custom object in salesforce.
 
-Pulling records will be done from Leads and/or Contacts objects in records.
+Pulling records will be done from Leads and/or Contacts objects in records and Accounts from Salesforce will be pulled into Mautic companies.
+
+Updating of a Contact's Owner can be be enabled by turning on *Update Contact Owner*. This is not enabled by default. In order for a Contact in Mautic to match a User in Salesforce the email addresses in the two system must be identical.
 
 ### Command line script to pull records from Salesforce
 To pull records from salesforce you need to use a command from CLI. Use this command:
@@ -70,6 +74,9 @@ API names of fields:
 - WhoId\__c : Lookup(Lead)
 - MauticLead\__c : Number(18, 0) (External ID)
 - Mautic_url\__c : URL(255)
+- ReferenceId     : Text(255)
+
+
 
 ## Test the plugin
 
