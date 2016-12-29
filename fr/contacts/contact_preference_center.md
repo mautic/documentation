@@ -1,24 +1,24 @@
-# Manage Contact Preferences
+# Gestion des préférences de contact
 
-When managing a contact you can set the contacts preference of communication. You can access the contact's preference center when viewing a contact's profile. From the dropdown menu click on the preference menu. A new modal window should appear with a tab to set the preferred channels and frequency of contact, as well as the option to pause communication within a given period of time. The second time will give the option to add or remove the contact from global categories used in emails or categories. The third tab will allow to add or remove the contact from segments it belongs to.
+Lors de la gestion d'un contact, vous pouvez paramétrer les préférences de communication. Vous pouvez accéder au centre des préférences du contact en allant sur sa page d'aperçu. Dans le menu déroulant en haut à droite, cliquez sur le menu préférences. Une nouvelle fenêtre devrait apparaitre avec les préférences par canal et de fréquence du contact. Vous y trouverez également des options pour mettre les communications en pause pendant une période donnée. Le second onglet vous permettra d'ajouter ou retirer le contact des catégories utilisées dans les emails. Le 3e onglet vous permettra d'ajouter ou retirer un contact des segments auxquels il est lié.
 
-## Preferred Channels and Frequency
+## Canaux et fréquences préférés
 
 ![](/contacts/media/preferences.png)
-In this window you can enable/disable channels of communication, set the frequency of the communication via each channel enabled, and set one of the channels as a preferred channel.
+Dans cette fenêtre, vous pouvez activer/désactiver les canaux de communication, ainsi que paramétrer la fréquence de contact par canal activé, ainsi que paramétrer un canal favoris.
 
-To set a channel as a do not contact me through this channel, untick the tickbox next to the channel name in the first column. 
+Pour paramétrer désactiver la communication par un canal, décochez la case lié au canal en question.
 
-When a channel is selected, these will be used to send marketing messages if there is a message set for any of the channels selected. You can also set the frequency of the communication, as in this example the frequency is set to "Send me emails twice a day" but pause them during the "1st of november 2016 to the 30th of november 2016". Email is also set as the preferred channel, so if the same message is set for both email and sms, it will only send the email version of the message to the selected contact.
+Quand un canal est sélectionné, il sera utilisé pour envoyer les messages prévus dans ces canaux. Vous pouvez également paramétrer la fréquence de contact, dans cet exemple la fréquence est paramétrée à "M'envoyer des emails 2 fois par jour" mais les mettre en pause du "1er novembre 2016 au 30 novembre 2016". L'email est également paramétré comme canal favori, si un même message est envoyé par email et SMS, il ne partira qu'en version email pour ce contact.
 
-## Contact Categories
+## Catégories de contact
 ![](/contacts/media/categories.png)
-Use the categories tab to add or remove a contact from a global category. Global categories can be used in areas like emails, text messages, campaigns. In combination with the new Subscribed Categories segment filter, contacts can be given the choice to opt out of categorized communications.
+Utilisez l'onglet des catégories pour ajouter ou retirer un contact d'une catégorie globale. Les catégories gloables sont utilisées dans les emails, SMS et campagnes. En combinaison avec les filtres de segment "catégories souscrites", il peut être donné aux contacts le choix de se désabonner de cette catégorie de communication.
 
-## Contact Segments
+## Segments de contact
 ![](/contacts/media/segments.png)
-Use the segments tab to add or remove a contact from a segment. Segments are used as a source for campaigns and emails. Any contact in a particular segment will part of a campaign that has that segment as the source. You can also use a standalone email manually to a segment. If a user has opted out of a segment it will no longer receive campaign actions or messages sent to that segment.
+Utilisez l'onglet segments pour ajouter ou retirer un contact d'un segment. Les segments sont utilisés comme source pour vos campagnes et vos emails. N'importe quel contact dans un segment spécifique fera parti de la campagne qui a ce segment comme source. Vous pouvez également utiliser les segments comme source dans les emails de segment. Si un contact s'est désinscrit d'un segment, il ne recevra plus les messages liés à ce segment.
 
-## Contact's Unsubscribe Email Preferences
+## Gestion des préférences d'abonnement
 ![](/contacts/media/email-unsubscribe-settings.png)
-The contact's preferences can be presented to the user in the unsubscribe page by selecting "Show contact preference settings" in the email configuration. You may also choose to hide or show different segments of the user preferences. If the any of these areas is set to no, it will hide it from the contact's personal preferences page. The default unsubscribe message is shown if the preference setting option is set to no.
+Les préférences du contact peuvent être montrées au contact sur la page de désinscription en sélectionnant "Montrer les paramères de préférences du contact" dans la configuration email. Vous pourrez également afficher ou masquer certains segments dans les préférences. Si n'importe quelle de ces zones est paramétrée à non, cela le masquera sur la page de préférence du contact.
