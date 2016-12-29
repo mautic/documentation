@@ -1,22 +1,22 @@
-# Mautic - Clearbit plugin
+# Plugin Mautic - Clearbit
 
-This plugin can:
+Ce plugin permet de :
 
-- Pull data from Clearbit via the API about contacts and companies into Mautic.
+- Récupérer les données depuis Clearbit par l'API contacts et sociétés dans Mautic.
 
-### Requirements
+### Pré-requis
 
-- Mautic installed on a publicly accessible URL. This plugin won't work on a localhost because callbacks from Clearbit to Mautic are necessary.
-- Get a [Clearbit API key](https://dashboard.clearbit.com/signup)
+- Une instance Mautic installée sur une URL publiquement accessible. Ce plugin ne fonctionne pas en localhost (des callbacks depuis Clearbit vers Mautic sont nécessaires).
+- Obtenir une [clé API Clearbit](https://dashboard.clearbit.com/signup)
 
-### Authorize the plugin
+### Autorisation du plugin
 ![image](https://cloud.githubusercontent.com/assets/2924026/20487375/ad68a34a-afc8-11e6-8c49-776579476817.png)
 
-### Usage
-On the contacts and on the companies pages, there are two buttons: One on the row dropdown menu, and another one on the toolbar at the top:
+### Utilisation
+Sur les pages contacts et sociétés, il y a deux boutons : un sur le menu de liste déroulante, et un autre dans la bare d'outil en haut :
 ![image](https://cloud.githubusercontent.com/assets/2924026/20488164/b0337e3a-afcb-11e6-8994-c213c9852632.png)
 
-When clicking one of those buttons a window will pop up to confirm the action:
+Lors du clic sur un de ces boutons, une fenêtre s'ouvrira:
 ![image](https://cloud.githubusercontent.com/assets/2924026/20521597/8f7e8ec2-b071-11e6-99c2-590cb90c227f.png)
 
-A few moments later, if information was found, the contact/company details will be updated.
+Quelques instants plus tard, si des informations ont été trouvées, les détails des contacts et sociétés sertont téléchargé dans votre instance Mautic.
