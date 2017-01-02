@@ -18,6 +18,10 @@ Contact can be imported via user interface from a CSV file.
 
 - The CSV file must be in UTF8 encoding. Other encoding may cause troubles while importing. Read documentation of your spreadsheet program on how to export a spreadsheet to UTF8. Google Sheets encodes to UTF8 automatically, Libre/Open Office let you choose before export.
 
+- In case of boolean values like `doNotEmail` or custom boolean field, use values `true`, `1`, `on` or `yes` as TRUE value. Anything else will be considered false.
+
+- In case of date/time values, use `YYYY-mm-dd HH:ii:ss` format i.e. `2017:01:02 19:08:00`. Other formats may work too, but it may cause troubles.
+
 ## Tips
 
 - Name the column names the same as Mautic contact custom field names. This way Mautic automatically pre-selects the mapping for you. For example if you name the first name column as `firstname`, this field will be mapped automatically.
