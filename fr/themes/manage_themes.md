@@ -1,14 +1,14 @@
-# Manage themes
+# Gestion des thèmes
 
-## Theme Manager
+## Gestionnaire de thème
 
-Since Mautic 2.1.0, the Theme Manager was added and you can access it via the Admin Menu (click the cog icon in the top right corner to open it), select the Theme menu item.
+Depuis la version de Mautic 2.1.0, le gestionnaire de thèmes a été ajouté et vous pouvez directement les gérer depuis l'interface dans le menu de configuration en haut à droite.
 
-The table of installed themes shows you the name of the theme, the author name and the link to his website if provided and what features the theme provide. There is also preview (if provided) to see the screenshot of the theme under the arrow next to the theme name.
+Le tableau des thèmes installés vous montre le nom des thèmes, les auteurs, le lien vers son site s'il est renseigné. Vous pouvez également le prévisualiser (si renseigné) pour voir un screenshot du thème.
 
-### Install new theme
+### Installer un nouveau thème
 
-A new theme can be installed as a zip package. The zip package must have the same structure has the themes preinstalled at Mautic. Than means there must be the config.json file present in the root folder of the zip package. More on that can be found in the [developer documentation](https://developer.mautic.org/#theme-directory-structure).
+Un nouveau thème peut être installé avec un zip. Le fichir zip doit avoir la même structure que les thèmes déjà pré-installés dans Mautic. Il vous faudra donc vous assurer d'avoir le fichier `config.json` à la racine du dossier de votre zip. Vous pouvez en trouver plus dans la [documentation développeur](https://developer.mautic.org/#theme-directory-structure).
 
 If you have the theme zip package either created by yourself or downloaded from a theme provider, in the top right corner of the Themes page is the upload form. Click the "Choose File" button to choose the zip file, then click Install. The notice will appear if the installation was successful and if so, the new theme appears in the table of currently installed themes.
 
@@ -39,6 +39,3 @@ From the configuration screen, the available themes will be listed in a dropdown
 Themes are available for emails and landing pages on each one's main editing page
 
 ![Select a theme for a new page](/themes/media/themes2.jpg)
-
-
-
