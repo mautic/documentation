@@ -8,6 +8,7 @@
     * [Manage Contacts](contacts/managing_contacts.md)
         * [Contact Overview](contacts/contact_overview.md)
         * [Contact Monitoring](contacts/contact_monitoring.md)
+    * [Import Contacts](contacts/import.md)
     * [Manage Segments](contacts/manage_segments.md)
     * [Manage Fields](contacts/manage_fields.md)
     * [Frequency Rules](contacts/contact_frequency_rules.md)
