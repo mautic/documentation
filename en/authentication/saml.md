@@ -31,4 +31,7 @@ Once Mautic is configured with the IDP and the IDP with Mautic, Mautic will be d
 
 Login to the IDP where you'll be redirected back to Mautic. If the exchange is successful, the user will be created, if it does not already exist, and logged in.
 
+## Disable SAML
+To disable SAML, simly click the `Remove` link to the right of the `Identity provider metadata file` label.  
+
 ![](/authentication/media/saml.png)
