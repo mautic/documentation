@@ -9,7 +9,7 @@ This book serves as the [documentation for Mautic](https://www.mautic.org/docs/i
 
 ### How to contribute to the docs
 
-This repository is the source code for [Gitbook](https://www.gitbook.com/) published at [www.mautic.org/docs](https://www.mautic.org/docs/index.html). The source code is shared here on GitHub so anyone could contribute to the documentation the same way the programmers do with the actual Mautic code. 
+This repository is the source code for [Gitbook](https://www.gitbook.com/) published at [www.mautic.org/docs](https://www.mautic.org/docs/index.html). The source code is shared here on GitHub so anyone could contribute to the documentation the same way the programmers do with the actual Mautic code.
 
 #### Why is git used for the documentation
 
@@ -23,7 +23,7 @@ Although some git knowledge is required to clone, modify, commit and push change
 
 1. [Fork](https://github.com/mautic/documentation#fork-destination-box) this repository under your account so you'd have permission to edit.
 2. Select a file to edit. The file structure is explained below. Now, let's edit the *README.md* file to show the principles. Click on it.
-3. The content of *README.md* should be visible and the *Edit* buton (the pencil icon) above as well. Hit it.
+3. The content of *README.md* should be visible and the *Edit* button (the pencil icon) above as well. Hit it.
 4. The content is written in [Markdown markup](https://daringfireball.net/projects/markdown/). Very simple text based formating.
 5. Make a change to the file. For example add to the end `This is my first contribution`.
 6. When you made a change, scroll down and notice the form called *Commit changes*. This is important. To save a change, you have to describe what you've changed and why. Write for example `A new line added for testing purposes`. Do not save yet!
