@@ -2,7 +2,7 @@
 
 Cette fonctionnalité a été ajoutée à Mautic en version 2.1.0.
 
-Progressive profiling makes your forms smarter by asking for the most important information and don't have yet at the time. This way your contacts won't feel overwhelmed by long forms and saves time by answering questions Mautic already knows the answer to. Progressive Profiling lets you improve the form conversion rate.
+Le progressive profiling rend vos formulaires plus intelligents en demandant les informations encore inconnues sur un contact. Ainsi, vos contacts ne se sentirons sur-sollicités à travers de longs formulaires et permettant de récupérer des informations que Mauic possède déjà. Le progressive profiling vous aide à augmenter votre taux de conversion.
 
 ## Configuration
 

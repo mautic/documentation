@@ -1,52 +1,52 @@
-# Translations
+# Traductions
 
-Mautic is used by world-wide community and therefore it can be localized to any language. If you cannot find your language yet, take a look to the section about how to translate Mautic.
+Mautic est utilisé par une communauté planétaire et peut donc pas conséquence être utilisé dans n'importe quelle langue. Si vous ne trouvez pas votre langue, n'hésitez pas à contribuer en regardant la section "comment traduire Mautic".
 
-## How to select a language in Mautic
+## Comment sélectionner une langue dans Mautic
 
-Language can be selected on 2 places.
+Cela peut être effectué à deux endroits.
 
-### 1. Default language
+### 1. Langue pas défaut
 
-In the Mautic configuration can be configured the default language. It is pre-set to `English - United States` by default. Every user will see this language if he doesn't configure her language in hers profile.
+Dans la configuration Mautic, vous pouvez choisir une langue par défaut. Par défaut, c'est en `English - United States`. Chaque utilisateur aura la plateforme en cette langue s'il ne va pas modifier sa propre langue utilisateur. Pour modifier la langue par défaut :
 
-1. Open the right admin menu by clicking on the cog icon in the top right corner.
-2. Select the *Configuration* menu item.
-3. Select the default language.
-4. Save the configuration.
+1. Ouvrez le panneau d'administration en haut à droite de la fenêtre de votre navigateur.
+2. Sélectionnez le menu *Configuration*.
+3. Sélectionnez la langue par défaut de votre choix.
+4. Sauvegardez.
 
 ![Select the default language](/translations/media/translations-select-language.png "Select the default language")
 
-### 2. User language
+### 2. Langue de l'utilisateur
 
-User can define hers own language and override the default language. This let a multilangual team work on the same Mautic instance.
+L'utilisateur peut définir sa propre langue qui prendra le dessus sur la langue par défaut de l'application. Cela permet à une équipe multilingue de collaborer au mieux. Pour procéder ainsi :
 
-1. Open the user menu by clicking on the user name in the top right corner.
-2. Click on *Account* menu item.
-3. Select the user language.
-4. Save the user profile.
+1. Ouvrez le menu utilisateur en haut à droite.
+2. Cliquez sur *Account*.
+3. Sélectionnez la langue de votre choix.
+4. Sauvegardez.
 
 ![Select the user language](/translations/media/translations-select-user-language.png "Select the user language")
 
-## How to translate Mautic
+## Comment traduire Mautic
 
-Mautic can be translated to any language. As Mautic is a community project, it can be translated by any community member to any language. Translations are made in the [Transifex](https://www.transifex.com/mautic/mautic/) web app.
+Mautic peut être traduit dans n'importe quelle langue. Comme Mautic est un projet communautaire, il peut ête traduit par n'import quel membre de la communauté. Les traductions s'effectuent depuis l'application [Transifex](https://www.transifex.com/mautic/mautic/).
 
-1. Create an account at [Transifex](https://www.transifex.com/mautic/mautic/) if you don't have one already.
-2. Take a look at the [list of languages](https://www.transifex.com/mautic/mautic/) which were created for the project already.
-3. Create a language if your language is missing or apply for an existing language.
+1. Créez une compte sur [Transifex](https://www.transifex.com/mautic/mautic/) si vous n'en avez pas déjà un.
+2. Consultez la [liste des langues](https://www.transifex.com/mautic/mautic/) déjà créées pour le projet.
+3. Créez une langue si elle n'est pas déjà existante, ou contribuez à une langue existante.
 
-Take a look at official [Transifex Documentation](http://docs.transifex.com/tutorials/txeditor/) if you have any questions about the translation process.
+Consultez la [documentation Transifex](http://docs.transifex.com/tutorials/txeditor/) si vous vous posez des questions sur le processus de traduction.
 
-## How to update a language
+## Comment mettre à jour une langue
 
-A language is downloaded automatically every time the configuration is saved and the language hasn't been downloaded already. The tricky part is that Mautic won't download a language if it has been already downloaded. So to update a language:
+La langue est mise à jour à chaque fois que la configuration est sauvegardée ou si cette langue n'avais auparavant jamais été téléchargée. En revanche, Mautic ne téléchargera pas la langue si elle a déjà été téléchargée. Pour mettre à jour une langue, procédez ainsi :
 
-1. Open the Mautic file system via SFTP or SSH.
-2. In the Mautic root folder you should see the folder called *translations*. Open it.
-3. In the *translations* folder are the languages stored. Remove the folder of the language you want to update.
-4. Go go Mautic configuration and save it with the language you've deleted.
+1. Ouvrez les fichiers système Mautic via le SFTP ou le SSH.
+2. Dans le dossier root de Mautic, vous devriez voir un fichier nommé *translations*. Ouvrez le.
+3. Dans ce dossier *translations* vous touverez les langues stockées. Supprimez les dossiers des langues que vous souhaitez mettre à jour.
+4. Rendez vous sur votre instance Mautic dans la configuration et sauvegardez avec la langue supprimée.
 
-The language should be downloaded again with the latest translations. The translations are generated from Transifex once a day.
+La langue devrait être téléchargée à nouveau avec les traductions les plus récentes. Les traductions sont générées par Transifex une fois par jour.
 
-If you have any questions about translations, join the community in the [Slack #Translations channel](https://www.mautic.org/slack/).
+Si vous avez des questions à propos des traductions, rejoignez la communauté sur [Slack channel #Translations](https://www.mautic.org/slack/).

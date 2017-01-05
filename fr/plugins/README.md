@@ -1,6 +1,6 @@
 # Plugins
 
-Les plugins Automation sont installables sur votre compte Mautic. Si vous souhaitez développer un nouveau plugin Mautic, lisez cette documentation : [documentation développeur](https://developer.mautic.org/#plugins).
+Les plugins sont installables sur votre compte Mautic. Si vous souhaitez développer un nouveau plugin Mautic, lisez cette documentation : [documentation développeur](https://developer.mautic.org/#plugins).
 
 Vous pouvez trouver les Plugins dans le menu d'aministration en haut à droite.
 

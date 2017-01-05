@@ -1,32 +1,32 @@
-# Theme structure
+# Structure des thèmes
 
-## Folder structure
+## Architecture des dossiers
 
-Themes are located inside individual folders - one per theme - within the directory structure of a Mautic installation.  This folder should be accessed using a file transfer system such as FTP or SSH.
+Un thème doit se situer dans un dossier propre qui porte son nom (un par thème). Le fichier doit être envoyé dans votre instance Mautic via transfert FTP ou par import [depuis l'interface](theme_structure.md) (depuis Mautic 2.2.0).
 
 ![Theme folder structure](/themes/media/themes-folderstructure.png "Theme Folder Structure")
 
-## File structure
+## Structure des fichiers
 
-Mautic themes generally follow a similar structure, as can be seen in the themes which ship with a basic installation.
+Les thèmes Mautic ont généralement une structure similaire, comme vous pouvez le constater sur les thèmes pré-existants sur votre instance Mautic.
 
 ![Theme file structure](/themes/media/themes-filestructure.png "Theme File Structure")
 
-Within the theme folder there are subfolders which contain the CSS files, PHP files, and in some cases, image files.  There is also a config.php file which contains the base settings for the theme.
+Dans le dossier du thème, il y a un sous dossier qui contient les fichiers CSS, les fichiers PHP, et parfois des images.  Il y également le fichier config.php qui contient les paramétrages basiques du thème.
 
 ### Config.php
 
-The configuration file includes an array which specifies the name of the theme, features available (e.g. landing page template, email template, form template etc) and the positions which are available in the landing page and email templates to be used.
+La configuration du fichier contient un tableau qui spécifie le nom du thème, les fonctionnalités concernées (ex. page d'atterrissage, email, formulaire, etc.) et les zones éditables dans les différents thèmes.
 
 ### CSS
-Within the CSS folder are contained any stylesheets which are required by the theme, usually named according to the theme name - for example, mauve.css.
+Dans le dossier CSS, vous y placerez les feuilles de style requises dans les thèmes, gardez le nom du fichier en correspondance avec le nom du thème pour plus de commodités.
 
-Styling used in themes can be adjusted and altered, however it is sensible to clone the theme and rename it, making edits in the clone, rather than edit the core files directly.
+Le style utilisé dans les thèmes peut être ajusté et modifié, en revanche, nous vous recommandons de changer le nom du thème à chaque version (après clone) pour une meilleure gestion des problématiques de cache.
 
 ### HTML
-The HTML folder contains the files which control the layout of the different aspects of Mautic.
+Le dossier HTML contient les fichiers de structure des thèmes.
 
-Generally a theme will include the following files:
+Vous pouvez y retrouver les fichiers suivants :
 
 * base.html.php
 * email.html.php
@@ -35,20 +35,19 @@ Generally a theme will include the following files:
 * page.html.php
 
 #### base.html.php
-This file contains the basic structural layout for landing pages, including the <head></head> tags, and importing any stylesheets and javascript that may be required.
+Ce fichier contient la structure de base pour les pages d'atterrissage, incluant les balises <head></head>, et la gestion des fichiers de styles et javascript liés.
 
 #### email.html.php
-This file contains the structural layout and inline styling which controls the look and feel of emails.
+Ce fichier contient la structure et le style inline qui sera généré dans votre éditeur d'email utilisant ce style.
 
 #### form.html.php
-This file controls the layout, look and feel of forms which are associated with the theme, including semantic markup.
+Ce fichier contient la structure et la forme des formulaires qui sont associés au thème.
 
 #### message.html.php
-This file is used to display messages - such as the post-submission messages on a form.
+Ce fichier sert à afficher les messages d'alerte - comme les messages d'après soumission de formulaire.
 
 #### page.html.php
-This file controls the layout, position and semantic markup for landing pages.
+Ce fichier contrôle la forme et la gestion des zones pour les pages d'atterrissage.
 
 ### Images
-If images are used within a theme, they can be stored in the images folder.  This folder may not be present if images are not being used by a theme.
-
+Si des images sont utilisées dans votre thème, elles peuvent être hébergées dans un dossier dans le thème. Ce fichier ne doit pas exister si vous n'utilisez pas d'images dans le thème.

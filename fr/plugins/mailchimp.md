@@ -1,41 +1,37 @@
-# MailChimp integration
+# Plugin MailChimp
 
-Mautic can send contacts to MailChimp upon some contact's action or when it gain some point limit.
+Mautic peut envoyer les contacts dans MailChimp avec l'action *Envoyer le contact dans l'intégration* que vous pouvez retrouver dans les campagnes, les formulaires et les délencheurs de points.
 
-**Version notes**
-- For Mautic 1.2.2 and older, an MailChimp app has to be created and the authentication is made via oAuth2. Client key and secret credentians are needed for authentication. Also SSL (https) connection is required.
-- For Mautic 1.2.3 and later, the authentication has been changed to the API key. This documentation covers this option. This plugin is backward compatible. If the client ID is filled, the plugin will use oAuth2. If the client ID is empty, the plugin will let you insert the API key.
+## Authorisation
 
-## Authorize
+### Obtenir la clé API MailChimp
 
-### Get MailChimp API key
-
-1. Create a MailChimp account if you don't have one already.
-2. Go to *Account* / *Extras* / *API Keys* and create a new one.
-3. Copy the created API Key.
+1. Créez un compte MailChimp si vous n'en avez pas déjà un.
+2. Allez dans *Account* / *Extras* / *API Keys* et créez une nouvelle clé API.
+3. Copiez les informations de la clé créée.
 
 ![MailChimp - create a API Key](/plugins/media/plugins-mailchimp-create-api-key.png "MailChimp - create a API Key")
 ![MailChimp - copy the API Key](/plugins/media/plugins-mailchimp-copy-api-key.png "MailChimp - copy the API Key")
 
-### Authorize Mautic - MailChimp plugin
+### Authorisation du plugin Mautic - MailChimp
 
-Fill in the **username** you use to log in to MailChimp and the **API key**. Save the plugin. 
+Renseignez le **username** afin de vous connecter avec votre compte MailChimp ainsi que la **clé API**. Sauvegardez.
 
-## Configure the plugin
+## Configurer le plugin
 
-Navigate to the *Features* tab in the plugin configuration modal box. You should see this note:
+Allez dans l'onglet *Fonctionnalités* du plugin. Vous devriez voir ce message :
 
 > The Contact Field Mapping tab will appear after selecting a segment and will update after changing the selected segment.
 
 ![MailChimp Plugin configuration](/plugins/media/plugins-mailchimp-configure.png "MailChimp Plugin configuration")
 
-Select the segment then. If you don't have a segment in MailChimp created yet, go to *MailChimp dashboard* / *Segments* / *Create List* and create one. Then save the plugin configuration and open it again. The *Contact Field Mapping* tab should appear now. Configure the [field mapping](./../plugins/field_mapping.html).
+Sélectionnez alors un segment. Si vous n'avez pas de segment dans MailChimp, allez dans *MailChimp dashboard* / *Segments* / *Create List* et créez en un nouveau. Sauvegardez la configuration du plugin et ouvrez le à nouveau. L'onglet de *Mapping des champs du contact* devrait maintenant s'afficher. Configurez la [mapping des champs](./../plugins/field_mapping.html).
 
-Other configuration options are:
-- **Push contacts to this integration** - This option is checked by default. If you uncheck it, the plugin will not push contacts to MailChimp any more.
-- **Enable double opt in** - If MailChimp should send a confirmation email to the contacts added by this plugin. The contacts will have to confirm that they really want to be added to the segment.
-- **Send welcome email** - Whether MailChimp should sent the welcome email.
+Les autres options de configuration sont :
+- **Envoyer le contact vers l'intégration** - Cette option est activée par défaut. Si vous la désactivez, le plugin n'enverra plus les contacts vers MailChimp.
+- **Activer double opt in** - Si MailChimp soit envoyer un email de confirmation lorsque le contact passe dans cette synchronisation. Le contact devra par cet email confirmet qu'il souhaite réellement rentrer dans le segment MailChimp.
+- **Envoyer un email de bienvenue** - Si MailChimp doit envoyer un email de bienvenue au contact synchronisé.
 
-## Test the plugin
+## Tester le plugin
 
-Follow [these steps](./../plugins/integration_test.html) to test the integration.
+Voir les [étapes ici](./../plugins/integration_test.html) pour tester l'intégration.
