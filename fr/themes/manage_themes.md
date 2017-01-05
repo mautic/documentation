@@ -10,32 +10,31 @@ Le tableau des thèmes installés vous montre le nom des thèmes, les auteurs, l
 
 Un nouveau thème peut être installé avec un zip. Le fichir zip doit avoir la même structure que les thèmes déjà pré-installés dans Mautic. Il vous faudra donc vous assurer d'avoir le fichier `config.json` à la racine du dossier de votre zip. Vous pouvez en trouver plus dans la [documentation développeur](https://developer.mautic.org/#theme-directory-structure).
 
-If you have the theme zip package either created by yourself or downloaded from a theme provider, in the top right corner of the Themes page is the upload form. Click the "Choose File" button to choose the zip file, then click Install. The notice will appear if the installation was successful and if so, the new theme appears in the table of currently installed themes.
+Si votre thème est prêt en zip, vous pouvez le charger sur votre compt Mautic depuis le panneau de configuration. Cliquez sur le bouton "Choisir le fichier" pour sélectionner votre zip, puis cliquez sur Installer. Vous serez averti si l'installation a réussi ou échoué, le nouveau thème apparait dans le tableau des thèmes.
 
-### Download an existing theme
+### Télécharger un thème existant
 
-If you want to create your own theme, the simplest way to do that is to download and existing theme and modify it. The download option is in the drop down menu next to every theme in the Theme Manager table.
+Si vous souhaitez créer votre propre thème, le plus simple est de télécharger un thème existant et de le modifier. L'option de téléchargement est disponible dans la liste déroulante à côté de chaque thème dans le tableau des thèmes.
 
-### Update an old theme
+### Mettre à jour un ancien thème
 
-The old theme files will be overwritten by the new one when installing a theme which already exists in your Mautic. Therefore, the theme updates can be also done by the Theme Manager's Install form.
+Les anciens fichier de thème sont écrasés par les nouveaux lorsque vous l'importer avec le même nom.
+Les thèmes pré-installés ne peuvent pas être écrasés car ces modifications ne seraient pas sauvegardées après les mises à jour.
 
-The pre-installed themes cannot be overwritten because the changes would return again after a Mautic update.
+### Supprimer un thème
 
-### Delete a theme
+Aller dans le gestionnaire de thèmes, cochez le thème que vous souhaitez supprimer et puis cliquez sur le bouton rouge de suppression.
 
-Go to the Theme Manager, check what theme(s) you want to delete and then click the red button above the theme table to delete them.
+Les thèmes pré-installés ne peuvent pas être supprimés car ils reviendraient après chaque mise à jour de votre compte Mautic.
 
-The pre-installed themes cannot be deleted because they would appear again after a Mautic update.
+## Choisir un thème par défaut
 
-## Assigning a default theme
+Il est possible de choisi un thème par défaut sur votr instance Mautic en modifier la configuration générale. Pour procéder ainsi, vous devais avoir les droits vous permettant de le faire. Cliquez sur le bouton d'administration en haut à droite de votre écran, et cliquez sur 'Configuration'.
 
-It is possible to assign a default theme to a Mautic instance by editing the global configuration.  To access the global configuration you must be logged in with sufficient access.  Click on the cog icon beside the logged in user, and select 'Configuration'.
-
-From the configuration screen, the available themes will be listed in a dropdown box, which can be selected.  On saving, this setting will apply for all resources which do not have a theme explicitly specified.
+Depuis cet écran, les thèmes disponible sont affichés dans une liste déroulante qui peut être sélectionnée. En sauvegardant, vous appliquerez le thème choisi à tous les objets n'ayant pas de thème attribué.
 
 ![Configure themes under Administration Settings->System Settings](/themes/media/theme-config.jpg)
 
-Themes are available for emails and landing pages on each one's main editing page
+Les thèmes sont disponibles pour les emails et les pages d'atterrissage sur la page principale d'édition.
 
 ![Select a theme for a new page](/themes/media/themes2.jpg)
