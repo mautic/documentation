@@ -71,7 +71,7 @@ php /path/to/mautic/app/console mautic:email:fetch
 
 ### Social Monitoring ###
 
-If using the [Social Monitoring](./../social-monitoring.html),
+If using the [Social Monitoring](./../social-monitoring/index.html),
 
 ```
 php /path/to/mautic/app/console mautic:social:monitoring
@@ -87,7 +87,7 @@ php /path/to/mautic/app/console mautic:webhooks:process
 
 ### Update MaxMind GeoLite2 IP Database
 
-Mautic uses [MaxMind's](http://www.maxmind.com) GeoLite2 IP database by default. The database is licensed under the (Creative Commons Attribution-ShareAlike 3.0 Unported License)[http://creativecommons.org/licenses/by-sa/3.0/] and thus cannot be packaged with Mautic. The database can be downloaded manually through Mautic's Configuration or the following script can be used as a cron job to automatically download updates. (MaxMind updates their database the first Tuesday of the month).
+Mautic uses [MaxMind's](http://www.maxmind.com) GeoLite2 IP database by default. The database is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/) and thus cannot be packaged with Mautic. The database can be downloaded manually through Mautic's Configuration or the following script can be used as a cron job to automatically download updates. (MaxMind updates their database the first Tuesday of the month).
 
 ```
 php /path/to/mautic/app/console mautic:iplookup:download
