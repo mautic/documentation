@@ -9,7 +9,7 @@ This book serves as the [documentation for Mautic](https://www.mautic.org/docs/i
 
 ### How to contribute to the docs
 
-This repository is the source code for [Gitbook](https://www.gitbook.com/) published at [www.mautic.org/docs](https://www.mautic.org/docs/index.html). The source code is shared here on GitHub so anyone could contribute to the documentation the same way the programmers do with the actual Mautic code. 
+This repository is the source code for [Gitbook](https://www.gitbook.com/) published at [www.mautic.org/docs](https://www.mautic.org/docs/index.html). The source code is shared [here on GitHub](https://github.com/mautic/documentation) so anyone could contribute to the documentation the same way the programmers do with the actual Mautic code. 
 
 #### Why is git used for the documentation
 
