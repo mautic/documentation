@@ -19,4 +19,4 @@ The process is the same for Twitter mentions.
 
 As people use the hashtag or mention that you're monitoring, you'll see them being added to your contact list.  From there you can use that information in a Campaign.
 
-NOTE : You may configure the Twitter plugin and setup the social CRON to make it work. More information about [Twitter plugin](../plugins/twitter.md)
+NOTE : You may configure the Twitter plugin and setup the social [CRON](../plugins/twitter.md) to make it work. More information about [Twitter plugin](../setup/cron_jobs.md)
