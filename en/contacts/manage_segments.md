@@ -53,3 +53,20 @@ manually added will remain part of the list regardless of filters.
 
 In addition to segments you can also manually add any contact to a list by
 clicking the Preferences button at the segments tab, use the dropdown to select a segment and add the contact to it or click on the x next to a segment in the input field to remove the contact.
+
+### Delete all contacts in a segment
+
+Filter the contacts in the segment. The batch delete action in the contact table allow to delete maximally 100 contacts at one time. This is a performance precaution since deleting more contacts at one time could cause issues. This feature can be used for hundreds of contacts.
+
+![](/contacts/media/mautic-contact-batch-delete.png)
+
+But deleting thousands of contacts this way in one segment will become a tedious task. Luckily, there is a trick how to let the background workers do the job for you.
+
+1. Create a simple campaign which have the segment as the source \
+2. Use the [Delete contact action](./../campaign/campaign_events.html#delete-contact). 
+
+This way the `mautic:campaign:update` and `mautic:campaign:trigger` commands will delete all the contacts in the segment. As well as all the contacts which will be added to the segment in the future. Everything is done automatically in the background. The cron jobs must be configured. However, be aware that when a contact is deleted, there is no way to get it back.
+
+![](/contacts/media/mautic-delete-contacts-in-segment.png)
+
+
