@@ -1,17 +1,13 @@
-## How to test an integration
+## Comment tester un intégration
 
-If you want to test an integration plugin to ensure that it is configured properly, you have 3 options how to do that. A contact can be pushed to integration via these places:
+Si vous souhaitez tester un plugin d'intégration afin de vous assurer qu'il est configuré correctement, vous avez 3 options pour le faire. Une contact peut être poussé dans une intégration depuis ces 3 actions :
 
-- The Campaign Builder has the *Push contact to integration* action which can be used in the Campaign dripflow.
-- The Standalone Form has the *Push contact to integration* action which can be used after a standalone form is submitted.
-- The Point Trigger has the *Push contact to integration* action which can be triggered when a contact achieves some point limit.
+- L'éditeur de campagne a l'action *Envoyer le contact dans l'intégration* à utiliser dans votre scénario.
+- Les formulaires ont l'action *Envoyer le contact dans l'intégration* à utiliser après la soumission du formulaire.
+- Les déclencheur de points ont l'action *Envoyer le contact dans l'intégration* lorsqu'un contact a passé un certain nombre de points.
 
-Use any of those triggers to test the plugin and see if the contact appears in the integration. Here is how the Standalone Form action can be configured:
-
-![Push to Hubspot CRM form action](/plugins/media/plugins-push-to-hubspot-crm-form-action.png "Push to Hubspot CRM form action")
-
-After you have your form with some fields (for example an email and a first name field) and the Push to an integration (e.g. Hubspot CRM) action, go to the form public URL at http://[yourmautic]/form/[formID], fill in some sample contact information and submit it. Then check the integration if the new contact has been created.
+Utilisez une de ces phases pour déclencher la synchronisation avec l'intégration et vérifier si le contact est bien arrivé dans l'application de l'intégration.
 
 ## Troubleshooting
 
-If the first name value hasn't been transferred, make sure you mapped the form field value to the contact field value in the form field configuration.
+Si la valeu d'un champ n'est pas envoyée, assurez vous d'avoir correctement fait le mapping des champs dans la configuration du plugin.

@@ -1,13 +1,13 @@
-# Customizing themes
+# Thèmes personnalisés
 
-It is possible to customize themes, or even to create your own from scratch, with Mautic. To do this go to the Theme Manager, open the drop down menu next to the pre-installed theme you want to modify and download it.
+Vous avez la possibilité de modifier vos thèmes existants ou d'en créer de nouveaux. Pour procéder ainsi, rendez vous dans le gestionnaire de thèmes dans le menu configuration en haut à droite.
 
-## Customizing an existing theme
+## Personnalisation d'un thème existant
 
-To customize the downloade theme, unzip the files to an empty folder. Name the folder as the new name of your theme. Then edit the following files to amend the theme paths and name:
+Pour personnalisé un thème téléchargé, dézippez les fichiers dans un dossier vide. Nommez le dossier avec le nom souhaité pour votre thème. Puis renommez les fichiers de la manière suivante :
 
-* theme.css - rename to match your theme name
-* config.php - amend theme name
-* base.html.php - amend file path for CSS import to use new folder and CSS filename; amend the default page title from 'Mautic'
+* theme.css - doit correspondre au nom de votre thème
+* config.php - modifiez le nom du thème
+* base.html.php - modifiez le lien vers le fichier CSS ainsi que le titre de la page
 
-Mautic themes are written in HTML and TWIG, to make amends to the structure or layout simply edit the files in the new theme and upload them to your instance.  Ensure that your hosting provider does not have caching enabled, as this can sometimes prevent changes to CSS files being replicated instantly.
+Les thèmes Mautic sont codés en HTML et TWIG, pour modifier la structure ou la mise en forme, éditez simplement les fichiers dans votre nouveau thème et importez le dans Mautic une fois terminé. Assurez vous de ne pas avoir du cache sur votre serveur, cela pourrait vous géner pour afficher votre nouveau thème et ses modifications CSS rapidement.

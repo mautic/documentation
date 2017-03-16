@@ -7,7 +7,7 @@ Ce plugin permet :
 
 ### Pré-requis
 
-Twitter doit approuver l'application Webmecanik Automation afin de récupérer les informations des utilisateurs Twitter.
+Twitter doit approuver l'application Mautic afin de récupérer les informations des utilisateurs Twitter.
 
 ### Autorisation du plugin
 

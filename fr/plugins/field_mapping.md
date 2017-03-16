@@ -1,5 +1,5 @@
-# Field Mapping in a plugin integration
+# Mapping des champs dans un plugin d'integration
 
-At the *Contact Field Mapping* tab is the list of available fields from an integration. You have to select the Mautic Contact Field equivalent so each field will get the right value. You don't have to map every field. Map only those you want to push into the integration.
+L'onglet de *Mapping des champs du contact* représente la liste des champs disponibles pour les intégrations. Vous devez sélectionner les champs de contact Mautic Contact correspondant afin que les valeurs soient correctement enregistrées dans les bons champs de contact. Vous n'êtes pas obligés de faire correspondre tous les champs. Ne faite la corresondance que pour les champs que vous souhaitez renseigner dans l'intégration.
 
 ![Integration Plugin Contact Field Mapping](/plugins/media/plugins-field-mapping.png "Integration Plugin Contact Field Mapping")
