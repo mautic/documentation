@@ -5,7 +5,7 @@ Bi-directionnal sync. has been added in Mautic 2.8.0, this plugin can push a con
 SSL. Your Mautic instance has to run on HTTPS. SugarCRM will not allow you to synchronize with an application in HTTP.
 
 ## Get the SugarCRM client credentials
-To enable the SugarCRM plugin, you’ll need to get API credential from your SugarCRM account (public and private key) and a valid username and password.
+To enable the SugarCRM plugin, you’ll need to get API credential (Oauth keys) from your SugarCRM account (public and private key) and a valid username and password.
 
 ## Configure the Mautic SugarCRM plugin
 1. Insert the keys to the Mautic SugarCRM plugin and authorize it.
@@ -25,13 +25,17 @@ Enabled features:
 * Select a priority in terms of data when the targeted field is already mentioned with a value.
 
 ### Command line script to push/pull records to/from SugarCRM
-To pull records from SugarCRM you need to use a command from CLI. Use this command:
+To synchronize records from/to SugarCRM you need to use a command from CLI. Use this command:
 * `php app/console mautic:integration:fetchleads`
-* `mautic:integration:pushleadactivity`
+To push activities of synchronized contacts from Mautic to CRM use the following command:
+* `php app/console mautic:integration:pushleadactivity`
+
 
 Parameters both commands take:
-* **--time-interval** This parameter is used to setup the amount of time we want to pull records from. Possible entries: "10 days", "1 day", "10 minutes", "1 minute".  Maximum time interval "29 days".
-* **--integration=SugarCRM**  to use with SugarCRM integration.
+* **--time-interval** This parameter is used to setup the amount of time we want to pull records from. Possible entries: "10 days", "1 day", "10 minutes", "1 minute". Maximum time interval "29 days". Default for both commands is “15 minutes”.
+* **--integration**=SugarCRM to use with SugarCRM integration. In future this command may be used for other integrations.
+Parameter specific to php app/console mautic:integration:fetchleads
+* **--fetch-all** To synchronize all contacts to and from integration. Preferably, use this command only after installation.
 
 These commands may be used for other integrations.
 

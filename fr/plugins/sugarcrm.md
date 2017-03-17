@@ -5,7 +5,7 @@ La version bi-directionnelle du plugin a été ajoutée en 2.8.0, ce plugin peut
 SSL. Votre instance Mautic doit être en HTTPS. SugarCRM n'acceptera pas la synchronisation sur un site en HTTP.
 
 ## Récupérez les identifiants API SugarCRM
-Pour valider l'activation du plugin SugarCRM, vous devez vous munir d'accès API de votre compte SugarCRM (clés publiques et privées) ainsi qu'un identifiant et un mot de passe valides.
+Pour valider l'activation du plugin SugarCRM, vous devez vous munir d'accès API (Oauth keys) de votre compte SugarCRM (clés publiques et privées) ainsi qu'un identifiant et un mot de passe valides.
 
 ## Configuration du plugin SugarCRM de Mautic
 1. Insérez les clés dans le plugin SugarCRM de Mautic.
@@ -27,11 +27,14 @@ Les fonctionnalités disponibles :
 ### Commandes à activer pour l'échange des données (CRONs)
 Pour les utilisateurs de Mautic en version Open source, vous devez ajouter ces lignes de commande pour mettre en place la synchronisation :
 * `php app/console mautic:integration:fetchleads`
-* `mautic:integration:pushleadactivity`
+Pour pousser les activités des contacts synchronisés depuis Mautic vers le CRM, utilisez :
+* `php app/console mautic:integration:pushleadactivity`
 
 Les paramètres des commandes sont :
-* **--time-interval** Pour paramétré l'age des données à récupérer. Valeurs possibles : "10 days", "1 day", "10 minutes", "1 minute".  avec un maximum de "29 days".
+* **--time-interval** Pour paramétrer l'age des données à récupérer. Valeurs possibles : "10 days", "1 day", "10 minutes", "1 minute".  avec un maximum de "29 days". La valeur par défaut est 15 minutes.
 * **--integration=SugarCRM** pour utiliser l'intégration SugarCRM.
+Paramètre spécial pour `php app/console mautic:integration:fetchleads`
+* **--fetch-all** Pour synchroniser tous les contacts depuis l'intégration. De préférence à n'utiliser que la première fois après l'installation.
 
 Ces commandes peuvent être utilisées pour d'autres intégrations.
 
