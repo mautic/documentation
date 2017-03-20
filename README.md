@@ -5,7 +5,11 @@ This book serves as the [documentation for Mautic](https://mautic.org/docs/), th
 
 ### Download as PDF!
 
-[Click here](https://mautic.org/docs/mautic_docs.pdf) to download these docs as a PDF.
+[Click here](https://mautic.org/docs/mautic_docs_en.pdf) to download these docs as a PDF in English.
+[Click here](https://mautic.org/docs/mautic_docs_fr.pdf) to download these docs as a PDF in French.
+[Click here](https://mautic.org/docs/mautic_docs_jp.pdf) to download these docs as a PDF in Japanese.
+
+
 
 ### How to contribute to the docs
 
