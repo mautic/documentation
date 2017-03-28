@@ -37,6 +37,7 @@
     * [Web Notifications](notifications/README.md)
     * [Focus](focus/README.md)
     * [Text Messages](sms/README.md)
+    * [Tweets](plugins/twitter.md)
     * [Social Monitoring](social-monitoring/README.md)
 * [Campaigns](campaigns/README.md)
     * [Manage Campaigns](campaigns/manage_campaigns.md)
