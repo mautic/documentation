@@ -27,12 +27,13 @@ Les fonctionnalités disponibles :
 ### Commandes à activer pour l'échange des données (CRONs)
 Pour les utilisateurs de Mautic en version Open source, vous devez ajouter ces lignes de commande pour mettre en place la synchronisation :
 * `php app/console mautic:integration:fetchleads`
+
 Pour pousser les activités des contacts synchronisés depuis Mautic vers le CRM, utilisez :
 * `php app/console mautic:integration:pushleadactivity`
 
 Les paramètres des commandes sont :
 * **--time-interval** Pour paramétrer l'age des données à récupérer. Valeurs possibles : "10 days", "1 day", "10 minutes", "1 minute".  avec un maximum de "29 days". La valeur par défaut est 15 minutes.
-* **--integration=SugarCRM** pour utiliser l'intégration SugarCRM.
+* **--integration=Sugarcrm** pour utiliser l'intégration SugarCRM.
 Paramètre spécial pour `php app/console mautic:integration:fetchleads`
 * **--fetch-all** Pour synchroniser tous les contacts depuis l'intégration. De préférence à n'utiliser que la première fois après l'installation.
 
