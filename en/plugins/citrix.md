@@ -129,4 +129,9 @@ The cron job to synchronize the events is
 10. The email in the new contact inbox should include a button to join the webinar with the appropiate URL for the contact.
 ![image](https://cloud.githubusercontent.com/assets/2924026/24731148/72272370-1a25-11e7-97ac-e04943f25775.png)
 
-11. The button can be styled by overriding the `citrix-start-button` CSS class.
+11. The button can be styled by overriding the `citrix-start-button` CSS class. ie
+```
+.citrix-start-button {
+  background: green !important;
+}
+```
