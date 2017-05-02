@@ -94,10 +94,10 @@ Create a plugin that pulls data from Mautic and pushes data to Mautic from GotoM
 ### Other details
 The cron job to synchronize the events is
 
-    php app/console citrix:sync
+    php app/console mautic:citrix:sync
 
     Usage:
-        citrix:sync [options]
+        mautic:citrix:sync [options]
 
     Options:
         -p, --product[=PRODUCT]  Product to sync (webinar, meeting, training, assist)
