@@ -1,8 +1,8 @@
 # Web Notifications
 
-Web notifications integrate [One Signal](https://onesignal.com/). Using your ownOne Signal accounts, you can now push a notification to their browser (with the contacts permission). Enable these in Mautic's Configuration to see them listed under Channels in the menu.
+Web notifications integrate [One Signal](https://onesignal.com/). Using your own OneSignal accounts, you can now push a notification to your contacts's browser (with their permission). Enable these in Mautic's Configuration to see them listed under Channels in the menu.
 
-For more informations see [One Signal documentation](https//documentation.onesignal.com/docs/web-push-setup)
+For more information see [One Signal documentation](https//documentation.onesignal.com/docs/web-push-setup)
 
 ### Setup
 
@@ -24,9 +24,9 @@ Apple Safari (macOS) configuration example
 
 Enable Web Notification and copy keys from OneSignal to your Mautic > Settings > Configuration - Web Notification Settings tab
 
-![](/notifications/notification-setup4.PNG)
+![](/notifications/notifications-setup4.PNG)
 
-![](/notifications/notification-setup5.PNG)
+![](/notifications/notifications-setup5.PNG)
 
 ##### 4. Test
 
@@ -50,9 +50,9 @@ HTTP support was added  in Mautic 2.6.
 
 We recommend use https of your websites. But http suport for onesignal.com  is very similar to https, nowdays.  Just user subdomain options on onesignal.com and in your Mautic.
 
-![](/notifications/notification-setup7.PNG)
+![](/notifications/notifications-setup7.PNG)
 
-![](/notifications/notification-setup6.PNG)
+![](/notifications/notifications-setup6.PNG)
 
 For more informations about http notification support read  [One Signal documentation](https://documentation.onesignal.com/docs/web-push-sdk-setup-http)
 

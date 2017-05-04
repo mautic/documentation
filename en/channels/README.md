@@ -1,8 +1,9 @@
 The **Channels** Dropdown contains:
 
 * [Emails](./../emails/index.html)
-* [Web Notifications](./../notification/index.html)
+* [Web Notifications](./../notifications/index.html)
 * [Text Messages](./../sms/index.html)
+* [Mobile Notifications](./../mobilenotification/index.html)
 * [Tweets](./../plugins/twitter.html)
 * Social Monitoring
 
