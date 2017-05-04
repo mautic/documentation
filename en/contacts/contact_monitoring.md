@@ -100,7 +100,8 @@ Mautic currently supports `page_url`, `referrer`, `language`, and `page_title` (
 
 ### UTM Codes 
 
-Support for UTM codes in the contact time-line was introduced in version 1.2.1. `utm_medium`, `utm_source`, and `utm_campaign` are used to generate the content of the time-line entry.
+Support for UTM codes in the contact time-line was introduced in version 1.2.1. 
+Currently, `utm_medium`, `utm_source`, `utm_campaign`, `utm_content`, and `utm_term` are used to generate the content in a new time-line entry.
 
 `utm_campaign` will be used as  the time-line entry's title.
 
@@ -123,6 +124,9 @@ Support for UTM codes in the contact time-line was introduced in version 1.2.1. 
 </tbody>
 </table>
 
+All the Utm tags are available in the time entry, just by toggling the entry details button.
+
+Please note that UTM tags are recorded only on a form submission that contains the action "Record UTM Tags".
 
 #### Embedding the Pixel
 
