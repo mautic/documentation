@@ -54,7 +54,7 @@ Each email sent through Mautic is tagged with a tracking pixel image. This allow
 
 ### Tracking trackable links in emails ###
 
-Clicks of each link in a email are tracked and whose clicks count can be found at the bottom of email detail page under Click Counts tab.
+Clicks of each link in a email are tracked and those clicks count can be found at the bottom of email detail page under Click Counts tab.
 
 
 ### Unsubscribing ###
