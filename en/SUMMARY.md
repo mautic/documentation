@@ -36,6 +36,7 @@
         * [Troubleshooting](emails/troubleshooting.md)
     * [Web Notifications](notifications/README.md)
     * [Focus](focus/README.md)
+    * [Mobile Notifications](mobilenotifications/README.md)
     * [Text Messages](sms/README.md)
     * [Tweets](plugins/twitter.md)
     * [Social Monitoring](social-monitoring/README.md)
