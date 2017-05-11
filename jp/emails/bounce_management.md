@@ -11,7 +11,7 @@
 メッセージの取得と処理には、次のコマンドを実行します。
 
 ```
-php app/console mautic:fetch:email
+php /path/to/mautic/app/console mautic:email:fetch
 ```
 
 Mauticは指定されたフォルダに見つかった各メッセージを読み取りますので、この目的のためにメールを特に作成するのが最善であることに注意してください。
