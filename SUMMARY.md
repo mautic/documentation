@@ -27,6 +27,7 @@
        * [Bounce Management](emails/bounce_management.md) 
        * [Mailer is owner](emails/mailer_is_owner.md)
        * [Troubleshooting](emails/troubleshooting.md)
+       * [Sending Example Emails](emails/example_emails.md)
     * [Text Messages](sms/README.md) 
 * [Campaigns](campaigns/README.md)
     * [Manage Campaigns](campaigns/manage_campaigns.md)
