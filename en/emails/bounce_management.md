@@ -15,7 +15,7 @@ It is possible to use a single inbox, or to configure a unique inbox per monitor
 To fetch and process the messages, run the following command:
 
 ```
-php app/console mautic:fetch:email
+php /path/to/mautic/app/console mautic:email:fetch
 ```
 
 Note that it is best to create an email specifically for this purpose, as Mautic will read each message it finds in the given folder.
