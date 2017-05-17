@@ -12,7 +12,7 @@ There are several steps involved in setting this up.
 You can set up as many items as you need.  The default will be delivered via the "Request Dynamic Content" decision in a campaign.  If you want to push something different based on a set of criteria, you create those here and deliver them via a "Push Dynamic Content" action.
 
 ###Add the dynamic content pull request in a campaign.  
-The key to this step is naming the "slot".  This can be anything you want as long as it's unique across your dynamica content campaigns.  The pull request is processed and determines if the person on the landing page is a known contact.
+The key to this step is naming the "slot".  This can be anything you want as long as it's unique across your dynamic content campaigns.  The pull request is processed and determines if the person on the landing page is a known contact.
 ![](/dwc/media/dwc-pull-request.jpg)
 
 ###Add the push request in the campaign.  
