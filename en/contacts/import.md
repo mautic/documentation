@@ -67,11 +67,19 @@ The table will show you basic statistics about all imports, what are the current
 
 ## Import detail
 
-The import detail page holds more detailed statistics when you click on *Details* like import speed and how the import has been configured.
+The import detail page holds more detailed statistics and import configuration when you click on *Details* like import speed and how the import has been configured.
+
+There are also 2 charts:
+1. The pie chart shows the ratio between created, updated and failed rows.
+2. The line chart shows how many contacts has been added per minute.
 
 The main content area displays information about rows which were ignored for some reason (if any). The table will tell you what row in the CSV file it was and what was the reason, so you can fix those rows and import again.
 
 In the right column you can see who created the import and when and also when the background job (System) updated the statistics after every batch was completed.
+
+## Automatic import option decision
+
+There is an option in the Global Mautic Configuration /  Contact Settings to define what is the optimal limit of browser import vs background import. If you insert for example 1000, that means that if the import CSV will have less than 1000 rows, it will be imported in the browser, if it will have more rows, it will be queued to be imported by the background job. Default value is 0 (zero), which means it will show you 2 Import buttons instead of one and you'll have to decide what import option to use during every import.
 
 ## Requirements
 
