@@ -16,15 +16,15 @@ Notice that you should have a snapshot of the website. If not, you'll have the o
 
 ![](/focus/media/step_2.png)
  
-On the left you'll see a button to switch between mobile and desktop views. A mobile snapshot is also attempted - it may not match your website exactly due to the snapshot process but it should at least give you the general look. On the right is the builder toolbar.   
+On the left, you'll see a button to switch between mobile and desktop views. A mobile snapshot is also attempted - it may not match your website exactly due to the snapshot process but it should at least give you the general look. On the right is the builder toolbar.   
 
 ![](/focus/media/step_3.png)
 
 ### Focus/Goal
 
-The firs step to building the focus item is to choose what the focus or goal is. There are three options:
+The first step to building the focus item is to choose what the focus or goal is. There are three options:
 
-1. Collect data - will use a Mautic form in the as the content. Note that it should be a very simply form (or or two inputs) as there is very little room to work with in some of the styles. But this is great for capturing emails for a even or newsletter signup.
+1. Collect data - will use a Mautic form in the output as the content. Note that it should be a very simple form (One or or two inputs) as there is very little room to work with in some of the styles. But this is great for capturing emails for a newsletter signup.
 2. Display a notice - information only and is great for announcements and the like.
 3. Emphasize a link - great for landing pages with an event, sale, promotion, etc. It displays a button to click that will direct to the given link.
 
@@ -44,11 +44,11 @@ Each focus/goal will have slightly different settings but all have a few in comm
 There are four styles supported - 
 
 1. Bar - display a bar across the top or bottom of the page
-2. Modal - a small modal window that appears centered on the page
+2. Modal - a small modal window that appears centred on the page
 3. Notification - these are like modals but smaller and slide in from the side.
 4. Full page - also like a modal only it takes up the entire view.
 
-Each style has it's own settings such as position, size, sticky, etc.
+Each style has its own settings such as position, size, sticky, etc.
 
 #### Colors
 
@@ -60,10 +60,10 @@ By default, Mautic will determine the top colors extracted from the snapshot. Fo
 
 ![](/focus/media/step_7.png)
 
-Again this will vary based on the selected focus/goal and style is chosen. Some support a headline and a tagline while some suppor tonly a headline due to space constraints. If the goal is to collect data, a list of forms will be availble to choose from. Remember that the form should be simple. 
+Again this will vary based on the selected focus/goal and style is chosen. Some support a headline and a tagline while some support only a headline due to space constraints. If the goal is to collect data, a list of forms will be available to choose from. Remember that the form should be simple. 
 
-## Inserting focus into a web site
+## Inserting focus into a website
 
 ![](/focus/media/step_8.png)
 
-Inserting a focus item into a website is a simply as copying one line of code and inserting into your page's source. After creating the focus item, view it's details page where you can see engagement graphs and other detailed information. On the right, you'll see a  "Focus Installation" box that includes the line of code needed. Click on it, copy, then paste it into your website's source before the closing body tag if possible.
+Inserting a focus item into a website is as simple as copying one line of code and inserting it into your page's source. After creating the focus item, view its details page where you can see engagement graphs and other detailed information. On the right, you'll see a  "Focus Installation" box that includes the line of code needed. Click on it, copy, then paste it into your website's source before the closing body tag if possible.
