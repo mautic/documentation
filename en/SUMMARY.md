@@ -44,6 +44,7 @@
     * [Manage Campaigns](campaigns/manage_campaigns.md)
     * [Campaign Builder](campaigns/campaign_builder.md)
       * [Date Campaign](campaigns/date_campaigns.md)
+      * [Focus item in campaign](campaigns/focus_item_in_campaign.md)
     * [Campaign Events](campaigns/campaign_events.md)    
     * [Troubleshooting](campaigns/troubleshooting.md)
 * [Reports](reports/README.md)
