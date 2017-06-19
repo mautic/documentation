@@ -3,6 +3,10 @@
 ### Introduction
 This book serves as the [documentation for Mautic](https://www.mautic.org/docs/index.html), the open source marketing automation system. Everyone is welcome to help make this information better and improve as needed.
 
+### Developer docs
+
+If you are looking for some details about Mautic API, webhooks, theme or plugin development, go to [Developer docs](https://developer.mautic.org/).
+
 ### Download as PDF
 
 [Click here](https://mautic.org/docs/mautic_docs_en.pdf) to download these docs as a PDF.
