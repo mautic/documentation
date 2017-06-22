@@ -1,15 +1,21 @@
 # Mautic Documentation
 
 ### Introduction
-This book serves as the [documentation for Mautic](https://www.mautic.org/docs/index.html), the open source marketing automation system. Just as the code is open source and available for everyone, so is the documentation. Everyone is welcome to help make this information better and improve as needed.
+This book serves as the [documentation for Mautic](https://mautic.org/docs/), the open source marketing automation system. Just as the code is open source and available for everyone, so is the documentation. Everyone is welcome to help make this information better and improve as needed.
 
 ### Download as PDF!
 
-[Click here](https://mautic.org/docs/mautic_docs.pdf) to download these docs as a PDF.
+[Click here](https://mautic.org/docs/mautic_docs_en.pdf) to download these docs as a PDF in English.
+
+[Click here](https://mautic.org/docs/mautic_docs_fr.pdf) to download these docs as a PDF in French.
+
+[Click here](https://mautic.org/docs/mautic_docs_jp.pdf) to download these docs as a PDF in Japanese.
+
+
 
 ### How to contribute to the docs
 
-This repository is the source code for [Gitbook](https://www.gitbook.com/) published at [www.mautic.org/docs](https://www.mautic.org/docs/index.html). The source code is shared [here on GitHub](https://github.com/mautic/documentation) so anyone could contribute to the documentation the same way the programmers do with the actual Mautic code. 
+This repository is the source code for [Gitbook](https://www.gitbook.com/) published at [www.mautic.org/docs](https://www.mautic.org/docs). The source code is shared [here on GitHub](https://github.com/mautic/documentation) so anyone could contribute to the documentation the same way the programmers do with the actual Mautic code. 
 
 #### Why is git used for the documentation
 

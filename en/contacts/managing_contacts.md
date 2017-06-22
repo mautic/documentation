@@ -59,3 +59,11 @@ If Mautic knows only the IP address, it will merge the contact action (page hit,
 If a contact sends a form with an email address, it will merge the submission with the contact having the same email address. Even if the IP address or the cookie matches another contact.
 
 So Mautic will take care of duplicate contacts created by the event tracking. But you can still create a duplicate contact via the Mautic administration. As of Mautic 2.1.0, you will be notified if there is already a contact with the same unique identifier.
+
+### Delete a bunch of contacts
+
+The batch delete action in the contact table allow to delete maximally 100 contacts at one time. This is a performance precaution since deleting more contacts at one time could cause issues. This feature can be used for hundreds of contacts.
+
+![](/contacts/media/mautic-contact-batch-delete.png)
+
+See in the [segment docs](./../contacts/managing_contacts.html#delete-all-contacts-in-a-segment) about how to delete thousands of contacts easily.

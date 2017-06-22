@@ -50,6 +50,8 @@ mt('send', 'pageview', {}, {
 
 As of Mautic 2.2.0, if CORS is configured to allow access from the domain the mtc.js is embedded, a cookie will be placed on the same domain with the name of `mtc_id`. This cookie will have the value of the ID for the currently tracked contact. This provides access to server side software to the contact ID and thus providing the ability to integrate with Mautic's REST API as well.
 
+Valid Domains for CORS are expected to include the full domain name as well as the protocol. (e.g. http://example.org). If you serve up secure and non-secure pages you should include both https://example.org as well http://example.org. All subdomains will need to be listed as well (e.g. http://example.org and and http://www.example.org ), if your server allows this. If you would like to allow all subdomains, an asterisk can be used as a wildcard (e.g. http://*.example.org).
+
 #### Tracking of custom parameters
 
 You can attach custom parameters or overwrite the automatically generated parameters to the pageview action as you could to the tracking pixel query. To do that, update the last row of the JS code above like this:
@@ -100,7 +102,8 @@ Mautic currently supports `page_url`, `referrer`, `language`, and `page_title` (
 
 ### UTM Codes 
 
-Support for UTM codes in the contact time-line was introduced in version 1.2.1. `utm_medium`, `utm_source`, and `utm_campaign` are used to generate the content of the time-line entry.
+Support for UTM codes in the contact time-line was introduced in version 1.2.1. 
+Currently, `utm_medium`, `utm_source`, `utm_campaign`, `utm_content`, and `utm_term` are used to generate the content in a new time-line entry.
 
 `utm_campaign` will be used as  the time-line entry's title.
 
@@ -123,6 +126,9 @@ Support for UTM codes in the contact time-line was introduced in version 1.2.1. 
 </tbody>
 </table>
 
+All the Utm tags are available in the time entry, just by toggling the entry details button.
+
+Please note that UTM tags are recorded only on a form submission that contains the action "Record UTM Tags".
 
 #### Embedding the Pixel
 

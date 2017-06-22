@@ -42,6 +42,8 @@ You are also able to define a template to use with your page as well as the lang
 
 The page builder provides quick and convenient access to assets, other landing pages, and forms. All those are accessible via tokens in format `{component=item}`, for example `{form=4}`. A drop-down with options will appear when you type `{` character and you can search for the right token by typing its name. For example if you type `{for`, it will suggest the right token for the a form which has "for" in its name and you can select it via keyboard or by clicking on it.
 
+Since Mautic 2.7.0, the builder will let you drag the predefined content sections from the right hand toolbar and drop them to the position you choose. It's possible to select from layout of 1, 2 or 3 columns. The existing sections can be re-ordered or removed.
+
 #### Code Mode
 
 [Go to the Code Mode docs](./../themes/code_mode.html).
