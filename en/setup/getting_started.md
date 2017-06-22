@@ -30,6 +30,8 @@ By default, Mautic installs set to use MaxMind's free GeoLite2 IP lookup databas
 
 You could also choose another supported IP lookup service if you prefer.
 
+Depending on what database you use certain data will or will not be processed in Mautic. For instance, MaxMind's GeoLite 2 will contain country, region and city, but not ISP and organization. Information about the different databases can be found on the websites of their respective owners.
+
 ## Step 4: Install the Tracking Javascript
 
 After installation and setup of the cron jobs you're ready to begin tracking contacts. You will need to add a simple javascript to the websites for each site you wish to track via Mautic. This is a very simple process and you can add this tracking script to your website template file, or install a Mautic integration for the more common CMS platforms. Here is an example of the tracking javascript:
