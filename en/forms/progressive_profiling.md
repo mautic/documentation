@@ -8,7 +8,7 @@ Progressive profiling makes your forms smarter by asking for the most important 
 
 There are 2 possible ways how you can configure a form field to display only when needed. The configuration is in the __Behavior__ tab in the field configuration form. The Behavior (Progressive Profiling) can be configured for all field types except the _email_ and the _button_ field. The button field must be always visible because otherwise the form couldn't be submitted.
 
-It's recommended to use the email field in each form. From Mautic 2.9 email should be hidden, but be aware of that. Email as identifier of a contact could unusable if same PC is used by more people (public library, schools...).
+It's recommended to use the email field in each form. From Mautic 2.9 email should be hidden, but be aware of that. Email as identifier of a contact could be unusable if same PC is used by more people (public library, schools...).
 
 ### 1. Display field only if the value is not known yet
 
