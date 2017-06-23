@@ -63,6 +63,8 @@
     * [Twitter](plugins/twitter.md)    
     * [vTiger CRM](plugins/vtiger_crm.md)
     * [Zoho CRM](plugins/zoho_crm.md)
+    * [Dynamics CRM](plugins/dynamics_crm.md)
+    * [Social login](plugins/social_login.md)
     * [Field Mapping](plugins/field_mapping.md)
     * [Integration Testing](plugins/integration_test.md)
 * [Use Cases](use_cases/README.md)
