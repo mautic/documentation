@@ -187,7 +187,7 @@ Mautic makes this even easier by providing key integrations to many existing con
 * [Joomla!](http://mautic.org/integration/joomla)
 * [Drupal](http://mautic.org/integration/drupal)
 * [WordPress](http://mautic.org/integration/wordpress)
-* [Typo3](http://mautic.org/integration/typo3)
+* [TYPO3](http://mautic.org/integration/typo3)
 * [Concrete5](http://mautic.org/integration/concrete5)
 * [Grav](https://github.com/mautic/mautic-grav)
 
