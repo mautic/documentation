@@ -1,11 +1,11 @@
 # Plugin Mautic - INESCRM
 
 Ce plugin permet de pousser les contacts vers INESCRM quand un contact fait une ou plusieurs actions.
-Si vous ne voyez pas ce plugin dans votre instance Mautic, Vérifiez que vous avez une version plus récente que la 2.6.0.
+Si vous ne voyez pas ce plugin dans votre instance Mautic, Vérifiez que vous avez une version plus récente que la 2.9.0.
 
 Si vous n'avez pas de compte chez INESCRM, [créez en un ici](http://www.inescrm.fr/).
 
-## Configuration du plugin INESCRM dans Mautic
+## Configuration du plugin
 
 1. Dans le menu de *configuration* > *champs personnalisés*, ajouter deux champs supplémentaires, de type *Texte* ou *Nombre*, qui serviront à mémoriser pour chaque contact leur références dans INESCRM.
 Ils peuvent être nommés librement (par exemple `ID contact INES` et `ID client INES`) et appartenir à n'importe quel groupe de champs.
