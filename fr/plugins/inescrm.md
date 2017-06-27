@@ -7,21 +7,18 @@ Si vous n'avez pas de compte chez INESCRM, [créez en un ici](http://www.inescrm
 
 ## Configuration du plugin
 
-1. Dans le menu de *configuration* > *champs personnalisés*, ajouter deux champs supplémentaires, de type *Texte* ou *Nombre*, qui serviront à mémoriser pour chaque contact leur références dans INESCRM.
-Ils peuvent être nommés librement (par exemple `ID contact INES` et `ID client INES`) et appartenir à n'importe quel groupe de champs.
-
-2. Dans le menu de *configuration* > *plugins*, si l'icone "INESCRM" n'est pas présent, cliquez sur *Install / Upgrade Plugins*.
+1. Dans le menu de *configuration* > *plugins*, si l'icone "INESCRM" n'est pas présent, cliquez sur *Install / Upgrade Plugins*.
 Cliquez sur l'icone INESCRM et configurez l'intégration à l'aide de vos codes d'accès au CRM : *Compte*, *Utilisateur*, *Mot de passe*. Puis tester la connexion.
 
-3. Lorsque la connexion est OK, enregistrez la configuration, la fermer puis l'ouvrir à nouveau.
+2. Lorsque la connexion est OK, enregistrez la configuration, la fermer puis l'ouvrir à nouveau.
 L'onglet *Mapping des champs du contact* doit être présent.
-Dans cet onglet, affectez aux champs `Référence contact chez INES` et `Référence société chez INES` les champs Mautic créés à l'étape 1.
-Puis affectez parmis les autres champs proposés ceux qui doivent être synchronisés avec INESCRM.
+Affectez parmis les champs proposés ceux qui doivent être synchronisés avec INESCRM.
 A noter que certains champs sont présents en doubles (par exemple l'adresse) car ils peuvent être synchronisés soit avec un contact INES, soit avec une entreprise INES.
+**Une évolution sera apportée dans la prochaine version pour utiliser la fonctionnalité de mapping ds champs d'entreprise**
 
-4. Activez les fonctionnalités souhaitées dans l'onglet *Fonctionnalités*.
+3. Activez les fonctionnalités souhaitées dans l'onglet *Fonctionnalités*.
 
-5. Dans l'onglet *Enable/Auth*, mettre le commutateur *Published* sur `ON`.
+4. Dans l'onglet *Enable/Auth*, mettre le commutateur *Published* sur `ON`.
 
 ## Fonctionnalités
 

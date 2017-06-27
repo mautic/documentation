@@ -7,21 +7,16 @@ If you don't have an INESCRM account yet, [create one here](http://www.inescrm.f
 
 ## Plugin configuration
 
-1. In the *configuration* menu > *custom fields*, add 2 new fields *Text* or *Number*, that will hold INESCRM contact IDs.
-They can be named as you like (eg: `ID contact INES` & `ID client INES`) and belong to any field group.
+1. In the *configuration* menu > *plugins*, if you don't see the INESCRM plugin, click on *Install / Upgrade Plugins*. Then clicj on the INESCRM plugin and configure with you CRM access code: *Account*, *User*, *Password*. And test the connexion.
 
-2. In the *configuration* menu > *plugins*, if you don't see the INESCRM plugin, click on *Install / Upgrade Plugins*. Then clicj on the INESCRM plugin and configure with you CRM access code: *Account*, *User*, *Password*. And test the connexion.
-
-3. When the connexion is OK, save configuration, close and open again.
-The *Contact Field Mapping* tab must be displayed.
-In this tab, map `Référence contact chez INES` & `Référence société chez INES` to the Mautic fields created on step 1.
-Then map the extra fiels you when to synchronize.
+2. When the connexion is OK, save configuration, close and open again.
+The *Contact Field Mapping* tab must be displayed. Map the fields you want to synchronize.
 Notice that some fields are existing twice for the contact and company fields.
 **In the next version, the Company Field Mapping tab will be introduce to avoid that.**
 
-4. Enable features wished in *Features* tab.
+3. Enable features wished in *Features* tab.
 
-5. In the *Enable/Auth* tab, turn *Published* button to `ON`.
+4. In the *Enable/Auth* tab, turn *Published* button to `ON`.
 
 ## Features
 
