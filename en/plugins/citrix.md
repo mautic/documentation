@@ -1,7 +1,7 @@
 # Citrix Plugins
 
 ## Description:
-Create a plugin that pulls data from Mautic and pushes data to Mautic from GotoMeeeting, GotoWebinar, GotoTraining and GoToAssist) .
+Creates a plugin that pulls data from Mautic and pushes data to Mautic from GotoMeeeting, GotoWebinar, GotoTraining and GoToAssist.
 ## Required Features:
 1. Create registrants in GoToWebinar and GoToTraining based on campaign decisions, contact data and also from registration forms in Mautic
 2. Pull back from registrant and attendee info into segments and campaigns  
@@ -108,7 +108,7 @@ The cron job to synchronize the events is
 
 2. Create a webinar in the [GotoWebinar website](https://www.gotomeeting.com/webinar)
 
-3. Create a new contact and use the emaill address to register for the new webinar
+3. Create a new contact and use the email address to register for the new webinar
 
 4. Run the Citrix Sync command: `php app/console mautic:citrix:sync` so that the webinar information is retrieved to the database.
 

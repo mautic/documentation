@@ -29,7 +29,7 @@ Use `{sharebuttons}` token in the Mautic Landing Pages in the place where you wa
 
 ### View contact's tweet
 
-When you have the Twitter plugin authorized and configured, you will be able to see contact's tweet history in the contact's detail page. But it will work only for contacts which has the Twitter handle (username) filled in their profile. See the limitations section bellow for more about that.
+When you have the Twitter plugin authorized and configured, you will be able to see contact's tweet history in the contact's detail page. But it will work only for contacts which have the Twitter handle (username) filled in their profile. See the limitations section below for more about that.
 
 ### Tweet to a contact
 

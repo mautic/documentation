@@ -2,7 +2,7 @@
 
 This plugin can push a contact to Zoho CRM when a contact makes some action.
 
-If you don't have the Zoho CRM account yet, [create it](https://www.zoho.com/crm/).
+If you don't have a Zoho CRM account yet, [create it](https://www.zoho.com/crm/).
 
 ## Configure the Zoho CRM plugin
 
@@ -25,4 +25,4 @@ Follow [these steps](./../plugins/integration_test.html) to test the integration
 
 ### Warning concerning language configuration
 Your Zoho and Mautic accounts must be **configured in English language**, otherwise the synchronization won't work.
-Zoho changes the alias of each contact fields depending on the language which generates unmatching fields and error on the sync.
+Zoho changes the alias of each of the contact fields depending on the language, which generates unmatching fields and errors on sync.

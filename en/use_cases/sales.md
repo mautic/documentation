@@ -38,7 +38,7 @@ The first step to take in a successful workflow is to correctly identify the fie
 
 **2. Create Segments**
 
-The next step involves creating the segments. As mentioned above these segments are grouping of contacts based on specific characteristics. The purpose of creating these segments is to allow Mautic to automatically add contacts to these segments when certain actions are taken. Contacts can be manually added to segments as well when necessary.
+The next step involves creating the segments. As mentioned above these segments are groupings of contacts based on specific characteristics. The purpose of creating these segments is to allow Mautic to automatically add contacts to these segments when certain actions are taken. Contacts can be manually added to segments as well when necessary.
 
 **3. Add Assets**
 
@@ -46,7 +46,7 @@ Adding assets to your Mautic platform will allow you to use those assets as part
 
 **4. Create Form**
 
-Once you've added an asset you can now use that assset as the result of a form submission. Creating a form is the critical stage of your marketing automation platform. Forms allow you to convert visitors into named, potential customers.
+Once you've added an asset you can now use that asset as the result of a form submission. Creating a form is the critical stage of your marketing automation platform. Forms allow you to convert visitors into named, potential customers.
 
 **5. Setup Landing Pages**
 

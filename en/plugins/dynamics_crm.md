@@ -10,7 +10,7 @@ Insert your Dynamics CRM URL, the Application ID and Secret into the Mautic Dyna
 
 ![Dynamics CRM Plugin configuration](media/dynamics/858c5a2a7134.png "Dynamics CRM Plugin configuration")
 
-Select the features you like in the Features tab. *Push contacts to this integration* checkbox and is checked by default.
+Select the features you like in the Features tab. *Push contacts to this integration* checkbox is checked by default.
 
 Configure the [field mapping](./../plugins/field_mapping.html).
 

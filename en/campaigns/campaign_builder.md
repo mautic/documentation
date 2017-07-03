@@ -8,7 +8,7 @@ The first thing to be selected is where the campaign will pull in contacts from 
  
 ![](/campaigns/media/contact-sources.png)
 
-After selecting one or more sources, the next step will be to add one or more action (most likely), decision and/or condition:
+After selecting one or more sources, the next step will be to add one or more actions (most likely), decisions and/or conditions:
 
 ![](/campaigns/media/events.png)
 
@@ -48,13 +48,13 @@ The contact-initiated decision path is taken as a result of a contacts direct ac
 
 Actions attached to the red point of a decision are considered non-action points. This path is taken as a result of a contact NOT taking some direct action.
 
-Use an action's delay settings to define at what point should the campaign send the contact down this path.
+Use an action's delay settings to define at what point the campaign should send the contact down this path.
 
-To trigger this events, see [Executing Campaign Actions](https://mautic.org/docs/en/campaigns/manage_campaigns.html#executing-campaign-actions).
+To trigger these events, see [Executing Campaign Actions](https://mautic.org/docs/en/campaigns/manage_campaigns.html#executing-campaign-actions).
 
 #### Example
 
-To provide a simple example of a decision tree consider an email where the decision is to open an email. There are two outcomes, if the contact chooses to open the email then the green decision point contacts to the next action to be taken in the campaign workflow. If, however, the contact does not open the email then you may desire a different action to be taken (e.g. a delay of 30 days then a second email sent).
+To provide a simple example of a decision tree consider an email where the decision is to open an email. There are two outcomes, if the contact chooses to open the email then the green decision point connects to the next action to be taken in the campaign workflow. If, however, the contact does not open the email then you may desire a different action to be taken (e.g. a delay of 30 days then a second email sent).
 
 
 ### Conditions
@@ -70,7 +70,7 @@ Currently there are 2 types of conditions
 #### Positive status Condition Path (Green Points)
 
 Actions attached to the green point of a condition are considered as positive status points.
-The status condition path is taken as a result of a the condition at the end of the delay set (trigger, delay or specific date).
+The status condition path is taken as a result of the condition at the end of the delay set (trigger, delay or specific date).
 
 #### Negative status Condition Path (Red Points)
 
