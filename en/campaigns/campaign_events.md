@@ -12,6 +12,7 @@ In the send email action, there is an option to select Transaction or Marketing.
 
 #### Call remote url
 
+Action call remote url/service with GET, POST, PUT, PATCH, DELETE, TRACE request (curl). It was created based on [GitHub discussion](https://github.com/mautic/mautic/issues/854). Return true if page status code is 200/201.  Data and headers values support contact field tokens ({contactfield=firstname} etc.) Just for experienced users.
 
 #### Delete contact
 
