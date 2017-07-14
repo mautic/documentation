@@ -1,14 +1,14 @@
 # Translations
 
-Mautic is used by world-wide community and therefore it can be localized to any language. If you cannot find your language yet, take a look to the section about how to translate Mautic.
+Mautic is used by a world-wide community and therefore it can be localized to any language. If you cannot find your language yet, take a look to the section about how to translate Mautic.
 
 ## How to select a language in Mautic
 
-Language can be selected on 2 places.
+Language can be selected in 2 places.
 
 ### 1. Default language
 
-In the Mautic configuration can be configured the default language. It is pre-set to `English - United States` by default. Every user will see this language if he doesn't configure her language in hers profile.
+In the Mautic configuration the default language can be configured. It is pre-set to `English - United States` by default. Every user will see this language if she doesn't configure her language in her profile.
 
 1. Open the right admin menu by clicking on the cog icon in the top right corner.
 2. Select the *Configuration* menu item.
@@ -19,7 +19,7 @@ In the Mautic configuration can be configured the default language. It is pre-se
 
 ### 2. User language
 
-User can define hers own language and override the default language. This let a multilangual team work on the same Mautic instance.
+A user can define her own language and override the default language. This lets a multilangual team work on the same Mautic instance.
 
 1. Open the user menu by clicking on the user name in the top right corner.
 2. Click on *Account* menu item.

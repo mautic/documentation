@@ -1,6 +1,6 @@
 # Contact Import
 
-Contact can be imported via user interface from a CSV file. You can either import in the browser or you can let a background job do it.
+Contacts can be imported via the user interface from a CSV file. You can either import in the browser or you can let a background job do it.
 
 Since Mautic 2.9, when the import creates or updates a contact, you'll see that action in the contact events history.
 
@@ -93,12 +93,12 @@ There is an option in the Global Mautic Configuration /  Contact Settings to def
 
 - Name the column names the same as Mautic contact custom field names. This way Mautic automatically pre-selects the mapping for you. For example if you name the first name column as `firstname`, this field will be mapped automatically.
 
-- If your CSV contains thousands of contact or more, divide such CSV into several smaller CSV files to avoid memory issues and slow import speed.
+- If your CSV contains thousands of contacts or more, divide such CSV into several smaller CSV files to avoid memory issues and slow import speed.
 
 ## FAQ
 
-Q: If I import *Do Not Contact* values, is that stored as a bounce or a unsubscribtion?
-A: It's stored as a manual unsubscribtion. It's the same thing as if the contact was marked as *Do Not Contact* from the administration.
-
 Q: My import times out. What can I do about that?
 A: Either use the background job to import or change the batch limit to smaller number than 100.
+
+Q: If I import *Do Not Contact* values, is that stored as a bounce or a unsubscription?
+A: It's stored as a manual unsubscription. It's the same thing as if the contact was marked as *Do Not Contact* from the administration.

@@ -2,15 +2,15 @@
 
 This plugin can push a contact to the vTiger CRM when a contact makes some action.
 
-If you don't have the vTiger CRM account yet, [create it](https://www.vtiger.com/).
+If you don't have a vTiger CRM account yet, [create it](https://www.vtiger.com/).
 
 ## Authenticate the vTiger plugin
 
 To authenticate the Mautic plugin to be able to communicate with vTiger CRM you'll need these credentials:
 
-- **vTiger URL** - the base (root) URL starting with http:// or https:// where your vTiger instance run. For example `https://your_vtiger.od2.vtiger.com`.
+- **vTiger URL** - the base (root) URL starting with http:// or https:// where your vTiger instance runs. For example `https://your_vtiger.od2.vtiger.com`.
 - **vTiger username** - The username (email address usually) which you use to log in to your vTiger.
-- **vTiger access key** - The access key published in your vTiger profile. To get it, go to vTiger's *My Preferences*. The *Access Key* hash is in the bottom of the page.
+- **vTiger access key** - The access key published in your vTiger profile. To get it, go to vTiger's *My Preferences*. The *Access Key* hash is at the bottom of the page.
 
 Fill these 3 credentials to the Mautic plugin and click Authenticate.
 

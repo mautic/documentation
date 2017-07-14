@@ -20,11 +20,11 @@ It allows to automatically personalize emails sent to a user who has an owner (m
 Signature is also a new feature in the Mautic 1.3.0. There are 2 places where to configure the signature text:
 
 1. The default signature is in the *Configuration*, *Email Settings* tab. The default text is `Best regards,<br/>|FROM_NAME|`. The `|FROM_NAME|` token will be replaced by *Name to send mail as* value also defined in the *Email Settings* tab. This signature will be used if the contact owner is not known.
-2. Every user can configure his/hers own signature in the profile edit page. This signature will be used if the contact owner is known.
+2. Every user can configure his/her own signature in the profile edit page. This signature will be used if the contact owner is known.
 
 The signature can be placed into an email text by the `{signature}` token.
 
-There is one exception where the contact owner's signature won't be used. When a user send an email directly from a contact detail, the currently logged in user's signature will be used. Doesn't matter if the contact has another owner assigned or if doesn't have owner at all.
+There is one exception where the contact owner's signature won't be used. When a user sends an email directly from a contact detail, the currently logged in user's signature will be used. It doesn't matter if the contact has another owner assigned or if it doesn't have an owner at all.
 
 ## FAQ
 

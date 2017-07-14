@@ -1,6 +1,6 @@
 # Code Mode
 
-Code Mode is an option available in the Email and Page edit form. It will allow you to create/insert/edit your content in HTML code. It's helpful for situations where you don't want to use a Mautic theme and you want to use HTML theme copied from 3rd party theme builder or if you enjoy editing HTML code so much.
+Code Mode is an option available in the Email and Page edit form. It will allow you to create/insert/edit your content in HTML code. It's helpful for situations where you don't want to use a Mautic theme and you want to use an HTML theme copied from a 3rd party theme builder or if you enjoy editing HTML code so much.
 
 Code Mode was introduced in Mautic 2.3.0 and replaced the full page Froala (WYSIWYG) editor which manipulated the HTML code in some cases. Code Mode will not modify any of the code you paste in. The other option to edit a page/email content is to use the Builder. It uses Froala editor only to edit the text/image content, not the full page, so it won't modify the page layout.
 
@@ -10,7 +10,7 @@ The Code Mode can be selected in the theme select after you create/edit the page
 
 ### Limitations
 
-If you use a Mautic theme to create the page/email and you want to edit the HTML code of it in the Code Mode Buidler, you can do so, but you cannot switch back to the theme again. You will always have to edit the content in the Code Mode Builder. Selecting a theme will always refresh the content to the default theme HTML and so you'll lose your modifications.
+If you use a Mautic theme to create the page/email and you want to edit the HTML code of it in the Code Mode Builder, you can do so, but you cannot switch back to the theme again. You will always have to edit the content in the Code Mode Builder. Selecting a theme will always refresh the content to the default theme HTML and so you'll lose your modifications.
 
 ![Select the Code Mode](/themes/media/code-mode-select.png)
 
@@ -30,4 +30,4 @@ There is a button at the top of code area where you can open the Media Manager t
 
 ### Code Formatter
 
-It might happen that your older emails or pages appear as HTML code on one line. Or if you insert an HTML code with odd formatting, use the Format Code button. It will automatically to through the code and format it so it is easier to navigate in it.
+It might happen that your older emails or pages appear as HTML code on one line. Or if you insert an HTML code with odd formatting, use the Format Code button. It will automatically go through the code and format it so it is easier to navigate in it.

@@ -2,7 +2,7 @@
 
 ### Stages Overview
 
-Stages is a way to define the lifecycle of a contact. Creates stages based on your marketing stages, and move your contacts from stage to stage.
+Stages is a way to define the lifecycle of a contact. Create stages based on your marketing stages, and move your contacts from stage to stage.
 
 ### Creating/Managing a Stage
 
@@ -16,4 +16,4 @@ Use a campaign to move your contacts from stage to stage. When creating your cam
 
 ###Contact's Lifecycle
 
-Create a lifecycle widget in your dashboard based on segments to also view on what stages contacts are in.
+Create a lifecycle widget in your dashboard based on segments to also view what stages contacts are in.
