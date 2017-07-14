@@ -5,7 +5,7 @@ Social login in Mautic is used to sign forms and pre-fill them with matched cont
 ### Requirements
 For social login buttons to be available you need to enable your social media buttons listed and authorized.
 
-Please follow the links provided to create your social applications before your authorized and configure your plugins.
+Please follow the links provided to create your social applications before you authorize and configure your plugins.
 - Twitter
 For twitter please see the [twitter docs](twitter.md)
 - [Facebook](https://developers.facebook.com)

@@ -8,7 +8,7 @@ Even through the effort of the dev and test teams, it might happen. At first, le
 
 ### 1. Clear the cache
 
-There are several ways how to do that. The easiest is to go to the `/app/cache` folder and delete its content. If you want to do it via CLI command, navigate to the Mautic root folder and run `rm -rf app/cache/*`. The new cache files will generate itself after next Mautic refresh in the browser.
+There are several ways to do that. The easiest is to go to the `/app/cache` folder and delete its content. If you want to do it via CLI command, navigate to the Mautic root folder and run `rm -rf app/cache/*`. The new cache files will generate itself after the next Mautic refresh in the browser.
 
 It might happen that the files won't generate itself. It can be caused by the wrong folder permission and Mautic doesn't have permission to write the new cache files. Contact your sysadmin and ask him to fix it for you.
 
@@ -34,25 +34,25 @@ or
 
 > Uh oh! I think I broke it.
 
-Those are generic error messages which provide absolutely no valuable information about the cause of the error. It is on purpose. The detailed error message isn't displayed in the production environment because if it would, it could tell possible crackers a valuable information about your server, Mautic or integration which they could use to attack it. That's why this generic error message is shown instead and the real error message is logged into the logs. Long story short, that's why reporting it doesn't make any sense.
+Those are generic error messages which provide absolutely no valuable information about the cause of the error. It is on purpose. The detailed error message isn't displayed in the production environment because if it did, it could tell possible crackers some valuable information about your server, Mautic or integration which they could use to attack it. That's why this generic error message is shown instead and the real error message is logged into the logs. Long story short, that's why reporting it doesn't make any sense.
 
-There are different logs in your system which could tell us more. Let's start form the Mautic log.
+There are different logs in your system which could tell us more. Let's start from the Mautic log.
 
-If your Mautic administration work, go to the Admin menu (click the __cog icon__ in the top right side corner), then __System Info__, then __Log__. You will see the error messages recorded by Mautic today.
+If your Mautic administration works, go to the Admin menu (click the __cog icon__ in the top right side corner), then __System Info__, then __Log__. You will see the error messages recorded by Mautic today.
 
 If your Mautic administration doesn't work, open the logs in via the file system. Go to `[mautic_root]/app/logs` folder. You should see one file for every day called `mautic_prod-YYYY-mm-dd.php`. Open the latest one.
 
 #### Server logs
 
-I don't have experiences with all operation systems and servers. I can tell you that Apache2 saves the server logs at Ubuntu in `/var/log/apache2/error.log`. If you don't know where the server logs are stored, contact your sysadmin or try to google it.
+I don't have experience with all operating systems and servers. I can tell you that Apache2 saves the server logs at Ubuntu in `/var/log/apache2/error.log`. If you don't know where the server logs are stored, contact your sysadmin or try to google it.
 
 #### MySql logs
 
-In case your Mautic says it is not able to connect to MySql for some reason, you can check what information is stored in the MySql log. Again, I can only advice where the log is in Ubuntu: `/var/log/mysql/error.log`. But to be honest, the database connection error is in 90% caused by wrong credentials.
+If your Mautic says it is not able to connect to MySql for some reason, you can check what information is stored in the MySql log. Again, I can only advise where the log is in Ubuntu: `/var/log/mysql/error.log`. But to be honest, the database connection error is in 90% of cases caused by wrong credentials.
 
 #### The log file is too big
 
-In case the log is too big so a normal editor cannot open it and you have the CLI access, try to read only the few last rows of it with command `tail [mautic_root]/app/logs/mautic_prod-YYYY-mm-dd.php`. You have to add the current date in the instead of the `YYYY-mm-dd` part. If you want to see more rows than the default is, use the `-n 40` attribute at the end of the command to see last 40 rows.
+If the log is so big that a normal editor cannot open it and you have the CLI access, try to read only the few last rows of it with command `tail [mautic_root]/app/logs/mautic_prod-YYYY-mm-dd.php`. You have to add the current date instead of the `YYYY-mm-dd` part. If you want to see more rows than the default is, use the `-n 40` attribute at the end of the command to see the last 40 rows.
 
 #### But I don't understand the error message
 
@@ -113,18 +113,18 @@ __Error:__
 Uncaught PHP Exception Doctrine\DBAL\DBALException: "An exception occurred while executing 'INSERT INTO
 ```
 __Solution:__
-This is a SQL error. It might either mean that your database schema is outdated or there is a bug in some part of Mautic. In the first case, the step 2 from this article should fix it. In the second case, look at the error reporting bellow.
+This is a SQL error. It might either mean that your database schema is outdated or there is a bug in some part of Mautic. In the first case, the step 2 from this article should fix it. In the second case, look at the error reporting below.
 
 __Error:__
 ```
 PHP Fatal error: Call to a member function isRendered() on a non-object in ...
 ```
 __Solution:__
-Means usually a bug.
+Usually means a bug.
 
 ### How and where to report a bug
 
-Help your fellow developers and report the bug correctly for the first time. Go to [GitHub issue tracker](https://github.com/mautic/mautic/issues) and answer at least following 3 questions:
+Help your fellow developers and report the bug correctly the first time. Go to [GitHub issue tracker](https://github.com/mautic/mautic/issues) and answer at least the following 3 questions:
 
 Mautic version:
 PHP version:

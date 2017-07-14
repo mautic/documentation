@@ -40,7 +40,9 @@ You can fine tune any aspect of the page via the Content tab and Source Code vie
 
 You are also able to define a template to use with your page as well as the language of your page. Notice the convenience field where you can define the parent page as well. This allows you to link pages.
 
-The page builder provides quick and convenient access to assets, other landing pages, and forms. All those are accessible via tokens in format `{component=item}`, for example `{form=4}`. A drop-down with options will appear when you type `{` character and you can search for the right token by typing its name. For example if you type `{for`, it will suggest the right token for the a form which has "for" in its name and you can select it via keyboard or by clicking on it.
+The page builder provides quick and convenient access to assets, other landing pages, and forms. All those are accessible via tokens in format `{component=item}`, for example `{form=4}`. A drop-down with options will appear when you type `{` character and you can search for the right token by typing its name. For example if you type `{for`, it will suggest the right token for a form which has "for" in its name and you can select it via keyboard or by clicking on it.
+
+Since Mautic 2.7.0, the builder will let you drag the predefined content sections from the right hand toolbar and drop them to the position you choose. It's possible to select from layout of 1, 2 or 3 columns. The existing sections can be re-ordered or removed.
 
 #### Code Mode
 
@@ -54,4 +56,4 @@ The pages can be unpublished and published again with a click of a button or by 
 
 Mautic allows you to configure a 301 (permanent) or a 302 (temporary) redirect. The redirects will work if the page is unpublished.
 
-Note: When you are logged in as a Mautic administrator, you will always see the page content even though it is unpublished. But if you log out of Mautic or open the page in an incognito window to emulate access of a normal contact, you will be able to see the 404 message or the redirect if configured any.
+Note: When you are logged in as a Mautic administrator, you will always see the page content even though it is unpublished. But if you log out of Mautic or open the page in an incognito window to emulate access of a normal contact, you will be able to see the 404 message or the redirect if configured.
