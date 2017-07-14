@@ -195,6 +195,12 @@ These are just a few of the integrations already created by the Mautic community
 
 **Note:** It is important to note that you are not limited by these plugins and you can place the tracking pixel directly on any HTML page for website tracking.
 
+### Identify vistior by tracking url
+
+Mautic 2.9 add to Configuration option for identify visitor by tracking url. If enabled it, returning visitor will be identify by tracking url from channels (especially from emails) when no cookie exists yet. 
+
+Note: Email contact field have to be marked as unique indentifier and publicly updatable in Configuration.
+
 ### Mobile Monitoring
 
 The essence of monitoring what happens in an App is similar to monitoring what happens on a website. Mautic contains the building blocks needed for native (or pseudo-native) and HTML5-wrapper based Apps, regardless of platform.
