@@ -7,7 +7,7 @@ Monitoring all traffic on a website can be done by loading a javascript file (si
 
 ### Javascript (JS) tracking
 
-JS tracking method was implemented in Mautic 1.4 and recommended as the primary way of website tracking. To implement it, go to *Mautic configuration* > *Landing Page Settings* to find the JS tracking code build for your Mautic instance and insert it code before ending `<body/>` tag of the website you want to track. Or copy the code below and change the URL to your Mautic instance.
+JS tracking method was implemented in Mautic 1.4 and recommended as the primary way of website tracking. To implement it, go to *Mautic configuration* > *Landing Page Settings* to find the JS tracking code build for your Mautic instance and insert its code before the ending `<body/>` tag of the website you want to track. Or copy the code below and change the URL to your Mautic instance.
 
 As of 2.3.0, Mautic sets cookies with a lifetime of 2 years. Returning visitors are identified exclusively by the cookie. If no cookie exists yet, Mautic creates a new contact and sets the cookie. Make sure your website url is entered in the CORS settings. This is the first step in better contact identification. Note that if a browser is set to not accept cookies, this may result in each hit creating a new visitor. If this behavior is concerning, see Fingerprint option below. 
 
@@ -22,7 +22,7 @@ As of 2.3.0, Mautic sets cookies with a lifetime of 2 years. Returning visitors 
 </script>
 ```
 
-_Don't forget to change the scheme (http(s)) either to http or https depending what scheme you use for your Mautic. Also, change [yourmautic.com] to domain where your Mautic runs._
+_Don't forget to change the scheme (http(s)) either to http or https depending what scheme you use for your Mautic. Also, change [yourmautic.com] to the domain where your Mautic runs._
 
 The advantage of JS tracking is that the tracking request which can take quite long time to load is loaded asynchronously so it doesn't slow down the tracked website. JS also allows to track more information automatically:
 
@@ -50,7 +50,7 @@ mt('send', 'pageview', {}, {
 
 As of Mautic 2.2.0, if CORS is configured to allow access from the domain the mtc.js is embedded, a cookie will be placed on the same domain with the name of `mtc_id`. This cookie will have the value of the ID for the currently tracked contact. This provides access to server side software to the contact ID and thus providing the ability to integrate with Mautic's REST API as well.
 
-Valid Domains for CORS are expected to include the full domain name as well as the protocol. (e.g. http://example.org). If you serve up secure and non-secure pages you should include both https://example.org as well http://example.org. All subdomains will need to be listed as well (e.g. http://example.org and and http://www.example.org ), if your server allows this. If you would like to allow all subdomains, an asterisk can be used as a wildcard (e.g. http://*.example.org).
+Valid Domains for CORS are expected to include the full domain name as well as the protocol. (e.g. http://example.org). If you serve up secure and non-secure pages you should include both https://example.org as well http://example.org. All subdomains will need to be listed as well (e.g. http://example.org and http://www.example.org ), if your server allows this. If you would like to allow all subdomains, an asterisk can be used as a wildcard (e.g. http://*.example.org).
 
 #### Tracking of custom parameters
 
@@ -64,7 +64,7 @@ This code will send all the automatic data to Mautic and adds also email and fir
 
 #### Load Event
 
-As the JS tracking request is loaded asynchronously, you can ask JS to call a function when request is loaded. To do that, define a *onload* function in options like this:
+As the JS tracking request is loaded asynchronously, you can ask JS to call a function when a request is loaded. To do that, define a *onload* function in options like this:
 
 ```
     mt('send', 'pageview', {email: 'my@email.com', firstname: 'John'}, {onload: function() { alert("Tracking request is loaded"); }});
@@ -76,13 +76,13 @@ As the JS tracking request is loaded asynchronously, you can ask JS to call a fu
 Mautic 1.4.0 comes with a tracking feature called fingerprint. [Fingerprint2](https://github.com/Valve/fingerprintjs2) library was used. It should work together or replace current tracking identifiers like IP address and/or cookie ID. This method is not yet deeply implemented into the system, but you can already see more information in the timeline page hit events in the contact detail:
 
 - **Fingerprint** - Unique hash calculated from browser settings and another environment variables.
-- **Resolution** - With x Height of the device display resolution.
+- **Resolution** - Width x Height of the device display resolution.
 - **Timezone Offset** - Amount of minutes plus or minus from UTC.
 - **Platform** - Platform of the device. Usually OS and processor architecture.
 - **Adblock** - A Boolean value whether contact uses an adblock browser plugin.
 - **Do Not Track** - A Boolean value if DNT is turned on.
 
-If you'd like to store any of the values above to a contact detail field, create new custom field called exactly like the name in the list above and make the field publicly updatable. You can also try to make the Fingerprint field unique and this way you can simulate the future fingerprint tracking. It is not tested feature though, do not use it on production unless you tested it first.
+If you'd like to store any of the values above to a contact detail field, create a new custom field called exactly like the name in the list above and make the field publicly updatable. You can also try to make the Fingerprint field unique and this way you can simulate the future fingerprint tracking. It is not a tested feature though, do not use it on production unless you tested it first.
 
 ### Tracking Pixel tracking
 
@@ -187,13 +187,19 @@ Mautic makes this even easier by providing key integrations to many existing con
 * [Joomla!](http://mautic.org/integration/joomla)
 * [Drupal](http://mautic.org/integration/drupal)
 * [WordPress](http://mautic.org/integration/wordpress)
-* [Typo3](http://mautic.org/integration/typo3)
+* [TYPO3](http://mautic.org/integration/typo3)
 * [Concrete5](http://mautic.org/integration/concrete5)
 * [Grav](https://github.com/mautic/mautic-grav)
 
 These are just a few of the integrations already created by the Mautic community. More will be added in the future and developers are encouraged to submit their own integrations.
 
 **Note:** It is important to note that you are not limited by these plugins and you can place the tracking pixel directly on any HTML page for website tracking.
+
+### Identify vistior by tracking url
+
+Mautic 2.9 add to Configuration option for identify visitor by tracking url. If enabled it, returning visitor will be identify by tracking url from channels (especially from emails) when no cookie exists yet. 
+
+Note: Email contact field have to be marked as unique indentifier and publicly updatable in Configuration.
 
 ### Mobile Monitoring
 
@@ -240,7 +246,7 @@ Which is nothing more than an HTTP request to this GET-formatted URL (as also sh
 http://yourdomain.com/mtracking.gif?page_url=cart_screen&email=myemail@somewhere.com
 ```
 
-Important: Make sure in your App, that the above HTTP request is using a cookie (if possible, re-use the cookie from the mautic.addcontact POST request prior) AND that you reuse this cookie from one request to the next. This how Mautic (and other tracking software) knows that it's really the same user. If you can't do this, you may run in the (unlikely but possible) case where you have multiple contacts from the same IP address and Mautic will merge them all into a single contact as it can't tell who is who without a cookie.
+Important: Make sure in your App, that the above HTTP request is using a cookie (if possible, re-use the cookie from the mautic.addcontact POST request prior) AND that you reuse this cookie from one request to the next. This is how Mautic (and other tracking software) knows that it's really the same user. If you can't do this, you may run into the (unlikely but possible) case where you have multiple contacts from the same IP address and Mautic will merge them all into a single contact as it can't tell who is who without a cookie.
 
 ### Other Online Monitoring
 
