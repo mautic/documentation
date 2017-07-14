@@ -50,6 +50,7 @@
 * [Points](points/README.md)
     * [Troubleshooting](points/troubleshooting.md)
 * [Stages](stages/stages.md)
+* [IP Lookup Services](iplookup/README.md)
 * [Plugins](plugins/README.md)
     * [Citrix Plugins](plugins/citrix.md)
     * [Clearbit](plugins/clearbit.md)
