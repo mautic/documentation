@@ -12,7 +12,7 @@ Hint: If you prefer using keyboard shortcuts you can enter "t" on your keyboard 
 
 The segment can be searched using the box at the top of the list, and can be ordered using the table headings by clicking on the heading you wish to sort the list by.
 
-![](/contacts/media/contacts-search.jpg)
+![](/contacts/media/contact-list.png)
 
 The search box allows many different search types and follows the same search process and variables as found in all other search layouts. You can learn more about the powerful search options available on the search documentation page.
 
