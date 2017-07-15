@@ -46,7 +46,7 @@ that opens to insert gated videos into your landing page.
 
 ![](/video/media/gated-video-icon.png)
 
-## Tracked videos (Mautic 2.9 and above)
+## Tracked videos (Mautic 2.9.1 and above)
 
 Mautic allow track contacts play/stop/time length action without gated feature. Any `<video>` tag found by the javascript that has a `data-mtc` attribute will be treated as a tracked video by the Mautic javascript.  
 
