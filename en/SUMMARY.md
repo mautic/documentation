@@ -48,6 +48,7 @@
 * [Points](points/README.md)
     * [Troubleshooting](points/troubleshooting.md)
 * [Stages](stages/stages.md)
+* [Categories](categories/categories.md5)
 * [Plugins](plugins/README.md)
     * [Citrix Plugins](plugins/citrix.md)
     * [Clearbit](plugins/clearbit.md)
