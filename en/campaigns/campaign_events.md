@@ -20,6 +20,8 @@ This action will allow you to send email to:
 
 Emails sent through this action will not generate any statistics for contacts nor emails.
 
+The email tokens will get populated with the real values including contact field values. But the email hash is bogus so the links like unsubscribe won't work correctly. It's similar behaviour like when a user sends itself a test email.
+
 #### Delete contact
 
 This action will **permanently delete the contact** who will trigger this action in your campaign flow, together with all the information Mautic knows about that contact. See in the [segment docs](./../contacts/managing_contacts.html#delete-all-contacts-in-a-segment) about how to use this action to delete all contacts in a segment.
