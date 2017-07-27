@@ -6,7 +6,7 @@ Ces différents plugins permettent de récupérer et envoyer des données depuis
 
 ## Fonctionnalités
 
-1. Crée les inscrits dans GoToWebinar et GoToTraining en fonction des décisions de campagne, des données du contact et de l'negistrement depuis les formulaires Mautic.
+1. Crée les inscrits dans GoToWebinar et GoToTraining en fonction des décisions de campagne, des données du contact et de l'enregistrement depuis les formulaires Mautic.
 2. Renvoie les inscrits et participants depuis Citrix dans les segments et les campagnes.
 3. Affiche la participation aux webinaire et formations (training) comme information complémentaire dans le fil d'activité du contact.
 4. Envoi des emails avec les boutons de démarrage des événements GoToMeeting, GoToTraining et GoToAssist.
@@ -16,7 +16,7 @@ Ces différents plugins permettent de récupérer et envoyer des données depuis
 
 ![image](https://cloud.githubusercontent.com/assets/2924026/19797584/54467954-9ca9-11e6-8e31-f80f7469fe84.png)
 
-2. Activez l plugin avec les clés API Citrix Developer
+2. Activez le plugin avec les clés API Citrix Developer
 
 ![image](https://cloud.githubusercontent.com/assets/2924026/19797588/5c6ce640-9ca9-11e6-981c-a98a728e1712.png)
 

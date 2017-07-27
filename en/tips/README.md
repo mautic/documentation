@@ -15,3 +15,10 @@
 
 **Display All Shortcuts**
 * shift+?: Displays all shortcuts in a modal window.
+
+# Configuration pannel
+
+## Max entity lock time tunning
+
+In the system setting tab on the configuration panel, in Miscellaneous settings area, you can modify "Item max lock time". 
+It is representing the time before an entity (email, form, etc.) locked by an user, is automatically released.

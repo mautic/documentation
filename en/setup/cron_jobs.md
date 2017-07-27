@@ -46,7 +46,7 @@ By default, the script will process events in batches of 100. If this is too man
 You can also limit the number of contacts to process per script execution using `--max-events` to further limit resources used.
 
 **To send frequency rules rescheduled marketing campaign messages:**
-Messages that are marked as [_Marketing Messages_](./../contacts/message_queue.md) (such as emails to be sent as part of a marketing campaign) , will be inserted into a message queue IF frequency rules are setup as either systemwide or per contact. To process this queue and reschedule sending these messages, this cronjob should be added to your list of jobs:
+Messages that are marked as [_Marketing Messages_](./../contacts/message_queue.md) (such as emails to be sent as part of a marketing campaign) , will be inserted into a message queue IF frequency rules are setup as either systemwide or per contact. To process this queue and reschedule sending these messages, this cron job should be added to your list of jobs:
 
 `mautic:messages:send`
 
@@ -105,7 +105,7 @@ php /path/to/mautic/app/console mautic:maintenance:cleanup --days-old=365 --dry-
 
 ### Send Scheduled Broadcasts (e.g. segment emails)
 
-Starting with Mautic 2.2.0, it is now possible to use cron to send scheduled broadcasts for channel communications. The current only implementation of this is for segment emails. Instead of requiring a manual send and wait with the browser window open while ajax batches over the send - a command can now be used. The caveat for this is that the emails must be published and must have a published up date - this is to help prevent any unintentional email broadcasts. Just as it was with the manual/ajax process - only contacts who have not already received the specific communication will have the it sent to them.
+Starting with Mautic 2.2.0, it is now possible to use cron to send scheduled broadcasts for channel communications. The current only implementation of this is for segment emails. Instead of requiring a manual send and wait with the browser window open while ajax batches over the send - a command can now be used. The caveat for this is that the emails must be published and must have a published up date - this is to help prevent any unintentional email broadcasts. Just as it was with the manual/ajax process - only contacts who have not already received the specific communication will have it sent to them.
 
 ```
 php /path/to/mautic/app/console mautic:broadcasts:send [--id=ID] [--channel=CHANNEL]
