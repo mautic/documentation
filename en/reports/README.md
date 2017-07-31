@@ -10,7 +10,8 @@ Choose the data source appropriate to the report you want. Each data source has 
 
 ## Configuration
 
-Each report can be customize to include the columns of choice. Filter data based on set criteria and/or set a specific order for the data.
+Each report can be customized to include the columns of choice. Filter data based on set criteria and/or set a specific order for the data.
+In addition you can also group by and select different function operators to calculate fields. Note that when you select functions operators a totals row will be added to the report. This totals row will not be exported when selecting to export a report.
  
 ![](/reports/media/config.png)
 
