@@ -1,4 +1,4 @@
-# Summary
+# Sommaire
 
 * [Introduction](README.md)
 * [Démarrer](setup/getting_started.md)
@@ -8,6 +8,7 @@
     * [Gestion des contacts](contacts/managing_contacts.md)
         * [Apreçu des contacts](contacts/contact_overview.md)
         * [Suivi des contacts](contacts/contact_monitoring.md)
+    * [Import des contacts](contacts/import.md)
     * [Gestion des segments](contacts/manage_segments.md)
     * [Gestion des champs](contacts/manage_fields.md)
     * [Règles de fréquence](contacts/contact_frequency_rules.md)
@@ -40,6 +41,7 @@
 * [Campagnes](campaigns/README.md)
     * [Gestion des campagnes](campaigns/manage_campaigns.md)
     * [Générateur de campagne](campaigns/campaign_builder.md)
+      * [Date personnalisées](campaigns/date_campaigns.md)
     * [Evénements de campagne](campaigns/campaign_events.md)    
     * [Troubleshooting](campaigns/troubleshooting.md)
 * [Rapports](reports/README.md)
@@ -67,6 +69,7 @@
     * [Communauté](use_cases/community.md)
     * [Politique](use_cases/political.md)
 * [Tâches planifiées (CRONs)](setup/cron_jobs.md)
+* [SAML SSO](authentication/saml.md)
 * [Thèmes](themes/README.md)
     * [Gestion des thèmes](themes/manage_themes.md)
     * [Personnalisation des thèmes](themes/customize_themes.md)
