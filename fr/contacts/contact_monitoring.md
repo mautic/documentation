@@ -187,6 +187,12 @@ Ceux-ci sont une partie des intégrations réalisées par la communauté Mautic.
 
 **Note :** Il est important de noter que vous n'êtes pas limités par ces plugins pour mettre le tracking en place sur votre site et/ou CMS.
 
+### Identifier les visiteurs par tracking URL
+
+Mautic 2.9 ajoute dans les options de Configuration pour identifier les visiteurs par URL de tracking. Si c'est activé, les visiteurs seront reconnus par les URL uniques issues des cannaux (spécialement les emails) quand aucun cookie existe déjà.
+
+**Note :** le champ de contact email doit être identifiant unique et publiquement updatable.
+
 ### Monitoring mobile
 
 Le fait de monitorer le comportement dans une application est relativement similaire au tracking sur une site web. Automation possède la structure nécessaire pour des applications natives (ou pseudo-natives) et applications HTML5.

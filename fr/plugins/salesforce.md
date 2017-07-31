@@ -57,6 +57,17 @@ nom des champs API :
 * MauticLead__c : Number(18, 0) (External ID)
 * Mautic_url__c : URL(255)
 
+## Campagne Salesforce et Mautic
+Mautic peut communiquer avec les campagnes Salesforce avec les actions Mautic des campagnes, formulaires et avec les segments Mautic.
+
+### Dans les campagnes Mautic
+Dans une campagne, vous pouvez choisir d'envoyer les contacts dans une campagne spécifique de Salesforce. Suivez la même procédure pour les formumaires.
+![Salesforce CRM push to campaigns](./../plugins/media/plugins-salesforce-campaigns.png "Salesforce CRM push to campaigns")
+
+### Dans les segments Mautic
+Vous pouvez créer un segment Mautic avec un filtre sur le fait d'être membre d'une campagne Salesforce en utilisant "Membre de la campagne d'intégration", puis choisissez la campagne dans la liste déroulante.
+![Salesforce CRM Campaign Member Segments](./../plugins/media/plugins-salesforce-campaign-member-segments.png "Salesforce CRM campaign member segments")
+
 ## Pour tester le plugin
 
 Suivre [ces étapes](./../plugins/integration_test.html) pour tester l'intégration.

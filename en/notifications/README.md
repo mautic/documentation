@@ -10,23 +10,23 @@ For more information see [One Signal documentation](https//documentation.onesign
 
 ##### 2. Setup app Website Push Platforms in you app
 
-![](/notifications/notification-setup1.PNG)
+![](/media/notification-setup1.PNG)
 
 Google Chrome and Mozilla Firefox configuration example
 
-![](/notifications/notification-setup2.PNG)
+![](/media/notification-setup2.PNG)
 
 Apple Safari (macOS) configuration example
 
-![](/notifications/notification-setup3.PNG)
+![](/media/notification-setup3.PNG)
 
 ##### 3. Setup Mautic
 
 Enable Web Notification and copy keys from OneSignal to your Mautic > Settings > Configuration - Web Notification Settings tab
 
-![](/notifications/notifications-setup4.PNG)
+![](/media/notification-setup4.PNG)
 
-![](/notifications/notifications-setup5.PNG)
+![](/media/notification-setup5.PNG)
 
 ##### 4. Test
 

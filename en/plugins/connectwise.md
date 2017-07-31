@@ -1,16 +1,16 @@
 # Mautic - Connectwise CRM plugin
 
-This plugin can push/pull a contact to/from Connectwise Manage. 
+This plugin can push/pull a contact to/from Connectwise Manage.
 
 ## Requirements
 
--A Connectwise Manage account.
--Connectwise company id
--Connectwise api member with administrative role
+- A Connectwise Manage account.
+- Connectwise company id
+- Connectwise api member with administrative role
 
 ## Get the Connectwise client member credentials
 
-You will need your company id in order to authenticate the connectwise plugin.
+You will need your company id in order to authenticate the Connectwise plugin.
 To create a new API member you will need to use the thick client. you can dowload [here](https://university.connectwise.com/university/pageview.aspx?short_name=workstation-installation). Go to: *System/member* and you can create a new API member there. You will also have a link to get your public and private keys.
 
 Copy the public and secret keys.
@@ -49,7 +49,7 @@ Parameters both commands take:
 
 **--time-interval** This parameter is used to setup the amount of time we want to pull records from. Possible entries: "10 days", "1 day", "10 minutes", "1 minute".  Maximun time interval "29 days".
 
-**--integration**=Connectwise  to use with Connectwise integration.  In future this command may be used for other integrations.
+**--integration**=Connectwise to use with Connectwise integration.  In future this command may be used for other integrations.
 
 ## Test the plugin
 

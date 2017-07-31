@@ -3,6 +3,10 @@
 ### Introduction
 Ce guide fait office de [documentation pour Mautic](https://www.mautic.org/docs/index.html), le logiciel de marketing automation open source. Le code étant libre d'accès à chacun, en voici sa documentation. Chacun peut contribuer à rendre ces informations de meilleure qualité.
 
+### Documentation développeur
+
+Si vous cherchez des détails sur l'API Mautic, les webhooks, les thème oou le dévelopepemnt des plugins, rendez vous dans [la documentation développeur](https://developer.mautic.org/).
+
 ### Télécharger la documentation en PDF
 
 [Cliquez ici](https://mautic.org/docs/mautic_docs_fr.pdf) pour téélcharger ce document en PDF.
