@@ -79,7 +79,7 @@ In the right column you can see who created the import and when and also when th
 
 ## Automatic import option decision
 
-There is an option in the Global Mautic Configuration /  Contact Settings to define what is the optimal limit of browser import vs background import. If you insert for example 1000, that means that if the import CSV will have less than 1000 rows, it will be imported in the browser, if it will have more rows, it will be queued to be imported by the background job. Default value is 0 (zero), which means it will show you 2 Import buttons instead of one and you'll have to decide what import option to use during every import.
+There is an option in the Global Mautic Configuration / Contact Settings to define what is the optimal limit of browser import vs background import. If you insert for example 1000, that means that if the import CSV will have less than 1000 rows, it will be imported in the browser, if it will have more rows, it will be queued to be imported by the background job. Default value is 0 (zero), which means it will show you 2 Import buttons instead of one and you'll have to decide what import option to use during every import.
 
 ## Requirements
 
