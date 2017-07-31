@@ -7,7 +7,7 @@ Contact can be imported via user interface from a CSV file.
 1. Go to *Contacts*.
 2. In the top right corner above the table of contacts open the sub menu of actions and select the *Import* option.
 3. Upload the CSV file with contacts you want to import.
-4. Addjust the CSV settings if your CSV file use something else as a delimiter, enclosure and so on.
+4. Adjust the CSV settings if your CSV file use something else as a delimiter, enclosure and so on.
 5. Upload your CSV file.
 6. The field mapping page should show up. The first set of options will let you select owner, segment and tags to assign globally to all imported contacts. The second set of options will let you map the columns from your CSV to Mautic contact custom fields. The third set of options will let you map columns from your CSV to special contact attributes like *Date Created* and so on.
 7. When your field mapping is ready, click the *Import* button.
