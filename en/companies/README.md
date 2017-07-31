@@ -4,7 +4,7 @@ Companies are a way to group contacts based on the company(ies) the contact work
 
 ### Merging Companies
 
-When editing a company, you can merge this company into another existing company by using the **_Merge_** button. 
+When editing a company, you can merge this company into another existing company by using the **_Merge_** button.
 
 Search for the company you wish to merge into and the fields from the current company that are not populated in the selected company will be copied to the selected company. Contacts that are not in the selected company will also be transferred.
 
@@ -19,8 +19,8 @@ With Mautic's installation a set of custom fields is provided for companies, but
 
 ### Company Segments
 
-You can create a segment based on a company record, simply select any company field to filter with and the matching criteria for it, and contacts that match any company filtered will be added to the segment. 
- 
+You can create a segment based on a company record, simply select any company field to filter with and the matching criteria for it, and contacts that match any company filtered will be added to the segment.
+
 ### Identifying Companies
 
 Companies are identified strictly through a matching criteria based on Company Name, City, Country (and/or State). If city of country are not delivered as identifying fields to identify a contact, a company will not be matched or created.  
@@ -50,8 +50,8 @@ If a contact is identified through a form a company can also be identified/creat
  -City is selected as a form field (mandatory for company matching/creation).
  -Country is selected as a form field (mandatory for company matching/creation).
  -State is selected as a form field (optional for company matching/creation).
- 
- ### Company Scoring
+
+### Company Scoring
 A companies score can be changed through a campaign action or a form action. When one of these actions is selected, first a contact must be identified, and the companies assigned to that contact will have their score changed.
 
 1. Select contact's _Change company score_ action in either a form or a campaign
@@ -59,6 +59,6 @@ A companies score can be changed through a campaign action or a form action. Whe
 
 ### Setting Primary Company
 
-As of 2.3.0, it is now possible to set primary company through the contact details page. 
- 
+As of 2.3.0, it is now possible to set primary company through the contact details page.
+
 ![](/contacts/media/primary-company.png)

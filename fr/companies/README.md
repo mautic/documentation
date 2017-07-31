@@ -41,3 +41,15 @@ Lorsqu'un contact s'identifie à la soumission d'un formulaire, une société pe
  -Le champ `Company name` fait parti des champs du formulaire (obligatoire).
  -Le champ `Country` fait parti des champs du formulaire (obligatoire).
  -Le champ `City` fait parti des champs du formulaire (obligatoire).
+
+### Scoring de société
+Le score des sociétés peut être modifié par une action de campagne ou une action de formulaire. Quand une de ces actions est sélectionnée, un contact doit être identifié et avec une société associée afin de pouvoir en faire évoluer le score.
+
+1. Sélectionnez l'action _Modifier les points de la société_ dans le formulaire ou dans la campagne
+2. Lorsque le formulaire est soumis ou que l'action de campagne déclenchée, les points de la société associée au contact seront modifiés.
+
+### Affecter une société principale
+
+Depuis la 2.3.0, il est possible d'assigner une société principale depuis la page du contact sachant qu'un contact peut avoir plusieurs sociétés affectées.
+
+![](/contacts/media/primary-company.png)
