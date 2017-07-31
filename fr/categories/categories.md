@@ -1,22 +1,22 @@
-# Categories Overview
+# Aperçu des catégories
 
-Categories are a way to organize Mautic elements. They are available for assets, campaigns, emails, focus items, forms, pages, points, social monitoring and stages. There are two ways to use categories:
+Les catégories permettent d'organiser les éléments dans Mautic. Elles sont disponibles pour les ressources, les campagnes, les emails, les objets focus, les pages d'atterrissage, les formulaires, les points, le monitoring social et les stages. Il y a deux manières d'utiliser les catégories :
 
-1. Create element-specific categories (e.g. only for assets, emails or forms)
-2. Create global categories for all Mautic elements
+1. Créer des catégories pour des types d'éléments spécifiques (juste pour les ressources, emails ou formulaires)
+2. Créer des catégories globales pour tous les éléments
 
-## Creating/Managing Categories
+## Créer/Gérer les catégories
 
-To create a new stage, go to settings menu in the top right corner of Mautic. There choose categories.
+Pour créer de nouvelles catégories, allez dans le menu de configuration et choisissez les catégories.
 
 ![](/categories/media/add-new-category.jpg)
 
-When creating a new category you can select type, title, description, alias, color and published status. The color will be helpful to quickly find Mautic elements by their appropriate category when viewing things like the calendar or other areas within Mautic.
+En créant un nouvelle catégorie, vous pouvez en choisir le type, le nom, la description, l'alias, la couleur et si elle est active ou non. La couleur est utile pour voir les catoégirs utilisées en un coup d'oeil et dans le calendrier.
 
-## Using Categories for Contacts
+## Utiliser les catégories pour les contacts
 
-In addition to organizing various Mautic elements categories can be used to organize contacts. In contact details use the Preference menu to open Contact Preference Center.
+Les catégories peut être également utilisées pour les contacts. Sur la page de détail d'un contact, allez dans le menu de préférence.
 
 ![](/categories/media/assign-category-to-contact.jpg)
 
-Contact categories can be used in segment and dynamic content filters.
+Les catégories de contact peuvent être utilisées dans les segments et dans les filtres de contenu dynamique.
