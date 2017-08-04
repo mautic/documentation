@@ -67,6 +67,8 @@ To be able to push activities to the salesforce integration you first need to se
 
 Custom object name: Mautic\__timeline (API  name: Mautic_timeline\__c)
 
+![Salesforce CRM activity object timeline](./../plugins/media/plugins-salesforce-timeline.png "Salesforce CRM activity object")
+
 API names of fields:
 - ActivityDate\__c : Date/Time
 - contact_id\__c : Lookup(Contact)
@@ -75,6 +77,15 @@ API names of fields:
 - MauticLead\__c : Number(18, 0) (External ID)
 - Mautic_url\__c : URL(255)
 - ReferenceId     : Text(255)
+
+![Salesforce CRM activity object](./../plugins/media/plugins-salesforce-object.png "Salesforce CRM activity object")
+
+When enabling the activity object, you need to tick the Activity checkbox in the mautic plugin configuration and also specify the namespace prefix specified in Salesforce
+
+![Salesforce CRM activity namespace](./../plugins/media/plugins-salesforce-activity-setup.png "Salesforce CRM activity object")
+
+![Salesforce CRM activity namespace](./../plugins/media/plugins-salesforce-activity-namespace.png "Salesforce CRM activity object")
+
 
 ## Salesforce Campaigns and Mautic
 Mautic can communicate with Salesforce campaigns through trigger actions in Mautic campaigns and forms, and through Mautic segments.
