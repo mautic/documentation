@@ -76,11 +76,11 @@ API names of fields:
 - WhoId\__c : Lookup(Lead)
 - MauticLead\__c : Number(18, 0) (External ID)
 - Mautic_url\__c : URL(255)
-- ReferenceId     : Text(255)
+- ReferenceId     : Text(255) (This field must be set as a unique field in SF to prevent duplicating activity entries)
 
 ![Salesforce CRM activity object](./../plugins/media/plugins-salesforce-object.png "Salesforce CRM activity object")
 
-When enabling the activity object, you need to tick the Activity checkbox in the mautic plugin configuration and also specify the namespace prefix specified in Salesforce
+When enabling the activity object, you need to tick the Activity checkbox in the mautic plugin configuration and also specify the namespace prefix if it's available in Salesforce
 
 ![Salesforce CRM activity namespace](./../plugins/media/plugins-salesforce-activity-setup.png "Salesforce CRM activity object")
 
