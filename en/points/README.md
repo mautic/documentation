@@ -21,3 +21,39 @@ When creating a point trigger you have the option to apply the trigger to all ex
 ![](/points/media/new-point-trigger-action.jpg)
 
 These point triggers and associated events are also fully customizable.
+
+### Score Categories
+
+Score Categories have been introduced into Mautic to let Mautic's users track points modifications against multiples "categories".
+Depending on your business, if your services portfolio concerns multiples and differents solutions, it could be interesting to track visitors' interest per Business Unit or per Service.
+
+A visitor can in deed visits the "Solution A" part of your website and don't want to be embedded in a default marketing campaign that will present and promote "Solution B".
+
+Creating Score Categories will allow you to design new specific scores for each Contacts and Companies.
+
+You can access the currently defined Score Categories clicking the Manage Score Categories link into the Points Menu.
+
+CAPTURE
+
+Please note that a default entry "Global Score" will always be present "out-of-the-box" and represents the global score point you can retrieve on both Contacts and Companies page. 
+
+This global score can't be edited or deleted from the system as it is the base score category always implemented into Mautic.
+
+Creating a new Category only needs a few extra information
+
+CAPTURE
+
+Enter the Score Category name, select the Display Order (see below) and choose if a score modification to this category affects the global score (Yes/No) and in which ratio (Enter the Percentage).
+
+If set to Off, any update to the Score Category will not be reflected to the Global Score.
+If set to Yes, the quantity of points added/removed from the Score Category will also be added/removed to the Global Score and the radio will be multiplied before application.
+
+For example : when you add 100 points to Score Category "Business Unit 1", you can add 100 points to the Global Score by enabling the switch and set the ratio to "100%".
+
+#### Score Categories Order
+
+Order in Score Categories are only used for convenience purposes on the Contacts/Companies screen to display the Score Categories in the specified order and then by alphabetical names, this allow Mautic users to choose to display a Score Category labelled "Service" before a less important Score Category labelled "Product" for example.
+
+So Score Categories display order is defined by the combination of the category's order and then by the Score Category's name (in case two Score Categories contains the same order value)
+
+CAPTURE
