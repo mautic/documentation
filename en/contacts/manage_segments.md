@@ -33,6 +33,11 @@ result as the intersection of the subsets. You can then manipulate the contacts 
 
 ![](/contacts/media/common-leads-in-segments.jpg)
 
+If you defined multiple Score Categories, the score categories will be available in the Filters list (prefixed by "Score Category", for both Contacts and Companies. You can so refine your filters to only include Contacts having a specific Score Category higher than X points.
+
+![](/contacts/media/segment-scorecategories-in-filters.jpg)
+
+
 ### Segments
 
 Once you have created your segment, any applicable contact will be automatically
