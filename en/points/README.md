@@ -33,7 +33,7 @@ Creating Score Categories will allow you to design new specific scores for each 
 
 You can access the currently defined Score Categories clicking the Manage Score Categories link into the Points Menu.
 
-CAPTURE
+![](/points/media/list-scorecategory.jpg)
 
 Please note that a default entry "Global Score" will always be present "out-of-the-box" and represents the global score point you can retrieve on both Contacts and Companies page. 
 
@@ -41,7 +41,7 @@ This global score can't be edited or deleted from the system as it is the base s
 
 Creating a new Category only needs a few extra information
 
-CAPTURE
+![](/points/media/new-scorecategory.jpg)
 
 Enter the Score Category name, select the Display Order (see below) and choose if a score modification to this category affects the global score (Yes/No) and in which ratio (Enter the Percentage).
 
@@ -56,4 +56,4 @@ Order in Score Categories are only used for convenience purposes on the Contacts
 
 So Score Categories display order is defined by the combination of the category's order and then by the Score Category's name (in case two Score Categories contains the same order value)
 
-CAPTURE
+![](/points/media/contacts-scorecategories-order.jpg)
