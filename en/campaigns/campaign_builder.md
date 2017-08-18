@@ -26,6 +26,15 @@ You will notice that when you add an email to a campaign you will be able to sel
 
 After you have added an action you will more than likely place a decision on the campaign.
 
+#### Update Contact Point's Action
+
+![](/campaigns/media/campaigns-adjust-contact-points.jpg)
+
+You can easily update the contact's Points using this action.
+If you want to change the global score, let the Score Category dropdown to "Global Score", else select any published Score Category with the list to affect only this specific Score Category.
+
+![](/campaigns/media/campaigns-adjust-contact-points-scorecategories-list.jpg)
+
 ### Decisions
 
 Decisions are actions which are initiated by the contact. These decisions can be either directly initiated or implied based on non-action. Samples of these decisions are downloading an asset, opening an email, submitting a form, or visiting a landing page.
