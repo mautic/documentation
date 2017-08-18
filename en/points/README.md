@@ -57,3 +57,10 @@ Order in Score Categories are only used for convenience purposes on the Contacts
 So Score Categories display order is defined by the combination of the category's order and then by the Score Category's name (in case two Score Categories contains the same order value)
 
 ![](/points/media/contacts-scorecategories-order.jpg)
+
+#### Deletion of a Score Category used in Mautic
+
+When used in Point Action, Point Trigger, on a Form's action or a Campaign, the Score Category defined can't be deleted from the database, that's why the checkbox option will be greyed out.
+Anyway if you try to select the delete dropdown, a popup message will warn you how and where the score category is used and will prompt you first to edit the necessary actions before being allowed to delete the score category.
+
+![](/points/media/delete-scorecategory.jpg)
