@@ -1,7 +1,7 @@
 Le sous menu des **Canaux** contient :
 
 * [Emails](./../emails/index.html)
-* Notifications web
+* [Notifications web](./../notification/index.html)
 * [SMS](./../sms/index.html)
 * [Monitoring Social](./../social-monitoring/README.md)
 

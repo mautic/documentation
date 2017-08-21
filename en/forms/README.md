@@ -14,7 +14,7 @@ A **Standalone Form** can push a contact into a segment, but not into a campaign
 
 ### Form error messages does not show up or form redirect is not working
 
-This is usually caused by URL missmatch. You can confirm this by going into the form preview page. Open the browser dev tools by pressing F12 on Windows or Linux or Option+Command+I on Mac. Go to the console tab and you should see 404 error on form JS.
+This is usually caused by URL mismatch. You can confirm this by going into the form preview page. Open the browser dev tools by pressing F12 on Windows or Linux or Option+Command+I on Mac. Go to the console tab and you should see 404 error on form JS.
 
 To fix that, go to the Mautic Configuration and make sure the **Site URL** field is the correct Mautic URL root address (the one you see before the `/s/config/edit` part in the browser address bar) including the http:// or https://. Save the configuration.
 

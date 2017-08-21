@@ -90,11 +90,11 @@ When enabling the activity object, you need to tick the Activity checkbox in the
 ## Salesforce Campaigns and Mautic
 Mautic can communicate with Salesforce campaigns through trigger actions in Mautic campaigns and forms, and through Mautic segments.
 
-In Mautic campaigns:
+### In Mautic campaigns
 In a campaign you can choose to push contacts to a specific Salesforce campaign, from the configuration window you can select the campaign and the status you wish your campaign members to have when inserted to the Salesforce campaign.  Follow similar procedure for a form action to push to salesforce integration.
 ![Salesforce CRM push to campaigns](./../plugins/media/plugins-salesforce-campaigns.png "Salesforce CRM push to campaigns")
 
-In Mautic Segments:
+### In Mautic Segments
 You can create a mautic segments composed of contacts that are in a Salesforce campaign. To do this create a segment filter Integration Campaign Member option, then in the filter properties select the name of the campaign you wish to get campaign members from.
 ![Salesforce CRM Campaign Member Segments](./../plugins/media/plugins-salesforce-campaign-member-segments.png "Salesforce CRM campaign member segments")
 ## Test the plugin

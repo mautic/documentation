@@ -4,6 +4,11 @@ Il est possible d'ajouter et créer des contacts dans Mautic à travers le monit
 
 ![](/social-monitoring/media/social-monitor.jpg)
 
+## Pré-requis
+
+- Le [Plugin Twitter](../plugins/twitter.md) doit être configuré.
+- La commande `app/console mautic:social:monitoring` doit être déclenchée périodiquement. Ajoutez la à la [configuration de vos CRONS](../setup/cron_jobs.md).
+
 ## Hashtags
 
 1. Allez dans *Canaux* > *Suivi social* et cliquez sur *Nouveau*
@@ -20,5 +25,3 @@ Le procédé est identique que pour les hashtags. Pensez juste à changer la mé
 
 Une fois que des contacts utiliseront ces hashtags et mentions, vous avez la possibilité de les ajouter à des segments.
 Les contacts seront donc créés dans votre compte Mautic avec les informations données par Twitter.
-
-NOTE : Vous devez configurer le plugin Twitter pour cela et vous assurer d'avoir activé le CRONs social (pour les utilisateurs de Mautic Open Source) pour que les données se mettent à jour. Plus d'informations sur [le plugin twitter](../plugin/twitter.md)
