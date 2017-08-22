@@ -22,6 +22,10 @@ Une fois le champ sélectionné, vous pourrez choisir le type d'opération à ap
 
 ![](/contacts/media/common-leads-in-segments.jpg)
 
+Si vous avez défini des catégories de score multiples, les catégories seront disponibles dans la liste des filtres (prefixés par "Score Category"), dans les deux sections Contacts et Sociétés. Vous pouvez ainsi raffiner vos filtres pour inclure uniquement les contacts ayant une catégorie spécifique de Score Category supérieure à X points.
+
+![](/contacts/media/segment-scorecategories-in-filters.jpg)
+
 ### Segments
 
 Une fois paramétrés, les critères de segmentation seront appliqués et n'importe quel contact correspondant aux critères sera automatiquement ajouté à au segment lors du CRONs (tache planifiée automatiquement). De la sorte, vos contacts se qualifient de segment en segment, sans avoir à faire la moindre action !
