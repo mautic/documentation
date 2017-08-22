@@ -26,6 +26,15 @@ Vous noterez que lorsque vous ajouter l'envoi d'un courriel à votre campagne, v
 
 Après avoir ajouté une action à votre campagne, vous y lierez probablement une décision.
 
+#### Actions : Mettre à jour les Points du contact
+
+![](/campaigns/media/campaigns-adjust-contact-points.jpg)
+
+Vous pouvez facilement mettre à jour les points d'un contact en utilisant cette action.
+Si vous souhaitez changer le score global, laisser le menu déroulant "Catégorie de score" sur "Global Score", sinon sélectionnez une des catégories publiée.
+
+![](/campaigns/media/campaigns-adjust-contact-points-scorecategories-list.jpg)
+
 ### Décisions
 
 Les décisions représentent les actions initiées par les contacts. Ces décisions peuvent être initiée par le contact ou basé sur sa non-action. Les décisions sont liées au téléchargement d'une ressource, l'ouverture d'un courriel, la soumission d'un formulaire, la visite d'une page du site web ou d'un page de destination.+
