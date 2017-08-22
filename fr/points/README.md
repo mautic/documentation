@@ -46,17 +46,17 @@ Si l'impact du score global est mis à Oui, la quantité de points ajoutée/reti
 
 Par exemple : Lorsque vous ajouter 100 points à la catégorie de score "Business Unit 1", vous pouvez ajouter 100 points au score global en activant le switch et en indiquant un ratio de "100%".
 
-#### Score Categories Order
+#### Ordre des catégories de score
 
-Order in Score Categories are only used for convenience purposes on the Contacts/Companies screen to display the Score Categories in the specified order and then by alphabetical names, this allow Mautic users to choose to display a Score Category labelled "Service" before a less important Score Category labelled "Product" for example.
+L'ordre dans les catégories de score sont utilisés uniquement sur la fiche de Contacts/Sociétés afin d'afficher les catégories de score dans un ordre spécifique différent de l'ordre de base alphabétique, Mautic utilisant alors la combinaison du champ Ordre + l'ordre alphabétique du nom (la combinaison des deux critères est utilisée lorsque deux catégories existent avec le même ordre spécifié).
 
-So Score Categories display order is defined by the combination of the category's order and then by the Score Category's name (in case two Score Categories contains the same order value)
+Grâce à ce champ, vous êtes en mesure d'afficher une catégorie nommée "Service" avant une catégorie "moins importante" nommée "Produit".
 
 ![](/points/media/contacts-scorecategories-order.jpg)
 
-#### Deletion of a Score Category used in Mautic
+#### Suppression d'une catégorie de score utilisée dans Mautic
 
-When used in Point Action, Point Trigger, on a Form's action or a Campaign, the Score Category defined can't be deleted from the database, that's why the checkbox option will be greyed out.
-Anyway if you try to select the delete dropdown, a popup message will warn you how and where the score category is used and will prompt you first to edit the necessary actions before being allowed to delete the score category.
+Lorsqu'une catégorie de score est utilisée dans la gestion des actions, des déclencheurs, sur les actions d'un formulaire ou d'une campagne, elle ne peut pas être supprimée de la base de donnée. C'est pourquoi, la case à cocher de selection dans la vue liste sera grisée.
+Si vous essayez tout de même de supprimer la catégorie (en utilisant le menu déroulant par exemple), un message popup avertira l'utilisateur ou la catégorie de score est utilisée afin de permettre la modification du paramétrage actuel de l'outil avant la suppression de la catégorie de score.
 
 ![](/points/media/delete-scorecategory.jpg)
