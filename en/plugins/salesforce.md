@@ -39,12 +39,17 @@ Push leads is done through a form or a campaign.
 
 Pull leads is done through command line and it can be setup as a cronjob.
 
-Feature specific settings:
-Select the objects you wish to pull or push records from. You can push contacts to the Leads object in salesforce. You can also push activities (contact's timeline records) to a custom object in salesforce.
+![Salesforce CRM features](./../plugins/media/plugins-salesforce-features.png "Salesforce CRM features")
 
-Pulling records will be done from Leads and/or Contacts objects in records and Accounts from Salesforce will be pulled into Mautic companies.
+**Feature specific settings:**
 
-Updating of a Contact's Owner can be be enabled by turning on *Update Contact Owner*. This is not enabled by default. In order for a Contact in Mautic to match a User in Salesforce the email addresses in the two systems must be identical.
+- Sandbox - when using a sandbox account to test, Mautic will use the test url for the API provided by Salesforce.
+- Updating of a Contact's Owner can be be enabled by turning on *Update Contact Owner*. This is not enabled by default. In order for a Contact in Mautic to match a User in Salesforce the email addresses in the two systems must be identical.
+- If Update blanks is checked, the sync will: 1. When pulling contacts from Salesfoce: it will check for fields mapped fields in Mautic and it will update these fields with Salesforce data regardless of the arrow direction set in the configuration. 2. When pushing data to Salesforce it will check for blank mapped fields in Salesforce and it will update these with Mautic's data regardless of the directions of the arrows setup in the configuration.
+- Select the objects you wish to pull or push records from. 
+- You can push Mautic contacts to the Lead and Contact object in Salesforce. You can also push activities (contact's timeline records) to a custom object in salesforce.
+- Pulling records will be done from Leads and/or Contacts objects into contacts in Mautic and Accounts from Salesforce will be pulled into Mautic companies.
+
 
 ### Command line script to pull records from Salesforce
 To pull records from salesforce you need to use a command from CLI. Use this command:
@@ -64,22 +69,22 @@ Parameters both commands take:
 
 ## Setting up Mautic's custom object in Salesforce
 To be able to push activities to the salesforce integration you first need to setup a custom object in your salesforce instance. Please setup the object as it is described below.  (Note: these are two underscores with no space between - not rendered well in Github).
+In this example Salesforce has given the custom object a namespace name = 'Mautic__'. We will describe the name of the fields and object that result after completing the process of creating the custom object.
 
-Custom object name: Mautic\__timeline (API  name: Mautic_timeline\__c)
+(_use the text in bold when creating your custom fields_)
 
+Custom object name: (namespace)**mautic_timeline**; (API  name: Mautic__**mautic_timeline**\__c)
 ![Salesforce CRM activity object timeline](./../plugins/media/plugins-salesforce-timeline.png "Salesforce CRM activity object")
-
-API names of fields:
-- ActivityDate\__c : Date/Time
-- contact_id\__c : Lookup(Contact)
-- Description\__c  : Long Text Area(131072)
-- WhoId\__c : Lookup(Lead)
-- MauticLead\__c : Number(18, 0) (External ID)
-- Mautic_url\__c : URL(255)
-- ReferenceId     : Text(255) (This field must be set as a unique field in SF to prevent duplicating activity entries)
+API names of fields: 
+- **ActivityDate**\__c : Date/Time
+- **contact_id**\__c : Lookup(Contact)
+- **Description**\__c  : Long Text Area(131072)
+- **WhoId**\__c : Lookup(Lead)
+- **MauticLead**\__c : Number(18, 0) (External ID)
+- **Mautic_url**\__c : URL(255)
+- **ReferenceId**\__c     : Text(255) (This field must be set as a unique field in SF to prevent duplicating activity entries)
 
 ![Salesforce CRM activity object](./../plugins/media/plugins-salesforce-object.png "Salesforce CRM activity object")
-
 When enabling the activity object, you need to tick the Activity checkbox in the mautic plugin configuration and also specify the namespace prefix if it's available in Salesforce
 
 ![Salesforce CRM activity namespace](./../plugins/media/plugins-salesforce-activity-setup.png "Salesforce CRM activity object")
