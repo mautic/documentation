@@ -1,9 +1,9 @@
 # Citrix Plugins
 
 ## Description:
-Create a plugin that pulls data from Mautic and pushes data to Mautic from GotoMeeeting, GotoWebinar, GotoTraining and GoToAssist) .
+Creates a plugin that pulls data from Mautic and pushes data to Mautic from GotoMeeeting, GotoWebinar, GotoTraining and GoToAssist.
 ## Required Features:
-1. Create registrants in GoToWebinar and GoToTraining based on campaign decisions, contact data and also from registration forms in Mautic 
+1. Create registrants in GoToWebinar and GoToTraining based on campaign decisions, contact data and also from registration forms in Mautic
 2. Pull back from registrant and attendee info into segments and campaigns  
 3. Display webinar and training attendance as an additional activity on the contact timeline
 4. Send emails with buttons to start GoToMeeting, GoToTraining and GoToAssist sessions
@@ -94,12 +94,44 @@ Create a plugin that pulls data from Mautic and pushes data to Mautic from GotoM
 ### Other details
 The cron job to synchronize the events is
 
-    php app/console citrix:sync
+    php app/console mautic:citrix:sync
 
     Usage:
-        citrix:sync [options]
+        mautic:citrix:sync [options]
 
     Options:
         -p, --product[=PRODUCT]  Product to sync (webinar, meeting, training, assist)
         -i, --id[=ID]            The id of an individual registration to sync
-  
+
+### Update: Join GoToWebinar Button Token
+1. Follow these steps to include a Join GoToWebinar button in a segment email:
+
+2. Create a webinar in the [GotoWebinar website](https://www.gotomeeting.com/webinar)
+
+3. Create a new contact and use the email address to register for the new webinar
+
+4. Run the Citrix Sync command: `php app/console mautic:citrix:sync` so that the webinar information is retrieved to the database.
+
+5. Create a segment with a "Webinar (registered)" filter. (Note that this is mandatory, and it will be validated when trying to save the email with the token in the body)
+![image](https://cloud.githubusercontent.com/assets/2924026/24730532/5ff1f31e-1a21-11e7-9e5f-fbdc604c0883.png)
+
+6. Add the contact to the segment manually or by running `php app/console mautic:segments:update`
+
+7. Create a new segment email and assign the previously created segment.
+![image](https://cloud.githubusercontent.com/assets/2924026/24730574/95b6083c-1a21-11e7-8c79-a8b9c45ab810.png)
+
+8. Open the email builder and insert the GotoWebinar button token:
+![image](https://cloud.githubusercontent.com/assets/2924026/24730644/0f294076-1a22-11e7-9af8-edd359587a41.png)
+
+9. Send the email to the segment contacts.
+![image](https://cloud.githubusercontent.com/assets/2924026/24730930/ddef679a-1a23-11e7-9610-513a44bcfd48.png)
+
+10. The email in the new contact inbox should include a button to join the webinar with the appropiate URL for the contact.
+![image](https://cloud.githubusercontent.com/assets/2924026/24731148/72272370-1a25-11e7-97ac-e04943f25775.png)
+
+11. The button can be styled by overriding the `citrix-start-button` CSS class. ie
+```
+.citrix-start-button {
+  background: green !important;
+}
+```

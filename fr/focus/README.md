@@ -1,11 +1,11 @@
 # Focus
 
-Focus vous permet d'afficher des barres, modules, notifications et popin en pleine page lors du passage de visiteurs sur votre site.
-Retouver les objets Focus dans le menu Canaux.
+Focus vous permet d'afficher des barres, modules, notifications et popins en pleine page lors du passage de visiteurs sur votre site.
+Retrouver les objets Focus dans le menu Canaux.
 
 ## Création d'un objet Focus
 
-Lors de la création d'un objet focus, vous serez invité en renseigner une URL de site web. Cela va vous permettre de visualiser le Focus sur une photo d'écran du site en question. Si la pag du site est un peu lourde, l'image ne fonctionnera peut être pas.
+Lors de la création d'un objet focus, vous serez invité en renseigner une URL de site web. Cela va vous permettre de visualiser le Focus sur une photo d'écran du site en question. Si la page du site est un peu lourde, l'image ne fonctionnera peut être pas.
 
 ![](/focus/media/step_1.png)
 
@@ -23,7 +23,7 @@ La première étape est de déterminer quel est l'objectif de l'objet Focus. Il 
 
 1. Récolter des données - cela utilisera un formulaire Mautic comme contenu. Notez que cela devra être un formulaire très simple (un ou deux champs) puisqu'il y a peu d'espace. Mais cela est très bien pour récupérer des adresses emails et des inscriptions aux newsletters.
 2. Afficher une notification - seulement une information, très pratique pour les annonces par exemple.
-3. Mise en évidence d'un lien - très bien pour les pages d'atterrissage pour un événement, un salon, une promotion, etc. Cela affichera un bouton qui redirigera pas une URL.
+3. Mise en évidence d'un lien - très bien pour les pages d'atterrissage pour un événement, un salon, une promotion, etc. Cela affichera un bouton qui redirigera vers une URL.
 
 ![](/focus/media/step_4.png)
 
@@ -34,7 +34,7 @@ Chaque but Focus aura quelques paramétrages spécifiques mais globalement en co
 2. A quelle fréquence déclencher - est-ce que cela doit arriver à chaque fois, une fois par session, ou seulement sur un intervalle de temps ?
 3. Arrêter après la conversion - une fois que le visiteur à cliqué sur un lien ou soumis un formulaire, en activant cette fonctionnalité, le visiteur ne sera plus notifié.
 
-### Le sytle de votre objet Focus
+### Le style de votre objet Focus
 
 ![](/focus/media/step_5.png)
 
@@ -63,4 +63,4 @@ Cela dépendra de votre objectif et du format de votre objet Focus. Certains vou
 
 ![](/focus/media/step_8.png)
 
-C'est simple comme bonjour. Une fois enregistré, vous cliquez sur le nom de votre objet, puis vous avez la possibilité d'expoerter un script dans la barre de droite. Vous n'avez plus qu'à la copier et coller sur la page de votre site web !
+C'est simple comme bonjour. Une fois enregistré, vous cliquez sur le nom de votre objet, puis vous avez la possibilité d'exporter un script dans la barre de droite. Vous n'avez plus qu'à la copier et coller sur la page de votre site web !

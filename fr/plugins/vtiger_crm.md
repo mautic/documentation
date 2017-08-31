@@ -1,29 +1,26 @@
-# Mautic - vtiger CRM plugin
+# Plugin Mautic - vTiger CRM
 
-This plugin can push a contact to the vTiger CRM when a contact makes some action.
+Mautic peut envoyer les contacts vers vTiger CRM quand un contact fait une ou plusieurs actions.
 
-If you don't have the vTiger CRM account yet, [create it](https://www.vtiger.com/).
+Si vous n'avez pas encore de compte vTiger CRM, [créez le ici](https://www.vtiger.com/).
 
-## Authenticate the vTiger plugin
+## Authentification du plugin vTiger
 
-To authenticate the Mautic plugin to be able to communicate with vTiger CRM you'll need these credentials:
+Pour authentifier le plugin Mautic pour qu'il communique avec vTiger CRM vous avez besoin de paramétrer cela :
 
-- **vTiger URL** - the base (root) URL starting with http:// or https:// where your vTiger instance run. For example `https://your_vtiger.od2.vtiger.com`.
-- **vTiger username** - The username (email address usually) which you use to log in to your vTiger.
-- **vTiger access key** - The access key published in your vTiger profile. To get it, go to vTiger's *My Preferences*. The *Access Key* hash is in the bottom of the page.
+- **vTiger URL** - l'URL commencant par http:// ou https:// où votre compte vTiger fonctionne (ex. `https://your_vtiger.od2.vtiger.com`).
+- **vTiger username** - Votre login (adresse email généralement) qu vous utilisez pour vous connecter à votre compte vTiger.
+- **vTiger access key** - La clé d'accès publiée dans votre profil vTiger. Pour l'obtenir, allez dans *My Preferences* dans vTiger. Le hash de la *clé d'accès* est en bas de la page.
 
-Fill these 3 credentials to the Mautic plugin and click Authenticate.
+Renseigenz ces 3 informations dans le plugin Mautic et authentifiez vous.
 
-## Configure the vTiger CRM plugin
+## Configurez le plugin vTiger CRM
 
-If you want to use the plugin, you have to publish it. Set the *Publish* switch to *Yes*.
+1. Si vous souhaitez utiliser le plugin, vous devez l'activer. Paramétrez *Publier* à *Oui*.
+2. Dans l'onglet Fonctionnalités, vous trouverez la case à cocher *Envoyer le contact dans l'intégration* qui est activée par défaut.
+3. Configurez le [mapping des champs](./../plugins/field_mapping.html).
+4. Sauvegardez la configuration du plugin.
 
-In the Features tab is just *Push contacts to this integration* checkbox and it is checked by default.
+## Testez le plugin
 
-Configure the [field mapping](./../plugins/field_mapping.html).
-
-Save the plugin configuration.
-
-## Test the plugin
-
-Follow [these steps](./../plugins/integration_test.html) to test the integration.
+Suivez [ces étapes](./../plugins/integration_test.html) pour tester l'intégration.

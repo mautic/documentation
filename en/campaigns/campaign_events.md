@@ -1,6 +1,6 @@
 ## Campaign Events
 
-Below are notes on some of the specific campaigns events. 
+Below are notes on some of the specific campaign events. 
 
 ### Campaign Actions
 
@@ -8,7 +8,17 @@ Below are notes on some of the specific campaigns events.
 
 ![](/campaigns/media/send-email-delay.png)
 
-In the send email action, there is an option to select Transaction or Marketing. A transactional email is one that can be sent to the contact multiple times. A marketing email is one that only be sent to the contact once across multiple sources (e.g. another campaign). If the contact has already received this email from another source or the current campaign, the email will not be sent again and the contact simply progresses on through the campaign. 
+In the send email action, there is an option to select Transaction or Marketing. A transactional email is one that can be sent to the contact multiple times. A marketing email is one that can only be sent to the contact once across multiple sources (e.g. another campaign). If the contact has already received this email from another source or the current campaign, the email will not be sent again and the contact simply progresses on through the campaign.
+
+#### Delete contact
+
+This action will **permanently delete the contact** who will trigger this action in your campaign flow, together with all the information Mautic knows about that contact. See in the [segment docs](./../contacts/managing_contacts.html#delete-all-contacts-in-a-segment) about how to use this action to delete all contacts in a segment.
+
+##### The Delete contact action is special for 2 reasons:
+
+1.  It will also delete the campaign event log record about that contact so this action will always show 0% progress in the campaign detail page. Even though it could have deleted some contacts. There is no record about it.
+
+2. This action doesn't allow to connect other campaign events to it. There is no point in doing so since the contact won't exist after this action is triggered.
 
 ### Campaign Decisions
 
@@ -18,10 +28,7 @@ The opens email decision can only be attached to a send email action. Whatever e
 
 #### Visits a page
 
-Decision works with landing page (Limit to Pages field) .
 
-Also works with every page where you're useing Mautic tracking code (URL or Referrer field). You are able to use search expression with **Like** operator for your matches. Both fields use [fmatch](http://php.net/manual/en/function.fnmatch.php).
-
-Note: This decision use OR operator between fields (Limit to Pages, URL, Referrer).
+Note: The decision uses the OR operator between fields (Limit to Pages, URL, Referrer).
 
 ![](/campaigns/media/vists-a-page.PNG)

@@ -1,13 +1,14 @@
-# Contact Monitoring
-The act of monitoring the traffic and activity of contacts can sometimes be somewhat technical and frustrating to understand. Mautic makes this monitoring simple and easy to configure.
+# Monitoring des contacts
+Le fait de monitorer le trafic et l'activité des contacts peut être parfois technique et compliqué à comprendre. Mautic rend ce monitoring simple et facile à configurer.
 
-## Website Monitoring
+## Monitoring du site web
 
-Monitoring all traffic on a website can be done by loading a javascript file (since Mautic 1.4) or adding a tracking pixel to the website. It is important to note that traffic will not be monitored from logged-in Mautic users. To check that the JS/pixel is working, use an incognito or private browsing window or simply log-out of Mautic prior to testing.
+Le tracking de tout le trafic sur votre site internet ou blog peut être fait par la simple action d'ajout d'un javascript (depuis la version 1.4) ou du pixel de tracking. Il est important de comprendre que le tracking ne sera pas effectué sur les utilisateurs de Mautic connectés. Pour vérifier si le javascript ou pixel de tracking est fonctionnel, utilisez navigation incognito ou privée avc votre navigateur ou alors déconnectez vous d'Automation avant de faire vos tests.
 
 ### Javascript (JS) tracking
 
-JS tracking method was implemented in Mautic 1.4 and recommended as the primary way of website tracking. To implement it, go to *Mautic configuration* > *Landing Page Settings* to find the JS tracking code build for your Mautic instance and insert it code before ending `<body/>` tag of the website you want to track. Or copy the code below and change the URL to your Mautic instance.
+Le script a été ajouté comme méthode en 1.4 et il est vivement recommandé de l'utiliser plutôt que le pixel de tracking.
+Pour le mettre en oeuvre, allez dans *Configuration* > *Paramètre des pages d'atterrissage* afin de trouver le code de tracking javascript pour votre compte Mautic et insérer le après la balise `</body>` sur votre site internet. Ou alors copier le code ci dessous et changez l'URL par celle de votre instance Mautic.
 
 ```
 <script>
@@ -20,18 +21,18 @@ JS tracking method was implemented in Mautic 1.4 and recommended as the primary 
 </script>
 ```
 
-_Don't forget to change the scheme (http(s)) either to http or https depending what scheme you use for your Mautic. Also, change [yourmautic.com] to domain where your Mautic runs._
+_N'oubliez pas de changer le protocole (http(s)) en http ou https en fonction du protocole utilisé par votre instance Mautic. Changez également [yourmautic.com] par le nom de domaine sur lequel est installé votre instance._
 
-The advantage of JS tracking is that the tracking request which can take quite long time to load is loaded asynchronously so it doesn't slow down the tracked website. JS also allows to track more information automatically:
+L'avantage du script est que le chargement se fait de façon asynchrone et cela évite de ralentir le chargement de la page.
+Le script Javascript permet également de tracer un peu plus d'information et cela automatiquement :
+- **Titre de la page** qui se trouve entre les balises `</title>`.
+- **Langue de la page** définie dans le navigateur du visiteur.
+- **Page Referrer** URL source d'où provient le contact.
+- **URL de page** étant l'URL du site en cours.
 
-- **Page Title** is the text written between `</title>` tags.
-- **Page Language** is the language defined in the browser.
-- **Page Referrer** is the URL which the contact came from to the current website.
-- **Page URL** the URL of the current website.
+#### Evénements mt()
 
-#### mt() Events
-
-As of 2.2.0, mt() supports two callbacks, `onload` and `onerror` accepted as the fourth argument. The `onload` method will be executed once the tracking pixel has been loaded. If the pixel fails for whatever reason, `onerror` will be executed.
+Depuis la version 2.2.0, mt() supporte 2 callbacks, `onload` et `onerror` accepté comme le 4e argument. La méthode `onload` sera exécutée une fois que le pixel de tracking est chargé. Si le chargement échoue pour une raison quelconque, `onerror` sera exécuté.
 
 ```
 mt('send', 'pageview', {}, {
@@ -44,65 +45,65 @@ mt('send', 'pageview', {}, {
 });
 ```
 
-#### Local Contact Cookie
+#### Cookie local du contact
 
-As of Mautic 2.2.0, if CORS is configured to allow access from the domain the mtc.js is embedded, a cookie will be placed on the same domain with the name of `mtc_id`. This cookie will have the value of the ID for the currently tracked contact. This provides access to server side software to the contact ID and thus providing the ability to integrate with Mautic's REST API as well.
+Depuis la version de Mautic 2.2.0, si les CORS sont configurés pour autoriser l'accès au domaine où le mtc.js est intégré, un cookie sera placé sur le même domaine avec le nom `mtc_id`. Ce cookie aura la valeur de l'ID du contact actuellement tracé. Cela donne un accès à l'ID du contact pour le serveur afin de pouvoir communiquer plus facilement avec l'API REST.
 
-#### Tracking of custom parameters
+#### Enregistrer des paramètres personnalisés
 
-You can attach custom parameters or overwrite the automaticly generated parameters to the pageview action as you could to the tracking pixel query. To do that, update the last row of the JS code above like this:
+Vous pouvez attacher des paramètres personnalisés ou écraser les paramètres par défaut. Pour procéder ainsi, mettez à jour la dernière ligne du javascript comme expliquer ci après :
 
 ```
     mt('send', 'pageview', {email: 'my@email.com', firstname: 'John'});
 
 ```
-This code will send all the automatic data to Mautic and adds also email and firstname. The values of those fields must be generated by your system.
+Ce code enverra automatiquement les données dans Mautic sur le bon contact. Les valeurs pour ces champs devront être générées par votre système (site web).
 
-#### Load Event
+#### Evénement Load
 
-As the JS tracking request is loaded asynchronously, you can ask JS to call a function when request is loaded. To do that, define a *onload* function in options like this:
+Comme le tracking JS est une requête chargée de façon asynchrone, vous pouvez demander au JS d'appeler une fonction quand il est chargé. Pour faire ainsi, définissez la fonction *onload* dans les options comme suivant :
 
 ```
     mt('send', 'pageview', {email: 'my@email.com', firstname: 'John'}, {onload: function() { alert("Tracking request is loaded"); }});
 
 ```
 
-#### Fingerprint (beta feature)
+#### Fingerprint (fonctionnalité beta)
 
-Mautic 1.4.0 comes with a tracking feature called fingerprint. [Fingerprint2](https://github.com/Valve/fingerprintjs2) library was used. It should work together or replace current tracking identifiers like IP address and/or cookie ID. This method is not yet deeply implemented into the system, but you can already see more information in the timeline page hit events in the contact detail:
+Mautic 1.4.0 introduit une fonctionnalité de tracking appelée Fingerprint. La librairie [Fingerprint2](https://github.com/Valve/fingerprintjs2) est utilisée. Cela doit fonctionner avec ou remplacer les indentifiants de tracking courants comme l'adresse IP et/ou l'ID de cookie. Cette méthode n'est pas encore ajoutée en profondeur dans le système, mais vous pouvez déjà voir plus d'informations dans la timeline du contact sur ses visites :
 
-- **Fingerprint** - Unique hash calculated from browser settings and another environment variables.
-- **Resolution** - With x Height of the device display resolution.
-- **Timezone Offset** - Amount of minutes plus or minus from UTC.
-- **Platform** - Platform of the device. Usually OS and processor architecture.
-- **Adblock** - A Boolean value whether contact uses an adblock browser plugin.
-- **Do Not Track** - A Boolean value if DNT is turned on.
+- **Fingerprint** - Hash unique calculé par les paramètres du navigateur.
+- **Resolution** - Avec la largeur x hauteur du support utilisé.
+- **Timezone Offset** - Nombre de minutes en plus ou moins d'UTC.
+- **Platform** - Platforme du support. Généralement l'OS (système d'exploitation) et le processeur.
+- **Adblock** - Une valeur booléenne pour savoir si le contact utilise le plugin Adblock.
+- **Do Not Track** - Une valeur booléenne pour savoir si le contact ne souhaite pas que l'on pose un cookie pour le tracer.
 
-If you'd like to store any of the values above to a contact detail field, create new custom field called exactly like the name in the list above and make the field publicly updatable. You can also try to make the Fingerprint field unique and this way you can simulate the future fingerprint tracking. It is not tested feature though, do not use it on production unless you tested it first.
+Si vous souhaitez stocker ces informations dans un champ de contact, créez un nouveau champ personnalisé appelé de la même manière et avec le même nom que la liste ci dessus (les configurer publiquement updatable).
 
-### Tracking Pixel tracking
+### Pixel de tracking
 
-This method is secondary since Mautic 1.4.
+Cette méthode est secondaire depuis la version de Mautic 1.4.
 
 ```
 http://yourdomain.com/mtracking.gif
 ```
 
-#### Tracking Pixel Query
+#### Requête du pixel de tracking
 
-To get the most out of the tracking pixel, it is recommended that you pass information of the web request through the image URL.  
+Pour profiter de toute la puissance du pixel de tracking, vous pouvez passer des paramètres et informations complémentaires des requêtes web via l'URL de l'image.
 
-#### Page Information
 
-Mautic currently supports `page_url`, `referrer`, `language`, and `page_title` (note that the use of `url` and `title` are deprecated due to conflicts with contact fields).
+#### Informations sur la page
 
-### UTM Codes
+Mautic supporte actuellement `page_url`, `referrer`, `language`, et `page_title` (notez que l'utilisation du paramètre url et title est évitée pour ne pas créer de conflit avec les champs du contact).
 
-Support for UTM codes in the contact time-line was introduced in version 1.2.1. `utm_medium`, `utm_source`, and `utm_campaign` are used to generate the content of the time-line entry.
+### Codes UTM
 
-`utm_campaign` will be used as  the time-line entry's title.
+La prise en compte des codes UTM dans la timeline du contact a été introduite en version 1.2.1. `utm_medium`, `utm_source`, et `utm_campaign` sont utilisés pour générer le contenu de l'événement du contact.
 
-`utm_medium` values are mapped to the following Font Awesome classes:
+* `utm_campaign` sera utilisé comme titre de l'événement dans la timeline.
+* Les valeurs `utm_medium` correspondent aux classes Font Awesome suivantes :
 
 <table>
 <thead>
@@ -122,11 +123,11 @@ Support for UTM codes in the contact time-line was introduced in version 1.2.1. 
 </table>
 
 
-#### Embedding the Pixel
+#### Intégrer le pixel
 
-If you are using a CMS, the easiest way is to let one of our plugins do this for you (see below). Note that the plugins may not support all contact fields, utm codes or contact tags.
+Si vous utilisez un CMS, le plus simple est de laisser un de nos plugins le faire pour vous (voir ci-dessous). Notez que les plugins CMS ne supportent pas tous les champs custom, les codes UTM et les tags.
 
-Here are a couple code snippets that may help as well:
+Voici une liste de bouts de code qui pourraient vous aider :
 
 HTML
 
@@ -162,19 +163,18 @@ body.appendChild(img);
 </script>
 ```
 
-### Contact Fields
+### Champs de contact
 
-You can also pass information specific to your contact by setting Mautic contact field(s) to be publicly updatable. Note that values appended to the tracking pixel should be url encoded (%20 for spaces, %40 for @, etc).
+Vous pouvez également passer des informations specifiques sur votre contact en paramétrant les champs personnalisés de Mautic comme publiquement updatable. Notez que les valeurs ajoutées au pixel de tracking doivent être encodée en URL (%20 pour un espace, %40 pour une @, etc.).
 
 ### Tags
 
-The contact's tags can be changed by using the `tags` query parameter. Multiple tags can be separated by comma. To remove a tag, prefix it with a dash (minus sign).  
+Les tags des contacts peuvent être modifiés en utilisant le paramètre `tags`. Plusieurs tags peuvent être ajoutés en les séparant par une virgule. Pour supprimer un tag, ajoutez-y le préfixe moins -.
+Par exemple, `mtracking.gif?tags=ProductA,-ProductB` ajouterait le tag ProductA au prospect et lui enleverait le tag ProductB.
 
-For example, `mtracking.gif?tags=ProductA,-ProductB` would add the ProductA tag to the contact and remove ProductB.
+### Plugins disponibles
 
-### Available Plugins
-
-Mautic makes this even easier by providing key integrations to many existing content management systems. You can download and use any of the following plugins to automatically add that tracking pixel to your website.
+Mautic rend votre vie encore plus facile en vous donnant accès à des plugins pour les CMS principaux. Vous pouvez en télécharger et en installer autant que vous le souhaitez.
 
 * [Joomla!](http://mautic.org/integration/joomla)
 * [Drupal](http://mautic.org/integration/drupal)
@@ -183,61 +183,62 @@ Mautic makes this even easier by providing key integrations to many existing con
 * [Concrete5](http://mautic.org/integration/concrete5)
 * [Grav](https://github.com/mautic/mautic-grav)
 
-These are just a few of the integrations already created by the Mautic community. More will be added in the future and developers are encouraged to submit their own integrations.
+Ceux-ci sont une partie des intégrations réalisées par la communauté Mautic. De nombreuses autres intégrations seront développées dans le futur et nous encourrageons les développeurs à soumettre leurs intégrations à la communauté.
 
-**Note:** It is important to note that you are not limited by these plugins and you can place the tracking pixel directly on any HTML page for website tracking.
+**Note :** Il est important de noter que vous n'êtes pas limités par ces plugins pour mettre le tracking en place sur votre site et/ou CMS.
 
-### Mobile Monitoring
+### Identifier les visiteurs par tracking URL
 
-The essence of monitoring what happens in an App is similar to monitoring what happens on a website. Mautic contains the building blocks needed for native (or pseudo-native) and HTML5-wrapper based Apps, regardless of platform.
+Mautic 2.9 ajoute dans les options de Configuration pour identifier les visiteurs par URL de tracking. Si c'est activé, les visiteurs seront reconnus par les URL uniques issues des cannaux (spécialement les emails) quand aucun cookie existe déjà.
 
-In short, use named screen views (e.g. main_screen) in your App as your page_url field in the tracker, and the contact's email as the unique identifier, see next section for detailed instructions.
+**Note :** le champ de contact email doit être identifiant unique et publiquement updatable.
 
-#### Steps in Mautic
+### Monitoring mobile
 
-1. Make the email field publicly editable, this means that a call to the tracking GIF with the variable email will get properly recognized by Mautic.
+Le fait de monitorer le comportement dans une application est relativement similaire au tracking sur une site web. Automation possède la structure nécessaire pour des applications natives (ou pseudo-natives) et applications HTML5.
 
-2. Setup a form, which will be the access point of your campaign (e.g. a new contact email). Make this form as simple as you can, as you will be POST-ing to it from your App. The typical form URL you will POST to is
+En bref, utilisez des noms pour vos écrans (ex : ecran_accueil) dans votre application pour le champ page_url dans le pixel de tracking, ainsi que l'adresse email du prospect comme identifiant unique, consultez l'étape suivant pour plus de détail.
+
+#### Les étapes dans Mautic
+
+1. Rendrez le champ email publiquement updatable.
+
+2. Paramétrez un formulaire, qui sera le point d'accès à votre campagne (ex. un email de bienvenue). Faites ce formulaire aussi simple que possible, puisque vous allez rePOSTer depuis votre App.
 
 ```
 http://your_mautic/form/submit?formId=<form_id>
 ```
 
-You can get the ID from the mautic URL as you view / edit the form in the Mautic interface (or in the forms tables, last column), and you can get the form fields by looking at the HTML of the 'Manual Copy' of the HTML in the forms editing page.
+Vous pouvez obtenir l'ID depuis votre page Mautic (aperçu du formulaire).
 
-
-3. Define in your campaigns the screens you want to use as triggers (e.g. 'cart_screen' etc.). Mautic is not looking for a real URL in the form 'http://<url>' for page_url, any typical string would do. Like this:
+3. Definissez dans vos campagnes les écrans que vous souhaitez utiliser comme déclencheur (ex. 'ecran_panier' etc.). Mautic ne cherche pas une URL "réelle" dans le formuaire 'http://<url>' pour la page_url, n'importe quelle valeur simple fonctionnera, comme par exemple :
 
 ```
 http://yourdomain.com/mtracking.gif?page_url=cart_screen&email=myemail@somewhere.com
 ```
 
-#### In your App
+#### Dans votre application
 
-A best-in-class approach is to have a class (say 'mautic') that handles all your tracking needs. For example, this sample method call would POST to the form with ID 3 - see previous section (note: for conciseness and ubiquity, these sample lines are written in JavaScript / ECMAScript-type language, use similar call in your mobile App language of choice).
+La meilleure approche est d'avoir une classe (par exemple 'mautic') qui gère vos besoins en tracking. Par exemple, cette méthode d'échantillon POST dans le formulaire d'ID 3
 
 ```
 mautic.addContact("myemail@somehwere.com",3)
 ```
 
-And then, to track individual user activity in the App, this sample call would make an HTTP request to the tracker:
+Et par la suite, pour tracer des informations d'activité dans l'application, cette échantillon fait une requête HTTP au tracker :
 
 ```
 mautic.track("cart_screen", "myemail@somewhere.com")
 ```
 
-Which is nothing more than an HTTP request to this GET-formatted URL (as also shown in previous section):
+Qui n'est rien de plus qu'une reqêuet HTTP vers l'URL en format GET :
 
 ```
 http://yourdomain.com/mtracking.gif?page_url=cart_screen&email=myemail@somewhere.com
 ```
 
-Important: Make sure in your App, that the above HTTP request is using a cookie (if possible, re-use the cookie from the mautic.addcontact POST request prior) AND that you reuse this cookie from one request to the next. This how Mautic (and other tracking software) knows that it's really the same user. If you can't do this, you may run in the (unlikely but possible) case where you have multiple contacts from the same IP address and Mautic will merge them all into a single contact as it can't tell who is who without a cookie.
-
-### Other Online Monitoring
-
-There are several other ways to monitor contact activity and attach points to those activities. Website monitoring is only one way to track contacts. Other contact monitoring activities can consist of forum posts, chat room messages, mailing list discussion posts, GitHub/Bitbucket messages, code submissions, social media posts, and a myriad of other options.
+Important : Soyez sûr dans votre application, que la requête HTTP utilise une cookie (si possible, ré-utilisez le cookie depuis la requête POST mautic.addcontact) et que vous réutilisez ce cookie d'une requête à l'autre. C'est ainsi que Mautic (et les autres logiciels de tracking) reconnaissent que c'est le même utilisateur.
 
 ### Troubleshooting
 
-If the tracking doesn't work, take a look at [Page troubleshooting](./../pages/troubleshooting.html) or [Email troubleshooting](./../emails/troubleshooting.html)
+Si le tracking ne fonctionne pas, rendez-vous sur la [page troubleshooting](./../pages/troubleshooting.html) ou [Email troubleshooting](./../emails/troubleshooting.html)

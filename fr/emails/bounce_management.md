@@ -9,7 +9,7 @@ Pour utiliser les emails monitorés, vous devez avoir l'extension PHP IMAP activ
 Pour récupérer et traiter les messages, lancez la commande suivante (pour les utilisateurs Mautic Open Source) :
 
 ```
-php app/console mautic:fetch:email
+php /path/to/mautic/app/console mautic:email:fetch
 ```
 
 Notez qu'il est recommandé de créer une adresse spécifique pour cet usage puisque Mautic va lire chaque message présent dans ce dossier.

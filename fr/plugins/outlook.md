@@ -1,45 +1,40 @@
-# Mautic - Outlook plugin
+# Plugin Mautic - Outlook
 
-This plugin allows for the Outlook Add-In to keep track of emails sent to leads. If it does not show up in the list of plugins - click the Install/Upgrade Plugins. 
+Ce plugin permet pour l'Add-on Outlook de tracer les emails envoyés aux contacts depuis Outlook. Si vous ne le voyez pas, cliquez sur Installer/Mettre à jour les Plugins.
 
-### Requirements
+### Pré-requis
 
-- Mautic installed on a publicly accessible URL.
+- Mautic installé sur une URL publique et accessible.
 - Microsoft Outlook 2016.
-- [Mautic Outlook Add-In for Outlook 2016](https://m.mautic.com/asset/24:microsoft-outlook-plugin-102)
+- [Mautic Outlook Add-In pour Outlook 2016](https://m.mautic.com/asset/24:microsoft-outlook-plugin-102)
 
-### Configure the plugin
+### Configurez le plugin
 
-1. Install the Mautic plugin as usual. It will appear on the plugins page in Mautic.
+1. Installez le plugin Mautic.
 ![image](/plugins/media/outlook/outlook_plugin.png)
 
-2. Click on the Outlook plugin button and enter a secret or key to validate the Outlook Add-In
+2. Cliquez sur le bouton du plugin Outlook et entrez une clé secrète pour valider l'Add-In Outlook.
 ![image](/plugins/media/outlook/secret.png)
 
-3. Run the [Mautic Outlook Add-In Installer](https://github.com/mautic/mautic/files/402928/Mautic.Outlook.Plugin.Setup.zip) on a Windows machine with Outlook 2016
+3. Lancez l'[Add-In Mautic Outlook](https://github.com/mautic/mautic/files/402928/Mautic.Outlook.Plugin.Setup.zip) sur une machine Windows avec Outlook 2016.
 
-4. On the Outlook 2016 Options window, select Add-Ins and click on the Add-In Options button
+4. Dans la fenêtre d'options Outlook 2016, sélectionnez les Add-Ins et cliquez sur le bouton des options.
 ![image](/plugins/media/outlook/outlook_addin.png)
 
-5. Type in the URL of the Mautic application, the same secret you used on the Mautic plugin page and click OK
+5. Renseignez l'URL de votre instance Mautic, avec la même clé secrète utilisée dans le plugon Mautic. Puis cliquez sur OK.
 ![image](/plugins/media/outlook/outlook_settings.png)
 
-6. To track an email sent to a lead, click the Track Email button on the New Email window
+6. Pour tracer un email envoyé à un contact, cliquez sur le bouton **Track Email** dans la fenêtre de nouvel email.
 ![image](/plugins/media/outlook/outlook_send.png)
 
-7. This will append a tracking GIF to the email with the following syntax:  [[MAUTIC_URL]]/index.php/outlook/tracking.gif?d=H4sIAAAAAAAEAIVRTW%2FCMAz9LRyCtgNVlFBpHHroWsRuk8ak7RpaUzqaGCUp0H8%2Fpy0TH4dJUZy892w921uLOvkCa8BGK2WLWi2dt6pUbM7PYPEcFainoFXdJKdBVvUy4quA9rxrNz9Q%2BCQ16HdgmeAenKewpfIU3lvfIO6nGyy75HNXO8LQAN3984R2X5tqMpkwnjOejrfg19%2FBJIHBJsskS3M1MOvOedChUA5HaPBAsp54a7UyBH%2BAw9YWECRrsMc6PHvFd2iR0NfW1QbcjUDwMjhctYqqq0YxkQU6SqMhNxi85GeoD8p0134zaBom%2By4ezlPMxTPFeCH5TLzI%2BdgizeEu5aIUQixmIubjSG5WAY8bC8kyC%2FvxSBX%2Flcvl3bT%2Fvr8k1oBgIQIAAA%3D%3D&sig=cf078d5b
+7. Cela ajoutera un pixel de tracking GIF à votre email avec la forme suivante :  [[MAUTIC_URL]]/index.php/outlook/tracking.gif?d=H4sIAAAAAAAEAIVRTW%2FCMAz9LRyCtgNVlFBpHHroWsRuk8ak7RpaUzqaGCUp0H8%2Fpy0TH4dJUZy892w921uLOvkCa8BGK2WLWi2dt6pUbM7PYPEcFainoFXdJKdBVvUy4quA9rxrNz9Q%2BCQ16HdgmeAenKewpfIU3lvfIO6nGyy75HNXO8LQAN3984R2X5tqMpkwnjOejrfg19%2FBJIHBJsskS3M1MOvOedChUA5HaPBAsp54a7UyBH%2BAw9YWECRrsMc6PHvFd2iR0NfW1QbcjUDwMjhctYqqq0YxkQU6SqMhNxi85GeoD8p0134zaBom%2By4ezlPMxTPFeCH5TLzI%2BdgizeEu5aIUQixmIubjSG5WAY8bC8kyC%2FvxSBX%2Flcvl3bT%2Fvr8k1oBgIQIAAA%3D%3D&sig=cf078d5b
 
-8. The Mautic plugin will then validate the information using the secret to compare signatures and then attach that email to the contact’s profile as part of their activity history. If the lead or leads don't exist, they are created automatically
+8. Le plugin Mautic validera l'information en comparant les clés secrètes et ajoutera ensuite l'événement à l'historique du contact dans Mautic. Si le(s) contact(s) n'existe pas déjà, il sera créé automatiquement.
 ![image](/plugins/media/outlook/outlook_contacts.png)
 
-  ![image](/plugins/media/outlook/outlook_timeline.png)
+![image](/plugins/media/outlook/outlook_timeline.png)
 
-## URL Parameter Length Issue
-; Please note that PHP setups with the suhosin patch installed will have a                                   
-; default limit of 512 characters for get parameters. Although bad practice,                                 
-; most browsers (including IE) supports URLs up to around 2000 characters,                                   
-; while Apache has a default of 8000.                                                                        
-
-; To add support for long parameters with suhosin add the following to php.ini                                                         
-suhosin.get.max_value_length = 5000
-
+## Problèmes de longueur de paramètre URL
+Veuillez noter que les paramètres PHP avec le patch suhosin installé aura comme valeur par défaut une limite de 512 caractères pour les paramères GET. Cependant, la majorité des navigateurs (incluant IE) supportent les URLs jusqu'à 2000 caractères alors qu'Apache à une valeur par défaut de 8000.
+Pour supporter des paramètres plus longs, ajouter le paramètre suivant dans php.ini
+`suhosin.get.max_value_length = 5000`

@@ -2,7 +2,6 @@
 
 Le générateur de campagne Mautic vous ouvre zone de travail blanche sur laquelle vous pourrez mettre en place votre scenario. L'interface simple et épurée vous aidera à déposer vos actions et décisions.
 
-
 ### Sources
 
 La première chose à faire, est de sélectionner d'où viennent les contacts qui vont être ajoutés à la campagne. Il y a deux options : les segments et les formulaires de campagne.
