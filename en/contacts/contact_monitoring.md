@@ -277,7 +277,7 @@ Action allow send custom event to [Google Analytics](https://developers.google.c
 
 ![](/contacts/media/facebook-pixel-helper.png)
 
-Events should use for [Remarketing with Analytics](https://support.google.com/analytics/topic/2611283?hl=en&ref_topic=7185254) and [Custom Audiences for Facebook Ads](https://www.facebook.com/business/a/online-sales/custom-audiences-website)   
+Events should use for [Remarketing with Analytics](https://support.google.com/analytics/topic/2611283?hl=en&ref_topic=7185254) and [Remarketing for Facebook Ads](https://www.facebook.com/business/a/online-sales/custom-audiences-website)   
 
 
 ### Other Online Monitoring
