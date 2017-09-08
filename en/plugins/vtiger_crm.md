@@ -4,6 +4,8 @@ This plugin can push a contact to the vTiger CRM when a contact makes some actio
 
 If you don't have a vTiger CRM account yet, [create it](https://www.vtiger.com/).
 
+**Warning** The cloud Vtiger instances have the _Leads_ module disabled by default. This will cause error message `Permission to perform the operation is denied` on plugin edit form. Enable the _Leads_ module and the plugin load the custom field mapping form.
+
 ## Authenticate the vTiger plugin
 
 To authenticate the Mautic plugin to be able to communicate with vTiger CRM you'll need these credentials:
