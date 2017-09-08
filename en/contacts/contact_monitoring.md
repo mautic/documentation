@@ -248,6 +248,38 @@ http://yourdomain.com/mtracking.gif?page_url=cart_screen&email=myemail@somewhere
 
 Important: Make sure in your App, that the above HTTP request is using a cookie (if possible, re-use the cookie from the mautic.addcontact POST request prior) AND that you reuse this cookie from one request to the next. This is how Mautic (and other tracking software) knows that it's really the same user. If you can't do this, you may run into the (unlikely but possible) case where you have multiple contacts from the same IP address and Mautic will merge them all into a single contact as it can't tell who is who without a cookie.
 
+### Google Analytics and Facebook Pixel tracking support
+
+Mautic supports contact tracking in Google Analytics and Facebook pixel. Go to Mautic Configurations Tracking Settings tab and setup:
+
+- [Google Analytics ID](https://support.google.com/analytics/answer/1008080?hl=en#trackingID)
+- [Facebook Pixel ID](https://www.facebook.com/business/help/952192354843755)
+
+Tracking codes support also [Google Analytics USERID](https://support.google.com/analytics/answer/3123662?hl=en) and [Facebook Pixel Advanced Matching](https://developers.facebook.com/ads/blog/post/2016/05/31/advanced-matching-pixel/) .
+
+#### Campaign action Send tracking event
+
+Action allow send custom event to [Google Analytics](https://developers.google.com/analytics/devguides/collection/analyticsjs/events) or [Facebook Pixel](https://developers.facebook.com/docs/ads-for-websites/pixel-events/) and depend on Visits a page decision.
+
+##### How to test Google Analytics tracking code and campaign action
+
+- Install [Tag assistent](https://chrome.google.com/webstore/detail/tag-assistant-by-google/kejbdjndbnbjgmefkgdddjlbokphdefk) and enable recording on your website 
+- Create campaign with Visits a page decision and  Send tracking event action 
+- Test it and see Tag assistent debug window with one Pageview request and 1 events
+
+![](/contacts/media/google-analytics-tag-assistent.png)
+
+##### How to test Facebook Pixel tracking code and campaign action
+
+- Install [Facebook Pixel Helper](https://chrome.google.com/webstore/detail/facebook-pixel-helper/fdgfkebogiimcoedlicjlajpkdmockpc) 
+- Create campaign with Visits a page decision and Send tracking event action 
+- Test it and see Facebook Pixel Helper debug window with one Pageview and one custom event action
+
+![](/contacts/media/facebook-pixel-helper.png)
+
+Events should use for [Remarketing with Analytics](https://support.google.com/analytics/topic/2611283?hl=en&ref_topic=7185254) and [Remarketing for Facebook Ads](https://www.facebook.com/business/a/online-sales/custom-audiences-website)   
+
+
 ### Other Online Monitoring
 
 There are several other ways to monitor contact activity and attach points to those activities. Website monitoring is only one way to track contacts. Other contact monitoring activities can consist of forum posts, chat room messages, mailing list discussion posts, GitHub/Bitbucket messages, code submissions, social media posts, and a myriad of other options.
