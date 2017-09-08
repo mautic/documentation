@@ -6,9 +6,9 @@ Le progressive profiling rend vos formulaires plus intelligents en demandant les
 
 ## Configuration
 
-Il y a deux manières pour configurer un champ qui doit s'affiche seulement quand vous le souhaitez. Cette configuration se fait dans l'onglet __Comportement__ lors du paramétrage du champ d'un formulaire. Le comportement (Progressive Profiling) peut être configuré pou tous les types de champs sauf pour le champ _email_ et le _button_. L'email doit être toujours présent car il sert de clé unique et le tracking de Mautic ne garanti pas un suivi parfait à 100%. Et le bouton toujours visible sous peine de ne pouvoir soumettre le formulaire, cela va de soit !
+Il y a deux manières pour configurer un champ qui doit s'affiche seulement quand vous le souhaitez. Cette configuration se fait dans l'onglet __Comportement__ lors du paramétrage du champ d'un formulaire. Le comportement (Progressive Profiling) peut être configuré pou tous les types de champs sauf pour le champ _button_. Nous recommandons d'utiliser l'email car il sert de clé unique. Et le bouton toujours visible sous peine de ne pouvoir soumettre le formulaire, cela va de soit !
 
-Nous vous recommandons d'utiliser le champ email sur tous vos formulaires.
+Nous vous recommandons d'utiliser le champ email sur tous vos formulaires. Depuis Mautic 2.9 le champ email peut être masqué. Attention, c'est un identifiant unique. Si vous le masquez et que c'est un ordinateur public, la session peut être utilisée par plusieurs contacts (pensez aux bibliothèques, écoles, etc...).
 
 ### 1. Afficher le champ seulement si la valeur n'est pas encore connue
 

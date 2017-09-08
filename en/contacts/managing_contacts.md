@@ -62,7 +62,7 @@ So Mautic will take care of duplicate contacts created by the event tracking. Bu
 
 ### Delete a bunch of contacts
 
-The batch delete action in the contact table allow to delete maximally 100 contacts at one time. This is a performance precaution since deleting more contacts at one time could cause issues. This feature can be used for hundreds of contacts.
+The batch delete action in the contact table allows deletion of up to 100 contacts at one time. This is a performance precaution since deleting more contacts at one time could cause issues. This feature can be used for hundreds of contacts.
 
 ![](/contacts/media/mautic-contact-batch-delete.png)
 

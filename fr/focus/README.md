@@ -34,7 +34,7 @@ Chaque but Focus aura quelques paramétrages spécifiques mais globalement en co
 2. A quelle fréquence déclencher - est-ce que cela doit arriver à chaque fois, une fois par session, ou seulement sur un intervalle de temps ?
 3. Arrêter après la conversion - une fois que le visiteur à cliqué sur un lien ou soumis un formulaire, en activant cette fonctionnalité, le visiteur ne sera plus notifié.
 
-### Le sytle de votre objet Focus
+### Le style de votre objet Focus
 
 ![](/focus/media/step_5.png)
 

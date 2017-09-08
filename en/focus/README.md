@@ -62,6 +62,14 @@ By default, Mautic will determine the top colors extracted from the snapshot. Fo
 
 Again this will vary based on the selected focus/goal and style is chosen. Some support a headline and a tagline while some support only a headline due to space constraints. If the goal is to collect data, a list of forms will be available to choose from. Remember that the form should be simple. 
 
+## For advanced users
+
+### Content mode
+
+A new section called ‘content’ has been added to the builder for focus items that enables you to format content in basic, editor or html mode. This opens the door for even more creativity when engaging visitors to your site.
+
+![](/focus/media/html-mode.png)
+
 ## Inserting focus into a website
 
 ![](/focus/media/step_8.png)
