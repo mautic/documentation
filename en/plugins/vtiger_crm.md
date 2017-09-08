@@ -20,7 +20,9 @@ Fill these 3 credentials to the Mautic plugin and click Authenticate.
 
 If you want to use the plugin, you have to publish it. Set the *Publish* switch to *Yes*.
 
-In the Features tab is just *Push contacts to this integration* checkbox and it is checked by default.
+In the Features tab is *Push contacts to this integration* checkbox and it is checked by default.
+
+You can also configure whether you want to map Vtiger's _Leads_ to Mautic's _Contacts_ and/or Vtiger's _Organizations_ to Mautic's _Companies_.
 
 Configure the [field mapping](./../plugins/field_mapping.html).
 
