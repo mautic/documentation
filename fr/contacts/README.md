@@ -23,7 +23,7 @@ Les contacts anonymes sont suivis, car ils sont vos futurs clients. En les suiva
 is:anonymous
 ```
 
-![](/contacts/media/contacts-anonymous.jpg)
+![](/media/contacts-anonymous.jpg)
 La liste résultante sera les adresses IP qui ne sont pas encore fourni d'information supplémentaires.
 
 #### Contacts standards

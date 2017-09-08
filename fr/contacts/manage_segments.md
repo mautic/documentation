@@ -20,19 +20,13 @@ Une fois le champ sélectionné, vous pourrez choisir le type d'opération à ap
 
 ![](/contacts/media/segment-filters-dropdown.jpg)
 
-If you want to divide your segment based on certain criterion, and you wish to
-avoid sending duplicate emails to the (sub)segments, you can view and alter them
-through typing the alias name of the contact segments separated by '+' only. You
-can add n contact segments to have their common, but you will always recieve the
-result as intersection of the subsets. You can then manipulate the contacts to remove it from either one subset or all, hence avoiding dupliacte emails to the same leads in the subsets.
-
 ![](/contacts/media/common-leads-in-segments.jpg)
 
 ### Segments
 
 Une fois paramétrés, les critères de segmentation seront appliqués et n'importe quel contact correspondant aux critères sera automatiquement ajouté à au segment lors du CRONs (tache planifiée automatiquement). De la sorte, vos contacts se qualifient de segment en segment, sans avoir à faire la moindre action !
 
-Les contacts répondant aux critères des filtres seront automatiqument ajoutés au segment via un CRON (tache planifiée). Si le contact ne répond plus aux critères, il sera automatiquement exclu du segment.
+Si le contact ne répond plus aux critères, il sera automatiquement exclu du segment.
 
 Pour déclencher le CRON, paramétrer la commande suivante (pour les utilisateurs de Mautic Open Source):
 

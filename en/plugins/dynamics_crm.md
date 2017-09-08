@@ -6,15 +6,11 @@ If you don't have a Dynamics CRM account, follow the instructions below to creat
 
 ## Configure the Dynamics CRM plugin
 
-Insert your Dynamics CRM URL, the Application ID and Secret into the Mautic Dynamics integration plugin and authorize it. Set the *Publish* switch to *Yes*. Save.
-
+1. Insert your Dynamics CRM URL, the Application ID and Secret into the Mautic Dynamics integration plugin and authorize it. Set the *Publish* switch to *Yes*. Save.
 ![Dynamics CRM Plugin configuration](media/dynamics/858c5a2a7134.png "Dynamics CRM Plugin configuration")
-
-Select the features you like in the Features tab. *Push contacts to this integration* checkbox is checked by default.
-
-Configure the [field mapping](./../plugins/field_mapping.html).
-
-Save the plugin configuration.
+2. Select the features you like in the Features tab. *Push contacts to this integration* checkbox is checked by default.
+3. Configure the [field mapping](./../plugins/field_mapping.html).
+4. Save the plugin configuration.
 
 ## Test the plugin
 
@@ -36,7 +32,7 @@ Follow [these steps](./../plugins/integration_test.html) to test the integration
 
 ![image](media/dynamics/4e7c9a85014f.png)
 
-3. Go to Azure Active Directory 
+3. Go to Azure Active Directory
 
 ![image](media/dynamics/1ecee71fe408.png)
 
@@ -66,7 +62,7 @@ Follow [these steps](./../plugins/integration_test.html) to test the integration
 
 ![image](media/dynamics/e2a837fe2fc7.png)
 
-11. Configure the Required Permissions. Click on Add 
+11. Configure the Required Permissions. Click on Add
 
 ![image](media/dynamics/a2482b3511de.png)
 
