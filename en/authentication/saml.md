@@ -27,7 +27,7 @@ The IDP may ask for the following settings:
 6) `Custom attributes` - Mautic requires 3 custom attributes that must be included in the IDP responses for the user email, first name and last name. Username is also supported but is optional. Configure the attribute names used by the IDP in Mautic's Configuration ->  User/Authentication Settings under the `Enter the names of the attributes the configured IDP uses for the following Mautic user fields.` section.
 
 ## Logging In
-Once Mautic is configured with the IDP and the IDP with Mautic, Mautic will be default redirect logins to the IDP's login page. `/s/login` is still available for direct logins but will need to be browsed to directly.
+Once Mautic is configured with the IDP and the IDP with Mautic, Mautic will by default redirect logins to the IDP's login page. `/s/login` is still available for direct logins but will need to be browsed to directly.
 
 Login to the IDP where you'll be redirected back to Mautic. If the exchange is successful, the user will be created, if it does not already exist, and logged in.
 

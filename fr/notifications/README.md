@@ -10,23 +10,23 @@ Pour plus d'information, se référer à la [documentation de One Signal](https/
 
 ##### 2. Paramétrez une application web push
 
-![](/notifications/notification-setup1.PNG)
+![](/media/notification-setup1.PNG)
 
 Exemple de configuration Google Chrome et Mozilla Firefox
 
-![](/notifications/notification-setup2.PNG)
+![](/media/notification-setup2.PNG)
 
 Exemple de configuration Safari (macOS)
 
-![](/notifications/notification-setup3.PNG)
+![](/media/notification-setup3.PNG)
 
 ##### 3. Paramétrage dans Mautic
 
 Activez les notification web et copiez les clés d'identification OneSignal dans Mautic > Configuration > Paramètres - Notification web
 
-![](/notifications/notification-setup4.PNG)
+![](/media/notification-setup4.PNG)
 
-![](/notifications/notification-setup5.PNG)
+![](/media/notification-setup5.PNG)
 
 ##### 4. Test
 

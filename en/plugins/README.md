@@ -8,6 +8,6 @@ You can find the Plugins in the right admin menu.
 
 ## Install plugins
 
-If you are on a freshly installed Mautic instance, there is a chance that you don't have the default plugins installed yet. Click on the "Install/Upgrade plugins in the top right corner and all the plugins should appear."
+If you are on a freshly installed Mautic instance, there is a chance that you don't have the default plugins installed yet. Click on the "Install/Upgrade plugins" in the top right corner and all the plugins should appear.
 
 If you are trying to install a new plugin that did not come with the original Mautic installation files and it does not appear after you click on "Install/Upgrade" [clear your Mautic cache](./../tips/troubleshooting.html) and try "Install\Upgrade" again.

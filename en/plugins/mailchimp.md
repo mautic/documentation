@@ -3,7 +3,7 @@
 Mautic can send contacts to MailChimp upon some contact's action or when it gain some point limit.
 
 **Version notes**
-- For Mautic 1.2.2 and older, an MailChimp app has to be created and the authentication is made via oAuth2. Client key and secret credentians are needed for authentication. Also SSL (https) connection is required.
+- For Mautic 1.2.2 and older, an MailChimp app has to be created and the authentication is made via oAuth2. Client key and secret credentials are needed for authentication. Also SSL (https) connection is required.
 - For Mautic 1.2.3 and later, the authentication has been changed to the API key. This documentation covers this option. This plugin is backward compatible. If the client ID is filled, the plugin will use oAuth2. If the client ID is empty, the plugin will let you insert the API key.
 
 ## Authorize
@@ -34,7 +34,7 @@ Select the segment then. If you don't have a segment in MailChimp created yet, g
 Other configuration options are:
 - **Push contacts to this integration** - This option is checked by default. If you uncheck it, the plugin will not push contacts to MailChimp any more.
 - **Enable double opt in** - If MailChimp should send a confirmation email to the contacts added by this plugin. The contacts will have to confirm that they really want to be added to the segment.
-- **Send welcome email** - Whether MailChimp should sent the welcome email.
+- **Send welcome email** - Whether MailChimp should send the welcome email.
 
 ## Test the plugin
 
