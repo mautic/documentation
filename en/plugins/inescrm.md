@@ -1,9 +1,9 @@
-# Plugin Mautic - INESCRM
+# Plugin Mautic - INES CRM
 
 This plugin lets you to push contacts from Mautic to INES CRM with the _Push
 contact to integration_ action or the `mautic:integration:fetchleads` command.
 
-If you don't have an INESCRM account yet,
+If you don't have an INES CRM account yet,
 you can [sign up here](http://www.inescrm.fr/).
 
 
@@ -41,4 +41,4 @@ Follow [these steps](./../plugins/integration_test.html).
 
 ## Credit
 
-this plugin has been developed by [@webmecanik](https://github.com/webmecanik)
+This plugin has been developed by [@webmecanik](https://github.com/webmecanik)
