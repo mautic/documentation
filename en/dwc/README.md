@@ -8,30 +8,34 @@ This feature allows you to configure filters (like in segments) so a Landing Pag
 
 ### Setup
 1. Create or edit a Dynamic Web Content item.
-2. Toggle the "*Is campaign based*" button to **No** (Notice how when No is selected, the "*Slot Name*" field is available and the filters tab is displayed so new filters can be created.
 
 ![](/dwc/media/form.jpg)
 
-----
+2. Toggle the "*Is campaign based*" button to **No** (Notice how when No is selected, the "*Slot Name*" field is available and the filters tab is displayed so new filters can be created.
 
 ![](/dwc/media/filters.jpg)
 
-3. On a landing page, add a token or a slot for the new dynamic web content you just created. When using DWC slots, you need to provide the requested slot name.
+3. On a landing page, add a token or a slot for the new dynamic web content you just created.
 
 ![](/dwc/media/builder.jpg)
 
-4. When someone visits the page and if the conditions on the filters are met, the DWC will be displayed.
+4. When using DWC slots, you need to provide the requested slot name.
+
+![](/dwc/media/slot.jpg)
+
+5. When someone visits the page and if the conditions on the filters are met, the DWC will be displayed.
 
 ![](/dwc/media/page.jpg)
 
-5. To add a DWC item with filters in a third party page, you can use the following code (just change `myslot` in `data-param-slot-name="myslot"` to the *Requested Slot Name* of your DWC item):
+6. To add a DWC item with filters in a third party page, you can use the following code (just change `myslot` in `data-param-slot-name="myslot"` to the *Requested Slot Name* of your DWC item):
+
 ```
 <div data-slot="dwc" data-param-slot-name="myslot">
   <h1>Dynamic web content for myslot</h1>
 </div>
 ```
 
-8. Again, when someone visits the page the DWC slot will be replaced if the filters match:
+7. Again, when someone visits the page the DWC slot will be replaced if the filters match:
 
 ![](/dwc/media/third.jpg)
 
