@@ -55,6 +55,7 @@
 * [Plugins](plugins/README.md)
     * [Citrix Plugins](plugins/citrix.md)
     * [Clearbit](plugins/clearbit.md)
+    * [ConnectWise](plugins/connectwise.md)
     * [FullContact](plugins/fullcontact.md)
     * [Gmail](plugins/gmail.md)
     * [Hubspot CRM](plugins/hubspot_crm.md)
