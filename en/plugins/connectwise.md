@@ -54,3 +54,15 @@ Parameters both commands take:
 ## Test the plugin
 
 Follow [these steps](./../plugins/integration_test.html) to test the integration.
+
+##Connectwise Contact Activities
+
+![Connectwise CRM Activites](./../plugins/media/connectwise-activites.png "Connectwise CRM activities")
+You can create new contact activities in Connectwise through a campaign action. To do so follow these steps.
+
+1. Create a new campaign or use an existing one.
+2. Use a push to integration action and select Connectwise. You should see the option to push activites.
+3. Select No if you only wish to push campaign contacts to your Connectwise integration.
+4. Select Yes and fill in required fields if you wish to push contacts and ativities related to each campaign contact. Activity name and member owner are required fields.
+
+![Connectwise CRM Action](./../plugins/media/connectwise-action.png "Connectwise CRM campaign action")
