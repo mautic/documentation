@@ -54,3 +54,9 @@ Parameters both commands take:
 ## Test the plugin
 
 Follow [these steps](./../plugins/integration_test.html) to test the integration.
+
+
+###In Mautic Segments 
+You can create a mautic segments composed of contacts that are in a Connectwise campaign group. To do this create a segment filter **Integration Campaign Member** option, then in the filter properties select the name of the campaign group you wish to get group members from.
+ ![Connectwise CRM segment filter](./../plugins/media/segment-filter.png "Connectwise CRM segment filter")
+ ![Connectwise CRM campaign groups](./../plugins/media/connectwise-campaign-segment.png "Connectwise CRM campaign filters")  
