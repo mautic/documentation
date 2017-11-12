@@ -20,6 +20,10 @@ This action will **permanently delete the contact** who will trigger this action
 
 2. This action doesn't allow to connect other campaign events to it. There is no point in doing so since the contact won't exist after this action is triggered.
 
+#### Focus items
+
+See in the [Focus docs](./../focus/readme.html#focus-items-in-campaigns)
+
 ### Campaign Decisions
 
 #### Opens Email
@@ -27,7 +31,6 @@ This action will **permanently delete the contact** who will trigger this action
 The opens email decision can only be attached to a send email action. Whatever email is sent through the action is the email used by the decision. 
 
 #### Visits a page
-
 
 Note: The decision uses the OR operator between fields (Limit to Pages, URL, Referrer).
 

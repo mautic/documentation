@@ -75,3 +75,9 @@ A new section called ‘content’ has been added to the builder for focus items
 ![](/focus/media/step_8.png)
 
 Inserting a focus item into a website is as simple as copying one line of code and inserting it into your page's source. After creating the focus item, view its details page where you can see engagement graphs and other detailed information. On the right, you'll see a  "Focus Installation" box that includes the line of code needed. Click on it, copy, then paste it into your website's source before the closing body tag if possible.
+
+## Focus Items in Campaigns
+
+Focus Items action depends on page visits. That means, **you have to   add it just after Visits a page decision**.
+
+![](/focus/media/focus-campaign-action.gif)
