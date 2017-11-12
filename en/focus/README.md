@@ -78,6 +78,6 @@ Inserting a focus item into a website is as simple as copying one line of code a
 
 ## Focus Items in Campaigns
 
-Focus Items action depends on page visits. That means, **you have to   add it just after Visits a page decision**.
+Focus Items action depends on page visits. That means, **you have add it just after Visits a page decision**.
 
 ![](/focus/media/focus-campaign-action.gif)
