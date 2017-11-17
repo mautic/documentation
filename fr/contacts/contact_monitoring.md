@@ -54,7 +54,7 @@ Depuis la version de Mautic 2.2.0, si les CORS sont configurés pour autoriser l
 Vous pouvez attacher des paramètres personnalisés ou écraser les paramètres par défaut. Pour procéder ainsi, mettez à jour la dernière ligne du javascript comme expliquer ci après :
 
 ```
-    mt('send', 'pageview', {email: 'my@email.com', firstname: 'John'});
+    mt('send', 'pageview', {"email": "my@email.com", "firstname": "John"});
 
 ```
 Ce code enverra automatiquement les données dans Mautic sur le bon contact. Les valeurs pour ces champs devront être générées par votre système (site web).
@@ -64,7 +64,7 @@ Ce code enverra automatiquement les données dans Mautic sur le bon contact. Les
 Comme le tracking JS est une requête chargée de façon asynchrone, vous pouvez demander au JS d'appeler une fonction quand il est chargé. Pour faire ainsi, définissez la fonction *onload* dans les options comme suivant :
 
 ```
-    mt('send', 'pageview', {email: 'my@email.com', firstname: 'John'}, {onload: function() { alert("Tracking request is loaded"); }});
+    mt('send', 'pageview', {"email": "my@email.com", "firstname": "John"}, {onload: function() { alert("Tracking request is loaded"); }});
 
 ```
 
