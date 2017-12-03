@@ -81,8 +81,8 @@ The scripts try merge older contacts, but we recommend it just for the initial M
 
 # Realtime update
 
-If you are create new/or edit contact in Pipedrive, Pipedrive should send update via webhook and Mautic should recognize contact status and add/or update it depends on current integration.
+If you are create new/or edit contact in Pipedrive, Pipedrive should send update via webhook and Mautic should recognize contact status and add/or update depends on current integration status.
 
-If you are create new/or edit contact in Mautic, Mautic should send this update to Pipedrive API. Mautic should recognize contact status and add/or update it depends on current integration.
+If you are create new/or edit contact in Mautic, Mautic should send this update via Pipedrive API. Mautic should recognize contact status and add/or update  depends on current integration status.
 
 **You have to complete the plugin configuration to use these scripts.**
