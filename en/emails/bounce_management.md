@@ -133,3 +133,19 @@ Mautic supports Mailjet's webhooks for bounces, spam and blocked. Before any con
 4) Select the following Events
 
 ![Events](/emails/media/sparkpost_webhook_3.png "Events")
+
+## SendGrid Webhook
+
+1) Login to your SendGrid account and go to Settings -> Mail Setting -> Mail Settings
+
+![Webhooks](/emails/media/sendgrid_webhook_1.png "SendGrid webhooks")
+
+3) Fill in the Target URL as `http://your-mautic.com/mailer/sendgrid_api/callback`
+
+4) Select the following Events
+
+![Events](/emails/media/sendgrid_webhook_2.png "Events")
+
+5) Save setting (on the right side of "Event Notification" row:
+
+![Save](/emails/media/sendgrid_webhook_3.png "Save")
