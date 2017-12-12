@@ -28,7 +28,7 @@ Form actions are items to be handled on the submission of the form. You can defi
 
 #### Form Re-Post Action
 
-Results form a Mautic form can be re-posted to a 3rd party form using the new "Post results to another form" submit action. 
+Results from a Mautic form can be re-posted to a 3rd party form using the new "Post results to another form" submit action. 
 
 An email can be configured to send the results if the form fails to forward. 
  
@@ -38,9 +38,12 @@ In addition to the form data, an array of `mautic_form` with details like ID, na
 
 ![](/forms/media/repost.png)
 
-### Creating and Updating Contacts with Forms
+### Creating and Updating Contacts and Companies with Forms
 
 To have your form create or update contacts (in order to update, there must be a matching unique identifier). Each form field can be mapped to a custom contact field through the form's Contact Field tab. Some fields result in automatic matching such as email and country. 
+
+As of 2.10.0 you are now able to match form fields with company fields in order to create a company and link it to the contact created through the form. You will only be able to create a company if the company name field is populated. It will update the company if it can identify it through Company Name and Country, City and State.
+![forms - field matching](/forms/media/forms-field-matching.png)
 
 As of 2.2.0, for fields that include select lists (select, radio, checkboxes), options can be synced with the contact field itself. No more having to manually keep them in sync! If a custom field's list is updated, simply rebuild the form's HTML. 
 
@@ -48,7 +51,7 @@ As of 2.2.0, for fields that include select lists (select, radio, checkboxes), o
 
 #### Kiosk mode
 
-The kiosk mode is helpful when you know that some form will be submitted from one device by multiple contacts. For example like a kiosk at a conference. When the kiosk mode is turned on, each submission will create new contact. When a kiosk mode is turned off, Mautic will edit the contact which belongs to the current session.
+The kiosk mode is helpful when you know that some form will be submitted from one device by multiple contacts. For example like a kiosk at a conference. When the kiosk mode is turned on, each submission will create a new contact. When kiosk mode is turned off, Mautic will edit the contact which belongs to the current session.
 
 ### Form Injection
 
@@ -56,7 +59,7 @@ There are three ways you can use the form. You can copy the entire output or you
 
 ![](http://drop.dbh.li/image/2M1q3T2T0Z0u/Image%202014-11-17%20at%204.20.56%20PM.png)
 
-**It is recommended to do not paste the injection code twice, it risks to create troubles on the submit form action when mandatory fields are submitted empty.**
+**It is recommended not to paste the injection code twice, it risks creating troubles on the submit form action when mandatory fields are submitted empty.**
 
 ### Form results
 
@@ -64,7 +67,7 @@ When on the form overview page you can click the Results button located in the t
 
 ### Form Preview
 
-The form preview provides a popup overview of what the form will look like. Remember that form styling is controlled by the surrounding page or website content and thus will display differently in final layout then in the preview.
+The form preview provides a popup overview of what the form will look like. Remember that form styling is controlled by the surrounding page or website content and thus will display differently in final layout than in the preview.
 
 ### Form Style
 
@@ -94,3 +97,7 @@ In the rendered email sent to a contact, the URL may be converted into something
 http://my-mautic.com/my-landing-page?ct=A_REALLY_LONG_STRING&email=contactemail%40gmail.com
 ```
 So, what happened is `{pagelink=1}` was converted into the landing page URL and had `?ct=A_REALLY_LONG_STRING` appended. The really long string is encoded information about the contact which includes the contact ID. Each `{leadfield=FIELDALIAS}` was replaced with the contact's data. When the contact clicks the link, they will be taken to the landing page with the embedded form, and the form's 'email' input will be pre-populated with the value passed through the URL.
+
+#### Remove Contact from Do Not Contact (undo unsubscribe)
+
+Mautic 2.3 added new action **Remove Contact from Do Not Contact**. If a contact unsubscribes from your email marketing, you can't send another emails.  Use action **Remove Contact from Do Not Contact** in your forms and the contact will receive email again.

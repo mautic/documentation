@@ -7,10 +7,10 @@ How frequently you run the cron jobs is up to you. Many shared hosts prefer that
 **It is HIGHLY recommended that you stagger the following required jobs so as to not run the exact same minute.**
 
 For instance:
-- 0,15,30,45 <— segments:update
-- 5,20,35,50 <— camaigns:update
-- 10,25,40,55 <— campaigns:trigger
-
+- 0,15,30,45 <— mautic:segments:update
+- 5,20,35,50 <— mautic:campaigns:update
+- 10,25,40,55 <— mautic:campaigns:trigger
+ 
 ## Required ##
 
 ### Segments ###
@@ -46,7 +46,7 @@ By default, the script will process events in batches of 100. If this is too man
 You can also limit the number of contacts to process per script execution using `--max-events` to further limit resources used.
 
 **To send frequency rules rescheduled marketing campaign messages:**
-Messages that are marked as [_Marketing Messages_](./../contacts/message_queue.md) (such as emails to be sent as part of a marketing campaign) , will be inserted into a message queue IF frequency rules are setup as either systemwide or per contact. To process this queue and reschedule sending these messages, this cronjob should be added to your list of jobs:
+Messages that are marked as [_Marketing Messages_](./../contacts/message_queue.md) (such as emails to be sent as part of a marketing campaign) , will be inserted into a message queue IF frequency rules are setup as either systemwide or per contact. To process this queue and reschedule sending these messages, this cron job should be added to your list of jobs:
 
 `mautic:messages:send`
 
@@ -71,7 +71,7 @@ php /path/to/mautic/app/console mautic:email:fetch
 
 ### Social Monitoring ###
 
-If using the [Social Monitoring](./../social-monitoring.html),
+If using the [Social Monitoring](./../social-monitoring/index.html),
 
 ```
 php /path/to/mautic/app/console mautic:social:monitoring
@@ -87,7 +87,7 @@ php /path/to/mautic/app/console mautic:webhooks:process
 
 ### Update MaxMind GeoLite2 IP Database
 
-Mautic uses [MaxMind's](http://www.maxmind.com) GeoLite2 IP database by default. The database is licensed under the (Creative Commons Attribution-ShareAlike 3.0 Unported License)[http://creativecommons.org/licenses/by-sa/3.0/] and thus cannot be packaged with Mautic. The database can be downloaded manually through Mautic's Configuration or the following script can be used as a cron job to automatically download updates. (MaxMind updates their database the first Tuesday of the month).
+Mautic uses [MaxMind's](http://www.maxmind.com) GeoLite2 IP database by default. The database is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/) and thus cannot be packaged with Mautic. The database can be downloaded manually through Mautic's Configuration or the following script can be used as a cron job to automatically download updates. (MaxMind updates their database the first Tuesday of the month).
 
 ```
 php /path/to/mautic/app/console mautic:iplookup:download
@@ -105,7 +105,7 @@ php /path/to/mautic/app/console mautic:maintenance:cleanup --days-old=365 --dry-
 
 ### Send Scheduled Broadcasts (e.g. segment emails)
 
-Starting with Mautic 2.2.0, it is now possible to use cron to send scheduled broadcasts for channel communications. The current only implementation of this is for segment emails. Instead of requiring a manual send and wait with the browser window open while ajax batches over the send - a command can now be used. The caveat for this is that the emails must be published and must have a published up date - this is to help prevent any unintentional email broadcasts. Just as it was with the manual/ajax process - only contacts who have not already received the specific communication will have the it sent to them.
+Starting with Mautic 2.2.0, it is now possible to use cron to send scheduled broadcasts for channel communications. The current only implementation of this is for segment emails. Instead of requiring a manual send and wait with the browser window open while ajax batches over the send - a command can now be used. The caveat for this is that the emails must be published and must have a published up date - this is to help prevent any unintentional email broadcasts. Just as it was with the manual/ajax process - only contacts who have not already received the specific communication will have it sent to them.
 
 ```
 php /path/to/mautic/app/console mautic:broadcasts:send [--id=ID] [--channel=CHANNEL]

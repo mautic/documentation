@@ -24,13 +24,13 @@ Emails can be created in both full HTML as well as basic text format to be deliv
 
 ### Email Delivery
 
-Emails are delivered using the method defined by the system administrator. If you are the system administrator for your company, then you will need to add the email protocol for your company to use. Mautic integrates with any email service provider which offers SMTP mail servers as well as several distinct services such as Mandrill, Sendgrid, and Amazon SES.
+Emails are delivered using the method defined by the system administrator. If you are the system administrator for your company, then you will need to add the email protocol for your company to use. Mautic integrates with any email service provider which offers SMTP mail servers as well as several distinct services such as [Mandrill](http://mandrill.com/), [Gmail](http://gmail.com) [Sendgrid](https://sendgrid.com), [Mailjet](https://app.mailjet.com/signup?utm_source=mautic), [Postmark](https://postmarkapp.com/), [Sendmail](https://www.sendmail.com/) and [Amazon SES](https://aws.amazon.com/ses/).
 
 The system can either send emails immediately or queue them to be processed in batches by a cron job.
 
 #### Immediate Delivery ####
 
-This is the default means of delivery. Mautic sends the email as soon as it is instructed to by the triggering action. If you expect a large number of emails to be sent, then utilizing the queue is recommended. Sending email immediately may slow the response time of Mautic if using a remote mail service since as Mautic has to establish a connection with that service before sending the mail. Also attempting to send large batches of emails at once may hit your server's PHP limits or email limits if on a shared host. 
+This is the default means of delivery. Mautic sends the email as soon as it is instructed to by the triggering action. If you expect a large number of emails to be sent, then utilizing the queue is recommended. Sending email immediately may slow the response time of Mautic if using a remote mail service since Mautic has to establish a connection with that service before sending the mail. Also attempting to send large batches of emails at once may hit your server's PHP limits or email limits if on a shared host. 
  
 #### Queued Delivery ####
 
@@ -40,7 +40,7 @@ This is recommended if you plan to send a significant number of emails. Mautic w
 php /path/to/mautic/app/console mautic:email:process --env=prod
 ```
 
-Some hosts may have limits on the number of emails that can sent during a specified timeframe and/or limit the execution time of a script. If that's the case for you, or if you just want to moderate batch processing, you can configure batch numbers and time limits in Mautic's Configuration. 
+Some hosts may have limits on the number of emails that can be sent during a specified timeframe and/or limit the execution time of a script. If that's the case for you, or if you just want to moderate batch processing, you can configure batch numbers and time limits in Mautic's Configuration. 
 
  
 ### Email Fields
@@ -54,7 +54,7 @@ Each email sent through Mautic is tagged with a tracking pixel image. This allow
 
 ### Tracking trackable links in emails ###
 
-Clicks of each link in a email are tracked and whose clicks count can be found at the bottom of email detail page under Click Counts tab.
+Clicks of each link in an email are tracked and those clicks count can be found at the bottom of email detail page under Click Counts tab.
 
 
 ### Unsubscribing ###
