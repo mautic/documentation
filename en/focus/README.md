@@ -78,6 +78,14 @@ Inserting a focus item into a website is as simple as copying one line of code a
 
 ## Focus Items in Campaigns
 
-Focus Items action depends on page visits. That means, **you have add it just after Visits a page decision**.
+#### Focus Item show decision
+
+Decision insert JS code to page but continue to next action just If Focus Item is fired. This decison is very useful for exit popups. Focus Item will be inserted to page until execute.
+
+![](/focus/media/focus-item-view-decision.png)
+
+#### Focus Item insert action
+
+Focus Item insert action depends on page visits. That means, **you have add it just after Visits a page decision**. This action just insert JS code to your page immediately after Page visits decistion is executed.
 
 ![](/focus/media/focus-campaign-action.gif)
