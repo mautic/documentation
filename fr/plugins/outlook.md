@@ -5,10 +5,12 @@ Ce plugin permet pour l'Add-on Outlook de tracer les emails envoyés aux contact
 ### Pré-requis
 
 - Mautic installé sur une URL publique et accessible.
-- Microsoft Outlook 2016.
-- [Mautic Outlook Add-In pour Outlook 2016](https://m.mautic.com/asset/24:microsoft-outlook-plugin-102)
+- Microsoft Outlook 2013 ou 2016.
+- [Mautic Outlook Add-In pour Outlook 2013/2016](https://m.mautic.com/asset/24:microsoft-outlook-plugin-102)
 
 ### Configurez le plugin
+
+Même si ce plugin est compatible avec Outlook 2013, vous trouverez ci après la description de l'installation pour la version compatible la plus récente, à savoir 2016.
 
 1. Installez le plugin Mautic.
 ![image](/plugins/media/outlook/outlook_plugin.png)
