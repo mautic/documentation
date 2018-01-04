@@ -36,6 +36,8 @@ When creating or editing an email, you can select the Preference Center Page fro
 
 ![image](/contacts/media/pref5.png)
 
+Keep in mind that your mail must use the same langugage as the preference center landing page - if not, default preference center will be shown.
+
 Now when the email is sent, all recipients will be able to click on the Unsubscribe link and the new preference center page will be displayed.
 
 ![image](/contacts/media/pref6.png)
