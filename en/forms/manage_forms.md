@@ -10,7 +10,7 @@ The form overview provides a quick overview of the submissions received over a t
 
 A form can contain as many fields as needed. These fields can be laid out dynamically by the system or handled via HTML if you want more control.
 
-![](/forms/media/new-form.jpg)
+![](/forms/media/new-form.png)
 
 #### Page Breaks
 
@@ -101,3 +101,4 @@ So, what happened is `{pagelink=1}` was converted into the landing page URL and 
 #### Remove Contact from Do Not Contact (undo unsubscribe)
 
 Mautic 2.3 added new action **Remove Contact from Do Not Contact**. If a contact unsubscribes from your email marketing, you can't send another emails.  Use action **Remove Contact from Do Not Contact** in your forms and the contact will receive email again.
+
