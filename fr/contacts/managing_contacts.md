@@ -4,9 +4,7 @@ La page "Contacts" est l'interface principale à travers lequel vous pouvez voir
 
 ## Liste des contacts
 
-La liste de contacts est la vue tabulaire par défaut de tous les contacts dans le système - par défaut, la "Vue de liste" est activée, mais vous pouvez aussi choisir de passer à la "vue en grille" qui utilise des avatars pour représenter les prospects visuellement en utilisant des "cartes". Le clic sur le bouton approprié en haut à droite vous permettra de basculer entre les deux vues.
-
-Astuce: Si vous préférez utiliser des raccourcis clavier, vous pouvez entrer "t" sur votre clavier pour changer de façon dynamique à la vue de table et "c" pour passer à la vue de la carte.
+La liste de contacts est la vue format tableau par défaut de tous les contacts dans le système - par défaut, la **vue tableau** est activée, mais vous pouvez aussi choisir de passer à la **vue en cartes** qui utilise des avatars pour représenter les prospects visuellement en utilisant des "cartes". Vous devez utiliser les raccourcis clavier, vous pouvez taper "t" sur votre clavier pour changer de façon dynamique à la vue de tableau et "c" pour passer à la vue carte.
 
 ## Recherche de contacts
 
