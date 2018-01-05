@@ -21,7 +21,7 @@ A Text Message can be created/modified only via Campaign Builder.
 1. Go to *Campaigns*.
 2. Edit an existing campaign or create a new one.
 3. Open the Campaign Builder.
-4. Add a *Send Text Message* action to the cancas.
+4. Add a *Send Text Message* action to the canvas.
 5. Click the *New Text Message* button. The form in a new browser window will appear.
 6. Fill in the *Internal Name*, *Text Message* and if required, change the language. Save it.
 
