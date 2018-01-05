@@ -68,7 +68,7 @@ Parameters both commands take:
 **--integration**=Salesforce  to use with salesforce integration.  In future this command may be used for other integrations.
 
 ## Setting up Mautic's custom object in Salesforce
-To be able to push activities to the salesforce integration you first need to setup a custom object in your salesforce instance. Please setup the object as it is described below.  (Note: these are two underscores with no space between - not rendered well in Github).
+To be able to push **contact timeline** activities to the salesforce integration you first need to setup a custom object in your salesforce instance. Please setup the object as it is described below.  (Note: these are two underscores with no space between - not rendered well in Github).
 In this example Salesforce has given the custom object a namespace name = 'Mautic__'. We will describe the name of the fields and object that result after completing the process of creating the custom object.
 
 (_use the text in bold when creating your custom fields_)
@@ -91,6 +91,8 @@ When enabling the activity object, you need to tick the Activity checkbox in the
 
 ![Salesforce CRM activity namespace](./../plugins/media/plugins-salesforce-activity-namespace.png "Salesforce CRM activity object")
 
+You can filter what contact timeline activities to push to your custom object in Salesforce using the **Events to include in the activity sync** selector. If this is left blank all activity types will be pushed to your activity object in Salesforce.
+![Salesforce CRM activity filters](./../plugins/media/SF-activity-filters.png "Salesforce CRM activity object")
 
 ## Salesforce Campaigns and Mautic
 Mautic can communicate with Salesforce campaigns through trigger actions in Mautic campaigns and forms, and through Mautic segments.
