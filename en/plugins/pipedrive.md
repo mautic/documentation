@@ -50,6 +50,14 @@ Having done that, open the plugin configuration screen in Mautic again to see a 
 
 ![Add Pipedrive Custom Field](media/pipedrive/custom_field_3.png "Add Pipedrive Custom Field")
 
+### Multiselect custom field
+
+Multiselect custom field required values in Mautic setup equal to Pipedrive labels. 
+
+![Mautic Custom Multiselect Field](media/pipedrive/plugins-pipedrive-multiselect.png "Mautic Custom Multiselect Field")
+
+![Pipedrive Custom Multiselect Field](media/pipedrive/plugins-pipedrive-multiselect-custom.png "Pipedrive Custom Multiselect Field")
+
 # Configure the plugin in Pipedrive
 
 To exchange the data between Pipedrive and Mautic, configure the webhooks in Pipedrive so that Mautic records are updated automatically.
