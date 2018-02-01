@@ -82,4 +82,8 @@ An asset can be deleted by clicking on the 'delete' button while viewing the ass
 
 Once an asset has been deleted, it cannot be retrieved, and statistics relating to the number of downloads for that asset will no longer be available.  Contact points that may have been accumulated as a result of accessing the resource will remain. It is recommended where possible to un-publish assets which are no longer in use - in future there may be an archive feature.
 
+### Disable files from search engines (Google etc.)
 
+Search engines crawl content of various files like PDF etc. If you don't want see your files in search results then enable option Not to index by search bots. 
+
+See  [Fetch as Google tool](https://support.google.com/webmasters/answer/6066468?hl=en) to validate, refresh index or remove already cached files from search.
