@@ -10,7 +10,7 @@ For instance:
 - 0,15,30,45 <— mautic:segments:update
 - 5,20,35,50 <— mautic:campaigns:update
 - 10,25,40,55 <— mautic:campaigns:trigger
- 
+
 ## Required ##
 
 ### Segments ###
@@ -105,11 +105,25 @@ php /path/to/mautic/app/console mautic:maintenance:cleanup --days-old=365 --dry-
 
 ### Send Scheduled Broadcasts (e.g. segment emails)
 
-Starting with Mautic 2.2.0, it is now possible to use cron to send scheduled broadcasts for channel communications. The current only implementation of this is for segment emails. Instead of requiring a manual send and wait with the browser window open while ajax batches over the send - a command can now be used. The caveat for this is that the emails must be published and must have a published up date - this is to help prevent any unintentional email broadcasts. Just as it was with the manual/ajax process - only contacts who have not already received the specific communication will have it sent to them.
+Starting with Mautic 2.2.0, it is now possible to use cron to send scheduled broadcasts for channel communications. The current only implementation of this is for segment emails. Instead of requiring a manual send and wait with the browser window open while ajax batches over the send - a command can now be used. The caveat for this is that the emails must be published and must have a published up date - this is to help prevent any unintentional email broadcasts. Just as it was with the manual/ajax process - only contacts who have not already received the specific communication will have it sent to them. This command will send messages to contacts added to the source segments later, so if you don't want this to happen, set an unpublish date.
 
 ```
 php /path/to/mautic/app/console mautic:broadcasts:send [--id=ID] [--channel=CHANNEL]
 ```
+
+#### Command parameters:
+
+- `--channel=email` what channel to execute. All channels will be sent if none provided all channels.
+
+- `--id=X` is what ID of email, SMS or other entity to send.
+
+- `--limit=X` is how many contacts are pulled from the database to be processed. 100 by default. So X contacts will receive their emails if this command is triggered. Next time the contact runs it will be next X contacts and so on.
+
+- `--batch=X` is in how big batches will the emails be sent at once. This can be different for every provider. For example Mautic has API connection to Sparkpost. Such API can send 1000 emails per 1 call. So batch should be 1000 for fastest sending speed. Not more. But SMTP providers cannot handle 1000 at 1 time.
+
+- `--segment-id=X` is a filter. Only contacts from segment ID=X will receive the email. Even if one email has segment X and Y, it will be sent only to contacts from segment X.
+
+- `--min-contact-id` and `--max-contact-id` will allow to separate email sending by smaller chunks by contact ID ranges. If those ranges won't overlap this allows to run several broadcast commands in parallel.
 
 ## Note ##
 
