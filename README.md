@@ -25,20 +25,20 @@ This repository is the source code for [Gitbook](https://www.gitbook.com/) publi
 
 Although some git knowledge is required to clone, modify, commit and push changes, there is a way to avoid that and edit the files directly in the GitHub web interface. If you know git, use the workflow you like. If not, the following guide will show you how to contribute easily.
 
-#### Edit documents in a browser
+#### Edit documents in browser
 
 1. [Fork](https://github.com/mautic/documentation#fork-destination-box) this repository under your account so you'll have permission to edit.
 2. Select a file to edit. The file structure is explained below. Now, let's edit the *README.md* file to show the principles. Click on it.
 3. The content of *README.md* should be visible and the *Edit* button (the pencil icon) above as well. Hit it.
-4. The content is written in [Markdown markup](https://daringfireball.net/projects/markdown/). Very simple text based formatting.
-5. Make a change to the file. For example add to the end `This is my first contribution`.
+4. The content is written in [Markdown markup](https://daringfireball.net/projects/markdown/). Very simple text-based formatting.
+5. Make a change to the file. For example, add to the end `This is my first contribution`.
 6. When you have made a change, scroll down and notice the form called *Commit changes*. This is important. To save a change, you have to describe what you've changed and why. Write for example `A new line added for testing purposes`. Do not save yet!
-7. Because the GitHub web interface does not provide all features of git, we won't have an easy way to revert our change back to the original state. We'd have to create another commit where we'd delete the added line. That would make a mess in the commit history. So instead, we create a new branch. There is a checkbox for it "Create a new branch...". The branch has to have a name. `{yourusername}-patch-1` will be prefilled. Let's change it to `{yourusername}-testing`. Click the *Propose file change* button now.
+7. Because the GitHub web interface does not provide all features of git, we won't have an easy way to revert our change back to the original state. We'd have to create another commit where we'd delete the added line. That would make a mess in the commit history. So instead, we create a new branch. There is a checkbox for it "Creates a new branch...". The branch has to have a name. `{yourusername}-patch-1` will be prefilled. Let's change it to `{yourusername}-testing`. Click the *Propose file change* button now.
 8. Ok, so the change exists in your repository now. To propose the change to the official repository, you have to send a pull request (PR). You've been redirected to do just that. Here you describe your proposed change and click (please don't send the testing PRs) the *Create pull request* button.
 
 If you want to clean up after the testing, go to the *Branches* section and delete the testing branch.
 
-#### The file structure
+#### The File Structure
 
 We've worked with the *README.md* file in the previous section. This file is shown in the home page of a GitHub repository and you are reading its content right now. It doesn't have anything to do with the Mautic documentation.
 
@@ -48,7 +48,7 @@ The folders are here to group the topics together. Open for example the *asset* 
 
 #### Links
 
-Often you'll want to make a link into another place in the documentation. In Markdown, the link looks like this:
+Often you'll want to make a link to another place in the documentation. In Markdown, the link looks like this:
 
 ```
 [link title](http://example.com)
