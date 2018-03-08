@@ -68,6 +68,7 @@
     * [Sugar CRM](plugins/sugarcrm.md)
     * [Twitter](plugins/twitter.md)
     * [vTiger CRM](plugins/vtiger_crm.md)
+    * [Zapier](plugins/zapier.md)
     * [Zoho CRM](plugins/zoho_crm.md)
     * [Social login](plugins/social_login.md)
     * [Field Mapping](plugins/field_mapping.md)
