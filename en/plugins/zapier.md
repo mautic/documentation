@@ -51,7 +51,9 @@ The configured Zapier integrations are called Zaps. The main types of Zaps are T
 
 When you click on _Make a Zap!_ button, search for Mautic. You may see some unofficial Mautic integrations there. We recommend to use this one. It will always be called "Mautic (2.1.0)". Of course the version number will change in time. The latest version number is available within each changelog at https://github.com/mautic/mautic-zapier/releases.
 
-If you want some inspiration or speed up the process of creating a Zap use [Mautic Zap templates](https://zapier.com/apps/mautic/integrations).
+If you want some inspiration or speed up the process of creating a Zap use preconfigured Mautic Zap templates:
+<div id="zapier-widget"></div>
+<script src="https://zapier.com/apps/embed/widget.js?services=mautic&html_id=zapier-widget"></script>
 
 ### 2. Choose a Trigger or Action
 
