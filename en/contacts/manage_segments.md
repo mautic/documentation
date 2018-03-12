@@ -33,6 +33,42 @@ result as the intersection of the subsets. You can then manipulate the contacts 
 
 ![](/contacts/media/common-leads-in-segments.jpg)
 
+#### Date options
+
+Date filters allow you to choose a date via DatePicker:
+
+![](/contacts/media/segment-filters-datepicker.png)
+
+Hovewer you can specify much more here. Mautic recognizes relative formats too (these string are not transatable):
+
+* `+1 day` (you can use `1 day` too)
+* `-2 days` (you can use `2 days ago` too)
+* `+1 week` / `-2 weeks` / `3 weeks ago`
+* `+5 months` / `-6 months` / `7months ago`
+* `+1 year` / `-2 years` / `3 years ago`
+
+Example (Consider that today is `2018-03-02`):
+* `Date identified equals -1 week` returns all contacts identified on 2018-02-23.
+* `Date identified less than -1 week` returns all contacts identified before 2018-02-23.
+* `Date identified equals -1 months` returns all contacts identified on 2018-02-02.
+* `Date identified greater or equal -1 year` returns all contacts identified 2017-03-02 and after.
+* `Date identified greater than -1 year` returns all contacts identified after 2017-03-02.
+
+Beside this you can specify your date with text. These formulas are **transatable**, so make sure you use them in correct format.
+
+* `birthday` / `anniversary`
+* `today` / `tomorrow` / `yesterday`
+* `this week` / `last week` / `next week`
+* `this month` / `last month` / `next month`
+* `this year` / `last year` / `next year`
+
+Example (Consider that today is `2018-03-02`):
+* `Date identified equals last week` returns all contacts identified between 2018-02-26 and 2018-03-04 (Monday to Sunday).
+* `Date identified less than last week` returns all contacts identified before 2018-02-19.
+* `Date identified equals last month` returns all contacts identified between 2018-02-01 and 2018-02-28.
+* `Date identified greater or equal last year` returns all contacts identified 2017-01-01 and after.
+* `Date identified greater than last year` returns all contacts identified after 2017-12-31.
+
 ### Segments
 
 Once you have created your segment, any applicable contact will be automatically
