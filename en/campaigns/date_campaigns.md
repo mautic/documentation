@@ -16,4 +16,4 @@ In order to run campaigns based on a particular date where a contact may or may 
 - you can elimiate the condition since the segment is changing daily.
 - note:  this will NOT work for an anniversary - only an actual date.
 
-Of course if someone appears again at a later date in that segment because the value of the date is changed, they’ll still only go through the campaign once and hence will NOT be included in the campaign at all.
+Of course if someone appears again at a later date in that segment because the value of the date is changed, they’ll still only go through the campaign once and hence will NOT be included in the campaign again.
