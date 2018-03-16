@@ -33,6 +33,23 @@ result as the intersection of the subsets. You can then manipulate the contacts 
 
 ![](/contacts/media/common-leads-in-segments.jpg)
 
+#### Matching part of a string
+
+There are 5 filters you can use for matching part of a string - `starts with`, `ends with`, `contains`, `like` and `regexp`. First three filters match strings as you enter it. `like` filter is for advanced users - you can specify which type you want to use with `%` character:
+
+* `My string%` is the same as `starts with` filter with `My string` value.
+* `%My string` is the same as `ends with` filter with `My string` value.
+* `%My string%` is the same as `contains` filter with `My string` value.
+* `My string` is the same as `contains` filter with `My string` value.
+
+A few notes for text filters:
+
+* `starts with`, `ends with`, `contains` filters were added later than the `like` one, so you can easily specify what you need now.
+* `%` character in the middle of the string has no special meaning. `contains` filter with `my % string` will search for a string with `%` in the middle. The same is true for `like` filter with `%my % string%` value. There is no need for escaping this character.
+* Mautic searches for `%` character in a value for `like` filter and no modification is performed if at least 1 `%` is found.
+
+You can use regular expressions in a `regexp` filter. Mautic recognises all common operators like `|` for OR (`first string|second string`), characters sets (`[0-9]`, `[a-z0-9]` etc.), repetitions (`+`, `*`, `?`) and more. You have to escape special characters with `\` if you want to use them as matching character. [Learn more about regex at https://github.com/zeeshanu/learn-regex](https://github.com/zeeshanu/learn-regex).
+
 #### Date options
 
 Date filters allow you to choose a date via DatePicker:
