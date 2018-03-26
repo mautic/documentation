@@ -65,7 +65,7 @@ This code will send all the automatic data to Mautic and adds also email and fir
 From Mautic 2.13, tracking code support also company fields. Mautic assign company to your tracking contact based on company name. Then you have to add **company** or **companyname** parameter to tracking code along with other companies fields (companyemail, companyaddress1):
 
 ```
-    mt('send', 'pageview', {email: 'my@email.com', firstname: 'John', company: 'Mautic', companywebsite: 'mautic@mautic.com'});
+    mt('send', 'pageview', {email: 'my@email.com', firstname: 'John', company: 'Mautic', companywebsite: 'https://mautic.com'});
 
 ```
 
