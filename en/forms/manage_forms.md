@@ -105,6 +105,6 @@ Mautic 2.3 added new action **Remove Contact from Do Not Contact**. If a contact
 
 #### Show results in contacts tab
 
-Mautic 2.13 added new option **Show results in contacts **. This option add tab with related contacts form results to contacts profile. 
+Mautic 2.13 added new option **Show results in contacts**. This option add tab with related contacts form results to contacts profile. 
 
 ![forms - field matching](/forms/media/contacts-form-tab.png)
