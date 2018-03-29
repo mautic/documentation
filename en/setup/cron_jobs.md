@@ -111,6 +111,14 @@ Starting with Mautic 2.2.0, it is now possible to use cron to send scheduled bro
 php /path/to/mautic/app/console mautic:broadcasts:send [--id=ID] [--channel=CHANNEL]
 ```
 
+### Send Scheduled Reports
+
+Starting with Mautic 2.12.0, it is now possible to use cron to send scheduled reports.
+
+```
+php /path/to/mautic/app/console mautic:reports:scheduler [--report=ID]
+```
+
 ## Note ##
 
 For releases prior to 1.1.3, it is required to append ` --env=prod` to the cron job command to ensure commands execute correctly.
