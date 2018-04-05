@@ -42,6 +42,14 @@ This action will **permanently delete the contact** who will trigger this action
 
 See in the [Focus docs](./../focus/readme.html#focus-items-in-campaigns)
 
+#### Update contact's primary company
+
+Action added in Mautic 2.14 and allow edit contact's primary company via campaign. Read also about [Mautic's companies support](./../companies/index.html).
+
+Action update contact's primary company based on company custom fields. 
+
+If you try update company name, then action will add new or existed company with same name to contact and mark it as primary.
+
 ### Campaign Decisions
 
 #### Opens Email
