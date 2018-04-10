@@ -40,6 +40,16 @@ Parameter specific to php app/console mautic:integration:fetchleads
 
 These commands may be used for other integrations.
 
+## Do Not Contact integration
+
+Enable option **Update emails Do Not Contact** on plugins features tab allow:
+
+- Sugar CRM to Mautic  - sync just unsubscribed status to Mautic due Sugar CRM api limitations
+- Mautic to Sugar CRM - sync both unsubscribed and bounced status
+
+Follow [these steps](./../plugins/integration_test.html) to test the integration.
+
+
 ## Test the plugin
 Follow [these steps](./../plugins/integration_test.html) to test the integration.
 
