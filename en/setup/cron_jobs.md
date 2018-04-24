@@ -125,6 +125,14 @@ php /path/to/mautic/app/console mautic:broadcasts:send [--id=ID] [--channel=CHAN
 
 - `--min-contact-id` and `--max-contact-id` will allow to separate email sending by smaller chunks by contact ID ranges. If those ranges won't overlap this allows to run several broadcast commands in parallel.
 
+### Send Scheduled Reports
+
+Starting with Mautic 2.12.0, it is now possible to use cron to send scheduled reports.
+
+```
+php /path/to/mautic/app/console mautic:reports:scheduler [--report=ID]
+```
+
 ## Note ##
 
 For releases prior to 1.1.3, it is required to append ` --env=prod` to the cron job command to ensure commands execute correctly.

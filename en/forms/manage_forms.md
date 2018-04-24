@@ -10,7 +10,7 @@ The form overview provides a quick overview of the submissions received over a t
 
 A form can contain as many fields as needed. These fields can be laid out dynamically by the system or handled via HTML if you want more control.
 
-![](/forms/media/new-form.jpg)
+![](/forms/media/new-form.png)
 
 #### Page Breaks
 
@@ -38,9 +38,12 @@ In addition to the form data, an array of `mautic_form` with details like ID, na
 
 ![](/forms/media/repost.png)
 
-### Creating and Updating Contacts with Forms
+### Creating and Updating Contacts and Companies with Forms
 
 To have your form create or update contacts (in order to update, there must be a matching unique identifier). Each form field can be mapped to a custom contact field through the form's Contact Field tab. Some fields result in automatic matching such as email and country. 
+
+As of 2.10.0 you are now able to match form fields with company fields in order to create a company and link it to the contact created through the form. You will only be able to create a company if the company name field is populated. It will update the company if it can identify it through Company Name and Country, City and State.
+![forms - field matching](/forms/media/forms-field-matching.png)
 
 As of 2.2.0, for fields that include select lists (select, radio, checkboxes), options can be synced with the contact field itself. No more having to manually keep them in sync! If a custom field's list is updated, simply rebuild the form's HTML. 
 
@@ -98,3 +101,4 @@ So, what happened is `{pagelink=1}` was converted into the landing page URL and 
 #### Remove Contact from Do Not Contact (undo unsubscribe)
 
 Mautic 2.3 added new action **Remove Contact from Do Not Contact**. If a contact unsubscribes from your email marketing, you can't send another emails.  Use action **Remove Contact from Do Not Contact** in your forms and the contact will receive email again.
+

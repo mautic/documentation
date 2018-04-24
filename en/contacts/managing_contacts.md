@@ -4,9 +4,7 @@ The manage contacts page is the main interface through which you can view and in
 
 ## Segments
 
-The segment is the default tabular view of all the contacts in the system - by default the **list view** is enabled, but you can also choose to switch to the **card view** (also known as **grid view**) which uses avatars to depict the contacts visually using cards. Clicking the appropriate button on the top right will allow you to switch between the two views.
-
-Hint: If you prefer using keyboard shortcuts you can enter "t" on your keyboard to dynamically switch to table view and "c" to switch to the card view.
+The segment is the default tabular view of all the contacts in the system - by default the **list view** is enabled, but you can also choose to switch to the **card view** (also known as **grid view**) which uses avatars to depict the contacts visually using cards. You need to be using keyboard shortcuts you can enter "t" on your keyboard to dynamically switch to table view (default) and "c" to switch to the card view.
 
 ## Searching for contacts
 
