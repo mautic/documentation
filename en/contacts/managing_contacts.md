@@ -93,6 +93,10 @@ Lets you add / remove the selected contacts to / from stage.
 
 Lets export selected contacts to CSV.
 
+### Set Do Not Contact
+
+This action will set all selected contacts as DNC for the email channel and it lets you provide a custom message as "reason" of why the contacts got manually unsubscribed by a Mautic user.
+
 ### Batch Delete
 
 The batch delete action in the contact table allows deletion of up to 100 contacts at a time. This is a performance precaution since deleting more contacts at one time could cause issues. 
