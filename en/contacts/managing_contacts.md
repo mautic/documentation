@@ -58,10 +58,43 @@ If a contact sends a form with an email address, it will merge the submission wi
 
 So Mautic will take care of duplicate contacts created by the event tracking. But you can still create a duplicate contact via the Mautic administration. As of Mautic 2.1.0, you will be notified if there is already a contact with the same unique identifier.
 
-### Delete a bunch of contacts
+## Batch Actions
 
-The batch delete action in the contact table allows deletion of up to 100 contacts at one time. This is a performance precaution since deleting more contacts at one time could cause issues. This feature can be used for hundreds of contacts.
+There are batch actions you can do from the user interface. A modal window will popup when you click on one of the actions with more configuration details. This feature can be used for hundreds of contacts. Thousands if you have a free afternoon. Use similar campaign actions to manage thousands and more contacts at a time.
 
+Following batch actions are currently available:
 ![](/contacts/media/mautic-contact-batch-delete.png)
+
+### Change Campaigns
+
+Lets you add / remove the selected contacts to / from campaigns.
+
+### Change Categories
+
+Lets you add / remove the selected contacts to / from global categories.
+
+### Change Channels
+
+Lets you subscribe / unsubscribe the selected contacts to / from communication channels (email, SMS, ...) and also define frequency rules.
+
+### Change Owner
+
+Lets you assign / unassign the selected contacts to / from owner (mautic user).
+
+### Change Segments
+
+Lets you add / remove the selected contacts to / from segments. Note that if a contact is added or removed to or from segment manually then segment filters won't apply for him/her in that particular segment.
+
+### Change Stages
+
+Lets you add / remove the selected contacts to / from stage.
+
+### Export
+
+Lets export selected contacts to CSV.
+
+### Batch Delete
+
+The batch delete action in the contact table allows deletion of up to 100 contacts at a time. This is a performance precaution since deleting more contacts at one time could cause issues. 
 
 See in the [segment docs](./../contacts/managing_contacts.html#delete-all-contacts-in-a-segment) about how to delete thousands of contacts easily.
