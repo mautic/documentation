@@ -26,7 +26,7 @@ is:anonymous
 ```
 ##### Screenshot
 
-![](/media/contacts-anonymous.jpg)
+![](media/contacts-anonymous.jpg)
 The resulting list will be those IP addresses which have not yet provided identifying information.
 
 #### Standard Contacts
