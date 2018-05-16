@@ -63,8 +63,9 @@ If you want to serve up different information based on certain criteria, you can
 
 ### Finally, include the dynamic web content shortcode in your web page.
 ```
-<div class="mautic-slot" data-slot-name="dwc">Text in the html - 
-this shows up if the visitor is not known</div>
+<div data-slot="dwc" data-param-slot-name="dwc">
+  <h1>Dynamic web content for myslot</h1>
+</div>
 ```
 Note the data-slot-name matches the slot name in the campaign.
 
