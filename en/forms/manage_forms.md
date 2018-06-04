@@ -53,6 +53,10 @@ As of 2.2.0, for fields that include select lists (select, radio, checkboxes), o
 
 The kiosk mode is helpful when you know that some form will be submitted from one device by multiple contacts. For example like a kiosk at a conference. When the kiosk mode is turned on, each submission will create a new contact. When kiosk mode is turned off, Mautic will edit the contact which belongs to the current session.
 
+#### No index mode
+
+In 2.15.0, mautic introduced the ability to disable form indexing from search engines. Then you can decide if the `http(s)://yourmauticurl.com/form/{formid}` page is indexed or not.
+
 ### Form Injection
 
 There are three ways you can use the form. You can copy the entire output or you can have the form injected dynamically using the provided javascript. These are two options for directly including the form on a page, you can alternatively embed the form directly in a Mautic landing page if you choose.
