@@ -7,6 +7,7 @@ This plugin allows for the Outlook Add-In to keep track of emails sent to leads.
 - Mautic installed on a publicly accessible URL.
 - Microsoft Outlook 2013 or 2016.
 - [Mautic Outlook Add-In for Outlook 2013/2016](https://m.mautic.com/asset/24:microsoft-outlook-plugin-102)
+- Emails should be sent in HTML format.
 
 ### Configure the plugin
 
@@ -38,6 +39,12 @@ Appending a tracking pixel via the Outlook plugin means that there is a possibil
 ![image](media/outlook/mautic_contacts.png)
 
   ![image](media/outlook/mautic_timeline.png)
+
+## Sending emails in HTML format from Outlook
+**This is mandatory to append the tracking pixel.** There are 3 places to manage that:
+1. In each new email window
+2. In Settings > Mail > Compose messages
+3. In Settings > Mail > Message format
 
 ## URL Parameter Length Issue
 ; Please note that PHP setups with the suhosin patch installed will have a                                   
