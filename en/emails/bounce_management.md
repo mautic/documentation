@@ -15,10 +15,10 @@ It is possible to use a single inbox, or to configure a unique inbox per monitor
 To fetch and process the messages, run the following command:
 
 ```
-php app/console mautic:fetch:email
+php /path/to/mautic/app/console mautic:email:fetch
 ```
 
-Note that it is best to create an email specifically for this purpose, as Mautic will read each message it finds in the given folder. 
+Note that it is best to create an email specifically for this purpose, as Mautic will read each message it finds in the given folder.
 
 If sending mail through Gmail, the Return Path of the email will automatically be rewritten as the Gmail address. It is best to use a sending method other than Gmail, although Mautic can monitor a Gmail account for bounces.
 
@@ -36,43 +36,20 @@ This is not required, but if you'll want to be able to select the contacts with 
 
 All contacts with bounced emails should appear in this segment.
 
-## Mandrill Webhook
+## Elastic Email Webhook
 
-Mautic supports a few of Mandrill's webhooks for bounces.  
+1) Login to your Elastic Email account and go to Settings -> Notification.
 
-1) Login to your Mandrill account and go to Settings -> Webhooks
+2) Fill in the Notification URL as http://your-mautic-url.tld/mailer/elasticemail/callback
 
-![Webhooks](/emails/media/mandrill_webhook_1.png "Mandrill webhooks")
- 
-2) Click Add a Webhook
- 
-![Add Webhook](/emails/media/mandrill_webhook_2.png "Add webhook")
+3) Check  these actions:  Unsubscribed, Complaints, Bounce/Error
 
-3) Mautic 1.2.2 supports the following webhooks: Message is Bounced, Message is Soft-Bounced, Message is Rejected.  As of 1.2.3, Message is Marked as Spam and Message Recipient Unsubscribes will be supported.
+![Webhooks](/emails/media/elasticemail_webhook_1.png "Elastic Email notification")
 
-4) Fill in the Post To Url as `http://your-mautic.com/mailer/mandrill/callback` then click Create Webhook. 
+### Links
 
-5) Click Custom Metadata and create two new metadata fields: `hashId` and `contactId`
-
-![Add metadata](/emails/media/mandrill_webhook_5.png "Add metadata")
-
-![Add metadata](/emails/media/mandrill_webhook_4.png "Add metadata")
-
-## Sparkpost Webhook
-
-1) Login to your Sparkpost account and go to Account -> Webhooks.
-
-![Webhooks](/emails/media/sparkpost_webhook_1.png "Sparkpost webhooks")
-
-2) Click the New Webhook button top right
-
-![New Webhook](/emails/media/sparkpost_webhook_2.png "New webhook")
-
-3) Fill in the Target URL as `http://your-mautic.com/mailer/sparkpost/callback`
-
-4) Select the following Events
-
-![Events](/emails/media/sparkpost_webhook_3.png "Events")
+[Elastic Email Help & Support](https://elasticemail.com/support)
+[Support via email](http://support.elasticemail.com/)
 
 ## Amazon Webhook
 Mautic supports the bounce and complaint management from Amazon Simple Email Service (Amazon SES).
@@ -103,4 +80,72 @@ Mautic supports the bounce and complaint management from Amazon Simple Email Ser
 
 ![Topic](/emails/media/amazon_webhook_8.png "Select SNS topic")
 
+## Mandrill Webhook
 
+Mautic supports a few of Mandrill's webhooks for bounces.
+
+1) Login to your Mandrill account and go to Settings -> Webhooks
+
+![Webhooks](/emails/media/mandrill_webhook_1.png "Mandrill webhooks")
+
+2) Click Add a Webhook
+
+![Add Webhook](/emails/media/mandrill_webhook_2.png "Add webhook")
+
+3) Mautic 1.2.2 supports the following webhooks: Message is Bounced, Message is Soft-Bounced, Message is Rejected.  As of 1.2.3, Message is Marked as Spam and Message Recipient Unsubscribes will be supported.
+
+4) Fill in the Post To Url as `http://your-mautic.com/mailer/mandrill/callback` then click Create Webhook.
+
+5) Click Custom Metadata and create two new metadata fields: `hashId` and `contactId`
+
+![Add metadata](/emails/media/mandrill_webhook_5.png "Add metadata")
+
+![Add metadata](/emails/media/mandrill_webhook_4.png "Add metadata")
+
+## Mailjet Webhook
+
+Mautic supports Mailjet's webhooks for bounces, spam and blocked. Before any configuration, you'll need to create an account on [Mailjet](http://www.mailjet.com/).
+
+1) Login to your Mailjet account and go to My Account -> Event tracking (triggers)
+
+![Webhooks](/emails/media/mailjet_webhook_1.png "Mailjet webhooks")
+
+2) On the event type list, select the one you want to link to your Mautic account
+
+![Add Webhook](/emails/media/mailjet_webhook_2.png "Add webhook")
+
+3) Mautic 2.2.0 supports the following webhooks: Message is Bounced, Message is Blocked, Message is Spam.
+
+4) Fill in the URL boxes as `http://your-mautic.com/mailer/mailjet/callback`.
+
+## Sparkpost Webhook
+
+1) Login to your Sparkpost account and go to Account -> Webhooks.
+
+![Webhooks](/emails/media/sparkpost_webhook_1.png "Sparkpost webhooks")
+
+2) Click the New Webhook button top right
+
+![New Webhook](/emails/media/sparkpost_webhook_2.png "New webhook")
+
+3) Fill in the Target URL as `http://your-mautic.com/mailer/sparkpost/callback`
+
+4) Select the following Events
+
+![Events](/emails/media/sparkpost_webhook_3.png "Events")
+
+## SendGrid Webhook
+
+1) Login to your SendGrid account and go to Settings -> Mail Setting -> Mail Settings
+
+![Webhooks](/emails/media/sendgrid_webhook_1.png "SendGrid webhooks")
+
+3) Fill in the Target URL as `http://your-mautic.com/mailer/sendgrid_api/callback`
+
+4) Select the following Events
+
+![Events](/emails/media/sendgrid_webhook_2.png "Events")
+
+5) Save setting (on the right side of "Event Notification" row:
+
+![Save](/emails/media/sendgrid_webhook_3.png "Save")

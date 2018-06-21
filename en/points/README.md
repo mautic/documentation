@@ -21,3 +21,14 @@ When creating a point trigger you have the option to apply the trigger to all ex
 ![](/points/media/new-point-trigger-action.jpg)
 
 These point triggers and associated events are also fully customizable.
+
+### Send an email to user
+
+This event lets you send an email to any user or any email address:
+
+![](/points/media/send-an-email-to-user.png)
+
+* If you select an user and check "send email to contact's owner" option, both contact will be notified.
+* If user has no owner or owner is same as user, only one email will be send.
+* You can add more emails to "to", "cc" and "bcc" fields - separate emails with coma (,). You can add space after each coma too.
+* Notification will be send to all address - user's email, owner's email, to, cc and bcc.

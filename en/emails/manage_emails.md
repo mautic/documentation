@@ -24,7 +24,9 @@ This entry field is a multi-select which allows you to choose several segments i
 
 ### Contact tokens in email builder
 
-The email builder is a graphical user interface to create an HTML email through the use of drag-and-drop tools.
+The email builder is a graphical user interface to create an HTML email through the use of drag-and-drop tools. 
+
+Since Mautic 2.7.0, the builder will let you drag the predefined content sections from the right hand toolbar and drop them to the position you choose. It's possible to select from layout of 1, 2 or 3 columns. The existing sections can be re-ordered or removed.
 
 The email builder provides quick and convenient access to assets, landing pages, and other extra fields which are considered important or commonly used. All those are accessible via tokens in format `{component=item}`, for example `{contactfield=company}`. A drop-down with options will appear when you type `{` character and you can search for the right token by typing its name. For example if you type `{comp`, it will suggest the right token for the Company Contact Field and you can select it via keyboard or by clicking on it.
 
@@ -37,6 +39,7 @@ Email Builder has also special tokens for the Unsubscribe link and the Webview l
 - `{webview_text}` - Creates a link with the webview URL and the text defined in the Mautic configuration.
 - `{webview_url}` - Creates a URL to the webview page which can be used in a link's href attribute.
 
+<<<<<<< HEAD
 #### Contact token modifiers
 
 ##### Default value
@@ -61,6 +64,11 @@ Your date will displayed as human reading format taken from  Configuration > Sys
 
 - Default format for date only  
 - Default Time Only Format 
+=======
+### Code Mode
+
+[Go to the Code Mode docs](./../themes/code_mode.html).
+>>>>>>> heads/mautic/master
 
 ### Base64 Encoded Images
 

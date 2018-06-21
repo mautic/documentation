@@ -8,7 +8,7 @@ If you have already downloaded the zip from the download page or have installed 
 
 ## Step 2: Add Cron Jobs
 
-Once you've installed Mautic you will need to create a few standard cron jobs to have your software process various tasks. These cron jobs can be created through a cPanel or added through command line. If you are unfamiliar or uncomfortable with this step then we'd recommend asking in the forums or in the live Slack chat. Here is a list of the cron jobs you'll need to create.
+Once you've installed Mautic you will need to create a few standard cron jobs to have your software process various tasks. These cron jobs can be created through a cPanel or added through command line. If you are unfamiliar or uncomfortable with this step then we'd recommend asking in the forums or in the live Slack chat. Here is a list of the cron jobs you'll need to create. (Please note: "/path/to/mautic..." will reflect the directory where your version of Mautic is installed.)
 
 **Updating Segments**
 
@@ -16,7 +16,7 @@ Once you've installed Mautic you will need to create a few standard cron jobs to
 
 **Update Campaigns**
 
-`php /path/to/mautic/app/console mautic:campaigns:rebuild`
+`php /path/to/mautic/app/console mautic:campaigns:update`
 
 **Execute Campaign Actions**
 

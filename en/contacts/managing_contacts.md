@@ -4,9 +4,7 @@ The manage contacts page is the main interface through which you can view and in
 
 ## Segments
 
-The segment is the default tabular view of all the contacts in the system - by default the **list view** is enabled, but you can also choose to switch to the **card view** (also known as **grid view**) which uses avatars to depict the contacts visually using cards. Clicking the appropriate button on the top right will allow you to switch between the two views.
-
-Hint: If you prefer using keyboard shortcuts you can enter "t" on your keyboard to dynamically switch to table view and "c" to switch to the card view.
+The segment is the default tabular view of all the contacts in the system - by default the **list view** is enabled, but you can also choose to switch to the **card view** (also known as **grid view**) which uses avatars to depict the contacts visually using cards. You need to be using keyboard shortcuts you can enter "t" on your keyboard to dynamically switch to table view (default) and "c" to switch to the card view.
 
 ## Searching for contacts
 
@@ -59,3 +57,11 @@ If Mautic knows only the IP address, it will merge the contact action (page hit,
 If a contact sends a form with an email address, it will merge the submission with the contact having the same email address. Even if the IP address or the cookie matches another contact.
 
 So Mautic will take care of duplicate contacts created by the event tracking. But you can still create a duplicate contact via the Mautic administration. As of Mautic 2.1.0, you will be notified if there is already a contact with the same unique identifier.
+
+### Delete a bunch of contacts
+
+The batch delete action in the contact table allows deletion of up to 100 contacts at one time. This is a performance precaution since deleting more contacts at one time could cause issues. This feature can be used for hundreds of contacts.
+
+![](/contacts/media/mautic-contact-batch-delete.png)
+
+See in the [segment docs](./../contacts/managing_contacts.html#delete-all-contacts-in-a-segment) about how to delete thousands of contacts easily.
