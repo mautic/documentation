@@ -22,7 +22,7 @@ When creating an email you can select the segments to which you want to send the
 
 This entry field is a multi-select which allows you to choose several segments if necessary.
 
-### Contact tokens in email Builder
+### Contact tokens in email builder
 
 The email builder is a graphical user interface to create an HTML email through the use of drag-and-drop tools.
 
