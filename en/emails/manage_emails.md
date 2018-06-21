@@ -22,21 +22,45 @@ When creating an email you can select the segments to which you want to send the
 
 This entry field is a multi-select which allows you to choose several segments if necessary.
 
-### Email Builder
+### Contact tokens in email Builder
 
 The email builder is a graphical user interface to create an HTML email through the use of drag-and-drop tools.
 
 The email builder provides quick and convenient access to assets, landing pages, and other extra fields which are considered important or commonly used. All those are accessible via tokens in format `{component=item}`, for example `{contactfield=company}`. A drop-down with options will appear when you type `{` character and you can search for the right token by typing its name. For example if you type `{comp`, it will suggest the right token for the Company Contact Field and you can select it via keyboard or by clicking on it.
 
-A token can have a default value for cases when the contact doesn't have the value known. The default value can be specified after `|` character like this: {contactfield=company|Default text}.
 
-Tokens can be used also for the Subject line, but there is no drop-down. You'll have to type it yourself or select it in the email body and copy-paste it to the subject field.
+#### Email tokens
 
 Email Builder has also special tokens for the Unsubscribe link and the Webview link:
 - `{unsubscribe_text}` - Creates a link with the unsubscribed URL and the text defined in the Mautic configuration.
 - `{unsubscribe_url}` - Creates a URL to the unsubscribed page which can be used in a link's href attribute.
 - `{webview_text}` - Creates a link with the webview URL and the text defined in the Mautic configuration.
 - `{webview_url}` - Creates a URL to the webview page which can be used in a link's href attribute.
+
+#### Contact token modifiers
+
+##### Default value
+
+A token can have a default value for cases when the contact doesn't have the value known. The default value can be specified after `|` character like this: {contactfield=company|Default text}.
+
+Tokens can be used also for the Subject line, but there is no drop-down. You'll have to type it yourself or select it in the email body and copy-paste it to the subject field.
+
+##### Encoded value
+
+Embed the tokens as `{leadfield=FIELDALIAS|true}`. The |true tells Mautic to encode the value used for example in urls.
+
+##### Date format
+
+For custom date fields use:
+
+- `{leadfield=DATEFIELDALIAS|datetime}`
+- `{leadfield=DATEFIELDALIAS|date}`
+- `{leadfield=DATEFIELDALIAS|time}`
+
+Your date will displayed as human reading format taken from  Configuration > System Settings
+
+- Default format for date only  
+- Default Time Only Format 
 
 ### Base64 Encoded Images
 
