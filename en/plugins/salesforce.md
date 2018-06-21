@@ -104,9 +104,54 @@ In a campaign you can choose to push contacts to a specific Salesforce campaign,
 ### In Mautic Segments
 You can create a mautic segments composed of contacts that are in a Salesforce campaign. To do this create a segment filter Integration Campaign Member option, then in the filter properties select the name of the campaign you wish to get campaign members from.
 ![Salesforce CRM Campaign Member Segments](./../plugins/media/plugins-salesforce-campaign-member-segments.png "Salesforce CRM campaign member segments")
-## Test the plugin
 
+## Syncing Salesforce Email Opt Out with Mautic Do Not Contact
+
+### Prepare Salesforce
+
+In Salesforce, make sure the "Email Opt out" field is visible to edit and that field history tracking has been set for the Email Opt Out field.
+
+a. Under the Setup menu, go to Build -> Customize then do the following for each of Lead and Contact's layouts
+
+<img width="291" alt="screen shot 2017-10-10 at 08 53 28" src="https://user-images.githubusercontent.com/1496976/31375292-f456a3e6-ad98-11e7-8b4b-83d7828bd69b.png">
+
+b. Add the Email Opt Out field
+
+<img width="333" alt="screen shot 2017-10-10 at 08 53 58" src="https://user-images.githubusercontent.com/1496976/31375293-f46d8d9a-ad98-11e7-9c8f-de42fb584d22.png">
+
+c. Continue by going to the customise fields
+
+<img width="347" alt="screen shot 2017-10-10 at 08 54 18" src="https://user-images.githubusercontent.com/1496976/31375294-f4847b0e-ad98-11e7-9040-60d823a05ded.png">
+
+d. Select the email opt out field and edit the field level security option
+
+<img width="689" alt="screen shot 2017-10-10 at 08 54 38" src="https://user-images.githubusercontent.com/1496976/31375295-f49bed70-ad98-11e7-8d93-d913e0fbd972.png">
+
+<img width="518" alt="screen shot 2017-10-10 at 08 55 11" src="https://user-images.githubusercontent.com/1496976/31375296-f4c15efc-ad98-11e7-91fa-2b78d4562ec7.png">
+
+e. Check to see if the field is visible at all levels if its not select it and save
+
+<img width="1015" alt="screen shot 2017-10-10 at 08 55 16" src="https://user-images.githubusercontent.com/1496976/31375297-f4d88c1c-ad98-11e7-8621-f8339d9c7702.png">
+
+<img width="982" alt="screen shot 2017-10-10 at 08 55 27" src="https://user-images.githubusercontent.com/1496976/31375299-f4ee54e8-ad98-11e7-83b6-7679516afcee.png">
+
+f. Setup Field history by going to the setup->Customize->Leads->Fields menu (also the Contacts fields menu) and set history tracking on the Email Opt Out fields
+
+<img width="685" alt="screen shot 2017-10-11 at 10 30 50" src="https://user-images.githubusercontent.com/1496976/31440552-44f61ba2-ae88-11e7-800e-fb7ea0a3d3dd.png">
+
+<img width="582" alt="screen shot 2017-10-11 at 10 31 04" src="https://user-images.githubusercontent.com/1496976/31440553-450fc2a0-ae88-11e7-9d51-a60f01c6fee9.png">
+
+### Prepare Mautic
+
+1. In Mautic's configuration for Salesforce on the Features tab, check the box to `Use latest updated Do Not Contact record`.
+2. Map the Salesforce `Email Opt Out` field to Mautic's `Do not contact by email` field
+3. Now the do not contact status will update the other system 
+
+
+
+## Test the plugin
 Follow [these steps](./../plugins/integration_test.html) to test the integration.
+
 
 ## Troubleshooting
 

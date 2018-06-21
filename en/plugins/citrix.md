@@ -4,7 +4,7 @@
 Creates a plugin that pulls data from Mautic and pushes data to Mautic from GotoMeeeting, GotoWebinar, GotoTraining and GoToAssist.
 ## Required Features:
 1. Create registrants in GoToWebinar and GoToTraining based on campaign decisions, contact data and also from registration forms in Mautic
-2. Pull back from registrant and attendee info into segments and campaigns  
+2. Pull back from registrant and attendee info into segments and campaigns
 3. Display webinar and training attendance as an additional activity on the contact timeline
 4. Send emails with buttons to start GoToMeeting, GoToTraining and GoToAssist sessions
 
@@ -17,7 +17,7 @@ Creates a plugin that pulls data from Mautic and pushes data to Mautic from Goto
 
 ![image](https://cloud.githubusercontent.com/assets/2924026/19797588/5c6ce640-9ca9-11e6-981c-a98a728e1712.png)
 
-3. Use the Consumer Keys from the developer website
+3. Use the Consumer Keys from the [developer website](https://goto-developer.logmeininc.com/user)
 
 ![image](https://cloud.githubusercontent.com/assets/2924026/19797595/612744f0-9ca9-11e6-90b0-566fdff69ef4.png)
 
