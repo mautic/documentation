@@ -20,7 +20,7 @@ php /path/to/mautic/app/console mautic:email:fetch
 
 ## Usage
 
-Contact replies use with campaigns as decision after send email. Mautic tried read inbox, parse messages and find reply from contact. The go to positive path immediately after reply exist. 
+Contact replies use with campaigns as decision after send email. Mautic tried read inbox, parse messages and find reply from contact. Then go to positive path immediately after reply exist. 
 
 ![Contact Replies campaign decision](/emails/media/contact-replies-campaign-decision.png)
 
