@@ -15,14 +15,12 @@ You can activate and configure the queuing mechanism by going to configuration:
 
 ### RabbitMQ
 
-[RabbitMQ](https://www.rabbitmq.com/features.html) is one of the available queue protocols that Mautic supports. 
+[RabbitMQ](https://www.rabbitmq.com/features.html) is one of the available queue protocols that Mautic supports.
 In order to use it, you must have a RabbitMQ server running.  Instructions on how to install RabbitMQ can be obtained
 on their [website](http://www.rabbitmq.com/download.html).  For testing purposes, you can use
 you can use [cloudamqp](https://www.cloudamqp.com/) which offers a RabbitMQ as a service.
 
 Once you have setup a RabbitMQ server, you can configure Mautic to use it by using the *Configuration* menu item again.
-
-![RabbitMQ](media/rabbitmq_settings.jpg "RabbitMQ settings")
 
 - Open the admin menu by clicking the cog icon in the top right corner.
 - Select the *Configuration* menu item.
@@ -35,8 +33,6 @@ Once you have setup a RabbitMQ server, you can configure Mautic to use it by usi
 - Save the configuration.
 
 ### Beanstalkd
-
-![Beanstalkd](media/beanstalkd_settings.jpg "Beanstalkd settings")
 
 [Beanstalkd](https://kr.github.io/beanstalkd/) is another available queue protocol that Mautic supports.
 In order to use it, you must have a Beanstalkd server running.  Instructions on how to install Beanstalkd can be
