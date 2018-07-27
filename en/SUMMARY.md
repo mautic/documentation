@@ -26,7 +26,6 @@
         * [Gated Video](video/README.md)
     * [Pages](pages/README.md)
         * [Manage Pages](pages/manage_pages.md)
-        * [Manage Categories](pages/manage_categories.md)
         * [Troubleshooting](pages/troubleshooting.md)
         * [Device Granularity](pages/device_granularity.md)
 * [Channels](channels/README.md)
