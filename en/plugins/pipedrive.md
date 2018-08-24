@@ -60,9 +60,9 @@ You have to create webhooks for Person, User and optionally for Organization.
 
 ![Configure Pipedrive webhooks](media/pipedrive/webhooks_2.png "Configure Pipedrive webhooks")
 
-1. Select “\*” to send to Mautic all events for the given object
+1. Select `updated` to send to Mautic updated events for the given object. Do not select `*` as Pipedrive will send the `updated` events on create event too. If you select `*` the contacts/companies/users will be duplicated.
 2. Choose which object you want to synchronize (Person, Organization, User)
-3. Enter your Mautic URL address (you can find it on the configuration page)
+3. Enter your Mautic URL address (you can find it on the Pipedrive plugin configuration page)
 4. Enter the webhook user that you used for plugin configuration
 5. Enter the webhook password that you used for plugin configuration
 
