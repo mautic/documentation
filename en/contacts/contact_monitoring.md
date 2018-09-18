@@ -5,6 +5,8 @@ The act of monitoring the traffic and activity of contacts can sometimes be some
 
 Monitoring all traffic on a website can be done by loading a javascript file (since Mautic 1.4) or adding a tracking pixel to the website. It is important to note that traffic will not be monitored from logged-in Mautic users. To check that the JS/pixel is working, use an incognito or private browsing window or simply log-out of Mautic prior to testing.
 
+Note that by default, Mautic will not track traffic originating from the same [private network](https://en.wikipedia.org/wiki/Private_network) as itself, but this internal traffic can be configured to be tracked by setting the `track_private_ip_ranges` configuration option to `true` in `app/config/local.php` and then [clearing the symfony cache](https://developer.mautic.org/#cache).
+
 ### Javascript (JS) tracking
 
 JS tracking method was implemented in Mautic 1.4 and recommended as the primary way of website tracking. To implement it, go to *Mautic configuration* > *Landing Page Settings* to find the JS tracking code build for your Mautic instance and insert its code before the ending `<body/>` tag of the website you want to track. Or copy the code below and change the URL to your Mautic instance.
