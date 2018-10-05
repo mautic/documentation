@@ -1,21 +1,28 @@
 # Mautic Documentation
 
-### Introduction
-This book serves as the [documentation for Mautic](https://mautic.org/docs/), the open source marketing automation system. Just as the code is open source and available for everyone, so is the documentation. Everyone is welcome to help make this information better and improve as needed.
+## Introduction
+This repository contains the primary [Mautic documentation][mautic-docs], the open source marketing automation system. Just as the code is open source and available for everyone, so is the documentation. Everyone is welcome to help make this information better and improve as needed.
 
-### Download as PDF!
+### Download documentation as a PDF
 
-[Click here](https://mautic.org/docs/mautic_docs_en.pdf) to download these docs as a PDF in English.
-
-[Click here](https://mautic.org/docs/mautic_docs_fr.pdf) to download these docs as a PDF in French.
-
-[Click here](https://mautic.org/docs/mautic_docs_jp.pdf) to download these docs as a PDF in Japanese.
-
+Download the official Mautic documentation as a PDF in:
+* [English][docs-eng]
+* [French][docs-fr]
+* [Japanese][docs-jp]
 
 
-### How to contribute to the docs
+## Contributing to the Mautic documentation
 
-This repository is the source code for [Gitbook](https://www.gitbook.com/) published at [www.mautic.org/docs](https://www.mautic.org/docs). The source code is shared [here on GitHub](https://github.com/mautic/documentation) so anyone can contribute to the documentation in the same way the programmers do with the actual Mautic code. 
+This repository serves as the source code for the Mautic documentation [Gitbook][gitbook] published at [www.mautic.org/docs][mautic-docs]. The source code is shared [here on GitHub][mautic-docs-github] so anyone can contribute to the documentation in the same way the programmers do with the actual Mautic code.
+
+### Steps to contribute
+
+1. Fork this repository
+2. Select a file to edit on your fork
+3. Make your commits
+4. Open a pull request to `base fork: mautic/documentation` with `base: master`
+5. Include and reference any [Issues][doc-issues] your Pull Request addresses
+
 
 #### Why is git used for the documentation
 
@@ -25,7 +32,16 @@ This repository is the source code for [Gitbook](https://www.gitbook.com/) publi
 
 Although some git knowledge is required to clone, modify, commit and push changes, there is a way to avoid that and edit the files directly in the GitHub web interface. If you know git, use the workflow you like. If not, the following guide will show you how to contribute easily.
 
-#### Edit documents in browser
+### Editing documentation using the command line
+
+1. Fork this repository
+2. In the command line `cd` to where you want the documentation repository located
+3. Run `$ git clone https://github.com/<your-username>/documentation.git` to clone your fork
+4. Once cloning has completed, open the project in your editor of choice
+5.
+
+### Editing documents in the GitHub browser interface
+**If you're unfamiliar with the command line but still want to contribute to the Mautic documentation**
 
 1. [Fork](https://github.com/mautic/documentation#fork-destination-box) this repository under your account so you'll have permission to edit.
 2. Select a file to edit. The file structure is explained below. Now, let's edit the *README.md* file to show the principles. Click on it.
@@ -73,3 +89,25 @@ Or, if you want to display an image already uploaded to the documentation reposi
 ```
 ![alternative text here](/assets/media/assets-newcategory.png "Tooltip text here")
 ```
+
+
+
+
+
+<!--
+Links below
+-->
+
+[mautic-docs]: https://mautic.org/docs/
+
+[docs-eng]: https://mautic.org/docs/mautic_docs_en.pdf
+
+[docs-fr]: https://mautic.org/docs/mautic_docs_fr.pdf
+
+[docs-jp]: https://mautic.org/docs/mautic_docs_jp.pdf
+
+[gitbook]: https://www.gitbook.com/
+
+[mautic-docs-github]: https://github.com/mautic/documentation
+
+[doc-issues]: https://github.com/mautic/documentation/issues
