@@ -38,23 +38,25 @@ Although some git knowledge is required to clone, modify, commit and push change
 2. In the command line `cd` to where you want the documentation repository located
 3. Run `$ git clone https://github.com/<your-username>/documentation.git` to clone your fork
 4. Once cloning has completed, open the project in your editor of choice
-5.
+5. `$ git checkout -b branch/your-branch-name` to create a new branch for your edits. Please name your branch something descriptive like `{yourusername}-revision-readme-file`
+6. Commit your changes and submit your pull request to `base fork: mautic/documentation` and `base: master`
 
 ### Editing documents in the GitHub browser interface
 **If you're unfamiliar with the command line but still want to contribute to the Mautic documentation**
 
-1. [Fork](https://github.com/mautic/documentation#fork-destination-box) this repository under your account so you'll have permission to edit.
-2. Select a file to edit. The file structure is explained below. Now, let's edit the *README.md* file to show the principles. Click on it.
-3. The content of *README.md* should be visible and the *Edit* button (the pencil icon) above as well. Hit it.
-4. The content is written in [Markdown markup](https://daringfireball.net/projects/markdown/). Very simple text-based formatting.
-5. Make a change to the file. For example, add to the end `This is my first contribution`.
-6. When you have made a change, scroll down and notice the form called *Commit changes*. This is important. To save a change, you have to describe what you've changed and why. Write for example `A new line added for testing purposes`. Do not save yet!
-7. Because the GitHub web interface does not provide all features of git, we won't have an easy way to revert our change back to the original state. We'd have to create another commit where we'd delete the added line. That would make a mess in the commit history. So instead, we create a new branch. There is a checkbox for it "Creates a new branch...". The branch has to have a name. `{yourusername}-patch-1` will be prefilled. Let's change it to `{yourusername}-testing`. Click the *Propose file change* button now.
-8. Ok, so the change exists in your repository now. To propose the change to the official repository, you have to send a pull request (PR). You've been redirected to do just that. Here you describe your proposed change and click (please don't send the testing PRs) the *Create pull request* button.
+Using *README.md* as an example:
+1. [Fork][mautic-docs-fork] this repository under your account so you'll have permission to edit.
+2. Select the *README.md* file (refer to the [file structure section](#file-structure) below if needed)
+3. With the content of *README.md* visible, click on the pencil icon to begin editing the file
+4. The *.md* extension means this file was written in Markdown, a simple but flexible text formatting language. Mautic documentation is written with [Markdown markup][markup] specifically.
+5. After you've made a change, scroll down to the *Commit changes* form. Saving your change requires describing what was changed and why.
+6. Before submitting your commit, select the box for *Creates a new branch* to start a new branch for your change. Name your branch something like `{yourusername}-revision-readme-file`
+7. Select *Propose file change*
+8. In the next dialogue box, describe what you've changed and why then select *Create pull request* to open a pull request proposing we add your changes to our official repository.
 
 If you want to clean up after the testing, go to the *Branches* section and delete the testing branch.
 
-#### The File Structure
+<h4 id="file-structure">The File Structure</h4>
 
 We've worked with the *README.md* file in the previous section. This file is shown in the home page of a GitHub repository and you are reading its content right now. It doesn't have anything to do with the Mautic documentation.
 
@@ -111,3 +113,7 @@ Links below
 [mautic-docs-github]: https://github.com/mautic/documentation
 
 [doc-issues]: https://github.com/mautic/documentation/issues
+
+[mautic-docs-fork]: https://github.com/mautic/documentation#fork-destination-box
+
+[markup]: https://daringfireball.net/projects/markdown/
