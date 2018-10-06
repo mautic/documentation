@@ -54,15 +54,14 @@ Using *README.md* as an example:
 7. Select *Propose file change*
 8. In the next dialogue box, describe what you've changed and why then select *Create pull request* to open a pull request proposing we add your changes to our official repository.
 
-If you want to clean up after the testing, go to the *Branches* section and delete the testing branch.
 
 <h4 id="file-structure">The File Structure</h4>
 
-We've worked with the *README.md* file in the previous section. This file is shown in the home page of a GitHub repository and you are reading its content right now. It doesn't have anything to do with the Mautic documentation.
+The *README.md* file is serves as the introduction and description of this repository. This file does not contain any documentation.
 
-The *SUMMARY.md* file defines the menu of the documentation. If you add a new page to the documentation, you'll have to also add a new line there defining the title and the link to the file. It's pretty straightforward when you see the current menu items.
+The *SUMMARY.md* file defines the menu of the documentation. If you add a new page to the documentation, you'll have to also add a new line there defining the title and the link to the file (formatted like the existing menu items).
 
-The folders are here to group the topics together. Open for example the *asset* folder. You'll see it has its own *README.md* file. It is the main content when you click on the Asset menu item. The *manage_assets.md* file is a subitem. The *media* subfolder contains all the images used in the *md* files.
+The folders in this repository are grouped together by topic. For example, within the *asset* folder, you'll see it has its own *README.md* file which contains the primary description of the Asset menu; the *manage_assets.md* file is a subitem; the *media* subfolder contains all the images used in the *.md* files.
 
 #### Links
 
@@ -77,11 +76,11 @@ This will create an external link with absolute URL. If you want to create an in
 ```
 [these steps](./../plugins/integration_test.html)
 ```
-This will link to `plugins/integration_test.html` on the documentation website created from the *md* source file.
+This will link to `plugins/integration_test.html` on the documentation website created from the *.md* source file.
 
 #### Images
 
-As noted above, the images can be placed in the media subfolders. The images probably aren't possible to upload via the GitHub web interface, but you can upload them to any public URL and link them from there.
+Images can be placed in the media subfolders in the different sections of this repository. For images that cannot be uploaded via the GitHub web interface, upload them to any public URL service and use the generated link.
 
 ```
 ![alternative text here](http://example.com/images/apple.png "Tooltip text here")
@@ -91,8 +90,6 @@ Or, if you want to display an image already uploaded to the documentation reposi
 ```
 ![alternative text here](/assets/media/assets-newcategory.png "Tooltip text here")
 ```
-
-
 
 
 
