@@ -91,6 +91,9 @@ Or, if you want to display an image already uploaded to the documentation reposi
 ![alternative text here](/assets/media/assets-newcategory.png "Tooltip text here")
 ```
 
+### License
+
+The Mautic official end user documentation is licensed under the **Apache 2.0**, a permissive license whose main conditions require preservation of copyright and license notices. [Read more.][mautic-doc-license]
 
 
 <!--
@@ -114,3 +117,5 @@ Links below
 [mautic-docs-fork]: https://github.com/mautic/documentation#fork-destination-box
 
 [markup]: https://daringfireball.net/projects/markdown/
+
+[mautic-doc-license]: https://github.com/mautic/documentation/blob/master/LICENSE
