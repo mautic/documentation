@@ -57,3 +57,7 @@ The pages can be unpublished and published again with a click of a button or by 
 Mautic allows you to configure a 301 (permanent) or a 302 (temporary) redirect. The redirects will work if the page is unpublished.
 
 Note: When you are logged in as a Mautic administrator, you will always see the page content even though it is unpublished. But if you log out of Mautic or open the page in an incognito window to emulate access of a normal contact, you will be able to see the 404 message or the redirect if configured.
+
+#### Disable search indexing
+
+Mautic 2.13 added new option [Block search indexing with noindex](https://support.google.com/webmasters/answer/93710?hl=en). You can prevent a page from appearing in search engines like Google, Bing etc.
