@@ -102,3 +102,9 @@ So, what happened is `{pagelink=1}` was converted into the landing page URL and 
 
 Mautic 2.3 added new action **Remove Contact from Do Not Contact**. If a contact unsubscribes from your email marketing, you can't send another emails.  Use action **Remove Contact from Do Not Contact** in your forms and the contact will receive email again.
 
+
+#### Show results in contacts tab
+
+Mautic 2.13 added new option **Show results in contacts**. This option add tab with related contacts form results to contacts profile. 
+
+![forms - field matching](/forms/media/contacts-form-tab.png)
