@@ -33,6 +33,59 @@ result as the intersection of the subsets. You can then manipulate the contacts 
 
 ![](/contacts/media/common-leads-in-segments.jpg)
 
+#### Matching part of a string
+
+There are 5 filters you can use for matching part of a string - `starts with`, `ends with`, `contains`, `like` and `regexp`. First three filters match strings as you enter it. `like` filter is for advanced users - you can specify which type you want to use with `%` character:
+
+* `My string%` is the same as `starts with` filter with `My string` value.
+* `%My string` is the same as `ends with` filter with `My string` value.
+* `%My string%` is the same as `contains` filter with `My string` value.
+* `My string` is the same as `contains` filter with `My string` value.
+
+A few notes for text filters:
+
+* `starts with`, `ends with`, `contains` filters were added later than the `like` one, so you can easily specify what you need now.
+* `%` character in the middle of the string has no special meaning. `contains` filter with `my % string` will search for a string with `%` in the middle. The same is true for `like` filter with `%my % string%` value. There is no need for escaping this character.
+* Mautic searches for `%` character in a value for `like` filter and no modification is performed if at least 1 `%` is found.
+
+You can use regular expressions in a `regexp` filter. Mautic recognises all common operators like `|` for OR (`first string|second string`), character sets (`[0-9]`, `[a-z0-9]` etc.), repetitions (`+`, `*`, `?`) and more. You have to escape special characters with `\` if you want to use them as matching character. [Learn more about regex at https://dev.mysql.com/doc/refman/5.7/en/regexp.html](https://dev.mysql.com/doc/refman/5.7/en/regexp.html). Please note that MySQL (and Mautic) uses POSIX regex, which could behave differently from other types of Regex.
+
+#### Date options
+
+Date filters allow you to choose a date via DatePicker:
+
+![](/contacts/media/segment-filters-datepicker.png)
+
+Hovewer you can specify much more here. Mautic recognizes relative formats too (these string are not translatable):
+
+* `+1 day` (you can also use `1 day`)
+* `-2 days` (you can also use `2 days ago`)
+* `+1 week` / `-2 weeks` / `3 weeks ago`
+* `+5 months` / `-6 months` / `7months ago`
+* `+1 year` / `-2 years` / `3 years ago`
+
+Example (Consider that today is `2018-03-02`):
+* `Date identified equals -1 week` returns all contacts identified on 2018-02-23.
+* `Date identified less than -1 week` returns all contacts identified before 2018-02-23.
+* `Date identified equals -1 months` returns all contacts identified on 2018-02-02.
+* `Date identified greater or equal -1 year` returns all contacts identified 2017-03-02 and after.
+* `Date identified greater than -1 year` returns all contacts identified after 2017-03-02.
+
+Beside this you can specify your date with text. These formulas are **translatable**, so make sure you use them in correct format.
+
+* `birthday` / `anniversary`
+* `today` / `tomorrow` / `yesterday`
+* `this week` / `last week` / `next week`
+* `this month` / `last month` / `next month`
+* `this year` / `last year` / `next year`
+
+Example (Consider that today is `2018-03-02`):
+* `Date identified equals last week` returns all contacts identified between 2018-02-26 and 2018-03-04 (Monday to Sunday).
+* `Date identified less than last week` returns all contacts identified before 2018-02-19.
+* `Date identified equals last month` returns all contacts identified between 2018-02-01 and 2018-02-28.
+* `Date identified greater or equal last year` returns all contacts identified 2017-01-01 and after.
+* `Date identified greater than last year` returns all contacts identified after 2017-12-31.
+
 ### Segments
 
 Once you have created your segment, any applicable contact will be automatically
