@@ -119,3 +119,7 @@ Links below
 [markup]: https://daringfireball.net/projects/markdown/
 
 [mautic-doc-license]: https://github.com/mautic/documentation/blob/master/LICENSE
+
+[developer-docs]: https://developer.mautic.org
+
+[developer-docs-github]: https://github.com/mautic/developer-documentation
