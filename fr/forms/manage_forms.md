@@ -47,6 +47,10 @@ Afin que vos formulaires créent ou mettent à jour vos contacts, (pour mettre �
 
 Le mode kiosque est utile lorsque vous savez qu'un formulaire va être soumis par plusieurs personnes depuis un même support (ordinateur ou mobile). Par exemple, si vous avez un ipad sur un salon ou lors d'un conférence pour toute votre équipe commerciale, chaque soumission va créer un nouveau contact. Si le mode kiosque n'était pas activé le même contact serait mis à jour chaque soumission.
 
+#### Indexation de la page du formulaire
+
+Mautic introduit en 2.15.0 la possibilité de désactiver l'indexation de la page du formulaire par les moteurs de recherches. Ainsi, vous pouvez décider si les pages `http(s)://yourmauticurl.com/form/{formid}` sont indexées ou non.
+
 ### Intégration du formulaire
 
 Il y a 3 moyens d'intégrer un formulaire sur une page de votre site web. Vous pouvez copier l'intégralité du code généré ou vous pouvez intégrer le code sur votre site de façon dynamique en utilisant le javascript ou l'iframe. Vous pouvez également intégrer votre formulaire sur une page d'atterrissage créée dans Automation.
