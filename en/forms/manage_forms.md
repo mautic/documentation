@@ -55,7 +55,7 @@ The kiosk mode is helpful when you know that some form will be submitted from on
 
 #### No index mode
 
-In 2.15.0, mautic introduced the ability to disable form indexing from search engines. Then you can decide if the `http(s)://yourmauticurl.com/form/{formid}` page is indexed or not.
+In 2.15.0, mautic introduced the ability to disable search engines from indexing forms. With this option you can disable search engines from indexing `http(s)://yourmauticurl.com/form/{formid}` if set to "Yes".
 
 ### Form Injection
 
