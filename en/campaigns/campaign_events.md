@@ -25,8 +25,9 @@ The email tokens will get populated with the real values including contact field
 
 #### Send a Webhook
 
-Action Send a Webhook with GET, POST, PUT, PATCH, DELETE, TRACE request support (curl). It was created based on [GitHub discussion](https://github.com/mautic/mautic/issues/854). Return true if page status code is 200/201.  Data and headers values support contact field tokens ({contactfield=firstname} etc.).
+Action Send a Webhook with GET, POST, PUT, PATCH, DELETE, TRACE request support (curl). It was created based on [GitHub discussion](https://github.com/mautic/mautic/issues/854). Return true if page status code is 200/201. Data and headers values support contact field tokens (`{contactfield=firstname}` etc.).
 
+Mautic 2.15.0 [adds](https://github.com/mautic/mautic/pull/6539) possibility to use contact's IP address as a token `{contactfield=ipAddress}`.
 
 #### Delete contact
 
