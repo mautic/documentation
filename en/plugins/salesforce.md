@@ -89,7 +89,7 @@ When enabling the activity object, you need to tick the Activity checkbox in the
 
 ![Salesforce CRM activity namespace](./../plugins/media/plugins-salesforce-activity-setup.png "Salesforce CRM activity object")
 
-![Salesforce CRM activity namespace](./../plugins/media/plugins-salesforce-activity-namespace.png "Salesforce CRM activity object")
+![Salesforce CRM activity namespace](./../plugins/media/plugins-salesforce-namespace.png "Salesforce CRM activity object")
 
 You can filter what contact timeline activities to push to your custom object in Salesforce using the **Events to include in the activity sync** selector. If this is left blank all activity types will be pushed to your activity object in Salesforce.
 ![Salesforce CRM activity filters](./../plugins/media/SF-activity-filters.png "Salesforce CRM activity object")
