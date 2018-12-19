@@ -99,6 +99,8 @@ php /path/to/mautic/app/console mautic:iplookup:download
 
 Cleanup a Mautic installation by purging old data. Note that not all data is able to be purged. Currently supported are audit log entries, visitors (anonymous contacts), and visitor page hits. Use `--dry-run` to view the number of records to be purged before making any changes.
 
+Use ‘--gdpr’ flag to delete data to fulfill GDPR European regulation. This will delete leads that have been inactive for 3 years.
+
 **This will permanently delete data! Be sure to keep database backups.**
 
 ```
