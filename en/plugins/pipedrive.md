@@ -82,9 +82,13 @@ Repeat for Person, User and Organizations. When you're done, the webhook view sh
 
 # Command line scripts
 
-The scripts are used for the initial Mautic <-> Pipedrive data exchange. You shouldn't use them to make updates with CRON.
+The scripts try merge older contacts, but we recommend it just for the initial Mautic <-> Pipedrive data exchange.  You shouldn't use them to make updates with CRON. 
 
 * `mautic:integration:pipedrive:fetch` – pulls the data from Pipedrive and sends it to Mautic
 * `mautic:integration:pipedrive:push` – pushes the data from Mautic to Pipedrive
 
-**You have to complete the plugin configuration to use these scripts.**
+# Realtime update
+
+If you create or edit contact in Pipedrive, Pipedrive should send update via webhook and Mautic should recognize the contact's status and add or update it dedending on last date of integration. If you don't want to use this way of contact's synchronization, just don't setup webhook in Pipedrive.
+
+If you create or edit contact in Mautic, Mautic should send this update to Pipedrive via API. Mautic should recognize the status of the contact and add or update it depending on last date of integration. By default is disabled this feature. You are able to enable it by option **Import contacts to Pipedrive immediately on change in Mautic** in plugin settings. 
