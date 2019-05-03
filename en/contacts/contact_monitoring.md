@@ -9,7 +9,12 @@ Note that by default, Mautic will not track traffic originating from the same [p
 
 ### Javascript (JS) tracking
 
-JS tracking method was implemented in Mautic 1.4 and recommended as the primary way of website tracking. To implement it, go to *Mautic configuration* > *Landing Page Settings* to find the JS tracking code build for your Mautic instance and insert its code before the ending `<body/>` tag of the website you want to track. Or copy the code below and change the URL to your Mautic instance.
+JS tracking method was implemented in Mautic 1.4 and recommended as the primary way of website tracking. To implement it, 
+
+1. go to Mautic > *Settings* (click the cogwheel at the top right) > *Configuration* > *Tracking Settings* to find the JS tracking code build for your Mautic instance
+2. insert the code before the ending `<body/>` tag of the website you want to track
+
+Or, copy the code below and change the URL to your Mautic instance.
 
 As of 2.3.0, Mautic sets cookies with a lifetime of 2 years. Returning visitors are identified exclusively by the cookie. If no cookie exists yet, Mautic creates a new contact and sets the cookie. Make sure your website url is entered in the CORS settings. This is the first step in better contact identification. Note that if a browser is set to not accept cookies, this may result in each hit creating a new visitor. If this behavior is concerning, see Fingerprint option below. 
 
