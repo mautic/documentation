@@ -45,3 +45,9 @@
 | Web View Text                                      | {webview_text}                            |
 | Zip Code                                           | {contactfield=zipcode}                    |
 | Zip Code (Company)                                 | {contactfield=companyzipcode}             |
+
+### Operations
+
+#### Url Encoding
+
+To url encode any variable, append a `|true`, such as `{leadfield=email|true}`
