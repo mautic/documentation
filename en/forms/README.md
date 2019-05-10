@@ -4,7 +4,7 @@ Forms are a special part of the marketing automation system. A form is used to c
 
 There are two kinds of forms in Mautic.
 
-![](/forms/media/kinds-of-forms.jpg)
+![](media/kinds-of-forms.jpg)
 
 A **Campaign Form** can push a contact directly into a campaign but all actions are performed in the Campaign Builder.
 
@@ -20,6 +20,27 @@ To fix that, go to the Mautic Configuration and make sure the **Site URL** field
 
 Now go to the Components / Forms and rebuild the forms HTML.
 
-![](/forms/media/rebuild.png)
+![](media/rebuild.png)
 
 The 404 error should disappear after refres of the form preview page and the form validation messages should start working again.
+
+
+## FAQ
+
+### How to open an opt-in form in a modal window when the call-to-action button is clicked?
+
+Often you need to show not an embedded form but a form that is showing up in a modal when a trigger button is clicked. 
+Here is a short example how you can do that:
+
+```html
+<html>
+  <script type="text/javascript" src="https://<mautic-instance>/form/generate.js?id=2"></script>
+
+  <body>
+  {mauticform id=2 style=modal element=.call-to-action-btn} <!-- setup modal form -->
+
+  <a class="btn btn-default call-to-action-btn" href="#">Click me</a> <!-- trigger button -->
+
+  </body>
+</html>
+```
