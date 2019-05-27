@@ -209,7 +209,7 @@ These are just a few of the integrations already created by the Mautic community
 
 **Note:** It is important to note that you are not limited by these plugins and you can place the tracking pixel directly on any HTML page for website tracking.
 
-### Identify vistior by tracking url
+### Identify visitors by tracking URL
 
 Mautic 2.9 add to Configuration option for identify visitor by tracking url. If enabled it, returning visitor will be identify by tracking url from channels (especially from emails) when no cookie exists yet. 
 
