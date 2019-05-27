@@ -211,7 +211,7 @@ These are just a few of the integrations already created by the Mautic community
 
 ### Identify visitors by tracking URL
 
-Mautic 2.9 add to Configuration option for identify visitor by tracking url. If enabled it, returning visitor will be identify by tracking url from channels (especially from emails) when no cookie exists yet. 
+Mautic 2.9 add to Configuration option for identifying visitors by tracking URL. If enabled, returning visitors will be identified by tracking URL from channels (especially from emails) when no cookie exists yet.
 
 Note: Email contact field have to be marked as unique indentifier and publicly updatable in Configuration.
 
