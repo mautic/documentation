@@ -70,7 +70,40 @@ Mautic supports the bounce and complaint management from Amazon Simple Email Ser
 
 ![Topic](/emails/media/amazon_webhook_5.png "Enter url to Mautic")
 
-4) The subscriber will be in the pending state till it is confirmed. AWS will call your Amazon webhook with a SubscriptionConfirmation request including a callback url. To confirm Mautic will send a request back to this callback url to validate the subscription. Therefore make sure your Mautic installation is allowed to connect to the internet, otherwise the subscription will remain in the pending state and won't work. Check the logfile for more information.
+4) The subscriber will be in the pending state till it is
+confirmed. AWS will call your Amazon webhook with a
+SubscriptionConfirmation request including a callback url. To confirm
+Mautic will send a request back to this callback url to validate the
+subscription. Therefore make sure your Mautic installation is allowed
+to connect to the internet, otherwise the subscription will remain in
+the pending state and won't work. If your webhook is HTTPS, you also
+need to make sure that your site is using a valid SSL certificate
+which can be verified by Amazon.
+
+Check the logfile for more information.  If you are having problems
+getting the subscription out of the pending state, it may also help to
+configure the topic's "Delivery status logging" settings, so that
+delivery status (at least for HTTP/S) gets logged to CloudWatch.  Then
+you can visit the Logs section of the CloudWatch Management Console
+and see the exact details of delivery failures.  For example, an
+invalid SSL certificate might result in an event like the following
+appearing in the CloudWatch logs:
+
+    {
+        "notification": {
+            "messageId": "337517be-f32c-4137-bc8d-93dc29f45ff9",
+            "topicArn": "arn:aws:sns:eu-west-1:012345678901:Mautic",
+            "timestamp": "2019-05-31 15:34:13.687"
+        },
+        "delivery": {
+            "deliveryId": "a5dab35d-83f9-53c3-8ca6-e636c82668d4",
+            "destination": "https://my.mautic.site/mailer/amazon/callback",
+            "providerResponse": "SSLPeerUnverifiedException in HttpClient",
+            "dwellTimeMs": 42266,
+            "attempts": 3
+        },
+        "status": "FAILURE"
+    }
 
 ![Topic](/emails/media/amazon_webhook_6.png "Confirmation pending")
 
