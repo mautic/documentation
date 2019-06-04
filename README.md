@@ -12,7 +12,7 @@ Download the official Mautic documentation as a PDF in:
 
 
 ## Contributing to the Mautic documentation
-
+Allure
 This repository serves as the source code for the Mautic documentation [Gitbook][gitbook] published at [www.mautic.org/docs][mautic-docs]. The source code is shared [here on GitHub][mautic-docs-github] so anyone can contribute to the documentation in the same way the programmers do with the actual Mautic code.
 
 ### Steps to contribute
