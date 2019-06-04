@@ -79,7 +79,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Force SUMMARY entries to be unique by filename
 
 ## 2.3.0
-- Fix nunjucks issue with multiple {% raw %} blocks
+
 - Fix crash when git conref failed
 - Fix crash when failed to download remote image (better error message)
 - Fix flicking effect when changing page (big UX improvement)
