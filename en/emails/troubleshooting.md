@@ -11,6 +11,7 @@ Some email clients have auto loading images disabled, and users have to click on
 Before an email is sent, Mautic replaces all links in the email with links back to Mautic including a unique key. If the contact clicks on such a link, the contact is redirected to Mautic. Mautic tracks the click action and redirects the contact to the original location. It's fast so the contact doesn't notice the additional redirect.
 
 If the email click doesn't get tracked, make sure that:
+
 1. Your Mautic server is on a public URL. Tracking doesn't work on a localhost.
 2. Make sure the email was sent to an existing contact via a campaign or a segment email. Emails sent by the *Send Example* link, *direct email* (from the contact detail) or *form submission preview* won't replace links with trackables.
 3. Make sure the URL in the `href` attribute is absolute and valid. It should start with http:// or https://.
