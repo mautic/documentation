@@ -10,23 +10,23 @@ For more information see [One Signal documentation](https//documentation.onesign
 
 ##### 2. Setup app Website Push Platforms in you app
 
-![](/media/notification-setup1.PNG)
+![](/notifications/media/notification-setup1.PNG)
 
 Google Chrome and Mozilla Firefox configuration example
 
-![](/media/notification-setup2.PNG)
+![](/notifications/media/notification-setup2.PNG)
 
 Apple Safari (macOS) configuration example
 
-![](/media/notification-setup3.PNG)
+![](/notifications/media/notification-setup3.PNG)
 
 ##### 3. Setup Mautic
 
 Enable Web Notification and copy keys from OneSignal to your Mautic > Settings > Configuration - Web Notification Settings tab
 
-![](/media/notification-setup4.PNG)
+![](/notifications/media/notification-setup4.PNG)
 
-![](/media/notification-setup5.PNG)
+![](/notifications/media/notification-setup5.PNG)
 
 ##### 4. Test
 
@@ -67,3 +67,16 @@ Don't forget copy these files to root dir of your tracking page:
 https://yourmauticurl.tld/manifest.json
 https://yourmauticurl.tld/OneSignalSDKWorker.js
 https://yourmauticurl.tld/OneSignalSDKUpdaterWorker.js
+
+### Settings
+
+Mautic 2.14.1 added manage notification images and action buttons. Just read tooltip with every new field on add/edit notification with basic info about upload image format and size. Use preview button  and see How It should generate. 
+ 
+ Note, every supported browser ([see platform support on OneSignal](https://documentation.onesignal.com/docs/web-push-overview)) should generate different type of notificiation ([see Web Push Notification Icons on OneSignal](https://documentation.onesignal.com/docs/web-push-notification-icons) with examples). Also action buttons are supported differently ([see Action Buttons on OneSignal](https://documentation.onesignal.com/docs/action-buttons))
+
+In Mautic you are able to:
+ 
+ - Setting the Icon and Image ([OneSignal documentation](https://documentation.onesignal.com/docs/web-push-notification-icons))
+ - Customize action buttons ([OneSignal documentation](https://documentation.onesignal.com/docs/action-buttons))
+ - Manage Time to live [OneSignal documentation](https://documentation.onesignal.com/docs/sending-notifications#section-time-to-live))
+ - Manage Priority - [OneSignal documentation](https://documentation.onesignal.com/reference#section-delivery))
