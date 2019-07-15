@@ -79,3 +79,10 @@ Since Mautic 1.4, there is a new option in the Mautic configuration, the Email S
 ### Disable the Tracking Pixel
 
 As described above, some email clients display the image approval if one of the images is loaded from remote location. Like the tracking pixel. If you care more about this approval than the email open tracking, you can disable the tracking pixel. Then the images should be displayed directly without any approval.
+
+### Disable the Unsubscribe header
+
+As per [rfc8058](https://tools.ietf.org/html/rfc8058), one can send a mail header called `List-Unsubsribe` which can include data on how to unsubscribe from a mailing list.  
+This is used by iOS and Gmail to add a quick action button to users so they can unsubscribe with ease.
+  
+There is an option in the Mautic configuration page, under the Email Settings tab, which lets you disable sending this header.
