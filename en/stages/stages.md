@@ -10,6 +10,10 @@ To create a new stage, go to the stages menu identified by a tachometer. Click o
 
 Notice Mautic uses 'weight' for stages, this is a way to balance your contact's stages.  When moving contacts from stage to stage, this will make sure a contact doesn't go back to previous stages.
 
+### Importing contacts with Stage relationship
+
+Ensure that you are using numeric stage ID in contact imports. Using stage names is not supported.
+
 ### Moving Contact's from stage to stage
 
 Use a campaign to move your contacts from stage to stage. When creating your campaign choose a _Move Contact to Stage_ action. So if a contact has been sent an email, or has opened an email, you can select to change the contact's stage based on any campaign criteria.
