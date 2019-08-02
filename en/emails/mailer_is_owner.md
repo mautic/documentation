@@ -2,18 +2,35 @@
 
 It allows to automatically personalize emails sent to a user who has an owner (mautic user) assigned to it. This feature changes *from email*, *from name* and *signature* from the default setting to the user setting.
 
+There are 4 ways how to define from address for email sent to contacts:
+1. From address in the global configuration.
+2. From address in the local email configuration.
+3. *Mailer is Owner* in the global configuration.
+4. *Mailer is Owner* In the local email configuration.
+
+Higher option from the above list will be overwritten by the lower option.
+
 ## Requirements
 
-- Mautic 1.3.0+
-- A non-tokenized mail transport. This feature won't work with emails sent via API (Mandrill, Sparkpost and Mailjet).
+- Mautic 1.3.0+ - the global configuration added
+- Mautic 2.16.0+ - the local (email) option added
 
-## How to enable the emails sent from contact owner
+## How to enable the emails sent from contact owner on the global level
 
 - Open the admin menu by clicking the cog icon in the top right corner.
 - Select the *Configuration* menu item.
 - Select the *Email Settings* tab.
 - Switch the *Mailer is owner* to *Yes*.
 - Save the configuration.
+
+## How to enable the emails sent from contact owner on the local (email) level
+
+Setting in a specific email can overwrite the global configuration. So if you want to turn it ON only for a specific email or respectively turn it OFF only for specific email, this is the way how to do it.
+
+- Create/Edit an email.
+- Go to the *Advanced* tab.
+- The *Mailer is Owner* switch is configured to be the same as the global configuration option by default. But you can change it for this specific email. If the local configuration is different then the global configuration you will see warning message just so you would be aware that the global configuration is different. 
+- Save the email.
 
 ## Signature
 
