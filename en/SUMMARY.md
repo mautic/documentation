@@ -80,6 +80,7 @@
     * [Political](use_cases/political.md)
 * [Cron Jobs](setup/cron_jobs.md)
 * [SAML SSO](authentication/saml.md)
+* [Search](search/README.md)
 * [Queue Support (RabbitMQ/Beanstalkd)](queue/README.md)
 * [Themes](themes/README.md)
     * [Manage Themes](themes/manage_themes.md)
