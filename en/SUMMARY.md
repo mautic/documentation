@@ -89,3 +89,4 @@
 * [Translations](translations/README.md)
 * [Tips & Tricks](tips/README.md)
    * [General Troubleshooting](tips/troubleshooting.md)
+   * [Update Failed Troubleshooting](tips/update-failed.md)
