@@ -10,23 +10,23 @@ For more information see [One Signal documentation](https//documentation.onesign
 
 ##### 2. Setup app Website Push Platforms in you app
 
-![](/media/notification-setup1.PNG)
+![](/notifications/media/notification-setup1.PNG)
 
 Google Chrome and Mozilla Firefox configuration example
 
-![](/media/notification-setup2.PNG)
+![](/notifications/media/notification-setup2.PNG)
 
 Apple Safari (macOS) configuration example
 
-![](/media/notification-setup3.PNG)
+![](/notifications/media/notification-setup3.PNG)
 
 ##### 3. Setup Mautic
 
 Enable Web Notification and copy keys from OneSignal to your Mautic > Settings > Configuration - Web Notification Settings tab
 
-![](/media/notification-setup4.PNG)
+![](/notifications/media/notification-setup4.PNG)
 
-![](/media/notification-setup5.PNG)
+![](/notifications/media/notification-setup5.PNG)
 
 ##### 4. Test
 
@@ -50,9 +50,9 @@ HTTP support was added  in Mautic 2.6.
 
 We recommend use https of your websites. But http suport for onesignal.com  is very similar to https, nowdays.  Just user subdomain options on onesignal.com and in your Mautic.
 
-![](/notifications/notifications-setup7.PNG)
+![](/notifications/media/notifications-setup7.PNG)
 
-![](/notifications/notifications-setup6.PNG)
+![](/notifications/media/notifications-setup6.PNG)
 
 For more informations about http notification support read  [One Signal documentation](https://documentation.onesignal.com/docs/web-push-sdk-setup-http)
 
