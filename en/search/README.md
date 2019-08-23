@@ -1,5 +1,7 @@
 #Search operators and commands
-Mautic allows you to use a range of search operators and commands to drill down into relevant resources.
+Mautic allows you to use a range of search operators and commands to drill down into relevant resources. The available search commands and operators can be find next to the search input by clicking on the button with question mark. If such button is missing then there are no search commands available for that particular entity. Only hypertext search.
+
+Mautic also has a "global search" feature. Click on the magnifying glass icon next to the Mautic logo on the top left right hand corner. It will open a search input and you can search through multiple different entities.
 
 ##Search operators
 The following search operators can be used:
