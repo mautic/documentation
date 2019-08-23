@@ -12,7 +12,7 @@ The segment can be searched using the box at the top of the list, and can be ord
 
 ![](/contacts/media/contacts-search.jpg)
 
-The search box allows many different search types and follows the same search process and variables as found in all other search layouts. You can learn more about the powerful search options available on the search documentation page.
+The search box allows many different search types and follows the same search process and variables as found in all other search layouts. You can learn more about the powerful search options available on the [search documentation page](/search/README.md).
 
 ## Adding contacts quickly
 
