@@ -62,6 +62,10 @@ Your date will displayed as human reading format taken from  Configuration > Sys
 - Default format for date only  
 - Default Time Only Format 
 
+### Tracking Pixel
+
+The tracking pixel image is appended to the email message, if enabled. If needed, one could insert the tracking pixel image with the special token `{tracking_pixel}` at any place other within the text body. Beware that it should not be inserted directly after the opening `<body>` because this prevents correct display of pre-header text on some MUAs
+
 ### Code Mode
 
 [Go to the Code Mode docs](./../themes/code_mode.html).
