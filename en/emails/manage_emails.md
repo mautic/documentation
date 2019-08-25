@@ -32,11 +32,12 @@ The email builder provides quick and convenient access to assets, landing pages,
 
 Tokens can be used also for the Subject line, but there is no drop-down. You'll have to type it yourself or select it in the email body and copy-paste it to the subject field.
 
-Email Builder has also special tokens for the Unsubscribe link and the Webview link:
+Email Builder has also special tokens for the Unsubscribe link, Webview link and the Tracking pixel:
 - `{unsubscribe_text}` - Creates a link with the unsubscribed URL and the text defined in the Mautic configuration.
 - `{unsubscribe_url}` - Creates a URL to the unsubscribed page which can be used in a link's href attribute.
 - `{webview_text}` - Creates a link with the webview URL and the text defined in the Mautic configuration.
 - `{webview_url}` - Creates a URL to the webview page which can be used in a link's href attribute.
+- `{tracking_pixel}` - Creates a 1 pixel image that allows to track email open.
 
 
 #### Contact token modifiers
@@ -64,7 +65,7 @@ Your date will displayed as human reading format taken from  Configuration > Sys
 
 ### Tracking Pixel
 
-The tracking pixel image is appended to the email message, if enabled. If needed, one could insert the tracking pixel image with the special token `{tracking_pixel}` at any place other within the text body. Beware that it should not be inserted directly after the opening `<body>` because this prevents correct display of pre-header text on some MUAs
+The tracking pixel image is usually appended to the email message, if enabled. If needed, one could insert the tracking pixel image with the special token `{tracking_pixel}` at any place other within the text body. Beware that it should not be inserted directly after the opening `<body>` because this prevents correct display of pre-header text on some MUAs.
 
 ### Code Mode
 

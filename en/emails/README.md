@@ -51,7 +51,7 @@ You have access to any number of contact fields to be used in your form emails. 
 
 Each email sent through Mautic is tagged with a tracking pixel image. This allows Mautic to track when a contact opens the email and execute actions accordingly. Note that this technology is limited to the contact's email client supporting HTML and auto-loading of images. If the email client does not load the image, there is no way for Mautic to know if the email was opened.
 
-By default, the tracking pixel image is added at the end of the message, before the `</body>` tag. If needed, one could use the `{tracking_pixel}` with the body content token to have it placed elsewhere.
+By default, the tracking pixel image is added at the end of the message, just before the `</body>` tag. If needed, one could use the `{tracking_pixel}` within the body content token to have it placed elsewhere.
 
 ### Tracking trackable links in emails ###
 
