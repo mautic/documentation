@@ -65,10 +65,6 @@ These are the commands you may need to use in relation to your Mautic instance.
 | mautic:segments:update   | Update contacts in smart segments based on new contact data.  |
 | mautic:social:monitoring  | Looks at the records of monitors and iterates through them.   |
 | mautic:theme:json-config   | Converts theme config to JSON from PHP  |
-| mautic:transifex:pull  | Fetches translations for Mautic from Transifex  |
-| mautic:transifex:push   | Pushes Mautic translation resources to Transifex  |
-| mautic:translation:createconfig  | Create config.php files for translations  |
-| mautic:translation:debug  | Displays translation messages informations  |
 | mautic:unusedip:delete   | Deletes IP addresses that are not used in any other database table  |
 | mautic:update:apply  | Updates the Mautic application  |
 | mautic:update:find  | Fetches updates for Mautic  |
