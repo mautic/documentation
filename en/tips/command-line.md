@@ -75,5 +75,3 @@ These are the commands you may need to use in relation to your Mautic instance.
 | mautic:webhooks:process  | Process queued webhook payloads  |
 | social:monitor:twitter:hashtags  | Looks at our monitoring records and finds hashtags  |
 | social:monitor:twitter:mentions  | Searches for mentioned tweets   |
-| translation:debug  | Displays translation messages information  |
-| translation:update   | Updates the translation file  |
