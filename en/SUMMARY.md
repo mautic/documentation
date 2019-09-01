@@ -91,3 +91,4 @@
 * [Tips & Tricks](tips/README.md)
    * [General Troubleshooting](tips/troubleshooting.md)
    * [Update Failed Troubleshooting](tips/update-failed.md)
+   * [Mautic CLI Commands](tips/command-line.md)
