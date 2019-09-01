@@ -83,7 +83,7 @@ Lets you assign / unassign the selected contacts to / from owner (mautic user).
 
 ### Change Segments
 
-Lets you add / remove the selected contacts to / from segments. Note that if a contact is added or removed to or from segment manually then segment filters won't apply for him/her in that particular segment.
+Lets you add / remove the selected contacts to / from segments. Note that if a contact is added or removed to or from segment manually then segment filters won't apply for them in that particular segment.
 
 ### Change Stages
 
