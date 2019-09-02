@@ -1,4 +1,4 @@
-#Mautic Command Line Interface (CLI) commands
+# Mautic Command Line Interface (CLI) commands
 
 Sometimes you may need to use the command line with Mautic.  Here follows a list of the CLI commands that can be used.
  
@@ -24,9 +24,9 @@ Options:
       --no-debug           Switches off debug mode.
   -v|vv|vvv, --verbose     Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
 
-##Mautic commands
+## Mautic commands
 
-These are the commands you may need to use in relation to your Mautic instance.
+These are the commands you may need to use in relation to your Mautic instance.  They should be preceded by app/console.
 
 | Command  | Description  |
 |---|---|
