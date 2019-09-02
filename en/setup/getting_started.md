@@ -8,7 +8,7 @@ If you have already downloaded the zip from the download page or have installed 
 
 As an example, if your domain is mydomain.com and you have unzipped the file into a folder called 'm', you would then browse to mydomain.com/m to start the installation process.
 
-###Permission errors
+### Permission errors
 If you see errors when you try to access the installation as below:
 
 ![](/setup/media/permissions-error.png)
@@ -25,9 +25,10 @@ chmod -R g+w app/config/
 chmod -R g+w media/files/
 chmod -R g+w media/images/
 chmod -R g+w translations/
-chown -R $USER:www-data .```
+chown -R $USER:www-data .
+```
 
-###Pre-flight checks
+### Pre-flight checks
 Once the permissions are correct, you should see the 'pre-flight checks' which ensures that your server is running software compatible with Mautic.
 
 Critical issues will be displayed in red and will not allow you to proceed until you resolve them, as Mautic cannot run unless you fix these problems.
@@ -40,7 +41,7 @@ In the example below, you can see that we are being _advised_ that we should sec
 
 Refreshing this screen after fixing the issues (and, where appropriate, restarting your PHP server) will update the list and advise you of any remaining issues to be addressed before installing Mautic.
 
-###Database setup
+### Database setup
 In the next step you will be asked to provide the details for a database that Mautic will use.  The database needs to be MySQL with InnoDB support, at a minimum version of 5.5.3.
 
 ![](/setup/media/database-setup.png)
@@ -53,14 +54,14 @@ The options for backing up existing tables only apply if you are installing mult
 
 This step may take a few minutes to complete, as the database is created and populated.
 
-###Admin user
+### Admin user
 The next step after creating the database is to set up your administrator account.  This will be the account you use to log into Mautic for the first time.
 
 ![](/setup/media/admin-user.png)
 
 Enter a username, password, first and last name and an email address, and the account will be created for you.
 
-###Email configuration
+### Email configuration
 
 The next step allows you to configure the way in which email is sent from your Mautic instance.  
 
@@ -113,7 +114,8 @@ After installation and setup of the cron jobs you're ready to begin tracking con
     })(window,document,'script','http://mydomain.com/m/mtc.js','mt');
 
     mt('send', 'pageview');
-</script>```
+</script>
+```
 
 You will need to change the site URL (replace mydomain.com/m with the URL to your Mautic instance) in the above script.
 
