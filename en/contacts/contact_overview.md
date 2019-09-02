@@ -1,6 +1,6 @@
 # Contact Overview
 
-Each contact has a detail page where you can see what Mautic knows about him/her.
+Each contact has a detail page where you can see what Mautic knows about them.
 
 ## Engagements/Points chart
 
@@ -8,7 +8,7 @@ The Engagements line chart display how active the contact was in the past 6 mont
 
 ## Avatar
 
-Mautic will try to download the contact's avatar image based on his/her email address from the [Gravatar](https://en.gravatar.com/) service. But it can be loaded also from some social networks.
+Mautic will try to download the contact's avatar image based on their email address from the [Gravatar](https://en.gravatar.com/) service. But it can be loaded also from some social networks.
 
 ## History
 
@@ -20,11 +20,11 @@ Mautic can be used as a basic CRM. You or your teammates can write notes for a s
 
 ## Social
 
-If the social plugins like Facebook or Twitter are enabled and authorized and the contact provided you a username for a social network, Mautic can display his/her feed for the social network in the Social tab. Most of the social networks limited their API since the feature was developed so search by email is not working.
+If the social plugins like Facebook or Twitter are enabled and authorized and the contact provided you a username for a social network, Mautic can display their feed for the social network in the Social tab. Most of the social networks limited their API since the feature was developed so search by email is not working.
 
 ## Map
 
-If Mautic knows the coordinates of the contact from a geolocation IP lookup service, it will display a fourth tab with a map so you can easily see where in the world the contact is located. If Mautic knows more locations for this contact as he/she travels, you'll see all the locations there. If Mautic doesn't know any location, the tab won't show up.
+If Mautic knows the coordinates of the contact from a geolocation IP lookup service, it will display a fourth tab with a map so you can easily see where in the world the contact is located. If Mautic knows more locations for this contact as they travel, you'll see all the locations there. If Mautic doesn't know any location, the tab won't show up.
 
 ## Change contact segments
 ![](/contacts/media/change-segments.jpg)

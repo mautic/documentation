@@ -73,4 +73,4 @@ The WidgetDetailEvent automatically caches the widget detail data for a period o
 
 If a Mautic user doesn't have the see others or see own permissions for a bundle, she/he won't be able to create widgets for said bundle. However, the widget can still be visible at hers/his dashboard. For example if a user creates the widgets and then the admin removes the permission or via import. In that case the widget is there, but with a message that the user doesn't have permission to see the data.
 
-If a Mautic user has permission to see only his/hers own data from a bundle, he/she will see only his/hers own data in the Dashboard widgets. For example only contacts which he/she owns, page hits of the pages he/she created and so on.
+If a Mautic user has permission to see only their own data from a bundle, they will see only their own data in the Dashboard widgets. For example only contacts which they own, page hits of the pages they created and so on.
