@@ -125,8 +125,6 @@ php /path/to/mautic/app/console mautic:broadcasts:send [--id=ID] [--channel=CHAN
 
 - `--batch=X` is in how big batches will the emails be sent at once. This can be different for every provider. For example Mautic has API connection to Sparkpost. Such API can send 1000 emails per 1 call. So batch should be 1000 for fastest sending speed. Not more. But SMTP providers cannot handle 1000 at 1 time.
 
-- `--segment-id=X` is a filter. Only contacts from segment ID=X will receive the email. Even if one email has segment X and Y, it will be sent only to contacts from segment X.
-
 - `--min-contact-id` and `--max-contact-id` will allow to separate email sending by smaller chunks by contact ID ranges. If those ranges won't overlap this allows to run several broadcast commands in parallel.
 
 ### Send Scheduled Reports
