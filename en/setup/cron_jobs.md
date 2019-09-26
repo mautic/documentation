@@ -30,7 +30,7 @@ You can also limit the number of contacts to process per script execution using 
 **To keep campaigns updated with applicable contacts:**
 
 ```
-php /path/to/mautic/app/console mautic:campaigns:rebuild
+php /path/to/mautic/app/console mautic:campaigns:update
 ```
 
 By default, the script will process contacts in batches of 300. If this is too many for your server's resources, use the option `--batch-limit=X` replacing X with the a number of contacts to process each batch.

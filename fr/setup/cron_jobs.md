@@ -8,7 +8,7 @@ How frequently you run the cron jobs is up to you. Many shared hosts prefer that
 
 For instance:
 - 0,15,30,45 <— segments:update
-- 5,20,35,50 <— camaigns:update
+- 5,20,35,50 <— campaigns:update
 - 10,25,40,55 <— campaigns:trigger
 
 ## Required ##
@@ -28,7 +28,7 @@ You can also limit the number of contacts to process per script execution using 
 **To keep campaigns updated with applicable contacts:**
 
 ```
-php /path/to/mautic/app/console mautic:campaigns:rebuild
+php /path/to/mautic/app/console mautic:campaigns:update
 ```
 
 By default, the script will process contacts in batches of 300. If this is too many for your server's resources, use the option `--batch-limit=X` replacing X with the a number of contacts to process each batch.
