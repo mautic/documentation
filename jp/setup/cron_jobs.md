@@ -23,7 +23,7 @@ php /path/to/mautic/app/console mautic:segments:update
 **適用するコンタクトとともにキャンペーンを最新の状態に保ちます:**
 
 ```
-php /path/to/mautic/app/console mautic:campaigns:rebuild
+php /path/to/mautic/app/console mautic:campaigns:update
 ```
 
 スクリプトがバッチ処理するコンタクトの数は300とデフォルトで設定されています。利用中のサーバリソースに対してこの数が多いようであれば `--batch-limit=X` オプションを使い，Xへ処理させるコンタクトの数に置き換えて調整してください。
