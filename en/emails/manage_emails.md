@@ -39,6 +39,7 @@ Email Builder has also special tokens for the Unsubscribe link, Webview link and
 - `{webview_url}` - Creates a URL to the webview page which can be used in a link's href attribute.
 - `{tracking_pixel}` - Creates a 1 pixel image that allows to track email open.
 
+Tokens can be used in the email's "from address" field.
 
 #### Contact token modifiers
 
