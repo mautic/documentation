@@ -3,7 +3,7 @@ Le sous menu des **Canaux** contient :
 * [Emails](./../emails/index.html)
 * [Notifications web](./../notification/index.html)
 * [SMS](./../sms/index.html)
-* [Monitoring Social](./../social-monitoring/README.md)
+* [Suivi Social](./../social-monitoring/README.md)
 
 Tous ces éléments peuvent être créés et configurés avant de les utiliser dans les campagnes.
 
