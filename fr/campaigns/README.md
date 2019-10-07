@@ -1,6 +1,6 @@
 # Campagnes
 
-Les campagnes sont le coeur de la mécanique du marketing automation. Les campagnes consistent à regrouper l'ensemble des points de contact avec vos contacts. Ces intéractions peuvent être planifiées à certaines dates ou en fonction d'actions spécifiques des contacts.
+Les campagnes sont le coeur de la mécanique du marketing automation. Les campagnes consistent à regrouper l'ensemble des points de contact avec vos contacts. Ces interactions peuvent être planifiées à certaines dates ou en fonction d'actions spécifiques des contacts.
 
 ### Campagnes basées sur le temps
 
@@ -8,7 +8,7 @@ Le concept des campagnes basées sur le temps implique un type de paramétrage d
 
 ### Campagnes basées sur les contacts
 
-Ces campagnes sont plutôt basées sur des actions spécifiques du contact ou de ses intéractions. Cela peut être basé sur de la segmentation comportementale (visite d'une page spécifique, ouverture d'un courriel, etc.). La réponse à ces actions déterminées peut être l'envoi d'un courriel ou autre action, immédiatement ou dans le futur.
+Ces campagnes sont plutôt basées sur des actions spécifiques du contact ou de ses interactions. Cela peut être basé sur de la segmentation comportementale (visite d'une page spécifique, ouverture d'un courriel, etc.). La réponse à ces actions déterminées peut être l'envoi d'un courriel ou autre action, immédiatement ou dans le futur.
 
 ### Campagnes mixtes
 
@@ -16,8 +16,8 @@ Vous n'êtes pas limité à créer un type de campagne ou un autre de façon sé
 
 ### Les actions des campagnes
 
-Les courriels ont été évoqués précédemment dans diverses cas. Cependant, il existe de nombreuses autres possibilités d'intéractions proposées par Mautic. Vous pouvez assignez le contact à une nouvelle liste de contacts, lui ajouter des points, lui envoyer un SMS, le synchroniser à votre CRM, etc.+
+Les courriels ont été évoqués précédemment dans diverses cas. Cependant, il existe de nombreuses autres possibilités d'interactions proposées par Mautic. Vous pouvez assignez le contact à une nouvelle liste de contacts, lui ajouter des points, lui envoyer un SMS, le synchroniser à votre CRM, etc.
 
 ### Automatisation des campagnes
 
-Le plus grand bénéfice de ces mécaniques de campagnes est la capacité de définir en avance la relation que l'on souhaite établir avec nos prospects. Cette automatisation réduit le temps nécessaire pour traiter les prospects manuellement et augmente la fiabilité et la pertinence de la relation.
+Le plus grand bénéfice de ces mécanismes de campagnes est la capacité de définir en avance la relation que l'on souhaite établir avec nos prospects. Cette automatisation réduit le temps nécessaire pour traiter les prospects manuellement et augmente la fiabilité et la pertinence de la relation.
