@@ -1,17 +1,17 @@
 # Contacts
 
-Les prospects ont été renommés en contacts lors de Mautic 1.4.0.
+*Les prospects ont été renommés en contacts lors de Mautic 1.4.0.*
 
-Les contacts sont le point central d'une plateforme de marketing automation. Ce sont toutes les personnes qui ont visité votre site Web ou interagi avec vous en quelque sorte.
+Les contacts sont le point central d'une plateforme de marketing automation. Ils représentent toutes les personnes qui ont visité votre site web ou interagi avec vous en quelque sorte.
 
 ### Types de contacts
 
 Il existe deux types de contacts :
-* **Visiteurs** (ou contacts anonymes) — ce sont les visiteurs de votre site qui ne sont pas encore identifiés par un formulaire ou une autre interaction.
+* **Contacts anonymes** (ou visiteurs) — ce sont les visiteurs de votre site qui ne sont pas encore identifiés par un formulaire ou une autre interaction.
   * Ces contacts sont tracés par Mautic dès leur première visite mais restent masqués.
 * **Contacts standards** — ces contacts se sont identifiés par un formulaire ou une autre action. Comme résultat, ces contacts ont généralement un nom, email, etc.
 
-#### Visiteurs (contacts anonymes)
+#### Contacts anonymes (visiteurs)
 
 Les contacts anonymes sont des visiteurs de votre site qui n'ont pas encore été identifiés par une forme ou une autre d'interaction. Ces contacts sont suivis par Mautic, mais généralement restent cachés pour ne pas encombrer votre liste de contacts. Vous pouvez afficher les contacts anonymes en utilisant l'affichage des anonymes dans la liste des contacts.
 
@@ -24,7 +24,7 @@ is:anonymous
 ```
 
 ![](/media/contacts-anonymous.jpg)
-La liste résultante sera les adresses IP qui ne sont pas encore fourni d'information supplémentaires.
+La liste résultante contient les adresses IP des visiteurs qui n'ont pas encore fourni d'information supplémentaires.
 
 #### Contacts standards
 
