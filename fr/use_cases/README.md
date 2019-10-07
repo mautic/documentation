@@ -1,11 +1,11 @@
-# Use Cases
+# Cas d'usages
 
-There are many compelling and exciting ways to implement marketing automation. Some of these use cases are more easily understood and regularly implemented while others are more unique.
+Il existe de nombreuses façons fascinantes et passionnantes de mettre en œuvre des campagnes marketing automation. Certains de ces cas d'usages sont plus faciles à comprendre et à mettre en œuvre, tandis que d'autres sont plus uniques.
 
-### Use Case Purposes
+### Objectifs du cas d'usage
 
-In an effort to outline the power of marketing automation and encourage industries in a variety of different vertical markets to take advantage of this software these use cases have been defined and outlined in greater detail.
+Dans le but de souligner la puissance du marketing automation et d'encourager les différentes industries à tirer parti de ce logiciel, ces cas d'utilisation ont été définis et décrits de façon détaillés.
 
-### Contribute Additional Use Cases
+### Contribuer à des cas d'usages supplémentaires
 
-As with all other aspects of this documentation, pull requests, updates, and modifications are welcomed. Should you know of additional use cases where marketing automation can be implemented please contribute that information so the documentation can be improved for all.
+Comme pour tous les autres aspects de cette documentation, les demandes de modification, de mise à jour sont les bienvenues. Si vous connaissez d'autres cas d'utilisation où le marketing automation peut être mise en œuvre, veuillez fournir ces informations afin que la documentation puisse être améliorée pour tous.
