@@ -53,3 +53,9 @@ Just setup your alias in plugin settings:
 ![](/sms/media/alphanumeric-id.png)
 
 Read more info about [Alphanumeric Sender ID](https://support.twilio.com/hc/en-us/articles/223181348-Getting-started-with-Alphanumeric-Sender-ID) on Twillio site.
+
+#### Segment (Broadcast) Text messages
+  
+These are marketing text messages by default. Segments are assigned to the text message which will determine which contacts receive the communication. Note that each contact can only receive the text message once - it's like a mailing list.
+
+Initiating these text messages can be done just with cron job is available to do this for you! See [Send Scheduled Broadcasts (e.g. segment emails)](./../setup/cron_jobs.html#send-scheduled-broadcasts-e-g-segment-emails) for more details on this.
