@@ -16,7 +16,7 @@ A **Standalone Form** can push a contact into a segment, but not into a campaign
 
 This is usually caused by URL mismatch. You can confirm this by going into the form preview page. Open the browser dev tools by pressing F12 on Windows or Linux or Option+Command+I on Mac. Go to the console tab and you should see 404 error on form JS.
 
-To fix that, go to the Mautic Configuration and make sure the **Site URL** field is the correct Mautic URL root address (the one you see before the `/s/config/edit` part in the browser address bar) including the http:// or https://. Save the configuration.
+To fix that, go to the Mautic Configuration and make sure the **Site URL** field is the correct Mautic URL root address (the one you see before the `/s/config/edit` part in the browser address bar) including the `http://` or `https://`. Save the configuration.
 
 Now go to the Components / Forms and rebuild the forms HTML.
 
@@ -34,7 +34,7 @@ Here is a short example how you can do that:
 
 ```html
 <html>
-  <script type="text/javascript" src="https://<mautic-instance>/form/generate.js?id=2"></script>
+  <script type="text/javascript" src="https://example.com/form/generate.js?id=2"></script>
 
   <body>
   {mauticform id=2 style=modal element=.call-to-action-btn} <!-- setup modal form -->
