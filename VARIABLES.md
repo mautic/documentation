@@ -32,6 +32,7 @@ To URL encode any variable, append a `|true`, such as `{contactfield=email|true}
 | Foursquare                                         | `{contactfield=foursquare}`                 |
 | Google+                                            | `{contactfield=googleplus}`                 |
 | Instagram                                          | `{contactfield=instagram}`                  |
+| IP Address                                         | `{contactfield=ipAddress}`                  |
 | Last Name                                          | `{contactfield=lastname}`                   |
 | LinkedIn                                           | `{contactfield=linkedin}`                   |
 | Mobile Number                                      | `{contactfield=mobile}`                     |
@@ -141,6 +142,7 @@ To URL encode any variable, append a `|true`, such as `{contactfield=email|true}
 | Google+                                            | `{contactfield=googleplus}`                 |
 | Instagram                                          | `{contactfield=instagram}`                  |
 | Industry (Company)                                 | `{contactfield=companyindustry}`            |
+| IP Address                                         | `{contactfield=ipAddress}`                  |
 | Landing Page link for page id#                     | `{pagelink=17}`                             |
 | Language bar                                       | `{langbar}`                                 |
 | Last Name                                          | `{contactfield=lastname}`                   |
