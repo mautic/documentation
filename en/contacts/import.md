@@ -156,10 +156,10 @@ A: It is stored as a Manual Unsubscription. It is the same as if the Contact was
 ![Do Not Contact](media/do-not-contact.png)
 
 [cron]: <./../setup/cron_jobs.html>
+[variables]: <./../setup/VARIABLES.html>
 
 [custom fields]: <manage_fields.html>
 
-[variables]: <https://github.com/mautic/documentation/blob/master/VARIABLES.md>
 
 [release-2.9.0]: <https://github.com/mautic/mautic/releases/tag/2.9.0>
 

@@ -34,6 +34,5 @@ You can create additional custom fields and define the data type you want that f
 
 ![new custom field](media/new-custom-field.jpg)
 
-[variables]: <https://github.com/mautic/documentation/blob/master/VARIABLES.md>
-
 [contact monitoring]: <contact_monitoring.html>
+[variables]: <./../setup/VARIABLES.html>
