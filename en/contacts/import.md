@@ -1,10 +1,10 @@
-# Contact Import
+# Importing Contacts
 
 Contacts can be imported via the user interface from a CSV file. You can import from the browser or in the background via a cron job.
 
 > Background import is recommended.
 
-Since Mautic 2.9, when the import creates or updates a contact, you'll see that action in the contact events history.
+Since [Mautic 2.9][release-2.9.0], when an import job creates or updates a contact, you'll see that action in the Contact events history.
 
 ## Import file requirements
 
@@ -49,7 +49,7 @@ Use the browser import method only if you don't have any other choice.  Backgrou
 
 Background import jobs (CLI command triggered manually or via a cron job) have the advantage of benevolent time limits. A CSV background import is not restarted every batch (1 batch = 100 rows by default) - the last row imported is saved, and the next batch continues from that point.  Background imports will always be faster and more reliable than browser imports.
 
-This option is available since Mautic 2.9.
+This option is available since [Mautic 2.9][release-2.9.0].
 
 **Warning** background import require the command `php /path/to/mautic/app/console mautic:import` to run periodically. Add it to your [cron jobs][cron].
 
@@ -82,13 +82,13 @@ The list of imports can be found when you go to the _Contacts_ area, open the ac
 The table will show you:
 
 - basic statistics about all imports
-- their [current status](#import-job-status) 
+- their [current status](#import-job-status)
 - original CSV file names
 - who created the import
 - when it was created
 - when the background job (System) last updated the statistics
 
-There is also the switch which will enable you to [stop and start](#starting-and-stopping-imports) **Queued** or **In Process** imports.
+There is also the switch which will enable you to [stop and start](#starting-and-stopping-imports) **Queued** or **In Process** imports.\
 This type of switch is used throughout the Mautic UI to publish and unpublish items.
 
 ### Import job status
@@ -156,3 +156,4 @@ A: It is stored as a Manual Unsubscription. It is the same as if the Contact was
 
 [cron]: <./../setup/cron_jobs.html>
 [ISO8601]: <https://en.wikipedia.org/wiki/ISO_8601>
+[release-2.9.0]: <https://github.com/mautic/mautic/releases/tag/2.9.0>
