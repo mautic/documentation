@@ -74,10 +74,8 @@ Although some `git` knowledge is required to clone, modify, commit and push chan
 
     ````
     git status --short
-    git diff [filename]
     git add <new and modified files>
     git commit --message 'move contributing to new file'
-    git diff HEAD^
     ````
 
 1. Push to `origin`
@@ -88,9 +86,9 @@ Although some `git` knowledge is required to clone, modify, commit and push chan
 
 1. Review the changes at your fork `https://github.com/{yourusername}/mautic-documentation`
 1. Submit your pull request
-  1. Direct link: `https://github.com/{yourusername}/mautic-documentation/pull/new/{yourusername}-revision-readme-file`
-  1. GitHub web interface - `base fork: mautic/documentation` and `base: master` at [GitHub][mautic-docs-github]
-  1. use the [`hub`][hub] utility
+    1. Direct link: `https://github.com/{yourusername}/mautic-documentation/pull/new/{yourusername}-revision-readme-file`
+    1. GitHub web interface - `base fork: mautic/documentation` and `base: master` at [GitHub][mautic-docs-github]
+    1. use the [`hub`][hub] utility
 
     ````
     hub pull-request
@@ -112,7 +110,13 @@ Using *README.md* as an example:
 
 ## Style Guide
 
-The *README.md* file is serves as the introduction and description of this repository. This file does not contain any documentation.
+### Lists
+
+Use `1.` only for numbered lists.
+
+    1. Item the first
+    1. Something else
+    1. And finally
 
 ## File Structure
 
