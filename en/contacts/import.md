@@ -1,29 +1,45 @@
 # Contact Import
 
-Contacts can be imported via the user interface from a CSV file. You can either import in the browser or you can let a background job do it.
+Contacts can be imported via the user interface from a CSV file. You can import from the browser or in the background via a cron job.
+
+> Background import is recommended.
 
 Since Mautic 2.9, when the import creates or updates a contact, you'll see that action in the contact events history.
 
+## How to configure an import
+
+1. Go to *Contacts*.
+1. In the top right corner above the table of Contacts open the sub menu of actions and select the *Import* option.
+   > **ProTip**
+   > The direct URL is `https://example.com/s/contacts/import/new`
+1. Upload the CSV file with contacts you want to import.
+1. Adjust the CSV settings if your CSV file use something else as a delimiter, enclosure and so on.
+1. Upload your CSV file.
+1. The field mapping page should show up.  The first set of options will let you select owner, segment and tags to assign globally to all imported contacts.  The second set of options will let you map the columns from your CSV to Mautic contact custom fields. The third set of options will let you map columns from your CSV to special contact attributes like *Date Created* and so on.
+1. When your field mapping is ready, click one of the the *Import* buttons (described below).
+
 ## Browser import
 
-The bigger CSV files have to be imported in batches to avoid hitting sever's memory and time limits. In case of importing in the browser, your browser is controlling the batches. When one finish, the javascript starts a new one. This means the browser have to be opened and connected to the internet the whole time.
+Larger CSV files have to be imported in batches to avoid hitting server (PHP) memory and execution time limits.  When importing in the browser, your browser is controlling the batches.  When one finishes, the javascript starts a new one. This means the browser window **has** to stay opened and connected to the internet the whole time.
 
-Use browser import only if you don't have any other choice. Background import is recommended.
+Use the browser import method only if you don't have any other choice.  Background import is recommended.
 
 ## Background import
 
-The background jobs (CLI command triggered manually or via a cron job) have advantage of benevolent time limits. So the background job is not restarted every batch (1 batch = 100 rows by default), but it just saves the data every batch. Background import will always be faster and more reliable than the browser import.
+Background import jobs (CLI command triggered manually or via a cron job) have the advantage of benevolent time limits. A CSV background import is not restarted every batch (1 batch = 100 rows by default) - the last row imported is saved, and the next batch continues from that point.  Background imports will always be faster and more reliable than browser imports.
 
 This option is available since Mautic 2.9.
 
-**Warning** background import requires to run `php /path/to/mautic/app/console mautic:import` command periodically. Add it to your cron tab.
+**Warning** background import require the command `php /path/to/mautic/app/console mautic:import` to run periodically. Add it to your [cron jobs][cron].
 
 Successful result of the background job can look like this:
-```
+
+```console
 $ app/console mautic:import
  48/48 [============================] 100%
 48 lines were processed, 0 items created, 48 items updated, 0 items ignored in 4.78 s
 ```
+
 If there is no import waiting in the queue, there won't be message.
 
 ### Parallel import
@@ -38,19 +54,10 @@ When you decide to start the import again, you can simply publish it again and t
 
 When the background job finishes, either successfully or if it fails, you'll get a notification in the Mautic's notification area about it.
 
-## How to configure an import
+## Import job status
 
-1. Go to *Contacts*.
-2. In the top right corner above the table of contacts open the sub menu of actions and select the *Import* option.
-3. Upload the CSV file with contacts you want to import.
-4. Adjust the CSV settings if your CSV file use something else as a delimiter, enclosure and so on.
-5. Upload your CSV file.
-6. The field mapping page should show up. The first set of options will let you select owner, segment and tags to assign globally to all imported contacts. The second set of options will let you map the columns from your CSV to Mautic contact custom fields. The third set of options will let you map columns from your CSV to special contact attributes like *Date Created* and so on.
-7. When your field mapping is ready, click one of the the *Import* buttons (described above).
+There are several potential statuses for import jobs:
 
-## Import statuses
-
-There are several statuses of the import:
 - **Queued** - The import was created and queued for background processing. At this stage the import is waiting for the background job to start the import.
 - **In Progress** - The background job started the import and it hasn't finished yet. You can see the progress in the list of the imports.
 - **Imported** - The import was successfully processed.
@@ -63,6 +70,8 @@ There are several statuses of the import:
 
 The list of imports can be found when you go to the *Contacts* area, open the action menu above the contacts table and choose the *Background imports* option.
 
+The direct URL is `https://example.com/s/contacts/import/1`
+
 The table will show you basic statistics about all imports, what are the current statues and what was the CSV file name. There is also the switch which will enable you to stop and start **Queued** or **In Process** imports.
 
 ## Import detail
@@ -70,8 +79,9 @@ The table will show you basic statistics about all imports, what are the current
 The import detail page holds more detailed statistics and import configuration when you click on *Details* like import speed and how the import has been configured.
 
 There are also 2 charts:
+
 1. The pie chart shows the ratio between created, updated and failed rows.
-2. The line chart shows how many contacts has been added per minute.
+1. The line chart shows how many contacts has been added per minute.
 
 The main content area displays information about rows which were ignored for some reason (if any). The table will tell you what row in the CSV file it was and what was the reason, so you can fix those rows and import again.
 
@@ -83,11 +93,15 @@ There is an option in the Global Mautic Configuration / Contact Settings to defi
 
 ## Requirements
 
-- The CSV file must be in UTF8 encoding. Other encoding may cause troubles while importing. Read documentation of your spreadsheet program on how to export a spreadsheet to UTF8. Google Sheets encodes to UTF8 automatically, Libre/Open Office lets you choose before export.
+- The CSV file must be in UTF8 encoding. Other encodings may cause troubles while importing. Read the documentation of your spreadsheet program on how to export a spreadsheet to UTF8. Google Sheets encodes to UTF8 automatically, Libre/Open Office lets you choose before export.
 
 - In case of boolean values like `doNotEmail` or custom boolean field, use values `true`, `1`, `on` or `yes` as TRUE value. Anything else will be considered false.
 
-- In case of date/time values, use `YYYY-mm-dd HH:ii:ss` format i.e. `2017:01:02 19:08:00`. Other formats may work too, but it may cause troubles.
+- In case of date/time values, use [ISO8601] notation i.e. `YYYY-MM-DD hh:mm:ss`
+    - Example: `2019-01-02 19:08:42`.
+    <!-- For PHP DateTime notation: `YY-MM-DD HH:II:SS`) -->
+    <!-- See MySQL in the Localized Notations at https://www.php.net/manual/en/datetime.formats.compound.php -->
+    - Other formats may work too, but they may be problematic.
 
 ## Tips
 
@@ -95,9 +109,29 @@ There is an option in the Global Mautic Configuration / Contact Settings to defi
 
 - If your CSV contains thousands of contacts or more, divide such CSV into several smaller CSV files to avoid memory issues and slow import speed.
 
+> ProTip
+> If using a Linux system, see the GNU parallel command. (sudo apt install parallel)
+>
+>     ```console
+>     cat big_contact_list.csv | parallel --header : --pipe -N 1000 'cat > split_list_part{#}.csv'
+>     ```
+>
+> This will generate files:
+>
+> split_list_part1.csv
+> split_list_part2.csv
+> …
+> split_list_part10.csv
+
 ## FAQ
+
 Q: My import times out. What can I do about that?
 A: Either use the background job to import or change the batch limit to smaller number than 100.
 
 Q: If I import *Do Not Contact* values, is that stored as a bounce or a unsubscription?
-A: It's stored as a manual unsubscription. It's the same thing as if the contact was marked as *Do Not Contact* from the administration.
+A: It's stored as a manual unsubscription. It's the same thing as if the contact was marked as *Do Not Contact* from the Contacts page.
+
+![Do Not Contact](media/do-not-contact.png)
+
+[cron]: <./../setup/cron_jobs.html>
+[ISO8601]: <https://en.wikipedia.org/wiki/ISO_8601>
