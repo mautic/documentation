@@ -74,6 +74,7 @@ The import can take several minutes. It's possible that one import will still ru
 ## Import job list
 
 The list of imports can be found when you go to the _Contacts_ area, open the action menu above the contacts table and choose the _Import History_ option.
+
 ![import history](media/import-history-button.png)
 
    > **ProTip**\
@@ -88,7 +89,7 @@ The table will show you:
 - when it was created
 - when the background job (System) last updated the statistics
 
-There is also the switch which will enable you to [stop and start](#starting-and-stopping-imports) **Queued** or **In Process** imports.\
+There is also the toggle switch which will enable you to [stop and start](#starting-and-stopping-imports) **Queued** or **In Process** imports.\
 This type of switch is used throughout the Mautic UI to publish and unpublish items.
 
 ### Import job status
@@ -125,7 +126,7 @@ More detailed statistics and the import job configuration are available if you c
    > **ProTip**\
    > The direct URL is `https://example.com/s/contacts/import/new`
 1. Select the CSV file with contacts you want to import.
-1. Adjust the CSV settings if your file uses a non-standard delimiter or [encoding] and so on.
+1. Adjust the CSV settings if your file uses a non-standard delimiter or [encoding](#import-file-requirements) and so on.
 1. Upload your CSV file.
 1. The field mapping page should show up.  The first set of options will let you select owner, segment and tags to assign globally to all imported contacts.  The second set of options will let you map the columns from your CSV file to Mautic Contact [Custom Fields][custom fields].  The third set of options will let you map columns from your CSV file to special Contact attributes like _Date Created_ and so on.
 1. When your field mapping is ready, click on one of the _Import_ buttons (described above).
@@ -155,5 +156,11 @@ A: It is stored as a Manual Unsubscription. It is the same as if the Contact was
 ![Do Not Contact](media/do-not-contact.png)
 
 [cron]: <./../setup/cron_jobs.html>
-[ISO8601]: <https://en.wikipedia.org/wiki/ISO_8601>
+
+[custom fields]: <manage_fields.html>
+
+[variables]: <https://github.com/mautic/documentation/blob/master/VARIABLES.md>
+
 [release-2.9.0]: <https://github.com/mautic/mautic/releases/tag/2.9.0>
+
+[ISO8601]: <https://en.wikipedia.org/wiki/ISO_8601>
