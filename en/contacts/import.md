@@ -32,9 +32,9 @@ Since [Mautic 2.9][release-2.9.0], when an import job creates or updates a conta
 >
 > This will generate files:
 >
-> split_list_part1.csv
-> split_list_part2.csv
-> …
+> split_list_part1.csv\
+> split_list_part2.csv\
+> …\
 > split_list_part10.csv
 
 ## Types of import
@@ -74,7 +74,7 @@ The import can take several minutes. It's possible that one import will still ru
 ## Import job list
 
 The list of imports can be found when you go to the _Contacts_ area, open the action menu above the contacts table and choose the _Import History_ option.
-![import history](/contacts/media/import-history-button.png)
+![import history](media/import-history-button.png)
 
    > **ProTip**\
    > The direct URL is `https://example.com/s/contacts/import/1`
@@ -138,11 +138,11 @@ More detailed statistics and the import job configuration are available if you c
     The import will change [status](#import-job-status) to **Stopped**.  It will finish importing the current batch and then stop.
 1. To start the import again, simply publish it and the background job will continue with the next [cron job execution][cron].
 
-![import publish](/contacts/media/import-publish.png)
+![import publish](media/import-publish.png)
 
 When the background job finishes, either successfully or if it fails, you'll get a notification in Mautic's notification area about it.
 
-![notification box](/contacts/media/notifications.png)
+![notification box](media/notifications.png)
 
 ## FAQ
 
