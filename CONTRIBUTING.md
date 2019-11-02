@@ -110,13 +110,48 @@ Using *README.md* as an example:
 
 ## Style Guide
 
+:construction: Work in Progress
+
 ### Lists
 
-Use `1.` only for numbered lists.
+* Use `1.` only for numbered lists.
+* use `*` for unnumbered lists
+* indent 4 spaces for a second level
 
     1. Item the first
     1. Something else
+       1. indent 4 spaces
+       1. for a second level
     1. And finally
+       * minor point 
+    * not a number
+
+## Example domain references
+
+Please use `example.com` as the reference domain for documentation.
+
+### Standard Mautic URL example
+
+    https://example.com
+
+
+### Mautic as subdomain URL example
+
+    https://mautic.example.com
+
+### Mautic as subdirectory URL example
+
+    https://example.com/mautic
+
+### http vs https URL example
+
+Use the `https://` protocol in documentation.  We want to promote good practices.
+
+    https://example.com
+
+If you need to show both protocols, add brackets around the `(s)`
+
+    http(s)://example.com
 
 ## File Structure
 
@@ -153,36 +188,6 @@ Or, if you want to display an image already uploaded to the documentation reposi
 ```
 ![alternative text here](/assets/media/assets-newcategory.png "Tooltip text here")
 ```
-
-## Example domain references
-
-Please use `example.com` as the reference domain for documentation.
-
-### Standard Mautic URL example
-
-    https://example.com
-
-
-### Mautic as subdomain URL example
-
-    https://mautic.example.com
-
-### Mautic as subdirectory URL example
-
-    https://example.com/mautic
-
-### http vs https URL example
-
-Use the `https://` protocol in documentation.  We want to promote good practices.
-
-    https://example.com
-
-If you need to show both protocols, add brackets around the `(s)`
-
-    http(s)://example.com
-
-:construction: Work in Progress
-
 
 <!-- markdown style links -->
 
