@@ -10,7 +10,9 @@ The form overview provides a quick overview of the submissions received over a t
 
 A form can contain as many fields as needed. These fields can be laid out dynamically by the system or handled via HTML if you want more control.
 
-![](/forms/media/new-form.png)
+![new-form][new-form]
+
+[new-form]: </forms/media/new-form.png>
 
 #### Page Breaks
 
@@ -32,7 +34,7 @@ Results from a Mautic form can be re-posted to a 3rd party form using the new "P
 
 An email can be configured to send the results if the form fails to forward. 
  
-Each form field can be have it's name customized to match that of the recipient form/script. 
+Each form field can be have it's name customized to match that of the recipient _form/script_. 
 
 In addition to the form data, an array of `mautic_form` with details like ID, name, and the URL the form was submitted to (if available) along with `mautic_contact` with the details of the contact that submitted. 
 
@@ -55,15 +57,29 @@ The kiosk mode is helpful when you know that some form will be submitted from on
 
 #### No index mode
 
-In 2.15.0, mautic introduced the ability to disable search engines from indexing forms. With this option you can disable search engines from indexing `http(s)://yourmauticurl.com/form/{formid}` if set to "Yes".
+In 2.15.0, mautic introduced the ability to disable search engines from indexing forms. With this option you can disable search engines from indexing `http(s)://example.com/form/{formid}` if set to "Yes".
 
 ### Form Injection
 
 There are three ways you can use the form. You can copy the entire output or you can have the form injected dynamically using the provided javascript. These are two options for directly including the form on a page, you can alternatively embed the form directly in a Mautic landing page if you choose.
 
-![](http://drop.dbh.li/image/2M1q3T2T0Z0u/Image%202014-11-17%20at%204.20.56%20PM.png)
+![form injection][injection]
 
-**It is recommended not to paste the injection code twice, it risks creating troubles on the submit form action when mandatory fields are submitted empty.**
+[injection]: </forms/media/injection.png>
+
+> **ProTip**:
+> **It is recommended NOT to paste the injection code twice, it risks creating troubles on the submit form action when mandatory fields are submitted empty.**
+
+```html
+<script>
+    (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
+        w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
+        m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://example.com/mtc.js','mt');
+
+    mt('send', 'pageview');
+</script>
+```
 
 ### Form results
 
@@ -81,28 +97,26 @@ It is possible to choose a theme for a form. If you do so and the theme supports
 
 It is possible to pre-populate the value of a form field from the URL query parameters.
 
-The contact field's alias can be obtained from the table when viewing Contacts -> Manage Fields. The form field's name is stored as the alias in the database and is auto generated from the field's label; you may have to look at the source of your form to get the exact name (open the form and click the preview button). For example, here is a sample html section taken from a form. The name to use is what's within `mauticform[FIELDNAME]`.
+The contact field's alias can be obtained from the table when viewing Contacts -> Manage Fields. The form field's name is stored as the alias in the database and is auto generated from the field's label; you may have to look at the source of your form to get the exact name (open the form and click the preview button). For example, here is a sample html section taken from a form. The name to use is `FIELDNAME` from the value of the `<input name=mauticform[FIELDNAME]` attribute.
 
-```
-<div class="mauticform-row mauticform-email mauticform-row-email" id="mauticform_email">
-    <label id="mauticform_label_email" for="mauticform_input_email" class="mauticform-label" "="">Email</label>
-    <input id="mauticform_input_email" name="mauticform[email]" value="" class="mauticform-input" type="email">
+```html
+<div id="mauticform_democampaignform_email" data-validate="email" data-validation-type="email" class="mauticform-row mauticform-email mauticform-field-1 mauticform-required">
+    <label id="mauticform_label_democampaignform_email" for="mauticform_input_democampaignform_email" class="mauticform-label">Email</label>
+    <input id="mauticform_input_democampaignform_email" name="mauticform[email]" value="" placeholder="user@example.com" class="mauticform-input" type="email">
+    <span class="mauticform-errormsg" style="display: none;">This is required.</span>
 </div>
 ```
 
 #### Pre-populate the values automatically in an email
 
-Embed the tokens {leadfield=FIELDALIAS|true}, one for each contact specific information you want to pre-populate the form with, into the URL, assigning them to the name of your form field.The |true tells Mautic to URL encode the value so that it works in the browser.
-```
-{pagelink=1}&email={leadfield=email|true}
-```
-In the rendered email sent to a contact, the URL may be converted into something like:
-```
-http://my-mautic.com/my-landing-page?ct=A_REALLY_LONG_STRING&email=contactemail%40gmail.com
-```
-So, what happened is `{pagelink=1}` was converted into the landing page URL and had `?ct=A_REALLY_LONG_STRING` appended. The really long string is encoded information about the contact which includes the contact ID. Each `{leadfield=FIELDALIAS}` was replaced with the contact's data. When the contact clicks the link, they will be taken to the landing page with the embedded form, and the form's 'email' input will be pre-populated with the value passed through the URL.
+Embed the tokens `{contactfield=FIELDALIAS|true}`, one for each contact specific information you want to pre-populate the form with, into the URL, assigning them to the name of your form field.The |true tells Mautic to URL encode the value so that it works in the browser.
+
+    {pagelink=1}&email={contactfield=email|true}
+
+In the rendered email sent to a contact, the URL may be converted into something like: `http(s)://example.com/my-landing-page?ct=A_REALLY_LONG_STRING&email=contactemail%40gmail.com`
+
+So, what happened is `{pagelink=1}` was converted into the landing page URL and had `?ct=A_REALLY_LONG_STRING` appended. The really long string is encoded information about the contact which includes the contact ID. Each `{contactfield=FIELDALIAS}` was replaced with the contact's data. When the contact clicks the link, they will be taken to the landing page with the embedded form, and the form's `email` input will be pre-populated with the value passed through the URL.
 
 #### Remove Contact from Do Not Contact (undo unsubscribe)
 
 Mautic 2.3 added new action **Remove Contact from Do Not Contact**. If a contact unsubscribes from your email marketing, you can't send another emails.  Use action **Remove Contact from Do Not Contact** in your forms and the contact will receive email again.
-
