@@ -30,7 +30,7 @@ The Mautic official end user documentation is licensed under the **Apache 2.0**,
 Links below
 -->
 
-[CONTRIBUTING]: CONTRIBUTING.md
+[CONTRIBUTING]: <https://github.com/mautic/documentation/CONTRIBUTING.md>
 
 [docs-eng]: <https://mautic.org/docs/mautic_docs_en.pdf>
 [docs-fr]: <https://mautic.org/docs/mautic_docs_fr.pdf>
@@ -45,9 +45,10 @@ Links below
 [developer-docs]: <https://developer.mautic.org>
 [developer-docs-github]: <https://github.com/mautic/developer-documentation>
 
-[mautic]: <https://github.com/mautic/mautic>
+[mautic]: <https://mautic.org/>
+[mautic-github]: <https://github.com/mautic/mautic>
 
 [gitbook]: <https://www.gitbook.com/>
 [markup]: <https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax>
 [hub]: <https://github.com/github/hub/releases>
-[linguistic]: <https://github.com/github/hub/releases>
+[linguistic]: <https://github.com/github/linguist>

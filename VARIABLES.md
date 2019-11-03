@@ -11,7 +11,8 @@
 - [Search filters](#search-filters)
 - [Alphabetical list](#alphabetical-list)
 
-> **ProTip**\
+> **ProTip**
+>
 > Default Value
 >
 > The default value can be specified after the `|` (pipe) character.  Consider this email salutation:
@@ -130,9 +131,7 @@ See [customizing preference center][make pref center] for more information.
 
 | **VARIABLE NAME**                                  | **VARIABLE SYNTAX**                         |
 | :------------------------------------------------- | :------------------------------------------ |
-<!-- markdownlint-disable MD033 -->
 | [Dynamic Content 1]<br>ie: user-defined variable name | `{dynamiccontent="Dynamic Content 1"}`   |
-<!-- markdownlint-enable MD033 -->
 
 ## Contact Monitoring
 
@@ -141,10 +140,10 @@ See [Contact Monitoring][contact monitoring] for more information.
 | **VARIABLE NAME**                                  | **VARIABLE SYNTAX**                         |
 | :------------------------------------------------- | :------------------------------------------ |
 | Language                                           | `{language}`                                |
-| Page Title                                         | `{page_title}`                              |
 | ~~Title~~                                          | ~~`{title}`~~                               |
-| Page URL                                           | `{page_url}`                                |
+| Page Title                                         | `{page_title}`                              |
 | ~~URL~~                                            | ~~`{url}`~~                                 |
+| Page URL                                           | `{page_url}`                                |
 | Referrer                                           | `{referrer}`                                |
 | Tracking pixel                                     | `{tracking_pixel}`                          |
 | UTM Campaign                                       | `{utm_campaign}`                            |
@@ -177,9 +176,7 @@ See the [Search][search] page for more information.
 | Country (Company)                                  | `{contactfield=companycountry}`             |
 | Company                                            | `{contactfield=company}`                    |
 | Description (Company)                              | `{contactfield=companydescription}`         |
-<!-- markdownlint-disable MD033 -->
 | [Dynamic Content 1]<br>ie: user-defined variable name | `{dynamiccontent="Dynamic Content 1"}`   |
-<!-- markdownlint-enable MD033 -->
 | Email                                              | `{contactfield=email}`                      |
 | Email (Company)                                    | `{contactfield=companyemail}`               |
 | Facebook                                           | `{contactfield=facebook}`                   |

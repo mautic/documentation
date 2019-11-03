@@ -23,7 +23,8 @@ Since [Mautic 2.9][release-2.9.0], when an import job creates or updates a conta
 
 - If your CSV contains thousands of contacts or more, divide such CSV into several smaller CSV files to avoid memory issues and slow import speed.
 
-> ProTip\
+> **ProTip**
+>
 > If using a Linux system, see the GNU parallel command. (sudo apt install parallel)
 >
 > ```console
@@ -32,10 +33,7 @@ Since [Mautic 2.9][release-2.9.0], when an import job creates or updates a conta
 >
 > This will generate files:
 >
-> split_list_part1.csv\
-> split_list_part2.csv\
-> …\
-> split_list_part10.csv
+> split_list_part1.csv ...split_list_part9.csv, split_list_part10.csv ...
 
 ## Types of import
 
@@ -77,7 +75,8 @@ The list of imports can be found when you go to the _Contacts_ area, open the ac
 
 ![import history](media/import-history-button.png)
 
-   > **ProTip**\
+   > **ProTip**
+   >
    > The direct URL is `https://example.com/s/contacts/import/1`
 
 The table will show you:
@@ -123,7 +122,8 @@ More detailed statistics and the import job configuration are available if you c
 
 1. Go to _Contacts_.
 1. In the top right corner above the table of Contacts open the sub menu of actions and select the _Import_ option.
-   > **ProTip**\
+   > **ProTip**
+   >
    > The direct URL is `https://example.com/s/contacts/import/new`
 1. Select the CSV file with contacts you want to import.
 1. Adjust the CSV settings if your file uses a non-standard delimiter or [encoding](#import-file-requirements) and so on.
@@ -159,7 +159,6 @@ A: It is stored as a Manual Unsubscription. It is the same as if the Contact was
 [variables]: <./../setup/VARIABLES.html>
 
 [custom fields]: <manage_fields.html>
-
 
 [release-2.9.0]: <https://github.com/mautic/mautic/releases/tag/2.9.0>
 

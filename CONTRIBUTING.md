@@ -61,43 +61,43 @@ Although some `git` knowledge is required to clone, modify, commit and push chan
 1. In the command line `cd` to where you want the documentation repository located
 1. Clone this repository
 
-````console
-git clone https://github.com/mautic/documentation.git --origin upstream
-````
+    ````console
+    git clone https://github.com/mautic/documentation.git --origin upstream
+    ````
 
 1. Fork this repository at [GitHub][mautic-docs-github] or use the [`hub`][hub] utility
 
-````console
-hub fork --remote-name origin
-````
+    ````console
+    hub fork --remote-name origin
+    ````
 
 1. Once cloning has completed, open the project in your editor of choice
 1. Create a new branch for your edits. Please name your branch something descriptive like `{yourusername}-revision-readme-file`
 
-````console
-git checkout -b {yourusername}-revision-readme-file upstream/master
-````
+    ````console
+    git checkout -b {yourusername}-revision-readme-file upstream/master
+    ````
 
 1. Make your changes
 1. Stage and commit your changes to your _local_ repository
 
-````console
-git status --short
-git add <new and modified files>
-git commit --message 'move contributing to new file'
-````
+    ````console
+    git status --short
+    git add <new and modified files>
+    git commit --message 'move contributing to new file'
+    ````
 
 1. Push to `origin`
 
-````console
-git push origin
-````
+    ````console
+    git push origin
+    ````
 
 1. Review the changes at your fork `https://github.com/{yourusername}/mautic-documentation`
-1. Submit your pull request
-    1. Direct link: `https://github.com/{yourusername}/mautic-documentation/pull/new/{yourusername}-revision-readme-file`
-    1. GitHub web interface - `base fork: mautic/documentation` and `base: master` at [GitHub][mautic-docs-github]
-    1. use the [`hub`][hub] utility
+1. Submit your pull request using one of these methods
+   - Direct link: `https://github.com/{yourusername}/mautic-documentation/pull/new/{yourusername}-revision-readme-file`
+   - GitHub web interface - `base fork: mautic/documentation` and `base: master` at [GitHub][mautic-docs-github]
+   - use the [`hub`][hub] utility
 
     ````console
     hub pull-request
@@ -144,9 +144,20 @@ Please contribute :)
 
 ### Code blocks
 
-- prefer fenced codeblocks with three backticks
-- must have [language identifier][linguistic]
-  - use `text` if no highlighting required
+1. prefer fenced codeblocks with three backticks
+
+1. fenced code blocks within lists need to be indented for numbered lists to continue
+
+    ```php
+    <?php
+
+    /*
+    * @copyright   2014 Mautic Contributors. All rights reserved
+    * @author      Mautic
+    ```
+
+1. must have [language identifier][linguistic]
+   - use `text` if no highlighting required
 
 ### Lists
 
@@ -202,7 +213,7 @@ Please use `example.com` as the reference domain for documentation.
 
 ### http vs https URL example
 
-Use the `https://` protocol in documentation.  We want to promote good practices.
+Prefer the `https://` protocol in documentation.  We want to promote good practices.
 
     https://example.com
 
@@ -218,7 +229,8 @@ This make linking to the same place much easier.  In Markdown, it looks like thi
 #### Absolute links
 
 ```markdown
-Aut et laudantium ad [ratione id][link macro]. Ut similique quis et ut. Consectetur eum quia totam [recusandae][link macro] necessitatibus dolorem debitis.
+Aut et laudantium ad [ratione id][link macro]. Ut similique quis et ut.
+Consectetur eum quia totam [recusandae][link macro] necessitatibus dolorem debitis.
 
 [link macro]: <http://example.com>
 ```
@@ -227,8 +239,11 @@ Aut et laudantium ad [ratione id][link macro]. Ut similique quis et ut. Consecte
 
 These will link to `plugins/integration_test.html` on the documentation website created from the *`plugins/integration_test.md`* source file.
 
+The first line is an example from within the same section.  The second for anywhere else in the directory structure.
+
 ```markdown
 [integration test]: <integration_test.html>
+
 [integration test]: <./../plugins/integration_test.html>
 ```
 
@@ -238,7 +253,8 @@ Heading anchors enable linking directly to a Markdown heading from within the sa
 The link target is specified inline.
 
 ```markdown
-Aut et laudantium ad [ratione id](#heading-anchors). Ut similique quis et ut. Consectetur eum quia totam [recusandae](#style-guide) necessitatibus dolorem debitis.
+Aut et laudantium ad [ratione id](#heading-anchors). Ut similique quis et ut.
+Consectetur eum quia totam [recusandae](#style-guide) necessitatibus dolorem debitis.
 ```
 
 ### Images
@@ -255,8 +271,11 @@ Link format:
 
 To display an image already in the documentation repository, use a relative path.
 
+The first line is an example of using images in the same section.  The second for anywhere else in the directory structure.
+
 ```markdown
 ![form rebuild cache](media/rebuild.png "Rebuild form cache"")
+
 ![form rebuild cache](./../forms/media/rebuild.png "Rebuild form cache")
 ```
 
@@ -270,12 +289,11 @@ For images that cannot be uploaded via the GitHub web interface, upload them to 
 
 ##### internal absolute image link
 
-> **Warning**\
+> **Warning**
+>
 > This link format should not be used.
 
-```markdown
-![form rebuild cache](/forms/media/rebuild.png "Rebuild form cache")
-```
+- ~~`![form rebuild cache](/forms/media/rebuild.png "Rebuild form cache")`~~
 
 ## Linking to Release versions
 
@@ -290,7 +308,7 @@ Since [Mautic 2.9][release-2.9.0], when...
 
 <!-- markdown style links -->
 
-[CONTRIBUTING]: CONTRIBUTING.md
+[CONTRIBUTING]: <https://github.com/mautic/documentation/CONTRIBUTING.md>
 
 [docs-eng]: <https://mautic.org/docs/mautic_docs_en.pdf>
 [docs-fr]: <https://mautic.org/docs/mautic_docs_fr.pdf>
@@ -305,9 +323,10 @@ Since [Mautic 2.9][release-2.9.0], when...
 [developer-docs]: <https://developer.mautic.org>
 [developer-docs-github]: <https://github.com/mautic/developer-documentation>
 
-[mautic]: <https://github.com/mautic/mautic>
+[mautic]: <https://mautic.org/>
+[mautic-github]: <https://github.com/mautic/mautic>
 
 [gitbook]: <https://www.gitbook.com/>
 [markup]: <https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax>
 [hub]: <https://github.com/github/hub/releases>
-[linguistic]: <https://github.com/github/hub/releases>
+[linguistic]: <https://github.com/github/linguist>

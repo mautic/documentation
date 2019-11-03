@@ -12,44 +12,44 @@ A form can contain as many fields as needed. These fields can be laid out dynami
 
 ![new-form][new-form]
 
-[new-form]: </forms/media/new-form.png>
+[new-form]: <media/new-form.png>
 
 #### Page Breaks
 
-Page breaks is a new feature in 2.2.0 that allows multi-paged forms. Note that the submission does not happen till the final page and the submit button is pressed.
- 
-Each page break will add a customizable continue/back button that will navigate to the next or previous page. If a page break is added after the submit button, the continue button will be replaced with the submit button itself when the form is generated. 
+Page breaks is a new feature in [Mautic 2.2.0][release-2.2.0] that allows multi-paged forms. Note that the submission does not happen till the final page and the submit button is pressed.
 
-![](/forms/media/page-break.png)
+Each page break will add a customizable continue/back button that will navigate to the next or previous page. If a page break is added after the submit button, the continue button will be replaced with the submit button itself when the form is generated.
+
+![page-break](media/page-break.png)
 
 ### Form Actions
 
-Form actions are items to be handled on the submission of the form. You can define multiple actions to be performed on each submission. As of 2.2.0, different actions are available based on form type.
+Form actions are items to be handled on the submission of the form. You can define multiple actions to be performed on each submission. As of [Mautic 2.2.0][release-2.2.0], different actions are available based on form type.
 
-![](/forms/media/form-actions.jpg)
+![form actions](media/form-actions.jpg)
 
 #### Form Re-Post Action
 
-Results from a Mautic form can be re-posted to a 3rd party form using the new "Post results to another form" submit action. 
+Results from a Mautic form can be re-posted to a 3rd party form using the new "Post results to another form" submit action.
 
-An email can be configured to send the results if the form fails to forward. 
- 
-Each form field can be have it's name customized to match that of the recipient _form/script_. 
+An email can be configured to send the results if the form fails to forward.
 
-In addition to the form data, an array of `mautic_form` with details like ID, name, and the URL the form was submitted to (if available) along with `mautic_contact` with the details of the contact that submitted. 
+Each form field can be have it's name customized to match that of the recipient _form/script_.
 
-![](/forms/media/repost.png)
+In addition to the form data, an array of `mautic_form` with details like ID, name, and the URL the form was submitted to (if available) along with `mautic_contact` with the details of the contact that submitted.
+
+![repost](media/repost.png)
 
 ### Creating and Updating Contacts and Companies with Forms
 
-To have your form create or update contacts (in order to update, there must be a matching unique identifier). Each form field can be mapped to a custom contact field through the form's Contact Field tab. Some fields result in automatic matching such as email and country. 
+To have your form create or update contacts (in order to update, there must be a matching unique identifier). Each form field can be mapped to a custom contact field through the form's Contact Field tab. Some fields result in automatic matching such as email and country.
 
-As of 2.10.0 you are now able to match form fields with company fields in order to create a company and link it to the contact created through the form. You will only be able to create a company if the company name field is populated. It will update the company if it can identify it through Company Name and Country, City and State.
-![forms - field matching](/forms/media/forms-field-matching.png)
+As of [Mautic 2.10.0][release-2.10.0] you are now able to match form fields with company fields in order to create a company and link it to the contact created through the form. You will only be able to create a company if the company name field is populated. It will update the company if it can identify it through Company Name and Country, City and State.
+![forms - field matching](media/forms-field-matching.png)
 
-As of 2.2.0, for fields that include select lists (select, radio, checkboxes), options can be synced with the contact field itself. No more having to manually keep them in sync! If a custom field's list is updated, simply rebuild the form's HTML. 
+As of [Mautic 2.2.0][release-2.2.0], for fields that include select lists (select, radio, checkboxes), options can be synced with the contact field itself. No more having to manually keep them in sync! If a custom field's list is updated, simply rebuild the form's HTML.
 
-![](/forms/media/rebuild.png)
+![rebuild](media/rebuild.png)
 
 #### Kiosk mode
 
@@ -57,7 +57,7 @@ The kiosk mode is helpful when you know that some form will be submitted from on
 
 #### No index mode
 
-In 2.15.0, mautic introduced the ability to disable search engines from indexing forms. With this option you can disable search engines from indexing `http(s)://example.com/form/{formid}` if set to "Yes".
+In [Mautic 2.15.0][release-2.15.0], [Mautic][mautic] introduced the ability to disable search engines from indexing forms. With this option you can disable search engines from indexing `https://example.com/form/{formid}` if set to "Yes".
 
 ### Form Injection
 
@@ -65,9 +65,10 @@ There are three ways you can use the form. You can copy the entire output or you
 
 ![form injection][injection]
 
-[injection]: </forms/media/injection.png>
+[injection]: <media/injection.png>
 
-> **ProTip**:
+> **ProTip**
+>
 > **It is recommended NOT to paste the injection code twice, it risks creating troubles on the submit form action when mandatory fields are submitted empty.**
 
 ```html
@@ -111,7 +112,9 @@ The contact field's alias can be obtained from the table when viewing Contacts -
 
 Embed the tokens `{contactfield=FIELDALIAS|true}`, one for each contact specific information you want to pre-populate the form with, into the URL, assigning them to the name of your form field.The |true tells Mautic to URL encode the value so that it works in the browser.
 
-    {pagelink=1}&email={contactfield=email|true}
+```http
+{pagelink=1}&email={contactfield=email|true}
+```
 
 In the rendered email sent to a contact, the URL may be converted into something like: `http(s)://example.com/my-landing-page?ct=A_REALLY_LONG_STRING&email=contactemail%40gmail.com`
 
@@ -119,4 +122,9 @@ So, what happened is `{pagelink=1}` was converted into the landing page URL and 
 
 #### Remove Contact from Do Not Contact (undo unsubscribe)
 
-Mautic 2.3 added new action **Remove Contact from Do Not Contact**. If a contact unsubscribes from your email marketing, you can't send another emails.  Use action **Remove Contact from Do Not Contact** in your forms and the contact will receive email again.
+[Mautic 2.3][release-2.3.0] added new action **Remove Contact from Do Not Contact**. If a contact unsubscribes from your email marketing, you can't send another emails.  Use action **Remove Contact from Do Not Contact** in your forms and the contact will receive email again.
+
+[release-2.2.0]: <https://github.com/mautic/mautic/releases/tag/2.2.0>
+[release-2.3.0]: <https://github.com/mautic/mautic/releases/tag/2.3.0>
+[release-2.10.0]: <https://github.com/mautic/mautic/releases/tag/2.10.0>
+[release-2.15.0]: <https://github.com/mautic/mautic/releases/tag/2.15.0>
