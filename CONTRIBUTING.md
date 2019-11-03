@@ -112,7 +112,7 @@ Using *README.md* as an example:
 1. [Fork][mautic-docs-fork] this repository under your account so you'll have permission to edit.
 1. Select the *README.md* file (refer to the [file structure section](#file-structure) below if needed)
 1. With the content of *README.md* visible, click on the pencil icon to begin editing the file
-1. The *.md* extension means this file was written in Markdown, a simple but flexible text formatting language. Mautic documentation is written with [Markdown markup][markup] specifically.
+1. The *.md* extension means this file was written in [Markdown][markup], a simple but flexible text formatting language. Mautic documentation is written with [Markdown markup][markup] specifically.
 1. After you've made a change, scroll down to the *Commit changes* form. Saving your change requires describing what was changed and why.
 1. Before submitting your commit, select the box for *Creates a new branch* to start a new branch for your change. Name your branch something like `{yourusername}-revision-readme-file`
 1. Select *Propose file change*
@@ -145,24 +145,27 @@ Please contribute :)
 
 - prefer fenced codeblocks with three backticks
 - must have [language identifier][linguistic]
-  - use `text` if not special 
+  - use `text` if no highlighting required
 
 ### Lists
 
-* Use `1.` only for numbered lists.
-* use `*` for unnumbered lists
-* indent 4 spaces for a second level
+- Use `1.` for numbered lists.
+- Use `1.` only for numbered lists.
+- use `-` for unnumbered lists
+  - indent spaces until first character of content in line above
+  - which is effectively 2 spaces nested unnumbered lists
 
 <details><summary>markdown</summary>
 
 ```markdown
 1. Item the first
 1. Something else
-   1. indent 4 spaces
-   1. for a second level
+   1. indent spaces until first character of content in line above
+   1. that means line up on the `S` in `Something`
+      1. and now the `t` in `that`
 1. And finally
-   * minor point
-* not a number
+   - minor point from the `A`
+- not a number
 ```
 
 </details>
@@ -171,11 +174,12 @@ Please contribute :)
 
 1. Item the first
 1. Something else
-   1. indent 4 spaces
-   1. for a second level
+   1. indent spaces until first character of content in line above
+   1. that means line up on the `S` in `Something`
+      1. and now the `t` in `that`
 1. And finally
-   * minor point
-* not a number
+   - minor point from the `A`
+- not a number
 
 </details>
 
@@ -293,6 +297,6 @@ Since [Mautic 2.9][release-2.9.0], when...
 [mautic]: <https://github.com/mautic/mautic>
 
 [gitbook]: <https://www.gitbook.com/>
-
+[markup]: <https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax>
 [hub]: <https://github.com/github/hub/releases>
 [linguistic]: <https://github.com/github/hub/releases>
