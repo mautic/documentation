@@ -1,47 +1,64 @@
 # Customize Preference Center
 
-It is possible to customize the personal preference center/unsubscribe page and edit text labels, format and apply themes using the landing page builder.
+It is possible to customize the personal Preference Center/unsubscribe page and edit text labels, format and apply themes using the landing page builder.
 
-## Creating a Preference Center Page
+## Creating a Preference Center Landing Page
 
-When creating/editing a landing page, there is a toggle button labeled *Is preference center*, toggling this button shows/hides the preference center slots in the builder
+When creating/editing a landing page, there is a toggle switch labeled _Is Preference Center_.  If selected, the page [will be marked](#landing-pages) as a preference center landing page.
 
-![image](/contacts/media/pref1.png)
+> **Note**\
+> When [PR#7915][pr7915] is merged it will be labeled _Set as preference center page_
+
+When this page is [configured as a preference center in a Mautic Email](#setting-preference-center-pages-in-emails), recipients will be shown the page when clicking on the [**`{unsubscribe_url}`**](#tokens) link.  It also shows or hides the [Preference Center slots](#builder-slots) in the builder.
+
+![is Preference Center](media/pref1.png)
+
+### Builder slots
 
 These slots in the builder are used to customize the page:
 
-![image](/contacts/media/pref2.png)
+![builder slots](media/pref2.png)
 
-Optionally, you can use tokens to insert the different slots. Keep in mind that if you use tokens, you lose the ability to customize the labels and styles of the slots because it uses the default ones.
+### Tokens
 
-![image](/contacts/media/pref3.png)
+Optionally, you can use [tokens][variables] to insert the different slots. Keep in mind that if you use [tokens][variables], you lose the ability to customize the labels and styles of the [slots](#builder-slots) because it uses the default ones.
+
+![tokens](media/pref3.png)
+
+See the [VARIABLES][variables] page for a full list of tokens.
 
 To finish, don't forget to include a "save preferences" button, otherwise the preferences can't be saved:
 
-![image](/contacts/media/pref4.png)
+![save preferences button](media/pref4.png)
 
-Save the page and the preference center landing page is ready.
+Save the page and the Preference Center landing page is ready.
 
-Now in the landing pages list, the icon with the little cog indicates that the page is a preference center one.
+## Landing Pages
 
-![image](/contacts/media/pref7.png)
+Now in the landing pages list, the icon with the little cog indicates that the page is a Preference Center one.
 
-When viewing a preference center page, there is a header indicating its purpose and the page URL is not available, only the preview URL.
+![landing page cog](media/pref7.png)
 
-![image](/contacts/media/pref8.png)
+When viewing a Preference Center page, there is a header indicating its purpose and the page URL is not available, only the preview URL.
+
+![view Preference Center page](media/pref8.png)
 
 ## Setting Preference Center Pages in Emails
 
-When creating or editing an email, you can select the Preference Center Page from the list as shown:
+When creating or editing an email, you can select the Preference Center page from the list as shown:
 
-![image](/contacts/media/pref5.png)
+![setting Preference Center page](media/pref5.png)
 
-Keep in mind that your mail must use the same langugage as the preference center landing page - if not, default preference center will be shown.
+Keep in mind that your mail must use the same langugage as the Preference Center landing page - if not, default Preference Center will be shown.
 
-Now when the email is sent, all recipients will be able to click on the Unsubscribe link and the new preference center page will be displayed.
+Now when the email is sent, all recipients will be able to click on the [Unsubscribe link (`{unsubscribe_text}` and `{unsubscribe_url}`)][variables] and the new Preference Center page will be displayed.
 
-![image](/contacts/media/pref6.png)
+![new pref center page](media/pref6.png)
 
 If no Preference Center page is selected in an email, the default page is displayed.
 
-![image](/contacts/media/unsubscribe.png)
+![default Preference Center page](media/unsubscribe.png)
+
+[variables]: <./../setup/variables.html>
+
+[pr7915]: </mautic/mautic/pull/7915>
