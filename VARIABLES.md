@@ -11,7 +11,8 @@
 - [Search filters](#search-filters)
 - [Alphabetical list](#alphabetical-list)
 
-> **ProTip**\
+> **ProTip**
+>
 > Default Value
 >
 > The default value can be specified after the `|` (pipe) character.  Consider this email salutation:

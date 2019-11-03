@@ -6,7 +6,8 @@ It is possible to customize the personal Preference Center/unsubscribe page and 
 
 When creating/editing a landing page, there is a toggle switch labeled _Is Preference Center_.  If selected, the page [will be marked](#landing-pages) as a preference center landing page.
 
-> **Note**\
+> **Note**
+>
 > When [PR#7915][pr7915] is merged it will be labeled _Set as preference center page_
 
 When this page is [configured as a preference center in a Mautic Email](#setting-preference-center-pages-in-emails), recipients will be shown the page when clicking on the [**`{unsubscribe_url}`**](#tokens) link.  It also shows or hides the [Preference Center slots](#builder-slots) in the builder.
@@ -59,6 +60,6 @@ If no Preference Center page is selected in an email, the default page is displa
 
 ![default Preference Center page](media/unsubscribe.png)
 
-[variables]: <./../setup/variables.html>
+[variables]: <./../setup/VARIABLES.html>
 
-[pr7915]: </mautic/mautic/pull/7915>
+[pr7915]: <https://github.com/mautic/mautic/pull/7915>

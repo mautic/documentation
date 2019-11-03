@@ -289,7 +289,8 @@ For images that cannot be uploaded via the GitHub web interface, upload them to 
 
 ##### internal absolute image link
 
-> **Warning**\
+> **Warning**
+>
 > This link format should not be used.
 
 - ~~`![form rebuild cache](/forms/media/rebuild.png "Rebuild form cache")`~~
