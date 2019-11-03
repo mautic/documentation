@@ -92,3 +92,4 @@
    * [General Troubleshooting](tips/troubleshooting.md)
    * [Update Failed Troubleshooting](tips/update-failed.md)
    * [Mautic CLI Commands](tips/command-line.md)
+* [Variables](setup/VARIABLES.md)
