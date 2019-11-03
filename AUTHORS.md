@@ -16,6 +16,7 @@ Contributors
 
 - Nijiko Yonskai (@Nijikokun)
 - Herman Starikov (@Hermanya)
+- 
 
 Translators
 ------------
