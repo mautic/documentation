@@ -1,7 +1,8 @@
 # Contributing to the Mautic documentation
 
-This repository serves as the source code for the Mautic documentation [Gitbook][gitbook] published at [www.mautic.org/docs][mautic-docs].
-The source code is shared [here on GitHub][mautic-docs-github] so anyone can contribute to the documentation in the same way the programmers do with the actual [Mautic][mautic] code.
+This [Gitbook][gitbook] [repository][mautic-docs-github] serves as the [documentation][mautic-docs] for [Mautic][mautic], the open source marketing automation system.
+
+Everyone is [welcome to contribute][CONTRIBUTING] to improve this information as needed.
 
 <!-- ## Table of Contents -->
 
@@ -289,10 +290,20 @@ Since [Mautic 2.9][release-2.9.0], when...
 
 <!-- markdown style links -->
 
+[CONTRIBUTING]: CONTRIBUTING.md
+
+[docs-eng]: <https://mautic.org/docs/mautic_docs_en.pdf>
+[docs-fr]: <https://mautic.org/docs/mautic_docs_fr.pdf>
+[docs-jp]: <https://mautic.org/docs/mautic_docs_jp.pdf>
+
 [mautic-docs]: <https://mautic.org/docs/>
 [mautic-docs-github]: <https://github.com/mautic/documentation>
 [mautic-docs-fork]: <https://github.com/mautic/documentation#fork-destination-box>
+[mautic-doc-license]: <https://github.com/mautic/documentation/blob/master/LICENSE>
 [doc-issues]: <https://github.com/mautic/documentation/issues>
+
+[developer-docs]: <https://developer.mautic.org>
+[developer-docs-github]: <https://github.com/mautic/developer-documentation>
 
 [mautic]: <https://github.com/mautic/mautic>
 
