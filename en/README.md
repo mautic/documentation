@@ -50,4 +50,4 @@ Links below
 [gitbook]: <https://www.gitbook.com/>
 [markup]: <https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax>
 [hub]: <https://github.com/github/hub/releases>
-[linguistic]: <https://github.com/github/hub/releases>
+[linguistic]: <https://github.com/github/linguist>
