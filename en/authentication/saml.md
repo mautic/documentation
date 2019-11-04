@@ -34,4 +34,4 @@ Login to the IDP where you'll be redirected back to Mautic. If the exchange is s
 ## Disable SAML
 To disable SAML, simply click the `Remove` link to the right of the `Identity provider metadata file` label.  
 
-![](/authentication/media/saml.png)
+![](media/saml.png)
