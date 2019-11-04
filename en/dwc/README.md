@@ -9,23 +9,23 @@ This feature allows you to configure filters (like in segments) so a Landing Pag
 ### Setup
 1. Create or edit a Dynamic Web Content item.
 
-![](/dwc/media/form.jpg)
+![](media/form.jpg)
 
 2. Toggle the "*Is campaign based*" button to **No** (Notice how when No is selected, the "*Slot Name*" field is available and the filters tab is displayed so new filters can be created.
 
-![](/dwc/media/filters.jpg)
+![](media/filters.jpg)
 
 3. On a landing page, add a token or a slot for the new dynamic web content you just created.
 
-![](/dwc/media/builder.jpg)
+![](media/builder.jpg)
 
 4. When using DWC slots, you need to provide the requested slot name.
 
-![](/dwc/media/slot.jpg)
+![](media/slot.jpg)
 
 5. When someone visits the page and if the conditions on the filters are met, the DWC will be displayed.
 
-![](/dwc/media/page.jpg)
+![](media/page.jpg)
 
 6. To add a DWC item with filters in a third party page, you can use the following code (just change `myslot` in `data-param-slot-name="myslot"` to the *Requested Slot Name* of your DWC item):
 
@@ -37,13 +37,13 @@ This feature allows you to configure filters (like in segments) so a Landing Pag
 
 7. Again, when someone visits the page the DWC slot will be replaced if the filters match:
 
-![](/dwc/media/third.jpg)
+![](media/third.jpg)
 
 ## Campaign based
 There are several steps involved in setting this up.
 
 ### Add the default content.
-![](/dwc/media/dwc-default.jpg)
+![](media/dwc-default.jpg)
 
 ### Add alternative content if desired.
 You can set up as many items as you need.  The default will be delivered via the "Request Dynamic Content" decision in a campaign.  If you want to push something different based on a set of criteria, you create those here and deliver them via a "Push Dynamic Content" action.
@@ -51,7 +51,7 @@ You can set up as many items as you need.  The default will be delivered via the
 ### Add the dynamic content pull request in a campaign.
 The key to this step is naming the "slot".  This can be anything you want as long as it's unique across your dynamic content campaigns.  The pull request is processed and determines if the person on the landing page is a known contact.
 
-![](/dwc/media/dwc-pull-request.jpg)
+![](media/dwc-pull-request.jpg)
 
 ### Add the push request in the campaign.
 If you want to serve up different information based on certain criteria, you can use a push request.  
@@ -59,7 +59,7 @@ If you want to serve up different information based on certain criteria, you can
 2.  If they meet the criteria (in the example below - if they are from Canada), a different set of content can be delivered to the browser.  
 3.  If they are unknown, they will see the information embedded in the dynamic web content div from the page (see below).
 
-![](/dwc/media/dwc-push.jpg)
+![](media/dwc-push.jpg)
 
 ### Finally, include the dynamic web content shortcode in your web page.
 ```
