@@ -12,7 +12,7 @@ The Code Mode can be selected in the theme select after you create/edit the page
 
 If you use a Mautic theme to create the page/email and you want to edit the HTML code of it in the Code Mode Builder, you can do so, but you cannot switch back to the theme again. You will always have to edit the content in the Code Mode Builder. Selecting a theme will always refresh the content to the default theme HTML and so you'll lose your modifications.
 
-![Select the Code Mode](/themes/media/code-mode-select.png)
+![Select the Code Mode](media/code-mode-select.png)
 
 ## Edit the HTML content in the Code Mode Builder
 
@@ -22,7 +22,7 @@ When the Code Mode Builder is opened, you can see the preview on the left, the H
 
 You can use the tokens in the Code Mode Builder when you type them directly. For example when you type `{contactfield=firstname}` or you can select them from the dropdown. The dropdown will open when you press `CTRL` + `SPACE BAR`. You can type to search for the token you wish to insert.
 
-![Edit the HTML with Code Mode](/themes/media/code-mode-builder.png)
+![Edit the HTML with Code Mode](media/code-mode-builder.png)
 
 ### Media Manager
 
