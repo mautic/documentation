@@ -7,4 +7,4 @@ The **Components** menu contains the following items:
 
 These items must be created before you can use them in a campaign.
 
-![](/components/media/components-dropdown.jpg)
+![](media/components-dropdown.jpg)
