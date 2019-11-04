@@ -18,7 +18,7 @@ It is also possible to have translations of A/B test variants.
 
 When creating an email you can select the segments to which you want to send the email.
 
-![](/emails/media/email-segments.jpg)
+![](media/email-segments.jpg)
 
 This entry field is a multi-select which allows you to choose several segments if necessary.
 
@@ -75,7 +75,7 @@ The tracking pixel image is usually appended to the email message, if enabled. I
 
 Since Mautic 1.4, there is a new option in the Mautic configuration, the Email Settings tab. You can let Mautic encode all images in the email text as base64. It will attach the image inside the email body. It has several implications:
 
-![](/emails/media/base64-images.jpg)
+![](media/base64-images.jpg)
 
 - The main idea with this option is that most of the email clients will display the images directly without any approvals.
 - However, some email clients like Gmail will require the approval because of the tracking pixel and won't display the base64 encoded images anyway. See the next paragraph for possible solution.
