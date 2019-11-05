@@ -21,13 +21,14 @@ remove the first two lines
 - [File Structure](#file-structure)
 - [Style Guide](#style-guide)
   - [Whitespace and spaces](#whitespace-and-spaces)
-  - [Code blocks](#code-blocks)
   - [Lists](#lists)
-- [Example domain references](#example-domain-references)
-  - [Standard Mautic URL example](#standard-mautic-url-example)
-  - [Mautic as subdomain URL example](#mautic-as-subdomain-url-example)
-  - [Mautic as subdirectory URL example](#mautic-as-subdirectory-url-example)
-  - [http vs https URL example](#http-vs-https-url-example)
+      - [Example nested list](#example-nested-list)
+      - [Nested list markdown syntax](#nested-list-markdown-syntax)
+  - [Code blocks](#code-blocks)
+      - [Example `<codeblock>`](#example-codeblock)
+      - [`<codeblock>` markdown syntax](#codeblock-markdown-syntax)
+      - [Example nested `<codeblock>`](#example-nested-codeblock)
+      - [Nested `<codeblock>` markdown syntax](#nested-codeblock-markdown-syntax)
   - [Links](#links)
     - [Absolute links](#absolute-links)
     - [Relative links](#relative-links)
@@ -35,8 +36,13 @@ remove the first two lines
   - [Images](#images)
     - [relative image links](#relative-image-links)
     - [absolute image links](#absolute-image-links)
-      - [internal absolute image link](#internal-absolute-image-link)
-- [Linking to Release versions](#linking-to-release-versions)
+- [Mautic specific information](#mautic-specific-information)
+  - [Example domain references](#example-domain-references)
+    - [Protocol scheme: http vs https](#protocol-scheme-http-vs-https)
+  - [Linking to Release versions](#linking-to-release-versions)
+    - [`latest` version](#latest-version)
+  - [References to _leads_ and _lead lists_](#references-to-_leads_-and-_lead-lists_)
+      - [reference note](#reference-note)
 
 ## Why `git`
 
@@ -142,91 +148,182 @@ Please contribute :)
 
 - Two spaces after a full stop.  Next sentence.
 
-### Code blocks
-
-1. prefer fenced codeblocks with three backticks
-
-1. fenced code blocks within lists need to be indented for numbered lists to continue
-
-    ```php
-    <?php
-
-    /*
-    * @copyright   2014 Mautic Contributors. All rights reserved
-    * @author      Mautic
-    ```
-
-1. must have [language identifier][linguistic]
-   - use `text` if no highlighting required
-
 ### Lists
 
 - Use `1.` for numbered lists.
 - Use `1.` only for numbered lists.
-- use `-` for unnumbered lists
-  - indent spaces until first character of content in line above
-  - which is effectively 2 spaces nested unnumbered lists
+- Use `-` for unnumbered lists
+  - Indent spaces until first character of content in line above
+  - which is effectively 2 spaces for nested unnumbered lists
 
-<details><summary>markdown</summary>
+<details><summary>example list</summary>
+
+##### Example nested list
+
+1. Item the first
+1. Something else
+   1. indent spaces until first character of content in line above
+   1. that means line up on the `S` in `Something`
+      1. and the first `t` in `that`
+1. And finally
+   - minor point from the `A`
+
+- not part of the numbered list
+
+<details><summary>markdown syntax</summary>
+
+##### Nested list markdown syntax
 
 ```markdown
 1. Item the first
 1. Something else
    1. indent spaces until first character of content in line above
    1. that means line up on the `S` in `Something`
-      1. and now the `t` in `that`
+      1. and the first `t` in `that`
 1. And finally
    - minor point from the `A`
-- not a number
+
+- not part of the numbered list
 ```
 
 </details>
-
-<details><summary>result</summary>
-
-1. Item the first
-1. Something else
-   1. indent spaces until first character of content in line above
-   1. that means line up on the `S` in `Something`
-      1. and now the `t` in `that`
-1. And finally
-   - minor point from the `A`
-- not a number
-
 </details>
 
-## Example domain references
+### Code blocks
 
-Please use `example.com` as the reference domain for documentation.
+1. Prefer fenced `<codeblock>`s with three backticks
+1. Must have [language identifier][linguistic]
+   - Use `text` if no highlighting required
+1. Fenced code blocks within lists need to be indented for numbered lists to continue
 
-### Standard Mautic URL example
+<details><summary>example codeblock</summary>
 
-    https://example.com
+##### Example `<codeblock>`
 
-### Mautic as subdomain URL example
+```php
+/**
+ * Constructor.
+ *
+ * @param string $environment The environment
+ * @param bool   $debug       Whether to enable debugging or not
+ *
+ * @api
+ */
+public function __construct($environment, $debug)
+{
+    defined('MAUTIC_ENV') or define('MAUTIC_ENV', $environment);
+    defined('MAUTIC_VERSION') or define(
+        'MAUTIC_VERSION',
+        self::MAJOR_VERSION.'.'.self::MINOR_VERSION.'.'.self::PATCH_VERSION.self::EXTRA_VERSION
+    );
 
-    https://mautic.example.com
+    parent::__construct($environment, $debug);
+}
+```
 
-### Mautic as subdirectory URL example
+<details><summary>A markdown syntax</summary>
 
-    https://example.com/mautic
+##### `<codeblock>` markdown syntax
 
-### http vs https URL example
+```markdown
 
-Prefer the `https://` protocol in documentation.  We want to promote good practices.
+/**
+ * Constructor.
+ *
+ * @param string $environment The environment
+ * @param bool   $debug       Whether to enable debugging or not
+ *
+ * @api
+ */
+public function __construct($environment, $debug)
+{
+    defined('MAUTIC_ENV') or define('MAUTIC_ENV', $environment);
+    defined('MAUTIC_VERSION') or define(
+        'MAUTIC_VERSION',
+        self::MAJOR_VERSION.'.'.self::MINOR_VERSION.'.'.self::PATCH_VERSION.self::EXTRA_VERSION
+    );
 
-    https://example.com
+    parent::__construct($environment, $debug);
+}
 
-If you need to show both protocols, add brackets around the `(s)`
+```
 
-    http(s)://example.com
+</details>
+</details>
+
+<details><summary>example nested codeblock</summary>
+
+##### Example nested `<codeblock>`
+
+1. START list item
+
+   Example nested `<codeblock>`
+
+    ```php
+    /**
+     * Constructor.
+     *
+     * @param string $environment The environment
+     * @param bool   $debug       Whether to enable debugging or not
+     *
+     * @api
+     */
+    public function __construct($environment, $debug)
+    {
+        defined('MAUTIC_ENV') or define('MAUTIC_ENV', $environment);
+        defined('MAUTIC_VERSION') or define(
+            'MAUTIC_VERSION',
+            self::MAJOR_VERSION.'.'.self::MINOR_VERSION.'.'.self::PATCH_VERSION.self::EXTRA_VERSION
+        );
+
+        parent::__construct($environment, $debug);
+    }
+    ```
+
+1. END list item
+
+<details><summary>markdown syntax</summary>
+
+##### Nested `<codeblock>` markdown syntax
+
+```markdown
+    ```php
+    /**
+     * Constructor.
+     *
+     * @param string $environment The environment
+     * @param bool   $debug       Whether to enable debugging or not
+     *
+     * @api
+     */
+    public function __construct($environment, $debug)
+    {
+        defined('MAUTIC_ENV') or define('MAUTIC_ENV', $environment);
+        defined('MAUTIC_VERSION') or define(
+            'MAUTIC_VERSION',
+            self::MAJOR_VERSION.'.'.self::MINOR_VERSION.'.'.self::PATCH_VERSION.self::EXTRA_VERSION
+        );
+
+        parent::__construct($environment, $debug);
+    }
+    ```
+```
+
+</details>
+</details>
 
 ### Links
+
+[link macro]: <http://example.com>
+[testing]: <./../plugins/integration_test.html>
 
 Often you'll want to make a link to another place in the documentation.  We prefer to group links at the bottom of a page, and provide a reference macro in the text.
 This make linking to the same place much easier.  In Markdown, it looks like this:
 
 #### Absolute links
+
+Aut et laudantium ad [ratione id][link macro]. Ut similique quis et ut.
+Consectetur eum quia totam [recusandae][link macro] necessitatibus dolorem debitis.
 
 ```markdown
 Aut et laudantium ad [ratione id][link macro]. Ut similique quis et ut.
@@ -237,14 +334,14 @@ Consectetur eum quia totam [recusandae][link macro] necessitatibus dolorem debit
 
 #### Relative links
 
-These will link to `plugins/integration_test.html` on the documentation website created from the *`plugins/integration_test.md`* source file.
+These will link to [`plugins/integration_test.html`][testing] on the documentation website created from the [_`plugins/integration_test.md`_][testing] source file.
 
 The first line is an example from within the same section.  The second for anywhere else in the directory structure.
 
 ```markdown
-[integration test]: <integration_test.html>
+[testing]: <integration_test.html>
 
-[integration test]: <./../plugins/integration_test.html>
+[testing]: <./../plugins/integration_test.html>
 ```
 
 #### Heading anchors
@@ -287,28 +384,146 @@ For images that cannot be uploaded via the GitHub web interface, upload them to 
 ![apple](http://example.com/images/apple.png "Like this delicious apple")
 ```
 
-##### internal absolute image link
-
 > **Warning**
 >
-> This link format should not be used.
+> ##### internal absolute image link
+>
+> This link format should NOT be used.
+>
+> ~~`![form rebuild cache](/forms/media/rebuild.png "Rebuild form cache")`~~
 
-- ~~`![form rebuild cache](/forms/media/rebuild.png "Rebuild form cache")`~~
+## Mautic specific information
 
-## Linking to Release versions
+### Example domain references
 
-Use an [absolute external link](#absolute-links) to reference the official released versions of Mautic.  Include `Mautic` and the version number in the link macro.
-All version numbers have 3 components: `<major>.<minor>.<patch>`
+Use `example.com` as the reference domain for documentation.
+
+For the various installation types, use
+
+- standard Mautic URL example
+
+    ```http
+    https://example.com
+    ```
+
+  - include `www` if relevant
+
+      ```http
+      https://www.example.com
+      ```
+
+- Mautic installed as subdomain URL
+
+    ```http
+    https://mautic.example.com
+    ```
+
+- Mautic installed as subdirectory URL
+
+    ```http
+    https://example.com/mautic
+    ```
+
+#### Protocol scheme: http vs https
+
+- Prefer the `https://` protocol in documentation.
+
+    ```http
+    https://example.com
+    ```
+
+- If you need to show both protocols, add brackets around the `(s)`
+
+    ```http
+    http(s)://example.com
+    ```
+
+### Linking to Release versions
+
+- Use an [absolute external link](#absolute-links) to reference the [official released versions][release-list] of [Mautic].  The project adheres to [Semantic Versioning][semver], so all version numbers have three components: `<MAJOR>.<MINOR>.<PATCH>`
+
+- Prefix the version with the word `Mautic` in the text, and the full three-part version number in the link macro.
+  - A `<MAJOR>.<MINOR>` release version without `<PATCHES>` may be used in the text, but still use the full three-part version number in the link.
+- Wrapping the version number in `<code>` backticks "`" is optional.
+
+> Since [Mautic `2.9`][release-2.9.0], when...
 
 ```markdown
-Since [Mautic 2.9][release-2.9.0], when...
+Since [Mautic `2.9`][release-2.9.0], when...
 
 [release-2.9.0]: <https://github.com/mautic/mautic/releases/tag/2.9.0>
 ```
 
+#### `latest` version
+
+Avoid using the term _**`current`**_ or _**`latest`**_ if you actually mean _"the currently released version of Mautic that I installed"_.
+
+In most cases, it has no meaning when a new version is released.  Instead, check the [latest release][release-latest] and explicitly use that version number.
+
+Do NOT do this:
+
+> In ~~the [`latest`][release-latest] version of Mautic~~...
+
+DO this instead:
+
+> In [Mautic `2.15.3`][release-2.15.3] ...
+
+```markdown
+> In [Mautic `2.15.3`][release-2.15.3] ...
+
+[release-2.15.3]: <https://github.com/mautic/mautic/releases/tag/2.15.3>
+```
+
+### References to _leads_ and _lead lists_
+
+Include this **Note** if there are references to outdated terminology that cannot be updated.
+
+> **Note**
+>
+> In this document, there may be references to outdated terminology such as
+>
+> - _leads_,
+> - _lists_ or _lead lists_, and
+> - _anonymous leads_
+>
+> In [Mautic version `1.4`][release-1.4.0],
+>
+> - _leads_ were renamed to _**contacts**_
+> - _lead lists_ were renamed to _**segments**_
+> - _anonymous leads_ were renamed to _**visitors**_
+
+<details><summary>markdown syntax</summary>
+
+##### reference note
+
+```markdown
+> **Note**
+>
+> In this document, there may be references to outdated terminology such as
+>
+> - _leads_,
+> - _lists_ or _lead lists_, and
+> - _anonymous leads_
+>
+> In [Mautic version `1.4`][release-1.4.0],
+>
+> - _leads_ were renamed to _**contacts**_
+> - _lead lists_ were renamed to _**segments**_
+> - _anonymous leads_ were renamed to _**visitors**_
+
+[release-1.4.0]: <https://github.com/mautic/mautic/releases/tag/1.4.0>
+```
+
+</details>
+
 <!-- markdown style links -->
 
 [CONTRIBUTING]: <https://github.com/mautic/documentation/CONTRIBUTING.md>
+[release-list]: <https://github.com/mautic/mautic/releases>
+[release-latest]: <https://github.com/mautic/mautic/releases/latest>
+[release-2.15.3]: <https://github.com/mautic/mautic/releases/tag/2.15.3>
+[release-2.9.0]: <https://github.com/mautic/mautic/releases/tag/2.9.0>
+[release-1.4.0]: <https://github.com/mautic/mautic/releases/tag/1.4.0>
 
 [docs-eng]: <https://mautic.org/docs/mautic_docs_en.pdf>
 [docs-fr]: <https://mautic.org/docs/mautic_docs_fr.pdf>
@@ -323,9 +538,11 @@ Since [Mautic 2.9][release-2.9.0], when...
 [developer-docs]: <https://developer.mautic.org>
 [developer-docs-github]: <https://github.com/mautic/developer-documentation>
 
+[Mautic]: <https://mautic.org/>
 [mautic]: <https://mautic.org/>
 [mautic-github]: <https://github.com/mautic/mautic>
 
+[semver]: <https://semver.org/spec/v2.0.0.html>
 [gitbook]: <https://www.gitbook.com/>
 [markup]: <https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax>
 [hub]: <https://github.com/github/hub/releases>
