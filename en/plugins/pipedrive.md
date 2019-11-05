@@ -1,8 +1,11 @@
 # Mautic - Pipedrive CRM plugin
 
-This plugin allows for synchronization between Mautic and Pipedrive. If you don't have the Pipedrive account yet, create it here: https://www.pipedrive.com
+This plugin allows for synchronization between [Mautic] and [Pipedrive].
 
-# Configure the plugin in Mautic
+Create a [Pipedrive] account if you don't have one already.
+
+## Configure the plugin in Mautic
+
 To integrate Mautic with Pipedrive, fill out the following fields:
 
 ![Mautic Pipedrive plugin window](media/pipedrive/mautic_window_conf.png "Mautic Pipedrive plugin window")
@@ -20,7 +23,7 @@ When you are filling out the form for the first time, set Published field to No.
 
 **Be extra careful when matching the fields to make sure that the correct data is saved.**
 
-# Features
+## Features
 
 ### Company / Organization Synchronization
 
@@ -52,13 +55,13 @@ Having done that, open the plugin configuration screen in Mautic again to see a 
 
 ### Multiselect custom field
 
-Multiselect custom field required values in Mautic setup equal to Pipedrive labels. 
+Multiselect custom field required values in Mautic setup equal to Pipedrive labels.
 
 ![Mautic Custom Multiselect Field](media/pipedrive/plugins-pipedrive-multiselect.png "Mautic Custom Multiselect Field")
 
 ![Pipedrive Custom Multiselect Field](media/pipedrive/plugins-pipedrive-multiselect-custom.png "Pipedrive Custom Multiselect Field")
 
-# Configure the plugin in Pipedrive
+## Configure the plugin in Pipedrive
 
 To exchange the data between Pipedrive and Mautic, configure the webhooks in Pipedrive so that Mautic records are updated automatically.
 
@@ -80,15 +83,25 @@ Repeat for Person, User and Organizations. When you're done, the webhook view sh
 
 ![Configure Pipedrive webhooks](media/pipedrive/webhooks_4.png "Configure Pipedrive webhooks")
 
-# Command line scripts
+### Command line scripts
 
-The scripts try merge older contacts, but we recommend it just for the initial Mautic <-> Pipedrive data exchange.  You shouldn't use them to make updates with CRON. 
+The scripts try merge older contacts, but we recommend it just for the initial Mautic <-> Pipedrive data exchange.  You shouldn't use them to make updates with [CRON][cron].
 
 * `mautic:integration:pipedrive:fetch` – pulls the data from Pipedrive and sends it to Mautic
 * `mautic:integration:pipedrive:push` – pushes the data from Mautic to Pipedrive
 
-# Realtime update
+### Realtime update
 
 If you create or edit contact in Pipedrive, Pipedrive should send update via webhook and Mautic should recognize the contact's status and add or update it dedending on last date of integration. If you don't want to use this way of contact's synchronization, just don't setup webhook in Pipedrive.
 
-If you create or edit contact in Mautic, Mautic should send this update to Pipedrive via API. Mautic should recognize the status of the contact and add or update it depending on last date of integration. By default is disabled this feature. You are able to enable it by option **Import contacts to Pipedrive immediately on change in Mautic** in plugin settings. 
+If you create or edit contact in Mautic, Mautic should send this update to Pipedrive via API. Mautic should recognize the status of the contact and add or update it depending on last date of integration. By default is disabled this feature. You are able to enable it by option **Import contacts to Pipedrive immediately on change in Mautic** in plugin settings.
+
+[Pipedrive]: <https://www.pipedrive.com>
+
+[mautic]: <https://mautic.org>
+[Mautic]: <https://mautic.org>
+
+[field mapping]: <field_mapping.html>
+[testing]: <integration_test.html>
+[points]: <./../points>
+[cron]: <./../setup/cron_jobs.html>
