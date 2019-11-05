@@ -281,7 +281,7 @@ Action allow send custom event to [Google Analytics](https://developers.google.c
 - Create campaign with Visits a page decision and  Send tracking event action 
 - Test it and see Tag assistent debug window with one Pageview request and 1 events
 
-![](/contacts/media/google-analytics-tag-assistent.png)
+![](media/google-analytics-tag-assistent.png)
 
 ##### How to test Facebook Pixel tracking code and campaign action
 
@@ -289,7 +289,7 @@ Action allow send custom event to [Google Analytics](https://developers.google.c
 - Create campaign with Visits a page decision and Send tracking event action 
 - Test it and see Facebook Pixel Helper debug window with one Pageview and one custom event action
 
-![](/contacts/media/facebook-pixel-helper.png)
+![](media/facebook-pixel-helper.png)
 
 Events should use for [Remarketing with Analytics](https://support.google.com/analytics/topic/2611283?hl=en&ref_topic=7185254) and [Remarketing for Facebook Ads](https://www.facebook.com/business/a/online-sales/custom-audiences-website)   
 

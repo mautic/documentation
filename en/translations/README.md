@@ -15,7 +15,7 @@ In the Mautic configuration the default language can be configured. It is pre-se
 3. Select the default language.
 4. Save the configuration.
 
-![Select the default language](/translations/media/translations-select-language.png "Select the default language")
+![Select the default language](media/translations-select-language.png "Select the default language")
 
 ### 2. User language
 
@@ -26,7 +26,7 @@ A user can define her own language and override the default language. This lets 
 3. Select the user language.
 4. Save the user profile.
 
-![Select the user language](/translations/media/translations-select-user-language.png "Select the user language")
+![Select the user language](media/translations-select-user-language.png "Select the user language")
 
 ## How to translate Mautic
 

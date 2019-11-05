@@ -4,7 +4,7 @@ When a campaign _**marketing**_ email is triggered or an email broadcast (segmen
 
 ### Priority and number of attempts
 
-![](/contacts/media/marketing-email.png)
+![](media/marketing-email.png)
 
 - You can select priority as High or Normal. All messages with priority high will be put in the front of the queue when processing messages for a given date. Broadcasts are always injected as normal priority.
 - Number of attempts will try to send email again if it has been rescheduled, note that even if an email is pending but if the number of attempts has been reached, the message will not be sent.

@@ -10,7 +10,7 @@ The segment is the default tabular view of all the contacts in the system - by d
 
 A segment can be searched using the box at the top of the list, and can be ordered using the table headings by clicking on the heading you wish to sort the list by.
 
-![](/contacts/media/contacts-search.jpg)
+![](media/contacts-search.jpg)
 
 The search box allows many different search types and follows the same search process and variables as found in all other search layouts. You can learn more about the powerful search options available on the [search documentation page](/search/README.md).
 
@@ -65,7 +65,7 @@ So, Mautic will take care of duplicate contacts created by the event tracking. Y
 There are batch actions you can carry out from the user interface. A modal window will be displayed when you click on one of the actions, with more configuration details. You can use this feature to quickly update large volumes of contacts, but it might be better to use a campaign action (e.g. add all the users you need to update into a segment and use a campaign to trigger the change) if you need to change more than a few hundred contacts at a time.
 
 The following batch actions are currently available:
-![](/contacts/media/mautic-contact-batch-delete.png)
+![](media/mautic-contact-batch-delete.png)
 
 ### Change Campaigns
 

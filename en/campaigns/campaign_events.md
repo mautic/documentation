@@ -6,7 +6,7 @@ Below are notes on some of the specific campaign events.
 
 #### Send Email - Marketing vs Transactional
 
-![](/campaigns/media/send-email-delay.png)
+![](media/send-email-delay.png)
 
 In the send email action, there is an option to select Transaction or Marketing. A transactional email is one that can be sent to the contact multiple times. A marketing email is one that can only be sent to the contact once across multiple sources (e.g. another campaign). If the contact has already received this email from another source or the current campaign, the email will not be sent again and the contact simply progresses on through the campaign.
 
@@ -61,4 +61,4 @@ The opens email decision can only be attached to a send email action. Whatever e
 
 Note: The decision uses the OR operator between fields (Limit to Pages, URL, Referrer).
 
-![](/campaigns/media/vists-a-page.PNG)
+![](media/vists-a-page.PNG)

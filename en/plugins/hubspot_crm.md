@@ -1,33 +1,66 @@
 # Mautic - Hubspot CRM plugin
 
-This plugin can push a contact to Hubspot CRM when a contact makes some action. In case you don't see this plugin in your Mautic instance, make sure you run the latest version. This plugin had been added to Mautic 1.2.3.
+[Mautic] can push contacts to [Hubspot CRM] based on [Contact actions][testing] or [Point Triggers][points].
 
-If you don't have the Hubspot CRM account yet, [create it](http://www.hubspot.com/crm).
+> **Note**
+>
+> In this document, there may be references to outdated terminology such as
+>
+> - _leads_,
+> - _lists_ or _lead lists_, and
+> - _anonymous leads_
+>
+> In [Mautic version `1.4`][release-1.4.0],
+>
+> - _leads_ were renamed to _**contacts**_
+> - _lead lists_ were renamed to _**segments**_
+> - _anonymous leads_ were renamed to _**visitors**_
+
+[release-1.4.0]: <https://github.com/mautic/mautic/releases/tag/1.4.0>
 
 ## Hubspot API key
 
-Visit [https://app.hubspot.com/hapikeys](https://app.hubspot.com/hapikeys) to generate your Hubspot API key.
+Visit [https://app.hubspot.com/hapikeys][hubspot-keys] to generate your [Hubspot API key][hubspot-keys].
 
 ## Configure the Hubspot CRM plugin
 
-Open the Hubspot Plugin configuration and paste the API key into the *Hubspot API key* input field. Also, if you want to use the plugin, you have to publish it. Set the *Publish* switch to *Yes*.
+1. Create a [Hubspot CRM] account if you don't have one already.
 
-![Hubspot CRM Plugin configuration](/plugins/media/plugins-hubspot-crm-configuration.png "Hubspot CRM Plugin configuration")
+1. Open the Hubspot Plugin configuration
 
-In the Features tab is just *Push contacts to this integration* checkbox and it is checked by default.
+   - Paste the [API key][hubspot-keys] into the *Hubspot API key* input field.
 
-Configure the [field mapping](./../plugins/field_mapping.html).
+   - If you want to use the plugin, set the *Publish* switch to *Yes*.
+    ![Hubspot CRM Plugin configuration](media/plugins-hubspot-crm-configuration.png "Hubspot CRM Plugin configuration")
 
-Save the plugin configuration.
+1. In the _Features_ tab select *Push contacts to this integration* checkbox.
+
+    It is checked by default. If you uncheck it, the plugin will not push contacts to [Hubspot CRM] any more.
+
+1. Configure the [field mapping][field mapping].
+
+1. Save the plugin configuration.
 
 ## Test the plugin
 
-Follow [these steps](./../plugins/integration_test.html) to test the integration.
+Follow [these steps][testing] to test the integration.
 
 ## Troubleshooting
 
-If the contact hasn't been created, make sure that the email address you'd tested it with is valid. Hubspot will create a new contact only when its email address is valid.
+If the contact has not been created, ensure the email address you tested with is valid. Hubspot will only create a new contact when the email address is valid.
 
 ## Credit
 
-This plugin had been developed by [@gpassarelli](https://github.com/gpassarelli).
+This plugin had been developed by [@gpassarelli].
+
+[Hubspot CRM]: <https://www.hubspot.com/crm>
+[hubspot-keys]: <https://app.hubspot.com/hapikey>
+
+[@gpassarelli]: <https://github.com/gpassarelli>
+
+[mautic]: <https://mautic.org>
+[Mautic]: <https://mautic.org>
+
+[field mapping]: <field_mapping.html>
+[testing]: <integration_test.html>
+[points]: <./../points>

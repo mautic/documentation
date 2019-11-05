@@ -11,4 +11,4 @@ The **Channels** Dropdown contains:
 All of these must be created or configured before you can use them in a campaign.
 
 
-![](/channels/media/channels-dropdown.jpg)
+![](media/channels-dropdown.jpg)

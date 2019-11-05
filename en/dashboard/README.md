@@ -6,7 +6,7 @@ Mautic 1.4.0 brought a customizable dashboard where each user can compose widget
 
 All the widgets will display data in the selected global date range filter at the top of the widget list. The default date range is set from 30 days ago to today. 
 
-![](/dashboard/media/dashboard-date-filters.png)
+![](media/dashboard-date-filters.png)
 
 Line charts will change the time unit automatically depending on the day count selected in the date range filter like this:
 
