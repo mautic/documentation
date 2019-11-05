@@ -1,98 +1,149 @@
 # Citrix Plugins
 
-## Description:
-Creates a plugin that pulls data from Mautic and pushes data to Mautic from GotoMeeeting, GotoWebinar, GotoTraining and GoToAssist.
-## Required Features:
-1. Create registrants in GoToWebinar and GoToTraining based on campaign decisions, contact data and also from registration forms in Mautic
-2. Pull back from registrant and attendee info into segments and campaigns
-3. Display webinar and training attendance as an additional activity on the contact timeline
-4. Send emails with buttons to start GoToMeeting, GoToTraining and GoToAssist sessions
+## Description
 
-## Instructions
+The plugins pull data from Mautic and push data to Mautic from these products:
+
+- _GotoMeeting_
+- _GotoWebinar_
+- _GotoTraining_
+- _GoToAssist_
+
+## Features
+
+1. Create registrants in _GoToWebinar_ and _GoToTraining_ based on Campaign decisions, Contact data and also from registration Forms in Mautic
+1. Use registrant and attendee information in Segments (filters), Forms and Campaigns (actions and decisions).
+1. Display _GoToWebinar_ and _GoToTraining_ attendance as an additional activity on the Contact timeline
+1. Send emails with buttons to start _GoToMeeting_, _GoToTraining_ and _GoToAssist_ sessions
+
+## Plugin activation instructions
+
+> **Note**
+>
+> These examples use _GoToMeeting_ and _GoToWebinar_, but it's the same for _GoToTraining_ and _GoToAssist_
+
 1. Enable the plugins you need
+![Citrix plugins](https://cloud.githubusercontent.com/assets/2924026/19797584/54467954-9ca9-11e6-8e31-f80f7469fe84.png)
 
-![image](https://cloud.githubusercontent.com/assets/2924026/19797584/54467954-9ca9-11e6-8e31-f80f7469fe84.png)
-
-2. Activate the plugins with the Citrix Developer API keys
-
+1. Activate the plugins with the [Citrix Developer][citrix-developer] API keys
 ![image](https://cloud.githubusercontent.com/assets/2924026/19797588/5c6ce640-9ca9-11e6-981c-a98a728e1712.png)
 
-3. Use the Consumer Keys from the [developer website](https://goto-developer.logmeininc.com/user)
-
+- Use the Consumer Keys from the [Citrix developer][citrix-developer] website
 ![image](https://cloud.githubusercontent.com/assets/2924026/19797595/612744f0-9ca9-11e6-90b0-566fdff69ef4.png)
 
-4. New segment filters will be available
+## New integrations
 
-![image](https://cloud.githubusercontent.com/assets/2924026/19797599/655fb6ce-9ca9-11e6-9d27-9ec295068a1a.png)
+### Segments
 
-5. Past sessions will be available to choose from
+#### New filters
 
-![image](https://cloud.githubusercontent.com/assets/2924026/19797600/69dd3604-9ca9-11e6-8212-7a0a383bff34.png)
+New Segment filters will be available
 
-6. New fields will be availabe for forms
+![new segment filters](https://cloud.githubusercontent.com/assets/2924026/19797599/655fb6ce-9ca9-11e6-9d27-9ec295068a1a.png)
 
-![image](https://cloud.githubusercontent.com/assets/2924026/19798154/9954bf30-9cac-11e6-8173-06acc0ca1fa1.png)
+- Past _GoToProduct_ sessions will be available to choose from
+    ![past sessions available](https://cloud.githubusercontent.com/assets/2924026/19797600/69dd3604-9ca9-11e6-8212-7a0a383bff34.png)
 
-7. The fields will display the available events for each product (the form will validate that the mandatory fields are present)
+### Forms
 
-![image](https://cloud.githubusercontent.com/assets/2924026/19797605/72ec51e4-9ca9-11e6-8416-be31a013c8d1.png)
+#### New fields
 
-8. Form actions will also be available
+New Form fields will be available
 
-![image](https://cloud.githubusercontent.com/assets/2924026/19797611/7699f9c2-9ca9-11e6-96f5-d90dcafcbd3f.png)
+![new form fields](https://cloud.githubusercontent.com/assets/2924026/19798154/9954bf30-9cac-11e6-8173-06acc0ca1fa1.png)
 
-9. Each action will permit to select a single event or let the user select from the form. They also include fields to map to obligatory lead fields
+- The fields will display the available events for each product
 
-![image](https://cloud.githubusercontent.com/assets/2924026/19797613/7b25eb68-9ca9-11e6-99c7-d9f4053136ac.png)
+- The Form will validate that the mandatory fields are present
+![form fields](https://cloud.githubusercontent.com/assets/2924026/19797605/72ec51e4-9ca9-11e6-8416-be31a013c8d1.png)
 
-10. This is an example of a form that lets the user select the event from a list
+#### New actions
 
-![image](https://cloud.githubusercontent.com/assets/2924026/19797614/7eea2f02-9ca9-11e6-86dd-c895bb0d65c3.png)
+New Form actions will also be available
 
-11. The Send Link actions require an email object with a Token to insert the link of the event (the available tokens are shown)
+![new form actions](https://cloud.githubusercontent.com/assets/2924026/19797611/7699f9c2-9ca9-11e6-96f5-d90dcafcbd3f.png)
 
-![image](https://cloud.githubusercontent.com/assets/2924026/19797615/82b326f2-9ca9-11e6-9d30-1324b7efd49a.png)
+- Each action will permit to select a single event or let the user select from the form.
 
-12. There are also conditions for campaigns (registered and attended)
+- They also include fields to map to obligatory lead fields
 
-![image](https://cloud.githubusercontent.com/assets/2924026/19797618/8693fb8e-9ca9-11e6-8ae2-44b67f05769e.png)
+![form field mapping](https://cloud.githubusercontent.com/assets/2924026/19797613/7b25eb68-9ca9-11e6-99c7-d9f4053136ac.png)
 
-13. The campaign actions allow to select the event and the email template to send (if applicable)
+#### Form examples
 
-![image](https://cloud.githubusercontent.com/assets/2924026/19797619/8a501b68-9ca9-11e6-8232-d5c23b9cf445.png)
+##### User selects an event from a list
 
-14. This is an example of a campaign that sends a link to a preliminary meeting after a contact is identified as to have registered to a webinar (using segment)
+1. Select event
 
-![image](https://cloud.githubusercontent.com/assets/2924026/19797623/8d7b1252-9ca9-11e6-9370-b3f05cc08ee1.png)
+    ![select event from list](https://cloud.githubusercontent.com/assets/2924026/19797614/7eea2f02-9ca9-11e6-86dd-c895bb0d65c3.png)
 
-15. In this example, the form has been submitted
+1. Form submitted
 
-![image](https://cloud.githubusercontent.com/assets/2924026/19797632/9122e614-9ca9-11e6-991c-70b2033ea6c9.png)
+    ![form submitted](https://cloud.githubusercontent.com/assets/2924026/19797632/9122e614-9ca9-11e6-991c-70b2033ea6c9.png)
 
-16. The new events appear in the contact's timeline
+##### Send Start button link
 
-![image](https://cloud.githubusercontent.com/assets/2924026/19797638/9484bb7a-9ca9-11e6-9a18-62eab010378e.png)
+The Send Link actions require an email object with a Token to insert the link of the event.  The available tokens are shown.
 
-17. The email with the link (that was injected with the Token) is viewed in the browser
+![send link action](https://cloud.githubusercontent.com/assets/2924026/19797615/82b326f2-9ca9-11e6-9d30-1324b7efd49a.png)
 
-![image](https://cloud.githubusercontent.com/assets/2924026/19797642/986c9c30-9ca9-11e6-9233-5e826f2520b9.png)
+### Campaigns
 
-18. When the contact clicks on the link, it redirects to GoToMeeting to start the meeting
+#### New Campaign conditions
 
-![image](https://cloud.githubusercontent.com/assets/2924026/19797644/9c6e43ce-9ca9-11e6-8f45-ec36b19502fa.png)
+New Campaign actions will be available
 
-19. This is an example of a webinar where the contact attended
+- New conditions for registered and attended contacts
+![campaign condition](https://cloud.githubusercontent.com/assets/2924026/19797618/8693fb8e-9ca9-11e6-8ae2-44b67f05769e.png)
 
-![image](https://cloud.githubusercontent.com/assets/2924026/19797647/a012bfb4-9ca9-11e6-8d27-92edfb071bfb.png)
+#### New Campaign actions
 
-20. When the crontab job that synchronizes the data runs, it retrieves the new state of the contact and it's visible on the timeline as an attended event
+New Campaign actions will be available
 
-![image](https://cloud.githubusercontent.com/assets/2924026/19797652/a435ee36-9ca9-11e6-9936-17cd19384452.png)
+- Select the event and the email template to send (if applicable)
+![campaign action](https://cloud.githubusercontent.com/assets/2924026/19797619/8a501b68-9ca9-11e6-8232-d5c23b9cf445.png)
 
-#### The previous examples used GoToMeeting and GoToWebinar, but it's the same for GoToTraining and GoToAssist
+#### Campaign examples
 
-### Other details
-The cron job to synchronize the events is
+##### Send a webinar start link to registered Contact
+
+This is an example of a Campaign that:
+
+- includes Contacts from a source Segment
+- identifies Contact as having registered for a webinar
+- sends a start link to event _Preliminary Meeting_
+
+![campaign send start link](https://cloud.githubusercontent.com/assets/2924026/19797623/8d7b1252-9ca9-11e6-9370-b3f05cc08ee1.png)
+
+- The email with the link (that was injected with the Token) is viewed in the browser
+![email with start meeting link](https://cloud.githubusercontent.com/assets/2924026/19797642/986c9c30-9ca9-11e6-9233-5e826f2520b9.png)
+
+- When the contact clicks on the link, it redirects to _GoToMeeting_ to start the meeting
+![start meeting](https://cloud.githubusercontent.com/assets/2924026/19797644/9c6e43ce-9ca9-11e6-8f45-ec36b19502fa.png)
+
+### Contacts
+
+#### Contact timeline
+
+New events appear in the Contact's timeline
+
+![contact timeline](https://cloud.githubusercontent.com/assets/2924026/19797638/9484bb7a-9ca9-11e6-9a18-62eab010378e.png)
+
+#### Contact examples
+
+##### Attended webinar
+
+This is an example of a webinar where the contact attended.
+
+![attend webinar](https://cloud.githubusercontent.com/assets/2924026/19797647/a012bfb4-9ca9-11e6-8d27-92edfb071bfb.png)
+
+When the [cron job][cron] that synchronizes the data runs, it retrieves the new state of the contact and the data is visible on the timeline as an attended event
+
+![contact timeline](https://cloud.githubusercontent.com/assets/2924026/19797652/a435ee36-9ca9-11e6-9936-17cd19384452.png)
+
+### Synchronize events data cron job
+
+The [cron job][cron] to synchronize the events is
 
     php app/console mautic:citrix:sync
 
@@ -103,35 +154,50 @@ The cron job to synchronize the events is
         -p, --product[=PRODUCT]  Product to sync (webinar, meeting, training, assist)
         -i, --id[=ID]            The id of an individual registration to sync
 
-### Update: Join GoToWebinar Button Token
-1. Follow these steps to include a Join GoToWebinar button in a segment email:
+### Update: Join _GoToWebinar_ button token
 
-2. Create a webinar in the [GotoWebinar website](https://www.gotomeeting.com/webinar)
+Follow these steps to include a _GoToWebinar Join Button_ in a Segment email:
 
-3. Create a new contact and use the email address to register for the new webinar
+1. Create a webinar in the [GotoWebinar website][GotoWebinar]
 
-4. Run the Citrix Sync command: `php app/console mautic:citrix:sync` so that the webinar information is retrieved to the database.
+1. Create a new contact and use the email address to register for the new webinar
 
-5. Create a segment with a "Webinar (registered)" filter. (Note that this is mandatory, and it will be validated when trying to save the email with the token in the body)
-![image](https://cloud.githubusercontent.com/assets/2924026/24730532/5ff1f31e-1a21-11e7-9e5f-fbdc604c0883.png)
+1. Run the Citrix Sync console command: `php app/console mautic:citrix:sync` so that the webinar information is retrieved to the database.
 
-6. Add the contact to the segment manually or by running `php app/console mautic:segments:update`
+1. Create a Segment with a "Webinar (registered)" filter.
 
-7. Create a new segment email and assign the previously created segment.
-![image](https://cloud.githubusercontent.com/assets/2924026/24730574/95b6083c-1a21-11e7-8c79-a8b9c45ab810.png)
+    > **Note**
+    >
+    > This is mandatory, and it will be validated when trying to save the email with the token in the body
 
-8. Open the email builder and insert the GotoWebinar button token:
-![image](https://cloud.githubusercontent.com/assets/2924026/24730644/0f294076-1a22-11e7-9af8-edd359587a41.png)
+    ![edit Segment](https://cloud.githubusercontent.com/assets/2924026/24730532/5ff1f31e-1a21-11e7-9e5f-fbdc604c0883.png)
 
-9. Send the email to the segment contacts.
-![image](https://cloud.githubusercontent.com/assets/2924026/24730930/ddef679a-1a23-11e7-9610-513a44bcfd48.png)
+1. Add the Contact to the Segment manually or by running `php app/console mautic:segments:update`
 
-10. The email in the new contact inbox should include a button to join the webinar with the appropiate URL for the contact.
-![image](https://cloud.githubusercontent.com/assets/2924026/24731148/72272370-1a25-11e7-97ac-e04943f25775.png)
+1. Create a new Segment Email and assign the previously created segment.
 
-11. The button can be styled by overriding the `citrix-start-button` CSS class. ie
-```
-.citrix-start-button {
-  background: green !important;
-}
-```
+    ![new Segment Email](https://cloud.githubusercontent.com/assets/2924026/24730574/95b6083c-1a21-11e7-8c79-a8b9c45ab810.png)
+
+1. Open the email Builder and insert the _GotoWebinar Join Button_ token:
+
+    ![email builder](https://cloud.githubusercontent.com/assets/2924026/24730644/0f294076-1a22-11e7-9af8-edd359587a41.png)
+
+    The button can be styled by overriding the `citrix-start-button` CSS class.
+
+    ```css
+    .citrix-start-button {
+    background: green !important;
+    }
+    ```
+
+1. Send the email to the Segment contacts.
+
+    ![send email](https://cloud.githubusercontent.com/assets/2924026/24730930/ddef679a-1a23-11e7-9610-513a44bcfd48.png)
+
+1. The email arriving in the new Contact's Inbox should include a button to join the webinar with the appropiate URL for the contact.
+
+    ![join webinar email](https://cloud.githubusercontent.com/assets/2924026/24731148/72272370-1a25-11e7-97ac-e04943f25775.png)
+
+[cron]: <./../setup/cron_jobs.html>
+[citrix-developer]: <https://goto-developer.logmeininc.com/user>
+[GotoWebinar]: <https://www.gotomeeting.com/webinar>
