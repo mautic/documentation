@@ -23,12 +23,15 @@ The plugins pull data from Mautic and push data to Mautic from these products:
 > These examples use _GoToMeeting_ and _GoToWebinar_, but it's the same for _GoToTraining_ and _GoToAssist_
 
 1. Enable the plugins you need
+
 ![Citrix plugins](https://cloud.githubusercontent.com/assets/2924026/19797584/54467954-9ca9-11e6-8e31-f80f7469fe84.png)
 
 1. Activate the plugins with the [Citrix Developer][citrix-developer] API keys
+
 ![image](https://cloud.githubusercontent.com/assets/2924026/19797588/5c6ce640-9ca9-11e6-981c-a98a728e1712.png)
 
 - Use the Consumer Keys from the [Citrix developer][citrix-developer] website
+
 ![image](https://cloud.githubusercontent.com/assets/2924026/19797595/612744f0-9ca9-11e6-90b0-566fdff69ef4.png)
 
 ## New integrations
@@ -42,7 +45,8 @@ New Segment filters will be available
 ![new segment filters](https://cloud.githubusercontent.com/assets/2924026/19797599/655fb6ce-9ca9-11e6-9d27-9ec295068a1a.png)
 
 - Past _GoToProduct_ sessions will be available to choose from
-    ![past sessions available](https://cloud.githubusercontent.com/assets/2924026/19797600/69dd3604-9ca9-11e6-8212-7a0a383bff34.png)
+
+![past sessions available](https://cloud.githubusercontent.com/assets/2924026/19797600/69dd3604-9ca9-11e6-8212-7a0a383bff34.png)
 
 ### Forms
 
@@ -55,6 +59,7 @@ New Form fields will be available
 - The fields will display the available events for each product
 
 - The Form will validate that the mandatory fields are present
+
 ![form fields](https://cloud.githubusercontent.com/assets/2924026/19797605/72ec51e4-9ca9-11e6-8416-be31a013c8d1.png)
 
 #### New actions
@@ -73,13 +78,13 @@ New Form actions will also be available
 
 ##### User selects an event from a list
 
-1. Select event
+- Select event
 
-    ![select event from list](https://cloud.githubusercontent.com/assets/2924026/19797614/7eea2f02-9ca9-11e6-86dd-c895bb0d65c3.png)
+![select event from list](https://cloud.githubusercontent.com/assets/2924026/19797614/7eea2f02-9ca9-11e6-86dd-c895bb0d65c3.png)
 
-1. Form submitted
+- Form submitted
 
-    ![form submitted](https://cloud.githubusercontent.com/assets/2924026/19797632/9122e614-9ca9-11e6-991c-70b2033ea6c9.png)
+![form submitted](https://cloud.githubusercontent.com/assets/2924026/19797632/9122e614-9ca9-11e6-991c-70b2033ea6c9.png)
 
 ##### Send Start button link
 
@@ -94,6 +99,7 @@ The Send Link actions require an email object with a Token to insert the link of
 New Campaign actions will be available
 
 - New conditions for registered and attended contacts
+
 ![campaign condition](https://cloud.githubusercontent.com/assets/2924026/19797618/8693fb8e-9ca9-11e6-8ae2-44b67f05769e.png)
 
 #### New Campaign actions
@@ -101,6 +107,7 @@ New Campaign actions will be available
 New Campaign actions will be available
 
 - Select the event and the email template to send (if applicable)
+
 ![campaign action](https://cloud.githubusercontent.com/assets/2924026/19797619/8a501b68-9ca9-11e6-8232-d5c23b9cf445.png)
 
 #### Campaign examples
@@ -116,9 +123,11 @@ This is an example of a Campaign that:
 ![campaign send start link](https://cloud.githubusercontent.com/assets/2924026/19797623/8d7b1252-9ca9-11e6-9370-b3f05cc08ee1.png)
 
 - The email with the link (that was injected with the Token) is viewed in the browser
+
 ![email with start meeting link](https://cloud.githubusercontent.com/assets/2924026/19797642/986c9c30-9ca9-11e6-9233-5e826f2520b9.png)
 
 - When the contact clicks on the link, it redirects to _GoToMeeting_ to start the meeting
+
 ![start meeting](https://cloud.githubusercontent.com/assets/2924026/19797644/9c6e43ce-9ca9-11e6-8f45-ec36b19502fa.png)
 
 ### Contacts
