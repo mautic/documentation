@@ -207,6 +207,12 @@ Follow these steps to include a _GoToWebinar Join Button_ in a Segment email:
 
     ![join webinar email](https://cloud.githubusercontent.com/assets/2924026/24731148/72272370-1a25-11e7-97ac-e04943f25775.png)
 
+### Update: How to Create a GotoWebinar Campaign From Scratch
+
+Instructions and best practices for [Mautic] campaigns and emails in a GoToWebinar campaign - from [Mautic Inc][mautic-inc-gotowebinar].
+
+[mautic-inc-gotowebinar]: <https://mautic.com/help/create-gotowebinar-campaign-scratch/>
+
 [cron]: <./../setup/cron_jobs.html>
 [citrix-developer]: <https://goto-developer.logmeininc.com/user>
 [GotoWebinar]: <https://www.gotomeeting.com/webinar>
