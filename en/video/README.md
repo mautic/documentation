@@ -44,7 +44,7 @@ builder, and you will see the Froala editor pop up. In the top row, next to the 
 Image* icon, is the *Insert Gated Video* icon. Click that, and you can then use the modal
 that opens to insert gated videos into your landing page.
 
-![](/video/media/gated-video-icon.png)
+![](media/gated-video-icon.png)
 
 ## Tracked videos (Mautic 2.9.1 and above)
 

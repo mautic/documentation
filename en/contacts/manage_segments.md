@@ -9,21 +9,21 @@ configured from a variety of fields.
 When viewing all segments you will notice the column on the right which shows
 the number of contacts matching that particular segment.
 
-![](/contacts/media/contact-segments.jpg)
+![](media/contact-segments.jpg)
 
 ### Segment Filters
 
-![](/contacts/media/segment-filters.jpg)
+![](media/segment-filters.jpg)
 
 In addition, these filters can be combined to either be inclusive or exclusive
 depending on your needs.
 
-![](/contacts/media/multiple-segment-filters.jpg)
+![](media/multiple-segment-filters.jpg)
 
 Once you have selected the field you can then choose the type of operation to
 perform. These vary depending on the way you wish to filter your contacts.
 
-![](/contacts/media/segment-filters-dropdown.jpg)
+![](media/segment-filters-dropdown.jpg)
 
 If you want to divide your segment based on certain criterion, and you wish to
 avoid sending duplicate emails to the (sub)segments, you can view and alter them
@@ -31,7 +31,7 @@ through typing the alias name of the contact segments separated by '+' only. You
 can add n contact segments to have their common, but you will always recieve the
 result as the intersection of the subsets. You can then manipulate the contacts to remove them from either one subset or all, hence avoiding duplicate emails to the same leads in the subsets.
 
-![](/contacts/media/common-leads-in-segments.jpg)
+![](media/common-leads-in-segments.jpg)
 
 #### Matching part of a string
 
@@ -54,7 +54,7 @@ You can use regular expressions in a `regexp` filter. Mautic recognises all comm
 
 Date filters allow you to choose a date via DatePicker:
 
-![](/contacts/media/segment-filters-datepicker.png)
+![](media/segment-filters-datepicker.png)
 
 Hovewer you can specify much more here. Mautic recognizes relative formats too (these string are not translatable):
 
@@ -114,7 +114,7 @@ clicking the Preferences button at the segments tab, use the dropdown to select 
 
 Filter the contacts in the segment. The batch delete action in the contact table allows deletion of up to 100 contacts at one time. This is a performance precaution since deleting more contacts at one time could cause issues. This feature can be used for hundreds of contacts.
 
-![](/contacts/media/mautic-contact-batch-delete.png)
+![](media/mautic-contact-batch-delete.png)
 
 But deleting thousands of contacts this way in one segment will become a tedious task. Luckily, there is a trick how to let the background workers do the job for you.
 
@@ -123,6 +123,6 @@ But deleting thousands of contacts this way in one segment will become a tedious
 
 This way the `mautic:campaign:update` and `mautic:campaign:trigger` commands will delete all the contacts in the segment. As well as all the contacts which will be added to the segment in the future. Everything is done automatically in the background. The cron jobs must be configured. However, be aware that when a contact is deleted, there is no way to get it back.
 
-![](/contacts/media/mautic-delete-contacts-in-segment.png)
+![](media/mautic-delete-contacts-in-segment.png)
 
 

@@ -34,11 +34,11 @@ It is possible to assign a default theme to a Mautic instance by editing the glo
 
 From the configuration screen, the available themes will be listed in a dropdown box, which can be selected.  On saving, this setting will apply for all resources which do not have a theme explicitly specified.
 
-![Configure themes under Administration Settings->System Settings](/themes/media/theme-config.jpg)
+![Configure themes under Administration Settings->System Settings](media/theme-config.jpg)
 
 Themes are available for emails and landing pages on each one's main editing page
 
-![Select a theme for a new page](/themes/media/themes2.jpg)
+![Select a theme for a new page](media/themes2.jpg)
 
 
 

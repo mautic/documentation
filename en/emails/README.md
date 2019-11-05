@@ -4,7 +4,7 @@ Emails can be created to be used within campaigns and other list activities. Ema
 
 ### Email Types
 
-![](/emails/media/types.png)
+![](media/types.png)
 
 There are two types of emails: template and segment (broadcasts). 
   

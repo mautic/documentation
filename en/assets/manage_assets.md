@@ -2,13 +2,13 @@
 ## Categories
 Assets can be organized in categories, which allows you to easily locate resources.  To create a new category, browse to the Categories section in the admin menu.
 
-![](/assets/media/settings-categories.jpg)
+![](media/settings-categories.jpg)
 
 ### Creating categories
 
 To create a new category, click on 'New' which can be found in the top right of the screen.
 
-![](/assets/media/add-new-category.jpg)
+![](media/add-new-category.jpg)
 
 Name the category something that reflects the 'filing system' structure that will be used, and provide a short description of the category.
 
@@ -28,7 +28,7 @@ To edit a category, either click on the category name, or click on the arrow bes
 
 Categories can be sorted by title or ID.  Click on the column header to search by the required field - clicking again will reverse the sort order.
 
-![](/assets/media/sorting-categories.jpg)
+![](media/sorting-categories.jpg)
 
 At the bottom of the page, a dropdown allows control over the number of categories displayed per page - if this number is exceeded by the amount of categories, the pagination arrows can be used to move between pages.  To change the number of categories displayed, select the desired number from the dropdown and the page will automatically refresh.
 
@@ -36,7 +36,7 @@ At the bottom of the page, a dropdown allows control over the number of categori
 
 Categories can be deleted by clicking on the arrow beside the checkbox and selecting delete.  If any assets are currently assigned to the category being deleted, they will not be removed, but will instead display as 'Unassigned'.  A warning will be displayed which alerts you to this fact when deleting a category.
 
-![](/assets/media/delete-categories.jpg)
+![](media/delete-categories.jpg)
 
 ## Assets
 
@@ -46,7 +46,7 @@ Before creating an asset, first establish and publish any categories that may be
 
 Navigate to 'Components' -> 'Assets', and click 'New' to begin creating an asset.
 
-![](/assets/media/new-asset.jpg)
+![](media/new-asset.jpg)
 
 Assets can be added from local resources on a computer or from a remote location.  Local uploads will be restricted by size due to the settings of your server - any such restriction may be advised as a warning above the file upload area.
 
@@ -54,7 +54,7 @@ Assets can be added from local resources on a computer or from a remote location
 
 To upload an asset, either drag the file into the white box, or click in the white box to open a file upload window.  On selection of the file, it will be automatically uploaded and will appear in the white box.  
 
-![](/assets/media/assign-asset-to-category.jpg)
+![](media/assign-asset-to-category.jpg)
 
 The title of the asset can be set, along with a description and an alias as above with categories.  Assets can only be assigned to published categories, therefore the dropdown list for category selection will not feature unpublished categories.  It is also possible to set the language, whether the asset is published or unpublished, and whether it should become published or unpublished at a specific date or time.
 
@@ -64,7 +64,7 @@ When the details have been completed, click 'Save & Close' or 'Apply' to save ch
 
 Once an asset has been uploaded and saved, it can be viewed by clicking on the asset name in the list of assets.
 
-![](/assets/media/asset-stats.jpg)
+![](media/asset-stats.jpg)
 
 The view asset screen gives information about the number of times the asset has been downloaded, which can be displayed on a chart by hourly, daily, weekly, monthly or yearly downloads.  The graph also shows the number of unique, versus total views - this is an indication of whether the same asset is being downloaded multiple times by some visitors.
 
