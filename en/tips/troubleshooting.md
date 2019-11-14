@@ -10,7 +10,7 @@ Even through the effort of the dev and test teams, it might happen. At first, le
 
 There are several ways to do that. The easiest is to go to the `/app/cache` folder and delete its content. If you want to do it via CLI command, navigate to the Mautic root folder and run `rm -rf app/cache/*`. The new cache files will generate itself after the next Mautic refresh in the browser.
 
-It might happen that the files won't generate itself. It can be caused by the wrong folder permission and Mautic doesn't have permission to write the new cache files. Contact your sysadmin and ask him to fix it for you.
+It might happen that the files won't generate itself. It can be caused by the wrong folder permission and Mautic doesn't have permission to write the new cache files. Contact your sysadmin and ask them to fix it for you.
 
 Tip: Don't execute Mautic commands as the root user yourself and do not run Mautic commands in the root crontab. This way all the files which will be created by the command will have the root as the author and Mautic won't be able to rewrite those files.
 
