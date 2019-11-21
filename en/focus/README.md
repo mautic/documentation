@@ -32,10 +32,10 @@ The first step to building the focus item is to choose what the focus or goal is
 
 Each focus/goal will have slightly different settings but all have a few in common:
   
-1. Animate? - simply determine if  
-1. When to engage - this determines when the focus is engaged based on visitor interaction. It can be immediate, on scroll, timed, or with an exit attempt. If `Visitor intends to leave` is chosen, an option appears that allows configuration if links within the site should trigger the engagement or not.
-2. How often to engage - should the visitor be engaged every time, once per session, or during a period of time? 
-3. Stop engaging after a conversion - once a user clicks the link or submits the form (not applicable for displaying a notice), enabling this option will no longer engage the visitor.
+1. Animate? - determines whether the focus item animates into view or just appears.
+2. When to engage - this determines when the focus is engaged based on visitor interaction. It can be immediate, on scroll, timed, or with an exit attempt. If `Visitor intends to leave` is chosen, an option appears that allows configuration if links within the site should trigger the engagement or not.
+3. How often to engage - should the visitor be engaged every time, once per session, or during a period of time? 
+4. Stop engaging after a conversion - once a user clicks the link or submits the form (not applicable for displaying a notice), enabling this option will no longer engage the visitor.
 
 ### Focus Style
 
@@ -43,8 +43,8 @@ Each focus/goal will have slightly different settings but all have a few in comm
 
 There are four styles supported - 
 
-1. Bar - display a bar across the top or bottom of the page
-2. Modal - a small modal window that appears centred on the page
+1. Bar - display a bar across the top or bottom of the page.
+2. Modal - a small modal window that appears centred on the page.
 3. Notification - these are like modals but smaller and slide in from the side.
 4. Full page - also like a modal only it takes up the entire view.
 
@@ -62,15 +62,15 @@ By default, Mautic will determine the top colors extracted from the snapshot. Fo
 
 Again this will vary based on the selected focus/goal and style is chosen. Some support a headline and a tagline while some support only a headline due to space constraints. If the goal is to collect data, a list of forms will be available to choose from. Remember that the form should be simple. 
 
-## For advanced users
+## For Advanced Users
 
-### Content mode
+### Content Mode
 
 A new section called ‘content’ has been added to the builder for focus items that enables you to format content in basic, editor or html mode. This opens the door for even more creativity when engaging visitors to your site.
 
 ![](media/html-mode.png)
 
-## Inserting focus into a website
+## Inserting Focus Items Into a Website
 
 ![](media/step_8.png)
 
@@ -78,6 +78,7 @@ Inserting a focus item into a website is as simple as copying one line of code a
 
 ## Focus Items in Campaigns
 
-Focus Items action depends on page visits. That means, **you have add it just after Visits a page decision**.
+Focus items can be shown through a campaign action in response to a page visit. In order to do this, the page(s) you wish to show the focus item on must have the Mautic tracking script and the focus item should **not** be manually inserted. The focus item action depends on a page visit, which means **you have add it just after, or after a condition that follows a `Visits a page` decision**. The focus item will only show if it meets its own requirements for showing, for example the `How often to engage` setting will be respected.
 
 ![](media/focus-campaign-action.gif)
+![](media/focus-campaign-condition.png)
