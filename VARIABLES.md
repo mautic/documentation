@@ -124,7 +124,7 @@ See [customizing preference center][make pref center] for more information.
 | Preferred Channel                                  | `{preferredchannel}`                        |
 | Channel Frequency                                  | `{channelfrequency}`                        |
 | Save Preferences                                   | `{saveprefsbutton}`                         |
-| Do Not Contact Text                                | `{donotcontact}`                            |
+| Do Not Contact Text                                | `{do_not_contact_text}`                            |
 
 ## Dynamic Web Content tokens
 
