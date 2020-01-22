@@ -66,7 +66,8 @@ Mautic supports the bounce and complaint management from Amazon Simple Email Ser
 
 ![Topic](media/amazon_webhook_4.png "New subscriber")
 
-3) Enter the url to the Amazon webhook on your Mautic installation
+3) Enter the url to the Amazon webhook on your Mautic installation. 
+It should usually be your mautic URL followed by `/mailer/amazon/callback`
 
 ![Topic](media/amazon_webhook_5.png "Enter url to Mautic")
 
