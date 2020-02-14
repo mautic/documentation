@@ -81,7 +81,9 @@ At this point choose which Trigger or Action you need. Each trigger will get you
 
 ### 3. Authorize Mautic instance
 
-Once you choose to use Mautic integration you'll need to authorize your Mautic to it. 
+Once you choose to use Mautic integration you'll need to authorize your Mautic to it.
+
+<img src="https://user-images.githubusercontent.com/462477/74520761-848f1380-4f18-11ea-82be-152c00020995.PNG" width="300"> 
 
 ![Mautic Zap auth](https://user-images.githubusercontent.com/462477/74520761-848f1380-4f18-11ea-82be-152c00020995.PNG)
 
