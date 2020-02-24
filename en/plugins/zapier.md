@@ -12,7 +12,7 @@ There is no need to install any additional plugin to your Mautic instance. Zapie
 
 ### Setup Oauth2 Authentication in Mautic for Zapier 3.x
 
-New version of app improve authentication by Oauth2 protocol.
+This new version of the app improves authentication by implementing the Oauth2 protocol
 
 1. Open the admin menu
 2. Go to Mautic's global configuration > API Settings
@@ -22,23 +22,11 @@ New version of app improve authentication by Oauth2 protocol.
 6. Create new __Oauth2___ application with redirect URI: __tba__
 7. Copy Public Key and Secret Key of your created app
 
-![How to enable API](https://user-images.githubusercontent.com/462477/74520415-cc616b00-4f17-11ea-8dbe-f6dd8a0a6cfc.png)
+![How to enable the API](https://user-images.githubusercontent.com/462477/74520415-cc616b00-4f17-11ea-8dbe-f6dd8a0a6cfc.png)
+
+__Note__: **Refresh token lifetime (in days)**  means how many days need app to refresh token. If your app will not have any activity in that period, you have to re-authorize it again. 
 
 ![New Oauth2 application](https://user-images.githubusercontent.com/462477/74520342-a1771700-4f17-11ea-866f-5be1c895f0f9.png)
-
- 
-### Setup Basic Authentication in Mautic for Zapier 2.x 
- 
- If you're using Zapier 2.x, this Zapier integration use Basic Authentication to access Mautic API. It is disabled by default so enable this first.
-
-1. Open the admin menu
-2. Go to Mautic's global configuration
-3. Go to API Settings
-4. Set __API enabled?__ to __Yes__.
-5. Set __Enable HTTP basic auth?__ to __Yes__.
-6. Save the configuration.
-
-![How to enable API and basic auth](https://www.mautic.org/wp-content/uploads/2018/02/enable-api.png)
 
 Zapier will be able to create actions and triggers with your Mautic installation.
 
