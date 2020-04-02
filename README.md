@@ -1,5 +1,7 @@
 # Mautic Documentation
 
+# THIS REPOSITORY IS NOW DEPRECATED. PLEASE MAKE PR'S AGAINST [GITHUB.COM/MAUTIC/MAUTIC-DOCUMENTATION][new-docs-repo]
+
 ## Introduction
 
 This [Gitbook][gitbook] [repository][mautic-docs-github] serves as the [documentation][mautic-docs] for [Mautic][mautic], the open source marketing automation system.
@@ -59,3 +61,4 @@ Links below
 [hub]: <https://github.com/github/hub/releases>
 [linguistic]: <https://github.com/github/linguist>
 
+[new-docs-repo]: <https://github.com/mautic/mautic-documentation>
