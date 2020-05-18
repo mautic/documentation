@@ -85,3 +85,9 @@ Since Mautic 1.4, there is a new option in the Mautic configuration, the Email S
 ### Disable the Tracking Pixel
 
 As described above, some email clients display the image approval if one of the images is loaded from remote location. Like the tracking pixel. If you care more about this approval than the email open tracking, you can disable the tracking pixel. Then the images should be displayed directly without any approval.
+
+
+### Default BCC address
+
+There is an option in the Mautic configuration, under the Email Settings tab which lets you set a default BCC address for all outgoing emails.
+If you eexplicitly specify a BCC address in an email, the deafult one will be ignored.
